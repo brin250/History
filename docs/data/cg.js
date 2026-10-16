@@ -5,7 +5,8 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"cg", sec, src:S, qs:"me" }
 
 /* ── Syllabus anchor ── */
 add("Syllabus anchor", { id:"cg-syllabus", title:"Congo Crisis: syllabus anchor and essential questions", when:"1960–1965",
-  q:"Why did conflicts occur and how did they affect the international order? How effective were the attempts to manage these conflicts? (State the syllabus anchor for the Congo Crisis.)", qs:"notes",
+  q:"Why did conflicts occur and how did they affect the international order? How effective were the attempts to manage these conflicts? (State the syllabus anchor for the Congo Crisis.)",
+  exp:"The Congo is an intra-state conflict, so the causes are internal — decolonisation, domestic politics, economics and ethnic nationalisms — but the actors include outside powers and the UN. Essays must explain why the conflict happened and then judge whether peace processes managed it, weighing domestic actors against external and UN intervention.", qs:"notes",
   pts:["Topic: Causes, Development and Management of Intra-State Conflicts — Congo Crisis (1960–1965)",
        "Causes: decolonisation, domestic politics, economic interests, ethnic and religious nationalisms",
        "Role of different actors: domestic actors (state and non-state); major powers and other external state actors; the UN and regional organisations",
@@ -15,6 +16,7 @@ add("Syllabus anchor", { id:"cg-syllabus", title:"Congo Crisis: syllabus anchor 
 /* ── I. Introduction ── */
 add("I. Introduction", { id:"cg-overview", title:"The Congo Crisis: overview", when:"1960–1965",
   q:"What was the Congo Crisis, how did it begin and end, and how have historians characterised it?",
+  exp:"The crisis began with a mutiny and Belgian intervention days after independence and ended with Mobutu taking power. Kent’s and Parker’s judgements frame its significance: a rushed decolonisation collided with Cold War rivalry, making it the worst African decolonisation war to that point and a proxy contest between the superpowers.",
   clue:"Political upheaval and civil war in a newly independent Central African republic, doubling as a US–USSR proxy conflict; c.100,000 dead.",
   pts:["Period of political upheaval and civil war in the Republic of the Congo, doubling as a Cold War proxy conflict between the US and USSR",
        "Began almost immediately after independence with the Force Publique mutiny (5 Jul 1960) against Belgian commanders and the unauthorised intervention of Belgian paratroopers",
@@ -24,6 +26,7 @@ add("I. Introduction", { id:"cg-overview", title:"The Congo Crisis: overview", w
        "Parker, 2024: “not the first war of decolonization in Africa, but it was the worst up to that point in time”"] });
 add("I. Introduction", { id:"cg-scale-phases", title:"Size of the Congo and the two phases", when:"1960–1965",
   q:"How large and diverse was the Congo, and how is the conflict periodised?",
+  exp:"A vast country with over 200 ethnic groups and weak development was hard to govern from one centre, which helps explain both phases. The first phase was about provinces breaking away; the second about rebellions against the central government. Using the two phases lets you show how the nature of the conflict shifted.",
   pts:["One-third the size of the US, almost as big as Western Europe",
        "Third most populous African state (~14 million people), divided into 200+ ethnic groups across 6 provinces",
        "All provinces at different stages of failing to secure sustained development",
@@ -33,6 +36,7 @@ add("I. Introduction", { id:"cg-scale-phases", title:"Size of the Congo and the 
 /* ── II. Causes: Decolonisation ── */
 add("II. Causes — Decolonisation", { id:"cg-belgian-rule", title:"Belgian Congo: nature of colonial rule", when:"1908–1960",
   q:"What was the character of Belgian colonial rule in the Congo?",
+  exp:"Belgian rule combined state, church and company power and treated Africans as children with no political role. Commercial interests came first, and even the new évolué class had no real experience of government. This explains why the Congo reached independence economically tied to Belgian firms but politically unprepared.",
   pts:["Belgian colony 1908–1960, established by the Belgian parliament to replace the privately-owned Congo Free State after international outrage over abuses",
        "Rested on the “colonial trinity” (trinité coloniale) of state, missionary and private-company interests",
        "Official attitude was paternalism: Africans cared for and trained as if children; no legislative role",
@@ -41,6 +45,7 @@ add("II. Causes — Decolonisation", { id:"cg-belgian-rule", title:"Belgian Cong
        "1940s–50s urbanisation and “model colony” programmes produced a Europeanised African middle class (évolués)"] });
 add("II. Causes — Decolonisation", { id:"cg-resistance", title:"African resistance and the Jan 1959 riots", when:"1919–1959",
   q:"What forms did African resistance to Belgian rule take before independence?",
+  exp:"Resistance had existed for decades through revolts, religious movements and unrest, so the 1959 riots were the culmination of long grievance. Belgium’s sudden capitulation after them shows it had no plan. Namikas’ verdict sums up the legacy: an exploited, underdeveloped and poorly governed country at independence.",
   pts:["Rebellion in eastern districts (1919, suppressed 1923)",
        "Anti-European religious groups (Kimbanguism, Negro Mission, Kitawala) active from the 1920s",
        "Unrest during the 1931–36 depression and WWII",
@@ -48,6 +53,7 @@ add("II. Causes — Decolonisation", { id:"cg-resistance", title:"African resist
        "Namikas, 2013: “Colonialism left the Congo exploited, underdeveloped, and poorly governed.”"] });
 add("II. Causes — Decolonisation", { id:"cg-unprepared", title:"Belgian failure to prepare the Congo for independence", when:"1950s",
   q:"How did Belgium fail to prepare the Congo for independence?",
+  exp:"Paternalism stressed moral instruction over political training, so Congolese had little experience of responsibility. Chiefs became salaried Belgian officials, and the one serious plan for gradual transfer was treated almost as treason because the colony was a source of prestige. Belgium’s refusal to plan left no foundations for self-rule.",
   pts:["Paternalism put inculcation of Western moral principles above political education and apprenticeship for social responsibility",
        "This “virtually ruled out initiatives designed to foster political experience and responsibility”",
        "Chefferies (chiefdoms) reconstituted kinship/clan groupings into larger formations; the chief became a salaried Belgian civil servant",
@@ -55,6 +61,7 @@ add("II. Causes — Decolonisation", { id:"cg-unprepared", title:"Belgian failur
        "Most Belgians saw the colony as a status symbol and defence against communist infiltration; critics suggested Van Bilsen be tried for treason"] });
 add("II. Causes — Decolonisation", { id:"belgiandecol", title:"Belgian haste to concede independence", when:"Jan 1959–Jun 1960",
   q:"Why is Belgian decolonisation of the Congo described as “an experiment in instant decolonisation”?",
+  exp:"After refusing to plan, Belgium was overtaken by events: the riots forced a pledge of independence, and even a four-year timetable provoked unrest. The Round Table then set independence just months away, leaving no time to build institutions or reliable partners. Instant decolonisation explains why the state collapsed so quickly afterwards.",
   clue:"Riots convinced Brussels to proclaim independence “without fatal procrastination, yet without fatal haste”; a Brussels conference then set a date only months away.",
   pts:["Jan 1959 rioting in Léopoldville killed scores of Africans",
        "13 Jan 1959: Minister of the Congo Van Hemelrijek proclaimed independence as the objective — “without fatal procrastination, yet without fatal haste”",
@@ -66,6 +73,7 @@ add("II. Causes — Decolonisation", { id:"belgiandecol", title:"Belgian haste t
 /* ── II. Causes: Domestic politics ── */
 add("II. Causes — Domestic Politics", { id:"cg-mnc", title:"MNC (Mouvement National Congolais)", when:"1958–1960",
   q:"What were the key features of the MNC, and how did it split?",
+  exp:"The MNC was the one genuinely national party, but its radical anti-imperialism alarmed Belgium and the US, and its internal split produced Kalonji’s Baluba-based MNC-K. That split links domestic politics directly to the South Kasai secession, while Lumumba’s modest share of seats shows he lacked a commanding national mandate.",
   clue:"Founded 10 Oct 1958 as a genuinely national, pan-Africanist, non-aligned party; its 1959 split seeded a Baluba secession.",
   pts:["Est. 10 Oct 1958 with Lumumba as president; aimed to unify Congolese across ethnic/regional lines; pan-African unity and non-alignment",
        "Lumumba's increasingly radical anti-imperialist stance raised Belgian and American suspicions",
@@ -76,6 +84,7 @@ add("II. Causes — Domestic Politics", { id:"cg-mnc", title:"MNC (Mouvement Nat
        "1950s parties mostly regional/tribal/cultural, divided over centralism vs federalism, but all sought independence"] });
 add("II. Causes — Domestic Politics", { id:"cg-abako", title:"ABAKO (Alliance des Bakongo)", when:"1950–1960",
   q:"What was ABAKO and what did it stand for?",
+  exp:"ABAKO began as a Bakongo cultural body tied to the Kimbanguist Church, then became a vehicle for anticolonial demands. Its federalism was meant to protect Bakongo autonomy, setting Kasavubu against Lumumba’s centralism. That centralist–federalist divide later shaped the deadlock between the two leaders.",
   pts:["Est. 1950 by Kasavubu to promote Kongo language/culture",
        "Major ethno-religious organisation for the Bakongo, closely tied to the popular Kimbanguist Church",
        "Evolved into a vehicle of anticolonial protest",
@@ -83,6 +92,7 @@ add("II. Causes — Domestic Politics", { id:"cg-abako", title:"ABAKO (Alliance 
        "Favoured federalism (vs Lumumba's centralism) to guarantee Bakongo autonomy"] });
 add("II. Causes — Domestic Politics", { id:"cg-conakat", title:"CONAKAT", when:"1958–1960",
   q:"What was CONAKAT, who supported it and what did it want?",
+  exp:"CONAKAT combined Katangese regionalism, hostility to migrant Lulua and Baluba workers and Belgian company money. UMHK funded it because a strong centralised state could threaten its mines. This shows ethnic, political and economic causes reinforcing one another in Katanga.",
   pts:["Confédération des Associations Tribales du Katanga, est. Nov 1958 (Oct 1958 in the ethnic section); led by Tshombe from 1959",
        "Advocated a regionalist loose confederation, self-government/independence for Katanga, and preferential tax treatment",
        "Support base: Lunda peoples of Katanga; financed by Belgian economic interests via UMHK",
@@ -90,6 +100,7 @@ add("II. Causes — Domestic Politics", { id:"cg-conakat", title:"CONAKAT", when
        "Founded partly over perceived ‘immigration’: upholding rights of ‘indigenous’ Katangese and ending immigration by Lulua/Baluba migrants (38% of Katanga's population)"] });
 add("II. Causes — Domestic Politics", { id:"cg-katanga-goals", title:"Secessionist goals in Katanga", when:"1950s–Jul 1960",
   q:"Why did Katanga have secessionist goals, and how genuine was its claimed nationalism?",
+  exp:"Katanga’s wealth, Belgian settlers and UMHK’s financial backing gave its leaders both motive and means to secede. Tshombe framed secession as anti-communist nationalism, but Baluba opposition, the lack of consultation and open Belgian support suggest it served economic and settler interests more than popular will — a useful point for questioning its legitimacy.",
   pts:["Wealthiest, most industrialised province: 47% of Congo's tax income, 45% of customs duties",
        "~70% of Katangan mineral production (copper) controlled by UMHK; 32,000 Belgian settlers by the 1950s (highest of any province)",
        "From Mar 1960 UMHK financed CONAKAT and bribed Tshombe; Belgian consul in Salisbury indicated Belgium wanted a ‘political association’ of Katanga with the British Central African Federation",
@@ -98,6 +109,7 @@ add("II. Causes — Domestic Politics", { id:"cg-katanga-goals", title:"Secessio
        "Claimed indigenous nationalism, but northern Baluba actively opposed it, southern Katangese never directly consulted; large Belgian community openly backed it"] });
 add("II. Causes — Domestic Politics", { id:"cg-kasai-goals", title:"Secessionist goals in South Kasai", when:"Aug 1960",
   q:"What were the secessionist goals behind South Kasai?",
+  exp:"Kalonji turned existing Baluba–Lulua hostility into a political project for a Baluba homeland. Declaring secession amid sectarian violence and calling Baluba to return shows how ethnic tension, sharpened under colonial rule, became territorial separatism.",
   pts:["Kalonji (MNC-K) exploited ethnic tension between his Baluba group and the Lulua",
        "Aimed to create a Baluba-focused state in the Baluba's traditional south-eastern Kasai heartland",
        "9 Aug 1960: secession declared as sectarian violence broke out",
@@ -106,6 +118,7 @@ add("II. Causes — Domestic Politics", { id:"cg-kasai-goals", title:"Secessioni
 /* ── II. Causes: Economic interests ── */
 add("II. Causes — Economic Interests", { id:"cg-resources", title:"Congo's mineral wealth and foreign investment", when:"post-WWI–1960",
   q:"What economic resources made the Congo valuable to foreign interests?",
+  exp:"The Congo’s minerals, especially Katanga’s copper and cobalt, made it strategically and commercially valuable to the West. Kent’s point is that the economic problem was created largely by outside interests, not Africans. This explains why foreign companies and governments had a stake in shaping the crisis.",
   pts:["Britannica, 2024: private European and American corporations invested heavily after WWI",
        "Kent, 2010: “in economic terms the fundamental problem was not essentially of African making”",
        "Reserves of copper, diamond, gold, uranium; by 1960 ~60% of the Western world's cobalt supply",
@@ -114,6 +127,7 @@ add("II. Causes — Economic Interests", { id:"cg-resources", title:"Congo's min
        "Important uranium source for the US during WWII"] });
 add("II. Causes — Economic Interests", { id:"cg-colonial-economy", title:"Colonial economy and the masses' economic demands", when:"1906–1960",
   q:"How did the colonial economy generate the masses' demands for economic opportunity?",
+  exp:"The colonial economy was built for export and foreign profit through forced and indentured labour, with little investment in health, education or food production. Post-war reforms failed, leaving expatriates in charge at independence. These inequalities fed the later sense that independence had not delivered, which drove the Phase 2 rebellions.",
   pts:["Indentured labour on 4–7 year contracts (1922 Belgian law); roads, railways, electric stations, public buildings built with forced labour",
        "Economy primed for export and Belgian profit; cash crops prioritised over food; benefits went to foreign shareholders and the colonial state",
        "Health care/education largely left to Christian missions; state secured cheap/forced labour and restricted foreign traders to keep farmers on plantations/mines",
@@ -124,6 +138,7 @@ add("II. Causes — Economic Interests", { id:"cg-colonial-economy", title:"Colo
 /* ── II. Causes: Ethnic & religious nationalisms ── */
 add("II. Causes — Ethnic & Religious Nationalisms", { id:"cg-bakongo", title:"Bakongo vs Upper River People (Leopoldville)", when:"1959–60",
   q:"How did Belgian rule and ABAKO's ethno-nationalism create Bakongo–Upper River tension?",
+  exp:"Belgian chiefdoms hardened local identities that nationalists then politicised. ABAKO’s Kongo revivalism, and friction with Lingala-speaking Upper River migrants, set ethnic regionalism against a single national identity. This rivalry underlies Kasavubu’s federalism and his clash with Lumumba.",
   pts:["Belgian chiefdoms under appointed traditional chiefs entrenched local identities, later politicised by nationalists",
        "ABAKO focused on the pre-colonial Kongo Kingdom and Kikongo language, aiming to reconstruct the Kongo polity — at one point advocating secession",
        "Lingala (used in colonial communications) persisted as dominant in Leopoldville, causing friction with Lingala-speaking Upper River migrants",
@@ -131,6 +146,7 @@ add("II. Causes — Ethnic & Religious Nationalisms", { id:"cg-bakongo", title:"
        "Kasavubu associated Lingala/Upper River people with colonial rule and blamed colonial conquest for fracturing the Kongo Kingdom's unity"] });
 add("II. Causes — Ethnic & Religious Nationalisms", { id:"cg-lulua-baluba", title:"Lulua vs Baluba (South Kasai)", when:"1930s–1960",
   q:"How did colonial policy create the Lulua–Baluba conflict?",
+  exp:"Colonial rule invented a division within one Tshiluba-speaking people, then favoured first the Baluba and later the Lulua, deepening hostility. Elections and the plan to move Baluba farmers turned rivalry into violence. This shows ethnic conflict as a colonial creation that directly fed the South Kasai secession.",
   clue:"Two Tshiluba-speaking Bantu peoples of the former Luba Empire were split by colonists into ‘ethnically different’ groups and favoured in turn.",
   pts:["Both Bantu, indigenous to south-central Congo; South Kasai was formerly part of the Luba Empire (federation with cultural uniformity)",
        "Colonial rule split the shared-language (Tshiluba) population; Baluba seen as intelligent/hardworking, Lulua as reactionary",
@@ -140,6 +156,7 @@ add("II. Causes — Ethnic & Religious Nationalisms", { id:"cg-lulua-baluba", ti
        "This violence set the context for MNC-K's Baluba homeland call and the South Kasai secession"] });
 add("II. Causes — Ethnic & Religious Nationalisms", { id:"cg-katanga-strangers", title:"“Native Katangese” vs “Strangers”", when:"1957–1960",
   q:"What was the “Native Katangese” vs “Strangers” tension in Katanga?",
+  exp:"UMHK’s recruitment of Kasai migrants made them a large share of Katanga’s population, provoking ‘native’ resentment that CONAKAT exploited. BALUBAKAT’s alliance with Lumumba shows Katanga itself was divided, undermining Tshombe’s claim that secession represented all Katangese.",
   pts:["CONAKAT (est. Oct 1958) addressed perceived ‘immigration’, calling for rights of ‘indigenous’ Katangese and ending immigration",
        "Its support base (Lunda, Batabwa, Tshowke, Bayeke) lived mainly in southern Katanga",
        "Lulua/Baluba migrants from Kasai, recruited by UMHK for mine labour, made up 38% of Katanga's population by 1960",
@@ -148,6 +165,7 @@ add("II. Causes — Ethnic & Religious Nationalisms", { id:"cg-katanga-strangers
 /* ── III. Key domestic actors ── */
 add("III. Key Domestic Actors", { id:"lumumba", title:"Patrice Lumumba", when:"1958–Jan 1961",
   q:"What role did Lumumba play in the Congo Crisis, and why did the West turn against him?",
+  exp:"Lumumba’s threat to call in the Soviets, after the UN and US refused his requests, made Washington see him as a communist risk. Rebuffed by Hammarskjöld and Herter, he turned to Moscow and used force in South Kasai, which led to his dismissal and murder. His fate shows how Cold War suspicion shaped domestic politics.",
   clue:"First PM, Jun–Sep 1960; his 17 Jul ultimatum threatened to call in the Soviet Union; murdered in Katanga.",
   pts:["First PM (Jun–Sep 1960); MNC leader from 1958; African nationalist and pan-Africanist",
        "17 Jul 1960 ultimatum: if UN could not remove Belgian troops, Congo “may be obligated to call upon the Soviet Union to intervene” — to Washington, symbol of communist influence",
@@ -157,6 +175,7 @@ add("III. Key Domestic Actors", { id:"lumumba", title:"Patrice Lumumba", when:"1
        "Ordered ANC offensive against South Kasai (Aug 1960); dismissed 5 Sep 1960; captured 1 Dec 1960; sent to Katanga and murdered 17 Jan 1961"] });
 add("III. Key Domestic Actors", { id:"cg-kasavubu", title:"Joseph Kasavubu", when:"1960–1965",
   q:"What role did President Kasavubu play throughout the crisis?",
+  exp:"Kasavubu, the federalist moderate, used presidential power at key moments: dismissing Lumumba, reshaping the constitution to sideline Adoula, and later dismissing Tshombe. Each move produced a deadlock that Mobutu exploited, so his actions repeatedly opened the way to military takeover.",
   pts:["First President (1960–65); ABAKO leader (Bakongo), federalist; Belgian-backed as a moderate alternative to Lumumba",
        "5 Sep 1960: said Lumumba had “plunged the nation into fratricidal war” and dismissed him (also dated 5 Oct in Lecture 9); told army to accept UN training; designated Iléo",
        "Constitutional deadlock (both claiming legitimacy) paved the way for Mobutu's coup (14 Sep 1960)",
@@ -165,6 +184,7 @@ add("III. Key Domestic Actors", { id:"cg-kasavubu", title:"Joseph Kasavubu", whe
        "Oct 1965: dismissed Tshombe, naming Evariste Kimba PM; parliament rejected Kimba, triggering Mobutu's second coup"] });
 add("III. Key Domestic Actors", { id:"cg-mobutu", title:"Joseph Mobutu", when:"1960–1965",
   q:"How did Mobutu shape the course and outcome of the Congo Crisis?",
+  exp:"Backed by Belgium and the CIA, Mobutu presented his coups as neutral while in practice favouring the anti-Lumumba side and expelling Soviet-bloc personnel. Handing Lumumba to his enemies and finally seizing power in 1965 show the army becoming the decisive domestic actor, ending the crisis through authoritarian rule rather than a settlement.",
   pts:["Army Chief of Staff; backed by Belgium and the CIA as a strong anti-communist in Francophone Africa",
        "14 Sep 1960 coup: “neutralised” Kasavubu and Lumumba, expelled Soviet/Czech/Communist bloc personnel, withdrew support for the Katanga offensive — in reality aligned with Kasavubu",
        "18 Sep 1960: agreed with UN to end fighting in South Kasai; ANC withdrew six days later",
@@ -173,6 +193,7 @@ add("III. Key Domestic Actors", { id:"cg-mobutu", title:"Joseph Mobutu", when:"1
        "24 Nov 1965: second, bloodless coup; forced Kasavubu to sign acceptance letters, cancelled elections, made himself president for five years under a “regime of exception”"] });
 add("III. Key Domestic Actors", { id:"cg-tshombe", title:"Moïse Tshombe", when:"1959–1965",
   q:"Trace Tshombe's role from Katangese secessionist to Congolese PM.",
+  exp:"Tshombe’s career shows how Western interests shaped Congolese leadership: he led the Belgian-backed secession, stalled the UN, and broke the Kitona promise, forcing military action. Yet he was later recalled as PM to fight the Simbas because he could bring mercenaries and Belgian aid — showing pragmatism outweighed his past.",
   pts:["Businessman/politician; CONAKAT leader from 1959; President of secessionist Katanga (1960–63); PM of the DRC (1964–65)",
        "11 Jul 1960: declared Katanga's secession, accusing the centre of communism and dictatorship",
        "Used stalling/non-cooperation with the UN from late 1961",
@@ -181,6 +202,7 @@ add("III. Key Domestic Actors", { id:"cg-tshombe", title:"Moïse Tshombe", when:
        "Dismissed Oct 1965; fled after Mobutu's second coup; tried for treason in absentia"] });
 add("III. Key Domestic Actors", { id:"cg-kalonji", title:"Albert Kalonji", when:"1959–1962",
   q:"What role did Albert Kalonji play?",
+  exp:"Kalonji’s ‘Autonomous State’ claimed self-rule within a federal Congo rather than full independence, distinguishing it from Katanga. His regime survived the ANC offensive, but his arrest and an internal coup ended it. The secession collapsed from within rather than through UN force.",
   pts:["Led MNC-K (Kasai/Baluba); 9 Aug 1960 declared South Kasai's “Autonomous State”, styling himself President (later “king” of the Baluba); Joseph Ngalula PM",
        "“Autonomous State” title chosen to signal a federally-governed region, not rejection of Congolese sovereignty (unlike Katanga)",
        "Fled to Katanga after the ANC's Aug 1960 offensive; his counter-offensive was halted by the ANC",
@@ -188,6 +210,7 @@ add("III. Key Domestic Actors", { id:"cg-kalonji", title:"Albert Kalonji", when:
        "Secession ended Oct 1962 after an internal coup led by Albert Kankolongo"] });
 add("III. Key Domestic Actors", { id:"cg-mulele", title:"Pierre Mulele", when:"1962–1965",
   q:"Who was Pierre Mulele and how did he organise the Kwilu rebellion?",
+  exp:"Mulele linked Lumumba’s legacy to Maoist ideas, recruiting disaffected youths and framing the Congo as exploited by foreigners and a rich elite. Belief in magical protection gave his fighters confidence. This shows how Phase 2 rebellions drew on social grievance and ideology rather than ethnic separatism.",
   pts:["Former Minister of Education under Lumumba; trained in Maoist China",
        "Led the Kwilu rebellion (“Second Independence”) from Aug 1963, escalated 16 Jan 1964",
        "1962: joined the National Committee of Liberation (headed by Gbenye) to “free the Congo of foreign oppression”",
@@ -196,6 +219,7 @@ add("III. Key Domestic Actors", { id:"cg-mulele", title:"Pierre Mulele", when:"1
        "Rebels believed in magical protection (bullets ‘turning to water’); suppressed by early 1965, Mulele fled into exile"] });
 add("III. Key Domestic Actors", { id:"cg-lumumbists", title:"Gizenga, Gbenye and Soumialot", when:"1961–1964",
   q:"What roles did the Lumumbist successors Gizenga, Gbenye and Soumialot play?",
+  exp:"After Lumumba’s death his followers set up rival governments and rebellions, gaining outside support and at one point controlling almost half the country. But they fought as separate, distrustful factions without a coherent strategy, and corruption weakened them. Disunity explains why rapid gains could not be held.",
   pts:["Gizenga declared the rival “Free Republic of the Congo” in Stanleyville (1961) with Soviet support, dissolved it to join Lovanium talks, then arrested/imprisoned",
        "3 Oct 1963: Gbenye and Soumialot founded the CNL in Brazzaville, backed by pro-Lumumba leaders and warlords in Orientale/Kivu",
        "Soumialot (with Burundi's support) invaded South Kivu, took Uvira (15 May 1964) and Fizi; Albertville fell to pro-Simba forces (Jason Sendwe captured)",
@@ -206,6 +230,7 @@ add("III. Key Domestic Actors", { id:"cg-lumumbists", title:"Gizenga, Gbenye and
 /* ── IV. Master timeline ── */
 add("IV. Master Timeline", { id:"cg-tl-1959-60", title:"Timeline: road to independence", when:"Jan 1959–Jun 1960",
   q:"Give the key dates from the Leopoldville riots to independence.",
+  exp:"The sequence shows how quickly events moved: riots forced a pledge of independence, the Round Table fixed a date only months away, and elections produced a Lumumba–Kasavubu pairing. With so little time, the new state began with untested leaders and no settled institutions.",
   pts:["4–7 Jan 1959: major riots in Leopoldville after a political demonstration turned violent",
        "13 Jan 1959: Belgium proclaims independence as the objective of colonial policy",
        "Jan–Feb 1960: Round Table Conference, Brussels — 16 resolutions; independence set for 30 Jun 1960",
@@ -214,6 +239,7 @@ add("IV. Master Timeline", { id:"cg-tl-1959-60", title:"Timeline: road to indepe
        "30 Jun 1960: Congo formally independent"] });
 add("IV. Master Timeline", { id:"cg-tl-1960", title:"Timeline: the crisis of 1960", when:"Jul–Dec 1960",
   q:"Give the key dates of the crisis from the mutiny to Lumumba's capture.",
+  exp:"Within weeks of independence, the mutiny led to Belgian intervention, Katanga’s secession and the UN’s arrival. Lumumba’s turn to Moscow and the Bakwanga killings then triggered his dismissal and Mobutu’s coup. The timeline shows each crisis feeding the next, as the exam focus stresses.",
   pts:["5 Jul 1960: Force Publique mutiny at Thysville against Belgian officers, spreads nationwide",
        "9–10 Jul: Belgian troops intervene unilaterally, without Congolese permission; 11 Jul: Katanga secedes",
        "12–14 Jul: Congo appeals to UN; UNSC Res. 143 authorises ONUC, calls for Belgian withdrawal; 16 Jul: ONUC enters the Congo",
@@ -222,6 +248,7 @@ add("IV. Master Timeline", { id:"cg-tl-1960", title:"Timeline: the crisis of 196
        "1 Dec 1960: Lumumba (having escaped house arrest) captured by Mobutu's forces"] });
 add("IV. Master Timeline", { id:"cg-tl-1961-63", title:"Timeline: 1961 to the end of Katanga", when:"Jan 1961–Oct 1963",
   q:"Give the key dates from Lumumba's murder to the end of the Katanga secession.",
+  exp:"Lumumba’s murder pushed the UN toward authorising force, and Hammarskjöld’s death brought in the more forceful U Thant. South Kasai’s secession ended through internal collapse, while Katanga needed Grandslam. The period shows UN management becoming more decisive over time.",
   pts:["17 Jan 1961: Lumumba murdered in Katanga; 21 Feb 1961: UNSC Res. 161 permits force as last resort",
        "Feb–Aug 1961: College of Commissioners dissolved; provisional government under Iléo; Adoula named PM (2 Aug 1961)",
        "17 Sep 1961: Hammarskjöld dies near Ndola; 24 Nov 1961: UNSC Res. 169; 2 Dec 1961: Kalonji taken into ANC custody",
@@ -230,6 +257,7 @@ add("IV. Master Timeline", { id:"cg-tl-1961-63", title:"Timeline: 1961 to the en
        "24 Dec 1962: mercenaries attack UN peacekeepers; 28 Dec: Operation Grandslam; Jan 1963: Katanga secession ends, Tshombe flees; Oct 1963: martial law"] });
 add("IV. Master Timeline", { id:"cg-tl-1963-65", title:"Timeline: rebellions and Mobutu's takeover", when:"Oct 1963–Dec 1965",
   q:"Give the key dates from the founding of the CNL to Mobutu's second coup.",
+  exp:"Phase 2 shows instability returning as rebellions spread just as ONUC withdrew. Tshombe’s recall, Western intervention and the Dragon Rouge rescue contained the rebels, but the political quarrel after the 1965 elections let Mobutu seize power. Conflict ended through a coup rather than a settlement.",
   pts:["3 Oct 1963: CNL founded in Brazzaville; Aug 1963–Jan 1964: Kwilu rebellion begins, escalates 16 Jan 1964",
        "Jan–Apr 1964: ONUC rescues over 100 missionaries from Kwilu; 30 Jun 1964: ONUC completes withdrawal",
        "May–Sep 1964: Simba rebellion peaks (~half the country, 7 of 21 capitals); 22 Jul: Kindu captured; 30 Jul: Tshombe replaces Adoula",
@@ -240,6 +268,7 @@ add("IV. Master Timeline", { id:"cg-tl-1963-65", title:"Timeline: rebellions and
 /* ── V. Phase 1: Fragmentation ── */
 add("V. Phase 1 — Fragmentation", { id:"katanga", title:"Secession of Katanga", when:"Jul 1960–Jan 1963",
   q:"How did the Katanga secession develop, and how was it ended?",
+  exp:"Katanga’s wealth and quiet European backing let it resist the centre and hire mercenaries. The UN’s mandate grew from non-interference to force as a last resort, then to the requisite measure of force. Tshombe’s broken Kitona pledge showed negotiation alone would fail, so Grandslam ended the secession — evidence of increasingly decisive UN management.",
   clue:"The richest province broke away on 11 Jul 1960 under a CONAKAT leader, backed in practice by Belgium, France and Britain, until a UN offensive in Dec 1962.",
   pts:["Declared 11 Jul 1960 by Tshombe; richest province: 40–50% of Congo's revenue/foreign trade, 1/3 of domestic production",
        "Belgium, France and Britain supported it in practice though not in name; European soldiers became hired mercenaries despite UN rules",
@@ -249,6 +278,7 @@ add("V. Phase 1 — Fragmentation", { id:"katanga", title:"Secession of Katanga"
        "21 Dec 1961 Kitona Declaration (after Unokat) not implemented; Grandslam (28 Dec 1962) — Tshombe surrendered Jan 1963"] });
 add("V. Phase 1 — Fragmentation", { id:"southkasai", title:"Secession of South Kasai", when:"Aug 1960–Oct 1962",
   q:"How did the South Kasai secession differ from Katanga, and how did it develop?",
+  exp:"South Kasai claimed autonomy rather than full independence and rested on Baluba grievance and Forminière’s backing. Lumumba wanted it back for its railways and minerals, but Hammarskjöld’s neutrality forced him to act alone. Its eventual collapse through an internal coup contrasts with the force needed in Katanga.",
   clue:"A Baluba “Autonomous State” declared 9 Aug 1960, backed by the diamond firm Forminière, ended by an internal coup in Oct 1962.",
   pts:["Declared 9 Aug 1960 by Kalonji as the “Autonomous State of South Kasai”, a Baluba-dominated state backed by Forminière (diamonds)",
        "Did not explicitly reject Congolese sovereignty — resembled self-declared local governments (e.g. Équateur Province)",
@@ -258,6 +288,7 @@ add("V. Phase 1 — Fragmentation", { id:"southkasai", title:"Secession of South
        "Ended Oct 1962 after Kankolongo's internal coup, with central troops suppressing Kalonjist loyalists"] });
 add("V. Phase 1 — Fragmentation", { id:"cg-bakwanga", title:"Bakwanga massacres", when:"23–26 Aug 1960",
   q:"What happened at Bakwanga and why was it a turning point?",
+  exp:"Lumumba’s offensive, launched because the UN would not help, led to massacres that Hammarskjöld called incipient genocide. This gave Kasavubu grounds to dismiss Lumumba, starting the deadlock that Mobutu resolved by coup. Use it to show how a secession crisis became a national political crisis.",
   clue:"ANC troops advanced against minimal resistance into a seceded Baluba region and killed ~3,000 civilians — called “a case of incipient genocide”.",
   pts:["23–26 Aug 1960: ANC advanced into South Kasai facing minimal resistance and seized Bakwanga",
        "Both sides committed atrocities; ANC massacres killed ~3,000 civilians",
@@ -265,6 +296,7 @@ add("V. Phase 1 — Fragmentation", { id:"cg-bakwanga", title:"Bakwanga massacre
        "Directly precipitated Kasavubu's dismissal of Lumumba (5 Sep 1960) and the deadlock enabling Mobutu's coup"] });
 add("V. Phase 1 — Fragmentation", { id:"cg-deadlock", title:"Constitutional deadlock and the four-way split", when:"Sep 1960–1962",
   q:"How did political in-fighting divide the Congo after Sep 1960?",
+  exp:"When president and prime minister each claimed legality, Mobutu stepped in, effectively siding with Kasavubu. The country split four ways, with the UN recognising the Leopoldville government and some states backing Gizenga. Attempts at reconciliation through Lovanium and Adoula’s coalition were short-lived, showing the depth of division.",
   pts:["Kasavubu dismissed Lumumba (5 Sep 1960); Lumumba declared Kasavubu “no longer chief of state”; both claimed to be the legal government",
        "Mobutu's coup (14 Sep 1960) resolved the impasse by “neutralising” both, in practice aligning with Kasavubu",
        "Four sections: moderate government (Leopoldville, western third); autonomous Katanga; autonomous Kasai; eastern third at Stanleyville under Gizenga",
@@ -273,6 +305,7 @@ add("V. Phase 1 — Fragmentation", { id:"cg-deadlock", title:"Constitutional de
        "Adoula's government (Aug 1961) briefly reconciled factions with Gizenga as deputy PM — Gizenga expelled by 1962"] });
 add("V. Phase 1 — Fragmentation", { id:"cg-exam-phase1", title:"Exam focus: arguing effectiveness in Phase 1", when:"1960–1963",
   q:"How should you argue the effectiveness of conflict management in Phase 1?",
+  exp:"The key contrast is between Hammarskjöld’s strict neutrality and U Thant’s willingness to use force, which shows UN management becoming more decisive. Linking Bakwanga to Lumumba’s fall and Mobutu’s coup shows that the causes and phases were connected — a stronger essay approach than treating events separately.",
   pts:["Contrast Hammarskjöld's strict neutrality (initially refusing to help end secessions, citing Congolese sovereignty) with U Thant's forceful stance from 1961–62 (Grandslam)",
        "Shows how UN conflict management evolved and became more decisive over time",
        "Use the Bakwanga massacres as a causal link between the South Kasai secession and the wider crisis (Lumumba's dismissal, Mobutu's coup)",
@@ -281,6 +314,7 @@ add("V. Phase 1 — Fragmentation", { id:"cg-exam-phase1", title:"Exam focus: ar
 /* ── VI. Phase 2: Insurrection ── */
 add("VI. Phase 2 — Insurrection", { id:"cg-kwilu-causes", title:"Kwilu rebellion: causes (“Second Independence”)", when:"1963–1964",
   q:"Why did the Kwilu rebellion break out after the secessions were quelled?",
+  exp:"Ending the secessions did not fix the underlying problem: independence had benefited a few who took Belgian roles while many, especially young men, faced falling money, crowded schools and unemployment. Feeling worse off than before, they saw rebellion as a ‘Second Independence’ — linking the colonial economy’s legacy to Phase 2.",
   pts:["Stability remained elusive after 1963: socio-economic discontent and mounting opposition",
        "Called the “Second Independence” — a revolutionary attempt to correct injustices felt after 1960",
        "Social stratification: sharp differential between those who moved into former Belgian roles and those who could not",
@@ -288,12 +322,14 @@ add("VI. Phase 2 — Insurrection", { id:"cg-kwilu-causes", title:"Kwilu rebelli
        "By late 1963: Congolese franc plummeted, schools overcrowded, high unemployment in Kwilu — many felt worse off than before independence"] });
 add("VI. Phase 2 — Insurrection", { id:"cg-mulele-doctrine", title:"Mulele's organisation and doctrine", when:"1962–1964",
   q:"How did Mulele organise the Kwilu rebels and what did his doctrine teach?",
+  exp:"Mulele’s teaching turned economic grievance into class conflict, blaming a self-serving government and foreign control of wealth. Training and indoctrinating youths, plus coercing villages, built a movement. This shows Phase 2 driven by social and ideological discontent rather than the ethnic and provincial causes of Phase 1.",
   pts:["Recruited/trained young men in Gungu and Idiofa from 1963, aided by ANC deserters; rebels sent to villages to indoctrinate, intimidate and coerce",
        "Congo's laws should protect all; the government was poor and self-serving, treating people as “slaves”",
        "Society split into capitalists profiting from others' work vs workers/peasants (the “popular masses”); all wealth foreign-controlled",
        "Villagers must fight government, soldiers and police to build a new regime where all must work to eat"] });
 add("VI. Phase 2 — Insurrection", { id:"cg-kwilu-course", title:"Kwilu rebellion: course and repression", when:"Aug 1963–Dec 1965",
   q:"How did the Kwilu rebellion unfold and how was it suppressed?",
+  exp:"The rebellion grew from small attacks to executions and the capture of towns, but government, mercenary and Belgian forces crushed it with brutal scorched-earth tactics. Rebel corruption and ethnic favouritism also cost them support. The outcome came through force on both sides, not any peace process.",
   clue:"Began on a limited scale in Aug 1963 and escalated in Idiofa/Gungu on 16 Jan 1964; crushed with scorched-earth tactics including the ‘National Butchery of Kikwit’.",
   pts:["Began Aug 1963 (limited), escalated 16 Jan 1964; Molotov cocktail at a professor's home, two policemen killed, attack on a Portuguese palm-oil refinery",
        "23 Jan 1964: attack on a Christian mission killed three pastors; 5 Feb: ANC chief of staff ambushed and killed",
@@ -302,12 +338,14 @@ add("VI. Phase 2 — Insurrection", { id:"cg-kwilu-course", title:"Kwilu rebelli
        "Rebel corruption, inefficiency and ethnic favouritism seen as a return to tribalism; by early 1965 most areas retaken, Mulele fled into exile and later died"] });
 add("VI. Phase 2 — Insurrection", { id:"cg-kwilu-onuc", title:"ONUC and the Kwilu rebellion", when:"Jan–Apr 1964",
   q:"What role did ONUC play during the Kwilu rebellion?",
+  exp:"By the time Kwilu erupted, ONUC was shrinking and its troops were mostly elsewhere, so it could only rescue missionaries. Beyond that it had no part in suppressing the revolt. This shows the UN’s declining relevance in Phase 2, when other actors took over.",
   pts:["ONUC already withdrawing, with only ~5,500 personnel, mostly in the east and later stranded by the Simba rebellion",
        "Late Jan 1964: Chief of Staff Jacques Dextraze sent a small force to retrieve fleeing Western missionaries, engaging rebels before helicopter evacuations",
        "Rescue operations (Mar–Apr 1964) recovered over 100 missionaries",
        "Apart from this, ONUC played no other role in suppressing the rebellion"] });
 add("VI. Phase 2 — Insurrection", { id:"simba", title:"Simba rebellion", when:"1963–Dec 1964",
   q:"What were the origins and course of the Simba rebellion, and why did it fail to hold its gains?",
+  exp:"The Simbas grew out of Lumumbist anger at his murder and Kasavubu and Mobutu’s rise, and with outside help seized almost half the country as the ANC collapsed. Yet separate, distrustful factions without a political plan could not govern what they took. Military momentum without political strategy explains their failure.",
   clue:"The Orientale revolt led by Lumumbist successors through the CNL, which at its Sep 1964 peak held almost half the country.",
   pts:["Also called the Orientale revolt; led by Gizenga, Gbenye and Soumialot; traceable to Lumumba's assassination and Kasavubu/Mobutu's ascendancy",
        "CNL (3 Oct 1963, Brazzaville) backed by pro-Lumumba leaders and warlords in Orientale and Kivu",
@@ -317,6 +355,7 @@ add("VI. Phase 2 — Insurrection", { id:"simba", title:"Simba rebellion", when:
        "Militancy let the CNL seize territory, but no coherent political strategy to fill the void meant it could not hold gains"] });
 add("VI. Phase 2 — Insurrection", { id:"cg-simba-external", title:"External involvement in the Simba rebellion", when:"1964",
   q:"How did external powers intervene for and against the Simba rebels?",
+  exp:"Communist support for the rebels was weak or uneven, while the West acted decisively, using intelligence allies, pressing for Tshombe’s return and backing mercenaries and Belgian aid. Western intervention shaped the outcome but caused resentment in Africa, showing how external actors replaced the UN in Phase 2.",
   pts:["USSR promised to replace rebel weaponry (rarely followed through) and encouraged neighbouring nationalist regimes to aid rebels",
        "China (amid the Sino-Soviet split) gave stronger diplomatic/material support; Zhou Enlai visited Congolese rebels in Burundi (early 1964); Liu Shaoqi pledged support",
        "CIA allied with the Sudanese Anyanya, who helped locate and destroy Simba camps/supply routes",
@@ -324,6 +363,7 @@ add("VI. Phase 2 — Insurrection", { id:"cg-simba-external", title:"External in
        "Tshombe circumvented Kasavubu and Mobutu, recruited white mercenaries, brought back the Katangese Gendarmerie; Belgian aid rose — causing displeasure in Congo and Africa"] });
 add("VI. Phase 2 — Insurrection", { id:"cg-dragon-rouge", title:"Stanleyville hostages and Operation Dragon Rouge", when:"Aug–Nov 1964",
   q:"What was Operation Dragon Rouge and what were its political consequences?",
+  exp:"The rebels’ seizure of Western hostages brought direct US–Belgian intervention. The rescue worked militarily but made Tshombe look ineffectual, weakening him politically and contributing to his dismissal and Mobutu’s coup. A military success thus had destabilising political consequences.",
   clue:"A joint US–Belgian airborne rescue of Western hostages held in a fallen eastern city in late Nov 1964.",
   pts:["Stanleyville fell to rebels on 4 Aug 1964",
        "28 Oct 1964: rebel Army commander placed Westerners (including Americans) under house arrest; hostages also seized in other cities",
@@ -334,6 +374,7 @@ add("VI. Phase 2 — Insurrection", { id:"cg-dragon-rouge", title:"Stanleyville 
 /* ── VII. Role of actors — Phase 1 ── */
 add("VII. Role of Actors — Phase 1", { id:"cg-us-eisenhower", title:"USA under Eisenhower", when:"1960–Jan 1961",
   q:"How did the Eisenhower administration intervene in the Congo?",
+  exp:"Devlin’s reports convinced the Eisenhower administration that Lumumba was opening the door to communism, so it backed the UN publicly while covertly working to remove him, even planning assassination. Funding and propaganda after Mobutu’s coup show the US shaping Congolese politics directly — key evidence of Cold War intervention.",
   pts:["Supported the UN effort but feared Soviet intervention; CIA Station Chief Lawrence Devlin called it a “classic Communist takeover”, convincing officials Lumumba must go",
        "Aug 1960: covert political programme (~7 years) to eliminate Lumumba and install a moderate pro-Western leader, with advice and subsidies",
        "Aug 1960 NSC meeting: plans to assassinate Lumumba developed under Eisenhower's authorisation",
@@ -341,24 +382,28 @@ add("VII. Role of Actors — Phase 1", { id:"cg-us-eisenhower", title:"USA under
        "After Mobutu's coup: covert funds, anti-Communist demonstrations, propaganda"] });
 add("VII. Role of Actors — Phase 1", { id:"cg-us-kennedy", title:"USA under Kennedy", when:"1961–1963",
   q:"How did Kennedy's Congo policy differ from Eisenhower's?",
+  exp:"Lumumba’s murder damaged the West’s image, so Kennedy distanced the US from Belgium and backed Adoula. Fearing that Katanga’s secession would weaken Adoula and invite Soviet influence, the US broke with its European allies to support UN force. The shift shows US policy still driven by anti-communism, but now through the UN.",
   pts:["Lumumba's assassination damaged the West's image; Kennedy distanced the US from Belgian “recolonisation”, backing self-determination and reopening parliament",
        "Backed Cyrille Adoula (anti-communist, CIA-linked; CIA funded his candidacy); Adoula PM Aug 1961 with Gizenga deputy PM",
        "Feared Tshombe would discredit Adoula and let leftists seek Soviet aid, making Congo a revolutionary base threatening Rhodesia and South Africa",
        "Broke with European powers to support Res. 169, endorsing decisive UN action vs Katanga; provided planes, trucks and weapons"] });
 add("VII. Role of Actors — Phase 1", { id:"cg-ussr-p1", title:"USSR in Phase 1", when:"1960–1961",
   q:"What role did the USSR play in Phase 1, and did it actively seek a Congo ally?",
+  exp:"Soviet aid was limited and mostly within the UN framework, and the notes suggest Moscow responded to Lumumba’s requests after the US refused rather than seeking an ally. This nuances the Cold War picture: the USSR wanted to appear as the Third World’s defender but was cautious in practice.",
   pts:["Limited technical aid within the UN operation, citing the need to counter imperialist “organising hunger”",
        "Supplied aircraft lift capacity, ~100 trucks/spare parts/instructors, doctors and medical supplies",
        "Enlisted East Germany to send economic/trade/legal advisors, as with Egypt earlier",
        "Aid to Lumumba arguably followed US rejection of his requests; served Soviet image as Third World defender, but USSR did not actively seek a Congo ally"] });
 add("VII. Role of Actors — Phase 1", { id:"cg-belgium-p1", title:"Belgium in Phase 1", when:"1960–1962",
   q:"How did Belgium and Belgian business support the secessions?",
+  exp:"Belgian firms built and financed Katanga’s state, giving the secession the means to survive. Belgium justified this as anti-communism, echoing Tshombe’s attacks on Lumumba. It shows economic interest driving intervention under a Cold War label, with South Kasai supported in the same way on a smaller scale.",
   pts:["Société Générale and UMHK pushed Brussels to back Katanga; UMHK supplied 80% of Katanga's revenues; UMHK-linked colonists backed CONAKAT",
        "UMHK organised the Katangan state, represented it in Brussels, engaged René Clemens to draft its constitution, set up its bank, helped issue its currency",
        "Brussels framed it in Cold War terms: Tshombe as Western bulwark; Tshombe accused the centre of “communistic intentions”, likening Lumumba to East European dictatorship-builders",
        "South Kasai drew lesser Belgian/Western support; Forminière received mining concessions in exchange for financial support"] });
 add("VII. Role of Actors — Phase 1", { id:"cg-un-mandate", title:"UNSC resolutions and ONUC's three objectives", when:"1960–1961",
   q:"What were ONUC's three broad objectives, and how did the UNSC resolutions evolve?",
+  exp:"The resolutions moved from asking Belgium to withdraw to authorising force as a last resort and finally the requisite measure of force against mercenaries. Each step responded to the failure of the previous one. This escalating mandate is evidence of the UN adapting, though only gradually and after setbacks.",
   pts:["Five UNSC resolutions governed ONUC, elaborating the initial mandate",
        "(1) Withdrawal of Belgian military personnel: Res. 143, 145, 146, 161",
        "(2) Withdrawal of foreign military personnel/mercenaries: Res. 161, 169",
@@ -366,6 +411,7 @@ add("VII. Role of Actors — Phase 1", { id:"cg-un-mandate", title:"UNSC resolut
        "Increasing intensity: from calling for withdrawal to force as a last resort (161) to the “requisite measure of force” to detain/deport mercenaries (169)"] });
 add("VII. Role of Actors — Phase 1", { id:"cg-sg-p1", title:"Hammarskjöld and U Thant in Phase 1", when:"1960–1963",
   q:"Compare the roles of Hammarskjöld and U Thant in Phase 1.",
+  exp:"Hammarskjöld relied on diplomacy and neutrality, which secured UN entry and Belgian withdrawal from Katanga but could not bridge Cold War divisions or Tshombe’s stalling. U Thant, given a stronger mandate, combined a reconciliation plan with preparation for force and ordered Grandslam. Their contrast shows how UN management became more forceful.",
   pts:["Hammarskjöld invoked Article 99 for the first time in UN history; made 4 trips to the Congo",
        "Achieved peaceful UN entry into Katanga (Aug 1960) by bringing two Swedish battalion companies to talks with Tshombe, for a non-interference pledge; Belgian troops out by early Sep",
        "Failed to find common ground, partly due to Cold War interests and Tshombe's stalling; died 17 Sep 1961 near Ndola en route to ceasefire talks",
@@ -375,6 +421,7 @@ add("VII. Role of Actors — Phase 1", { id:"cg-sg-p1", title:"Hammarskjöld and
 /* ── VII. Role of actors — Phase 2 ── */
 add("VII. Role of Actors — Phase 2", { id:"cg-domestic-p2", title:"Domestic actors in Phase 2", when:"1963–1965",
   q:"What roles did Mulele, the ANC, Kasavubu and Tshombe play in Phase 2?",
+  exp:"Rebels and the ANC fought on the ground, while Kasavubu used the constitutional commission to strengthen the presidency and sideline Adoula. Tshombe tried gestures of reconciliation but relied on mercenaries because the ANC was not ready. Domestic power struggles continued even as the country fought rebellion.",
   pts:["Mulele: staged rebellions in Kwilu and Orientale, causing mass violence and instability; ANC: counter-insurgency to quell revolts",
        "Kasavubu competed with Adoula; sent parliament on a ‘holiday’ and a commission released (Jun 1964) a new constitution",
        "It cut national parliament's powers, ratified 21 provinces, increased provincial powers, let the president dissolve government and appoint a caretaker — weakening the PM, sidelining Adoula",
@@ -382,6 +429,7 @@ add("VII. Role of Actors — Phase 2", { id:"cg-domestic-p2", title:"Domestic ac
        "Tshombe lifted Kivu's state of emergency, called on Lumumbists to end rebellion, brought in Angola-based mercenaries as the ANC could not be retrained in time"] });
 add("VII. Role of Actors — Phase 2", { id:"cg-us-johnson", title:"USA under Johnson", when:"1964–1965",
   q:"Why and how did the Johnson administration intervene more forcefully in Phase 2?",
+  exp:"With ONUC leaving and the rebels leaning to the Eastern bloc, Johnson feared a pro-Moscow regime. Because US and European interests now aligned, the US acted directly with aircraft, pilots and diplomacy. This contrasts with the cautious Katanga era and shows great-power action replacing the UN in Phase 2.",
   pts:["Feared a radical, Moscow-aligned government once the UN left — reinforced by Mulele/Simba ideology and Eastern-bloc support",
        "Unlike Katanga era (keeping Western allies onside), US and European interests converged; little hesitation in using force",
        "24 Apr 1964: authorised 6 T-28s, 10 C-47s, 6 H-21s plus 6 months of parts/ammunition for the Congolese Air Force",
@@ -389,6 +437,7 @@ add("VII. Role of Actors — Phase 2", { id:"cg-us-johnson", title:"USA under Jo
        "Dragon Rouge rescued hostages but damaged Tshombe; Mobutu's coup (25 Nov 1965) removed both President and PM"] });
 add("VII. Role of Actors — Phase 2", { id:"cg-communist-p2", title:"USSR, China and the Eastern Bloc in Phase 2", when:"1964–1965",
   q:"How did the communist powers respond to the Kwilu and Simba rebellions?",
+  exp:"Communist support prolonged the fighting but was weaker than Western involvement and divided by the Sino-Soviet split. China gave real aid while the USSR, doubting the rebels, gave little, and Cuban help foundered on disagreements. This explains why the rebels lacked sustained outside backing.",
   pts:["Communist support prolonged the conflict, though far less than Western involvement",
        "Sino-Soviet split: China backed the rebellions in an Afro-Asian solidarity campaign; Mao accused the Soviets of ‘great power chauvinism’; China gave arms, ammunition, training",
        "Soviets criticised China but gave only token aid (small arms, boats), seeing the rebellions as lacking leadership and “extraordinarily problematic”",
@@ -396,11 +445,13 @@ add("VII. Role of Actors — Phase 2", { id:"cg-communist-p2", title:"USSR, Chin
        "East Germany: tanks, grenades, ammunition, communications worth 3 million deutsche marks; Cubans under Che Guevara trained Simbas but clashed with leaders over strategy/discipline"] });
 add("VII. Role of Actors — Phase 2", { id:"cg-belgium-p2", title:"Belgium in Phase 2", when:"1964–1965",
   q:"What role did Belgium play in Phase 2?",
+  exp:"Belgian business wanted Tshombe back because he protected their interests, and once he returned Belgian advisers and military aid became central to the army. This continuity from Katanga to Phase 2 shows Belgian economic interests remained a driving force throughout the crisis.",
   pts:["Strongly supported Tshombe's 1964 return; UMHK and Belgian business wanted him back",
        "Advisors: René Clemens (top European advisor) and Michael Strulens (UMHK-linked, special representative to the US)",
        "Belgian military assistance programme became “the backbone of the ANC” after Tshombe's return"] });
 add("VII. Role of Actors — Phase 2", { id:"cg-un-p2", title:"The UN in Phase 2: withdrawal and criticism", when:"1960–1964",
   q:"How did the UN wind down in the Congo, and what criticism did it face?",
+  exp:"ONUC withdrew as the rebellions spread, leaving only civilian experts. The UN also faced fierce criticism over Lumumba’s death and Katanga, including Khrushchev’s troika proposal, which was rejected. These attacks show how contested UN neutrality was, limiting its authority to manage the conflict.",
   pts:["ONUC planned withdrawal in early 1964; Dextraze's small rescue operation during Kwilu (Jan 1964)",
        "Withdrawal began May 1964 (Irish unit in Kolwezi, 11 May), completed 30 Jun 1964 when the last peacekeepers (85 Nigerian, 58 Canadian) left N'djili Airport",
        "Civilian staff of 2,000 experts remained through 1963–64",
@@ -410,6 +461,7 @@ add("VII. Role of Actors — Phase 2", { id:"cg-un-p2", title:"The UN in Phase 2
 /* ── VIII. Effectiveness: Secretaries-General ── */
 add("VIII. Effectiveness — Secretaries-General", { id:"cg-hammarskjold", title:"Dag Hammarskjöld's mediation", when:"1960–1961",
   q:"How effective was Hammarskjöld's mediation in the Congo?",
+  exp:"Hammarskjöld created and led an unprecedented operation, achieved Belgian withdrawal through diplomacy, and defended the Secretariat’s independence against Soviet pressure. But his refusal to back Lumumba’s elected government drew criticism from non-aligned and communist states. He laid foundations for UN peacekeeping while his neutrality became a political target.",
   pts:["First invocation of Article 99 after the Congolese request for “urgent dispatch” of military aid — led to Res. 143 and ONUC",
        "4 trips to the Congo; secured Katanga's peaceful acceptance of UN troops (Aug 1960), leading to full Belgian withdrawal by early Sep",
        "Commanded a force of nearly 20,000 — until the 1990s the largest in UN history",
@@ -418,6 +470,7 @@ add("VIII. Effectiveness — Secretaries-General", { id:"cg-hammarskjold", title
        "Achievements: formulated peacekeeping, laid groundwork for later UN peacekeeping. Limits: refusal to support Lumumba's elected government criticised by non-aligned/communist states; USSR demanded a capitalist–socialist–new-state ‘troika’"] });
 add("VIII. Effectiveness — Secretaries-General", { id:"cg-uthant", title:"U Thant's mediation", when:"1961–1963",
   q:"How effective was U Thant's handling of the Congo?",
+  exp:"U Thant’s readiness to use force made Grandslam decisive in ending the Katanga secession. However, his reconciliation plan and the Greene Plan were seen as following US wishes, weakening claims of neutrality. His record shows effectiveness gained at the cost of perceived impartiality.",
   pts:["Appointed six weeks after Hammarskjöld's death; also mediated the 1962 Cuban Missile Crisis",
        "Devout Buddhist but not a pacifist: ordered Grandslam (Dec 1962) after a four-day Katangese attack on ONUC, for “complete freedom of movement for ONUC all over Katanga”",
        "Decisive: Elisabethville under full UN control by Jan 1963",
@@ -427,6 +480,7 @@ add("VIII. Effectiveness — Secretaries-General", { id:"cg-uthant", title:"U Th
 /* ── VIII. Effectiveness: ONUC ── */
 add("VIII. Effectiveness — ONUC", { id:"onuc", title:"ONUC: scale, consent and impartiality", when:"1960–1964",
   q:"What made ONUC unprecedented, and why was impartiality so contested?",
+  exp:"ONUC was created at the Congolese government’s request, but that government soon collapsed, leaving no clear authority to consent to its presence. With rival factions all claiming legitimacy, almost any action could look partisan. This explains why impartiality became the central problem of UN peacekeeping in the Congo.",
   clue:"The UN's largest peacekeeping operation to that point, with up to 19,000 troops, created on the Congolese government's own request in Jul 1960.",
   pts:["Largest UN peacekeeping operation to that point: civilian advisers plus up to 19,000 troops (1960–64)",
        "Originated in the Congolese government's request, but that government collapsed two months later",
@@ -434,12 +488,14 @@ add("VIII. Effectiveness — ONUC", { id:"onuc", title:"ONUC: scale, consent and
        "Impartiality contested: amid rival factions and Katanga's defiance, almost any action (even facilitating reconciliation) could seem to favour one side"] });
 add("VIII. Effectiveness — ONUC", { id:"cg-rumpunch-morthor", title:"Operations Rum Punch and Morthor", when:"Aug–Sep 1961",
   q:"What were Operations Rum Punch and Morthor, and what did they achieve?",
+  exp:"Rum Punch showed the UN could remove mercenaries peacefully under Res. 161, but Morthor met prepared resistance and lacked full Western backing. Soviet claims that ONUC acted as a US proxy reveal how force made the UN look partisan, showing the tension between effectiveness and neutrality.",
   pts:["Rum Punch (28 Aug 1961): surprise action under Brig.-Gen. K.A.S. Raja; peaceful surrender of 81 foreign mercenaries",
        "Followed Res. 161 — force as last resort to prevent civil war, but not authorised purely to remove foreign personnel",
        "Morthor (13 Sep 1961): an Indian brigade swiftly took Katanga in an 8-day engagement; prepared mercenaries counterattacked",
        "Morthor executed without full UK, France and US approval; USSR saw ONUC as a US proxy (accusing the US of backing Lumumba's assassination and installing Mobutu)"] });
 add("VIII. Effectiveness — ONUC", { id:"cg-unokat-grandslam", title:"Operations Unokat and Grandslam", when:"Dec 1961–Jan 1963",
   q:"How did Operations Unokat and Grandslam bring the Katanga secession to an end?",
+  exp:"Unokat pushed Tshombe to sign the Kitona Declaration, but his failure to implement it showed agreements needed backing. Grandslam, launched after renewed attacks, forced a formal surrender. The UN then wound down its troops while keeping large civilian aid, showing force achieved what diplomacy alone could not.",
   clue:"A Dec 1961 operation forced the Kitona Declaration; a Dec 1962 retaliatory offensive ended in a formal surrender at Élisabethville on 17 Jan 1963.",
   pts:["Unokat (5 Dec 1961): pressured Tshombe to negotiate with Adoula; captured Camp Massart Gendarmerie stronghold (16 Dec)",
        "Followed Hammarskjöld's death and U Thant's call for a more robust approach; led to the 21 Dec Kitona Declaration — not implemented",
@@ -448,18 +504,21 @@ add("VIII. Effectiveness — ONUC", { id:"cg-unokat-grandslam", title:"Operation
        "Feb 1963 phase-out began (aim: end-1963); extended 6 months at Congo's request; full withdrawal 30 Jun 1964; civilian aid the UN's largest programme (~2,000 experts, 1963–64)"] });
 add("VIII. Effectiveness — ONUC", { id:"cg-onuc-phase1", title:"ONUC Phase I: Deployment to restore order", when:"Jul 1960–Feb 1961",
   q:"What did ONUC do in its first phase (deployment to restore order)?",
+  exp:"Massive US airlift capacity let the UN deploy rapidly across a huge country, but troops mainly policed and disarmed mutineers. Because the mandate forbade interfering in internal politics, Hammarskjöld refused to subdue Katanga, which led Lumumba to try to end the secessions on his own.",
   pts:["Principal function: restore order in a country fallen into widespread lawlessness",
        "US Military Air Transport Service moved ~9,000 UN troops in about two weeks using ~50 C-124s; nearly all supplies thereafter by air",
        "Troops mainly policing/training, disarming rebellious ANC troops",
        "Mandate forbade interference in internal politics — Hammarskjöld refused Lumumba's demands to subdue Katanga"] });
 add("VIII. Effectiveness — ONUC", { id:"cg-onuc-phase2", title:"ONUC Phase II: The fight for Katanga", when:"Feb 1961–Dec 1964",
   q:"How did ONUC's role change in Phase II (the fight for Katanga)?",
+  exp:"Res. 161 gave ONUC legal room to use force, and Lumumba’s death, plus fear of Soviet intervention, gave the political will. U Thant’s view that the UN could intervene in internal politics, and US aims to keep the USSR out and Katanga in, explain why ONUC moved from neutrality to ending the secession by force.",
   pts:["Began with Res. 161: “all appropriate measures” incl. force as last resort — later used to justify ending the secession",
        "Lumumba's death ironically triggered fulfilment of his demand for forceful UN action, amid fears of unilateral Soviet intervention",
        "U Thant, unlike Hammarskjöld, did not believe the UN should avoid interfering in internal politics; Res. 169 authorised “the requisite measure of force”",
        "US aims: keep the USSR out, the UN in, Belgian interference down, and stop Katanga's secession destabilising the economy"] });
 add("VIII. Effectiveness — ONUC", { id:"cg-onuc-phase3", title:"ONUC Phase III: Endgame in the Congo", when:"Jan–Dec 1964",
   q:"What happened in ONUC's endgame phase, and what was its overall verdict?",
+  exp:"A much-reduced ONUC could not respond to new rebellions and managed only missionary rescues before leaving. Even so, the verdict credits it with strengthening the central government and keeping the country together. Its legacy was holding the state intact, not resolving the later insurgencies.",
   pts:["By Jan 1964 ONUC had shrunk from ~20,000 to ~5,500 personnel",
        "Kwilu revolt not initially recognised; forces committed elsewhere with inadequate air transport to redeploy",
        "Dextraze's rescue force (initially two 10-man sections under Lt.-Col. Mayer) to “rescue as many missionaries as possible who wish to be rescued”",
@@ -467,6 +526,7 @@ add("VIII. Effectiveness — ONUC", { id:"cg-onuc-phase3", title:"ONUC Phase III
        "Verdict: “had played a difficult role in a chaotic Congo. It had strengthened the hand of the central government and kept the country together.”"] });
 add("VIII. Effectiveness — ONUC", { id:"cg-onuc-eval", title:"ONUC: achievements and limitations", when:"1960–1964",
   q:"Evaluate ONUC's achievements and limitations.",
+  exp:"ONUC deployed quickly and adapted its mandate, which kept it relevant. But Res. 143’s vagueness meant every party criticised it at some point, the USSR in particular disputed its neutrality, and its actions sometimes escalated fighting. Balance these to judge it as effective but controversial.",
   pts:["Achievement: troops deployed almost immediately on the Congolese government's request",
        "Achievement: evolving mandate reflected the UN's attempt to stay relevant in a changing, complex conflict",
        "Limitation: Res. 143 gave no clear guidance — room for Hammarskjöld to manoeuvre, but all parties at times criticised the Secretariat",
@@ -476,6 +536,7 @@ add("VIII. Effectiveness — ONUC", { id:"cg-onuc-eval", title:"ONUC: achievemen
 /* ── VIII. Effectiveness: Domestic political settlements ── */
 add("VIII. Effectiveness — Domestic Settlements", { id:"luluabourg", title:"Luluabourg Constitution", when:"1 Aug 1964–Nov 1965",
   q:"What did the Luluabourg Constitution provide, and how effective was it?",
+  exp:"The constitution addressed the federal–central dispute behind the secessions by creating more provinces, which in principle reduced secession risk. But concentrating power in the presidency removed checks, and instability continued. Its design helped set up the presidential–prime-ministerial clash that Mobutu exploited.",
   clue:"The DRC's second constitution, replacing the provisional Loi Fondamentale, increasing provinces from 6 to 21.",
   pts:["Negotiated to restore stability; second DRC constitution replacing the provisional Loi Fondamentale; in force 1 Aug 1964 – Nov 1965",
        "Strong executive presidency (replacing joint PM–President consultation) and careful delineation of federalism",
@@ -485,6 +546,7 @@ add("VIII. Effectiveness — Domestic Settlements", { id:"luluabourg", title:"Lu
        "Limitation: transferred power to an unchecked President; Congo remained plagued by instability"] });
 add("VIII. Effectiveness — Domestic Settlements", { id:"cg-1965-elections", title:"1965 parliamentary elections", when:"18 Mar–30 Apr 1965",
   q:"What happened in the 1965 elections, and why did they fail to stabilise the Congo?",
+  exp:"The elections, though large and logistically difficult, gave Tshombe’s party a big majority, which then set him against Kasavubu over who should be PM. That power struggle gave Mobutu his pretext to seize control. Electoral politics thus fed instability rather than national unity.",
   pts:["223 political parties contested 167 seats across constituencies matching the six provinces plus Leopoldville (later Kinshasa)",
        "Planned for six weeks but ran to eight due to logistical problems",
        "Won by PM Tshombe's CONACO (122 of 167 seats)",
@@ -492,6 +554,7 @@ add("VIII. Effectiveness — Domestic Settlements", { id:"cg-1965-elections", ti
        "Limitation: little impact on national unity; results gave Mobutu the avenue for his coup"] });
 add("VIII. Effectiveness — Domestic Settlements", { id:"cg-exam-overall", title:"Exam focus: overall judgement on conflict management", when:"1960–1965",
   q:"How effective were the attempts to manage the Congo Crisis? (Overall judgement)",
+  exp:"The strongest judgement separates military success — ending the secessions, especially through Grandslam — from failure to build a lasting political settlement, since both the constitution and elections led to Mobutu’s coup. Also weigh the UN against unilateral great-power action, and note how doubts about UN neutrality weaken claims of impartial peacekeeping.",
   pts:["Distinguish military/territorial achievements (secessions ended by force, notably Grandslam) from failure to achieve durable political settlement",
        "Both the Luluabourg Constitution and the 1965 elections fed into, rather than prevented, Mobutu's coup",
        "Weigh the UN (Hammarskjöld's neutral mediation vs U Thant's force) against unilateral Great Power action (US covert ops, Belgian aid, mercenaries), dominant in Phase 2 after ONUC left",

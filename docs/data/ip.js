@@ -6,6 +6,7 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"ip", sec, src:S, qs:"me" }
 /* ── Overview ── */
 add("Overview", { id:"ip-overview", title:"Topic framework: Indo-Pakistani conflict", when:"1947–1972",
   q:"Why did conflicts occur and how did they affect the international order? How effective were the attempts to manage these conflicts? (Set out the topic framework.)", qs:"notes",
+  exp:"The framework links causes to actors to management: partition created two states built on rival identities, and Kashmir became the flashpoint they fought over three times. Keep the two essential questions in view throughout — why conflict occurred, and whether diplomacy and peacekeeping managed it — because essays are judged on evaluating management, not just narrating wars.",
   pts:["Topic 1: Causes, Development and Management of Inter-State Conflicts: Indo-Pakistani Conflict (1947–1972)",
        "Causes: decolonisation, security, territorial sovereignty, nationalism, religion, economic interests",
        "Actors: combatant states, the superpowers, the United Nations",
@@ -14,6 +15,7 @@ add("Overview", { id:"ip-overview", title:"Topic framework: Indo-Pakistani confl
        "1947–1972: three wars (1947, 1965, 1971) plus clashes on other occasions"] });
 add("Overview", { id:"ip-timeline-a", title:"Master timeline 1947–1957", when:"1947–1957",
   q:"Outline the key developments in India–Pakistan relations from 1947 to 1957.",
+  exp:"This decade shows how a dispute born at partition hardened. The tribal invasion forced the Maharaja’s accession, the UN ceasefire froze the front, and India then steadily integrated Kashmir through its constituent assembly. That integration matters later: it convinced Pakistan that waiting would only entrench India’s hold, feeding the ‘now or never’ thinking of 1965.",
   pts:["Aug 1947: Britain partitions the subcontinent (14–15 Aug); mass migration and communal riots follow",
        "22 Oct 1947: First Indo-Pakistani War breaks out over Kashmir after a tribal invasion from Pakistan",
        "26 Oct 1947: Maharaja Hari Singh signs the Instrument of Accession to India",
@@ -22,6 +24,7 @@ add("Overview", { id:"ip-timeline-a", title:"Master timeline 1947–1957", when:
        "1957: J&K constituent assembly approves a constitution; India begins treating Kashmir as an integral part of the Union"] });
 add("Overview", { id:"ip-timeline-b", title:"Master timeline 1962–1972", when:"1962–1972",
   q:"Outline the key developments in India–Pakistan relations from 1962 to 1972.",
+  exp:"The sequence moves from India’s 1962 defeat to failed talks and UN referral, then to war in 1965, a Soviet-brokered settlement, and finally the 1971 break-up of Pakistan and Simla. Each settlement paused fighting without settling Kashmir, which is why the cycle repeated — the core point of the overall verdict on conflict management.",
   pts:["Oct 1962: Sino-Indian War over the disputed Indo-Chinese border (incl. Indian-administered Ladakh)",
        "1963: UK/US-brokered Indo-Pakistani talks on Kashmir fail to reach agreement",
        "1964: Pakistan refers the Kashmir case to the UNSC after talks fail",
@@ -34,6 +37,7 @@ add("Overview", { id:"ip-timeline-b", title:"Master timeline 1962–1972", when:
 add("Causes: Decolonisation", { id:"ip-raj", title:"India under colonial rule", when:"1858–1947",
   q:"How did British rule in India move toward independence and partition?",
   clue:"Direct rule began after the 1857 Mutiny; Purna Swaraj in 1930; the last Viceroy concluded differences were irreconcilable.",
+  exp:"Growing nationalist pressure and Britain’s post-war pledge made independence certain, but the split between Congress and the Muslim League decided its form. Once Mountbatten judged their differences irreconcilable, partition became the chosen route — so the conflict’s roots lie in decolonisation itself, with rival Hindu-majority and Muslim-homeland visions built into the new states.",
   pts:["Direct British rule (the Raj) began in 1858 after the Indian Mutiny against the East India Company",
        "By the 1920s non-cooperation and civil disobedience pressured Britain toward self-governance",
        "1930: Indian National Congress (Nehru) passed the Purna Swaraj resolution demanding complete independence",
@@ -43,6 +47,7 @@ add("Causes: Decolonisation", { id:"ip-raj", title:"India under colonial rule", 
 add("Causes: Decolonisation", { id:"ip-radcliffe", title:"Independence Act and Radcliffe Commission", when:"Jul–Aug 1947",
   q:"How were the partition boundaries drawn, and why did they satisfy no one?",
   clue:"A chairman who had never visited the subcontinent drew Punjab and Bengal borders under severe time pressure.",
+  exp:"The rushed deadline and a chairman unfamiliar with India meant borders were drawn hastily and contested from the start. This supports the decolonisation argument: Britain’s inadequate, hurried arrangements left grievances on both sides, so the new states began life with disputed lines rather than an agreed settlement.",
   pts:["Indian Independence Act (18 Jul 1947) set the deadline of midnight 14–15 Aug 1947",
        "Boundary Commission: 4 Congress + 4 Muslim League members, chaired by Cyril Radcliffe",
        "Radcliffe had never visited India",
@@ -50,6 +55,7 @@ add("Causes: Decolonisation", { id:"ip-radcliffe", title:"Independence Act and R
 add("Causes: Decolonisation", { id:"partitionindia", title:"Impact of the British Partition Plan", when:"Aug 1947",
   q:"What was the impact of the British Partition Plan of 1947?",
   clue:"Staggered transfer of power, borders published two days late, and some 15 million people crossing new lines amid mass violence.",
+  exp:"Late-published borders and huge, violent migration show how chaotic the transfer of power was. The refugee burden strained both states and fed the mutual distrust historians stress, and the Kashmir war soon worsened it. Use this as evidence that Britain’s ‘cut and run’ departure created conditions for conflict.",
   pts:["Transfer of power: 14 Aug (Pakistan), 15 Aug (India) — staggered so Mountbatten could attend both ceremonies",
        "Borders not published until 17 Aug, two days after independence",
        "~15 million Hindus, Sikhs and Muslims crossed the hastily drawn borders; 14–16 million eventually displaced",
@@ -57,6 +63,7 @@ add("Causes: Decolonisation", { id:"partitionindia", title:"Impact of the Britis
        "Both states faced enormous strain absorbing refugees — numbers swelled further once war broke out over Kashmir in 1947–48"] });
 add("Causes: Decolonisation", { id:"ip-princely", title:"Kashmir's position and decolonisation", when:"1947",
   q:"Why did decolonisation create a unique dilemma for Kashmir?",
+  exp:"Partition’s religious logic simply did not cover princely states, so Kashmir — Muslim-majority, Hindu-ruled and bordering both dominions — fitted neither category. Hari Singh’s delay left the question open until the tribal invasion forced him to choose India for military help. This is why the notes call Kashmir’s dilemma a direct product of decolonisation.",
   pts:["One of 565 princely states that “recovered independence” with Britain's lapse of paramountcy on 15 Aug 1947",
        "Mountbatten pressured them to accede to India or Pakistan by that date",
        "Partition logic (Muslim-majority to Pakistan, Hindu/Sikh-majority to India) did not apply to princely states",
@@ -65,6 +72,7 @@ add("Causes: Decolonisation", { id:"ip-princely", title:"Kashmir's position and 
        "The Pakistan-backed tribal invasion (Oct 1947) forced his hand: he acceded to India in exchange for military assistance"] });
 add("Causes: Decolonisation", { id:"ip-accession-claims", title:"Rival claims over the accession", when:"1947",
   q:"How did Jinnah and India respond to Kashmir's accession, and what is the key takeaway about decolonisation?",
+  exp:"Each side framed the accession legally to its own advantage: Pakistan said the Maharaja broke the Standstill Agreement, India said Pakistan’s backing of the invasion voided it. Because both arguments were plausible, no neutral answer existed. The takeaway pins the root cause on Britain’s failure to devise a method for integrating princely states.",
   pts:["Jinnah branded the accession “fraudulent”",
        "Accused India of conspiring to deny Pakistan its “natural” territorial inheritance; argued the Maharaja breached the Standstill Agreement",
        "India: the Pakistan-backed tribal invasion was itself illegal and voided the Standstill Agreement; Instrument of Accession legally valid",
@@ -73,6 +81,7 @@ add("Causes: Decolonisation", { id:"ip-accession-claims", title:"Rival claims ov
 /* ── Causes: Security ── */
 add("Causes: Security", { id:"ip-security", title:"Kashmir's strategic value", when:"1947–1970",
   q:"Why was Kashmir a security concern for both India and Pakistan?",
+  exp:"Kashmir’s position made it strategically vital to both: India saw it as a frontier with three powers, while Pakistan feared Indian troops could cut its key Lahore–Rawalpindi link. Because control gave one side decisive military advantage, neither could compromise — explaining why the dispute behaved as a zero-sum prize rather than a border to negotiate.",
   pts:["Kashmir bordered Afghanistan, China and the USSR — major strategic value as a buffer zone for both",
        "Nehru (1947): Kashmir's frontiers “marching with three countries… the Soviet Union, China and Afghanistan” made it “intimately connected with the security and international contacts of India”",
        "Maj. Gen. Akbar Khan (1970): Indian troops on Kashmir's western border could threaten the vital 180-mile Lahore–Rawalpindi road/rail route at any time, in war or peace",
@@ -83,6 +92,7 @@ add("Causes: Security", { id:"ip-security", title:"Kashmir's strategic value", w
 add("Causes: Territorial Sovereignty", { id:"accession", title:"Kashmir's accession to India", when:"Aug–Oct 1947",
   q:"How did Kashmir come to accede to India?",
   clue:"A Maharaja who chose neither dominion signed a standstill with one side, then appealed for help when tribesmen neared Srinagar.",
+  exp:"The Maharaja’s indecision and the one-sided Standstill Agreement left Kashmir unprotected when the invasion came. India used his desperation to make aid conditional on accession, and the airlift then turned a tribal incursion into interstate war. The sequence shows how the legal act and the military trigger were inseparable.",
   pts:["Hari Singh: autocratic monarch (Council of Ministers since 1939), given until 15 Aug 1947 to choose — chose neither",
        "Signed a Standstill Agreement with Pakistan; India deferred (States Ministry preoccupied with Hyderabad)",
        "22 Oct 1947: tribal invasion reaches the Jhelum Valley Road towards Srinagar",
@@ -90,6 +100,7 @@ add("Causes: Territorial Sovereignty", { id:"accession", title:"Kashmir's access
        "Hari Singh accedes 27 Oct → Indian troops airlifted in, triggering the First War"] });
 add("Causes: Territorial Sovereignty", { id:"ip-irredentism", title:"Pakistan's irredentist claim", when:"1947",
   q:"What was the basis of Pakistan's irredentist claim to Kashmir?",
+  exp:"Pakistan’s identity as the Muslim homeland made a Muslim-majority Kashmir seem part of the nation by right, so losing it felt like the state was incomplete. Ganguly’s point is that partition’s own criteria clashed — geography and religion pointed different ways — giving both sides a genuine claim and making compromise hard.",
   pts:["Pakistan, as self-conceived homeland for subcontinental Muslims, viewed Kashmir's Muslim-majority population as rightfully its own",
        "Kashmir necessary for the state's “completeness”",
        "Kashmir contiguous to both dominions — a genuine dilemma under partition's own logic (Ganguly, 2019)",
@@ -98,6 +109,7 @@ add("Causes: Territorial Sovereignty", { id:"ip-irredentism", title:"Pakistan's 
 /* ── Causes: Nationalism ── */
 add("Causes: Nationalism", { id:"ip-nationalism", title:"Competing visions of nationhood", when:"1947",
   q:"How did competing nationalisms contribute to the Indo-Pakistani conflict?",
+  exp:"The two parties defined the nation in opposite ways, so Kashmir became a test of each ideology: India needed it to prove secularism worked, Pakistan to prove the two-nation theory. Ganguly’s ‘collision course’ judgement suits essays arguing the conflict was structural from 1947, not merely a result of later decisions.",
   pts:["Congress (Nehru): One Nation — unity and cohesion across communities",
        "Muslim League (Jinnah): Two Nations — separate homelands for Muslims and Hindus",
        "Congress aim: secular, democratic state representing all segments of Indian society",
@@ -108,6 +120,7 @@ add("Causes: Nationalism", { id:"ip-nationalism", title:"Competing visions of na
 /* ── Causes: Religion ── */
 add("Causes: Religion", { id:"ip-religion", title:"Religion and mutual distrust", when:"1947 onward",
   q:"How did religion contribute to the Indo-Pakistani conflict, according to historians?",
+  exp:"Historians explain the distrust both from religious difference and from the way Britain’s exit let civil order collapse during population transfer. Ganguly shows how religion fed nationalism: Kashmir mattered to Nehru as proof of secular coexistence and to Jinnah as completing Pakistan. This links the religion and nationalism causes, as the exam tip urges.",
   pts:["Hewitt (1997): India and Pakistan shared a deep “mutual distrust” from partition onward",
        "Burke (1974) cause 1: the antithetical nature of Hinduism and Islam",
        "Burke cause 2: Britain's “cut and run” departure left inadequate arrangements for population transfer, so civil order collapsed",
@@ -115,6 +128,7 @@ add("Causes: Religion", { id:"ip-religion", title:"Religion and mutual distrust"
        "Ganguly (1998): Jinnah saw absorbing Kashmir as equally critical for opposite reasons — Pakistan would be “incomplete” without Kashmir"] });
 add("Causes: Religion", { id:"ip-ethno", title:"Ethno-religious diversity within Kashmir", when:"1947",
   q:"Describe the ethno-religious make-up of Kashmir's regions.",
+  exp:"Kashmir was not uniformly Muslim — regions varied from Buddhist Ladakh to mixed Jammu and a Muslim Valley with a Hindu minority. Yet overall it was about three-quarters Muslim under a Hindu ruler. This mix let India and Pakistan each claim it on different grounds, which is why religion alone could not settle the question.",
   pts:["Ladakh: culturally/ethnically closer to Tibet; Buddhist",
        "Jammu: mixed Hindu, Sunni Muslim and Sikh",
        "Kashmir Valley: majority Muslim, significant Hindu minority — the Pandits (Kashmiri Brahmins) and Dogras",
@@ -124,6 +138,7 @@ add("Causes: Religion", { id:"ip-ethno", title:"Ethno-religious diversity within
 /* ── Causes: Economic Interests ── */
 add("Causes: Economic Interests", { id:"ip-indus-tension", title:"Indus waters as a source of tension", when:"1947–1948",
   q:"Why was control of the Indus River system a source of Indo-Pakistani tension?",
+  exp:"Because partition left the upstream controls with India while Pakistan depended on the Indus for most of its food and jobs, Pakistan felt structurally vulnerable. The 1948 canal cut made that fear real. Use this to show an economic cause reinforcing distrust alongside the territorial dispute.",
   pts:["Persistent source of tension (Wirsing & Jasparro, 2006)",
        "Partition drew borders along the “Indus watershed”, giving India control of upstream barrages regulating flow into Pakistan",
        "Created a structural upstream–downstream power imbalance",
@@ -133,6 +148,7 @@ add("Causes: Economic Interests", { id:"ip-indus-tension", title:"Indus waters a
 add("Causes: Economic Interests", { id:"induswaters", title:"Indus Waters Treaty", when:"1960",
   q:"What did the 1960 Indus Waters Treaty provide, and what does it show?",
   clue:"World Bank-brokered 1960 deal splitting western and eastern rivers and funding Tarbela and Mangla dams.",
+  exp:"The treaty divided the rivers and funded infrastructure, removing a concrete flashpoint. That no water wars followed despite three military conflicts shows cooperation was possible on resources even while Kashmir remained unresolved — a useful nuance when weighing economic interests against other causes.",
   pts:["Gave Pakistan the western rivers (Indus, Jhelum, Chenab)",
        "Gave India the eastern rivers (Ravi, Beas, Sutlej)",
        "Funded dam/canal infrastructure (e.g. Tarbela, Mangla Dams)",
@@ -140,6 +156,7 @@ add("Causes: Economic Interests", { id:"induswaters", title:"Indus Waters Treaty
        "No “water wars” since, despite multiple military conflicts — resource cooperation persisted amid broader hostility"] });
 add("Causes: Synthesis", { id:"ip-causes-synth", title:"How the six causes interlock", when:"framework",
   q:"State the core tension behind each of the six causes and explain how they interlock.",
+  exp:"The six causes overlap rather than stand alone: religion underpinned the rival nationalisms, and decolonisation’s legal ambiguity gave security and sovereignty fears something to exploit. Water added material vulnerability. Essays score higher by showing how these compounded, for example linking Britain’s rushed exit to the contested accession and Kashmir’s strategic value.",
   pts:["Decolonisation: Britain's rushed, inadequate framework for integrating princely states (esp. Kashmir)",
        "Security: Kashmir as strategic buffer/launchpad — whoever held it held military advantage",
        "Territorial sovereignty: contested legality of the Instrument of Accession; competing claims to legitimate rule",
@@ -151,6 +168,7 @@ add("Causes: Synthesis", { id:"ip-causes-synth", title:"How the six causes inter
 /* ── First War: Timeline & Players ── */
 add("First War (1947–48)", { id:"ip-w1-timeline-a", title:"First War timeline: 1947", when:"Aug–Oct 1947",
   q:"Outline the key events of 1947 in the First Indo-Pakistani (First Kashmir) War.",
+  exp:"The order matters: the standstill with Pakistan only, then the invasion, then accession, then India’s airlift. The accession came after invasion and under pressure, which is exactly why Pakistan called it illegitimate and India called the invasion the original wrong. The First War began as a crisis of the princely-state settlement.",
   pts:["First of three wars fought over the princely state of Kashmir; also called the First Kashmir War",
        "14–15 Aug 1947: Partition; Kashmir signs a Standstill Agreement with Pakistan, none concluded with India",
        "22 Oct 1947: war breaks out after invasion by Pakistan-backed tribesmen",
@@ -158,6 +176,7 @@ add("First War (1947–48)", { id:"ip-w1-timeline-a", title:"First War timeline:
        "27 Oct 1947: Indian 161st Infantry Brigade airlifted into Srinagar; full-scale war begins"] });
 add("First War (1947–48)", { id:"ip-w1-timeline-b", title:"First War timeline: UN phase", when:"Jan 1948 – Jan 1949",
   q:"Outline the UN-related milestones of the First War, 1948–49.",
+  exp:"India’s referral moved the dispute to the UN, which progressed from cautious calls for restraint to a commission, a plebiscite plan and finally a ceasefire with observers. The sequence shows the UN building machinery step by step, but each stage depended on both parties’ cooperation — foreshadowing the limits of UN management.",
   pts:["1 Jan 1948: India refers the Kashmir question to the UNSC",
        "17 & 20 Jan 1948: UNSC Resolutions 38 and 39",
        "21 Apr 1948: Resolution 47; UNCIP established",
@@ -166,6 +185,7 @@ add("First War (1947–48)", { id:"ip-w1-timeline-b", title:"First War timeline:
        "5 & 24 Jan 1949: UNCIP ceasefire terms finalised; UNMOGIP arrives to supervise"] });
 add("First War (1947–48)", { id:"ip-w1-players", title:"Key players after partition", when:"1947–48",
   q:"Who were the key Indian, Pakistani and Kashmiri players after partition?",
+  exp:"Knowing the players explains the alignments: Nehru’s secular Congress wanted Kashmir as proof of pluralism, Jinnah’s League as part of the Muslim homeland. Sheikh Abdullah’s pro-India National Conference gave India local support, while the Azad Kashmir government gave Pakistan a nominally independent proxy in the territory it held.",
   pts:["India: Nehru — first PM (1947–1964); Congress — secular, catch-all party dominating Indian politics",
        "Pakistan: Jinnah — first Governor-General (1947–48); Liaquat Ali Khan — first PM; Muslim League — chief governing party",
        "Kashmir: Maharaja Hari Singh — last ruling Maharaja of J&K",
@@ -174,6 +194,7 @@ add("First War (1947–48)", { id:"ip-w1-players", title:"Key players after part
 add("First War (1947–48)", { id:"ip-poonch", title:"Pakistan's role in the Poonch rebellion", when:"Aug–Oct 1947",
   q:"What was Pakistan's role in the tribal rebellion of Poonch?",
   clue:"Revolt and Pathan raids backed with Pakistani arms and transport, culminating in the capture of Muzaffarabad.",
+  exp:"The Poonch revolt gave Pakistan a local uprising to support, and its arms, transport and patrols turned that into an organised invasion. The rival framings — spontaneous revolt versus Pakistani instigation — mirror the wider legal dispute. The fall of Muzaffarabad and the threat to Srinagar are what pushed the Maharaja to India.",
   pts:["Kashmir offered standstill agreements to both; Pakistan accepted immediately, India asked for further negotiations — none concluded",
        "Hari Singh prevaricated despite Mountbatten's explicit injunction to choose, hoping for independence",
        "Aug 1947: open revolt in Poonch; first Muslim militia raised; Azad Kashmir government organisation begins",
@@ -182,6 +203,7 @@ add("First War (1947–48)", { id:"ip-poonch", title:"Pakistan's role in the Poo
        "22 Oct: column (Pathan tribals + Pakistani regulars in mufti) captures Muzaffarabad; Muslim J&K State Forces troops defect and massacre Dogra counterparts; raiders advance on Srinagar"] });
 add("First War (1947–48)", { id:"ip-road-accession", title:"The road to accession and its legality", when:"Oct 1947",
   q:"On what conditions did India accept Kashmir's accession, and why was its legality disputed?",
+  exp:"Nehru’s conditions made the accession both politically backed, through Abdullah, and provisional, pending a reference to the people. That promise is why the plebiscite became the central unresolved issue. The legality dispute shows each side reading the Standstill Agreement to justify its own position.",
   pts:["Hari Singh first appealed to Patiala — inadequate; then to India",
        "Nehru's two conditions: (1) support of Sheikh Abdullah's National Conference; (2) provisional signing of the Instrument of Accession",
        "26 Oct: Instrument signed; accepted by the Governor-General next day",
@@ -190,6 +212,7 @@ add("First War (1947–48)", { id:"ip-road-accession", title:"The road to access
        "India: Pakistan-backed invasion was illegal, voiding the Standstill Agreement; Instrument legally signed per Partition-era processes"] });
 add("First War (1947–48)", { id:"ip-w1-war", title:"Course of the First War", when:"1947–48",
   q:"How did the fighting in the First War develop and end in stalemate?",
+  exp:"Neither side could win outright: Pakistan failed to take Kargil or hold Ladakh, while India lacked the resources and will to drive Pakistan out. The result was a de facto partition of Kashmir that later ceasefire lines froze. The Northern Areas fighting also links Kashmir to the 1962 Sino-Indian War through Aksai Chin.",
   pts:["Indian Army vs “Azad Kashmir” forces (Poonch rebels + Pathan tribesmen, increasingly reinforced by Pakistani regulars)",
        "Battle for Northern Areas (Ladakh, Baltistan): territory Pakistan failed to hold later gave India access to disputed Aksai Chin — feeding into the 1962 Sino-Indian War",
        "Pakistan's Gilgit-based offensive along the Indus failed to take Kargil or hold Ladakh/Baltistan against Indian tank counter-offensives",
@@ -200,6 +223,7 @@ add("First War (1947–48)", { id:"ip-w1-war", title:"Course of the First War", 
 /* ── First War: UN ── */
 add("First War: UN intervention", { id:"ip-res38-39", title:"UNSC referral and Resolutions 38–39", when:"Jan 1948",
   q:"How did the UN become involved in Kashmir, and what did Resolutions 38 and 39 do?",
+  exp:"India took the dispute to the UN as a threat to international peace, expecting support against what it saw as aggression. Yet the early resolutions only asked for restraint and set up an advisory body that did nothing until Res. 47. This shows the UN’s cautious, persuasive approach from the outset.",
   pts:["India referred the dispute to the UNSC on 1 Jan 1948",
        "Invoked Articles 34 and 35 of the UN Charter (disputes threatening international peace and security)",
        "Res. 38 (17 Jan 1948): both governments to refrain from aggravating the situation and report material changes",
@@ -207,6 +231,7 @@ add("First War: UN intervention", { id:"ip-res38-39", title:"UNSC referral and R
        "No action taken under Res. 39 until Res. 47"] });
 add("First War: UN intervention", { id:"ip-res47", title:"Resolution 47, UNCIP Resolution and Res. 51", when:"Apr–Aug 1948",
   q:"What did UNSC Resolution 47 and the UNCIP Resolution propose?",
+  exp:"Res. 47 offered a real solution — withdrawal, reduced Indian forces, then a plebiscite — but it depended on the sequence of withdrawal. Pakistan’s effective rejection of withdrawing first meant the plan stalled. This is the root of the plebiscite never being held, and evidence the UN could propose but not compel.",
   pts:["Res. 47 (21 Apr 1948): expanded the Commission to 5 members → UNCIP established",
        "3-step process: (i) Pakistan withdraws all nationals/fighters; (ii) India reduces forces to law-and-order minimum; (iii) UN-appointed administrator conducts a plebiscite",
        "UNCIP Resolution (13 Aug 1948): two-part withdrawal — Pakistan first, then India withdraws bulk of forces; plebiscite follows",
@@ -215,6 +240,7 @@ add("First War: UN intervention", { id:"ip-res47", title:"Resolution 47, UNCIP R
 add("First War: UN intervention", { id:"unmogip", title:"Ceasefire and UNMOGIP", when:"1949",
   q:"Why did the 1949 ceasefire take hold, and what was UNMOGIP's mandate?",
   clue:"UN observer group whose first members arrived Jan 1949 to supervise the Kashmir ceasefire and assist UNCIP's Military Adviser.",
+  exp:"The ceasefire held less because of UN power than because both armies were still under British officers and neither leader wanted mutual destruction. UNMOGIP’s mandate was deliberately limited to observing and reporting. So peace rested on the parties’ willingness, with the UN supervising rather than enforcing.",
   pts:["UN-sponsored ceasefire took effect 1 Jan 1949",
        "Helped by both armies still being commanded by British officers; neither Nehru nor Liaquat Ali Khan (Jinnah's successor after his Sep 1948 death) wanted mutual destruction",
        "UN Military Observer Group in India and Pakistan: first observers arrived Jan 1949 to supervise ceasefire and assist UNCIP's Military Adviser",
@@ -223,6 +249,7 @@ add("First War: UN intervention", { id:"unmogip", title:"Ceasefire and UNMOGIP",
 add("First War: Karachi Agreement", { id:"ip-karachi", title:"Karachi Agreement: ceasefire line", when:"27 Jul 1949",
   q:"What were the key provisions of the 1949 Karachi Agreement regarding the ceasefire line?",
   clue:"Signed 27 Jul 1949, it fixed an 830 km line from Manawar through Keran to the glacier area that held until 1965.",
+  exp:"Karachi turned a ceasefire into a detailed, mapped line with rules to prevent incidents, such as troop distances and limits on new fortifications, and gave the UN Military Adviser the final word on disputes. This explains why it held until 1965, while still leaving Kashmir’s status untouched.",
   pts:["Formally established the ceasefire line (precursor to the LoC) that held until the 1965 war",
        "830 km line from Manawar (south) through Keran to the glacier area",
        "Drawn on a one-inch map, verified in field by local commanders with UN assistance; disputes to UNCIP Military Adviser (final decision)",
@@ -230,12 +257,14 @@ add("First War: Karachi Agreement", { id:"ip-karachi", title:"Karachi Agreement:
        "Defensive positions allowed behind the line, but no wire/mines for new bunkers and no force increases where no major adjustment involved"] });
 add("First War: Karachi Agreement", { id:"ip-karachi-2", title:"Karachi Agreement: other provisions", when:"Jul 1949",
   q:"What other arrangements did the Karachi Agreement make?",
+  exp:"These provisions — observer access, a ratification deadline and a 30-day window to vacate areas without new advances — were practical steps to make the line stick. They show the agreement focused on stabilising the front, which is the tactical success the overall evaluation credits, not a political settlement.",
   pts:["UNCIP authorised to station observers wherever deemed fit",
        "Ratification: documents deposited with UNCIP by 31 Jul 1949",
        "30-day window to vacate areas beyond the agreed ceasefire line",
        "No further advances permitted in that period"] });
 add("First War: Aftermath", { id:"ip-plebiscite", title:"Kashmir's position after the First War", when:"1949–1957",
   q:"Why was the plebiscite never held, and how was Kashmir's status settled within India after 1949?",
+  exp:"The plebiscite stalled because each side demanded the other withdraw first. India, holding the wealthier Valley and claiming legal possession, then integrated its part through a special constitution and statehood. The longer integration went on, the less reason India had to accept mediation — and the more Pakistan felt time was against it.",
   pts:["Both agreed in principle to a plebiscite — never held: India insisted on full Pakistani/tribal withdrawal first; Pakistan refused unless India withdrew too → stalemate",
        "India considered itself in legal possession via the Instrument of Accession, denying need for third-party mediation",
        "1951: J&K Constituent Assembly elections won by Sheikh Abdullah's National Conference",
@@ -247,6 +276,7 @@ add("First War: Aftermath", { id:"ip-plebiscite", title:"Kashmir's position afte
 /* ── First War: Effectiveness ── */
 add("First War: Effectiveness", { id:"ip-eval-karachi", title:"Effectiveness: Karachi Agreement", when:"1949",
   q:"Evaluate the effectiveness of the 1949 Karachi Agreement.",
+  exp:"Karachi succeeded at stopping the fighting, monitoring the line and giving it UN legitimacy, and it opened a channel for later talks. But by freezing the front without deciding Kashmir’s status, it left the cause of conflict in place. This is the recurring pattern: a tactical success that sowed the seeds of future wars.",
   pts:["Achievement: ceasefire halted hostilities and prevented further escalation along what became the LoC",
        "Achievement: monitoring mechanisms — truce commission with UN observers to monitor and report violations",
        "Achievement: international recognition — UN backing legitimised the ceasefire line and peaceful-resolution effort",
@@ -254,6 +284,7 @@ add("First War: Effectiveness", { id:"ip-eval-karachi", title:"Effectiveness: Ka
        "Limitation: status of Kashmir remained unresolved — sowing the seeds of future conflict"] });
 add("First War: Effectiveness", { id:"ip-eval-unsc48", title:"Effectiveness: UNSC mediation 1948–49", when:"1948–49",
   q:"How effective was UN Security Council mediation in the First War?",
+  exp:"The UNSC offered a forum and created the missions, and Res. 47 even proposed a plebiscite as a solution. Its weakness was structural: under sovereign equality it could persuade but not force either side to withdraw, so the plan failed at the first step. Use this to argue the UN’s limits came from its Charter, not just poor effort.",
   pts:["Achievement: international forum for peaceful settlement without intensifying violence",
        "Achievement: created UN missions — Res. 39 → UNCIP; Res. 47 → basis for UNMOGIP, expanded UNCIP to 5 members",
        "Achievement: proposed a solution — Res. 47 let Kashmiris decide via plebiscite",
@@ -261,11 +292,13 @@ add("First War: Effectiveness", { id:"ip-eval-unsc48", title:"Effectiveness: UNS
        "Limitation: mandate limited by sovereign equality principle (Art. 2(1)) — could persuade but not compel"] });
 add("First War: Effectiveness", { id:"ip-eval-uncip", title:"Effectiveness: UNCIP", when:"1948",
   q:"Evaluate the effectiveness of UNCIP.",
+  exp:"UNCIP laid the foundations of UNMOGIP and kept a role after Karachi through its Military Adviser’s binding decisions on line disputes. Yet it could only investigate and mediate, never intervene militarily. Its usefulness therefore depended entirely on both parties choosing to cooperate.",
   pts:["Achievement: dispatched the first observer team, forming the nucleus of UNMOGIP",
        "Achievement: continued enforcement role — post-Karachi disputes referred to its Military Adviser, whose decision was final",
        "Limitation: no mandate to intervene militarily — limited to “investigate and mediate”"] });
 add("First War: Effectiveness", { id:"ip-eval-unmogip", title:"Effectiveness: UNMOGIP", when:"1949–1965",
   q:"Evaluate the effectiveness of UNMOGIP after the First War.",
+  exp:"UNMOGIP helped keep a minimal peace for 17 years, but with about 45 unarmed observers it could only watch and report. Its power came from world opinion, not force, so when Pakistan chose war in 1965 it could do nothing. It illustrates peacekeeping that contains rather than resolves conflict.",
   pts:["Achievement: minimal peace — prevented full-scale war for 17 years (1948–1965) despite skirmishes",
        "Achievement: conflict-resolution avenue per Art. 2(3), though never able to “enforce a settlement beyond the power lent it by world opinion”",
        "Limitation: never more than ~45 observers for the entire ceasefire line",
@@ -277,6 +310,7 @@ add("First War: Effectiveness", { id:"ip-eval-unmogip", title:"Effectiveness: UN
 add("Superpower influence after 1949", { id:"ip-us-pak", title:"US–Pakistan alliance", when:"1947–1961",
   q:"How did the US–Pakistan alliance develop after the First War?",
   clue:"A 1954 defence assistance agreement worth about US$80 million a year, plus membership of SEATO and CENTO.",
+  exp:"Pakistan’s strategic location made it valuable to the US in containing the USSR, bringing it military aid and alliance membership. India’s non-alignment, by contrast, made the West see it as soft on communism. This Cold War alignment brought superpower patronage into the dispute, later emboldening Pakistan.",
   pts:["US and Pakistan established relations 15 Aug 1947 (US among first to recognise Pakistan)",
        "14 May 1954 Mutual Defense Assistance Agreement: US military equipment/training; aid ~US$80 million/year",
        "Pakistan joined SEATO (1954) and the Baghdad Pact/CENTO (1955)",
@@ -284,6 +318,7 @@ add("Superpower influence after 1949", { id:"ip-us-pak", title:"US–Pakistan al
        "India: founding member of NAM (1961 Belgrade; Nehru, Tito, Nasser, Nkrumah, Sukarno); seen by the West as “soft on communism”"] });
 add("Superpower influence after 1949", { id:"ip-ussr-india", title:"Soviet–Indian alignment", when:"1951–1958",
   q:"How did India move closer to the USSR after the First War?",
+  exp:"The US tilt to Pakistan pushed non-aligned India toward Moscow, which rewarded it with food aid, open backing on Kashmir and a UNSC veto. India reciprocated on Suez and Hungary. The point is that Cold War rivalry mapped onto the regional dispute, with each superpower backing one side.",
   pts:["US tilt toward Pakistan pushed India closer to the USSR despite non-alignment",
        "1951: USSR sent 50,000 tonnes of wheat during a harvest failure while the West deliberated",
        "1955: Khrushchev publicly recognised Kashmir's accession to India on a state visit — said the USSR could not say the same of relations with Pakistan",
@@ -291,6 +326,7 @@ add("Superpower influence after 1949", { id:"ip-ussr-india", title:"Soviet–Ind
        "Late 1958: USSR vetoed a UNSC resolution on the crisis, showing its tilt toward India"] });
 add("Superpower influence after 1949", { id:"ip-w1-impact", title:"Impact of the First War on relations", when:"1949–1965",
   q:"What were the origins and impact of the First War on India–Pakistan relations?",
+  exp:"Ganguly’s four sources combine ideology, irredentism, strategy and Britain’s flawed transfer of power — a ready-made multi-causal paragraph. The unheld plebiscite left both claims alive, and new superpower patronage gave both states confidence to take bigger risks. That combination explains why the First War led on to 1965.",
   pts:["Ganguly's four sources: (1) two competing ideological forces; (2) Pakistani irredentism; (3) Kashmir's strategic location; (4) Britain's insufficient institutional arrangements for transfer of power",
        "Failure to hold a plebiscite remained the core unresolved issue",
        "India claimed legal possession via the Instrument; Pakistan contested its legitimacy, needing Kashmir for the Muslim nation's “completeness”",
@@ -300,6 +336,7 @@ add("Superpower influence after 1949", { id:"ip-w1-impact", title:"Impact of the
 add("Sino-Indian War 1962 (context)", { id:"ip-sinoindian", title:"Sino-Indian War", when:"20 Oct – 20 Nov 1962",
   q:"What was the Sino-Indian War of 1962 and why is it relevant to Kashmir?",
   clue:"A month-long Himalayan border war, triggered north of the McMahon Line, ending in a unilateral Chinese ceasefire.",
+  exp:"Though not examinable in itself, the war matters because Aksai Chin lay in Indian-controlled Kashmir and China kept it. India’s defeat on its northern border shaped how both India and Pakistan judged Indian strength afterwards. Treat it as context for the 1965 war, not a separate essay topic.",
   pts:["Context only — not examinable; relevant because disputed Aksai Chin lay within Indian-controlled Kashmir",
        "20 Oct – 20 Nov 1962, over the Himalayan border: Arunachal Pradesh/“South Tibet” (NEFA) and Aksai Chin",
        "Aksai Chin strategic to China as a Tibet–Xinjiang link",
@@ -308,6 +345,7 @@ add("Sino-Indian War 1962 (context)", { id:"ip-sinoindian", title:"Sino-Indian W
        "China retained de facto control of Aksai Chin; border stabilised along the Line of Actual Control"] });
 add("Sino-Indian War 1962 (context)", { id:"ip-sinoindian-sig", title:"Significance of 1962 for Indo-Pakistani relations", when:"1962–1971",
   q:"How did the Sino-Indian War affect Indo-Pakistani relations?",
+  exp:"Defeat in 1962 drove India to modernise its military and move closer to the USSR, while Pakistan drew closer to China. Pakistan misread India as still weak, launching the 1965 war just as India was becoming stronger — a key reason for its defeat. The 1971 lack of Chinese help shows the limits of that new alliance.",
   pts:["India's major military modernisation (doctrine, training, organisation, equipment) — became world's 3rd-largest military; crucial in 1965 and 1971",
        "Ended Nehru's hopes of a Sino-Indian “Asian Axis” against Cold War superpower influence",
        "India aligned with the USSR to encircle China through the 1960s–70s",
@@ -318,6 +356,7 @@ add("Sino-Indian War 1962 (context)", { id:"ip-sinoindian-sig", title:"Significa
 /* ── Second War ── */
 add("Second War (1965)", { id:"ip-w2-timeline-aug", title:"Second War timeline: August 1965", when:"Aug 1965",
   q:"Outline the course of the Second War in August 1965.",
+  exp:"August shows Pakistan’s covert plan unravelling: infiltration led to skirmishes, then regular fighting, and India’s capture of the Haji Pir Pass cut the infiltrators’ route. The war was started to reopen Kashmir, but its lasting effect was drawing the superpowers into South Asia.",
   pts:["Did not resolve the dispute but drew the US and USSR into the region with lasting implications",
        "5 Aug: war breaks out after Operation Gibraltar — infiltration to spark insurgency in J&K",
        "6–7 Aug: skirmishes with Pakistani guerrillas; 14 Aug: first major engagement of regular forces",
@@ -325,6 +364,7 @@ add("Second War (1965)", { id:"ip-w2-timeline-aug", title:"Second War timeline: 
        "Late Aug: Pakistani counter-attack near Tithwal, Uri, Poonch; India thrusts into ‘Azad Kashmir’ and takes the Haji Pir Pass"] });
 add("Second War (1965)", { id:"ip-w2-timeline-sep", title:"Second War timeline: September 1965", when:"Sep 1965",
   q:"Outline the course of the Second War in September 1965.",
+  exp:"September shows escalation: Pakistan’s Grand Slam threatened India’s Kashmir supply link, so India widened the war across the international border toward Lahore and Sialkot. With neither side able to break through, stalemate made a ceasefire acceptable once Res. 211 demanded one.",
   pts:["1 Sep: Operation Grand Slam in the southern sector; India calls in air support — first strike within 90 minutes",
        "2 Sep: Pakistan retaliates with air strikes; airpower used by both for rest of war",
        "5 Sep: Pakistan captures Jaurian (14 miles inside India), threatening Akhnur and the J&K supply link",
@@ -333,12 +373,14 @@ add("Second War (1965)", { id:"ip-w2-timeline-sep", title:"Second War timeline: 
        "21–22 Sep: ceasefire accepted by India (21st) and Pakistan (22nd)"] });
 add("Second War (1965)", { id:"ip-w2-cost", title:"Cost of the Second War", when:"1965",
   q:"What were the material costs of the 1965 war to each side?",
+  exp:"Both sides lost heavily in aircraft, tanks and men, and each also gave up some territory, so neither gained decisively. A costlier war with no clear winner helps explain why exhaustion, rather than diplomacy alone, pushed both toward the ceasefire and Tashkent.",
   pts:["India: 65–70 aircraft, 175–190 tanks, ~3,000 casualties, ~300 sq. miles of territory",
        "Pakistan: ~20 aircraft, 200 tanks, ~3,800 men, ~720 sq. miles of territory",
        "More costly than the first war",
        "Caused the largest tank battle since WWII (described as a 17-week war)"] });
 add("Second War (1965)", { id:"ip-pak-motives", title:"Pakistani motivations in 1965", when:"1965",
   q:"Why did Pakistan believe it had to act in 1965?",
+  exp:"Every peaceful route seemed closed: talks had failed, great powers were losing interest, India was absorbing Kashmir and its military build-up would soon rule out a Pakistani option. This produced a ‘now or never’ calculation. It shows how the failure of earlier management made renewed war seem rational to Pakistan.",
   pts:["Multilateral/bilateral negotiations had yielded little",
        "Great powers were tiring of the dispute",
        "Kashmir progressively integrated into India (New Delhi legislatively dismantling its special-status protections)",
@@ -347,6 +389,7 @@ add("Second War (1965)", { id:"ip-pak-motives", title:"Pakistani motivations in 
 add("Second War (1965)", { id:"gibraltar", title:"Operation Gibraltar", when:"Aug 1965",
   q:"What was Operation Gibraltar and why did it fail?",
   clue:"Covert August 1965 infiltration across the ceasefire line by disguised soldiers meant to manufacture an armed insurrection.",
+  exp:"Gibraltar depended on Kashmiris rising up to provide a pretext for war, but they did not, and India detected and struck the infiltrators. A plan built on a mistaken reading of local feeling therefore backfired, triggering the first large-scale clash since 1947 instead of an uprising.",
   pts:["Strategy: covertly cross the LoC and incite a Kashmiri Muslim uprising, giving international justification for war",
        "First week Aug 1965: disguised soldiers/guerrillas infiltrate J&K (Indian estimate 30,000–40,000; Pakistani 5,000–7,000)",
        "Plan: incite rebellion; guerrilla attacks on bridges, highways, communications, airfields to manufacture an “armed insurrection”",
@@ -355,6 +398,7 @@ add("Second War (1965)", { id:"gibraltar", title:"Operation Gibraltar", when:"Au
 add("Second War (1965)", { id:"ip-kutch", title:"Rann of Kutch and Pakistani reasoning", when:"Apr 1965",
   q:"How did the Rann of Kutch affair shape Pakistan's calculations in 1965?",
   clue:"Pakistan seized posts in an un-demarcated boundary area in April 1965 and India retreated through poor logistics.",
+  exp:"India’s retreat in the Rann of Kutch, caused by poor logistics, led Pakistan to conclude Indian morale was low. Schofield shows Pakistan also hoped a rebellion would force Western intervention. Both assumptions proved wrong, so this card explains Pakistan’s miscalculation in launching Gibraltar.",
   pts:["Apr 1965: Pakistan seized posts in this disputed, un-demarcated boundary area",
        "India retreated due to poor logistics",
        "Reinforced Pakistan's mistaken belief that Indian morale was low",
@@ -362,6 +406,7 @@ add("Second War (1965)", { id:"ip-kutch", title:"Rann of Kutch and Pakistani rea
        "Schofield: they deduced that after the Rann of Kutch affair, Indian morale was low"] });
 add("Second War (1965)", { id:"ip-grandslam", title:"Development: Haji Pir and Operation Grand Slam", when:"Aug–Sep 1965",
   q:"How did the 1965 conflict develop after Gibraltar's failure?",
+  exp:"India answered infiltration by crossing the line and taking the Haji Pir Pass, cutting the infiltrators’ supply route. Grand Slam was Pakistan’s panicked attempt to recover by threatening Akhnoor, but India’s new Punjab front forced Pakistan to divert forces. The war widened precisely because each side tried to escape a local setback.",
   pts:["India counter-attacked across the ceasefire line into Azad Kashmir, capturing posts that sheltered infiltrators",
        "15 Aug: major Indian victory on Independence Day — morale boost",
        "India took the Haji Pir Pass — the infiltrators' logistical supply route",
@@ -371,6 +416,7 @@ add("Second War (1965)", { id:"ip-grandslam", title:"Development: Haji Pir and O
 /* ── Second War: International players ── */
 add("Second War: International players", { id:"ip-us-1965", title:"US role in 1965", when:"1965",
   q:"What role did the United States play in the 1965 war?",
+  exp:"The US cut arms to both because its weapons were being used between allies rather than against communism. Since Pakistan relied on US hardware, the embargo hit it hardest and limited how long it could fight. The notes stress that US–Soviet cooperation aimed mainly at keeping China out, not settling Kashmir.",
   pts:["As primary arms supplier (esp. to Pakistan), imposed a military embargo on both — alarmed weapons for fighting communism were used in an intra-allied war",
        "Other NATO states followed suit",
        "Major blow to Pakistan (hardware mostly US-supplied); contributed to its assessment it could not fight beyond mid-September",
@@ -378,6 +424,7 @@ add("Second War: International players", { id:"ip-us-1965", title:"US role in 19
        "Underlying US–USSR motive: keep China out and avoid direct superpower confrontation, not permanently resolving the conflict"] });
 add("Second War: International players", { id:"ip-ussr-1965", title:"Soviet role in 1965", when:"Aug–Sep 1965",
   q:"How did the Soviet stance on the 1965 war evolve?",
+  exp:"Moscow first blocked UN involvement because it leaned toward India, but then switched to offering good offices. Its motive was to keep China from gaining influence, since Chinese intervention might push the US toward India and undermine Soviet–Indian ties. This self-interest led directly to the Tashkent talks.",
   pts:["Initially opposed UNSC involvement (late Aug 1965): India confident, Pakistan wrongly believed it could win, USSR tilted toward India",
        "From 4 Sep: Kosygin advised both to negotiate, offering Soviet “good offices”",
        "Motive: keep China from gaining influence — Chinese intervention could push the US toward India, threatening Soviet–Indian relations",
@@ -385,6 +432,7 @@ add("Second War: International players", { id:"ip-ussr-1965", title:"Soviet role
        "17 Sep: Kosygin's third offer — host talks on Soviet territory → Tashkent meeting (4–10 Jan 1966)"] });
 add("Second War: International players", { id:"ip-others-1965", title:"Other countries in 1965", when:"Sep 1965",
   q:"How did China and other states respond to the 1965 war?",
+  exp:"China’s ultimatum to India raised the risk of a wider war, which gave both superpowers a shared reason to end the fighting quickly. Other states’ appeals and offers of peacekeepers show broad international pressure, but the decisive concern was denying China influence in the region.",
   pts:["China (strong Pakistani ally): ultimatum 18 Sep 1965 demanding India dismantle military works on the China–Sikkim boundary",
        "Both superpowers motivated to end the war quickly partly to deny China regional influence",
        "UK: PM Wilson expressed concern (6 Sep); Commonwealth appealed for ceasefire compliance",
@@ -395,6 +443,7 @@ add("Second War: International players", { id:"ip-others-1965", title:"Other cou
 add("Second War: UN intervention", { id:"ip-uthant", title:"U Thant's mission", when:"Aug–Sep 1965",
   q:"What did UN Secretary-General U Thant do during the 1965 war?",
   clue:"The UN Secretary-General visited Rawalpindi and New Delhi in mid-September 1965 and returned dejected.",
+  exp:"U Thant warned early that the war could spread and went in person to both capitals, but both sides attached conditions and he could give no guarantees. His failed appeals show the Secretary-General’s good offices depended entirely on the parties’ willingness, which was absent while each hoped to gain ground.",
   pts:["31 Aug: confidential paper to the Council warning the conflict could widen beyond Kashmir",
        "9–15 Sep: visits Rawalpindi and New Delhi for direct talks",
        "12 Sep: requests unconditional ceasefire effective 14 Sep — rejected; both attached conditions and SG lacked authority to give undertakings",
@@ -402,12 +451,14 @@ add("Second War: UN intervention", { id:"ip-uthant", title:"U Thant's mission", 
 add("Second War: UN intervention", { id:"ip-unipom", title:"UNIPOM", when:"Sep 1965 – 1966",
   q:"What was UNIPOM and why was it created?",
   clue:"Observation mission created under Res. 211 to supervise the ceasefire beyond the J&K line; first observers came on 23 Sep 1965.",
+  exp:"Because the 1965 fighting spread beyond Kashmir, UNMOGIP’s line no longer covered the whole front, so a new mission was needed for the international border. UNIPOM’s observers arrived as the ceasefire began, showing quick UN action — though with limited numbers.",
   pts:["UN India-Pakistan Observation Mission, set up by U Thant under Res. 211",
        "Supervised the ceasefire outside the J&K ceasefire line, since hostilities spread beyond Kashmir",
        "First observers arrived 23 Sep — the day the ceasefire took effect",
        "~90 observers assigned"] });
 add("Second War: UN intervention", { id:"ip-res209-211", title:"UNSC Resolutions 209, 210, 211", when:"Sep 1965",
   q:"What did UNSC Resolutions 209, 210 and 211 demand?",
+  exp:"The first resolution was ignored, the second widened the Secretary-General’s role after India’s offensive, and only the third, backed by rare major-power unity, brought a ceasefire. The escalation shows UN resolutions worked only when great powers stood behind them and the parties were ready to stop.",
   pts:["Res. 209 (4 Sep): unanimous call for immediate ceasefire, respect for ceasefire line, withdrawal, cooperation with UNMOGIP",
        "209 ignored by both — “a scrap of paper”",
        "Res. 210 (6 Sep): after India's three-pronged armour offensive across the international border; widened SG's mandate to exert every effort to secure compliance, not merely report",
@@ -418,6 +469,7 @@ add("Second War: UN intervention", { id:"ip-res209-211", title:"UNSC Resolutions
 add("Tashkent Declaration (1966)", { id:"tashkent", title:"Tashkent Declaration", when:"10 Jan 1966",
   q:"Who signed the Tashkent Declaration, and what were its main pledges?",
   clue:"Shastri and Ayub Khan signed in Soviet Central Asia under Kosygin's mediation in January 1966.",
+  exp:"Tashkent restored pre-war positions and committed both sides to peaceful means and non-interference. Soviet mediation reflected Moscow’s interest in excluding China. Note that the pledges dealt with withdrawal and conduct, not Kashmir’s status — the limitation the evaluation highlights.",
   pts:["Signed 10 Jan 1966 by PM Lal Bahadur Shastri and President Ayub Khan; mediated by Kosygin at Tashkent; registered with UN 22 Mar 1966",
        "Exert all efforts toward good neighbourly relations per the UN Charter",
        "Settle disputes peacefully; renounce use of force",
@@ -425,6 +477,7 @@ add("Tashkent Declaration (1966)", { id:"tashkent", title:"Tashkent Declaration"
        "Relations based on non-interference in internal affairs; discourage hostile propaganda"] });
 add("Tashkent Declaration (1966)", { id:"ip-tashkent-2", title:"Tashkent Declaration: further pledges", when:"Jan 1966",
   q:"What further pledges on diplomatic, economic and humanitarian matters did Tashkent contain?",
+  exp:"These pledges aimed to normalise relations — restoring diplomats, trade and contacts, returning POWs and continuing talks on refugees and property. They show Tashkent tried to rebuild a working relationship after the war, but they left the core sovereignty question for future meetings that never resolved it.",
   pts:["Restore high commissioners and normal diplomatic functioning (Vienna Convention 1961)",
        "Consider restoring economic, trade, communications and cultural ties",
        "Repatriate prisoners of war",
@@ -434,6 +487,7 @@ add("Tashkent Declaration (1966)", { id:"ip-tashkent-2", title:"Tashkent Declara
 /* ── Second War: Effectiveness ── */
 add("Second War: Effectiveness", { id:"ip-eval-sp65", title:"Effectiveness: superpower mediation 1965", when:"1965",
   q:"Evaluate the effectiveness of superpower mediation in the 1965 war.",
+  exp:"Superpower diplomacy helped: Kosygin’s repeated offers, the US embargo and US convening of the Council all pushed toward peace. But the notes judge military exhaustion — especially Pakistan’s after the embargo — as more decisive than pressure. Use this to weigh diplomatic against material factors in ending the war.",
   pts:["Achievement: USSR's repeated mediation (Kosygin, 3 occasions) built trust via declared neutrality and “good offices”",
        "Achievement: US embargo a bold attempt to restrain its own ally; public solidarity with Soviet ceasefire efforts",
        "Achievement: US, as UNSC President that month, convened the first meeting on the conflict",
@@ -441,6 +495,7 @@ add("Second War: Effectiveness", { id:"ip-eval-sp65", title:"Effectiveness: supe
        "Military exhaustion (esp. Pakistan's after the US embargo) mattered more"] });
 add("Second War: Effectiveness", { id:"ip-eval-tashkent", title:"Effectiveness: Tashkent Declaration", when:"1966",
   q:"How effective was the Tashkent Declaration?",
+  exp:"Tashkent ended a costly war and set a non-use-of-force precedent, and withdrawals were completed quickly. Yet neither side gained much: India gave up captured positions, Pakistan won nothing on Kashmir, and Pakistani riots followed. It halted fighting without addressing the cause.",
   pts:["Achievement: de-escalated tensions; ended a costly war that exposed both sides' military inexperience",
        "Achievement: enshrined non-use of force as precedent",
        "Achievement: enabled UNIPOM/UNMOGIP to supervise withdrawal at accelerated speed (finished by end-March 1966)",
@@ -449,6 +504,7 @@ add("Second War: Effectiveness", { id:"ip-eval-tashkent", title:"Effectiveness: 
        "Limitation: student riots in major Pakistani cities after Ayub Khan's return"] });
 add("Second War: Effectiveness", { id:"ip-eval-sg", title:"Effectiveness: Secretary-General's mission", when:"1965",
   q:"Evaluate the effectiveness of U Thant's peacekeeping mission in 1965.",
+  exp:"U Thant raised the alarm, shaped Council decisions through his reports and created UNIPOM, so his influence on UN policy was real. But he could not secure a ceasefire by his own authority, since he had no enforcement power and the parties were initially unwilling.",
   pts:["Achievement: “good offices” diplomacy — extensive meetings with both leaderships",
        "Achievement: brought crisis to UNSC attention; recommendations largely adopted",
        "Achievement: 16 Sep report to the Council guided further action",
@@ -456,6 +512,7 @@ add("Second War: Effectiveness", { id:"ip-eval-sg", title:"Effectiveness: Secret
        "Limitation: failed to secure compliance on own authority — no enforcement power; depended on parties' (initially absent) willingness"] });
 add("Second War: Effectiveness", { id:"ip-eval-unsc65", title:"Effectiveness: UNSC and Res. 211", when:"1965",
   q:"Evaluate the effectiveness of UNSC mediation and Resolution 211 in 1965.",
+  exp:"The Council fulfilled its role in urging settlement, and Res. 211 with UN observers helped halt the fighting and supported Tashkent. Yet Soviet obstruction delayed action and three resolutions were needed, because sovereign equality meant the UNSC could not compel compliance.",
   pts:["Achievement: discharged Chapter V duties, urging negotiated settlement and an environment for dialogue",
        "Achievement: UN presence (UNIPOM, UNMOGIP) reduced tensions, maintained ceasefire, supported Tashkent talks",
        "Achievement: Res. 211's clear, unconditional demand pivotal in halting hostilities; expanded SG's role to pursue compliance and supervise withdrawal",
@@ -463,6 +520,7 @@ add("Second War: Effectiveness", { id:"ip-eval-unsc65", title:"Effectiveness: UN
        "Limitation: escalating resolutions (209 → 210 → 211) needed; could not compel compliance due to sovereign equality (Art. 2(1))"] });
 add("Second War: Effectiveness", { id:"ip-eval-unipom", title:"Effectiveness: UNIPOM", when:"1965–66",
   q:"Evaluate the effectiveness of UNIPOM.",
+  exp:"UNIPOM deployed fast and even negotiated limits on air activity, but around 100 officers could not properly watch over 1,000 miles of border, and early reliance on the combatants’ own communications weakened its reporting. Mutual distrust also caused ceasefire breaches as both sides jockeyed for position before lines froze.",
   pts:["Achievement: swift deployment — first observers arrived 23 Sep, day ceasefire took effect",
        "Achievement: ~90–100 personnel plus a Royal Canadian Air Force unit at Lahore",
        "Achievement: negotiated mid-December agreement limiting air activity",
@@ -473,6 +531,7 @@ add("Second War: Effectiveness", { id:"ip-eval-unipom", title:"Effectiveness: UN
 /* ── Second War: Impact ── */
 add("Second War: Impact", { id:"ip-w2-impact", title:"Impact of the Second War", when:"1965–1971",
   q:"What was the impact of the 1965 war on India and Pakistan?",
+  exp:"The war left both sides dissatisfied: India felt it gave up an advantage, while Ayub Khan’s failure dented the army’s prestige and strained Pakistan’s economy. Each blamed the US and drew closer to its own patron, and East Pakistan’s grievance at being left exposed began the path to 1971.",
   pts:["India: outrage it ceded the upper hand by accepting ceasefire; continued rise in defence spending",
        "Pakistan: backlash vs Ayub Khan for failing military aims; army's invincibility challenged",
        "East Pakistan resentment over inadequate wartime security despite heavy wartime taxation",
@@ -481,6 +540,7 @@ add("Second War: Impact", { id:"ip-w2-impact", title:"Impact of the Second War",
        "Pakistan resentful US did not aid its ally; turned increasingly to China for hardware and political support"] });
 add("Second War: Impact", { id:"ip-eastpak", title:"Growing dissatisfaction in East Pakistan", when:"1966–1971",
   q:"Why did East Pakistani dissatisfaction grow after 1965?",
+  exp:"The 1965 war showed East Pakistanis that Kashmir was a West Pakistani cause for which they were left vulnerable, undermining the shared Islamic identity meant to hold Pakistan together. Ganguly calls this the unravelling of the state’s raison d’être. West Pakistan’s failure to accommodate the East links the Second War directly to the Third.",
   pts:["Ganguly (1998): post-1965 developments represent “the unravelling of the fabric of Pakistan's Islamic ideology, the very raison d'etre”",
        "Ganguly: East Pakistani leaders realised Kashmir was “essentially a West Pakistani cause” for which East Pakistan was made “needlessly vulnerable”",
        "1966–1971: fundamental inability of West Pakistani leadership to accommodate the East Pakistani majority",
@@ -489,6 +549,7 @@ add("Second War: Impact", { id:"ip-eastpak", title:"Growing dissatisfaction in E
 /* ── Third War ── */
 add("Third War (1971)", { id:"ip-w3-timeline", title:"Third War timeline", when:"3–17 Dec 1971",
   q:"Outline the key events of the Third Indo-Pakistani War.",
+  exp:"Pakistan opened the formal war in the west, but India’s air superiority and its eastern campaign decided it within two weeks. India’s unilateral ceasefire after the Dhaka surrender shows it ended the war on its own terms. Unlike 1949 and 1965, the outcome came from military victory, with diplomacy following at Simla.",
   pts:["Fought during the Bangladesh Liberation War, 3 Dec to Pakistani capitulation in Dhaka 16 Dec 1971",
        "3 Dec: Pakistani air attack (Operation Chengiz Khan) on Indian bases in the northwest; ground operations in Kashmir and Punjab",
        "4 Dec: IAF hits Pakistani airbases incl. Peshawar (PAF HQ) and Karachi (with naval bombardment); India keeps air superiority",
@@ -498,6 +559,7 @@ add("Third War (1971)", { id:"ip-w3-timeline", title:"Third War timeline", when:
 add("Third War (1971)", { id:"bangladesh", title:"The Bangladesh Liberation War: background", when:"1947–1971",
   q:"Why did East Pakistan break away in 1971?",
   clue:"After the Awami League won 167 of 169 eastern seats in 1970, the Army and Bhutto blocked it from power and Mujib was jailed.",
+  exp:"Shared religion could not bridge the gap between two distant wings divided by language, culture and economic exploitation. When the Awami League won the 1970 election but was denied power and its leader jailed, the East’s grievances became a revolt. Brutal repression then sent refugees into India, drawing India in.",
   pts:["Partition created non-contiguous West and East Pakistan — shared Islam, differed sharply in language, ethnicity, culture",
        "West treated the East paternalistically at best, exploitatively at worst; gross economic disparities",
        "1970 elections: Awami League won 167 of 169 East Pakistani seats and a simple majority nationally",
@@ -505,6 +567,7 @@ add("Third War (1971)", { id:"bangladesh", title:"The Bangladesh Liberation War:
        "Mass protests brutally suppressed by the Army, triggering a massive refugee exodus into India"] });
 add("Third War (1971)", { id:"ip-india-1971", title:"India's role in the roots of the Third War", when:"Mar–Dec 1971",
   q:"What role did India play in the build-up to the 1971 war?",
+  exp:"India backed Bangladeshi independence from the start, and the refugee influx gave it both a burden and a base: the camps became the Mukti Bahini’s training ground. Indira Gandhi’s diplomacy and the Soviet veto blocked UN action that might have constrained India, preparing the ground for its intervention.",
   pts:["27 Mar 1971: rebel major Ziaur Rahman declares Bangladeshi independence on Mujibur's behalf; Indira Gandhi expresses full support same day",
        "~10 million refugees flee to India; India opens border and sets up camps",
        "Exiled Bangladeshi officers use camps to recruit/train the Mukti Bahini",
@@ -513,6 +576,7 @@ add("Third War (1971)", { id:"ip-india-1971", title:"India's role in the roots o
 add("Third War (1971)", { id:"ip-chengiz", title:"Operation Chengiz Khan", when:"3 Dec 1971",
   q:"What was Operation Chengiz Khan and what did it lead to?",
   clue:"Pre-emptive Pakistani air strikes on eight Indian air stations that opened full war on 3 December 1971.",
+  exp:"Facing an Indian-backed insurgency in the East, Pakistan struck pre-emptively at Indian air stations, but this gave India grounds for a formal declaration of war and allowed it to fight on both fronts. The move backfired: within 13 days Pakistan’s Eastern Command surrendered.",
   pts:["Indian-backed East Pakistani guerrillas fought the Army through autumn 1971; West Pakistan responded with air attacks, opening full war on 3 Dec",
        "Pre-emptive aerial strikes on eight Indian air stations",
        "Triggered India's formal declaration of war and entry on the side of Bengali nationalists",
@@ -520,6 +584,7 @@ add("Third War (1971)", { id:"ip-chengiz", title:"Operation Chengiz Khan", when:
        "13 days later India had the upper hand; Eastern Command surrendered 16 Dec 1971"] });
 add("Third War (1971)", { id:"ip-w3-consequences", title:"Human consequences of the 1971 war", when:"1971",
   q:"What were the human consequences of the 1971 war?",
+  exp:"The scale of the human cost — around 93,000 prisoners, civilian deaths estimated in the hundreds of thousands or millions, and millions of refugees — shows why 1971 was far more than a border war. The prisoners also became a bargaining issue that India later resolved at Simla.",
   pts:["~93,000 Pakistani servicemen taken prisoner",
        "79,676–81,000 uniformed personnel (incl. some loyalist Bengali soldiers); remaining 10,324–12,500 civilians/collaborators (Razakars)",
        "Pakistani military and allied Islamist militias estimated to have killed 300,000–3,000,000 civilians in Bangladesh",
@@ -528,6 +593,7 @@ add("Third War (1971)", { id:"ip-w3-consequences", title:"Human consequences of 
 /* ── Third War: Superpowers and PRC ── */
 add("Third War: Superpowers & PRC", { id:"ip-us-1971", title:"American involvement in 1971", when:"1971",
   q:"Why and how did the US support Pakistan in 1971?",
+  exp:"Nixon backed Pakistan to prevent Indian dominance and Soviet gains, and because Pakistan was linked to his opening to China. He even bypassed Congressional sanctions to supply arms. This support misled Yahya Khan into expecting US intervention — an example of patronage emboldening an ally.",
   pts:["By late summer 1971: West Pakistan with China and US; (East) Pakistan with India and USSR",
        "US kept shipping arms; Nixon feared Soviet expansion into South/Southeast Asia if Pakistan disintegrated",
        "Kissinger: India would “completely dominate the sub-continent, Soviet influence would skyrocket… a major war could erupt”",
@@ -537,6 +603,7 @@ add("Third War: Superpowers & PRC", { id:"ip-us-1971", title:"American involveme
 add("Third War: Superpowers & PRC", { id:"ip-enterprise", title:"USS Enterprise to the Bay of Bengal", when:"11 Dec 1971",
   q:"Why did Nixon send the USS Enterprise to the Bay of Bengal, and how did the USSR respond?",
   clue:"A US carrier sent on 11 Dec 1971 that India saw as a nuclear threat; Moscow answered with a nuclear submarine.",
+  exp:"The carrier deployment was meant to deter India in the west and show China the US was reliable, but India read it as a nuclear threat. The Soviet naval response shows how the regional war became a superpower standoff, with each patron backing its ally rather than restraining it.",
   pts:["11 Dec 1971: Nixon dispatched the USS Enterprise to the Bay of Bengal",
        "India saw it as a nuclear threat",
        "Kissinger (memoirs): meant to deter Indian action on the western border while demonstrating US reliability to China",
@@ -544,6 +611,7 @@ add("Third War: Superpowers & PRC", { id:"ip-enterprise", title:"USS Enterprise 
        "A Soviet nuclear submarine was sent in response to the Enterprise"] });
 add("Third War: Superpowers & PRC", { id:"ip-ussr-1971", title:"Soviet involvement in 1971", when:"1971",
   q:"Why and how did the USSR back India in 1971?",
+  exp:"Soviet backing served Moscow’s goals against China and in the Indian Ocean and South Asia. The 1971 treaty, large arms transfers and repeated UNSC vetoes gave India the security to act, while deterring China. This illustrates bloc alignment replacing the neutral mediation the USSR had offered in 1965.",
   pts:["Mahmood's three motives: strengthen India as counterweight to China; naval bases in the Indian Ocean; foothold in South Asia with East Pakistan's fall",
        "Pledged countermeasures if India faced confrontation with the US or China",
        "Indo-Soviet Friendship Treaty (9 Aug 1971): 20-year treaty; alienated the US and reduced likelihood of Chinese involvement",
@@ -552,12 +620,14 @@ add("Third War: Superpowers & PRC", { id:"ip-ussr-1971", title:"Soviet involveme
        "Blocked every UNSC resolution aimed at peace until East Pakistan's fall"] });
 add("Third War: Superpowers & PRC", { id:"ip-china-1971", title:"Chinese involvement in 1971", when:"1971",
   q:"What role did China play in the 1971 war?",
+  exp:"China urged Pakistan to settle with the East before the war and then gave it support, but of lower quality than Soviet aid to India. Despite US encouragement, it did not intervene militarily. This shows the limits of the China–Pakistan alliance that Pakistan had relied on.",
   pts:["Pre-war: advised Pakistan to reach a peaceful settlement with East Pakistani leaders, fearing Indian interference",
        "Gave moral and military aid during the war, of lesser quality than Soviet aid to India",
        "Alarmed at prospect of Indian integration of Pakistan-administered Kashmir",
        "Nixon encouraged China to mobilise along the Indian border — but China did not intervene militarily"] });
 add("Third War (1971)", { id:"ip-w3-outcomes", title:"Outcomes of the Third War", when:"1971",
   q:"What were the outcomes of the 1971 war?",
+  exp:"Pakistan’s total defeat and the creation of Bangladesh struck at the idea of Pakistan as one Muslim homeland. The new imbalance left Pakistan unable to challenge India over Kashmir for the time being, while India worried about further fragmentation. The war changed the balance of power rather than resolving Kashmir.",
   pts:["Pakistan's land, air and sea forces comprehensively defeated",
        "Creation of independent Bangladesh, challenging Pakistan's founding rationale as a single Muslim homeland — a major blow to its raison d'être",
        "Power asymmetry left Pakistan temporarily unable to challenge the Kashmir status quo",
@@ -567,6 +637,7 @@ add("Third War (1971)", { id:"ip-w3-outcomes", title:"Outcomes of the Third War"
 add("Simla Agreement (1972)", { id:"simla", title:"Simla Agreement", when:"2 Jul 1972",
   q:"What were the terms and significance of the Simla Agreement?",
   clue:"1972 accord in which Pakistan recognised Bangladesh and both sides committed to bilateral negotiations only.",
+  exp:"Victory let India shape Simla: Pakistan recognised Bangladesh, India returned land and POWs, and both converted ceasefire lines into the LoC. India’s insistence on bilateral talks shut out UN or other third-party mediation. A longer peace followed, but because of India’s dominance rather than a settlement of Kashmir.",
   pts:["Signed 2 Jul 1972 to “put an end to the conflict and confrontation that have hitherto marred their relations”",
        "Pakistan to recognise Bangladesh; India to return captured territories and the 93,000 POWs without war-crimes trials",
        "At India's insistence, differences settled “by peaceful means through bilateral negotiations” — excluding third-party (incl. UN) mediation",
@@ -574,6 +645,7 @@ add("Simla Agreement (1972)", { id:"simla", title:"Simla Agreement", when:"2 Jul
        "Followed by longer relative peace: India dominant South Asian power; Pakistan's attention shifted toward the Muslim Arab world"] });
 add("Simla Agreement (1972)", { id:"ip-unmogip-simla", title:"UNMOGIP after Simla", when:"1972 onward",
   q:"Why was UNMOGIP's mandate disputed after Simla?",
+  exp:"India argued Simla’s bilateralism made UNMOGIP redundant, while Pakistan still wanted international involvement and kept filing complaints. The Secretary-General held only the UNSC could end it, so it continued in limbo. The dispute shows how Simla reduced the UN’s role in Kashmir to a contested formality.",
   pts:["India: mandate lapsed (it related to the 1949 Karachi ceasefire line specifically); Pakistan disagreed",
        "SG: UNMOGIP can only be terminated by UNSC decision — continued on same arrangements since Dec 1971 ceasefire",
        "SG's last formal report on UNMOGIP to the Council was in 1972",
@@ -581,6 +653,7 @@ add("Simla Agreement (1972)", { id:"ip-unmogip-simla", title:"UNMOGIP after Siml
        "India still provides UNMOGIP security/transport/logistics on its side; Pakistan continues to lodge complaints"] });
 add("Third War: Effectiveness", { id:"ip-eval-71", title:"Effectiveness of conflict management 1971–72", when:"1971–72",
   q:"Evaluate superpower mediation, the Simla Agreement and UN peacekeeping in the Third War.",
+  exp:"In 1971 the superpowers backed their allies instead of mediating, and the Soviet veto paralysed the UN, so external management failed to stop war. Simla brought practical gains — POW returns and normal relations — but no mechanism or enforcement for Kashmir. It continues the pattern of ending wars without resolving the dispute.",
   pts:["Superpowers: limited role — not neutral; rivalry emboldened allies (US–Pakistan–China vs USSR–India) to escalate rather than restrain",
        "Simla achievement: reaffirmed LoC and peaceful resolution of Kashmir",
        "Simla achievement: POW/internee repatriation; normalised relations, reopening missions and high-level talks",
@@ -589,6 +662,7 @@ add("Third War: Effectiveness", { id:"ip-eval-71", title:"Effectiveness of confl
        "UN: failed to prevent war — Soviet veto of US-sponsored ceasefire resolution paralysed the UNSC"] });
 add("Third War: Epilogue", { id:"ip-epilogue", title:"Epilogue: road to the 1989 insurgency", when:"1972–1989",
   q:"How did Ganguly (2001) characterise New Delhi's Kashmir policy after 1971, and what does this suggest about conflict management?",
+  exp:"Ganguly shows that after a period of skilful handling, Indian policy in Kashmir reverted to clumsiness and deceit, leading to the 1989 insurgency. Because the sovereignty question had never been settled, it resurfaced internally. This supports the argument that management addressed symptoms rather than the cause.",
   pts:["Euphoria of India's victory lasted a considerable time",
        "1972–1983: governments showed “skill, tact, and intelligence” on internal Kashmir problem",
        "From 1984: returned to “extraordinary clumsiness, thoughtlessness and downright deceit” of the 1950s–60s",
@@ -598,6 +672,7 @@ add("Third War: Epilogue", { id:"ip-epilogue", title:"Epilogue: road to the 1989
 /* ── Consolidation ── */
 add("Consolidation: actors across three wars", { id:"ip-consol-w1", title:"Consolidation: First War", when:"1947–49",
   q:"Summarise the outbreak, development/end and unresolved tensions of the First War.",
+  exp:"The First War grew from partition’s flaws, Pakistan’s backing of Poonch rebels and India’s airlift after accession. UN machinery ended the fighting with a ceasefire and observers. But the unheld plebiscite and new superpower ties left the conflict primed to return.",
   pts:["Dispute over Kashmir",
        "Outbreak: British Partition Plan and competing nationalisms; Pakistani troops in Poonch rebellion; accession and Indian airlift",
        "Development: both sides contributed to violence; India's formal UNSC referral",
@@ -605,6 +680,7 @@ add("Consolidation: actors across three wars", { id:"ip-consol-w1", title:"Conso
        "Unresolved: plebiscite never held; growing superpower influence in each country"] });
 add("Consolidation: actors across three wars", { id:"ip-consol-w2", title:"Consolidation: Second War", when:"1965–66",
   q:"Summarise the outbreak, development/end and unresolved tensions of the Second War.",
+  exp:"Pakistan’s covert attempt to spark a Kashmiri revolt escalated when India counter-attacked. External pressure — Res. 211, the US embargo and Soviet mediation — ended it. Its unresolved legacy shifted to East Pakistan’s resentment, connecting this war to 1971.",
   pts:["Dispute over Kashmir",
        "Outbreak: Operation Gibraltar — covert infiltration to incite a Kashmiri Muslim rebellion",
        "Development: India's counterattack intensifies the conflict",
@@ -612,6 +688,7 @@ add("Consolidation: actors across three wars", { id:"ip-consol-w2", title:"Conso
        "Unresolved: increasing East Pakistani resentment of West Pakistan's perceived military neglect"] });
 add("Consolidation: actors across three wars", { id:"ip-consol-w3", title:"Consolidation: Third War", when:"1971–72",
   q:"Summarise the outbreak, development/end and unresolved tensions of the Third War.",
+  exp:"This war was over East Pakistan, not Kashmir: India backed the independence struggle and Pakistan’s air strikes triggered full war, with each superpower behind its ally. India’s victory ended it and led to Simla. The resulting imbalance silenced Pakistan on Kashmir only temporarily, setting up 1989.",
   pts:["Dispute over East Pakistan/Bangladesh",
        "Outbreak: India's support for the independence struggle; Operation Chengiz Khan (air attack + ground assault on Kashmir/Punjab); superpowers backing allies",
        "Development: India's counterattack intensifies the conflict",
@@ -621,6 +698,7 @@ add("Consolidation: actors across three wars", { id:"ip-consol-w3", title:"Conso
 /* ── Exam synthesis: macro-organiser ── */
 add("Exam synthesis: role of players", { id:"ip-macro-domestic", title:"Macro-organiser: domestic players", when:"1947–1971",
   q:"Trace the roles of India, Pakistan and the Kashmiris across the three wars.",
+  exp:"India’s pattern moved from defending Kashmir after accession to widening the war in 1965 and decisively intervening in 1971. Pakistan repeatedly initiated through proxies, infiltration or pre-emptive strikes, and each time lost. Kashmiris themselves mattered: their refusal to rise in 1965 undercut Pakistan’s strategy.",
   pts:["India: 1947 airlifts troops after conditional accession, refers to UNSC; 1965 counter-attacks across LoC, opens Punjab front",
        "India 1971: backs Mukti Bahini; declares war after Chengiz Khan; unilateral ceasefire after victory",
        "Pakistan: 1947 backs tribal invasion via Azad Kashmir forces; 1965 Gibraltar → Grand Slam (Akhnoor)",
@@ -628,6 +706,7 @@ add("Exam synthesis: role of players", { id:"ip-macro-domestic", title:"Macro-or
        "Kashmir: 1947 Maharaja accedes under duress, Sheikh Abdullah's NC backs India; 1965 populace refuses to join uprising; 1971 not primary theatre but LoC reaffirmed at Simla"] });
 add("Exam synthesis: role of players", { id:"ip-macro-external", title:"Macro-organiser: external players", when:"1947–1971",
   q:"Trace the roles of the superpowers and the UN across the three wars.",
+  exp:"Trace a clear trend: the superpowers went from barely involved to self-interested mediators to committed patrons, while the UN went from building machinery to passing firmer resolutions to being paralysed by veto. External actors became more involved, yet less able to restrain the combatants.",
   pts:["Superpowers 1947: limited direct role; British officers still command both armies",
        "Superpowers 1965: US embargo on both; USSR mediates Tashkent; both seek to exclude China",
        "Superpowers 1971: US backs Pakistan (USS Enterprise); USSR backs India (vetoes, arms); China backs Pakistan but doesn't intervene",
@@ -636,6 +715,7 @@ add("Exam synthesis: role of players", { id:"ip-macro-external", title:"Macro-or
        "UN 1971: UNSC paralysed by Soviet veto; minimal effective role"] });
 add("Exam synthesis: reasons grid", { id:"ip-grid-a", title:"Reasons grid: decolonisation, security, sovereignty", when:"framework",
   q:"Link decolonisation, security and territorial sovereignty to the actions of each actor.",
+  exp:"The grid ties each cause to an actor’s action, giving evidence for essay paragraphs. Decolonisation shows Britain’s rushed exit and the Maharaja’s failed independence; security shows mirror-image fears over Kashmir’s location; sovereignty shows a contested legal act the UN never decided. Together they explain why neither side could concede.",
   pts:["Decolonisation: India accepted provisional accession under Nehru's two conditions; Pakistan pressured Kashmir via tribal proxies",
        "Decolonisation: Hari Singh's failed independence bid; Britain/Mountbatten's rushed Radcliffe Line and princely-state ambiguity",
        "Security: India saw Kashmir as buffer vs USSR/China/Afghanistan; Pakistan feared Indian troops on the Lahore–Pindi corridor",
@@ -644,6 +724,7 @@ add("Exam synthesis: reasons grid", { id:"ip-grid-a", title:"Reasons grid: decol
        "Sovereignty: Maharaja's accession is the contested legal act; UN never adjudicated it conclusively"] });
 add("Exam synthesis: reasons grid", { id:"ip-grid-b", title:"Reasons grid: nationalism, religion, economics", when:"framework",
   q:"Link nationalism, religion and economic interests to the actions of each actor.",
+  exp:"Nationalism and religion worked together: each state’s identity required Kashmir, and its Muslim-majority, Hindu-ruled make-up gave both a claim. Economic interests added Pakistan’s dependence on Indus waters controlled upstream by India. The treaty shows this cause, unlike the others, was managed successfully.",
   pts:["Nationalism: India secular “One Nation” — Kashmir as proof of pluralism; Pakistan “Two Nation” — Kashmir needed for “completeness”",
        "Nationalism: Kashmir's Muslim-majority population caught between rival nationalisms",
        "Religion: India Hindu-majority state ruled secularly; Pakistan Muslim homeland rationale",
@@ -652,6 +733,7 @@ add("Exam synthesis: reasons grid", { id:"ip-grid-b", title:"Reasons grid: natio
        "Economic: 1960 Indus Waters Treaty (World Bank-brokered)"] });
 add("Exam synthesis: conflict management grid", { id:"ip-cm-grid", title:"Conflict management quick-reference grid", when:"1949–1972",
   q:"For each war, summarise the diplomatic efforts, peacekeeping efforts and unresolved issues.",
+  exp:"Across all three wars, each settlement stopped fighting without resolving Kashmir: Karachi drew a line, Tashkent restored positions, Simla excluded outsiders. Peacekeeping went from observation to undermanned missions to paralysis. Each war’s unresolved issue fed the next, which is the core of the overall verdict.",
   pts:["1st War diplomacy: 1949 Karachi Agreement — ceasefire line, no resolution of status; peacekeeping: UNCIP, UNMOGIP — observation only",
        "1st War unresolved: plebiscite never held; accession legality disputed; superpower patronage begins",
        "2nd War diplomacy: Tashkent (USSR-mediated) — pre-war positions, no substantive gain; peacekeeping: Res. 209/210/211, UNIPOM (temporary, undermanned)",
@@ -662,6 +744,7 @@ add("Exam synthesis: conflict management grid", { id:"ip-cm-grid", title:"Confli
 /* ── Overall evaluation ── */
 add("Overall evaluation", { id:"ip-eval-diplomacy", title:"Overall evaluation: diplomacy", when:"1947–1972",
   q:"How effective was conflict management, 1947–1972? Evaluate diplomacy.", qs:"notes",
+  exp:"Diplomacy reliably ended wars and, through Simla, made the dispute more of a normal bilateral matter. But it never touched Kashmir’s sovereignty, and agreements held only as long as one side lacked the means or opportunity to fight. That is why ceasefires broke down when Pakistan saw a window in 1965.",
   pts:["Achievement: each war followed by a negotiated agreement (Karachi 1949, Tashkent 1966, Simla 1972) halting fighting and re-establishing a ceasefire line",
        "Achievement: agreements progressively narrowed third-party involvement — Simla's bilateral clause made relations more “normal” interstate relations than an internationalised dispute",
        "Limitation: none addressed the core sovereignty question over Kashmir — ceasefire/status-quo arrangements, not resolutions",
@@ -669,6 +752,7 @@ add("Overall evaluation", { id:"ip-eval-diplomacy", title:"Overall evaluation: d
        "Ceasefires held only until the next perceived window (Pakistan in 1965, India's overwhelming advantage in 1971)"] });
 add("Overall evaluation", { id:"ip-eval-peacekeeping", title:"Overall evaluation: peacekeeping", when:"1947–1972",
   q:"How effective was UN peacekeeping in managing the Indo-Pakistani conflict, 1947–1972?",
+  exp:"Observers helped limit the number and scale of wars, but unarmed, under-staffed missions could only report. The deeper limit was the Charter: sovereign equality meant enforcement needed great-power consensus, which Cold War rivalry often denied, as the 1971 veto showed.",
   pts:["Achievement: UNMOGIP/UNIPOM prevented more frequent or larger wars — only three in 25 years despite chronic tension",
        "Limitation: structurally toothless — unarmed observers, no Article 42-style mandate; could only report",
        "Consequence of sovereign equality (Art. 2(1)), which the UNSC could not override without Great Power consensus",
@@ -676,6 +760,7 @@ add("Overall evaluation", { id:"ip-eval-peacekeeping", title:"Overall evaluation
        "Limitation: under-resourced — UNMOGIP's ~45 and UNIPOM's ~90–100 observers inadequate for a 1,000+ mile border"] });
 add("Overall evaluation", { id:"ip-eval-superpowers", title:"Overall evaluation: role of the superpowers", when:"1947–1972",
   q:"Was superpower involvement helpful or harmful in managing the Indo-Pakistani conflict?",
+  exp:"Superpower involvement cut both ways: their pressure and mediation ended wars faster than the UN could, but their arms and backing encouraged both sides to fight. Their real goal was usually strategic, such as excluding China in 1965, so conflict resolution came second to Cold War competition.",
   pts:["Double-edged: US/Soviet mediation (embargoes, Tashkent, pressure) ended each war faster than UN action alone",
        "But patronage and arms (US–Pakistan, USSR–India) emboldened both to escalate",
        "1965: Pakistan's belief in eventual Western intervention; 1971: both sides confident in their patrons",
@@ -683,6 +768,7 @@ add("Overall evaluation", { id:"ip-eval-superpowers", title:"Overall evaluation:
        "Cold War geopolitics subordinated conflict resolution to strategic competition"] });
 add("Overall evaluation", { id:"ip-verdict", title:"Overall verdict on conflict management", when:"1947–1972",
   q:"What is the overall verdict on conflict management in the Indo-Pakistani conflict?",
+  exp:"Distinguish two levels: management worked tactically, stopping wars and arranging withdrawals and exchanges, but failed strategically because Kashmir’s sovereignty was never settled. That gap explains why every ceasefire was only a pause and why conflict recurred in 1965, 1971 and as the 1989 insurgency.",
   pts:["Reasonably effective at the tactical level: ended hostilities, set ceasefire lines, facilitated withdrawals and POW exchanges",
        "Largely ineffective at the strategic level: none resolved the core dispute over Kashmir's sovereignty",
        "Each ceasefire a pause rather than a settlement",
@@ -691,11 +777,13 @@ add("Overall evaluation", { id:"ip-verdict", title:"Overall verdict on conflict 
 /* ── Essay frameworks ── */
 add("Suggested essay frameworks", { id:"ip-essay-phase", title:"Essay framework: phase of conflict", when:"framework",
   q:"How can an essay on the Indo-Pakistani conflict be structured by phase of conflict?",
+  exp:"This framework structures an essay around how each war started, widened and ended. It pushes you to identify a specific trigger, explain the escalation dynamics, and judge whether diplomacy and peacekeeping or material factors such as exhaustion and embargoes really ended the fighting.",
   pts:["Outbreak: what specific actor/decision triggered the move from tension to open war?",
        "Escalation: how did counter-attacks, superpower involvement or domestic pressures widen the conflict?",
        "De-escalation/resolution: which diplomatic/peacekeeping mechanisms were used, and how effective relative to material factors (e.g. military exhaustion, embargoes)?"] });
 add("Suggested essay frameworks", { id:"ip-essay-lens", title:"Essay frameworks: management lens and actor-centred", when:"framework",
   q:"Outline the conflict-management-lens and actor-centred essay frameworks.",
+  exp:"These frameworks organise evidence as trends: diplomacy through three agreements, peacekeeping declining from machinery to paralysis, and the unheld plebiscite running through all three wars. The actor-centred version tracks how each player’s role changed, giving a clear line of argument about declining external effectiveness.",
   pts:["Diplomacy: Karachi (1949) → Tashkent (1966) → Simla (1972)",
        "Peacekeeping: UNCIP/UNMOGIP (1948–49) → UNSC resolutions + UNIPOM (1965) → UNSC paralysis (1971)",
        "Unresolved: the plebiscite question (never held) connects all three wars",
