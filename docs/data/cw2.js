@@ -7,6 +7,7 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"cw2", sec, src:S, qs:"me" 
 /* ── 10. Syllabus Map — Topic 2 ── */
 add("Syllabus Map — Topic 2", { id:"cw2-syllabus", title:"Topic 2 syllabus sub-topics", when:"1950–1975",
   q:"What are the three Topic 2 case studies and what does the syllabus expect for each?",
+  exp:"The three case studies all answer the same Essential Question as Topic 1: how the Cold War developed and how it shaped global events after 1945. Each follows the same pattern of background, outbreak and development, then impact, so you can reuse one analytical frame. Because the syllabus says you will not be asked to compare them, treat each as a separate source-based case and use cross-links only to deepen understanding.",
   pts:["Essential Question (same as Topic 1): How did the Cold War develop? How did the Cold War impact global developments after 1945?",
        "Korean War (1950–1953): China's emergence as a communist power and emerging Cold War tensions in Asia; outbreak and development (role of the superpowers, China, North Korea, South Korea); impact on the Cold War",
        "Cuban Missile Crisis (1962): impact of the Cuban Revolution on Cuba's relations with the USA and USSR; outbreak and development (role of the superpowers and Cuba); impact on the Cold War",
@@ -14,6 +15,7 @@ add("Syllabus Map — Topic 2", { id:"cw2-syllabus", title:"Topic 2 syllabus sub
        "Syllabus note: questions will NOT require candidates to compare Korea, Vietnam and the CMC against one another — each is examined as its own source-based case study"] });
 add("Syllabus Map — Topic 2", { id:"cw2-guiding-qs", title:"Topic 2 guiding questions", when:"framework",
   q:"What guiding questions frame the three Topic 2 case studies?",
+  exp:"These questions are the analytical spine behind every source-based question on Topic 2: responsibility, changing motives across phases, and whether a conflict was Cold War or local. The key skill is periodisation — answering “when and when not” rather than giving a single verdict. The final two-way question (Cold War shaping the conflict, and the conflict shaping the Cold War) is what lets you judge significance.",
   pts:["Korea: who or what caused the war, and what roles did each player take in its outbreak?",
        "Korea: what were each player's motivations in the different phases, and how did these change?",
        "Korea: was it a proxy war / Cold War conflict, or a civil war / local conflict? When?",
@@ -24,6 +26,7 @@ add("Syllabus Map — Topic 2", { id:"cw2-guiding-qs", title:"Topic 2 guiding qu
 /* ── 11. Korean War ── */
 add("Korean War — Why study the “Forgotten War”", { id:"cw2-stueck", title:"Stueck on the Korean War", when:"Stueck (2002)",
   q:"Why does Stueck consider the Korean War so significant, and why is it called “the Forgotten War”?",
+  exp:"Stueck's paradox is the key: Korea both stabilised and intensified the Cold War. It stabilised it because neither side's proxy could unify the peninsula, which taught both camps that military ventures beyond their own zone were too costly. It intensified it because it militarised and globalised containment. The “Forgotten War” label is therefore misleading, and you can use Stueck to argue Korea was a turning point.",
   pts:["Stueck (2002): “Quite possibly the most important event since World War II... a substitute for World War III... it had a stabilising effect on the Cold War”",
        "Stueck: “It did not end that conflict; indeed, it intensified and militarised it as never before”",
        "The fighting did not expand beyond Korea — the costs/risks of war, and the superpowers' success in preventing each other's proxy from unifying the peninsula, discouraged future efforts to venture beyond one's own zone by military means",
@@ -31,6 +34,7 @@ add("Korean War — Why study the “Forgotten War”", { id:"cw2-stueck", title
        "Despite the name, it was significant in shaping the militarisation and globalisation of the Cold War"] });
 add("Korean War — Why study the “Forgotten War”", { id:"cw2-korea-costs", title:"Human and material cost of the Korean War", when:"1950–1953",
   q:"What was the human and material cost of the Korean War?",
+  exp:"These figures show why the notes call it a total war for Koreans, even though for the superpowers it stayed limited. The contrast matters for analysis: local actors bore devastating losses, around a tenth of the population, while the great powers kept the fighting inside the peninsula. That gap supports the argument that Koreans' own concerns became secondary to great-power aims once outside forces took over.",
   clue:"A total war for the peninsula: ~10% of the population killed, wounded or missing; 8,700 industrial plants lost in the North.",
   pts:["For Koreans a total war: ~10% of the population killed, wounded, or missing",
        "South Korea lost the equivalent of its 1949 GNP; North Korea lost 8,700 industrial plants (South Korea, twice that number); 600,000 homes destroyed on each side",
@@ -39,6 +43,7 @@ add("Korean War — Why study the “Forgotten War”", { id:"cw2-korea-costs", 
        "Total communist dead and wounded estimated at 2 million"] });
 add("Korean War — Main players", { id:"cw2-korea-players", title:"Main players in the Korean War", when:"1950–1953",
   q:"Who were the main players in the Korean War on each side?",
+  exp:"Knowing who led each side lets you assign responsibility and motive in sources. Note the contrast between the two Korean leaders: both were authoritarian and both wanted reunification under their own rule, which is why the notes stress that the war's roots lay partly inside Korea. Changes of leadership, such as MacArthur to Ridgway, Truman to Eisenhower and Stalin's death, also mark turning points in the war's phases.",
   pts:["USA: Truman (1945–1953); Dean Acheson (Sec. of State); Gen. MacArthur (UN Command, Jul 1950–Apr 1951); Gen. Matthew Ridgway (his replacement); Eisenhower (from 1953)",
        "USSR: Generalissimus Joseph Stalin",
        "PRC: Chairman Mao Zedong; Premier Zhou Enlai; Marshal Peng Dehuai (Chinese People's Volunteer Army)",
@@ -47,6 +52,7 @@ add("Korean War — Main players", { id:"cw2-korea-players", title:"Main players
 
 add("Korean War — Background timeline", { id:"cw2-korea-tl-1905", title:"Korea's division, 1905–1948", when:"1905–1948",
   q:"Trace the background to Korea's division from 1905 to 1948.",
+  exp:"The timeline shows that Korea's division was imposed from outside rather than chosen by Koreans: a Japanese colony, then a hasty, arbitrary US-proposed line accepted by Stalin. Failed superpower cooperation (the Joint Commission, then the North's boycott of UN-supervised elections) hardened the temporary line into two rival states by 1948. This is the Cold War context that turned a national question into a potential flashpoint.",
   pts:["1905: Korea made a Japanese protectorate after the Russo-Japanese War; 1910: formal Japanese colony",
        "1919: Paris Peace Conference — Rhee's appeal for Korean independence ignored by the West",
        "Feb 1945: Yalta — agreement on four-power trusteeship of Korea with eventual independence",
@@ -56,6 +62,7 @@ add("Korean War — Background timeline", { id:"cw2-korea-tl-1905", title:"Korea
        "Aug 1948: ROK established, Rhee as President; Sep 1948: DPRK established"] });
 add("Korean War — Background timeline", { id:"cw2-korea-tl-1948", title:"Road to invasion, Dec 1948–Jun 1950", when:"1948–1950",
   q:"What were the key steps from troop withdrawal to the North Korean invasion (Dec 1948–Jun 1950)?",
+  exp:"This sequence explains why Stalin moved from refusing Kim in March 1949 to backing him in 1950. In between came the PRC's victory, Acheson's perimeter speech and the Sino-Soviet Treaty, all of which made an invasion look safer and better supported. NSC-68 being ready just before the invasion matters too: the attack gave Washington the trigger to adopt it.",
   pts:["Dec 1948 / Jun 1949: Soviet, then US, occupying troops withdrawn",
        "Mar 1949: Kim visits Moscow seeking Soviet support for invasion — rebuffed",
        "Oct 1949: People's Republic of China established",
@@ -65,6 +72,7 @@ add("Korean War — Background timeline", { id:"cw2-korea-tl-1948", title:"Road 
        "25 Jun 1950: North Korea invades South Korea"] });
 add("Korean War — Background timeline", { id:"cw2-korea-tl-war", title:"Korean War timeline, Jul 1950–Jul 1953", when:"1950–1953",
   q:"Give the key dates of the Korean War from the UN Command to the armistice.",
+  exp:"The dates map onto the four phases: US entry, rollback after Inchon, Chinese intervention, then stalemate and armistice. Each turning point changed the war's character. Crossing the 38th Parallel turned containment into rollback, China's crossing of the Yalu created a direct US–China clash, and MacArthur's dismissal and Stalin's death opened the way to a settlement near the original line.",
   pts:["Jul 1950: UN Command created under MacArthur; 15 Sep 1950: Inchon landings",
        "7 Oct 1950: UN troops cross the 38th Parallel, push to the Yalu; 25 Oct 1950: Chinese troops cross the Yalu, push UN forces south",
        "Nov 1950: Truman threatens the atomic bomb; MacArthur's “Home by Christmas” offensive",
@@ -74,6 +82,7 @@ add("Korean War — Background timeline", { id:"cw2-korea-tl-war", title:"Korean
 
 add("Korean War — China's emergence as a communist power", { id:"cw2-chinese-civil-war", title:"Chinese Civil War and founding of the PRC", when:"1927–1949",
   q:"How did the Chinese Civil War end, and at what cost?",
+  exp:"The CCP's victory is the key precondition for the Korean War in Asia. It gave Kim battle-hardened Korean veterans, it gave Stalin confidence that communism was advancing, and in the US it created the “loss of China” panic that made Truman unwilling to lose anywhere else. The Nationalists' retreat to Taiwan also left an unresolved conflict that later shaped China's reasons for intervening.",
   clue:"KMT under Chiang vs CCP under Mao; Nanjing fell 24 Apr 1949; the Nationalists retreated to Taiwan.",
   pts:["Military struggle between the KMT government under Chiang Kai-shek and the CCP under Mao Zedong, full-scale after WWII",
        "Balance turned to the communists in 1947–48; Nanjing fell 24 Apr 1949; Mao proclaimed the PRC on 1 October 1949",
@@ -82,6 +91,7 @@ add("Korean War — China's emergence as a communist power", { id:"cw2-chinese-c
        "By end-1949 virtually all mainland China was under communist control; Nationalists retreated to Taiwan"] });
 add("Korean War — China's emergence as a communist power", { id:"cw2-sino-soviet-treaty", title:"Sino-Soviet Treaty of Friendship and Alliance", when:"14 Feb 1950",
   q:"What was the Sino-Soviet Treaty of Feb 1950, why was it signed and what did it provide?",
+  exp:"The treaty met both sides' needs: Mao needed security and economic help against a still-dangerous KMT, while Stalin wanted to check US influence in East Asia. To Washington it appeared to confirm that communism was a single bloc directed from Moscow. Its later collapse in the Sino-Soviet split shows the alliance rested on national interest more than shared ideology, a useful point when judging how monolithic communism really was.",
   clue:"Product of Mao's “leaning to one side”; gave China a $300 million credit over 5 years and returned Port Arthur and Dairen.",
   pts:["Concluded 14 Feb 1950; result of Mao's policy of “leaning to one side” (with the socialist camp against the “imperialist” West) and Stalin's interest in checking US influence in East Asia",
        "Security guarantees and economic cooperation: restoration of the Chinese Changchun Railway, Port Arthur and Dairen",
@@ -90,6 +100,7 @@ add("Korean War — China's emergence as a communist power", { id:"cw2-sino-sovi
        "Did not prevent the drastic deterioration of relations in the late 1950s–60s (the Sino-Soviet split)"] });
 add("Korean War — China's emergence as a communist power", { id:"cw2-loss-of-china", title:"The “loss of China” in US discourse", when:"1949–1950",
   q:"How did the US react to the “loss of China”?",
+  exp:"Chomsky's point is that “loss” assumes ownership, which exposes how US policy-makers saw Asia. Although Acheson admitted the outcome was beyond US control, domestic politics made it a scandal, and McCarthyism punished any appearance of weakness. Together with the Sino-Soviet Treaty and Southeast Asian communism, this explains why the US extended containment to Asia and why Truman felt he could not let South Korea fall.",
   pts:["Chomsky (2012): the “loss of China” terminology is revealing — “It is only possible to lose something that one owns”",
        "Acheson (Aug 1949): the result of the Civil War in China “was beyond the control of the government of the United States”",
        "Interpreted in US politics as an “avoidable catastrophe” — fuel for Republican attacks on Truman and Senator Joseph McCarthy's accusations of communist sympathisers in government",
@@ -98,6 +109,7 @@ add("Korean War — China's emergence as a communist power", { id:"cw2-loss-of-c
        "Containment extended to Asia: offshore line of alliances (Japan, South Korea, Taiwan); later SEATO (1954) and ANZUS"] });
 add("Korean War — China's emergence as a communist power", { id:"nsc68", title:"NSC-68", when:"7 Apr 1950",
   q:"What was NSC-68 and what did it recommend?",
+  exp:"NSC-68 marks the shift from Kennan's political and economic containment to a militarised version. It was a response to the two shocks of 1949, the Soviet bomb and the CCP's victory, and it portrayed the USSR as an ideologically driven enemy so that permanent conflict seemed inevitable. Its call for costly rearmament was politically hard to pass until Korea supplied the justification.",
   clue:"Top-secret State Department report led by Paul Nitze, commissioned by Acheson; described an enemy “animated by a new fanatic faith”.",
   pts:["“United States Objectives and Programs for National Security” — top-secret State Department report led by Paul Nitze",
        "Commissioned by Acheson after the Chinese communist victory and the Soviet atomic test (both Aug–Oct 1949)",
@@ -106,6 +118,7 @@ add("Korean War — China's emergence as a communist power", { id:"nsc68", title
        "Initially opposed by figures like Kennan, who favoured political/economic containment, not military"] });
 add("Korean War — China's emergence as a communist power", { id:"cw2-nsc68-policy", title:"Korea turns NSC-68 into policy", when:"1950–1953",
   q:"How did the Korean War turn NSC-68 into policy, and how does this link to Topic 1?",
+  exp:"This card links cause and effect: NSC-68 was only a proposal until the North Korean invasion, together with McCarthyist pressure, seemed to prove its warnings right. The near-tripling of defence spending shows the scale of the change. In essays, use it as evidence that Korea militarised and globalised the Cold War, extending Topic 1's containment from Europe into a permanent rearmament programme.",
   pts:["The North Korean invasion (Jun 1950), with McCarthyist pressure, settled the debate in Nitze's favour",
        "US defence spending nearly tripled as a share of GDP (5% → 14.2%) between 1950 and 1953",
        "Extends the containment doctrine of Kennan's Long Telegram/Article X (Topic 1 §4.2) from Europe into a global, militarised strategy",
@@ -113,6 +126,7 @@ add("Korean War — China's emergence as a communist power", { id:"cw2-nsc68-pol
 
 add("Korean War — Outbreak", { id:"cw2-two-koreas", title:"Two rival Korean regimes", when:"1947–1949",
   q:"How did two rival regimes emerge in Korea before 1950?",
+  exp:"Both regimes were authoritarian, both wanted reunification on their own terms, and both believed it could only come by force, so the border raids show a civil conflict brewing before any invasion. The crucial difference was external: Stalin eventually approved Kim's plan, while Washington refused Rhee permission to attack. That difference explains why the war began from the North.",
   pts:["North: Kim Il-sung's Communist-dominated provisional government (from 1947) became the DPRK by Sep 1948, eliminating opponents and building a well-equipped Soviet-trained army",
        "South: anti-communist Syngman Rhee elected ROK President (Aug 1948), using martial law and authoritarian measures against dissent",
        "Soviet forces withdrew by Dec 1948; American forces by Jun 1949",
@@ -120,6 +134,7 @@ add("Korean War — Outbreak", { id:"cw2-two-koreas", title:"Two rival Korean re
        "Kim lobbied Stalin from 1949, gaining formal approval in April 1950; Rhee pressed Washington but never received US permission to push north"] });
 add("Korean War — Outbreak", { id:"koreaoutbreak", title:"North Korean invasion of the South", when:"25 Jun 1950",
   q:"How did the Korean War break out on 25 June 1950?",
+  exp:"The scale and equipment of the attack show it was a planned, externally supported invasion, not a border skirmish. Soviet tanks reflect Stalin's enabling role, and the Chinese Civil War veterans reflect China's indirect contribution through training. This is why the US could present it as blatant aggression, which helped justify both UN action and American intervention.",
   clue:"Dawn artillery barrage and ground assault across the 38th Parallel, spearheaded by 90,000 troops and 150 T-34 tanks.",
   pts:["25 June 1950: North Korean units launched an artillery barrage and ground assault across the 38th Parallel at dawn",
        "Spearheaded by 90,000 troops and 150 T-34 tanks",
@@ -128,12 +143,14 @@ add("Korean War — Outbreak", { id:"koreaoutbreak", title:"North Korean invasio
 
 add("Korean War — Role of key players in the outbreak", { id:"cw2-kim-role", title:"Kim Il-sung as initiator", when:"1949–1950",
   q:"Who or what caused the Korean War? What was Kim Il-sung's role in its outbreak?", qs:"notes",
+  exp:"Kim is the primary agent: the war was his initiative, driven by his wish for power and unification, and he actively persuaded a reluctant Stalin by exaggerating his chances. Khrushchev's testimony supports placing main responsibility with Kim rather than Moscow. This strengthens the argument that the war began as a local civil conflict that the Cold War then enlarged.",
   pts:["Kim was the initiator — motivated by personal power and national unification",
        "Asked Stalin three times for endorsement, playing up DPRK troop strength and possible Southern uprisings against Rhee",
        "Convinced Stalin the US would not intervene",
        "Khrushchev later: “the war wasn't Stalin's idea, but Kim Il-sung's. Kim was the initiator. Stalin, of course, tried to dissuade him.”"] });
 add("Korean War — Role of key players in the outbreak", { id:"cw2-stalin-role", title:"Stalin as enabler", when:"1949–1950",
   q:"Why did Stalin agree to Kim's invasion, and how far was the USSR responsible?",
+  exp:"Stalin did not start the war but made it possible, through approval, a large rise in military aid and advisers. His decision rested on reading 1949–50 as a moment of communist strength and American weakness, with Acheson's speech and US inaction in China suggesting low risk. Lee's judgement captures the balance: his support was critical, but he misjudged the US response, so his responsibility lies in enabling rather than intending a major war.",
   pts:["Stalin's acquiescence makes the USSR at least partly liable, though it did not initiate the attack",
        "Soviet military aid more than tripled 1949–50: 258 T-34 tanks, 178 warplanes, 1,600 artillery pieces by 25 Jun 1950, plus military advisers",
        "Confidence from the Soviet atomic test and the CCP's victory (both 1949)",
@@ -142,6 +159,7 @@ add("Korean War — Role of key players in the outbreak", { id:"cw2-stalin-role"
        "Did not expect the scale of the US response — Lee: “Stalin's support of Kim was a critical step towards full-scale war,” but he did not correctly anticipate the impact"] });
 add("Korean War — Role of key players in the outbreak", { id:"cw2-mao-role", title:"Mao's minimal role at the outbreak", when:"1947–1950",
   q:"What role did China play in the outbreak of the Korean War?",
+  exp:"China's role at the outbreak was indirect. Mao was preoccupied with domestic consolidation and Taiwan and had little interest in Kim's plans. Yet China's civil war had trained about half of the invading force, so it enabled the attack without instigating it. This distinction lets you separate China's limited role in 1950 from its decisive intervention later in the year.",
   pts:["Mao was not informed of Kim's plans until Apr 1950 and paid little attention",
        "Focused on consolidating CCP rule, reviving the economy and reclaiming Taiwan; the PLA had just demobilised after 12 years of war",
        "In 1947, 30,000 Koreans joined CCP forces in Manchuria; in 1949 a further 40,000 CCP-trained Korean veterans returned north",
@@ -149,6 +167,7 @@ add("Korean War — Role of key players in the outbreak", { id:"cw2-mao-role", t
        "China was an enabler (via troop training), not an instigator"] });
 add("Korean War — Role of key players in the outbreak", { id:"cw2-us-rhee-role", title:"US and Rhee roles in the outbreak", when:"1949–1950",
   q:"What roles did the USA and South Korea play in the outbreak?",
+  exp:"Neither the US nor Rhee started the war, but both played a part in the conditions for it. Acheson's speech may have led Stalin and Kim to underestimate US resolve, while Washington's restraint of Rhee shows it did not want war. Rhee's own push for a northern invasion shows that the drive for war existed on both sides of the 38th Parallel, supporting the civil-war interpretation of its origins.",
   pts:["USA: no direct responsibility — wary of provoking the USSR, no intention of war in Korea, committed to “Europe-first” (Berlin Blockade tensions fresh)",
        "Acheson's Press Club speech (12 Jan 1950) did not explicitly place Korea in the US defence perimeter — may have inadvertently encouraged Stalin/Kim",
        "But the US had separately warned Rhee that any Southern attack would end all US aid",
@@ -156,12 +175,14 @@ add("Korean War — Role of key players in the outbreak", { id:"cw2-us-rhee-role
        "But Rhee shared unification ambitions and sought US backing for a Northern invasion in early 1949; he had to be restrained — the initial motivations for war lay well within Korea itself"] });
 add("Korean War — Importance of Korea to the external powers", { id:"cw2-korea-importance-us", title:"Importance of Korea to the USA", when:"1945–1950",
   q:"How important was Korea to the USA before and after 1949?",
+  exp:"Korea's low strategic value to the US before 1949 explains Acheson's perimeter speech and the troop withdrawal. Its rising importance came from the events of 1949, as Korea became symbolically important as a place to stop the spread of communism, not because its bases mattered. This shift helps explain why the US reacted so strongly in 1950 to a country it had earlier written off.",
   pts:["1945–1949: not a priority — focus on the German Problem and rebuilding Europe",
        "Joint Chiefs (1947): the US had “little strategic interest” in Korean bases",
        "1949 onward: growing importance to balance the perceived spread of communism in Asia (“loss” of China, Southeast Asian communism, Soviet A-bomb)",
        "But the main focus remained rebuilding Japan, while avoiding all-out war with the USSR"] });
 add("Korean War — Importance of Korea to the external powers", { id:"cw2-korea-importance-ussr-prc", title:"Importance of Korea to the USSR and China", when:"1945–1950",
   q:"How important was Korea to the USSR and to China?",
+  exp:"For both communist powers Korea was secondary, which is why neither instigated the war. Stalin saw it as a buffer and a useful distraction from Europe, so he was willing to back Kim at low risk but never to fight for him. China only cared once US forces approaching its border turned Korea into a direct security threat, which explains why it stayed out at first and intervened later.",
   pts:["USSR: wanted to prevent a power vacuum filled by hostile (US) forces after Japan's defeat — explains the quick Soviet entry in 1945",
        "USSR: not top priority — Stalin stopped at the 38th Parallel at America's request, wary of a US military response he could not win",
        "USSR: preferred Korea as a “distraction” drawing US attention/resources from Europe, his main concern",
@@ -170,18 +191,21 @@ add("Korean War — Importance of Korea to the external powers", { id:"cw2-korea
 
 add("Korean War — Development: four phases", { id:"cw2-un-response", title:"UN response to the invasion", when:"25–27 Jun 1950",
   q:"How did the UN respond to the North Korean invasion, and why could it act?",
+  exp:"The speed of the UN response, and the Soviet absence that let it pass, meant US intervention was presented as collective action against aggression, not unilateral American power. This legitimacy mattered for Truman at home and abroad. It is also an irony: Stalin's boycott over the PRC's seat handed the US the international cover it needed.",
   pts:["Within hours of the 25 Jun invasion, the UN Security Council called for withdrawal of North Korean forces",
        "Two days later it recommended members furnish assistance to repel the attack",
        "Passed because Stalin had walked out of the UN in protest at its refusal to seat the PRC",
        "Allowed Truman to mobilise a UN Command (UNC) under MacArthur, with forces from 17 nations — legitimising US intervention as an international response"] });
 add("Korean War — Development: four phases", { id:"cw2-phase1", title:"Phase 1: US enters the war", when:"27 Jun–15 Sep 1950",
   q:"Why did the US enter the Korean War despite its Europe-first stance?",
+  exp:"The US entered for a mix of reasons: principle (resisting aggression and upholding agreements), prestige after the “loss” of China, and domestic political pressure. This overrode its Europe-first priority and its earlier view of Korea's low strategic value. The key analytical point is that US involvement, far larger than Soviet or Chinese support before June 1950, is what truly internationalised the conflict.",
   pts:["Kim's blatant cross-border attack seen as unprovoked aggression, breaching the 1945 Soviet-American agreement and UN resolutions",
        "American “prestige” at stake after the “loss” of China — Acheson: backing away “would be highly destructive of the power and prestige of the United States”",
        "Domestic politics: McCarthyist pressure and Nov 1950 Congressional elections made it important for Truman to appear anti-communist",
        "Marked the true internationalisation of the Cold War — Soviet/Chinese support before 25 Jun was not extensive; US participation after 25 Jun was"] });
 add("Korean War — Development: four phases", { id:"inchon", title:"Inchon landings", when:"15 Sep 1950",
   q:"How did the Inchon landings change the course of the Korean War?",
+  exp:"Inchon reversed the war, turning a near-defeat at Pusan into a sudden advance and the recapture of Seoul. Its success boosted MacArthur's standing, since he had overruled the Joint Chiefs' doubts. That confidence fed directly into the decision to push north, so Inchon is the bridge between Phase 1 containment and Phase 2 rollback.",
   clue:"MacArthur's amphibious outflanking move after the UN was pinned in the Pusan Perimeter; Seoul retaken within two weeks.",
   pts:["By early Aug 1950 the North controlled almost the whole peninsula except the Pusan Perimeter; UN reinforcements stabilised the line by early September",
        "15 Sep 1950: MacArthur's Inchon landings outflanked the North — “the most dramatic and fluid phase of the conflict” (Edwards)",
@@ -189,12 +213,14 @@ add("Korean War — Development: four phases", { id:"inchon", title:"Inchon land
        "The Joint Chiefs had reservations about Inchon as a landing site but MacArthur insisted"] });
 add("Korean War — Development: four phases", { id:"cw2-rollback", title:"Phase 2: rollback across the 38th Parallel", when:"16 Sep–24 Nov 1950",
   q:"Why was the decision to cross the 38th Parallel a fateful shift?",
+  exp:"Crossing the 38th Parallel changed the US aim from restoring South Korea to removing communism from North Korea, which is why the notes call it intensification rather than mere internationalisation. Faulty intelligence and MacArthur's convictions drove the advance toward China's border. This overreach is what provoked Chinese intervention, so it is a key turning point when judging US responsibility for the war's escalation.",
   pts:["Truman authorised crossing the 38th Parallel — a shift from containment to rollback",
        "MacArthur raced toward the Yalu River on erroneous intelligence that the PRC/USSR would not intervene",
        "MacArthur driven by anti-communist convictions and belief that US strategy focused too much on Europe",
        "Represents the intensification (not merely internationalisation) of the Cold War conflict — US now aimed at removing communism from Asia, not just repelling the invasion"] });
 add("Korean War — Development: four phases", { id:"chinakorea", title:"Chinese intervention in Korea", when:"Oct 1950–Jan 1951",
   q:"Why did China intervene in the Korean War?",
+  exp:"China's intervention was mainly defensive: Ball and Mao's own words show it feared for its own revolution once US forces neared its border. Resentment over Taiwan and the Seventh Fleet added a Cold War dimension, and the Soviet bomb made the risk seem bearable. The intervention links back to US rollback as its trigger and turned Korea into a direct US–China war.",
   clue:"~300,000 “Volunteers” counter-attacked two days after MacArthur's “end of war” offensive of 24 Nov 1950.",
   pts:["Late Oct 1950 limited Sino-UN contact misread as evidence China would not intervene massively",
        "24 Nov 1950: MacArthur's “end of war” offensive; two days later ~300,000 Chinese “Volunteer” troops counter-attacked, forcing a UN retreat; China deployed 2.3 million troops over the war, 360,000 casualties",
@@ -203,6 +229,7 @@ add("Korean War — Development: four phases", { id:"chinakorea", title:"Chinese
        "The Soviet A-bomb (1949) reassured China the US would be reluctant to use nuclear weapons against it"] });
 add("Korean War — Development: four phases", { id:"cw2-proxy-debate", title:"Was Korea a proxy war?", when:"1950–1951",
   q:"Was the Korean War a proxy war / Cold War conflict, or a civil war / local conflict? When?", qs:"notes",
+  exp:"The answer depends on the phase. It began as a civil conflict with local roots, became internationalised with US entry, intensified with rollback, and turned into a US–China confrontation once China entered. The proxy label fits because local leaders became subordinate to great-power aims, but it is weakened by the fact that the US and PRC fought with their own troops. A strong answer periodises the war rather than choosing one label.",
   pts:["Initial motivations lay within Korea — Kim and Rhee both sought unification; border raids from 1949 verged on civil war",
        "Phase 1 (from 25 Jun 1950): true internationalisation once the US participated",
        "Phase 2: intensification — US aims shifted to rolling back communism in Asia",
@@ -211,6 +238,7 @@ add("Korean War — Development: four phases", { id:"cw2-proxy-debate", title:"W
        "Against: less a classic proxy war, as the US and PRC committed their own troops directly rather than leaving Koreans to fight"] });
 add("Korean War — Development: four phases", { id:"cw2-stalemate", title:"Phase 4: stalemate and Truman's restraint", when:"Jan 1951–1953",
   q:"Why did Truman show restraint in the Korean War from late 1950?",
+  exp:"Truman's restraint came from both external and internal pressures. Allies feared nuclear escalation and wanted the US focused on Europe, while domestic political losses made a long, wider war unattractive. Military stalemate near the 38th Parallel reinforced this, so his war aims shrank back from rollback to containment. This supports the argument that Korea showed superpowers fighting limited wars.",
   pts:["By end-Jan 1951 the communists recaptured Pyongyang and Seoul; under Ridgway UN/ROK forces stemmed the tide; Seoul changed hands for the last time on 7 Mar 1951",
        "30 Nov 1950: Truman refused to rule out nuclear weapons, alarming allies — Attlee flew to Washington to urge caution",
        "NATO allies wanted the US to keep its focus on Europe",
@@ -218,6 +246,7 @@ add("Korean War — Development: four phases", { id:"cw2-stalemate", title:"Phas
        "By March 1951 Truman abandoned total reunification for the limited goal of restoring South Korean independence"] });
 add("Korean War — Development: four phases", { id:"cw2-macarthur-dismissal", title:"MacArthur's dismissal", when:"Apr 1951",
   q:"Why was MacArthur dismissed and what did it signal?",
+  exp:"MacArthur wanted total victory, including nuclear weapons and Nationalist troops, which clashed with Truman's shift to limited aims. By taking his case to Congress he challenged civilian control of policy. Dismissing him was a deliberate signal that the US would not widen the war, which is strong evidence for the theme of superpower restraint.",
   clue:"A general demanded nuclear weapons and Chiang's troops, then a letter read in Congress declared “there is no substitute for victory”.",
   pts:["Demanded permission to use nuclear weapons and Chiang's Nationalist troops",
        "Publicly criticised Truman's restraint (Mar–Apr 1951)",
@@ -226,6 +255,7 @@ add("Korean War — Development: four phases", { id:"cw2-macarthur-dismissal", t
        "Signalled US unwillingness to escalate to total war"] });
 add("Korean War — Development: four phases", { id:"armistice", title:"Korean Armistice", when:"27 Jul 1953",
   q:"Why was an armistice reached in Korea in 1953?",
+  exp:"The armistice came when every side had more to lose than gain: heavy casualties, allied pressure, Soviet caution and Korean leaders who had lost the initiative. Eisenhower combined threats toward the communists with incentives that kept Rhee in line, and Stalin's death made compromise easier. That the line ended close to the 1945 division shows the war's limited outcome, which is central to Stueck's argument that it stabilised the Cold War.",
   clue:"Signed at Panmunjom, close to the original 1945 dividing line, after a new US president hinted at nuclear escalation.",
   pts:["Huge casualties on both sides made further offensives unattractive; NATO allies pressured the US to prioritise Europe",
        "The USSR remained careful to avoid direct involvement; Kim and Rhee were entirely dependent on great-power support and had lost the initiative",
@@ -236,6 +266,7 @@ add("Korean War — Development: four phases", { id:"armistice", title:"Korean A
 
 add("Korean War — Impact on the Cold War", { id:"koreaimpact", title:"Korea extends containment and militarises the Cold War", when:"1950s",
   q:"How did the Korean War extend containment to Asia and militarise the Cold War?",
+  exp:"Korea turned containment into a militarised, global system. NSC-68's spending became permanent, a chain of Asian treaties extended containment beyond Europe, and increased aid to Vietnam led toward the next conflict. Its effects even reached Europe, where West German rearmament and NATO entry provoked the Warsaw Pact. Use this as the main evidence that Korea intensified and globalised the Cold War.",
   pts:["Washington concluded a defence pact with Seoul — tens of thousands of US troops, air cover, massive aid; USSR/China poured aid into the DPRK",
        "NSC-68 fully implemented: US defence spending rose from $13.1bn (1950) to $50.4bn during the war, sustained above $40bn/year through the decade",
        "Mutual defence treaties: Philippines (1951), Korea (1953), Taiwan (1954), Pakistan (1954); SEATO and the Eisenhower Doctrine/CENTO extended containment beyond Europe",
@@ -243,6 +274,7 @@ add("Korean War — Impact on the Cold War", { id:"koreaimpact", title:"Korea ex
        "In Europe: fear of a surprise Soviet invasion accelerated West German rearmament and NATO's admission of West Germany (1955), triggering the Warsaw Pact (1955)"] });
 add("Korean War — Impact on the Cold War", { id:"cw2-korea-proxy-nam", title:"Korea: proxy wars, NAM and superpower restraint", when:"1950s–1961",
   q:"How did the Korean War contribute to proxy wars, the Non-Aligned Movement and superpower restraint?",
+  exp:"The war had opposite effects that are worth holding together. It drew the US further into Asia, notably Vietnam, and its polarisation pushed newly independent states toward non-alignment, starting with Bandung. At the same time it set unwritten limits: each power would support clients or defend borders but avoid direct superpower war. This supports Stueck's view that Korea both widened and stabilised the Cold War.",
   pts:["The first US military advisers were sent to Vietnam in the war's aftermath, extending the commitment to French anti-communist forces",
        "NAM emerged partly in reaction to Cold War polarisation — 1955 Bandung Conference called for “abstention from... collective defence [arrangements] to serve the particular interests of any of the big powers”",
        "Led to NAM's formal establishment (Belgrade, 1961)",
@@ -250,6 +282,7 @@ add("Korean War — Impact on the Cold War", { id:"cw2-korea-proxy-nam", title:"
        "The US would fight limited wars by limited means rather than risk nuclear escalation"] });
 add("Korean War — Impact on the Cold War", { id:"cw2-korea-china-relations", title:"Korea's impact on relations with China", when:"1950–1958",
   q:"How did the Korean War affect Sino-Soviet and US–China relations?",
+  exp:"In the short term Korea pushed China and the USSR closer and made the US and China open enemies, as the embargo, the UN exclusion and Dulles's snub show. But arguments during the war over how much Moscow would give planted the seeds of the later Sino-Soviet split. This shows that the war's impact on the communist bloc was double-edged, and it links forward to the split's role in Vietnam.",
   pts:["Short-term: deepened Sino-Soviet cooperation — Soviet pilots secretly flew cover for Chinese troops; Stalin promised arms for up to 20 Chinese divisions",
        "Further cooperation on Port Arthur and atomic energy through the mid-1950s",
        "But wartime disputes over Soviet aid/nuclear-secret sharing fed into the Sino-Soviet split of the late 1950s–60s",
@@ -257,6 +290,7 @@ add("Korean War — Impact on the Cold War", { id:"cw2-korea-china-relations", t
        "1954: Dulles refused to shake Zhou Enlai's hand at Geneva; by 1958 US atomic weapons stationed in Korea aimed at containing the Sino-Soviet alliance"] });
 add("Korean War — Winners and losers", { id:"cw2-korea-winlose-1", title:"Korea winners and losers: USA and the two Koreas", when:"1953",
   q:"What did the USA, South Korea and North Korea win and lose in the Korean War?",
+  exp:"No side won outright, which reflects the armistice's return to the pre-war line. The US achieved its containment aim but paid heavily and pushed its two rivals together, while both Koreas survived only through great-power support. For the Koreans, the main cost was the vast loss of life, with South Korea gaining long-term aid and North Korea gaining survival but neither freedom nor prosperity.",
   pts:["USA won: kept the Communists out of South Korea; demonstrated a firm anti-communist stance",
        "USA lost: costly setbacks (Nov 1950); troops tied down in a country of “marginal” strategic importance; weakened UN influence amid rising non-aligned states; drove the USSR/PRC closer together",
        "ROK won: long-term US military/economic aid, base for later rapid growth",
@@ -265,6 +299,7 @@ add("Korean War — Winners and losers", { id:"cw2-korea-winlose-1", title:"Kore
        "DPRK lost: same heavy losses; Kim's consolidated grip meant neither prosperity nor freedom"] });
 add("Korean War — Winners and losers", { id:"cw2-korea-winlose-2", title:"Korea winners and losers: PRC and USSR", when:"1953",
   q:"What did the PRC and USSR win and lose in the Korean War?",
+  exp:"The PRC gained status as a power able to stand up to the US, but at a high cost, including Taiwan and two decades of isolation. The USSR diverted US resources without fighting, though this was offset by economic burdens and a stronger Western alliance. Comparing them shows how limited, indirect involvement could pay off at minimal cost.",
   pts:["PRC won: secured its borders; mobilised nationalist sentiment; viewed as a major power able to hold its own against the US",
        "PRC lost: heavy casualties (~400,000, incl. ~148,000 dead); lost near-term chance of retaking Taiwan; a US adversary for two decades, blocked from the UN",
        "USSR won: avoided direct/extensive involvement and heavy losses; diverted American resources and tested Western resolve at minimal cost",
@@ -273,6 +308,7 @@ add("Korean War — Winners and losers", { id:"cw2-korea-winlose-2", title:"Kore
 /* ── 12. Cuban Missile Crisis ── */
 add("Cuban Missile Crisis — Introduction", { id:"cw2-cmc-names", title:"Three names for the Crisis (Sewell)", when:"Oct 1962",
   q:"How did Americans, Soviets and Cubans see the 1962 Crisis differently?",
+  exp:"Each name reveals a different perspective. Americans saw a short October showdown, the Soviets saw a question of location in the Caribbean, and Cubans saw one episode in a longer fight for their revolution's survival. Sewell's point warns against a purely superpower-centred account: to explain the Crisis you must trace how a local revolution became a global confrontation, which is why the notes begin with US–Cuba relations.",
   pts:["Sewell (2002): the “Cuban Missile Crisis” in the West, the “Caribbean Crisis” in the USSR, the “October Crisis” in Cuba",
        "To Americans the focus was always the events of October 1962",
        "To the Soviets its main focus was geographic",
@@ -280,12 +316,14 @@ add("Cuban Missile Crisis — Introduction", { id:"cw2-cmc-names", title:"Three 
        "Raises questions beyond its thirteen/fourteen days: how a local Cuban Revolution became a global crisis and how the superpowers were drawn in"] });
 add("Cuban Missile Crisis — Main players", { id:"cw2-cmc-players", title:"Main players in the Cuban Missile Crisis", when:"1959–1962",
   q:"Who were the main players in the Cuban Missile Crisis?",
+  exp:"Knowing the key figures lets you attribute actions in sources: Mikoyan to the 1960 alliance, Dobrynin and Bobby Kennedy to the secret deal, Stevenson to the UN confrontation, ExComm to the blockade decision. Including Batista is a reminder that the Crisis's roots lie in the US-backed regime Castro overthrew. Brezhnev's place as successor links to Khrushchev's loss of prestige after the Crisis.",
   pts:["USSR: Khrushchev; Anastas Mikoyan (Deputy Premier); Anatoly Dobrynin (Ambassador to the USA); Leonid Brezhnev (successor)",
        "Cuba: Fidel Castro; Raúl Castro; Ernesto “Che” Guevara; Fulgencio Batista (the US-backed dictator Castro deposed)",
        "USA: JFK; Robert “Bobby” Kennedy (Attorney-General, ExComm); Dean Rusk (Sec. of State); Adlai Stevenson (UN Ambassador); Robert McNamara (Sec. of Defense)",
        "Other: U Thant (UN Secretary-General)"] });
 add("Cuban Missile Crisis — US–Cuba relations before the Revolution", { id:"cw2-us-cuba-before", title:"US domination of Cuba before 1959", when:"1823–1959",
   q:"How did the US dominate Cuba before the Revolution?",
+  exp:"For over a century the US treated Cuba as part of its sphere of influence, and its economic control was near-total by 1959, with Batista as a corrupt client. This explains why the Revolution was anti-American and why the US saw Castro's later Soviet alignment as an intolerable breach of its own hemisphere. It is the long-term cause behind the Crisis.",
   pts:["1823: John Quincy Adams called Cuba “an object of transcendent importance to the political and commercial interests” of the USA",
        "1823 Monroe Doctrine: US would resist foreign (mainly European) “colonisation” of Latin America — claiming the hemisphere, incl. Cuba, as a US sphere",
        "US defeated Spain in 1898 “in the name of Cuban sovereignty,” but Cuba remained little more than a US protectorate until 1959 — “Washington's presence was omnipresent”",
@@ -293,6 +331,7 @@ add("Cuban Missile Crisis — US–Cuba relations before the Revolution", { id:"
        "By 1959 US firms owned ~90% of telephone/electric services, ~50% of railways, 25% of the best land, and took 90% of sugar/tobacco exports"] });
 add("Cuban Missile Crisis — The Cuban Revolution", { id:"cubanrev", title:"Cuban Revolution", when:"1953–1959",
   q:"What was the nature and course of the Cuban Revolution?",
+  exp:"Edwards places the Crisis's origins in the Revolution, and the notes stress that it was mainly nationalist and anti-imperialist, a reaction to near-colonial US domination, rather than Soviet-inspired. This matters for responsibility: Cuba's later move toward Moscow grew out of local grievances. Castro postponing elections also foreshadowed the break with Washington.",
   clue:"The 26th of July Movement's guerrilla campaign from the Sierra Maestra; the dictator fled on New Year's Day 1959.",
   pts:["Edwards (2002): “The origins of the missile crisis lie in the Cuban Revolution”",
        "Fidel and Raúl Castro and Che Guevara led the 26th of July Movement (named for a failed 1953 barracks raid) from the Sierra Maestra",
@@ -301,6 +340,7 @@ add("Cuban Missile Crisis — The Cuban Revolution", { id:"cubanrev", title:"Cub
        "Castro arrived in Havana 9 January to head a provisional government, postponing the elections he had promised"] });
 add("Cuban Missile Crisis — Impact of the Revolution", { id:"cw2-agrarian-reform", title:"US reaction and Castro's 1959 reforms", when:"1959",
   q:"How did US–Cuban relations deteriorate in 1959?",
+  exp:"The relationship broke down step by step. Denied US financial help, Castro turned to nationalisation, and land reform directly hit US-owned property, so economic nationalism collided with American economic interests. Cuba's refusal to back down after the US protest shows the conflict was still a bilateral one in 1959, before the USSR was involved.",
   pts:["The US initially recognised Castro's government",
        "Castro toured the US in April 1959 but received no financial help — turned to nationalisation and heavier taxation",
        "First Agrarian Reform Law (May 1959): capped farm sizes, land to ~100,000 peasants, barred foreign ownership of sugar plantations",
@@ -308,6 +348,7 @@ add("Cuban Missile Crisis — Impact of the Revolution", { id:"cw2-agrarian-refo
        "US formally protested (Jun 1959); Cuba refused to modify the law"] });
 add("Cuban Missile Crisis — Impact of the Revolution", { id:"cw2-mikoyan-1960", title:"Cuba's alliance with the USSR", when:"1960",
   q:"How did Cuba's 1960 alliance with the USSR turn a US–Cuba antagonism into a Cold War conflict?",
+  exp:"Mikoyan's visit brought the USSR into the US sphere of influence, which is why the notes see it as the point a US–Cuba quarrel became a Cold War conflict. Each move then provoked a countermove: each US economic punishment was answered by Soviet help and further Cuban seizures, pushing Cuba deeper into the Soviet camp. The UN “bear hug” made the new alignment public and symbolic.",
   clue:"A Soviet deputy premier's February visit brought $100 million credit and a sugar-for-oil deal; in September came the UN “bear hug”.",
   pts:["Feb 1960: Mikoyan's visit — trade pact, $100 million Soviet credit, sugar-for-oil arrangement, Soviet technicians",
        "Arguably the moment that made it a Cold War conflict — it transgressed the unspoken Cold War ‘spheres of influence’",
@@ -316,6 +357,7 @@ add("Cuban Missile Crisis — Impact of the Revolution", { id:"cw2-mikoyan-1960"
        "Sep 1960: Castro's UN visit — “bear hug” with Khrushchev and a four-and-a-half-hour anti-US speech, symbolising Cuba's shift to the Soviet orbit"] });
 add("Cuban Missile Crisis — Impact of the Revolution", { id:"bayofpigs", title:"Bay of Pigs invasion", when:"17 Apr 1961",
   q:"Why did the Bay of Pigs invasion fail and what were its consequences?",
+  exp:"The failed invasion backfired. Instead of toppling Castro it united Cubans behind him, embarrassed Kennedy and drove Havana closer to Moscow, as Edwards argues. It also gave Cuba a real fear of a further US invasion, which became one of the reasons Khrushchev offered to deploy missiles, so it links US actions to the Crisis's outbreak.",
   clue:"CIA-organised landing of ~1,400 exiles, planned under Eisenhower, executed under Kennedy; 114 killed, over 1,100 captured.",
   pts:["CIA-organised invasion by ~1,400 Cuban exiles, authorised under Eisenhower and executed under Kennedy",
        "Poor planning: botched landing site, compromised surprise, Kennedy's last-minute refusal of US air support",
@@ -324,6 +366,7 @@ add("Cuban Missile Crisis — Impact of the Revolution", { id:"bayofpigs", title
        "Edwards (2002): it “had unintentionally solidified Castro's regime as Cubans united against the external threat,” pushing Havana closer to Moscow"] });
 add("Cuban Missile Crisis — Impact of the Revolution", { id:"cw2-mongoose", title:"Operation Mongoose", when:"Nov 1961–1962",
   q:"What was Operation Mongoose?",
+  exp:"Mongoose shows that the US continued trying to overthrow Castro after the Bay of Pigs. This sustained hostility made Cuban fears of invasion credible and gave Khrushchev a defensive justification for the missiles. In assessing responsibility, it supports the view that Kennedy's policies indirectly helped create the conditions for the Crisis.",
   clue:"CIA/Defense Department covert campaign of sabotage, propaganda and reported assassination plots, aiming for a revolt by October 1962.",
   pts:["CIA/Department of Defense covert campaign",
        "Propaganda, sabotage, arming opposition groups, reported assassination plots against Castro",
@@ -332,6 +375,7 @@ add("Cuban Missile Crisis — Impact of the Revolution", { id:"cw2-mongoose", ti
 
 add("Cuban Missile Crisis — Khrushchev's decision to deploy missiles", { id:"khrushchevmissiles", title:"Khrushchev's reasons for deploying missiles", when:"1962",
   q:"Why did Khrushchev decide to deploy missiles to Cuba?",
+  exp:"The motives combine strategic, defensive, ideological and personal factors. The missiles offered a cheap fix for exposed Soviet nuclear weakness and an answer to US missiles in Turkey; they would protect Cuba; and they offered a success after the Berlin humiliation, as Mason's link between Berlin and Cuba shows. Troyanovskiy's remark suggests poor forethought too, so a strong answer weighs these rather than citing a single cause.",
   pts:["(a) Missile gap: after boasting of ICBMs “like sausages,” US intelligence exposed the bluff (Feb 1961); MRBMs/IRBMs in Cuba would roughly triple Soviet strike capability at low cost and answer US Jupiters in Turkey",
        "(b) Berlin Crisis (1958–61): failure to dislodge the West and the Berlin Wall embarrassment (Aug 1961) left him needing a success — Mason (1996): “What began in Berlin in 1958 ended in Cuba in 1962”",
        "(c) Cuba's fear of US invasion after the Bay of Pigs and Mongoose — defending an ally pledged to Moscow",
@@ -339,12 +383,14 @@ add("Cuban Missile Crisis — Khrushchev's decision to deploy missiles", { id:"k
        "(e) Others: testing young Kennedy; boosting domestic/Party standing; exploiting Castro's need for a patron; insufficient forethought — Troyanovskiy: by end-September “Soon hell will break loose”... “too late to call it off”"] });
 add("Cuban Missile Crisis — Khrushchev's decision to deploy missiles", { id:"cw2-cmc-initiative", title:"Whose idea were the missiles?", when:"1962",
   q:"Did the initiative for the missile deployment come from Castro or Khrushchev?",
+  exp:"Each leader's later claim shifts responsibility to the other, so neither is reliable on its own. The historians' consensus that Khrushchev pushed a reluctant Castro places primary responsibility in Moscow. Ball's comment adds that Soviet aims, demonstrating power, mattered more than Cuba's needs, which also explains why Castro was later sidelined in the settlement.",
   pts:["Khrushchev later claimed Castro requested the missiles",
        "Castro claimed the proposal was Khrushchev's",
        "Most Western historians (Sewell, Ball, Naftali, Blight): the initiative came from Khrushchev, who had to persuade a reluctant Castro",
        "Ball: “Cuba was chosen as a suitable place to demonstrate Soviet power rather than for the good of the Cuban revolutionaries”"] });
 add("Cuban Missile Crisis — Khrushchev's decision to deploy missiles", { id:"cw2-cuba-importance", title:"Importance of Cuba to the superpowers", when:"1823–1962",
   q:"Why was Cuba important to the USA and to the USSR?",
+  exp:"Cuba mattered to the US for long-standing sphere-of-influence and economic reasons, with Cold War politics added on top, so a Soviet presence there was intolerable. For the USSR, Cuba was a new opportunity: a way to narrow the missile gap, distract the US from Europe, outbid China for bloc leadership, and restore Khrushchev's standing. The mismatch between the two sides' stakes helps explain why the deployment provoked such a sharp US response.",
   pts:["USA: long-standing sphere-of-influence claim (Monroe Doctrine, 1823) and deep economic interests",
        "Late 1950s US interests: 90% of Cuban mines, 80% of public utilities, 50% of railways, 40% of sugar production, 25% of bank deposits (~$1bn total)",
        "USA: in the Cold War, ensuring a friendly, open-market government became intertwined with economic interests",
@@ -354,6 +400,7 @@ add("Cuban Missile Crisis — Khrushchev's decision to deploy missiles", { id:"c
 
 add("Cuban Missile Crisis — Outbreak and development", { id:"cw2-anadyr", title:"Operation Anadyr", when:"May–Oct 1962",
   q:"How did the Soviet missile deployment to Cuba take place?",
+  exp:"The secrecy and scale of Anadyr show Khrushchev planned to change the strategic balance quietly and present the US with a completed fact. Planning to unveil it only after the US midterms shows he meant to announce it once it was complete, not to negotiate over it beforehand. When the missiles were discovered early, that plan collapsed, turning a hidden deployment into an open crisis.",
   clue:"Secret deployment of ~43,000 Soviet personnel from July to October 1962, to be revealed after the US midterms.",
   pts:["By May 1962 Khrushchev decided to deploy MRBMs/IRBMs in Cuba, capable of striking deep into the American heartland; Castro agreed",
        "Codenamed Operation Anadyr; ~43,000 Soviet personnel",
@@ -361,6 +408,7 @@ add("Cuban Missile Crisis — Outbreak and development", { id:"cw2-anadyr", titl
        "Khrushchev hoped to reveal it as a fait accompli at the UN after the Nov 1962 US midterm elections"] });
 add("Cuban Missile Crisis — Outbreak and development", { id:"cmc", title:"Cuban Missile Crisis: discovery and blockade", when:"13–26 Oct 1962",
   q:"How did the Cuban Missile Crisis unfold from discovery to the blockade?",
+  exp:"Kennedy's choice of a blockade over air strikes or invasion was a middle path: it applied pressure while leaving Khrushchev room to retreat. The raised alert levels show how close the crisis came to war. The ships turning back on 24 October, Rusk's “blink”, was the first sign that the USSR would not force the issue, while the UN exchange put the Soviet position on the defensive publicly.",
   clue:"Maj. Richard Heyser's U-2 photos; ExComm chose a “quarantine”; Rusk: “eyeball to eyeball”.",
   pts:["13–16 Oct 1962: U-2 (Maj. Richard Heyser) photographed missile sites; by 16 Oct McGeorge Bundy informed Kennedy, who convened ExComm",
        "20–22 Oct: ExComm debated air strikes, invasion or naval blockade/quarantine — chose the blockade",
@@ -369,6 +417,7 @@ add("Cuban Missile Crisis — Outbreak and development", { id:"cmc", title:"Cuba
        "26 Oct: UN Security Council — Stevenson confronted Soviet Ambassador Zorin, who refused to answer directly"] });
 add("Cuban Missile Crisis — Outbreak and development", { id:"cw2-cmc-resolution", title:"Khrushchev's letters and the deal", when:"26 Oct 1962–Apr 1963",
   q:"How was the Cuban Missile Crisis resolved?",
+  exp:"The shootdown of the U-2 showed both leaders that events could escape their control, which pushed them toward a deal. The settlement combined a public non-invasion pledge with a secret Jupiter withdrawal, letting Kennedy appear to win while Khrushchev gained real concessions. Castro's exclusion shows the Crisis had become a superpower affair, and his anger suggests Cuba was treated as a pawn by both sides.",
   pts:["26 Oct: Khrushchev's first letter — withdraw missiles for a US non-invasion pledge; 27 Oct: second letter adds removal of US Jupiters from Turkey",
        "27 Oct: US U-2 shot down over Cuba, killing its pilot — the Crisis's only combat casualty; both leaders realised events risked spiralling",
        "That night RFK met Dobrynin privately: public non-invasion pledge and quiet later withdrawal of Jupiters, based on the first letter's terms",
@@ -377,6 +426,7 @@ add("Cuban Missile Crisis — Outbreak and development", { id:"cw2-cmc-resolutio
        "Nov 1962–Apr 1963: Soviet missiles dismantled; US ended the blockade and later quietly withdrew the Jupiters"] });
 add("Cuban Missile Crisis — Roles across the Crisis", { id:"cw2-cmc-roles", title:"Roles of Castro, Khrushchev and Kennedy", when:"1962",
   q:"Who/what was responsible for the Cuban Missile Crisis? Assess Castro, Khrushchev and Kennedy at outbreak, escalation and end.", qs:"notes",
+  exp:"Responsibility shifts by stage. Khrushchev bears most responsibility for the outbreak and escalation, but also deserves credit for opening the way to compromise. Kennedy's earlier hostility created the conditions, his blockade escalated the stakes, and his restraint after the U-2 helped end it. Castro set the stage by seeking Soviet protection, which is understandable given US treatment, but he was a bystander once the superpowers took over.",
   pts:["Castro — outbreak: limited direct role, but courting Soviet backing (understandable given US exploitation) set the stage; escalation: prepared forces, declared readiness to die fighting; end: not consulted, furious at being a pawn",
        "Khrushchev — outbreak: triggered the Crisis by deploying missiles, a direct threat to the US",
        "Khrushchev — escalation: missile build-up continued until the blockade forced a response; end: reached out via letters, offered compromise, ultimately backed down publicly",
@@ -386,6 +436,7 @@ add("Cuban Missile Crisis — Roles across the Crisis", { id:"cw2-cmc-roles", ti
 
 add("Cuban Missile Crisis — Impact on the Cold War", { id:"cmcimpact", title:"CMC and the nuclear arms race", when:"1962–1974",
   q:"How far was the Cuban Missile Crisis a turning point in tempering the nuclear arms race?",
+  exp:"Use the lecture's “turning point… however” frame. The Hot Line and a series of treaties mark a clear break from the lack of arms control before 1962, showing the Crisis frightened both sides into managing the nuclear threat. Yet the arms race continued in forms the treaties did not cover, the USSR reached parity, and arms control talks predated 1962, so the Crisis tempered rather than ended the race.",
   pts:["The lecture frames each impact as “a turning point... however”",
        "Turning point: Moscow–Washington “Hot Line” (1962); Partial Test Ban Treaty (1963); NPT (1968); SALT I and ABM Treaty (1972)",
        "Contrast with the near-absence of arms control in the “nuclear epoch” of 1957–62 (Mason, 2003)",
@@ -393,6 +444,7 @@ add("Cuban Missile Crisis — Impact on the Cold War", { id:"cmcimpact", title:"
        "However: India tested a nuclear weapon in 1974 despite the NPT; arms-control talks (e.g. the 1956 IAEA) began before the Crisis"] });
 add("Cuban Missile Crisis — Impact on the Cold War", { id:"cw2-cmc-detente", title:"CMC, proxy wars and détente", when:"1963–1979",
   q:"How far did the Cuban Missile Crisis lead to proxy wars and détente?",
+  exp:"The Crisis taught both sides the dangers of nuclear brinkmanship, as Edwards argues, so they avoided direct confrontation and competed through proxies, while relations eased into détente. But the evidence cuts both ways: the US still fought a direct war in Vietnam and raised its alert in 1973, détente may have been superficial and had a precedent in 1953–58, and it collapsed in 1979. That balance is what a “how far” answer needs.",
   pts:["Turning point: more caution about direct confrontation — fighting through proxies (Congo, Vietnam, Nicaragua, Chile, Angola, Afghanistan)",
        "Relations thawed into Détente (1963–1979); Edwards (2002): “a decisive event... it brought home to both sides the dangers of nuclear brinkmanship”",
        "However: the US still fought a large-scale direct war in Vietnam (1964–68) and raised DEFCON 3 in the 1973 Yom Kippur War",
@@ -400,6 +452,7 @@ add("Cuban Missile Crisis — Impact on the Cold War", { id:"cw2-cmc-detente", t
        "However: Détente broke down decisively by the late 1970s (Soviet invasion of Afghanistan, 1979)"] });
 add("Cuban Missile Crisis — Winners and losers", { id:"cw2-cmc-winlose", title:"Who won the Cuban Missile Crisis?", when:"1962",
   q:"Who “won” and who “lost” the Cuban Missile Crisis?",
+  exp:"The outcome looks different depending on what was public. Kennedy seemed to win, but secretly conceded more than appeared, while Khrushchev made real gains yet lost prestige because his retreat was public and the Turkey concession hidden, contributing to his fall. Castro secured his revolution's survival but resented his exclusion. The broader judgement is that averting nuclear war and learning restraint were gains for everyone.",
   pts:["USA: Kennedy secured removal and a prestige boost — but arguably conceded more privately (non-invasion pledge, quiet Turkey withdrawal) than often recognised",
        "USSR: secured a public US non-invasion pledge — a real gain in the US's own hemisphere",
        "USSR: but major loss of prestige (withdrawal public, Turkey concession not), damaging standing with China and contributing to Khrushchev's removal in October 1964",
@@ -410,6 +463,7 @@ add("Cuban Missile Crisis — Winners and losers", { id:"cw2-cmc-winlose", title
 /* ── 13. Vietnam War ── */
 add("Vietnam War — Introduction", { id:"cw2-mason-vietnam", title:"Mason on the cost of Vietnam", when:"1954–1975",
   q:"What statistics does Mason give on the Vietnam War, and what question does he pose?",
+  exp:"Mason's figures set up the central puzzle: the US had overwhelming advantages in money, manpower and firepower, and its enemy lost far more people, yet it still lost. The answer the notes develop is that victory was not measured in territory or casualties, but in the will to endure, local support and US public opinion. Use this as an opening frame for any question on why the US failed.",
   pts:["Mason (2001): the longest war in US history, lasting from 1954 to 1975",
        "Cost $150 billion and involved 2,700,000 servicemen",
        "US dropped 10 million tonnes of bombs — more than the entire amount dropped in WWII",
@@ -417,11 +471,13 @@ add("Vietnam War — Introduction", { id:"cw2-mason-vietnam", title:"Mason on th
        "“Yet the United States still lost the war. Why?”"] });
 add("Vietnam War — Introduction", { id:"cw2-human-voice", title:"The Vietnamese human voice", when:"1950s–1960s",
   q:"Why does the lecture open with a Vietnamese peasant's account?",
+  exp:"The peasant's account shows that ordinary Vietnamese experienced the war as an inherited duty to fight, not as a contest between ideologies. Since every authority, even Diem, called them to war, the conflict was rooted in Vietnamese society long before outsiders gave it a Cold War label. This supports the nationalist reading of the war and warns against a purely superpower-centred analysis.",
   pts:["A peasant's account (Hayslip & Wurts) of a childhood with no concept of politics or democracy",
        "“Everything we knew commanded us to fight” — ancestors, myths, parents, Uncle Ho's cadre, even President Diem all “called us to war”",
        "Reminder that for ordinary Vietnamese the war was lived as duty and survival long before it was theorised as a Cold War proxy conflict"] });
 add("Vietnam War — Introduction", { id:"cw2-vietnam-wars", title:"“The Vietnam Wars”: three phases", when:"1946–1975",
   q:"Why is “The Vietnam Wars” a more accurate name? Outline the phases.",
+  exp:"Calling them “Vietnam Wars” recognises that the conflict changed in character: an anti-colonial war against France, a decade of rival nation-building, then a war against the US. Ruane's point that 1955–59 is often skipped matters because this is when the US committed itself to building a non-communist South. The Americanisation and Vietnamisation sub-phases also help you periodise US responsibility and aims.",
   pts:["Really two wars either side of an “awkward” transitional decade",
        "First Indochina War (1946–1954): mainly Viet Minh vs the French, ending with Dien Bien Phu; also the Franco-Viet Minh War / Anti-French Resistance War",
        "“Awkward Period In-Between” (1954–1964): Geneva signed (and failed); rise and fall of Diem; Northern insurgencies — Ruane: “Nation Building: North and South Vietnam”; 1955–9 often skipped but arguably the real starting years for US objectives",
@@ -429,6 +485,7 @@ add("Vietnam War — Introduction", { id:"cw2-vietnam-wars", title:"“The Vietn
        "Sub-periods: 1964–68 “Americanisation”; 1968–75 “Vietnamisation” (US disengagement) and stalemate"] });
 add("Vietnam War — Introduction", { id:"cw2-victory", title:"Measuring “victory” in Vietnam", when:"1964–1975",
   q:"How did “victory” in Vietnam differ from a conventional territorial contest?",
+  exp:"In a guerrilla war with no front line, the US relied on indirect measures such as body counts, which could not show who was winning, especially when the local population might be helping the enemy. This is why Tet was decisive despite being a military defeat: it proved the war had no end in sight. Once that impression reached Americans through television, public and congressional support collapsed, which became the real measure of defeat.",
   pts:["Northern guerrilla warfare meant victory could not be tracked as in Korea (a shifting front line)",
        "Proxy indicators: body counts, ability to withstand siege (time), and the extent of local collaboration",
        "Americans never knew if those they were “helping” were on their side (e.g. women concealing grenades in brassieres or baby's diapers)",
@@ -436,12 +493,14 @@ add("Vietnam War — Introduction", { id:"cw2-victory", title:"Measuring “vict
        "Public opinion: first war beamed into living rooms nightly; once journalists like Walter Cronkite wrote off its legitimacy, public support (and congressional funding) followed"] });
 add("Vietnam War — Introduction", { id:"cw2-viet-continuities", title:"Changes and continuities, 1946–1975", when:"1946–1975",
   q:"What were the main changes and continuities in Vietnam, 1946–1975?",
+  exp:"The continuities explain the war's persistence: Vietnamese nationalism stayed constant, and so did the US belief that the Viet Minh were agents of international communism, so each US commitment led to the next. The turning points mark where that pattern intensified or changed direction. Using both lets you write a balanced “change and continuity” answer and show how the Cold War lens kept the US involved.",
   pts:["Continuity: decolonisation/independence — Ho and the Viet Minh were primarily anti-imperialist and nationalist, willing (initially) to subordinate communism to national unity",
        "Continuity: each phase explains the next — US support for France came from fear the Viet Minh was an agent of international communism",
        "The same fear (post-Korea “domino” logic) undergirded support for Diem and the escalation from 1964",
        "Change — turning points: (1) Dien Bien Phu; (2) self-immolation of Thich Quang Duc; (3) Gulf of Tonkin incident; (4) Tet Offensive"] });
 add("Vietnam War — Main players", { id:"cw2-viet-players", title:"Main players in the Vietnam War", when:"1945–1975",
   q:"Who were the major players in the Vietnam War?", qs:"notes",
+  exp:"The players span three levels: Vietnamese leaders with their own nationalist or anti-communist goals, a succession of US presidents who escalated then withdrew, and communist patrons in Moscow and Beijing. Tracking who held power when helps periodise the war, for example Johnson with escalation and Nixon with Vietnamisation alongside heavy bombing. Figures such as Cronkite are a reminder that domestic opinion also shaped events.",
   pts:["South/RVN: Ngo Dinh Diem (PM, then President); Bao Dai (final emperor of Annam, later ruler of Japanese/French puppet states); Nguyen Van Thieu",
        "North/DRV: Ho Chi Minh (DRV leader, founder of the Vietnam Workers' Party, NLF and Viet Cong); Gen. Vo Nguyen Giap (PAVN leader, strategist); Le Duc Tho",
        "American: LBJ (1963–1969, escalation); McGeorge Bundy (NSA to JFK and LBJ); Nixon (1969–1974, Vietnamisation while bombing); Dean Rusk (Sec. of State to JFK and LBJ)",
@@ -450,6 +509,7 @@ add("Vietnam War — Main players", { id:"cw2-viet-players", title:"Main players
 
 add("Vietnam War — French colonialism and the Viet Minh", { id:"cw2-french-colonialism", title:"French colonialism in Indochina", when:"1900–1945",
   q:"What was the nature of French colonialism in Indochina?",
+  exp:"French rule was exploitative and incoherent, and deliberately blocked political institutions that might lead to self-rule. This left no peaceful route to independence, so resistance turned to armed struggle. Best et al. place the war in a long line of struggles against foreign occupiers, which supports reading the later conflict mainly as a nationalist war of independence rather than a Cold War one.",
   pts:["Best et al.: the origins of the war “lay in the Vietnamese struggle to free itself of French colonial rule” — Americans followed the Chinese, French and Japanese",
        "French Indochinese Union: Cochinchina (colony in the South), Cambodia, Laos, Annam and Tonkin (protectorates)",
        "More haphazard, expedient and brutal than British rule — no coherent policy; more than 20 governors 1900–1945; officials' autonomy encouraged corruption",
@@ -457,6 +517,7 @@ add("Vietnam War — French colonialism and the Viet Minh", { id:"cw2-french-col
        "Profit, not politics: land seized for plantations, peasants recruited (sometimes at gunpoint) as low-wage labour, extensive taxation"] });
 add("Vietnam War — French colonialism and the Viet Minh", { id:"cw2-ho-rise", title:"Rise of Ho Chi Minh and the Viet Minh", when:"1890–1945",
   q:"How did Ho Chi Minh rise and the Viet Minh seize power in 1945?",
+  exp:"Ho's path shows nationalism coming first: he sought self-determination from the West at Versailles and turned to communism only after being ignored. Japan's sudden defeat gave the Viet Minh a chance to seize power quickly. Echoing the American Declaration of Independence signalled that Ho hoped for US support, which makes the later US opposition to him all the more significant.",
   clue:"Born Nguyen Sinh Cung in Annam; petitioned Versailles in 1919; proclaimed independence at Ba Dinh Square on 2 September 1945.",
   pts:["Born Nguyen Sinh Cung, 1890, Annam; “affected by the injustices of colonialism”; worked on a French liner (1911), arrived in France (1917)",
        "Petitioned the 1919 Versailles conference for colonial self-determination — ignored",
@@ -465,6 +526,7 @@ add("Vietnam War — French colonialism and the Viet Minh", { id:"cw2-ho-rise", 
        "2 Sep 1945: independence proclaimed at Ba Dinh Square, Hanoi, echoing the US Declaration of Independence (“all men are created equal...”)"] });
 add("Vietnam War — French colonialism and the Viet Minh", { id:"cw2-us-no-independence", title:"Why the US did not back Vietnamese independence", when:"1945–1946",
   q:"Why did the US not back Vietnamese independence after WWII?",
+  exp:"The US abandoned Roosevelt's anti-colonial sympathies because Cold War priorities in Europe came first: it needed France and Britain as allies against the USSR, and France wanted Indochina for its recovery. With no strategic gain from backing Ho, independence was shelved. This is the first instance of the pattern the notes stress, anti-communism outweighing self-determination in US policy.",
   pts:["Viet Minh hoped for US backing: Roosevelt championed Wilsonian self-determination and was contemptuous of France as a colonial power",
        "Roosevelt died (12 April 1945) as he began doubting Vietnam's readiness",
        "Rising US–Soviet tension: the US needed France and Britain as bulwarks in Europe",
@@ -473,12 +535,14 @@ add("Vietnam War — French colonialism and the Viet Minh", { id:"cw2-us-no-inde
 
 add("Vietnam War — First Indochina War", { id:"cw2-first-indochina", title:"First Indochina War", when:"1946–1954",
   q:"How did the First Indochina War begin and develop?",
+  exp:"The war began from a clash at Haiphong after diplomacy failed, so it started as a war against the return of colonial rule. France's creation of Bao Dai's State of Vietnam tried to rebrand it as an anti-communist struggle to win Western support, but it misjudged where popular loyalty lay. The rising cost and losses show France could not win alone, which explains its growing dependence on US aid.",
   pts:["Spark: 20 Nov 1946 French troops seized a ship at Haiphong accused of carrying Viet Minh weapons; French took Haiphong by 28 Nov and Hanoi the next month",
        "Ho appealed “to the entire people to rage the resistance war”",
        "Mar 1949: French made Bao Dai Head of State of an ‘independent’ ‘State of Vietnam’ within the French Union — to recast the war as anti-communist; underestimated Viet Minh support",
        "By 1953 the war had cost 1.6 trillion francs (more than twice France's Marshall Aid); France losing more soldiers than it could produce"] });
 add("Vietnam War — First Indochina War", { id:"dienbienphu", title:"Battle of Dien Bien Phu", when:"13 Mar–7 May 1954",
   q:"Why was Dien Bien Phu decisive?",
+  exp:"France gambled on a big battle at Dien Bien Phu to strengthen its hand at Geneva, and its defeat had the opposite effect, ending the war and forcing Vietnam onto the conference agenda. It is a key turning point because it ended French rule and opened the way for the US to take over the containment role. Eisenhower's domino remark during the battle shows how Washington already viewed it in Cold War terms.",
   clue:"France staked its strategy on a northern Tonkin valley to strengthen its hand before the Geneva Conference; Giap's forces attacked on 13 March 1954.",
   pts:["France staked its strategy on the northern Tonkin valley to improve its negotiating position before the April 1954 Geneva Conference",
        "13 March 1954: Giap's forces launched decisive attacks",
@@ -487,6 +551,7 @@ add("Vietnam War — First Indochina War", { id:"dienbienphu", title:"Battle of 
        "Eisenhower's “falling domino” remark (April 1954) came during this battle"] });
 add("Vietnam War — First Indochina War", { id:"cw2-indochina-powers", title:"Big powers in the First Indochina War", when:"1950–1954",
   q:"How were the USA, China and the USSR involved in the First Indochina War?",
+  exp:"The big powers' roles show how a decolonisation war became part of the Cold War. The US funded most of France's effort because it saw the nationalist Viet Minh through the lens of 1949 and Korea, and valued Indochina for Japan's recovery. China backed the Viet Minh for ideological and border-security reasons, while Stalin stayed distant and suspicious, showing that communist support was neither uniform nor centrally directed.",
   pts:["USA: no ground troops, but by 1954 paid ~three-quarters of the French war cost (~$3 billion 1950–54) — bombers, planes, trucks, tanks, naval craft, weapons, radios",
        "USA motives: fear after Sovietisation of Eastern Europe, Mao's 1949 victory, McCarthyism, Korea and NSC-68 — viewed the nationalist Viet Minh in Cold War terms; Indochina also a raw-material/market hinterland for Japan",
        "China: Jan 1950 Mao recognised the DRV, sent advisors (incl. Gen. Chen Geng); Apr–Sep 1950: 14,000 small arms, 1,700 machine guns, 150 artillery guns, food, ammunition, communications",
@@ -495,6 +560,7 @@ add("Vietnam War — First Indochina War", { id:"cw2-indochina-powers", title:"B
 
 add("Vietnam War — Geneva Accords", { id:"geneva54", title:"Geneva Accords", when:"20 Jul 1954",
   q:"What were the terms of the Geneva Accords and why were they almost certainly doomed?",
+  exp:"Geneva was a temporary compromise that pleased no one fully. The US and South Vietnam did not sign, and the Viet Minh, who had won militarily and expected to win the elections, accepted partition only under pressure from Moscow and Beijing. This shows the great powers shaping a settlement over Vietnamese wishes, and the lack of commitment explains why the planned elections never took place.",
   clue:"Mendes-France, Zhou Enlai and Molotov negotiated partition at the 17th Parallel with elections due in July 1956.",
   pts:["Conference (from 26 April 1954) originally for Berlin and Korea; Dien Bien Phu forced Vietnam onto the agenda; Mendes-France (from 17 June) worked with Zhou Enlai and Molotov; signed 20 July 1954",
        "Partition at the 17th Parallel for a two-year transition (Bao Dai South, Ho North); free elections July 1956 for reunification",
@@ -503,6 +569,7 @@ add("Vietnam War — Geneva Accords", { id:"geneva54", title:"Geneva Accords", w
        "Viet Minh sceptical of the elections and reluctant to accept partition given their superiority, but signed under Soviet and Chinese pressure"] });
 add("Vietnam War — Geneva Accords", { id:"cw2-us-disregard-geneva", title:"US disregard of Geneva and aid to Diem", when:"1954–1963",
   q:"How did the USA disregard Geneva and support South Vietnam?",
+  exp:"By claiming it was not bound by Geneva, the US could back Diem's refusal to hold the 1956 elections, which turned the temporary partition into a lasting division. Its massive aid was meant to create a democratic showcase but instead funded a dictatorship, as Ruane notes. Kennedy's sharp increase in advisors shows each step deepening US commitment, linking the 1950s to the escalation of the 1960s.",
   pts:["US separate statement: agreed with Geneva's principles and promised not to ‘disturb them’ by force, but Eisenhower said the US “had not itself been party to or bound by the decisions”",
        "The US did nothing when Diem refused (1955) to hold the agreed talks on the 1956 elections",
        "1955–1960: US financial assistance to South Vietnam almost $7 billion — inadvertently gave Diem the means to protect a dictatorship rather than a democratic “showcase” (Ruane, 2000)",
@@ -511,6 +578,7 @@ add("Vietnam War — Geneva Accords", { id:"cw2-us-disregard-geneva", title:"US 
 
 add("Vietnam War — Containment, SEATO and the Domino Theory", { id:"cw2-seato", title:"Monolithic communism and SEATO", when:"1949–1954",
   q:"How did Cold War developments lead the US to extend containment to Southeast Asia?",
+  exp:"The US interpreted Asian events as a single Soviet-directed advance and ignored the nationalist motives of local communists. SEATO was the institutional result, extending containment to Southeast Asia in the image of NATO. Its weaknesses, with no standing forces and the Indochinese states covered only by a protocol, suggest it was more a statement of commitment than an effective defence.",
   pts:["The PRC (Oct 1949), Korean War (1950–53) and SEA communist movements reinforced a perception of monolithic, Soviet-directed expansion",
        "The US did not seriously consider that developing-world communists were primarily nationalist, only secondarily communist",
        "SEATO (Sep 1954): NATO-style — USA, France, Britain, Australia, New Zealand, Thailand, Pakistan, the Philippines — to contain the PRC and Indochinese revolutionaries",
@@ -518,6 +586,7 @@ add("Vietnam War — Containment, SEATO and the Domino Theory", { id:"cw2-seato"
        "SEATO defensive in principle, no standing forces, relied on combined exercises — by the mid-1950s containment extended to Southeast Asia"] });
 add("Vietnam War — Containment, SEATO and the Domino Theory", { id:"domino", title:"Domino theory", when:"1953–1954",
   q:"What was the domino theory and how did it justify US involvement in Vietnam?",
+  exp:"The domino theory turned Vietnam from a small country into a test case for the whole region, so its loss seemed to threaten US interests far beyond Indochina. That logic justified US involvement and support for Diem despite his dictatorship. Its later failure to come true, after Vietnam fell but neighbouring states did not, is used in the notes to show the theory ignored Vietnamese nationalism.",
   clue:"Eisenhower, April 1954: knock over the first in a row and the last “will go over very quickly”.",
   pts:["Eisenhower (May 1953): “If Indochina goes... The Malayan peninsula... would be scarcely defensible... all India would be outflanked... Burma... no defense”",
        "Eisenhower (April 1954, during Dien Bien Phu): the ‘falling domino’ principle — knock over the first and the last “will go over very quickly”",
@@ -527,6 +596,7 @@ add("Vietnam War — Containment, SEATO and the Domino Theory", { id:"domino", t
 
 add("Vietnam War — Ngo Dinh Diem", { id:"diem", title:"Ngo Dinh Diem's regime", when:"1955–1963",
   q:"How did Diem's regime weaken South Vietnam (elections and land reform)?",
+  exp:"Diem's choices drove southerners away from his regime. Rigged elections stripped him of legitimacy, while refusing land reform alienated the peasants who had supported the Viet Minh, even making them pay for land they had been given. His minority Catholic background and nepotism added to this. Together these explain why US aid could not create a stable, popular government in the South.",
   clue:"Catholic, French-speaking former colonial administrator who won a fraudulent 98.2% referendum in 1955.",
   pts:["Best et al. (2012): French-speaking former colonial administrator from the minority Catholic population; blatant nepotism; took US aid but resisted advice on reform",
        "1955: refused the North's call for talks on the 1956 elections; held his own referendum making the South the RVN with himself President",
@@ -535,6 +605,7 @@ add("Vietnam War — Ngo Dinh Diem", { id:"diem", title:"Ngo Dinh Diem's regime"
        "Long An province: fewer than 1,000 of 35,000 tenants received property; peasants made to pay for land the Viet Minh had given free"] });
 add("Vietnam War — Ngo Dinh Diem", { id:"cw2-strategic-hamlets", title:"Strategic Hamlets Programme", when:"1962",
   q:"What was the Strategic Hamlets Programme and why did it fail?",
+  exp:"The programme copied a counter-insurgency model from Malaya to cut the Viet Cong off from rural support, but corruption and forced removal from ancestral land turned peasants against the government. A scheme meant to win loyalty therefore increased resentment. It illustrates the wider point that Diem's methods pushed people toward the communists rather than away from them.",
   clue:"Modelled on the British Briggs Plan's ‘New Villages’ in Malaya; relocated villagers to cut off Viet Cong support.",
   pts:["Modelled on the British Briggs Plan (‘New Villages’ in Malaya)",
        "Relocated villages into secure hamlets with food, housing, education and social services to cut Viet Cong access to rural support",
@@ -542,6 +613,7 @@ add("Vietnam War — Ngo Dinh Diem", { id:"cw2-strategic-hamlets", title:"Strate
        "Resented by peasants forced from ancestral homelands and their ancestors' graves"] });
 add("Vietnam War — Ngo Dinh Diem", { id:"cw2-buddhist-crisis", title:"Buddhist crisis and Thich Quang Duc", when:"1963",
   q:"How did Diem persecute Buddhists and what did it lead to?",
+  exp:"Persecution of the Buddhist majority showed how narrow Diem's base was. Thich Quang Duc's self-immolation made the crisis impossible to ignore and is listed in the notes as a turning point. Ruane's judgement links these policies to their effect: they pushed even non-communist Vietnamese toward the NLF, undermining the very goal for which the US supported Diem.",
   clue:"A senior monk sat in the lotus pose at a busy Saigon intersection on 11 June 1963.",
   pts:["Discriminatory policies favoured Catholics in public service, promotions, land, business and tax concessions",
        "Forced conversions and looting/shelling/demolition of pagodas went unpunished",
@@ -550,6 +622,7 @@ add("Vietnam War — Ngo Dinh Diem", { id:"cw2-buddhist-crisis", title:"Buddhist
        "Ruane: Diem's contempt for democracy, nepotism and corruption pushed non-communist Vietnamese into the NLF/Viet Cong orbit"] });
 add("Vietnam War — Ngo Dinh Diem", { id:"cw2-diem-coup", title:"Diem's overthrow and US entrenchment", when:"Nov 1963",
   q:"Why did Diem's removal deepen rather than ease US involvement?",
+  exp:"Removing Diem was meant to fix the problem but deepened it, because the US was now more responsible for South Vietnam's fate and its credibility was at stake. The notes describe a vicious cycle in which weak southern leaders needed more US support, and more support made withdrawal harder. Since aid created dependence, the South grew less able to stand alone, which helps explain the escalation that followed under Johnson.",
   pts:["Kennedy quietly allowed RVN generals to stage a coup (1 November 1963); Diem and his brother were murdered",
        "JFK assassinated three weeks later (22 November 1963), bringing LBJ to the presidency",
        "Diem's removal, if anything, deepened US entrenchment",
@@ -558,12 +631,14 @@ add("Vietnam War — Ngo Dinh Diem", { id:"cw2-diem-coup", title:"Diem's overthr
 
 add("Vietnam War — North Vietnam's support for the Viet Cong", { id:"cw2-north-1954", title:"North Vietnam's restraint, 1954–58", when:"1954–1958",
   q:"Why did North Vietnam avoid armed struggle in the South from 1954 to 1958?",
+  exp:"Hanoi's restraint after 1954 shows that the North did not simply follow a communist master plan. Without backing from Moscow, which prioritised coexistence, or Beijing, which feared another Korea, armed reunification was too risky. This weakens the view that the war was driven from the communist bloc and shows its patrons initially held Hanoi back.",
   pts:["Ho and the DRV focused on nation-building in the North and had no desire to provoke the US",
        "Lack of Soviet/Chinese support for rapid reunification",
        "Khrushchev promoted ‘peaceful co-existence’ (1956) and proposed (1957) admitting both Vietnams to the UN — implicitly endorsing permanent partition",
        "China, absorbed in its own development, wanted no Korea-style war with the US"] });
 add("Vietnam War — North Vietnam's support for the Viet Cong", { id:"cw2-north-1959", title:"People's war, Ho Chi Minh Trail and the NLF", when:"1959–1961",
   q:"Why and how did North Vietnam shift to armed struggle from 1959?",
+  exp:"The North turned to violent struggle mainly because of conditions in the South: Diem's repression created revolutionary opportunities and Southern revolutionaries needed help. This links Diem's failures directly to the insurgency. The Trail and the NLF gave the struggle supply lines and a broad nationalist front, and the mass of part-time volunteers shows the insurgency had real local support.",
   clue:"Hanoi's March 1959 turn to violent struggle in the South; an overland supply route through Laos; an umbrella front founded December 1960.",
   pts:["Duiker (1993): in early 1959 party leaders decided the road to victory in the South was “violent struggle,” with the “political force of the masses” as the primary instrument",
        "Reasons: Diem's oppressive rule created revolutionary conditions; Southern revolutionaries genuinely needed help",
@@ -574,6 +649,7 @@ add("Vietnam War — North Vietnam's support for the Viet Cong", { id:"cw2-north
 
 add("Vietnam War — Chinese and Soviet aid to North Vietnam", { id:"cw2-prc-ussr-motives", title:"Chinese and Soviet motives in Vietnam", when:"1956–1965",
   q:"Compare Chinese and Soviet ideological and strategic motivations for aiding North Vietnam.",
+  exp:"The two powers backed Hanoi for different reasons. China saw Vietnam as proof of Mao's revolutionary line and a buffer against US encirclement. The USSR initially preferred coexistence and only raised its support later under pressure to prove its revolutionary credentials, while carefully avoiding combat to prevent conflict with China or the US. The contrast shows that rivalry and national interest, not a single communist plan, shaped their involvement.",
   pts:["PRC ideology: Mao's internationalist mission — “since our revolution has achieved victory, we have an obligation to help others”; a China-backed victory would prove Mao's militancy over Khrushchev's ‘peaceful coexistence’",
        "USSR ideology: Khrushchev's 1956 ‘peaceful coexistence’ made him loath to see Vietnam worsen; by 1965 Kosygin felt pressure (partly from hardliners) to show revolutionary credentials",
        "Nov 1964: Kosygin pledged support to the NLF — the USSR “cannot remain indifferent to the fate of a fraternal socialist country”",
@@ -581,6 +657,7 @@ add("Vietnam War — Chinese and Soviet aid to North Vietnam", { id:"cw2-prc-uss
        "USSR strategy: network of Asian allies, but aid limited to logistics/materiel/advice/naval presence — never combat — to avoid confrontation with China and, after the CMC, with the US"] });
 add("Vietnam War — Chinese and Soviet aid to North Vietnam", { id:"cw2-prc-ussr-aid", title:"Chinese and Soviet aid to the DRV", when:"1955–1971",
   q:"What aid did China and the USSR give North Vietnam?",
+  exp:"Aid shifted from economic support in the 1950s to large-scale military help after US escalation in 1965. China contributed manpower while the USSR supplied most of the advanced weaponry. This shows how US escalation drew both communist powers in more deeply, and the Soviet dominance of military supplies foreshadows Hanoi's later tilt toward Moscow.",
   pts:["PRC 1955: economic advisors; $200 million grant for 18 projects incl. Haiphong cement plant, Hanoi power station, Nam Dinh cotton mill",
        "USSR 1955: $100 million grant for 23 industrial/public-service projects incl. engineering/textile factories, tin/phosphate development",
        "PRC 1965–1971: over 320,000 Chinese troops in North Vietnam (170,000 in 1965 alone, after Gulf of Tonkin)",
@@ -588,6 +665,7 @@ add("Vietnam War — Chinese and Soviet aid to North Vietnam", { id:"cw2-prc-uss
        "By the late 1960s over three-quarters of North Vietnam's military/technical equipment came from the USSR (over $2 billion yuan in aid, 1965–68)"] });
 add("Vietnam War — Chinese and Soviet aid to North Vietnam", { id:"cw2-sino-soviet-competition", title:"Sino-Soviet competition over Hanoi", when:"1963–1975",
   q:"How did Sino-Soviet competition shape aid to North Vietnam?",
+  exp:"With their alliance broken, China and the USSR used Vietnam to compete for leadership of the communist world. China's huge aid share and its efforts to block Soviet aid and transit show that outdoing its rival mattered as much as helping Hanoi. This helps explain why rivalry sometimes outweighed solidarity, which later created an opening for the US through triangular diplomacy.",
   pts:["By 1963 the alliance had effectively ended (July 1963 Moscow talks resolved nothing; Sept 1963 polemical articles)",
        "Vietnam became a key arena of competition for a valuable ally and regional buffer",
        "1971–75: average 41.5% of China's aid budget went to the DRV (48.67% in 1972, Beijing's largest foreign-aid budget since 1949)",
@@ -596,12 +674,14 @@ add("Vietnam War — Chinese and Soviet aid to North Vietnam", { id:"cw2-sino-so
 
 add("Vietnam War — Phases of US involvement", { id:"cw2-flexible-response", title:"Kennedy's Flexible Response in Vietnam", when:"1961–1963",
   q:"What was Kennedy's ‘Flexible Response’ and how was it applied to Vietnam?",
+  exp:"Flexible Response meant matching the response to the threat. In Vietnam that produced a middle course: Kennedy refused to send ground troops but steadily raised advisors and aid because he would not accept losing Southeast Asia. This gradual, limited commitment is important because it deepened US involvement step by step, creating the base from which Johnson escalated.",
   pts:["Alternative to Eisenhower's Massive Retaliation — diplomatic, political, economic and military options in proportion to the threat (e.g. Berlin 1961, Cuba 1962)",
        "Avoided sending US troops to Laos",
        "Advisors rose from 875 (1961) to 16,623 (1963); ARVN grew by 20,000 men",
        "Determined not to lose Vietnam/SEA, but no desire to commit US ground troops to the Asian mainland"] });
 add("Vietnam War — Phases of US involvement", { id:"tonkin", title:"Gulf of Tonkin incident and Resolution", when:"Aug 1964",
   q:"What was the Gulf of Tonkin incident and why was the Resolution so significant?",
+  exp:"Logevall's point about Munich explains Johnson's mindset: backing down would look like appeasement. The reported attacks, which happened while US ships supported covert raids on the North, gave him the trigger, and the Resolution gave him a blank cheque to wage war without a formal declaration. Hanoi and Beijing responded by stepping up their own support, so Tonkin marks the shift to the Vietnam War proper and a classic action–reaction escalation.",
   clue:"Destroyers Maddox and Turner Joy reported attacks by torpedo boats on 2 and 4 August 1964.",
   pts:["Logevall (2001): Johnson, haunted by Munich, would not reward ‘aggression’ in Vietnam with ‘appeasement’",
        "Destroyers Maddox and Turner Joy reported unprovoked attacks by North Vietnamese torpedo boats (2 and 4 August) while doing reconnaissance and supporting covert South Vietnamese raids",
@@ -610,6 +690,7 @@ add("Vietnam War — Phases of US involvement", { id:"tonkin", title:"Gulf of To
        "North Vietnam upgraded the Ho Chi Minh Trail and sent PAVN regiments south; China expanded railways north of the border"] });
 add("Vietnam War — Phases of US involvement", { id:"cw2-rolling-thunder", title:"Operation Rolling Thunder", when:"Mar 1965–Oct 1968",
   q:"What was Operation Rolling Thunder and how effective was it?",
+  exp:"The bombing was massive, more than the whole Korean War, and caused heavy casualties, yet infiltration into the South actually increased. This shows the strategy failed to break the North's will or cut its supply lines. It supports the wider argument that conventional firepower could not defeat a determined guerrilla enemy, a key reason for US failure.",
   clue:"Sustained bombing of the North begun 2 March 1965 partly in response to an attack at Pleiku.",
   pts:["Sustained bombing of North Vietnam begun 2 March 1965, partly in response to a Viet Cong attack on the US air base at Pleiku",
        "By end-1967, 864,000 tons dropped — more than the entire Korean War (653,000) or WWII Pacific theatre (503,000)",
@@ -617,6 +698,7 @@ add("Vietnam War — Phases of US involvement", { id:"cw2-rolling-thunder", titl
        "Communist infiltration south rose from 35,000 to 90,000 despite the bombing"] });
 add("Vietnam War — Phases of US involvement", { id:"cw2-search-destroy", title:"Search-and-Destroy and Operation Ranch Hand", when:"1961–1971",
   q:"How did the US fight the ground war in Vietnam?",
+  exp:"Without front lines, the US measured success by enemy killed, but Mason notes Hanoi could absorb huge losses and still control the war's pace, so body counts showed nothing about who was winning. Herbicide spraying aimed to deny cover to the enemy but caused lasting harm to civilians. Together they illustrate how US methods were costly, ineffective and damaging to the war's moral standing.",
   pts:["US troops landed at Danang in March 1965; forces rose from ~80,000 (1965) to a peak of 543,000 (1969)",
        "Under Westmoreland, Search-and-Destroy inserted troops to find and destroy the enemy, then withdrew",
        "No fixed front lines — body count the main measure of ‘progress’; Mason: Hanoi could sustain 10:1 loss ratios and still dictate the pace",
@@ -624,6 +706,7 @@ add("Vietnam War — Phases of US involvement", { id:"cw2-search-destroy", title
        "Reportedly killed or maimed some 400,000 people, with lasting birth defects and illness"] });
 add("Vietnam War — Phases of US involvement", { id:"tet", title:"Tet Offensive", when:"Jan 1968",
   q:"Why was the Tet Offensive a military defeat but a political victory for the communists?",
+  exp:"Tet failed militarily: the communists lost heavily and no uprising followed. But its scale shattered official claims that victory was near, and the request for more troops looked desperate. Because the war was judged by will and public opinion rather than territory, this political shock mattered more than the battlefield result, leading Johnson to seek talks and abandon re-election.",
   clue:"Lunar New Year attack on over 100 cities; Hue held for three weeks; the US Embassy compound briefly breached.",
   pts:["Coordinated NVA/Viet Cong attack on over 100 South Vietnamese cities and outposts during the Lunar New Year",
        "Captured 36 of 44 provincial capitals and 5 of 6 major cities, incl. Hue (held three weeks); briefly breached the US Embassy compound in Saigon",
@@ -632,6 +715,7 @@ add("Vietnam War — Phases of US involvement", { id:"tet", title:"Tet Offensive
        "31 March 1968: LBJ limited bombing to below the 20th parallel, called for negotiations, announced he would not seek re-election"] });
 add("Vietnam War — Phases of US involvement", { id:"cw2-mylai", title:"My Lai Massacre", when:"16 Mar 1968",
   q:"What happened at My Lai and why did it matter?",
+  exp:"My Lai showed what happened when soldiers could not tell civilians from enemy and were told to treat everyone as Viet Cong. Its exposure after a cover-up struck at the moral justification of the war, not just its conduct. That is why it is cited as a reason for collapsing domestic support and eventual US withdrawal.",
   clue:"Charlie Company under Lt. William Calley in Quang Ngai province; exposed by Seymour Hersh in November 1969.",
   pts:["As many as 504 unarmed villagers (incl. 173 children, 56 infants) killed by US soldiers of Charlie Company, led by Lt. William Calley, in Quang Ngai province",
        "Capt. Ernest Medina had told them to treat anyone found as Viet Cong",
@@ -639,6 +723,7 @@ add("Vietnam War — Phases of US involvement", { id:"cw2-mylai", title:"My Lai 
        "Deepened American doubts about the conduct and very morality of the war"] });
 add("Vietnam War — Phases of US involvement", { id:"vietnamisation", title:"Nixon Doctrine and Vietnamisation", when:"1969–1972",
   q:"What were the Nixon Doctrine and Vietnamisation?",
+  exp:"Vietnamisation was Nixon's way out of Johnson's trap: shift the fighting to the ARVN so US troops and casualties could fall. The Nixon Doctrine generalised this lesson, that the US would arm allies rather than fight for them, and it was itself a result of Vietnam's drain on resources. Critics' jibe about the colour of the corpses captures that the war continued, only with Vietnamese dying instead of Americans.",
   clue:"Term coined by Melvin Laird; critics called it ‘changing the colour of the corpses’.",
   pts:["Nixon (1968): “I'm not going to end up like LBJ... I'm going to stop that war. Fast.”",
        "Nixon Doctrine (1969): support allies with economic/military aid rather than ground troops — not originally for South Vietnam, but created because of Vietnam's drain",
@@ -647,6 +732,7 @@ add("Vietnam War — Phases of US involvement", { id:"vietnamisation", title:"Ni
        "Critics: little more than ‘changing the colour of the corpses’"] });
 add("Vietnam War — Phases of US involvement", { id:"cw2-nixon-bombing", title:"Nixon's expanded bombing", when:"1970–1972",
   q:"How did Nixon expand the war even while withdrawing?",
+  exp:"Nixon's policy combined withdrawal with heavier bombing, which seems contradictory but had a clear aim: to force Hanoi into a settlement that let the US leave without South Vietnam collapsing immediately. Widening the bombing into Cambodia and Laos shows the war spreading even as US troops left. It is evidence that withdrawal did not mean an end to US violence.",
   pts:["Expanded bombing into Cambodia (1970) and Laos (1971) and against the Ho Chi Minh Trail",
        "More bombs dropped on Indochina under Nixon than under Johnson",
        "Easter Offensive bombing (1972); mining of Haiphong Harbour (May 1972); Christmas bombing of the North (Dec 1972)",
@@ -654,12 +740,14 @@ add("Vietnam War — Phases of US involvement", { id:"cw2-nixon-bombing", title:
 
 add("Vietnam War — Reasons for US withdrawal", { id:"cw2-withdrawal-domestic", title:"Military failure and domestic collapse", when:"1965–1973",
   q:"Why did the US withdraw from Vietnam? (military and domestic factors)",
+  exp:"The military reason and the domestic reasons reinforced each other. US tactics could not defeat a guerrilla enemy with deep local roots and great resolve, so casualties mounted without visible progress. Conscription, rising deaths, My Lai and racial inequality in who fought and died then eroded public support at home. The war was lost as a contest of will as much as on the battlefield.",
   pts:["Conventional tactics ill-suited to a guerrilla enemy living off the population, melting into the jungle, with almost unquenchable resolve — an asymmetric contest of will",
        "Conscription and casualties fuelled the anti-war movement — 100,000+ marched in New York (April 1967); 50,000 on the Pentagon that October; never united beyond opposing the war",
        "My Lai made many question soldiers' conduct and the war's justification",
        "Race: 1961–66 Black Americans ~13% of population, under 10% of personnel, almost 20% of combat deaths — “a white man's war, a black man's fight”"] });
 add("Vietnam War — Reasons for US withdrawal", { id:"cw2-withdrawal-media", title:"Televised war and triangular diplomacy", when:"1968–1972",
   q:"How did the media and triangular diplomacy contribute to US withdrawal?",
+  exp:"Television brought the war to Americans directly, and Cronkite's verdict after Tet showed how trusted voices could turn opinion, though scholars debate whether media or casualties mattered more. Meanwhile, triangular diplomacy gave Nixon a diplomatic exit: China and the USSR each valued better relations with the US over solidarity with Hanoi, as the 1972 summit going ahead during the bombing shows.",
   pts:["By 1968 ~600 accredited journalists in Vietnam with unprecedented access",
        "Cronkite's February 1968 (post-Tet) verdict that the war was “mired in stalemate” said to have convinced LBJ he had lost public support",
        "Scholars debate how much the media (vs the scale of US casualties) drove the collapse in support",
@@ -667,6 +755,7 @@ add("Vietnam War — Reasons for US withdrawal", { id:"cw2-withdrawal-media", ti
        "USSR (wary of Chinese influence in Vietnam and nuclear confrontation) prioritised détente — held the 1972 arms summit even as the US resumed bombing Haiphong"] });
 add("Vietnam War — Paris Peace Accords and Fall of Saigon", { id:"paris73", title:"Paris Peace Accords", when:"27 Jan 1973",
   q:"How were the Paris Peace Accords reached and what were their terms?",
+  exp:"The Accords were made possible by triangular diplomacy, as Kissinger used Beijing and Moscow to press Hanoi while negotiating directly with Le Duc Tho. They let the US withdraw and recover its prisoners, which Nixon called “peace with honour”. But with no enforcement and Thieu's government left exposed, the settlement mainly served US interests, which is why Thieu was dismayed.",
   clue:"Kissinger's secret talks with Le Duc Tho; Nixon claimed “peace with honour” on 23 January 1973.",
   pts:["Triangular relationship (Sino-American rapprochement, US–Soviet détente, Sino-Soviet split) created conditions for a settlement",
        "Kissinger met Zhou Enlai and Gromyko to lean on Hanoi, and held secret Paris talks with Le Duc Tho",
@@ -675,6 +764,7 @@ add("Vietnam War — Paris Peace Accords and Fall of Saigon", { id:"paris73", ti
        "No provisions for enforcing the terms"] });
 add("Vietnam War — Paris Peace Accords and Fall of Saigon", { id:"cw2-fall-saigon", title:"Fall of Saigon", when:"30 Apr 1975",
   q:"How did South Vietnam fall in 1975?",
+  exp:"The fall showed how hollow the Paris settlement was: the North rebuilt and attacked again, while the South remained weak and divided. The War Powers Act, a product of Vietnam itself, prevented the US from honouring Nixon's assurances. Reunification under Hanoi marked the final success of the long nationalist struggle and the failure of US efforts to build a separate South.",
   clue:"Tanks entered the southern capital amid a helicopter evacuation from the US Embassy; the city was later renamed.",
   pts:["1973–75: North rebuilt its military; South hampered by poor governance, corruption and fear harsh anti-communist measures might cost US aid",
        "March 1975: NVA invaded again; with the War Powers Act in place, no US airstrikes despite Nixon's assurances to Thieu",
@@ -683,6 +773,7 @@ add("Vietnam War — Paris Peace Accords and Fall of Saigon", { id:"cw2-fall-sai
 
 add("Vietnam War — Impact on the Cold War", { id:"vietnamimpact", title:"Vietnam: Soviet gains and Third World intervention", when:"1969–1985",
   q:"How did the Vietnam War bring Soviet gains and increased Third World intervention?",
+  exp:"Vietnam's outcome benefited the USSR. Hanoi's tilt toward Moscow gave it an ally against both the US and China, a Southeast Asian foothold, and prestige as the backer of a communist victory over imperialism. US reluctance to intervene abroad after Vietnam then left space for Brezhnev's activism, shown by the rise in Soviet client states, so the war's outcome strengthened the USSR's position in the Third World.",
   pts:["Truong Nhu Tang (1985): movement toward alliance with the Soviets began in 1969; by 1974 the pro-Soviet faction (Le Duan, Le Duc Tho) had won",
        "Late 1960s: North Vietnam tilted from neutrality to partial alignment with the USSR — useful against the US (1973 Hanoi paper: Nixon's détente schemed to “control” the socialist camp)",
        "Bolstered the USSR's standing against China; seen globally as a communist victory over imperialism; gave the USSR a Southeast Asian foothold",
@@ -690,18 +781,21 @@ add("Vietnam War — Impact on the Cold War", { id:"vietnamimpact", title:"Vietn
        "Soviet client states grew from 3 in 1964 (North Korea, North Vietnam, Cuba) to 16 two decades later (incl. Angola, Mozambique, Ethiopia, South Yemen, Afghanistan, Nicaragua, Laos, Kampuchea...)"] });
 add("Vietnam War — Impact on the Cold War", { id:"cw2-domino-collapse", title:"Collapse of the domino theory and US restraint", when:"1973–1975",
   q:"How did the Vietnam War discredit the domino theory and restrain the US?",
+  exp:"The domino theory failed because it treated Vietnam as part of a communist wave rather than as a nationalist struggle, and the neighbouring dominoes did not fall. McNamara's admission shows even US leaders came to see the war as a costly mistake. The Vietnam Syndrome and the War Powers Resolution show the lasting impact: public reluctance and legal limits on presidents' power to wage war.",
   pts:["The wider dominoes did not fall — the theory was discredited for ignoring the Vietnamese nationalist struggle",
        "McNamara: the US “should have begun our withdrawal from South Vietnam [in 1965]... at much less human, political, and social cost”",
        "‘Vietnam Syndrome’: neo-isolationist aversion to overseas commitments; questioning the US role as anti-communist police force",
        "War Powers Resolution (1973): President must notify Congress within 48 hours of committing forces; forces cannot remain more than 60 days (plus 30-day withdrawal) without authorisation or declaration of war"] });
 add("Vietnam War — Impact on the Cold War", { id:"cw2-viet-detente", title:"Vietnam and US–Soviet détente", when:"1972–1979",
   q:"How did the Vietnam War contribute to US–Soviet détente?",
+  exp:"Even as Vietnam made Americans wary of overseas commitments, the US grew more willing to pursue détente with the USSR. After opening to China, Nixon negotiated with Brezhnev, producing arms limitation in SALT I and wider agreements at Helsinki. This links the war to the easing of superpower tension in the 1970s, a key impact for essay questions on how Vietnam changed the Cold War.",
   pts:["After Nixon's Feb 1972 China visit, Nixon–Brezhnev summits in May 1972, June 1973 (Washington) and June/July 1974 (Moscow) on arms limitation and trade",
        "SALT I (1972): capped ICBMs, permitted two missile-defence sites each",
        "1975 Helsinki Final Act: borders, trade/scientific cooperation, human rights, press freedom",
        "Eventually SALT II (1979, Carter–Brezhnev)"] });
 add("Vietnam War — Impact on the Cold War", { id:"cw2-viet-china", title:"Vietnam, the Sino-Soviet split and Sino-US rapprochement", when:"1963–1979",
   q:"How did the Vietnam War affect superpower relations with China?",
+  exp:"Vietnam deepened the Sino-Soviet split because both powers competed for Hanoi, and US escalation came just as their alliance broke down. Mao's readiness to oppose the USSR regardless of ideology made rapprochement with the US possible, leading to Nixon's visit and the Shanghai Communiqué. For the US this isolated Hanoi and gave it leverage over Moscow, the logic of triangular diplomacy.",
   pts:["The split (alliance ended by 1963) intensified as Vietnam became a flashpoint — both competed for an ally/buffer and bloc leadership",
        "US escalation (1964 Gulf of Tonkin) coincided with the alliance's collapse, worsening relations",
        "Mao's policy of “opposing the Soviet Union, irrespective of ideological position” opened the door to Sino-US rapprochement",
@@ -709,6 +803,7 @@ add("Vietnam War — Impact on the Cold War", { id:"cw2-viet-china", title:"Viet
        "Led to formal US–PRC relations in 1979; Kissinger's ‘triangular diplomacy’ — US to isolate North Vietnam and gain leverage on the USSR; China sought a counterweight to Moscow"] });
 add("Vietnam War — Impact on the Cold War", { id:"cw2-third-indochina", title:"Third Indochina War", when:"1978–1991",
   q:"How did Sino-Soviet competition continue in Indochina after 1975?",
+  exp:"The Sino-Soviet rivalry did not end with the war; it moved into a new conflict in Indochina. Vietnam's economic weakness pushed it into Moscow's arms, and China responded by courting Thailand and backing the Khmer Rouge, so Vietnam's invasion of Cambodia became a contest between the two communist powers. This shows communist rivalry outlasting and even overshadowing ideological solidarity.",
   clue:"Vietnam invaded Kampuchea on 25 December 1978 with 150,000–220,000 troops.",
   pts:["Vietnam's post-war disarray pushed it to Moscow: joined COMECON (Aug 1978); Friendship and Cooperation Treaty (Nov 1978) with massive Soviet military hardware",
        "China courted Thailand as a counterweight (Deng's Bangkok visit days after the Soviet-Vietnamese treaty)",
@@ -717,6 +812,7 @@ add("Vietnam War — Impact on the Cold War", { id:"cw2-third-indochina", title:
        "Similar competition played out in Laos via the Pathet Lao"] });
 add("Vietnam War — Concluding thoughts", { id:"cw2-viet-coldwar", title:"Was Vietnam a Cold War conflict?", when:"1946–1975",
   q:"How was the Vietnam War a Cold War conflict, and how not? When and when not? Why and why not?", qs:"notes",
+  exp:"The answer depends on whose perspective and which period. For Vietnamese it was a nationalist struggle for independence and reunification, while the US saw it through containment, so it was drawn into the Cold War early. It looked most like a proxy war at the start, but the local nationalist dimension increasingly dominated, and by the late 1960s domestic concerns outweighed Cold War ones in US policy. A strong answer weighs all three readings over time.",
   pts:["For the Vietnamese the continuity to 1954 was anti-colonial independence; Geneva's partition added reunification",
        "For the US, the Cold War meant anti-communism over Wilsonian self-determination — even the First Indochina War could not be extricated from the Cold War once China aided the DRV",
        "Three readings: (a) Vietnamese nationalist struggle; (b) proxy war — Vietnamese negotiators' hands often tied by Soviet/Chinese sponsors; (c) for USSR/China, an opportunity to use rapprochement with the US to isolate the rival communist power",
@@ -726,6 +822,7 @@ add("Vietnam War — Concluding thoughts", { id:"cw2-viet-coldwar", title:"Was V
 /* ── 14. Linking Topic 1 and Topic 2 ── */
 add("Linking Topic 1 and Topic 2", { id:"cw2-links-containment", title:"Throughlines: containment and action-reaction", when:"1946–1975",
   q:"How do containment and the action-reaction cycle link Topic 1 and Topic 2?",
+  exp:"These throughlines show the case studies as expressions of the same Cold War dynamics from Topic 1. Containment grew from Kennan's political idea into a militarised global strategy, with Korea as the turning point. The action–reaction cycle explains escalation in both Korea and Cuba, where each side saw its own moves as defensive and the other's as aggressive. Use them to deepen understanding, not to compare cases in an answer.",
   pts:["Links are for holistic understanding only — the syllabus does not require comparing Korea, Vietnam and the CMC in an answer",
        "Containment: Kennan's Long Telegram/Article X (political/economic) → Truman Doctrine applied it in Europe → NSC-68 militarised and globalised it; Korea made it a permanent, funded rearmament programme extending into Asia",
        "Action-reaction in Korea: North Korean invasion → US intervention → rollback → Chinese intervention",
@@ -733,6 +830,7 @@ add("Linking Topic 1 and Topic 2", { id:"cw2-links-containment", title:"Throughl
        "In both, each side's “defensive” action was read by the other as “aggressive,” escalating the conflict"] });
 add("Linking Topic 1 and Topic 2", { id:"cw2-links-restraint", title:"Throughlines: restraint, globalisation, dominoes", when:"1948–1975",
   q:"What other patterns link the Topic 1 and Topic 2 case studies?",
+  exp:"The patterns show both continuity and spread. The superpowers repeatedly stopped short of direct war, the Cold War moved from Europe to Asia and the Americas, and the domino logic from Korea carried into Vietnam. Rivalry between communist powers for the same ally, and the four historiographical schools, give further lenses for judging responsibility. These are for holistic understanding, since the syllabus does not ask you to compare the cases directly.",
   pts:["Superpower restraint: as in the Berlin Blockade, Korea (avoiding wider war, MacArthur's dismissal) and Cuba (blockade not air strikes, mutual concessions) show both stopping short of direct hot war",
        "Geographic travel: after Berlin, “Cold War action began travelling outside Europe (Korea, 1950)” — on to Vietnam and the Western hemisphere (Cuba)",
        "Domino theory: the fear driving intervention in Korea justified backing the French and then Diem in Vietnam",
@@ -742,6 +840,7 @@ add("Linking Topic 1 and Topic 2", { id:"cw2-links-restraint", title:"Throughlin
 /* ── 23.1 Past-year SBCS questions ── */
 add("Past-Year SBCS Questions", { id:"cw2-sbcs-2024", title:"2024 SBCS: Korea, June 1950", when:"2024 A-Level",
   q:"How far do Sources A–F support the view that the main reason the US went to war in 1950 was to protect South Korea?", qs:"notes",
+  exp:"To answer “how far”, test the stated reason, protecting South Korea against aggression, against the alternatives in the notes: US prestige after the “loss” of China, McCarthyist and electoral pressure, and the wider containment logic of NSC-68. The Joint Chiefs' 1947 view that Korea had little strategic value is useful evidence that the US was defending a principle and its credibility more than the territory itself. A balanced judgement weighs these motives.",
   pts:["2024 SBCS (a): compare and contrast Sources A and B on the outbreak of war in Korea, Jun 1950",
        "Protecting South Korea: Kim's attack seen as unprovoked aggression breaching the 1945 agreement and UN resolutions; UN Security Council called for withdrawal and assistance to repel it",
        "US prestige after the “loss” of China — Acheson: backing away “would be highly destructive of the power and prestige of the United States”",
@@ -749,6 +848,7 @@ add("Past-Year SBCS Questions", { id:"cw2-sbcs-2024", title:"2024 SBCS: Korea, J
        "Cold War containment in Asia: NSC-68, fear of monolithic communism; Korea had only “little strategic interest” to the Joint Chiefs (1947)"] });
 add("Past-Year SBCS Questions", { id:"cw2-sbcs-strategy", title:"SBCS topics and revision strategy", when:"2019–2025",
   q:"Which Topic 2 case studies have appeared in recent SBCS papers, and what Part (b) question types are common?",
+  exp:"The list shows Topic 2 cases do appear, with Cuba in 2021 and Korea in 2024, so each case study needs secure knowledge of events, significance and outcomes. The common Part (b) questions match the guiding questions: Cold War versus local factors, relative responsibility, and who won. Preparing a balanced, periodised view on these three for each case covers most likely questions.",
   pts:["2021: Origins of the Cuban Missile Crisis; 2024: outbreak of war in Korea, Jun 1950",
        "Others: 2019 End of Détente; 2020 Berlin Crisis; 2022 Collapse of Communism in Eastern Europe; 2023 Yalta and Potsdam; 2025 Gorbachev/end of the Cold War",
        "Check you can (1) understand key events (chronology, cause and effect), (2) show their significance (significance, diversity), (3) assess outcomes (change and continuity)",
@@ -757,6 +857,7 @@ add("Past-Year SBCS Questions", { id:"cw2-sbcs-strategy", title:"SBCS topics and
 /* ── 23.3 Topic 2 revision tables: Korea ── */
 add("Revision Tables — Korean War", { id:"cw2-rt-korea-tl", title:"Korea revision timeline additions", when:"1945–1953",
   q:"What does the revision timeline add on Korea (incl. how the POW issue was settled)?",
+  exp:"This timeline adds two details useful for explaining the war's end. Acheson's speech excluding South Korea links to the Soviet and Chinese approval that followed, and the settlement of the POW issue by voluntary repatriation after Stalin's death removed the last barrier to the armistice. It also shows the chain from outbreak through Incheon and MacArthur's replacement to a ceasefire near the original line.",
   pts:["Aug 1945: US proposes the 38th Parallel as the US–Soviet occupation dividing line; Stalin agrees",
        "12 Jan 1950: Acheson's ‘Defence Perimeter’ speech excludes South Korea",
        "Apr/Jun 1950: Kim obtains formal support from Stalin, then Mao",
@@ -765,6 +866,7 @@ add("Revision Tables — Korean War", { id:"cw2-rt-korea-tl", title:"Korea revis
        "27 Jul 1953: Armistice signed"] });
 add("Revision Tables — Korean War", { id:"cw2-rt-korea-phases", title:"Korea: phase, factors, responsibility", when:"1950–1953",
   q:"For each phase of the Korean War, what were the key factors and who was responsible?",
+  exp:"The table shows that responsibility moves between actors by phase. At the outbreak, Kim's persistence and Stalin's encouragement were central, but US ambiguity and later rollback also contributed. During the war, China's entry and changing US and Soviet aims drove events, while the end required all sides to compromise. Use this to avoid blaming a single actor and to periodise your judgement.",
   pts:["Outbreak factors: Stalin's support for Kim; Kim's persistence in unifying Korea; US ambiguity (Europe-first); MacArthur's shift from containment to roll-back",
        "Outbreak responsibility: USSR (encouraged Kim); North Korea (persistent goal); USA (encouragement by ambiguity; MacArthur's roll-back)",
        "Development factors: China's entry turned the tide; MacArthur's dismissal; Stalin's death",
@@ -772,6 +874,7 @@ add("Revision Tables — Korean War", { id:"cw2-rt-korea-phases", title:"Korea: 
        "End factors: the POW issue; Eisenhower's election on a promise to end the war — responsibility: all sides; USA (changed objectives)"] });
 add("Revision Tables — Korean War", { id:"cw2-rt-korea-impact", title:"Korea impact: change vs continuity", when:"1953–1958",
   q:"Evaluate the Korean War's impact on the Cold War in terms of change and continuity.",
+  exp:"The table balances change against continuity. Peaceful Coexistence and the IAEA suggest some easing after Korea, but the notes argue these owed more to nuclear fear, Stalin's death and Eisenhower than to the war itself. Nuclear build-up and continued rivalry in Vietnam and Suez show the Cold War carried on, so Korea's impact on superpower relations was limited, though its status-quo outcome stands out.",
   pts:["Change (US–USSR): Peaceful Coexistence (1953–58) — state visits, Yugoslavia's ‘different roads’ accepted, Austria's division ended, Khrushchev's Secret Speech",
        "Continuity: Peaceful Coexistence owed more to fear of nuclear war/MAD and Stalin's death/Eisenhower than to Korea; SEATO (1954); status-quo outcome (no clear winner, though the USA arguably lost more, South Korea won)",
        "Nuclear change: IAEA (1956) formed to promote safe/peaceful nuclear technology",
@@ -779,6 +882,7 @@ add("Revision Tables — Korean War", { id:"cw2-rt-korea-impact", title:"Korea i
        "Third World: superpowers arguably more careful — for a while; but rivalry continued (Vietnam, Suez Crisis)"] });
 add("Revision Tables — Korean War", { id:"cw2-rt-korea-winlose", title:"Korea: who won, who lost? (revision table)", when:"1953",
   q:"Who won and who lost the Korean War, according to the revision tables?",
+  exp:"The verdicts depend on cost versus result. The US paid heavily only to restore the status quo, while the USSR preserved North Korea at little cost, and China gained by defeating US rollback. Neither Korea achieved unification. The broader outcomes, deeper bipolarity, militarisation, proxy warfare and the seeds of the Sino-Soviet split, matter more than the territorial result and help answer “who won” questions.",
   pts:["USA: rolled communism back from the South but invested heavily for a mere status-quo outcome; could not sustain roll-back further north",
        "USSR: invested relatively little (reduced PRC aid, disguised pilots/planes) yet preserved the status quo (North Korea remained socialist)",
        "PRC: expelled US/UN/South Korean forces from the North; contributed to the failure of US roll-back",
@@ -788,6 +892,7 @@ add("Revision Tables — Korean War", { id:"cw2-rt-korea-winlose", title:"Korea:
 /* ── 23.3 Topic 2 revision tables: Vietnam ── */
 add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-tl1", title:"Vietnam revision timeline, 1945–1965", when:"1945–1965",
   q:"Give the key dates of the Vietnam War from 1945 to 1965 (revision timeline).",
+  exp:"The early timeline shows how US involvement grew step by step: funding France, refusing to sign Geneva, increasing aid and advisors under Kennedy, then the open-ended authority of the Tonkin Resolution. Developments in Vietnam, the people's war, the NLF and the fall of Diem, ran alongside, showing how local and US decisions fed each other. By 1965 bombing had begun and so had serious opposition at home.",
   pts:["Aug–Sep 1945: Viet Minh take control; Ho Chi Minh declares DRV independence",
        "1954: US funds ≈¾ of the French effort; Dien Bien Phu falls (Mar–May); Diem becomes PM (25 Jun); Geneva Accords (20 Jul) — partition at the 17th Parallel; USA/South Vietnam do not sign",
        "1959–1960: Ho declares a ‘people's war’; NLF (and Viet Cong) formed",
@@ -796,6 +901,7 @@ add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-tl1", title:"Vietnam re
        "Aug 1964: Gulf of Tonkin — military action without a declaration of war; 1965: Rolling Thunder begins, anti-war movement begins in earnest"] });
 add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-tl2", title:"Vietnam revision timeline, 1966–1975", when:"1966–1975",
   q:"Give the key dates of the Vietnam War from 1966 to 1975 (revision timeline).",
+  exp:"The later timeline traces escalation to a peak in 1968, then withdrawal. Tet is the hinge: it ended Johnson's presidency and led to Nixon's Vietnamisation, though the war widened into Cambodia even as troops left. The Paris Accords were flouted by both sides, which explains why the war ended not with the agreement but with the North's capture of Saigon in 1975.",
   pts:["1966–1967: US troop levels reach 385,300; Agent Orange spraying intensifies",
        "1968: Tet (Jan) — political ‘death knell’ for LBJ; LBJ will not seek re-election (Mar); peak troop levels (536,000)",
        "1969: Nixon inaugurated; Nixon Doctrine/‘Vietnamisation’ (drawdown 480,000→23,000 by 1973); Ho Chi Minh dies (Sep)",
@@ -804,6 +910,7 @@ add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-tl2", title:"Vietnam re
        "30 Apr 1975: Saigon taken; reunified by 1976 (Ho Chi Minh City)"] });
 add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-phases", title:"Vietnam: phase, factors, responsibility", when:"1964–1975",
   q:"For each phase of the Vietnam War, what were the key factors and who was responsible?",
+  exp:"The table shows US responsibility shifting from ideology and credibility during Americanisation to failure and domestic politics during Vietnamisation. South Vietnamese weakness runs through both phases. The end was shaped by great-power diplomacy: Hanoi depended on Moscow and Beijing, who wanted better relations with the US, while US concern for credibility delayed an unconditional exit. This helps assign responsibility phase by phase.",
   pts:["Americanisation (to 1968) factors: fear of expansionist communism; credibility/domino theory; Eisenhower/Kennedy legacy; LBJ's domestic politics; limited-war logic to keep out USSR/PRC; deteriorating RVN",
        "Americanisation responsibility: US foreign-policy framework; US policy inertia; Johnson; US and RVN policies; continued foreign influence/failure of Geneva",
        "Vietnamisation (1969–75) factors: US military ineffectiveness and loss of moral legitimacy; Nixon's promise to withdraw; expanding the war to disrupt NLF supply; NLF/North's persistent strength",
@@ -811,6 +918,7 @@ add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-phases", title:"Vietnam
        "End factors: Hanoi's reliance on Moscow/Beijing; their desire to improve relations with the US; US unwillingness to withdraw unconditionally — responsibility: Hanoi; communist animosity; US credibility"] });
 add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-players", title:"Vietnam: players' roles by phase", when:"1959–1975",
   q:"What were the role and motivations of each player in the Vietnam War, by phase?",
+  exp:"Reading across the phases shows each player's changing role. The US moved from containment to escalation to a belated exit, with Tet and My Lai turning opinion. The USSR and China went from supporting Hanoi, to competing over it, to pressing it toward peace once détente and rapprochement mattered more. The strength of the North and weakness of the South remained constant, which explains the final outcome.",
   pts:["USA, Emergence (1959–64): containment; legacy of the 1st Indochina War/domino theory; promises to South Vietnam",
        "USA, Americanisation (1964–68): Gulf of Tonkin ‘blank cheque’; Rolling Thunder; Agent Orange; Tet/My Lai shift opinion",
        "USA, Vietnamisation–End (1969–75): Nixon Doctrine; extension into Cambodia/Laos; Watergate; a belated, dishonourable exit",
@@ -818,6 +926,7 @@ add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-players", title:"Vietna
        "North/South: strength/popularity of Ho, Viet Minh, Viet Cong vs weak, unpopular South government; at the end North wanted to keep fighting/unify, South pressured by Nixon into the Paris talks"] });
 add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-impact", title:"Vietnam impact and who won (revision table)", when:"1963–1985",
   q:"Evaluate the Vietnam War's impact (change vs continuity) and who won or lost.",
+  exp:"The impact looks mixed. Détente followed, but it gave way to a second Cold War, arms control stalled and rivalry continued in Afghanistan and Cambodia, so Vietnam did not change the Cold War's basic character. On winners, the US failed politically despite some military successes, the communist powers gained at limited cost, and the North achieved its main goal of reunification.",
   pts:["Détente (1963–79) gave way to the 2nd Cold War (1979–85), especially post-Helsinki (1975); some see détente as containment by another name (a façade of friendship)",
        "Arms control slowed (SALT II collapsed, 1979) as the arms race/INF continued (Pershing II, Cruise, SS-20s, SDI 1983); rivalry persisted (Afghanistan 1979; USSR–PRC over Cambodia, 1978); ‘Vietnam Syndrome’",
        "USA: intermittent military successes (e.g. Tet) but overall psychological/political failure and a belated, costly exit",
@@ -827,6 +936,7 @@ add("Revision Tables — Vietnam War", { id:"cw2-rt-viet-impact", title:"Vietnam
 /* ── 23.3 Topic 2 revision tables: Cuban Missile Crisis ── */
 add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-tl1", title:"CMC revision timeline, 1959–1962", when:"1959–1962",
   q:"Give the key dates leading to the Cuban Missile Crisis (revision timeline).",
+  exp:"This sequence shows a two-sided spiral before the missiles: Soviet economic help, then US refusals, nationalisations, sugar cuts and embargoes, each pushing Cuba closer to Moscow. The Bay of Pigs, the full embargo and expulsion from the OAS deepened Cuba's isolation and fear, while the Berlin Wall added to Khrushchev's need for a success. Together they explain the May 1962 decision.",
   pts:["Jan 1959: Batista flees; Castro declared Premier",
        "1960: Mikoyan visit/Soviet credit (Feb); US refineries refuse Soviet crude (Apr); US businesses nationalised, sugar imports cut 95% (Jun/Jul); UN embrace (Sep); partial US embargo (Oct)",
        "Jan 1961: Eisenhower severs diplomatic relations; JFK inaugurated; Apr 1961: Bay of Pigs fails; Aug 1961: Berlin Wall",
@@ -834,6 +944,7 @@ add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-tl1", title:"CM
        "May 1962: Khrushchev decides to deploy offensive missiles"] });
 add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-tl2", title:"CMC revision timeline, Oct 1962–1963", when:"1962–1963",
   q:"Give the key dates of the Cuban Missile Crisis and its aftermath (revision timeline).",
+  exp:"The Crisis itself lasted about two weeks, moving from discovery to blockade, letters, the U-2 shootdown and the secret deal. The aftermath matters as much: the Soviet missiles and then the Jupiters were removed, and in 1963 the Hotline and Test Ban Treaty followed. These later steps are the evidence for arguing that the Crisis prompted efforts to manage the nuclear danger.",
   pts:["14–16 Oct 1962: U-2 photographs missile sites; ExComm convened; 20–22 Oct: blockade/quarantine chosen, JFK addresses the nation",
        "24–28 Oct: ships turn back; letters (26th, 27th); U-2 shot down (27th); RFK–Dobrynin backchannel; acceptance (28th)",
        "5–9 Nov 1962: Soviet missiles dismantled/removed",
@@ -841,6 +952,7 @@ add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-tl2", title:"CM
        "Jun–Aug 1963: Kennedy's ‘Peace Speech’; Hotline established; Limited (Partial) Test Ban Treaty signed"] });
 add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-phases", title:"CMC: phase, factors, responsibility", when:"1959–1962",
   q:"For each phase of the Cuban Missile Crisis, what were the key factors and who was responsible?",
+  exp:"Responsibility changes by phase. The context was shaped mainly by long US domination and Cuban nationalism, so the US bears much responsibility for the conditions. The deployment was a Soviet initiative but provoked by US actions, with insecurity and domestic pressure on both leaders. The peaceful end belongs to both Kennedy and Khrushchev, who negotiated partly because they feared accidental escalation.",
   pts:["Context factors: US political/economic influence; Castro's overthrow of Batista; moves to reduce US dependence; US moves to overthrow Castro",
        "Context responsibility: persistent US influence; Cuban nationalist revolutionaries; history of US exploitation; US political/business interests",
        "Development factors: Soviet desire to protect Cuba and close the missile gap; Khrushchev strengthening his position; Kennedy protecting domestic legitimacy; US perception of a shifting balance",
@@ -848,6 +960,7 @@ add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-phases", title:
        "End: both leaders' willingness to negotiate; risk of accidental escalation — responsibility: both Kennedy and Khrushchev"] });
 add("Revision Tables — Cuban Missile Crisis", { id:"cw2-rt-cmc-impact", title:"CMC impact and who won (revision table)", when:"1962–1979",
   q:"Evaluate the CMC's impact (change vs continuity) and who won or lost, according to the revision tables.",
+  exp:"The table again balances change and continuity: détente and arms control followed, but the Soviet build-up, outdated treaties, the 1973 alert and continued rivalry show competition went on. Who won depends on perspective, since a US-centric view stresses Khrushchev's retreat while the USSR gained a pledge and averted war, and Cuba gained a patron but resented its exclusion. Overall, both sides learned lessons only partially.",
   pts:["Change: high noon of détente in the early 1970s (state visits, US grain sales, Hot Line, PNTB, NPT, SALT I, ABM); indirect proxy competition in Africa/Latin America",
        "Continuity: détente as containment; covert Soviet build-up to parity by the late 1960s; treaties lip-service/outdated; DEFCON 2 again in 1973 Yom Kippur War; rivalry continued (Vietnam, Afghanistan 1979)",
        "USA: forced Khrushchev back, prevented a domino effect in its backyard — but conceded the (near-obsolete) Jupiters and ultimately lost Cuba to socialism/the USSR",
