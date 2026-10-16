@@ -6,7 +6,8 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"nu", sec, src:S, qs:"me" }
 
 /* Framework */
 add("Framework", { id:"nu-define", title:"Defining national unity", when:"framework",
-  q:"Define 'national unity' (tangible and intangible dimensions) and distinguish indigenous from non-indigenous minorities.", qs:"notes",
+  q:"Define 'national unity' (tangible and intangible dimensions) and distinguish indigenous from non-indigenous minorities.",
+  exp:"Because nations are imagined communities, unity depends on people believing they share a history and destiny, not just on borders. The tangible side (territory, stability) is easier to measure, while the intangible side (cohesion, identity) is harder and often lags behind. The indigenous versus non-indigenous distinction matters because governments handled them differently: indigenous minorities often sought autonomy or secession, while Chinese and Indian minorities raised questions of economic power and loyalty.", qs:"notes",
   pts:["Nations are 'imagined communities' held together by shared history, culture and destiny",
        "Tangible: territorial integrity and social stability",
        "Intangible: social cohesion and a national identity from disparate groups",
@@ -14,18 +15,21 @@ add("Framework", { id:"nu-define", title:"Defining national unity", when:"framew
        "Indigenous minorities originate in the region (Karens, Moros, Pattani Malays, Orang Asli); non-indigenous are colonial-era immigrants' descendants (Chinese, Indians)"] });
 add("Framework", { id:"nu-immigrants", title:"Colonial immigration and its legacy", when:"colonial era",
   q:"Why did colonial immigration create a lasting problem for national unity?",
+  exp:"Colonial rulers brought in Chinese and Indians to fill economic roles, so these groups became tied to commerce and capital while indigenous peoples felt excluded, producing ethnic-economic nationalism even before independence. After independence governments inherited this tension: they resented and distrusted these minorities yet depended on their capital and skills. Ne Win's labelling of Burma-born Indians as resident aliens shows how this ambivalence could turn into exclusion.",
   pts:["Colonial governments encouraged Chinese/Indian immigrants as labourers, middlemen, civil servants, capital-providers",
        "Caused indigenous discontent and ethnic-economic nationalism even under colonial rule",
        "Chinese supplied vital capital and expertise in Thailand, Indonesia, Malaysia",
        "Ne Win called Burma's Indians 'resident aliens' though many were Burma-born",
        "Governments both fearful of and dependent on these minorities"] });
 add("Framework", { id:"nu-approaches", title:"Approaches and tools of national unity", when:"framework",
-  q:"Explain and give examples of the dominant-culture/assimilation vs multiculturalism/integration approaches, and list the four tools.", qs:"notes",
+  q:"Explain and give examples of the dominant-culture/assimilation vs multiculturalism/integration approaches, and list the four tools.",
+  exp:"The two approaches differ in whether minorities must give up their own culture. Assimilation imposes the majority's language and religion and tends to be coercive, while integration builds a shared culture without forcing anyone to abandon theirs. The four tools are how either approach is put into practice, so in essays you can compare how the same tool, such as language or religion, was used coercively in one country and inclusively in another.", qs:"notes",
   pts:["Dominant culture (assimilation): minorities must adopt dominant language/religion; coercive, exclusionary — Burma, Indonesia, Thailand, Philippines",
        "Multiculturalism (integration): new culture from all groups, not compelled; less coercive — Singapore, Malaysia (with exceptions)",
        "Four tools: ideology, religion, language, education"] });
 add("Framework", { id:"nu-assess", title:"Assessing national unity", when:"framework",
   q:"How do the notes say effectiveness of national unity efforts should be judged?",
+  exp:"These criteria give a balanced test of success: stability alone is not enough if minorities are victimised or excluded. Asking about representation, wealth and cultural rights lets you separate countries that merely prevented violence from those that built a shared identity. This is useful for evaluating cases like Malaysia or Singapore, which were stable but where deep integration is debated.",
   pts:["Social stability (no separatist insurgencies) and a widely accepted national identity",
        "Are minorities integral or victimised?",
        "Is political representation equitable?",
@@ -35,6 +39,7 @@ add("Framework", { id:"nu-assess", title:"Assessing national unity", when:"frame
 /* Burma */
 add("Burma", { id:"nu-burmactx", title:"Burma: roots of ethnic disintegration", when:"1752–1931",
   q:"What historical factors made Burma ethnically fractured before independence?",
+  exp:"Burma's divisions were rooted in history before independence. Minority areas had been separate kingdoms, missionary conversion and Karen support for the British created a religious and political rift with Burmans, and British rule governed the frontier areas separately. Indian moneylending added economic resentment. Together these meant Burma had little shared experience on which to build unity.",
   pts:["Lowland Theravada Burmans vs upland Karens, Kachins, Chins, Shans",
        "Borders date from the Konbaung Dynasty (1752–1885); minority areas previously independent",
        "Baptist missionaries converted Karens from the 1810s; Karens fought for the British (1852: Burmans burnt Karen villages, crucified a pastor)",
@@ -42,6 +47,7 @@ add("Burma", { id:"nu-burmactx", title:"Burma: roots of ethnic disintegration", 
        "Chettiar debt after 1929 → Rangoon anti-Indian riots (May 1930), Saya San Rebellion (1930–31)"] });
 add("Burma", { id:"nu-panglong", title:"Panglong and the 1947 union state", when:"Feb 1947",
   q:"What did Panglong and the 1947 Constitution provide for minorities, and why did the union collapse?",
+  exp:"Panglong and the 1947 Constitution tried to win minority trust through a voluntary federal union with autonomy, representation and even a right to secede. But the safeguards were weak in practice: the Upper House had little power, Burman elites looked down on frontier peoples, and Aung San's death removed the leader who had made the deal. The rapid collapse into rebellion shows promises without real power could not hold the union together.",
   pts:["Panglong: 'full autonomy in internal administration for the frontier areas'; 12 Feb still Union Day",
        "Shan, Kachin, Karenni States; Chamber of Nationalities seats (25 Shan, 12 Kachin, 8 Chin, 3 Karenni, 24 Karen, 53 other); rotating presidency",
        "Shan and Karen states could secede after a decade",
@@ -50,6 +56,7 @@ add("Burma", { id:"nu-panglong", title:"Panglong and the 1947 union state", when
   clue:"A February 1947 conference still marked each year as Union Day." });
 add("Burma", { id:"burmanization", title:"U Nu's Burmanization", when:"1948–1962",
   q:"How did U Nu use religion, language and education, and why did it fail?",
+  exp:"U Nu tried to unite Burma around Buddhism and the Burmese language, but this identified the nation with the Burman majority, so non-Buddhist minorities felt excluded. Making Buddhism the state religion pushed the Shans to join other rebels, while his attempt at concession angered monks instead. The string of secession bids and uprisings shows that Burmanization deepened, rather than healed, ethnic division.",
   pts:["1951 state Buddhist agency; 1952 Pyidawtha plan failed; Kaba Aye pagoda for Sixth Buddhist Council (1954–56)",
        "1961 State Religion Bill: Shans joined Kachins, Karens, communists in rebellion",
        "Burmese obligatory for government from 1952; sole medium from Standard Three; Burman-nationalist history",
@@ -58,12 +65,14 @@ add("Burma", { id:"burmanization", title:"U Nu's Burmanization", when:"1948–19
   clue:"A programme that made Buddhism the state religion in 1961 and Burmese the sole medium from Standard Three." });
 add("Burma", { id:"nu-tatmadaw", title:"Tatmadaw as 'defender of national unity'", when:"1962–1999",
   q:"How did the Tatmadaw present itself as the guardian of national unity?",
+  exp:"The Tatmadaw claimed legitimacy from its role in independence and linked Ne Win to Aung San to present the military as the nation's unifier. By placing officers throughout institutions and making the BSPP the only party, it fused the army with the state. This shows unity was being built from the top through military control, which parallels Indonesia's ABRI but, as the notes say, was more forceful after 1962.",
   pts:["Legitimacy from independence role; Ne Win cast Aung San as the 'fourth Great Unifier', portraits side by side",
        "Military placed throughout institutions; 20 military museums built 1988–99",
        "Burmese Way to Socialism published 30 Apr 1962; BSPP (4 Jul 1962) sole party, mostly military/police",
        "BSPP went mass-based in 1970s; youth wing Lanzin lu nge (1984), compulsory for students"] });
 add("Burma", { id:"nu-xenophobia", title:"Ne Win's anti-foreignism", when:"1962–1979",
   q:"Give examples of Ne Win's official xenophobia.",
+  exp:"Ne Win's xenophobia defined Burmese identity by excluding anything foreign, from Western culture to foreign firms and Indian and Chinese residents. Expelling Indians cost Burma capital and expertise, and the 1967 riot showed minorities could face violence. His remarks on people of mixed blood show suspicion even of indigenous minorities, which helps explain why this insular nationalism heightened rather than reduced sub-national identities.",
   pts:["Banned beauty contests, horse racing, English teaching; media purged of 'un-Burman' influence; foreign missionaries barred after 1963",
        "Nationalised East Asiatic Co., John Dickenson & Co., Steel Brothers",
        "~300,000 Indians/Pakistanis forced out with their capital",
@@ -71,18 +80,21 @@ add("Burma", { id:"nu-xenophobia", title:"Ne Win's anti-foreignism", when:"1962�
        "Ne Win (1979) on watching 'people of mixed blood'"] });
 add("Burma", { id:"nu-burmaforce", title:"Force and depoliticisation under Ne Win", when:"1961–1980",
   q:"How did Ne Win use force, depoliticisation and education?",
+  exp:"Ne Win relied on force instead of negotiation, which is why insurgencies like the KNU lasted until 2012. He also removed rival centres of influence by excluding monks from politics and crushing student protest, and used education to impose Burman language while restricting minority languages to the home. These measures created control but also resentment, as shown by students later leading the 8888 Uprising.",
   pts:["KNU, Kachin Independence Army (1961), Shan State Army (1964) met with force; KNU ceasefire only 2012",
        "Sangha barred from voting/office by 1965; 1980 monk registration convention",
        "1974 student riots; Rangoon University union building dynamited; students led 8888",
        "1966 Basic Education Law: control of all schools incl. monastic; minority languages home-only"] });
 add("Burma", { id:"nu-slorc", title:"SLORC's coercion", when:"1988–2001",
   q:"How did SLORC continue coercive nation-building?",
+  exp:"SLORC continued the same top-down approach after 1988, using a mass organisation modelled on Golkar and slogans about the non-disintegration of the Union to equate unity with obedience. Loyalty tests, dismissals and a mostly appointed National Convention show unity was enforced rather than negotiated, which is why the NLD walked out and was expelled.",
   pts:["USDA (1993) modelled on Golkar; 17.7m members by July 2001; 'Morale, Discipline, Solidarity, Unity'",
        "Three national causes: non-disintegration of the Union and of national solidarity, perpetuation of sovereignty",
        "1991: 300+ ethnic loyalty questions; ~15,000 civil servants dismissed",
        "1993 National Convention: only 99 of 702 delegates elected; NLD walked out 1995, expelled"] });
 add("Burma", { id:"nu-1974const", title:"Burma's policies towards minorities", when:"1974–1990s",
   q:"How did Burma treat minorities through the constitution, religion, education and economics?",
+  exp:"The 1974 Constitution created minority states but without autonomy, so, as Steinberg argues, it consolidated Burman dominance rather than sharing power. Religious and educational policies pushed assimilation, while development focused on Rangoon and minority resources benefited the armies. The Citizenship Act shows exclusion of Indians and Chinese, so minorities experienced the state as exploitative across politics, culture and economics.",
   pts:["1974 Constitution: 7 non-autonomous minority states + 7 Burman divisions (Steinberg: consolidated Burman dominance)",
        "Buddhist missions to Karens; madrasahs and Christian schools closed",
        "Development around Rangoon; Shan teak, oil, gems, silver benefited armies",
@@ -90,6 +102,7 @@ add("Burma", { id:"nu-1974const", title:"Burma's policies towards minorities", w
        "1974 Citizenship Act excluded Indians/Chinese from the ruling party"] });
 add("Burma", { id:"nu-karenshan", title:"Karen and Shan separatism and the ceasefires", when:"1948–1999",
   q:"Explain Karen and Shan separatism and why the ceasefires failed.",
+  exp:"Karen and Shan separatism grew from different roots: Karens had a separate Christian, pro-British identity and were radicalised by the 1948 attack, while Shan leaders lost their traditional powers and the 1962 coup escalated revolt. The ceasefires failed because they were military deals without political solutions, and some leaders like Khun Sa negotiated for personal gain, so new alliances against the government soon formed.",
   pts:["Karens: Christian-educated pro-British nationalism; 1948 PVO sacking of Karen Rangoon → KNU, 'oldest continuous ethnic revolt in the world' (Thomson)",
        "Shans: Sawbwas lost judicial (1950) and administrative (1959) powers; 1962 coup escalated revolt (Noon Seek Harn, MTA, SSPP)",
        "Ceasefires from 1989, 17/21 groups by late 1990s: military not political",
@@ -97,6 +110,7 @@ add("Burma", { id:"nu-karenshan", title:"Karen and Shan separatism and the cease
        "Five groups formed a new anti-government alliance by 1999"] });
 add("Burma", { id:"nu-burmaeval", title:"Evaluating Burma's national unity", when:"evaluation",
   q:"Why did coercion in Burma produce the world's longest-running ethnic insurgencies?",
+  exp:"Tucker and Brown both argue that Burma's state produced the opposite of unity: its attempts to penetrate minority areas provoked rebellion. Insular anti-foreign policies strengthened minority identities, and each use of force created resentment that fuelled more insurgency. This self-perpetuating cycle is the key explanation for Burma's failure and the strongest evidence for the argument that force is counter-productive.",
   pts:["Tucker: generated rather than healed divisions",
        "David Brown: state penetration provoked rebellion",
        "24+ separatist factions since the 1980s (Thomson)",
@@ -106,6 +120,7 @@ add("Burma", { id:"nu-burmaeval", title:"Evaluating Burma's national unity", whe
 /* Indonesia */
 add("Indonesia", { id:"nu-indoctx", title:"Indonesia's fractious context", when:"1950–1961",
   q:"What made Indonesia difficult to unify?",
+  exp:"Indonesia's geography and diversity made unity hard: thousands of islands, hundreds of ethnic groups and a Javanese majority concentrated on a small area, which encouraged Javanese dominance. The unitary republic left little room for regional autonomy, so religious, ethnic and regional cleavages surfaced in rebellions and unstable governments. The 1958 revolts show the persistent risk that regions would reject Jakarta's authority.",
   pts:["~252m people (2014) on 18,000 islands; Javanese 40% on 6.6% of land",
        "2010 census: Javanese 40.06%, Sundanese 15.51%, 600+ smaller groups",
        "Unitary republic 17 Aug 1950, intolerant of regionalism",
@@ -113,6 +128,7 @@ add("Indonesia", { id:"nu-indoctx", title:"Indonesia's fractious context", when:
        "1958 Sumatra/Sulawesi revolts defeated by 1961, amnesty"] });
 add("Indonesia", { id:"pancasila", title:"Youth Oath, Marhaenism and Pancasila", when:"1928–1945",
   q:"How did Sukarno build national ideology before and at independence?",
+  exp:"Sukarno built unity by placing nationalism above other loyalties: the Youth Oath made nationality more important than ethnicity, and his writings presented nationalism as uniting Islam and Marxism against colonialism. Pancasila extended this with broad principles acceptable to many groups. Vatikiotis calls it vague, which explains both its strength, since many could accept it, and its weakness, since it meant different things to different groups.",
   pts:["Youth Oath 1928: one fatherland, one nation, one language; Hari Sumpah Pemuda 28 Oct",
        "Sukarno's 'Nationalism, Islam and Marxism' (1920s): nationalism uniting both",
        "Marhaenism (1930s): Marxism adapted to peasants, with gotong royong",
@@ -121,6 +137,7 @@ add("Indonesia", { id:"pancasila", title:"Youth Oath, Marhaenism and Pancasila",
   clue:"Five pillars proclaimed on 1 June 1945, described by Vatikiotis as a 'vague philosophical rationalization'." });
 add("Indonesia", { id:"nu-jakartacharter", title:"The Jakarta Charter", when:"1945–1962",
   q:"What was the Jakarta Charter controversy and its consequence?",
+  exp:"Removing the seven words made Pancasila religiously neutral, which helped keep non-Muslims within the nation. But politicised Muslims saw it as a betrayal, which fed the Darul Islam rebellion for an Islamic state. The issue never disappeared: it was suppressed under Suharto and returned after 1998, showing that the secular basis of the state remained contested.",
   pts:["Draft inserted 7 words: Muslims obliged to follow Islamic law",
        "Removed 18 Aug 1945, leaving 'Belief in one God'",
        "Politicised Muslims felt betrayed",
@@ -129,6 +146,7 @@ add("Indonesia", { id:"nu-jakartacharter", title:"The Jakarta Charter", when:"19
   clue:"Seven words requiring Muslims to follow Islamic law, removed on 18 August 1945." });
 add("Indonesia", { id:"nu-gotong", title:"Guided Democracy and gotong royong", when:"1945–1968",
   q:"How did Sukarno use himself and gotong royong as tools of unity?",
+  exp:"Sukarno made himself the symbol holding Indonesia together and balanced the army, Islamists and PKI under NASAKOM, which tied unity to his personal position. Gotong royong turned a Javanese idea of mutual aid into national culture and justified Guided Democracy. Its later reuse by the New Order shows how the concept could soften authoritarian programmes, though it also reflects Javanese cultural dominance.",
   pts:["Sukarno as 'social cement' for 10,000 islands; 'I am NASAKOM' (1963)",
        "Power shared among military-Islamists, Sukarno, PKI; expropriation of Dutch/Chinese property; Konfrontasi",
        "Gotong royong: Javanese mutual aid; 'A Gotong Royong State!' (June 1945)",
@@ -136,12 +154,14 @@ add("Indonesia", { id:"nu-gotong", title:"Guided Democracy and gotong royong", w
        "Reused by New Order: 'BIMAS Gotong Royong' (1968)"] });
 add("Indonesia", { id:"nu-neworderideology", title:"Suharto's ideological uniformity", when:"1965–1998",
   q:"How did Suharto use ideology, depoliticisation and development to unify Indonesia?",
+  exp:"Suharto turned Sukarno's broad ideas into strict uniformity, requiring Pancasila training and forcing all organisations, especially Islamic ones, to accept it. Merging parties into a few controlled groups depoliticised society, while rising incomes gave his rule legitimacy as Father of Development. Unity was thus built on control plus economic growth, which the notes later judge as containment rather than real resolution.",
   pts:["Javanese ruler ('sapto pandhito ratu'), 'bapak'; 'rigid ideological uniformity' (Vatikiotis)",
        "P4 Pancasila courses for promotion (1978); 1985 Ormas decree aimed at Islamic parties",
        "1973 Parties and Golkar Bill: secular PDI, Islamic PPP",
        "Per-capita income US$260 → over $500 in 1970s: 'Father of Development'"] });
 add("Indonesia", { id:"nu-indoedu", title:"Education, language and religion in Indonesia", when:"1964–1990",
   q:"How did Indonesia use education, language and religion to build unity?",
+  exp:"Education, language and religion were used to spread a common identity. Pancasila teaching and a military-written history built loyalty, while Bahasa Indonesia was chosen as a neutral language rather than Javanese, which helps explain its rapid spread. Recognising six religions and keeping a secular constitution protected minorities, while Suharto carefully managed Islam by both repressing and courting it, showing religion remained a delicate balance.",
   pts:["Pancasila at all levels incl. university admission; 1989 teacher qualification; Armed Forces History Centre wrote curriculum from 1974",
        "100,000+ schools, 500,000+ teachers",
        "Bahasa Indonesia neutral: speakers 40.8% (1971) → 61.4% (1980) → over 80% (1990)",
@@ -149,18 +169,21 @@ add("Indonesia", { id:"nu-indoedu", title:"Education, language and religion in I
        "Managing Islam: Tanjung Priok 1984 (28); 'neither secular nor theocratic'; ICMI 1990 (Habibie); Mecca pilgrimage 1991; teachers sent to McGill, Leiden"] });
 add("Indonesia", { id:"nu-pkat", title:"PKAT and land seizures", when:"1960s–2002",
   q:"How did development programmes exploit Indonesia's indigenous minorities?",
+  exp:"Development programmes claimed to integrate isolated minorities but often exploited them. PKAT forced settlement and conversion and was riddled with corruption, while classifying most land as State Forest let the state hand indigenous land to timber and oil palm interests. These examples show development serving the state and elites rather than minorities, which fuelled grievances instead of unity.",
   pts:["PKAT: sedentarisation and forced conversion; 18% of 'isolated' people by 1969; corrupt (Central Sulawesi swamp resettlement)",
        "1980s: 75%+ of land classed State Forest (Duncan: 'one of the largest land grabs in history')",
        "Forest Village Development Programme displaced communities for timber/oil palm",
        "1995 Tangkit Tebak: elephants destroyed 4,000 ha; 2002 Moronene resettled"] });
 add("Indonesia", { id:"transmigration", title:"Transmigration", when:"1969–2001",
   q:"Why was transmigration a double-edged unity tool?",
+  exp:"Transmigration moved Javanese and others to the Outer Islands, partly to spread development and partly to change minority behaviour seen as backward. Because it treated local cultures as inferior and put migrants in competition with local peoples, it created resentment. This explains why it fuelled violence such as Dayak–Madurese clashes after Suharto, showing a unity tool that ultimately created new conflict.",
   pts:["~730,000 families moved from Java/Bali/Madura to the Outer Islands",
        "Partly to 'improve' minorities' 'backward' behaviour",
        "Fuelled post-Suharto violence: Dayak–Madurese clashes, Kalimantan 2001 (hundreds killed)"],
   clue:"A programme moving about 730,000 families, linked to Dayak–Madurese violence in 2001." });
 add("Indonesia", { id:"nu-easttimor", title:"East Timor", when:"1975–2002",
   q:"Explain East Timor's separatism and how it ended.",
+  exp:"East Timor had a different colonial history and a Catholic, Portuguese-speaking identity, so it never shared the Indonesian national story. Annexation and military repression, including the Dili massacre, hardened resistance. Its independence came only after the Cold War ended and Suharto fell, showing that international pressure and democratisation, not force, decided the outcome.",
   pts:["Portuguese colony; Catholic, Portuguese-speaking",
        "Indonesia invaded/annexed after Portuguese withdrawal despite independence declaration",
        "Military occupation; Dili massacre Nov 1991 (200+)",
@@ -168,6 +191,7 @@ add("Indonesia", { id:"nu-easttimor", title:"East Timor", when:"1975–2002",
        "UN referendum after Suharto; independent 2002"] });
 add("Indonesia", { id:"aceh", title:"Aceh", when:"1953–2006",
   q:"Explain Aceh's separatism and how it was resolved.",
+  exp:"Aceh's history as an independent sultanate and its religious identity made it resent being merged with North Sumatra, while its oil and gas wealth was extracted as Aceh stayed poor. Special territory status in 1959 ended the first revolt, showing autonomy could work, but Suharto's re-centralisation and military operations revived it through GAM. Peace came only with negotiation after the 2004 tsunami, supporting the view that settlements outlast force.",
   pts:["Independent sultanate; Dutch conquest 1873–1914 incomplete",
        "1953 rebellion (Darul Islam) after merger with Christian-Batak North Sumatra; oil/gas ~11% of national wealth (~US$2.6bn/yr LNG) while Aceh stayed poor",
        "1959 'special territory' status ended revolt; Suharto re-centralised, transmigration",
@@ -175,7 +199,8 @@ add("Indonesia", { id:"aceh", title:"Aceh", when:"1953–2006",
        "Peace after 2004 tsunami: Aug 2005 deal; 2006 elections; di Tiro: 'Indonesia was a fraud'"],
   clue:"A province given special status in 1959, whose separatist movement made peace only after the 2004 tsunami." });
 add("Indonesia", { id:"nu-indochinese", title:"Indonesian Chinese", when:"1965–2017",
-  q:"Analyse the causes and consequences of the 1965/67/98 anti-Chinese violence.", qs:"notes",
+  q:"Analyse the causes and consequences of the 1965/67/98 anti-Chinese violence.",
+  exp:"The Chinese were vulnerable because they were a small minority with disproportionate wealth, making them targets in times of crisis. Suharto's policy was contradictory: it erased Chinese culture through forced assimilation yet relied on Chinese tycoons economically, which deepened resentment. The 1998 pogroms showed assimilation had failed, while post-1998 reforms restoring Chinese culture show a shift to greater inclusion.", qs:"notes",
   pts:["Under 4% of population with disproportionate wealth; pogroms 1965, 1967, 1998",
        "1967 'Basic Policy for the Solution of the Chinese Problem': papers, schools (last closed 1974) shut; script banned; forced names; ethnic ID cards",
        "Co-opted economically (Liem Sioe Liong); 1990 tycoons asked to give 25% equity to cooperatives",
@@ -183,6 +208,7 @@ add("Indonesia", { id:"nu-indochinese", title:"Indonesian Chinese", when:"1965�
        "Post-1998: Habibie lifted Mandarin ban; Wahid freed culture; Megawati made Lunar New Year a holiday (2003); Ahok governor 2014–17"] });
 add("Indonesia", { id:"nu-indoeval", title:"Evaluating Indonesia's national unity", when:"evaluation",
   q:"How successful was the New Order in building national unity?",
+  exp:"The New Order delivered stability for three decades, but the notes judge it as containment because tensions resurfaced when the regime collapsed in 1997–98. Imposing a single ethnic model on a diverse society and using force alienated minorities. Development also created inequality, with a small group controlling most of the economy, while rising Islamic identity challenged the secular state, showing how stability masked deeper problems.",
   pts:["Three decades of stability via military/bureaucracy + development, but only 'contained latent forces'",
        "Mono-ethnic state in multi-ethnic society; force counter-productive",
        "4% controlled ~75% of the economy by the 1980s",
@@ -192,6 +218,7 @@ add("Indonesia", { id:"nu-indoeval", title:"Evaluating Indonesia's national unit
 /* Philippines */
 add("Philippines", { id:"nu-philctx", title:"Philippines: context and constraints", when:"1898–1959",
   q:"What constrained national unity in the Philippines?",
+  exp:"The American legacy gave the Philippines democratic institutions and a Catholic majority, but because US rule was seen as benevolent there was no clear enemy around which to build nationalism, as Recto notes. Personality politics made policy inconsistent, and the main division was between rich and poor rather than between ethnic groups. Garcia's Filipino First laws show economic nationalism against the Chinese as one attempt to define the nation.",
   pts:["US legacy: Catholic majority (80%+), democratic culture, education",
        "No clear anti-colonial adversary; Recto: victories 'diluted by sentiments of gratitude'",
        "Personality politics over ideology; inconsistent policy",
@@ -199,6 +226,7 @@ add("Philippines", { id:"nu-philctx", title:"Philippines: context and constraint
        "Garcia's 'Filipino First': Retail Trade Nationalization Act (1954); 1958 bill for 60% native ownership"] });
 add("Philippines", { id:"nu-landreform", title:"Philippine land reform", when:"1946–1998",
   q:"Trace Philippine land reform and why it fell short.",
+  exp:"Land reform aimed to close the class gap shown by the Huk Rebellion, but each attempt was undermined by elites. Congress blocked Magsaysay's reforms, Marcos's decree was weakened by corruption and cronyism, and later programmes faced elite opposition and limited state capacity. That only part of the target land was redistributed by 1998 explains why class division remained the deepest obstacle to unity.",
   pts:["Huk Rebellion reflected elite–mass cleavage",
        "Magsaysay: Agricultural Tenancy Commission, Land Reform Act 1955; Congress blocked enforcement; Central Luzon tenancy 70–80%",
        "Marcos PD 27 (1972) undermined by corruption and crony wealth",
@@ -206,18 +234,21 @@ add("Philippines", { id:"nu-landreform", title:"Philippine land reform", when:"1
        "Only 4.6m of 8.1m ha redistributed by 1998"] });
 add("Philippines", { id:"nu-philang", title:"Language, education and Tadhana", when:"1959–1986",
   q:"How did the Philippines use language, education and history to build identity?",
+  exp:"Language and education policies were meant to create a shared identity but often excluded minorities. A Christian-biased curriculum offended Muslims, and a Tagalog-based national language was the first language of only a minority, so the bilingual policy struggled. Marcos's unfinished official history shows the difficulty of building a national narrative from the top.",
   pts:["Christian-biased curriculum offensive to Muslims",
        "English medium; Pilipino (Tagalog-based) national language from 1959",
        "1974 Bilingual Education Policy a failure: Tagalog first language of only 28% by 1970; Arabic auxiliary in Muslim areas",
        "Marcos's 'Tadhana': 19-volume history, only 5 completed"] });
 add("Philippines", { id:"nu-moros", title:"Mindanao Muslims: origins of grievance", when:"1898–1946",
   q:"Why were the Moros alienated from the Philippine state?",
+  exp:"The Moros had never been fully ruled by Spain and kept their own sultanates and Islamic identity, so they did not see themselves as part of the Philippine nation. US rule worsened this through secular schools and land laws that favoured Christian settlers and took ancestral lands. Their 1946 memorandum shows that by independence they already rejected inclusion, explaining later separatism.",
   pts:["5–6% of population; independent sultanates never fully under Spain; ceded to US 1898",
        "Secular schools; Public Land Acts (1910s) seized ancestral lands",
        "Land laws: 24 ha for Christians vs 10 for non-Christians",
        "1946 memorandum: 'we do not want to be included in the Philippines Independence'"] });
 add("Philippines", { id:"mindanao", title:"Jabidah to the 1996 Peace Agreement", when:"1968–2014",
   q:"Compare how successive governments handled Moro separatism.",
+  exp:"The Jabidah Massacre turned Moro grievance into armed separatism through the MNLF. The Tripoli Agreement failed because it gave little real authority, leading to renewed fighting and the MILF split. Aquino and Ramos made progress through talks and autonomy, but the MILF's withdrawal and the delay until 2012/2014 show negotiated settlements worked better than force yet took a long time to cover all groups.",
   pts:["1968 Jabidah (Corregidor) Massacre → MIM → MNLF (Nur Misuari), Bangsa Moro",
        "Tripoli Agreement 23 Dec 1976 (OIC): autonomy incl. sharia for dropping independence; collapsed within a year",
        "MILF split 1981",
@@ -226,6 +257,7 @@ add("Philippines", { id:"mindanao", title:"Jabidah to the 1996 Peace Agreement",
   clue:"A 1968 massacre on Corregidor that led to an OIC-mediated agreement signed in Libya in 1976." });
 add("Philippines", { id:"nu-cordillera", title:"The Cordillerans", when:"1970s–2005",
   q:"Why did the Cordillerans resist Manila, and was it secessionist?",
+  exp:"The Cordillerans rebelled because Marcos-era projects benefiting cronies threatened their ancestral lands, and the CPP-NPA used this anger. Their aim was retaliation against Manila rather than independence, which shows minority unrest could be about land and rights rather than separatism. The failure to implement the autonomous region shows that agreements on paper did not always produce change.",
   pts:["~2% of population",
        "Chico/Pasil dam and crony Cellophil logging threatened ancestral land",
        "Cordillera People's Democratic Front, fanned by CPP-NPA",
@@ -233,6 +265,7 @@ add("Philippines", { id:"nu-cordillera", title:"The Cordillerans", when:"1970s�
        "Aquino talks with CPLA (1986); Ramos EO 220 (1997) Cordillera Autonomous Region never implemented by 2005"] });
 add("Philippines", { id:"nu-philchinese", title:"Philippine Chinese and evaluation", when:"1950s–1996",
   q:"How were the Philippine Chinese treated, and how successful was national unity overall?",
+  exp:"The Chinese moved from being targets of discrimination to being co-opted as allies under Marcos, and intermarriage helped them assimilate more than in most of the region. Overall, unity was strongest when Filipinos opposed the regime, not when the state promoted it. The 1987 Constitution reduced violence but did not build a shared identity, and patronage undermined national symbols, while foreign pressure pushed the state to accommodate the Moros.",
   pts:["1.3% of population controls ~60% of the economy",
        "From Garcia's discrimination to Marcos co-opting (Lucio Tan); 1975 Naturalization Law; intermarriage",
        "Greatest unity moments were anti-regime (1983 assassination, 1986 EDSA)",
@@ -242,6 +275,7 @@ add("Philippines", { id:"nu-philchinese", title:"Philippine Chinese and evaluati
 /* Thailand */
 add("Thailand", { id:"nu-thaiearly", title:"Building Thai identity before 1925", when:"1851–1925",
   q:"How did the Chakri kings build a Thai national identity?",
+  exp:"The Chakri kings built Thai identity by defining citizenship territorially, integrating the Sangha and minorities through Buddhism, and spreading Thai through national education. Vajiravudh's triad of Nation, Religion and King provided an enduring ideology centred on the monarchy. His anti-Chinese writings, however, show this identity also defined itself against outsiders.",
   pts:["Mongkut modernised; Chulalongkorn created a territorial state; 1911 Nationality Act: born within borders = Thai",
        "Sangha Administration Act 1902 integrated monks and hill tribes; 1898 uniform Thai-language education",
        "Vajiravudh coined 'Nation, Religion, King' (Chat, Satsana, Kasat)",
@@ -249,6 +283,7 @@ add("Thailand", { id:"nu-thaiearly", title:"Building Thai identity before 1925",
        "Called Chinese 'Jews of the East'"] });
 add("Thailand", { id:"nu-phibun", title:"Phibun's extreme Thai-ness", when:"1938–1944",
   q:"What did Phibun's cultural assimilation policy involve?",
+  exp:"Phibun pushed assimilation to an extreme, renaming the country and forcing minorities, especially southern Malays, to adopt Thai culture and behaviour. Equating Buddhism with patriotism excluded others, and banning ethnic references tried to erase difference rather than accommodate it. This coercive phase explains much of the resentment in the Muslim South.",
   pts:["Personality cult while invoking the monarchy",
        "Siam renamed Thailand (1939); Cultural Assimilation Policy forced southern Malays to adopt Thai-ness except religion",
        "Buddhism = patriotism; Christians risked dismissal",
@@ -256,6 +291,7 @@ add("Thailand", { id:"nu-phibun", title:"Phibun's extreme Thai-ness", when:"1938
        "'Underneath the Thai flag the whole population is Thai'"] });
 add("Thailand", { id:"nu-sarit", title:"Sarit, the monarchy and Buddhism", when:"1957–1976",
   q:"Explain Sarit's developmentalism and use of the monarchy and Sangha.",
+  exp:"Sarit used development, the monarchy and Buddhism to bind the nation. Infrastructure and education spread state presence, while reviving the monarchy and having the king tour minority regions created an emotional focus of loyalty. Centralising the Sangha let the state use Buddhism to reach rural and tribal areas, though Kitthiwuttho's statement shows religion could also be used to justify violence against communists.",
   pts:["Kanphatthana: highway master plan by 1976, provincial universities, technocrats, US aid",
        "Revived monarchy; Bhumibol toured minorities' regions; prostration revived",
        "Sangha Act 1962 centralised under a Bangkok Supreme Patriarch; disrobing powers",
@@ -263,11 +299,13 @@ add("Thailand", { id:"nu-sarit", title:"Sarit, the monarchy and Buddhism", when:
        "Kitthiwuttho (1976): 'Killing Communists is not Demeritorious'"] });
 add("Thailand", { id:"nu-nib", title:"National Identity Board", when:"post-1976",
   q:"What does the National Identity Board show about the Thai triad?",
+  exp:"After the polarisation of 1976, the National Identity Board updated the triad by linking nation, religion and king to democracy and development. This shows the ideology survived because it could adapt to new circumstances, which helps explain why Thailand's national identity proved more durable than more rigid ideologies elsewhere.",
   pts:["Formed after 1976 polarisation",
        "Melded 'nation, religion, king' with democracy and development",
        "Adaptability the key to the triad's longevity"] });
 add("Thailand", { id:"nu-hilltribes", title:"Northern hill tribes and the Meo Revolt", when:"1967–1976",
   q:"How were northern hill tribes treated?",
+  exp:"Hill tribes suffered from uneven development, Thai-only schooling and forest laws that punished small farmers, so the state appeared exploitative. Forced resettlement provoked the Meo Revolt, and harsh military responses produced refugees, confirming that force deepened grievances. The later shift towards recognition shows Thailand's capacity to adapt its approach.",
   pts:["Northeast: 18% of budget, 34% of population (1976)",
        "Schools under Ministry of Education in Thai only (1967)",
        "1968 National Reserved Forests Act punished small farmers not loggers",
@@ -275,13 +313,15 @@ add("Thailand", { id:"nu-hilltribes", title:"Northern hill tribes and the Meo Re
        "Post-1976 recognition (Sam Muen project)"] });
 add("Thailand", { id:"nu-pattani", title:"Pattani Muslims", when:"1896–2004",
   q:"Trace Thai policy toward the Pattani Muslims.",
+  exp:"Pattani's Malay-Muslim identity clashed with Thai assimilation, so policies targeting schools, dress and religion led to riots and violent incidents. Sarit's accommodations eased tensions, but renewed controls and Buddhist resettlement deepened mistrust, giving rise to PULO. The sharp rise in violence after 2000 shows the conflict remained unresolved, unlike the integration of the Chinese.",
   pts:["Ceded to British Malaya 1896, restored 1909; ~7% of Thais, ~78% Muslim locally",
        "Assimilation 1921–60: 1923 Patani riots; ratthaniyom bans; Haji Sulong rejected 1948; Dusun Nyiur 1948 (~400 Muslims, 30 police)",
        "Accommodation: Sarit's 1961 pondok registration; Muslim quotas; Thai Muslim Center 1980",
        "Re-tightening: Thanom 1968; Buddhist transmigration 100,000 families from 1961 + 60,000 in 1969",
        "PULO 1967; 2,593 incidents 1993–2004, only 18% by 2000; alleged JI/al-Qaeda links; martial law"] });
 add("Thailand", { id:"thaiunity", title:"Thai Chinese and evaluation", when:"1938–1980s",
-  q:"Explain the differing outcomes for Thailand's hill tribes, Pattani Muslims and Chinese, and why Thailand was comparatively successful.", qs:"notes",
+  q:"Explain the differing outcomes for Thailand's hill tribes, Pattani Muslims and Chinese, and why Thailand was comparatively successful.",
+  exp:"Thailand's outcomes differed by group because of religious and cultural barriers. Despite harsh laws under Phibun, the Chinese integrated through business alliances and intermarriage, since no religious divide blocked assimilation, whereas Muslims in the South remained alienated. Keyes links success to not recognising ethnic difference, and the monarchy gave continuity, though Streckfuss argues unity depends on royal allegiance enforced by law.", qs:"notes",
   pts:["Chinese ~15% pre-war; Phibun's 1939 laws: loyalty, Thai names/language; state took rice, salt, tobacco, petroleum, pork; Chinese teaching 2 hrs/week",
        "Post-war military–Chinese business alliances; intermarriage → Sino-Thai middle class",
        "~10% of population controlled ~81% of economy by 1980s, fully integrated",
@@ -291,24 +331,28 @@ add("Thailand", { id:"thaiunity", title:"Thai Chinese and evaluation", when:"193
 /* Vietnam */
 add("Vietnam", { id:"nu-vietctx", title:"Vietnam's context for unity", when:"1945–1979",
   q:"What gave Vietnam comparatively strong internal unity?",
+  exp:"Vietnam started with advantages: a large Kinh majority, and a Communist Party whose leadership of two anti-colonial wars gave it unmatched legitimacy. A stable leadership and close Party–military unity avoided the divisions seen elsewhere. Duiker adds that Confucian values made collective discipline culturally familiar, which helps explain the relative internal unity.",
   pts:["54 recognised groups; Kinh ~87%; Hoa ~3% (Cholon)",
        "VCP legitimacy from anti-French and anti-US struggles as one anti-colonial endeavour",
        "Stable Politburo (Ho, Pham Van Dong, Giap, Truong Chinh, Le Duan); Party–military unity",
        "Confucian subordination of individual to community (Duiker)"] });
 add("Vietnam", { id:"nu-landreformnv", title:"North Vietnam's land reform", when:"1953–1956",
   q:"What were the aims and outcomes of North Vietnam's land reform?",
+  exp:"Land reform aimed to destroy landlord power and prepare collectivisation, but class labelling and denunciations spiralled into wrongful executions, which the Party later admitted. This caused rebellion in Nghe An and a corrective campaign. Despite the costs, it removed landlords as an opposition base and gave land to millions of peasants, so it strengthened Party control at a heavy human price.",
   pts:["Break landlord power, prepare collectivisation; Chinese-trained cadres classified peasants",
        "Spiralled: 30% of 'landlord' convictions wrong; ~15,000 wrongly killed given funerals; 12,000 freed",
        "Nghe An rebellion Nov 1956; 'mistakes correction' campaign (Sep 1956)",
        "Eliminated landowners; ~1.6m households (~8m peasants) got land"] });
 add("Vietnam", { id:"nu-northtools", title:"North Vietnam's unity tools", when:"1954–1975",
   q:"What tools did the DRV use to build unity?",
+  exp:"The DRV used education and history to link past resistance to the current war, building patriotism. The cult of Uncle Ho gave a personal symbol of the nation, while the Fatherland Front channelled society through Party-approved organisations. Guaranteeing minority cultural autonomy was a practical concession, since the North needed minority support in the war.",
   pts:["Universal 9-year education; Institute of History revived Trung Sisters, Tran Hung Dao narratives",
        "Cult of 'Uncle Ho', preserved in mausoleum",
        "Fatherland Front (1955); merged with Viet Cong post-1975; endorsement needed to stand",
        "1960 Constitution Art. 3: minority cultural autonomy, needed for minority support"] });
 add("Vietnam", { id:"buddhistcrisis", title:"Diem's Personalism and the Buddhist Crisis", when:"1955–2 Nov 1963",
   q:"Why did Diem's South fail to unify, culminating in the Buddhist Crisis?",
+  exp:"Diem's regime lacked a broad base: Personalism had limited appeal, Strategic Hamlets failed, and nepotism and forced citizenship for the Chinese alienated key groups. The Vesak flag ban turned Buddhist grievances into a national crisis, and Thich Quang Duc's self-immolation and Madame Nhu's remarks damaged the regime internationally. The US-backed coup shows the South never built a basis for unity.",
   pts:["National Revolutionary Movement; Personalism (Mounier); failed Strategic Hamlets (1961+)",
        "Nepotism; forced 300,000 Saigon Chinese to register as citizens or lose business rights",
        "Vesak flag ban (Hue, May 1963) → 9 killed",
@@ -317,13 +361,15 @@ add("Vietnam", { id:"buddhistcrisis", title:"Diem's Personalism and the Buddhist
   clue:"A 1963 crisis that began with a flag ban at Vesak in Hue and ended in a coup." });
 add("Vietnam", { id:"nu-srvunity", title:"Unifying the SRV after 1975", when:"1975–2002",
   q:"How did the SRV try to unify North and South after 1975, and with what results?",
+  exp:"After 1975 the SRV imposed northern models on the South, but collectivisation clashed with the South's freeholding peasants, causing economic decline. The boat people, many of them Chinese, show the human cost of these policies. Doi Moi revived the economy and narrowed the North–South gap but widened income inequality, while control of education and religion enforced unity through conformity.",
   pts:["Collectivisation (2nd FYP 1976–80) resisted in the South; national income −2%/yr; North 90% collectivised by 1965",
        "Boat people ~75,000/month (1978–79), disproportionately Chinese",
        "Doi Moi: 3rd-largest rice exporter; GNP 8.2% in 1990s; top decile 10.6× poorest (1996) → 12.5× (2001–02)",
        "Southern schools closed for retraining; national curriculum by 1985",
        "Vietnam Buddhist Church (1981), Patriotic Catholics committee (1983); most political prisoners monks (Clarke)"] });
 add("Vietnam", { id:"nu-vietminorities", title:"Vietnam's minority policy and geopolitics", when:"1954–2001",
-  q:"Trace how Vietnam's minority (especially Chinese) policy shifted with geopolitical context across 1954–75, post-1975 and post-Doi Moi.", qs:"notes",
+  q:"Trace how Vietnam's minority (especially Chinese) policy shifted with geopolitical context across 1954–75, post-1975 and post-Doi Moi.",
+  exp:"Vietnam's minority policy changed with its external needs. During the war the North was accommodative because it needed minority and Chinese support; after 1975, with external pressure gone and relations with China worsening, it turned assimilative, dismantling autonomous regions and targeting the Chinese. With the Cold War ending and Doi Moi requiring trade, it became accommodative again, but the 2001 protests and minority poverty show fault-lines remained.", qs:"notes",
   pts:["1954–75 North accommodative: Tay Bac/Viet Bac Autonomous Regions, scripts, 4 years mother-tongue schooling",
        "Post-1975 assimilative: regions dismantled; Directive 214 labelled rites 'superstitious'; Kinh into Central Highlands (420,000 in 1926 → 4m+ 2001), ~30,000 conflicts 1988–92",
        "Chinese: Hanoi gradual pre-1975; 1978 anti-capitalist campaign; ~⅔ of 545,000 boat people Chinese; accommodation from 1984",
@@ -333,6 +379,7 @@ add("Vietnam", { id:"nu-vietminorities", title:"Vietnam's minority policy and ge
 /* Malaysia */
 add("Malaysia", { id:"nu-msiadivide", title:"Malaya's ethnic-economic divisions", when:"1945–1970",
   q:"What ethnic-economic divisions did Malaya inherit?",
+  exp:"Malaya lacked political unity because its territories were governed separately, and British rule tied each ethnic group to a different economic role, creating stereotypes and inequality. The Japanese occupation treated groups differently, leading to riots, while Malays dominated the civil service. These divisions meant economic and political power were split along ethnic lines, setting up the bargain that shaped Malaysian politics.",
   pts:["FMS, UFMS, Straits Settlements governed differently; East Malaysia disconnected; secession bids Penang (1948, 1953), Kelantan/Johor (1955)",
        "Racial division of labour: Chinese tin, Indians plantations, Malays peasants ('Malay laziness, Indian docility, Chinese enterprise')",
        "1957: 97.5% of rice farmers Malay; 66% of commerce Chinese; 89.1% of dentists Chinese",
@@ -340,6 +387,7 @@ add("Malaysia", { id:"nu-msiadivide", title:"Malaya's ethnic-economic divisions"
        "Malays 86.6% of Malayan Civil Service by 1970"] });
 add("Malaysia", { id:"malayanunion", title:"Malayan Union to Federation", when:"1946–1948",
   q:"Why did the Malayan Union fail and what replaced it?",
+  exp:"The Malayan Union offered equal citizenship, which would have given many Chinese citizenship, so Malays saw it as a threat and formed UMNO to oppose it. The Federation restored Malay privileges and restricted citizenship, and Chinese protests failed. The Alliance of UMNO, MCA and MIC then showed that cooperation between ethnic parties could win elections, which became the model for Malaysian politics at independence.",
   pts:["22 Jan 1946: centralised; jus soli — 2.5m Chinese (38%) would qualify",
        "UMNO formed May 1946 (Onn bin Jaafar)",
        "Federation 1 Feb 1948: Sultans restored; Agong always Malay; citizenship restricted",
@@ -347,13 +395,15 @@ add("Malaysia", { id:"malayanunion", title:"Malayan Union to Federation", when:"
        "UMNO–MCA (1949) won 9/12 KL seats (1952); MIC 1954; 51/52 in 1955"],
   clue:"A 1946 scheme under which 2.5 million Chinese would have qualified for citizenship." });
 add("Malaysia", { id:"nu-socialcontract", title:"The Social Contract and Malaysia 1963–65", when:"1957–1965",
-  q:"Explain Malaysia's Social Contract and the tensions of 1963–65.", qs:"me",
+  q:"Explain Malaysia's Social Contract and the tensions of 1963–65.",
+  exp:"The Social Contract traded Malay political pre-eminence for non-Malay citizenship and economic freedom. Since Malay dominance was more symbolic than real in this period, Malay discontent grew. Bringing in Sabah and Sarawak to balance Singapore's Chinese shows how ethnic arithmetic shaped decisions, and the PAP's challenge with Malaysian Malaysia threatened the communal bargain, leading to riots and Separation.", qs:"me",
   pts:["Section 153: Agong, UMNO senior partner, sultans, weighted rural seats, civil service/education ratios, Islam, Malay language (1967)",
        "Malay dominance more symbolic than real (freedom of worship, English)",
        "Sabah/Sarawak brought in partly to dilute Singapore's Chinese",
        "PAP's 'Malaysian Malaysia' → 21 Jul 1964 riots → Separation 1965"] });
 add("Malaysia", { id:"nu-13may", title:"13 May and UMNO's control", when:"1969–1973",
   q:"Explain the 13 May riots and how UMNO secured political and ideological control.",
+  exp:"The 1969 election losses and rival processions turned ethnic tension into deadly riots, which the government used to justify a new Malay-centred order. The Barisan Nasional co-opted the opposition, and banning debate on sensitive issues removed them from politics. The Rukunegara offered neutral principles, but the notes point out it sat awkwardly alongside pro-Malay policies, showing the tension between unity and Malay pre-eminence.",
   pts:["Alliance lost ⅔ majority; DAP/Gerakan processions (11 May), UMNO counter-demonstrations; 4-day riots from 13 May",
        "NOC 'maximum government'",
        "Barisan Nasional (1973) co-opted opposition",
@@ -361,6 +411,7 @@ add("Malaysia", { id:"nu-13may", title:"13 May and UMNO's control", when:"1969�
        "Rukunegara 31 Aug 1970: God, King and Country, Constitution, Rule of Law, Good Behaviour — at cross-purposes with pro-Malay policy"] });
 add("Malaysia", { id:"nu-nep", title:"The NEP as a unity tool", when:"1971–1990",
   q:"How did the NEP use economics to defuse (not eliminate) ethnic tension?",
+  exp:"The NEP aimed to reduce poverty and break the link between ethnicity and economic role, and it cut poverty sharply and increased bumiputera employment. Yet it missed its Malay ownership target while non-Malay ownership actually rose, so all groups gained. Mohamad's judgement that the politics, not the economics, stabilised Malaysia suggests its main effect was reassuring Malays while still allowing others to prosper.",
   pts:["1971: non-Malays owned 34% vs Malays under 3%; aims: poverty eradication, end ethnic identification with function",
        "ICA (1975), PERNAS",
        "By 1990 Malays ~20% (target 30%); non-Malay share 34% → 47%; foreign 63% → 33%; poverty 49% → 15%",
@@ -368,6 +419,7 @@ add("Malaysia", { id:"nu-nep", title:"The NEP as a unity tool", when:"1971–199
        "Mohamad: 'the politics rather than the economics of the NEP' stabilised"] });
 add("Malaysia", { id:"nu-msiaculture", title:"Language, education, religion and culture in Malaysia", when:"1970–2000",
   q:"How did Malaysia use language, education, religion and culture, and with what effect?",
+  exp:"Malaysia used Malay language, education and culture to build a national identity, greatly increasing bumiputera access to degrees. Allowing vernacular schools looked multicultural but kept groups apart, and the Malay-based cultural policy was rejected by non-Malays. Mahathir's Bangsa Malaysia sought a shared identity through national projects, but his Islamisation pulled the other way, which is why surveys found little inter-ethnic mixing.",
   pts:["Malay medium in state schools/universities by 1982; UKM (1970, Malay-only till 1993); bumiputera degree share 35.6% → 66.7%",
        "Vernacular schools permitted: multicultural form, segregation in practice",
        "National Cultural Policy 1971: Malay-based with Islam; rejected as 'tainted with communalism' (1981)",
@@ -375,6 +427,7 @@ add("Malaysia", { id:"nu-msiaculture", title:"Language, education, religion and 
        "Islamisation: ABIM (1972), Islamic Bank and IIU (July 1983); 2000 survey 'very little inter-ethnic mixing'"] });
 add("Malaysia", { id:"nu-orangasli", title:"The Orang Asli", when:"1970s–1999",
   q:"How were the Orang Asli treated, and did assimilation work?",
+  exp:"The Orang Asli were treated as people to be absorbed into Malay culture, yet they were denied bumiputera privileges. Failed resettlement, covert conversion and high poverty show the policy did not benefit them. The sharp rise in association membership shows assimilation produced the opposite effect, a stronger separate Orang Asli identity.",
   pts:["<0.5% of population; citizens but not bumiputera",
        "'When all Orang Asli have become Malays, then Malays will become Orang Asli'",
        "Regroupment Schemes (late 1970s) failed; covert Islamisation with incentives",
@@ -382,6 +435,7 @@ add("Malaysia", { id:"nu-orangasli", title:"The Orang Asli", when:"1970s–1999"
        "Association membership 277 (1989) → ~15,000 (1997): separate identity grew"] });
 add("Malaysia", { id:"nu-msiaeval", title:"Evaluating Malaysia's national unity", when:"evaluation",
   q:"How successful was Malaysia in building national unity?",
+  exp:"Malaysia avoided major violence after 1969 through political cooperation in the BN and economic accommodation, so it was officially Malay-first but accommodating in practice, the reverse of Indonesia. However, Ahmad and Kadir argue groups were neither assimilated nor integrated. Mohamad attributes stability partly to demographics, since neither group was large enough to dominate easily, so the outcome is best described as managed co-existence.",
   pts:["Officially assimilative, accommodative in practice: reverse of Indonesia",
        "No violence since 1969: BN, non-Malay share capital 23.5% → 40% (1980), 'Ali-Baba-ism'",
        "Ahmad and Kadir: groups 'neither assimilated nor integrated'",
@@ -391,12 +445,14 @@ add("Malaysia", { id:"nu-msiaeval", title:"Evaluating Malaysia's national unity"
 /* Singapore */
 add("Singapore", { id:"nu-survival", title:"Singapore's survival motif", when:"1961–1993",
   q:"How did the survival narrative and depoliticisation shape Singapore's unity?",
+  exp:"Singapore's multiculturalism was shaped by its vulnerable position as a Chinese-majority state in a Malay region and by its lack of a deep shared history. Separation gave the PAP a survival narrative that justified prioritising economic growth and stability. Depoliticising measures like the ISA and union controls limited opposition, while retaining elections and schemes like the GRC kept a democratic form and ensured minority representation.",
   pts:["CMIO driven by being Chinese-majority in a Malay region and an 'identity deficit' (Ang & Stratton)",
        "LKY: Separation a 'moment of anguish'; survival narrative via EDB (1961), DBS, JTC (1968)",
        "Gerrymandering, ISA; NTUC displaced STUC (de-registered 1961); 1982 Trade Union Act",
        "Democratic processes kept: elections, NCMP, NMP, Elected President (1993), GRC"] });
 add("Singapore", { id:"sporeunity", title:"Multiculturalism, meritocracy and Shared Values", when:"1969–1992",
-  q:"Explain Singapore's CMIO multiculturalism, Shared Values, and the 'identity deficit' critique.", qs:"notes",
+  q:"Explain Singapore's CMIO multiculturalism, Shared Values, and the 'identity deficit' critique.",
+  exp:"CMIO and meritocracy were designed to show fairness to all races, especially after Malaysia's turn to Malay preference. Self-help groups and GRCs addressed community needs and representation. Shared Values tried to define a common Asian identity distinct from the West, which Lee Kuan Yew contrasted as a different voltage, but critics argue such a manufactured identity has limited appeal, linking to the idea of an identity deficit.", qs:"notes",
   pts:["CMIO, four official languages; meritocracy to appear fair after Malaysia's 1969 pro-Malay shift",
        "MENDAKI (1981), SINDA (1991), CDAC (1992); GRC (1988)",
        "LKY (1972): Western world 'a different voltage'",
@@ -404,6 +460,7 @@ add("Singapore", { id:"sporeunity", title:"Multiculturalism, meritocracy and Sha
        "Critics: synthetic identity resonates with few"] });
 add("Singapore", { id:"nu-sglang", title:"Singapore's language and education policies", when:"1956–2001",
   q:"How did Singapore use language and education for unity?",
+  exp:"Language and education were used both to remove threats and to build unity. Chinese schools were seen as communist centres, so reforms and the merger of Nantah into NUS reduced their political role. The bilingual policy made English a neutral common language while keeping mother tongues as cultural ballast, though arrests of Chinese newspaper executives show the policy faced opposition. National Education later taught a shared narrative explicitly.",
   pts:["Chinese schools a 1950s communist hotbed: 1956 All-Party Report, 1957 Education Ordinance",
        "Nantah merged into NUS (1980)",
        "Bilingual policy from 1969: English common, race-assigned Mother Tongue as 'cultural ballast'",
@@ -411,6 +468,7 @@ add("Singapore", { id:"nu-sglang", title:"Singapore's language and education pol
        "National Education (1997), Social Studies (2001)"] });
 add("Singapore", { id:"nu-sgns", title:"Religion, National Service and housing", when:"1959–1990",
   q:"How did religion, National Service and housing policy contribute to unity?",
+  exp:"Religious freedom and equal holidays, backed by the Religious Harmony Act, kept religion out of politics. National Service and HDB quotas mixed people from different races in daily life, preventing ethnic enclaves. However, limits on Malay-Muslims in sensitive military roles, justified by Lee Hsien Loong, show security concerns could conflict with meritocracy and equal treatment.",
   pts:["Freedom of worship; equal holidays; Religious Harmony Act (1990)",
        "NS compulsory 1967 to erode barriers; Malay-Muslims under-represented in sensitive roles",
        "Lee Hsien Loong (1987): avoid soldiers' emotional conflict between nation and religion",
@@ -418,6 +476,7 @@ add("Singapore", { id:"nu-sgns", title:"Religion, National Service and housing",
        "People's Association (1960); NTUC/NWC (1972)"] });
 add("Singapore", { id:"nu-sgeval", title:"Evaluating Singapore's national unity", when:"evaluation",
   q:"How successful was Singapore at building national unity?",
+  exp:"Singapore is the most stable case, with no racial violence since independence, but whether stability equals a shared identity is debated. The rigid CMIO categories and the declining Malay share of income show ethnic distinctions remain. Ang and Stratton's view of ambivalent cultural status reflects the lack of a historical anchor, yet the notes suggest its adaptable policies preserving stability may itself count as success.",
   pts:["Most socially stable: no racial violence since independence",
        "Whether a real common identity exists is debated; CMIO rigid",
        "Malay household income fell 74% → 70% of Chinese (1980–90)",
@@ -426,7 +485,8 @@ add("Singapore", { id:"nu-sgeval", title:"Evaluating Singapore's national unity"
 
 /* Synthesis */
 add("Synthesis", { id:"nu-patterns", title:"Cross-cutting patterns in national unity", when:"synthesis",
-  q:"Construct a comparative essay answer using the cross-cutting patterns (force vs negotiation; role of military/party; Chinese integration; geopolitics; economic development's double edge).", qs:"notes",
+  q:"Construct a comparative essay answer using the cross-cutting patterns (force vs negotiation; role of military/party; Chinese integration; geopolitics; economic development's double edge).",
+  exp:"These patterns let you compare countries rather than describe them one by one. The Indonesia–Malaysia contrast shows official policy can differ from practice, and the anchor of unity varied between military, party and monarchy. Repeated failures of force versus the durability of negotiated deals support a strong argument, while Chinese integration depended on cultural barriers. External geopolitics and the double edge of development add further angles for evaluation.", qs:"notes",
   pts:["Indonesia officially accommodative/assimilative in practice vs Malaysia the reverse",
        "Anchors: Tatmadaw, ABRI, VCP; Thai monarchy (factional military); UMNO/BN, PAP",
        "Force counter-productive; negotiated settlements (Aceh 2005, ARMM/CAR, Thai post-1960s) more durable",
@@ -434,6 +494,7 @@ add("Synthesis", { id:"nu-patterns", title:"Cross-cutting patterns in national u
        "Geopolitics (Vietnam, Singapore, East Timor/Aceh); development double-edged (Suharto, Sarit, NEP)"] });
 add("Synthesis", { id:"nu-compare", title:"National unity outcomes by country", when:"synthesis",
   q:"Give the one-line outcome of national unity efforts for each of the seven countries.",
+  exp:"These one-line judgements summarise how each approach worked out. Burma's coercion failed outright, Indonesia's stability proved to be containment, and in the Philippines class and patronage mattered more than ethnicity. Thailand benefited from independence and the monarchy, Vietnam's policy followed external shifts, Malaysia achieved co-existence rather than integration, and Singapore was most stable though its identity is contested, giving a ready scale for comparative essays.",
   pts:["Burma: failure, longest-running insurgencies",
        "Indonesia: New Order stability was containment, unravelled 1997–98",
        "Philippines: patronage and class divide more damaging than ethnicity",

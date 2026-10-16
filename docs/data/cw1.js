@@ -6,6 +6,7 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"cw1", sec, src:S, qs:"me" 
 /* ── 0. Syllabus Map & Essential Question ── */
 add("Syllabus Map & Essential Question", { id:"cw1-syllabus", title:"Topic 1 syllabus map", when:"1945–1955",
   q:"What is the essential question for Theme I, and what are the three sub-topics of Topic 1?",
+  exp:"The essential question asks both how the Cold War developed and how it shaped the world after 1945, so Topic 1 is the foundation: causes explain why tension began, manifestations show how it hardened, and interpretations show how historians judge blame. Because there is no separate essay on this theme, everything is tested through the source-based case study, so you must link events to causes and to the historiographical schools when evaluating sources.",
   pts:["Essential Question: How did the Cold War develop? How did the Cold War impact global developments after 1945?",
        "All sub-topics examinable via source-based case study; NO separate essay on this theme",
        "1. Causes for the emergence of tensions between USA and USSR",
@@ -13,6 +14,7 @@ add("Syllabus Map & Essential Question", { id:"cw1-syllabus", title:"Topic 1 syl
        "3. Historical interpretations of origins: traditional, revisionist, post-revisionist, post-Cold War"] });
 add("Syllabus Map & Essential Question", { id:"cw1-guiding-qs", title:"Guiding questions", when:"framework",
   q:"What guiding questions should you keep returning to when studying the Cold War?",
+  exp:"These questions push you beyond narrating events towards analysis. Asking why relations swung between tension and cooperation, and how one phase shaped the next, trains you to see continuity and change. The final question on responsibility and action-reaction is the core of most Part (b) source questions, where you must weigh whose actions mattered more and show how each side's moves provoked the other's.",
   pts:["What is the Cold War? When was it? Where was it fought?",
        "Why/how did US–USSR relations alternate between tension and cooperation?",
        "How did one phase influence the next? How similar/different are the phases?",
@@ -21,6 +23,7 @@ add("Syllabus Map & Essential Question", { id:"cw1-guiding-qs", title:"Guiding q
 /* ── 1. Defining the Cold War ── */
 add("Defining the Cold War", { id:"cw1-def-dockrill-calvo", title:"Dockrill & Calvocoressi definitions", when:"1988 / 2001",
   q:"How did Dockrill (1988) and Calvocoressi (2001) define the Cold War?",
+  exp:"Both definitions stress that the Cold War was hostility short of open war, but they emphasise different things. Dockrill focuses on what the conflict looked like in practice, through proxy and covert warfare, while Calvocoressi focuses on its psychological roots in fear and myth. His point that each side armed for a war it expected but did not want explains why tension stayed high without becoming hot, a useful idea when discussing why the Cold War stayed cold.",
   pts:["Dockrill (1988): a state of extreme tension between the superpowers, stopped short of all-out war",
        "Dockrill: characterised by mutual hostility & covert/proxy warfare to uphold each side's interests",
        "Calvocoressi (2001): principal ingredient was mutual hostility and fear, rooted in historical/political differences",
@@ -28,12 +31,14 @@ add("Defining the Cold War", { id:"cw1-def-dockrill-calvo", title:"Dockrill & Ca
        "Calvocoressi: each side armed itself to win a war it expected but did not want"] });
 add("Defining the Cold War", { id:"cw1-def-roberts", title:"Geoffrey Roberts working definition", when:"from 1945",
   q:"What is the (adapted) working definition of the Cold War from Geoffrey Roberts?",
+  exp:"Roberts' definition is useful as a working definition because it fixes a starting point (1945) and stresses that the breakdown was sharp and unexpected after wartime alliance. The idea that each side blamed the other links directly to the historiography debate on responsibility. It also connects the European bloc division to the wider global contest between communism and liberal capitalism, which explains how a European quarrel later spread worldwide.",
   pts:["“A sharp and unexpected deterioration in postwar relations between the Soviet Union and the United States from 1945”",
        "Each side blamed the other for generating the political, ideological, and military rivalry",
        "This rivalry divided Europe into competing blocs",
        "It spawned a dangerous global power struggle between communism and liberal democratic capitalism"] });
 add("Defining the Cold War", { id:"cw1-features", title:"Common features of the Cold War", when:"framework",
   q:"What features are common across definitions of the Cold War?",
+  exp:"These features show the Cold War was a distinct kind of conflict: tension expressed through propaganda, alliances and proxies rather than direct war. The point about (mis)perceptions leading to action-reaction is the key mechanism that explains escalation throughout Topic 1. The alternation between peace and tension supports the periodisation, while the shift outside Europe from the 1950s shows the conflict changed character over time.",
   pts:["Non-military tensions (ideological/political/economic) — short of hot war, though close to it at times",
        "Extensive propaganda and threats",
        "(Mis)perceptions of mutual security threats → action-reaction",
@@ -42,12 +47,14 @@ add("Defining the Cold War", { id:"cw1-features", title:"Common features of the 
        "Changed character once fought outside Europe (from the 1950s) — direct superpower military contestation more evident even as proxy war continued"] });
 add("Defining the Cold War", { id:"cw1-superpower", title:"The concept of ‘Superpower’", when:"from 1949",
   q:"What hierarchy of powers exists, and how did the nature of superpower rivalry change over time?",
+  exp:"The hierarchy explains why the Cold War centred on the USA and USSR: only they had superpower status, and the USSR's bomb in 1949 made the confrontation truly bipolar. The shift from nuclear, political and territorial rivalry to economic rivalry after the 1970s shows the measure of power changed over time, which helps explain why economic performance became decisive in the later phases of the Cold War.",
   pts:["Superpowers (USA, USSR) > great powers (UK, France) > regional powers (China) > middle/small powers",
        "Confrontation mainly USA vs USSR from 1949 (when the USSR obtained the bomb)",
        "1945–1970s: rivalry mainly nuclear/political/territorial",
        "1970s–2000: increasingly economic (sustained growth benefits + nuclear arms-control efforts)"] });
 add("Defining the Cold War", { id:"cw1-yardstick-pol-geo", title:"Superpower yardsticks: political & geographical", when:"1945–1980s",
   q:"Compare the USA, USSR and PRC on political influence and geographical influence.",
+  exp:"Comparing yardsticks shows that superpower status was not equal in every area. The USA's early UN dominance gave it political advantage, but the USSR gained ground from the 1960s as newly independent Afro-Asian states joined the UN. The PRC, though only a regional power, mattered because the strategic triangle meant US fear of a Sino-Soviet alliance affected superpower relations.",
   pts:["Political — USA: strong UN influence/support, esp. pre-1960s; USSR: more limited UN influence pre-1960s",
        "Political — PRC: influenced US–USSR relations via strategic triangle; US feared Sino-Soviet alliance",
        "Geographical — USA: Western Europe, later Third World",
@@ -55,6 +62,7 @@ add("Defining the Cold War", { id:"cw1-yardstick-pol-geo", title:"Superpower yar
        "Geographical — PRC: relatively limited"] });
 add("Defining the Cold War", { id:"cw1-yardstick-econ-nuc", title:"Superpower yardsticks: economic & nuclear", when:"1944–1980s",
   q:"Compare the USA, USSR and PRC on economic status and nuclear capability.",
+  exp:"These yardsticks reveal the imbalance at the start of the Cold War: the USA emerged from WWII economically strong and with a nuclear monopoly, while the USSR was devastated and only tested its bomb in 1949. This asymmetry helps explain Soviet insecurity after 1945 and why the USSR remained behind until the late 1960s, while its later economic stagnation foreshadows its weakness by the 1980s.",
   pts:["Economic — USA: pre-war economic power; least affected by/benefited from WWII",
        "Economic — USSR: devastated by WWII; recovered/grew but stagnated from 1960s, zero growth by 1980s",
        "Economic — PRC: 1980s economic miracle under Deng Xiaoping",
@@ -65,6 +73,7 @@ add("Defining the Cold War", { id:"cw1-yardstick-econ-nuc", title:"Superpower ya
 /* ── 2. Geography & Periodisation ── */
 add("Geography & Periodisation", { id:"cw1-players-europe", title:"Major players in Europe", when:"1924–1991",
   q:"Who were the major players in Europe, and why was Yugoslavia an exception?",
+  exp:"Knowing the players shows how Europe was split into a Soviet-dominated East and a Western bloc. Yugoslavia is the key exception because Tito broke from Stalin in 1947 and, being away from Soviet borders, could not be brought back. This break matters for Topic 1 because it helped trigger the second wave of Sovietisation, and Khrushchev's 1956 reconciliation shows Soviet policy later accepted different roads to socialism.",
   pts:["USA (not on map); USSR (Russia + 14 non-Russian republics, 1924–1991)",
        "Eastern/Central Europe: Poland, Romania, Bulgaria, Hungary, Czechoslovakia, Yugoslavia, Albania [pro-China from 1960]",
        "Western Europe: UK, France, Italy, Portugal, Spain, Austria, Switzerland",
@@ -72,6 +81,7 @@ add("Geography & Periodisation", { id:"cw1-players-europe", title:"Major players
        "Khrushchev reconciled with Tito in 1956, recognising “different roads to socialism” (Titoism)"] });
 add("Geography & Periodisation", { id:"cw1-periodisation", title:"US–USSR relations periodisation", when:"1917–2000",
   q:"State the periodisation of US–USSR relations from 1917 to 2000.",
+  exp:"Periodisation gives a framework for seeing the Cold War as alternating phases of tension and cooperation rather than one continuous conflict. Topic 1 covers the shift from the ideological tensions of 1917–1941, through the Grand Alliance, into Cold War I from 1945. Because historians choose different dates, you must justify any start or end year by its historical significance, which is useful when evaluating sources that date the Cold War differently.",
   pts:["1917–1941: Tensions (ideological/systemic origins; “not so Cold War”); 1941–1945: Grand Alliance",
        "1945–1953: Cold War I; 1953–1958: Peaceful Coexistence",
        "1958–1963: Cold War Revived; 1963–1979: Détente",
@@ -82,17 +92,20 @@ add("Geography & Periodisation", { id:"cw1-periodisation", title:"US–USSR rela
 /* ── 3. The Immediate Context (1917–1945) ── */
 add("The Immediate Context (1917–1945)", { id:"cw1-1917-not-start", title:"Why 1917 is not the start", when:"1917–1941",
   q:"Why is 1917 not considered the start of the Cold War despite its ideological origin?",
+  exp:"Although the ideological clash between communism and capitalism began in 1917, the notes argue this was not yet the Cold War because the world was not divided into two blocs. Fascism, Nazism and military dictatorships were also competing ideologies, so US–USSR rivalry was only one of many tensions. This distinction explains why 1917–1941 is labelled tension with ideological origins, while 1945 is treated as the true start.",
   pts:["The term “Cold War” was not yet used in 1917–1941",
        "There was no clear two-bloc ideological split yet",
        "Many competing ideologies, e.g. fascism/National Socialism/military dictatorships, still existed"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-systems", title:"Systemic/ideological contrast", when:"1917–1941",
   q:"Contrast the Western and Soviet political and economic systems.",
+  exp:"The contrast shows why the two systems were fundamentally incompatible: one rested on multi-party liberalism and free markets, the other on one-party rule and central planning. Each side's system implied the other was illegitimate, so ideology provided a lasting source of mutual suspicion. This underpins later arguments that ideology was the lens through which each side interpreted the other's actions.",
   pts:["West political: liberalism; multi-party free elections; more freedom/rights; nation as basis of state",
        "USSR political: socialism/communism (utopian ideal, unreached); one-party (CPSU); elections of socialist candidates only; limited freedom; proletariat as basis of state; COMINTERN",
        "West economic: capitalism; private enterprise, free(r) trade, limited govt intervention, profit incentive, meritocracy",
        "USSR economic: Centrally Planned/Command Economy; state regulation, closed system, non-profit incentive, egalitarian"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-ussr-actions-1917", title:"Soviet actions seen as aggressive, 1917–1941", when:"1917–1939",
   q:"Which USSR actions (1917–1941) were seen as aggressive/expansionist by the West?",
+  exp:"These actions explain why the West came to see the USSR as expansionist long before 1945. Creating a socialist state, extending control over non-Russian republics, and promoting world revolution through COMINTERN and Trotsky's ideas all seemed to threaten Western societies. The Nazi-Soviet Pact appeared to confirm Soviet hostility, giving traditionalist arguments a long background of distrust to draw on.",
   pts:["Creation of socialist Russia (1917) — world's first socialist republic",
        "Creation of the USSR (1924) — expansion to 14 non-Russian republics as security buffers, seen by the West as expansionist",
        "Continuation of COMINTERN (1920s)",
@@ -100,6 +113,7 @@ add("The Immediate Context (1917–1945)", { id:"cw1-ussr-actions-1917", title:"
        "Nazi-Soviet Pact (1939) — Stalin securing Polish territory with Hitler; seen as the height of Soviet hostility"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-west-actions-1917", title:"Western actions seen as hostile, 1917–1941", when:"1917–1930s",
   q:"Which US/Western actions (1917–1941) were seen as hostile by the USSR?",
+  exp:"Seen from Moscow, Western actions looked like a sustained effort to isolate or destroy the Bolshevik state, from intervention in the Civil War to exclusion from the League and economic boycotts. Appeasement is the clearest example of action-reaction: the USSR read it as pushing Hitler eastward, signed a pact with Germany in response, and that pact then convinced the West the USSR was aggressive. This shows mutual suspicion predated 1945.",
   pts:["Wilson's Fourteen Points (1917) — desire to impose/shape world order",
        "Western intervention in the Russian Civil War (1919–1921) — seen as an attempt to destroy the Bolsheviks",
        "Creation of the League of Nations (1919) and USSR's exclusion — seen as Western isolation of the USSR",
@@ -107,12 +121,14 @@ add("The Immediate Context (1917–1945)", { id:"cw1-west-actions-1917", title:"
        "Appeasement of Hitler (1930s) — seen as weakness/directing German aggression eastward; pushed the USSR into a pact with Germany, which then made the West see the USSR as aggressive"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-ga-formation", title:"Reasons for the Grand Alliance", when:"1941–1943",
   q:"What were the phases of the Grand Alliance, and why was it formed (1941–1943)?",
+  exp:"The Grand Alliance existed because of a shared enemy, not shared values. Operation Barbarossa ended the Nazi-Soviet Pact and forced the USSR to cooperate, while the failure of appeasement pushed the West to do likewise, which is why Edwards says the invasion transformed relations. Roosevelt's willingness to let the Red Army liberate Eastern Europe shows how keeping Stalin in the war took priority over later political consequences.",
   pts:["Phases: 1941–1943 Wartime Cooperation → 1943–1945 Increasing tensions → 1945–1947 Official existence but disintegrating",
        "Common threat of Germany — West: failure of appeasement pre-1941; USSR: cooperated after the Nazi-Soviet Pact collapsed with Operation Barbarossa (1941)",
        "Edwards (2002): “the German invasion of the Soviet Union in June 1941 transformed US-Soviet relations”",
        "The Big Three could get along — Roosevelt let the Red Army liberate Eastern Europe to keep Stalin in the alliance"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-percentages", title:"Percentages agreement", when:"Oct 1944",
   q:"What was agreed in Churchill's percentages agreement, and did Stalin keep to it?",
+  exp:"The percentages agreement shows that, during the war, Churchill was willing to divide influence in Eastern Europe pragmatically with Stalin. Stalin's keeping of his promise over Greece is significant evidence that he could honour limited spheres-of-influence deals, which supports revisionist and post-Cold War views that his aims were limited or opportunistic rather than a master plan of expansion.",
   clue:"Oct 1944 Churchill–Stalin deal assigning ratios of influence over Balkan states.",
   pts:["Churchill's “percentages agreement” (Oct 1944)",
        "Romania (90:10 USSR)",
@@ -121,12 +137,14 @@ add("The Immediate Context (1917–1945)", { id:"cw1-percentages", title:"Percen
        "Stalin kept his promise on Greece"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-ga-demise", title:"Demise of the Grand Alliance: nature & leaders", when:"1943–1945",
   q:"Why did the Grand Alliance decline (1943–45)? Explain its limited nature and the impact of new leaders.",
+  exp:"The alliance declined because its basis was narrow: once the German threat faded, the older tensions it had masked resurfaced, which is what Williamson means by Hitler being the real glue. The change of leaders made things worse, since Truman took a harder anti-Soviet line, which Philips attributes to inexperience, wanting to look strong and hawkish advisors. This shows both structural and personal factors in the breakdown.",
   pts:["Pre-existing tensions were downplayed only while the German threat was immediate",
        "Narrow/limited — an “alliance of convenience” dependent on the German threat (Williamson 2001: “the real glue was Hitler”)",
        "New leaders in 1945: Attlee replaced Churchill; the more aggressive Truman replaced Roosevelt",
        "Truman's anti-Soviet stance attributed to inexperience, desire to appear strong, and hawkish advisors — Philips 2001"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-new-issues-1944", title:"New immediate issues from 1944", when:"1944–1945",
   q:"What new immediate issues from 1944 undermined the Grand Alliance?",
+  exp:"Each of these issues fed Soviet suspicion or Western distrust. The delayed Second Front and abrupt end of Lend-Lease made the USSR feel the West wanted it weakened, while the atomic bomb seemed like intimidation. Lack of consultation over the UN deepened Soviet resentment, and the Red Army's presence in Eastern Europe alarmed the West. Together they show tension was building before the war ended.",
   pts:["The US atomic bomb — Stalin saw it as intimidation / a way to halt Soviet Far East expansion; Truman wanted a quick end to the Pacific war",
        "The delayed Second Front",
        "The Red Army's presence in Eastern Europe",
@@ -134,6 +152,7 @@ add("The Immediate Context (1917–1945)", { id:"cw1-new-issues-1944", title:"Ne
        "The abrupt end of Lend-Lease"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-german-polish", title:"German & Polish problems; bipolar shift", when:"1943–1945",
   q:"What were the German and Polish problems, and what structural shift occurred by 1945?",
+  exp:"The German and Polish problems were the concrete disputes over the shape of postwar Europe, and both touched each side's security. Poland mattered especially because the rival Lublin and London governments represented Soviet and Western visions, and events like Katyn and the Warsaw Uprising bred distrust. Meanwhile the defeat of Germany and exhaustion of Britain and France left a vacuum that only the USA and USSR could fill, creating a bipolar order prone to rivalry.",
   pts:["German problem: partition, reparations size, resource repatriation, joint administration, strengthen/weaken German economy",
        "Polish problem: Lublin [pro-communist] vs London [pro-West] Poles; Soviet annexation of Eastern Poland compensated with German land",
        "Polish problem also: the Katyn Forest massacre; lack of Soviet help during the 1944 Warsaw Uprising",
@@ -141,12 +160,14 @@ add("The Immediate Context (1917–1945)", { id:"cw1-german-polish", title:"Germ
        "The USA and USSR filled the power vacuum"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-sources-1943-45", title:"Historians on tension 1943–45", when:"1943–1945",
   q:"How do Williamson, Edwards and Calvocoressi explain the tensions of 1943–45?",
+  exp:"All three historians see the wartime alliance as fragile because it lacked lasting foundations. Williamson and Calvocoressi stress it was a marriage of convenience held together only by Hitler, while Edwards highlights clashing visions: a global US plan versus a limited Soviet aim of a bordering sphere. Comparing them is useful in source questions, since Edwards suggests Soviet aims were more modest than traditionalists claim.",
   pts:["Williamson (2001): alliance survival needs a common danger or shared principles — postwar Europe had neither; “the real glue was Hitler”",
        "Edwards (2002): Soviet/American postwar visions radically different — US plans global in scope; Soviet objective more limited (a bordering sphere of influence)",
        "Calvocoressi (2001): the 1941–45 alliance was a “marriage of convenience”",
        "Calvocoressi: nothing in the wartime allies' history/mentality suggested it could become a lasting entente"] });
 add("The Immediate Context (1917–1945)", { id:"cw1-actions-1943-45", title:"Actions creating tension 1943–45 (summary)", when:"1943–1945",
   q:"Summarise the US and Soviet actions and the structural changes creating tension in 1943–45.",
+  exp:"This summary helps you weigh responsibility: most of the listed actions creating tension are American, from the delayed Second Front to the end of Lend-Lease and the bomb, while the main Soviet action was the Red Army's occupation of Eastern Europe. Structural changes like Germany's defeat and the shift to bipolarity mean tension was not only about choices, which supports a balanced argument combining agency and circumstance.",
   pts:["Delay in opening the Second Front",
        "Red Army presence in Eastern Europe after “liberating” it",
        "Creation of the UN (non-consultation issue); Manhattan Project / atomic bombing of Japan; Baruch Plan",
@@ -156,6 +177,7 @@ add("The Immediate Context (1917–1945)", { id:"cw1-actions-1943-45", title:"Ac
 /* ── 4. Manifestations: Master Timeline ── */
 add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1917-44", title:"Timeline 1917–1944", when:"1917–1945",
   q:"Give the key dates from 1917 to 1944–45 on the master timeline.",
+  exp:"This part of the timeline traces the long background of mistrust and the shift into wartime alliance. The Bolshevik Revolution and Civil War created early hostility, the Nazi-Soviet Pact deepened it, and Barbarossa forced cooperation. The late Second Front in 1944 and the formation of people's democracies as the Red Army advanced set up the disputes over Eastern Europe that dominated 1945.",
   pts:["1917: Bolshevik Revolution; creation of Socialist Republic of Russia",
        "1919–1921: Russian Civil War; 1922: Formation of the USSR",
        "Aug 1939: Nazi-Soviet Pact; Jun 1941: Nazi invasion of Russia (Operation Barbarossa)",
@@ -163,6 +185,7 @@ add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1917
        "1944–1945: People's democracies formed in Bulgaria, Czechoslovakia, Yugoslavia, Albania, Poland, Hungary, Romania"] });
 add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1945", title:"Timeline 1945", when:"1945",
   q:"Give the key events of 1945 on the master timeline.",
+  exp:"1945 shows how quickly the context changed. Yalta was the high point of cooperation, but within months Roosevelt died, Truman ended Lend-Lease, Churchill was replaced, and the atomic bombs transformed the balance of power. These changes in leadership and capability explain why the differences masked at Yalta came into the open at Potsdam.",
   pts:["Feb 1945: Yalta Conference; Declaration of Liberated Europe",
        "Apr 1945: Death of Roosevelt; Truman becomes President",
        "May 1945: End of Lend-Lease to UK/USSR",
@@ -170,6 +193,7 @@ add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1945
        "Aug 1945: Atomic bombs on Hiroshima & Nagasaki; end of Lend-Lease programme"] });
 add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1946", title:"Timeline 1946", when:"1946",
   q:"Give the key events of 1946 on the master timeline.",
+  exp:"1946 marks the shift from private disputes to public confrontation. Kennan's Long Telegram shaped US thinking privately, while Churchill's Iron Curtain speech made the split public. Crises in Greece, Iran and Turkey and communist electoral gains in France and Italy fed Western fears of Soviet expansion, while ongoing Sovietisation confirmed them, creating the backdrop to the Truman Doctrine.",
   pts:["Feb 1946: Kennan's Long Telegram",
        "Mar 1946: Churchill's Iron Curtain Speech; Greek Civil War; slow Soviet withdrawal from Iran begins",
        "Jun 1946: Communist gains in French & Italian elections",
@@ -178,6 +202,7 @@ add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1946
        "1946–1948: Sovietisation of Bulgaria, Yugoslavia, Albania, Poland, Hungary, Romania"] });
 add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1947-48", title:"Timeline 1947–1948", when:"1947–1948",
   q:"Give the key events of 1947–1948 on the master timeline.",
+  exp:"These years show a rapid action-reaction sequence. The Truman Doctrine and Marshall Plan were met by the Molotov Plan, COMINFORM and Zhdanov's Two Camps speech, dividing Europe economically and ideologically. The Czech coup completed Soviet control, and Western currency reform in Germany prompted the Berlin Blockade, showing how each move triggered the next.",
   pts:["Mar 1947: Truman Doctrine; May 1947: Formation of Bizonia (Western Germany)",
        "Jun 1947: Marshall Plan announced",
        "Jul 1947: Molotov Plan; “Article X: The Sources of Soviet Conduct” (Kennan)",
@@ -186,6 +211,7 @@ add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1947
        "Jun 1948: Operation Bird Dog (currency reform); Berlin Blockade & Airlift begin; Yugoslavia expelled from COMINFORM"] });
 add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1949-55", title:"Timeline 1949–1955", when:"1949–1955",
   q:"Give the key events of 1949–1955 on the master timeline.",
+  exp:"This period shows the division of Europe becoming permanent and militarised. COMECON, the end of the Blockade, NATO and the creation of two German states fixed the split, while the Soviet bomb ended the US nuclear monopoly. Stalin's death and West Germany's entry into NATO, followed by the Warsaw Pact, mark both a change of leadership and the completion of the two-bloc system.",
   pts:["Jan 1949: Formation of Soviet COMECON",
        "Apr 1949: End of Berlin Blockade; formation of the Federal Republic of Germany (West Germany); NATO founded",
        "Aug 1949: Soviet Union successfully tests atomic bomb",
@@ -196,6 +222,7 @@ add("Manifestations of Emerging Tensions — Master Timeline", { id:"cw1-tl-1949
 /* ── 4.1 Yalta and Potsdam ── */
 add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"yalta", title:"Yalta Conference", when:"Feb 1945",
   q:"What was agreed at Yalta, and why did it lay the foundation for a disagreeable Potsdam?",
+  exp:"Yalta looked like a success because the Big Three agreed on Germany, the UN, Poland and Soviet entry into the Pacific war, and the West appeared to accept some Soviet influence in Eastern Europe. But the agreements were vague and rested on different expectations, so the West's failure to recognise Soviet security needs and the USSR's failure to honour the DLE created grievances that surfaced at Potsdam. This is why Yalta is said to have laid the foundation for disagreement.",
   clue:"Feb 1945 Big Three meeting: Germany and Berlin split into four zones, DLE signed, Soviet entry into the Pacific war promised, borders shifted west.",
   pts:["Agreement to divide Germany & Berlin into four occupation zones",
        "Declaration of Liberated Europe (DLE) signed; all three agreed to join the UN",
@@ -205,12 +232,14 @@ add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"yalta", title:"Yalta C
        "Seeming failure to recognise Soviet security concerns, and USSR's failure to abide by the DLE, laid the foundation for a disagreeable Potsdam"] });
 add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"cw1-yalta-potsdam-gap", title:"Between Yalta and Potsdam", when:"Feb–Jul 1945",
   q:"What developments between Yalta and Potsdam (Feb–Jul 1945) worsened relations?",
+  exp:"Between the conferences, actions on both sides undermined the trust built at Yalta. The continued formation of people's democracies and the arrest of Polish exile leaders suggested Stalin would not honour the DLE. Meanwhile Truman's abrupt ending of Lend-Lease looked to the USSR like an attempt to weaken it. Combined with new leaders replacing Roosevelt and Churchill, these changes meant Potsdam began with less goodwill.",
   pts:["People's Democracies continued forming in Red Army-liberated areas; communist factions pressed for greater representation",
        "Members of the Polish Provisional Government-in-Exile were lured to Moscow for talks and arrested",
        "Truman succeeded Roosevelt (Apr 1945); ended Lend-Lease to UK/USSR upon Germany's defeat, then entirely — seen as designed to weaken the USSR",
        "Churchill lost the general election; replaced by Attlee"] });
 add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"potsdam", title:"Potsdam Conference", when:"Jul 1945",
   q:"What were the disagreements at Potsdam over reparations and postwar Germany?",
+  exp:"The reparations dispute reveals the clash of security visions. The USSR, devastated by war, wanted heavy reparations and a weak Germany so it could never threaten it again, while the US feared a ruined Germany would slow European recovery and could turn communist. The compromise of taking reparations from each zone effectively began treating Germany as divided, foreshadowing its later partition.",
   clue:"Jul 1945 conference where the USSR demanded $10 billion and each side settled for extracting from its own zone.",
   pts:["USSR (having suffered immense devastation) demanded $10 billion in reparations",
        "US suggested reparations be taken from respective occupation zones",
@@ -219,6 +248,7 @@ add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"potsdam", title:"Potsd
        "USSR wanted to keep Germany weak"] });
 add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"cw1-potsdam-abomb", title:"Atomic bomb and Potsdam", when:"Jul–Aug 1945",
   q:"How did the atomic bomb affect relations around Potsdam?",
+  exp:"The bomb changed the balance of power and the tone of diplomacy. By ending the Pacific war quickly, it limited Soviet gains after the US had earlier pressed the USSR to join that war, so Stalin saw it as the US breaking its word. Truman's hope that the bomb would strengthen his bargaining position increased Soviet insecurity, which helps explain why Sovietisation sped up afterwards, a clear action-reaction link.",
   pts:["Used to end the Pacific war abruptly, limiting Soviet territorial gains",
        "A marked U-turn from earlier US insistence that the USSR join the Pacific war (with promised handover of Sakhalin/Kurile)",
        "Perceived by the USSR as reneging on agreements",
@@ -226,6 +256,7 @@ add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"cw1-potsdam-abomb", ti
        "Hastened the pace of Sovietisation in Central/Eastern Europe afterward"] });
 add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"cw1-conferences-obs", title:"Key observations on the 1945 conferences", when:"1945",
   q:"What were the reasons for, and impact of, the disagreements at the 1945 conferences?",
+  exp:"The conferences show that tension grew from conflicting security calculations rather than simple bad faith: the US wanted an order in which it could thrive, the USSR one in which it could be secure. While war continued, these goals could be papered over at Yalta, but once victory was near, they collided at Potsdam. Calling them fateful conferences highlights how they sowed the seeds of later conflict, a key line for the 2023 SBCS topic.",
   pts:["Reasons: competing security-interest calculations, sharpened as the war's end changed the context",
        "The US sought an international order in which it could thrive; the USSR one in which it could be secure",
        "Differences masked at Yalta unravelled by Potsdam",
@@ -234,6 +265,7 @@ add("4.1 The Yalta and Potsdam Conferences (1945)", { id:"cw1-conferences-obs", 
 /* ── 4.2 Sovietisation, Long Telegram, Iron Curtain ── */
 add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"sovietisation", title:"Sovietisation of Eastern Europe", when:"1945–1948",
   q:"How did the Sovietisation of Eastern Europe proceed, and in what waves?",
+  exp:"Describing Sovietisation as salami slicing shows it was gradual, removing opponents bit by bit rather than seizing power at once. The two waves matter for interpretation: the first came early, but the second in Hungary and Czechoslovakia was a reaction to hardening US policy and Tito's break, which suggests Soviet control tightened partly in response to external pressure rather than following a fixed plan.",
   clue:"Gradual “slicing the salami” process using force, manipulation and intimidation, in two waves before and after 1947.",
   pts:["A gradual, piecemeal process (“slicing the salami”) using force, manipulation, intimidation",
        "First wave (before 1947): Poland, Bulgaria, Romania",
@@ -241,6 +273,7 @@ add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"
        "Second wave a response to hardening US attitudes AND to Yugoslavia's break from Soviet control"] });
 add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"cw1-stalinisation", title:"Stalinisation & Seton-Watson's model", when:"1945–1948",
   q:"What was Stalinisation (“imperial consolidation”), and what is Seton-Watson's model of the process?",
+  exp:"Stalinisation shows how Soviet control was consolidated by placing loyal leaders in power and removing opposition through rigged elections, arrests and killings such as Masaryk's death. Seton-Watson's three stages explain the process as a progression from genuine coalitions, to fake ones, to total communist control. This is the main evidence the US and traditionalists used to accuse the USSR of violating the DLE.",
   pts:["Installing “mini-Stalins”: Bierut & Gomułka in Poland; Gottwald & Slánský in Czechoslovakia; Rákosi in Hungary",
        "Rigged elections, arrests, assassinations (e.g. Czech PM Masaryk found dead)",
        "Seton-Watson stage 1: genuine broad-based coalitions (popular fronts)",
@@ -248,6 +281,7 @@ add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"
        "Stage 3: total communist control (monolithic regime)"] });
 add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"cw1-sovietisation-nuance", title:"Historians on Sovietisation", when:"1945–1947",
   q:"What historiographical nuance do Edwards and Painter add to Sovietisation?",
+  exp:"Edwards and Painter challenge the view that Stalin planned to control Eastern Europe from the start. Continued democratic politics in Hungary and free elections in Czechoslovakia, plus Soviet restraint of communists in Western Europe and Greece, suggest his aims were limited or cautious in 1945–46. Painter's view that COMINFORM in 1947 was the turning point supports the argument that Soviet policy hardened in response to the Truman Doctrine and Marshall Plan.",
   pts:["Edwards (2002): little evidence in 1945–46 that Stalin wanted to control all of Eastern Europe",
        "Edwards: democratic politics continued in Hungary; free elections in Czechoslovakia (May 1946)",
        "Painter (1999): Soviets discouraged revolutionary action by communist parties in France, Italy, Greece, Spain",
@@ -255,6 +289,7 @@ add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"
        "Painter: COMINFORM's creation (1947) was the turning point ending accommodation with the non-communist world"] });
 add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"longtelegram", title:"Kennan's Long Telegram", when:"Feb 1946",
   q:"What did Kennan's Long Telegram argue, and what did it lead to?",
+  exp:"Kennan's analysis was influential because it explained Soviet behaviour as driven from within, by ideology, historical insecurity and neurotic leaders, rather than as a reaction to US policy. This gave Truman intellectual justification for a firmer line and later became the basis of containment. It is also why Kennan is grouped with traditionalist writers, since his argument places responsibility on the USSR.",
   clue:"Feb 1946 dispatch by the US diplomat in Moscow analysing Soviet motivations; later expanded as ‘Article X’.",
   pts:["US ambassador George Kennan analysed Soviet motivations: fanaticism of Soviet ideology + unswerving commitment to world revolution",
        "Lent support to a firmer Truman policy response",
@@ -263,6 +298,7 @@ add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"
        "Argued Soviet aggression was internally driven (ideology, historical insecurity, “neurotic” leaders) rather than provoked by the US"] });
 add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"cw1-kennan-containment", title:"Kennan's containment and later disavowal", when:"1947 / 1984",
   q:"What response did Kennan propose, and how did he later disavow the orthodox interpretation?",
+  exp:"Kennan's call for patient, firm counter-force became the basis of US policy for decades, but he later said he meant political, not military, containment, as he saw no real danger of Soviet attack. The gap between his intention and Washington's fear of a Soviet-triggered war by 1949 shows how US perceptions became exaggerated, supporting arguments that misperception fuelled militarisation of the Cold War.",
   pts:["Long-term, patient, firm, vigilant containment — “confront the Russians with unalterable counter-force at every point where they show signs of encroaching...”",
        "Became the cornerstone of US foreign policy for 4+ decades",
        "Kennan felt his ideas were misinterpreted as calling for military containment",
@@ -270,6 +306,7 @@ add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"
        "Yet by 1949 many in Washington believed a Soviet-triggered WWIII was a real danger"] });
 add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"ironcurtain", title:"Churchill's Iron Curtain Speech", when:"Mar 1946",
   q:"What was the significance of Churchill's Iron Curtain speech, and why was it less alarming than popularly believed?",
+  exp:"The speech mattered because its vivid image publicly declared the end of wartime unity, hardening American opinion and giving cover to tougher Western policies, while confirming Soviet fears of encirclement. Yet it was less alarming than often thought: Churchill said the USSR did not want war, he was no longer in office, and cooperation continued for a while. This makes it a good example for evaluating how much a single event caused tension.",
   clue:"Mar 1946 ‘Sinews of Peace’ address at Fulton: “From Stettin in the Baltic to Trieste in the Adriatic…”",
   pts:["“From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent.”",
        "First public acknowledgement of the Grand Alliance schism; powerful due to vivid imagery",
@@ -280,6 +317,7 @@ add("4.2 1945–1946: Sovietisation, Long Telegram, Iron Curtain Speech", { id:"
 /* ── 4.3 Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON ── */
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"truman", title:"Truman Doctrine", when:"Mar 1947",
   q:"What were the context and reasons for the Truman Doctrine?",
+  exp:"Britain's withdrawal from Greece left a vacuum that Truman used to launch a firmer policy, framing the situation as a fight of freedom against oppression. This marks the start of containment as US strategy. The irony that Stalin was neutral in Greece and that the Greek and Turkish governments were authoritarian suggests the threat was exaggerated, which supports revisionist claims that the US used anti-communist ideology to justify expansion of its influence.",
   clue:"Mar 1947 US pledge triggered by Britain's withdrawal of support from Greece; framed as freedom vs. oppression.",
   pts:["Context: Attlee's British withdrawal from supporting Greece (domestic economic problems from WWII) created a political vacuum",
        "Truman used the Greek Civil War and Turkey situation as pretext for a policy of firmness",
@@ -288,6 +326,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "Irony: Stalin had actually been neutral in the Greek Civil War; Greek/Turkish governments were themselves corrupt/authoritarian"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-truman-significance", title:"Significance of the Truman Doctrine", when:"1947",
   q:"What was the significance of the Truman Doctrine?",
+  exp:"The Truman Doctrine is seen as the point of no return because it openly committed the US to resisting communism worldwide, ending both the Grand Alliance and American isolationism. It created a model for US aid programmes and showed the President acting with little congressional consultation, a pattern only checked after Vietnam. This shows how the Cold War changed US foreign policy and institutions in lasting ways.",
   pts:["Ended the Grand Alliance officially (“the point of no return”)",
        "Marked US global commitment, breaking the isolationist tradition",
        "Established a precedent for US aid programmes worldwide",
@@ -295,6 +334,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "Unchallenged until the War Powers Act (1973) post-Vietnam"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-truman-impact", title:"Impact of the Truman Doctrine", when:"1947–1948",
   q:"What was the impact of the Truman Doctrine on both superpowers?",
+  exp:"The Soviet responses show action-reaction clearly: the Doctrine prompted COMINFORM, Zhdanov's Two Camps speech and a second wave of Sovietisation, hardening the East. At the same time it drove US rearmament, a larger atomic stockpile and new security institutions such as the CIA and NSC. Both sides thus treated the Doctrine as a turning point, entrenching the division and militarising the rivalry.",
   pts:["Triggered Soviet COMINFORM (coordinating communist parties globally)",
        "Triggered Zhdanov's “Two Camps” speech (Warsaw Conference, Sep 1947)",
        "Accelerated the second wave of Sovietisation (Hungary, Czechoslovakia)",
@@ -302,6 +342,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "National Security Act 1947 creating the DoD/NSC/CIA"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"marshall", title:"Marshall Plan (European Recovery Programme)", when:"Jun 1947 / Apr 1948",
   q:"What was the Marshall Plan, and how did it relate to the Truman Doctrine?",
+  exp:"The Marshall Plan turned the political commitment of the Truman Doctrine into concrete economic action, which is why Truman called them two halves of the same walnut. By tying aid to recovery and free institutions, the US opened an economic front in the Cold War. The earlier merging of the US and UK zones in Germany shows the West was already moving towards rebuilding its sphere without the USSR.",
   clue:"Announced 5 June 1947: $17 billion over 4 years, extended to all European nations to fuel economic recovery.",
   pts:["Announced 5 June 1947 by Secretary of State George Marshall: European Recovery Programme of $17 billion over 4 years",
        "In Truman's words, ‘two halves of the same walnut’ with the Truman Doctrine",
@@ -311,6 +352,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "Western allies had already amalgamated administration of the US and UK zones in Germany the previous month"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-marshall-reasons", title:"Reasons for the Marshall Plan", when:"1947",
   q:"What were the stated and real reasons for the Marshall Plan?",
+  exp:"The gap between stated and real aims is central to evaluating sources on the plan. Marshall presented it as humanitarian, but Edwards argues its real purpose was containment, since poverty might push voters towards strong communist parties in France and Italy. Economic gain for US exporters mattered but was secondary, which helps you weigh revisionist claims that economic expansion was the main US motive.",
   pts:["Marshall's stated aim: fight “hunger, poverty, desperation and chaos,” not any country/doctrine",
        "Edwards (2002): economic motives (a captive US export market) were “secondary but not unimportant”",
        "Edwards: “the real function...was the containment of communism”",
@@ -318,6 +360,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "French/Italian communists held ~20% of the vote and cabinet seats; feared an Italian communist election win in Apr 1948"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-marshall-impact", title:"Impact of the Marshall Plan & Soviet response", when:"1947–1952",
   q:"What was the impact of the Marshall Plan, and how did the USSR respond?",
+  exp:"The plan boosted European recovery and indirectly helped the US economy, but its success is debatable because recipients' own efforts mattered and the Soviet threat may have been exaggerated. The USSR saw it as dollar imperialism that would pull its buffer states towards the US, so Stalin blocked them and created the Molotov Plan and COMECON. This reaction split Europe economically, showing security fears outweighing economic need.",
   pts:["75% of aid spent on US goods (indirectly subsidising the US economy)",
        "Industrial output of recipients rose 35% (agriculture +10%) by 1952 — BUT success debatable: Soviet threat may have been exaggerated; recovery also depended on recipients' own efforts",
        "USSR rejected it as “dollar imperialism,” fearing recipients would become politically allied to the US, compromising the Soviet security buffer",
@@ -325,6 +368,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "Effectively divided Europe economically and geographically — by Sep 1947 the division of Europe / parting of the superpowers was clear"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-berlin-context", title:"Background to the Berlin Blockade", when:"1946–1948",
   q:"What was the context of the Berlin Blockade?",
+  exp:"The blockade grew out of the West's change of German policy from punishment to rebuilding Germany as the engine of recovery, through moves such as Bizonia and Byrnes's speech. For the USSR, a revived western Germany and three western zones inside its own zone in Berlin were a direct security threat. With Eastern Europe consolidated after the Czech coup, Berlin became the point where both sides' German policies collided.",
   pts:["Shift in US German policy from harsh (Morgenthau Plan) to moderation (“reverse course”)",
        "Earlier US moves to strengthen western zones (Byrnes's Stuttgart speech, Bizonia merger)",
        "Soviet insecurity arising from 3 western zones in the divided capital of Berlin, located in the heart of the Soviet German zone",
@@ -332,6 +376,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "By March 1948, with the communist coup in Czechoslovakia, the USSR had consolidated control in Central and Eastern Europe"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-bird-dog", title:"Operation Bird Dog currency reform", when:"Jun 1948",
   q:"What was Operation Bird Dog, and how did each side perceive the events leading to the blockade?",
+  exp:"The currency reform was the immediate trigger: it revived the western zones but spread inflation into the Soviet zone, showing how Western economic moves had security effects for the USSR. Each side read events differently: Moscow saw a revived Germany that repudiated Yalta, while Washington saw the blockade as Soviet aggression. This is a classic illustration of action-reaction and of how sources reflect their side's perception.",
   clue:"June 1948 introduction of the Deutsche Mark in the western zones.",
   pts:["Currency reform to introduce the Deutsche Mark in June 1948",
        "Led to an immediate revitalisation of West Germany (and West Berlin)",
@@ -340,6 +385,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "The USA perceived the blockade as Soviet aggression and expansionism"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"berlin", title:"Berlin Blockade and Airlift", when:"Jun 1948 – May 1949",
   q:"What were Stalin's aims in the Berlin Blockade, and how did it unfold?",
+  exp:"Stalin's aims show the blockade was a pressure tactic: he wanted to stop a West German state or, failing that, push the West out of Berlin, while also protecting Soviet interests over the Ruhr, intelligence and migration. The airlift's scale let the West supply the city without fighting, so the blockade failed and was lifted in May 1949. This made Berlin the closest the superpowers came to war in Cold War I.",
   clue:"From 24 June 1948 all road and rail access to the western sectors was cut; answered by 275,000 flights over 11 months.",
   pts:["Stalin's aims: force the US/UK/France to cancel plans for a West German state; failing that, force them out of Berlin",
        "“Prodding the capitalist world with the tip of a bayonet”",
@@ -349,18 +395,21 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
        "Stalin called off the blockade in May 1949 having failed"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-berlin-consequences", title:"Consequences of the Berlin Blockade", when:"1949–1950",
   q:"What were the consequences of the Berlin Blockade?",
+  exp:"Instead of preventing a West German state, the blockade accelerated it, leading to two German states and the formation of NATO, so Soviet pressure backfired. The Soviet bomb soon after began the arms race, and the conflict then spread to Asia with Korea. These consequences show the blockade as a turning point that made the division of Europe permanent and pushed the Cold War beyond Europe.",
   pts:["Division of Germany into the FRG (Apr 1949) and GDR (Oct 1949), lasting until 1989",
        "Hastened the formation of NATO (Apr 1949)",
        "Shortly after, the USSR tested its own atomic bomb (Aug 1949), reaching rough technological parity within two decades",
        "Cold War action began “travelling” outside Europe (Korea, 1950)"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-comecon-bomb", title:"COMECON and the Soviet atomic bomb", when:"Jan & Aug 1949",
   q:"What were COMECON (Jan 1949) and the Soviet atomic bomb (Aug 1949) significant for?",
+  exp:"COMECON was the Soviet economic answer to the Marshall Plan, and enforced specialisation tied satellites so closely to the USSR that breaking away was harder, so it served control as much as economics. The 1949 bomb ended the US monopoly and started the arms race, though the USSR stayed behind until parity in the late 1960s, which eventually made arms control such as SALT I possible.",
   pts:["COMECON: Soviet response to rejection of the Marshall Plan; strengthened economic ties among socialist states",
        "Stalin used enforced economic specialisation to control satellites and prevent them breaking away",
        "Soviet bomb (Aug 1949) began the nuclear arms race",
        "USSR remained inferior in nuclear strength until parity in the late 1960s/early 1970s (leading eventually to SALT I, 1972)"] });
 add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON", { id:"cw1-obs-1947-49", title:"Key observations 1947–1949", when:"1947–1949",
   q:"What are the key observations about the manifestations of tension in 1947–1949?",
+  exp:"These observations give a framework for evaluating sources: each side called its actions defensive while the other saw them as aggressive, so tension escalated through the action-reaction cycle. The Soviet rejection of Marshall aid despite need shows security trumped economics. As actions became more concrete and long-term, Europe split into blocs, and Berlin marked the peak of Cold War I before spheres stabilised.",
   pts:["Originators professed actions as defensive; recipients perceived them as aggressive/provocative — the action-reaction cycle",
        "Economic reasons subordinated to strategic-security reasons (e.g. USSR rejected Marshall aid despite needing it, fearing loss of its security buffer)",
        "Political considerations grew more significant (e.g. the Republican Congress's anti-isolationist stance)",
@@ -370,6 +419,7 @@ add("4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON",
 /* ── 4.4 NATO, Warsaw Pact ── */
 add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"nato", title:"Formation of NATO", when:"Apr 1949",
   q:"What was NATO, who founded it, and was it simply a response to the Berlin Blockade?",
+  exp:"NATO created a permanent military alliance with the principle that an attack on one is an attack on all, binding the US to Western Europe's defence. While the Berlin Blockade gave it urgency, the earlier Dunkirk and Brussels treaties and the Vandenberg Resolution show it grew from an existing trend, so it should not be seen simply as a reaction. This nuance is useful when weighing how far NATO was defensive.",
   clue:"Intergovernmental military alliance signed in Washington DC on 4 Apr 1949 by 12 founding members, with mutual-assistance Article 5.",
   pts:["Intergovernmental military alliance (Washington DC, 4 Apr 1949)",
        "12 founding members: Belgium, Canada, Denmark, France, Iceland, Italy, Luxembourg, Netherlands, Norway, Portugal, UK, USA",
@@ -378,11 +428,13 @@ add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"nato", title
        "Article 5: mutual assistance — an attack on one is an attack on all"] });
 add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-nato-edwards", title:"Edwards on NATO", when:"pre-1945–1949",
   q:"What does Edwards (2002) argue about US intentions behind NATO?",
+  exp:"Edwards suggests the US did not plan to dominate Europe militarily, as it had shown little interest in permanent garrisons and urged Europeans to organise their own defence. His point that a Soviet invasion was never regarded as a real possibility implies NATO addressed fear and political reassurance more than an actual military threat, which supports arguments that perception, not reality, drove militarisation.",
   pts:["Pre-1945 the US showed little interest in permanent European garrisons",
        "The US had encouraged Europeans to form their own defence grouping (1948)",
        "A Soviet invasion of Western Europe was “never regarded as a real possibility” in this period"] });
 add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-nato-expansion", title:"Impact/expansion of NATO", when:"1950–1982",
   q:"How did NATO expand and militarise, and why was West Germany admitted in 1955?",
+  exp:"NATO's expansion shows how events outside Europe changed Western thinking: the Korean War and the communist victory in China raised fears of surprise attack and led to militarisation and parallel alliances. Admitting West Germany was a striking reversal, since NATO had partly been designed to contain Germany, and it reveals how deeply the West feared communism. The USSR naturally saw this as aggressive, setting up the Warsaw Pact.",
   pts:["Expanded to Greece & Turkey (1952), West Germany (1955), Spain (1982)",
        "Korean War (1950) + fear of surprise Soviet invasion of Western Europe → militarisation of NATO; also spurred CENTO (Middle East) and SEATO (Southeast Asia)",
        "West Germany admitted 1955: Korean War fear of Soviet surprise attack; Chinese Civil War communist victory; spread of communism elsewhere",
@@ -390,6 +442,7 @@ add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-nato-exp
        "USSR perceived NATO as aggressive/provocative, though it was originally aimed partly at Germany"] });
 add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-warsaw-pact", title:"Warsaw Pact", when:"May 1955",
   q:"Why was the Warsaw Pact created, and how was it later used?",
+  exp:"The Warsaw Pact came late, after West Germany joined NATO, which supports the view that it was a reaction rather than an initiative. It was intended as a defence against a Western threat that never came, but was later used to crush Hungary and Czechoslovakia, showing it also served as a tool of control over the bloc. Its creation completed the division of Europe into two armed camps.",
   clue:"May 1955 Soviet-led grouping formed as a belated reaction to West German entry into the Western alliance.",
   pts:["Created by the USSR as a belated response after West Germany's formal NATO accession",
        "Originally a defensive grouping against a Western threat that never materialised",
@@ -397,6 +450,7 @@ add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-warsaw-p
        "Completed the division of Europe into competing blocs"] });
 add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-obs-1950-55", title:"Key observations 1950–1955", when:"1950–1955",
   q:"What are the key observations about 1950–1955?",
+  exp:"The same action-reaction pattern continued, with security concerns driving the rearmament of West Germany and the Soviet response. New leaders on both sides helped stabilise relations, linking to the move towards peaceful coexistence. The irony that Soviet pressure pushed the West to rebuild Germany shows how actions could defeat their own aims, and by 1955 the division of Europe was complete in every dimension.",
   pts:["Same action-reaction pattern: actions justified as defensive, perceived as offensive",
        "Strategic-security concerns remained the key driver (US rearming/admitting West Germany; Soviet Warsaw Pact)",
        "Political changes helped stabilise the Cold War: Eisenhower replaced Truman; Stalin died, Khrushchev ascended",
@@ -406,12 +460,14 @@ add("4.4 1950–1955: NATO (and its Expansion), Warsaw Pact", { id:"cw1-obs-1950
 /* ── 5. Causes/Reasons for the Emergence of Tensions ── */
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-causes-framework", title:"Two categories of causes", when:"framework",
   q:"Into which two broad categories do the reasons for the emergence of tensions fall?",
+  exp:"This framework helps structure answers to how far and to what extent questions. Category A covers concrete disputes over Europe's politics, economics and security that broke the alliance by 1947, while Category B explains why tension kept growing afterwards through a self-sustaining cycle fuelled by ideology. Distinguishing the two lets you argue that the breakdown and the escalation had different main causes.",
   pts:["The section reorganises causes thematically — useful for “how far,” “to what extent,” and “compare significance of reasons” questions",
        "(A) Substantive issues that led to the Grand Alliance's breakdown by 1947",
        "(B) The escalating action-reaction cycle (fuelled by ideology) that took on a life of its own before and after 1947",
        "Five themes: political shape of Europe; economic issues; security/strategic interests; action-(mis)perception-reaction cycle; ideology"] });
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-political", title:"Differences over the political shape of Europe", when:"1944–1947",
   q:"How did differences over the political shape of Europe cause tension?",
+  exp:"Poland was the clearest clash over Europe's political shape: Stalin saw a friendly Poland as vital to Soviet security, while the US and UK backed the London government and resented the Red Army's alleged inaction during the Warsaw Uprising. More broadly, Soviet expectations of influence based on military occupation conflicted with US belief in self-determination, so both saw the other as breaking the principles they valued.",
   pts:["Poland: Lublin (Soviet-backed) vs. London (pro-West) government dispute",
        "Stalin viewed Poland as key to Russian security",
        "US/UK aggrieved that the Red Army allegedly withheld help from the Polish Home Army uprising (1944) to ease the Lublin Committee's installation",
@@ -419,6 +475,7 @@ add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-political", 
        "vs. the US wanting Eastern Europeans to choose their own governments (Wilsonian self-determination)"] });
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-economic", title:"Disagreements over economic issues", when:"1945–1955",
   q:"How did economic disagreements between the USA and USSR cause tension?",
+  exp:"The key insight is that economic disputes were really about security. The US turned to rebuilding Germany and Europe partly for markets but mainly because communist gains made the USSR seem the new threat, and its unilateral steps cut the USSR out. The USSR wanted Germany weak and saw US aid as a way to undermine socialism, so it kept its satellites out of Marshall aid to protect its buffer.",
   pts:["USA: initially wanted to weaken Germany, but reversed course — recovery of a free-market Europe served US export markets and would stave off a postwar US downturn",
        "Communist electoral gains in France/Italy (1946) pushed the US to see the Soviet threat as replacing the German one",
        "US unilaterally rehabilitated its German zone (Bizonia 1947 → Trizonia), cutting the USSR out; aggravated by 1948 currency reform; culminated in West Germany joining NATO (1955)",
@@ -426,6 +483,7 @@ add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-economic", t
        "Key insight: an apparently economic conflict was really a manifestation of differing security perceptions"] });
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-security-us", title:"US security and strategic interests", when:"1941–1947",
   q:"What were US security and strategic interests, and how real was the threat it perceived?",
+  exp:"US security concerns came from its experience of being drawn into two European wars and its fear that a Soviet-dominated Eurasia would threaten US power and markets. Yet its own intelligence expected the USSR to avoid war, so Leffler argues US insecurity was pre-emptive and inflated by hawkish politicians. This is useful for arguing that US policy was driven more by perceived than actual threat.",
   pts:["Had intervened in Europe twice in a generation; wanted to avoid WWI-settlement mistakes via a Europe built on Wilsonian principles (democracy, free trade, collective security — Atlantic Charter 1941, DLE 1945)",
        "Feared the USSR dominating the Eurasian landmass (resources/manpower/industry, undermining any US blockade — Leffler 2005)",
        "Needed open European markets to sustain US economic dominance",
@@ -433,6 +491,7 @@ add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-security-us"
        "Leffler: US insecurity based more on pre-emption than a real/recent threat — exaggerated by hawkish politicians"] });
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-security-ussr", title:"Soviet security and strategic interests", when:"1941–1947",
   q:"What were Soviet security concerns, and how do they compare with US insecurity?",
+  exp:"Soviet insecurity was rooted in repeated invasions through Eastern Europe, most recently by Nazi Germany, so Stalin sought a buffer zone. US containment and the Marshall Plan increased this fear, leading him to tighten control. Contrasting Soviet insecurity as real, repeated and recent with the more speculative US version helps you judge responsibility, though the notes stress both clashed regardless of their basis.",
   pts:["Stalin's overriding concern was Soviet state security/survival",
        "The Nazi invasion (again) exposed Russia's vulnerability via Central/Eastern Europe; determined to build a buffer-zone sphere of influence",
        "Insecurity heightened by the Truman Doctrine/containment (1947); rejected Marshall aid for satellites to prevent them turning pro-US",
@@ -440,6 +499,7 @@ add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-cause-security-uss
        "Both types of insecurity clashed regardless of their differing bases"] });
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-action-reaction", title:"Cycle of action, (mis)perception and reaction", when:"1939–1955",
   q:"How did the escalating cycle of action, (mis)perception and reaction drive tensions, according to McCauley (1995)?",
+  exp:"McCauley's argument places more responsibility on the US because, as the stronger power, it had more freedom to shape the postwar order and could have accommodated Soviet interests. Instead, misreading Soviet security needs as expansion led to a cycle in which each side's defensive steps confirmed the other's fears. This explains why tension kept escalating from wartime events through 1955 even without a single decisive cause.",
   pts:["Most immediately consequential actions occurred during the war: Nazi-Soviet Pact, delayed Second Front, Red Army's alleged refusal to aid the Warsaw Uprising, atomic bomb on Japan — intensifying from 1945 to 1955",
        "McCauley (1995): US's greater political/economic strength gave it more room to shape the postwar order",
        "It could have recognised the Soviet sphere, involved the USSR in joint atomic control, and helped rebuild the Soviet economy",
@@ -447,6 +507,7 @@ add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-action-reaction", 
        "Soviets saw US policy as aggressive capitalist expansionism and hardened their stance → a vicious, self-perpetuating cycle from 1945"] });
 add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-ideology", title:"Ideological differences & Varsori", when:"1917–late 1940s",
   q:"How did ideological differences fuel mutual suspicion, according to Varsori (2013)?",
+  exp:"Varsori argues ideology mattered because it shaped how leaders and the public interpreted events, so the Cold War seemed to confirm existing prejudices rather than reveal something new. Each side linked the other's system with its worst features, making conflict appear inevitable. The takeaway is that ideology was not a separate cause but the lens that intensified the action-reaction cycle, a useful way to combine factors in an answer.",
   pts:["Capitalism linked (rightly or wrongly) to multi-party democracy, free/fair elections, self-determination, market allocation of resources",
        "Communism linked to one-party rule (with a democratic façade), centrally planned economies",
        "Varsori (2013): look beyond specific decisions to the cultural/psychological/ideological influence on decision-makers and public opinion",
@@ -455,7 +516,8 @@ add("Causes/Reasons for the Emergence of Tensions", { id:"cw1-ideology", title:"
 
 /* ── 6. Historical Interpretations ── */
 add("Historical Interpretations (Historiography) — Four Schools", { id:"historiography1", title:"Four schools on the origins of the Cold War", when:"1940s–post-1991",
-  q:"How and why did historical writing on the origins of the Cold War evolve over time?", qs:"notes",
+  q:"How and why did historical writing on the origins of the Cold War evolve over time?",
+  exp:"The four schools shift in where they place blame, from the USSR to the US, to both, and back to Stalin with qualifications. Painter and Leffler explain why: historians' views were shaped by their own ideology and by the ongoing Cold War. This means sources reflecting a school can be evaluated by considering when they were written and what experiences and evidence influenced them.", qs:"notes",
   pts:["Traditionalist (1940s): Stalin/USSR responsible",
        "Revisionist (1960s): US shares or bears primary blame",
        "Post-Revisionist (~1970s–80s, détente era): both contributed, USSR more",
@@ -463,6 +525,7 @@ add("Historical Interpretations (Historiography) — Four Schools", { id:"histor
        "Painter & Leffler (2005): interpretations “often grounded in deep, if unacknowledged, ideological and philosophical differences. Many of these interpretations were themselves shaped by the ongoing Cold War.”"] });
 add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-traditionalist", title:"Traditionalist school", when:"1940s",
   q:"Explain the Traditionalist school: context, key authors, blame, motives, evidence and limitation.",
+  exp:"Traditionalism blamed the USSR because it was written by US officials and participants who used American sources and were shaped by fighting totalitarianism, so it naturally justified US policy. It treats Soviet actions such as Sovietisation and the Berlin Blockade as proof of ideological expansion. Its limitation is that it overlooks how both sides held different ideas of how to secure peace, so it misses the role of mutual misperception.",
   pts:["Context: US-centric; participants/officials justifying rising US defence budgets; drew on US diplomatic correspondence/memoirs/state papers; shaped by WWII fight against totalitarianism; conservative bias",
        "Authors: Feis (From Trust to Terror); Schlesinger (“Origins of the Cold War,” 1967); Kennan (“Sources of Soviet Conduct,” 1947)",
        "Blame: Stalin/USSR — inherently suspicious, expansionist, ideologically driven (“universalist claims” of communism); US merely defended itself (not effectively/quickly enough — implicit criticism of Roosevelt/Truman)",
@@ -471,6 +534,7 @@ add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-tr
        "Limitation: ignores that the Cold War stemmed from differing perceptions of how to secure peace/power postwar"] });
 add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-revisionist", title:"Revisionist school", when:"1960s",
   q:"Explain the Revisionist school: context, key authors, blame, motives, evidence and limitation.",
+  exp:"Revisionism emerged from disillusionment with US policy during Vietnam, so it reversed the traditionalist view and blamed US anti-communism and economic expansion. It sees Stalin's aims as limited and security-driven, citing examples like his tolerance of Tito. Its weakness is overstating economic motives and ignoring security perceptions, especially since the US was less dependent on exports than this argument assumes.",
   pts:["Context: Vietnam quagmire + domestic unrest (civil rights, anti-war, counter-culture); disillusionment after atrocities like My Lai; still within the traditionalist Cold War “frame”",
        "Authors: W.A. Williams (Tragedy of American Diplomacy); J. & G. Kolko (Limits of Power); McCormick (America's Half Century)",
        "Blame: US shares blame (or primary blame for perpetuating it) — anti-communism, economic expansionism, dominance of UN/IMF = “US imperialism”; Stalin had genuine, limited security concerns, little to gain from renewed conflict, was accommodating (e.g. allowed Tito independence)",
@@ -479,6 +543,7 @@ add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-re
        "Limitation: exaggerates economic motives; downplays differing security perceptions; overlooks that the US was less export-reliant"] });
 add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-postrevisionist", title:"Post-Revisionist school", when:"~1970s–80s",
   q:"Explain the Post-Revisionist school: context, key authors, blame, motives, evidence and limitation.",
+  exp:"Post-revisionism reflects détente and newly opened Western archives, treating both superpowers as strategic actors pursuing interests rather than ideological crusades. It blames both sides, but the USSR more, because Stalin faced fewer domestic constraints than Truman. The contrast between empire by invitation and empire by imposition explains how the blocs differed, though the school downplays ideology and assumes better policy could have prevented conflict.",
   pts:["Context: détente reduced emphasis on ideology; opening of Western European archives → states as strategic actors, compared to historical great-power balance-of-power behaviour",
        "Authors: J.L. Gaddis (Strategies of Containment; “Emerging Post-Revisionist Synthesis,” 1983); Leffler (A Preponderance of Power)",
        "Blame: both contributed, but USSR/Stalin more — Stalin had more freedom of action; Truman hemmed in by Congress/industry/public opinion; US too slow to recognise Stalin's limited ambitions",
@@ -487,6 +552,7 @@ add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-po
        "Limitation: downplays ideology in the action-reaction cycle; assumption that “better policy” could have averted the Cold War is questionable"] });
 add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-postcoldwar", title:"Post-Cold War school", when:"post-1991",
   q:"Explain the Post-Cold War school: context, key authors, blame, motives, evidence and limitation.",
+  exp:"This school emerged when Soviet archives opened and the USSR's sudden collapse showed that a pure clash of interests could not explain events. It returns to ideas, culture and personality, blaming Stalin's paranoid quest for security, which made others insecure, while noting he had no fixed plan and responded to local communists. It thus combines traditionalist blame with a more nuanced view of how Soviet policy was made.",
   pts:["Context: opening of Soviet archives after the USSR's collapse; post-revisionist “clash of interests” thesis inadequate (should have produced stable equilibrium, not sudden collapse)",
        "Renewed focus on ideas/ideology/culture and international/multidisciplinary approaches",
        "Authors: Gaddis (We Now Know); Westad (Reviewing the Cold War)",
@@ -495,11 +561,13 @@ add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-po
        "Evidence: newly opened Soviet archives; critiques predecessors for insufficient weight on ideology/culture/personality/internal empire dynamics"] });
 add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-kissinger", title:"Kissinger's ‘two blind men’", when:"Post-Revisionism",
   q:"What image did Kissinger use (cited under Post-Revisionism) to describe superpower behaviour?",
+  exp:"Kissinger's image captures the post-revisionist view that the Cold War grew from mutual misperception rather than deliberate aggression. Each side saw clearly enough to fear the other but assumed the other saw perfectly and acted with intent, so defensive moves looked threatening. The warning that even blind men can do great damage shows how misperception could still escalate into dangerous conflict.",
   pts:["“The superpowers often behave like two heavily armed blind men feeling their way around a room”",
        "“each believing himself in mortal peril from the other whom he assumes to have perfect vision”",
        "“over time, even two blind men can do enormous damage to each other, not to speak of the room”"] });
 add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-hist-conclusion", title:"Historiography conclusion & SBCS tip", when:"framework",
   q:"What conclusion do the notes draw on the historiography, and how should you treat a highly critical source?",
+  exp:"The conclusion reminds you that interpretations depend on the writer, their context and the sources available, so no single school is final; the best answers combine ideology, strategic interests and the action-reaction cycle. In source questions, a strongly one-sided source portraying one power as aggressive should be tested against context and provenance, since such bias gives rich material for evaluation.",
   pts:["Writing depended heavily on who wrote it, what shaped their worldview, and what sources were available",
        "No single settled account — current literature favours a nuanced synthesis: ideology, strategic interests, and the self-reinforcing action-reaction cycle",
        "Westad (2010): “We need to place the Cold War in the larger context of chronological time and geographical space, within the web that ties the never-ending threads of history together.”",
@@ -509,12 +577,14 @@ add("Historical Interpretations (Historiography) — Four Schools", { id:"cw1-hi
 /* ── 7. Concluding Evaluation Points ── */
 add("Concluding Evaluation Points", { id:"cw1-eval-phases", title:"Evaluation points on Cold War phases", when:"1917–2000",
   q:"What concluding evaluation points do the notes make about the phases of the Cold War?",
+  exp:"These points help you write about change and continuity. Each phase grew out of the previous one, so explaining a shift means linking back to earlier developments. Strategic and political concerns drove most changes, and because forces for tension and cooperation always coexisted, a period labelled détente or Cold War only reflects which was dominant, never a permanent settlement.",
   pts:["Each phase is similar to yet distinctive from other phases, and linked to the phases before/after it",
        "Developments in one phase shape shifts in the next",
        "Strategic and political issues were the dominant drivers of shifts in superpower relations throughout",
        "In every phase, factors for tension and for cooperation coexisted — one prevailed at a time, but the balance was rarely conclusive/permanent"] });
 add("Concluding Evaluation Points", { id:"cw1-eval-hotwar", title:"Why the Cold War stayed cold", when:"discussion",
-  q:"How far do you agree the Cold War never became a “hot” war, in Europe or beyond? Why did the Cold War last so long? When did it actually end?", qs:"notes",
+  q:"How far do you agree the Cold War never became a “hot” war, in Europe or beyond? Why did the Cold War last so long? When did it actually end?",
+  exp:"These prompts test whether you can judge the Cold War's nature and length. Dockrill's argument is that nuclear weapons kept it cold, since war would have destroyed both sides, giving a reason why direct superpower war was avoided. You can balance this against the definitions noting proxy wars and contests outside Europe, which suggest the Cold War was cold mainly in the direct superpower relationship.", qs:"notes",
   pts:["Discussion prompts to rehearse from the T1W7 Overview",
        "Dockrill (1998): “the Cold War remained 'cold' because the development of nuclear weapons had made resort to war a suicidal enterprise”",
        "Dockrill: “both sides would be totally devastated by such an eventuality”"] });
@@ -522,13 +592,15 @@ add("Concluding Evaluation Points", { id:"cw1-eval-hotwar", title:"Why the Cold 
 /* ── 8. Annex — Declaration of Liberated Europe ── */
 add("Annex — Declaration of Liberated Europe (DLE)", { id:"cw1-dle", title:"Declaration of Liberated Europe", when:"Feb 1945",
   q:"What did the Declaration of Liberated Europe bind the USSR, UK and USA to do?",
+  exp:"The DLE committed the Allies to peace, relief, representative interim governments and free elections in liberated countries, reflecting Western ideas of self-determination. Because these terms were broad and depended on cooperation, they became the standard against which Soviet actions in Eastern Europe were judged, making the DLE central to US accusations that the USSR broke its Yalta promises.",
   clue:"Yalta pledge on liberated states: internal peace, emergency relief, representative interim governments and free elections.",
   pts:["(a) help establish internal peace in liberated states",
        "(b) carry out emergency relief",
        "(c) form interim governments broadly representative of all democratic elements, pledged to free elections",
        "(d) facilitate the holding of such elections — with consultation among the three (and other UN members) where needed"] });
 add("Annex — Declaration of Liberated Europe (DLE)", { id:"cw1-dle-violation", title:"Was the DLE carried out?", when:"1945–1948",
-  q:"To what extent was the DLE actually carried out from 1945? Why did the USA accuse the USSR of violating it?", qs:"notes",
+  q:"To what extent was the DLE actually carried out from 1945? Why did the USA accuse the USSR of violating it?",
+  exp:"The DLE promised free elections and representative governments, so Soviet installation of people's democracies and rigged elections directly contradicted it, which is why the US accused the USSR of violation. Linking Sovietisation and the Polish dispute to the DLE shows how Soviet security measures appeared to the West as broken promises, a key example of differing perceptions fuelling tension.", qs:"notes",
   pts:["Use Section 4.2's Sovietisation content + Section 5.1's Poland dispute to answer",
        "The USSR's installation and manipulation of “People's Democracies” is direct evidence of DLE violation cited by the US",
        "Rigged elections are likewise cited by the US as direct evidence of violation"] });
@@ -536,6 +608,7 @@ add("Annex — Declaration of Liberated Europe (DLE)", { id:"cw1-dle-violation",
 /* ── 9. Quick-Revision Checklist ── */
 add("Quick-Revision Checklist", { id:"cw1-checklist-a", title:"Revision checklist: context & events", when:"1917–1949",
   q:"What should you be able to do on the context and early events (checklist part 1)?",
+  exp:"This checklist covers the foundations you need before tackling sources: definitions, periodisation, the long background of mistrust, and why the Grand Alliance rose and fell. Analysing Yalta and Potsdam separately, and understanding Sovietisation, Kennan and Churchill in detail, lets you explain how wartime cooperation turned into open division and evaluate sources on these key events.",
   pts:["Define the Cold War using at least 2 historian quotes + list its core features",
        "State and explain the periodisation (1917–2000) with significant start/end years; explain the 1917–1941 action-reaction cycle",
        "Explain the rise and fall of the Grand Alliance (1941–47) with 2+ reasons each; analyse Yalta AND Potsdam separately — agreed vs. disputed",
@@ -543,6 +616,7 @@ add("Quick-Revision Checklist", { id:"cw1-checklist-a", title:"Revision checklis
        "Explain Kennan's Long Telegram/Article X and his later self-criticism; Churchill's speech and why it was “less alarming than popularly believed”"] });
 add("Quick-Revision Checklist", { id:"cw1-checklist-b", title:"Revision checklist: 1947–55, causes, historiography", when:"1947–1955",
   q:"What should you be able to do on 1947–55, causes and historiography (checklist part 2)?",
+  exp:"The second half focuses on how tensions became concrete and how to analyse them. You need the stated versus real reasons for US policies, the Soviet responses, and how Berlin, NATO and the Warsaw Pact completed Europe's division. Organising causes thematically and comparing the four schools gives you tools to evaluate sources, especially by asking whether an action was professed as defensive but perceived as aggressive.",
   pts:["Truman Doctrine: context, reasons (stated vs. real), significance, impact; Marshall Plan: amount, stated vs. real reasons, impact (incl. Molotov Plan/COMECON)",
        "Berlin Blockade & Airlift: causes, key dates, outcome, significance (division of Germany, NATO's formation)",
        "NATO's formation/expansion and the Warsaw Pact as the “completion” of Europe's division",
@@ -552,6 +626,7 @@ add("Quick-Revision Checklist", { id:"cw1-checklist-b", title:"Revision checklis
 /* ── 23.1 Past-Year SBCS Questions ── */
 add("23.1 Past-Year SBCS Questions", { id:"cw1-sbcs-past", title:"Past-year SBCS topics (Topic 1) & strategy", when:"2020 / 2023",
   q:"Which past-year A-Level SBCS topics relate to Topic 1, and what revision strategy do the slides suggest?",
+  exp:"Past questions on Berlin and Yalta and Potsdam show that examiners focus on key turning points of Topic 1. The revision strategy requires more than knowing events: you must explain causes, judge significance and assess outcomes. Common Part (b) angles, such as local versus Cold War factors and relative responsibility, mean you should always be ready to weigh superpower blame using evidence.",
   pts:["2020: The Cold War and the Berlin Crisis",
        "2023: Yalta and Potsdam Conferences",
        "Check you can (1) demonstrate understanding of key events (chronology, cause and effect)",
@@ -561,6 +636,7 @@ add("23.1 Past-Year SBCS Questions", { id:"cw1-sbcs-past", title:"Past-year SBCS
 /* ── 23.2 Topic 1 Supplement — Reasons/Motivations by Category ── */
 add("23.2 Topic 1 Supplement — Reasons/Motivations by Category", { id:"cw1-motive-ideological", title:"Ideological motivations: USA vs USSR", when:"1945–1947",
   q:"Compare US and Soviet ideological motivations.",
+  exp:"Both sides had ideological goals, but they played different roles. US Wilsonian ideals pushed it to reshape the world in its image, while Soviet ideology became increasingly secondary to practical security and economic concerns after 1945. This raises the key question of whether Soviet expansion into Eastern Europe was mainly about security or ideological control, central to the traditionalist versus revisionist debate.",
   pts:["USA: Wilsonian idealism, liberalism, democracy, capitalism, national self-determination",
        "USA: sought to reshape the world per Western ideological ideals",
        "USSR: command economy, class struggle/revolution",
@@ -568,12 +644,14 @@ add("23.2 Topic 1 Supplement — Reasons/Motivations by Category", { id:"cw1-mot
        "Expansion into Eastern Europe raises the question of security-first vs. ideological control"] });
 add("23.2 Topic 1 Supplement — Reasons/Motivations by Category", { id:"cw1-motive-political", title:"Political motivations: USA vs USSR", when:"1945–1947",
   q:"Compare US and Soviet political motivations.",
+  exp:"Political motives were stronger in the US because its democratic system meant leaders like Truman faced pressure from parties, Congress and hawks, which pushed policy towards firmness. In the authoritarian USSR, political motives were less visible since Stalin and his team faced few domestic constraints. This links to the post-revisionist argument that Truman was hemmed in while Stalin had more freedom of action.",
   pts:["USA: stronger motivation given its democratic system",
        "USA: new leaders (Roosevelt→Truman); Democrat vs. Republican, doves vs. hawks",
        "USSR: weaker/less overt than the USA's",
        "USSR: socialist, authoritarian system under Stalin and his team"] });
 add("23.2 Topic 1 Supplement — Reasons/Motivations by Category", { id:"cw1-motive-security", title:"Border security/strategic motivations: USA vs USSR", when:"1945–1947",
   q:"Compare US and Soviet border-security/strategic/geopolitical motivations.",
+  exp:"Security mattered more to the USSR because history had shown its vulnerability to invasion through Eastern Europe, while the US was protected by oceans. US insecurity came from strength, a fear of losing its Western European sphere. The Soviet sense of threat from US liberalism and containment explains Sovietisation as security-first, though the question mark reminds you ideology may also have been used to consolidate control.",
   pts:["USA: less important — secure geography (flanked by oceans), less serious historical invasion experience",
        "USA: insecurity arose from a position of strength (fear of losing W. European sphere of influence to the USSR)",
        "USSR: more important — historical invasions from the West via Eastern Europe",
@@ -581,6 +659,7 @@ add("23.2 Topic 1 Supplement — Reasons/Motivations by Category", { id:"cw1-mot
        "Hence Sovietisation/Stalinisation (security first, ideology to control/consolidate?)"] });
 add("23.2 Topic 1 Supplement — Reasons/Motivations by Category", { id:"cw1-motive-economic", title:"Economic motivations: USA vs USSR", when:"1945–1947",
   q:"Compare US and Soviet economic motivations.",
+  exp:"The US was economically secure, but feared losing markets and a return of the Depression, so its economic concerns came from strength. The USSR, devastated by war, needed reparations and resources, which explains its policies in Germany and COMECON. However, by 1947 security came first, shown by rejecting Marshall aid and supporting satellites despite economic hardship, so economic motives were subordinate to strategic ones.",
   pts:["USA: relatively less important — pre-war economic superpower, least affected/most benefited by WWII",
        "USA: insecurity from a position of economic strength (fear of losing markets/demand, memory of the Great Depression)",
        "USSR: more important — WWII devastation (delayed 2nd Front, end of Lend-Lease) drove reparations/repatriation and COMECON",
