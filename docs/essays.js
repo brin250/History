@@ -39,7 +39,7 @@ window.ESSAYS = [
     use:["burmanization","aceh","mindanao","thaiunity","buddhistcrisis"],
     tip:"Pair one event from each country under the cross-cutting pattern in the National Unity compendium." },
   { id:"e-authoritarian", t:"ns", q:"Why did early democracies in Southeast Asia turn authoritarian?",
-    use:["burmaindep","indonesia55","marcos","thaipolitics"],
+    use:["burmaindep","indonesia55","marcos","ns-thaipostwar"],
     tip:"Thailand 1947, Indonesia 1959, Burma 1962, Philippines 1972; Malaysia and Singapore are the exceptions." },
   { id:"e-water", t:"wd", q:"Was the water issue a cause or a symptom of tension in Singapore–Malaysia relations?",
     use:["water6162","herzog","afcwater","newater"],

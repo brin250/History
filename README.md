@@ -10,8 +10,11 @@ study notes in the "History" Google Drive folder (Paper 1 and Paper 2).
 Cards move through five review boxes (spaced repetition). Progress is stored on
 the device and can be moved between devices with a backup code.
 
-The app lives in `docs/`. The case bank is `docs/cases.js` and the essay prompts
-are `docs/essays.js`.
+The app lives in `docs/`. The card bank is one file per topic in `docs/data/` (1,290 cards),
+built line by line from every study-notes file in the Drive folder. Each card records its
+source file, the section of the notes it comes from, and whether the question wording is
+taken from the notes or was written for the drill. Topics are listed in `docs/cases.js`;
+essay prompts are in `docs/essays.js`.
 
 ## Hosting
 

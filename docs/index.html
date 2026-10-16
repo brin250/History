@@ -97,6 +97,9 @@ select{background:var(--paper);border:1px solid var(--rule);border-radius:8px;pa
 .box{font:600 11px var(--mono);padding:2px 7px;border-radius:999px;background:var(--blue-soft);color:var(--blue)}
 .qtitle{font-size:clamp(21px,5.5vw,28px);font-weight:700;line-height:1.2}
 .qtext{font-size:16px;max-width:65ch}
+.srctag{font:11px var(--mono);color:var(--muted)}
+.srctag b{font-weight:600;color:var(--ink)}
+.sec{font:600 12px var(--mono);color:var(--muted);margin:10px 0 2px;text-transform:uppercase;letter-spacing:.04em}
 .clue{font-family:var(--display);font-size:20px;line-height:1.4;max-width:60ch;margin:0}
 textarea,input[type=text]{width:100%;background:transparent;border:1px solid var(--rule);border-radius:8px;padding:10px 12px;color:var(--blue);font-size:16px}
 textarea{line-height:28px;background-image:repeating-linear-gradient(transparent 0 27px,var(--rule) 27px 28px);background-position:0 9px;min-height:40vh;resize:vertical}
@@ -236,6 +239,21 @@ details.case p{margin:8px 0 0;color:var(--muted);font-size:13.5px}
 </div>
 
 <script src="cases.js"></script>
+<script src="data/cw1.js"></script>
+<script src="data/cw2.js"></script>
+<script src="data/cw3.js"></script>
+<script src="data/ge.js"></script>
+<script src="data/ea.js"></script>
+<script src="data/ai.js"></script>
+<script src="data/ip.js"></script>
+<script src="data/cg.js"></script>
+<script src="data/bs.js"></script>
+<script src="data/ns.js"></script>
+<script src="data/nu.js"></script>
+<script src="data/ec.js"></script>
+<script src="data/as.js"></script>
+<script src="data/it.js"></script>
+<script src="data/wd.js"></script>
 <script src="essays.js"></script>
 <script>
 (function(){
@@ -261,7 +279,7 @@ const recOf = k => state.cards[k] || { b:0, due:0, n:0, last:0 };
 function itemsForMode(mode){
   const on = new Set(state.settings.topics);
   if(mode==="apply") return ESSAYS.filter(e=>on.has(e.t)).map(e=>"essay:"+e.id);
-  return CASES.filter(c=>on.has(c.t)).map(c=>mode+":"+c.id);
+  return CASES.filter(c=>on.has(c.t)&&(mode!=="identify"||c.clue)).map(c=>mode+":"+c.id);
 }
 function buildQueue(keys, size){
   const now=Date.now(), items=keys.map(k=>({k,r:recOf(k)}));
@@ -344,6 +362,7 @@ function setActions(...btns){ const a=$("#actions"); a.innerHTML=""; btns.forEac
 function progress(){ const n=round.queue.length; $("#pfill").style.width=(100*round.i/n)+"%"; $("#pcount").textContent=`${Math.min(round.i+1,n)} / ${n}`; }
 function stageClear(){ const s=$("#stage"); s.innerHTML=""; $("#sbody").scrollTop=0; return s; }
 function metaFor(t, key, extra){ const r=recOf(key); return el("div",{class:"meta"}, el("span",{class:"eyebrow",text:`${t.paper} · ${t.theme} · ${extra||t.name}`}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})); }
+function srcTag(c){ return el("div",{class:"srctag"}, el("b",{text:c.qs==="notes"?"Question from your notes":"Question written for you"}), ` · facts from ${c.src}${c.sec?" · "+c.sec:""}`); }
 function showCard(){
   progress();
   if(round.i>=round.queue.length) return showSummary();
@@ -368,7 +387,7 @@ function markList(items, got, render, onChange){
 function recallCard(key,c){
   const s=stageClear(), t=TOPIC[c.t];
   const ta=el("textarea",{id:"answer",placeholder:"Write everything you can recall: dates, causes, figures, people, significance, historians…","aria-label":"Your answer"});
-  s.append(metaFor(t,key), el("h2",{class:"qtitle",text:`${c.title} (${c.when})`}), el("div",{class:"qtext",text:c.q}), ta);
+  s.append(metaFor(t,key), el("h2",{class:"qtitle",text:`${c.title} (${c.when})`}), el("div",{class:"qtext",text:c.q}), srcTag(c), ta);
   const go=()=>markRecall(key,c,ta.value);
   setActions(el("button",{class:"btn ghost",text:"Don't know",onclick:()=>markRecall(key,c,"")}), el("button",{class:"btn",text:"Mark my answer",onclick:go}));
   ta.addEventListener("keydown",e=>{ if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)) go(); });
@@ -382,7 +401,7 @@ function markRecall(key,c,answer){
   s.append(metaFor(t,key), el("h2",{class:"qtitle",text:c.title}),
     answer.trim()?el("div",{class:"your",text:answer}):el("div",{class:"hint",text:"No answer written. Read the points below and try it again next time."}),
     el("div",{class:"hint",text:"Tap each point your answer covered. Auto-matched ticks are a guess from shared words; fix them if they're wrong."}),
-    list, el("div",{class:"scoreline"},scoreEl,verdict));
+    list, el("div",{class:"scoreline"},scoreEl,verdict), srcTag(c));
   setActions(el("button",{class:"btn",text:"Save mark and continue",onclick:()=>next(key,got.filter(Boolean).length/c.pts.length)}));
 }
 
@@ -468,15 +487,17 @@ $("#resetyes").onclick=()=>{ state.cards={}; state.days={}; save(); $("#resetcon
 function renderBrowse(){
   const q=norm($("#search").value.trim()), box=$("#browse"); box.innerHTML=""; let n=0;
   for(const t of TOPICS){
-    const cs=CASES.filter(c=>c.t===t.key&&(!q||norm([c.title,c.when,c.q,...c.pts].join(" ")).includes(q)));
+    const cs=CASES.filter(c=>c.t===t.key&&(!q||norm([c.title,c.when,c.q,c.sec||"",...c.pts].join(" ")).includes(q)));
     if(!cs.length) continue; n+=cs.length;
     box.append(el("div",{class:"eyebrow",style:"margin-top:8px",text:`${t.paper} · ${t.theme} · ${t.name}`}));
+    let sec=null;
     cs.forEach(c=>{ const r=recOf("recall:"+c.id);
+      if(c.sec&&c.sec!==sec){ sec=c.sec; box.append(el("div",{class:"sec",text:sec})); }
       box.append(el("details",{class:"case"}, el("summary",{}, el("b",{text:c.title}), el("span",{class:"hint",text:c.when}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})),
-        el("p",{text:c.q}), el("ul",{},c.pts.map(p=>el("li",{text:p}))),
+        el("p",{text:c.q}), el("ul",{},c.pts.map(p=>el("li",{text:p}))), srcTag(c),
         el("button",{class:"linkbtn",text:"Drill this case",onclick:()=>startRound("recall",["recall:"+c.id])}))); });
   }
-  $("#browsecount").textContent=`${n} case studies`;
+  $("#browsecount").textContent=`${n} cards`;
 }
 $("#search").addEventListener("input",renderBrowse);
 
@@ -505,7 +526,7 @@ $("#installbtn").onclick=async()=>{ if(!deferred) return; deferred.prompt(); awa
 window.addEventListener("appinstalled",()=>{ $("#installcard").hidden=true; });
 if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(()=>{});
 
-$("#foot").textContent=`${CASES.length} case studies and ${ESSAYS.length} essay prompts from the study notes in your History Drive folder. Nothing outside those notes was added.`;
+$("#foot").textContent=`${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 renderToday();
 })();
 </script>
