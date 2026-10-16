@@ -6,6 +6,7 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"wd", sec, src:S, qs:"me" }
 /* ── I. Introduction & Framing ── */
 add("Introduction & Framing", { id:"wd-framing", title:"Framing the water dispute", when:"1965–2000",
   q:"How should the water dispute be framed within Singapore–Malaysia relations?",
+  exp:"Because the two states are physically joined and depend on each other, they cannot simply walk away from disputes, so relations swing between cordiality and tension. Water sits at the centre of this: it reflects the state of relations (a symptom) and also drives them (a cause). For essays, this lets you argue both ways, showing water as a flashpoint that worsened other tensions and as an area of cooperation that sometimes repaired relations.",
   pts:["Singapore and Malaysia are geographically inseparable (linked by the Causeway) and mutually dependent economically and for security",
        "Relations have alternated between cordiality and tension",
        "Water is best understood as BOTH a symptom of, and a cause of, changes in bilateral relations — not a standalone issue",
@@ -14,6 +15,7 @@ add("Introduction & Framing", { id:"wd-framing", title:"Framing the water disput
 /* ── II. Timeline of Events ── */
 add("Timeline of Events", { id:"wd-tl-early", title:"Timeline: 1927–1965", when:"1927–1965",
   q:"Give the key dates of the water story from 1927 to Separation.",
+  exp:"The early timeline shows water arrangements being set up before independence, from the 1927 Johor scheme to the 1961 and 1962 agreements signed while relations were still close. Merger and the political clash that followed, ending with the MSC and Separation, explain why the Separation Agreement deliberately incorporated the water agreements. This is the origin of Singapore’s insistence that the agreements are tied to its sovereignty.",
   pts:["5 Dec 1927: water agreement between Singapore municipal commissioners & Sultan Ibrahim of Johor (Gunong Pulai Scheme)",
        "1953: Sungei Tebrau Scheme completed — 1,600mm pipeline through Causeway",
        "1961: Tebrau & Scudai (Rivers) Water Agreement takes effect 1 Sep / signed 2 Oct; 28 Sep 1962: Johor River Water Agreement signed",
@@ -22,6 +24,7 @@ add("Timeline of Events", { id:"wd-tl-early", title:"Timeline: 1927–1965", whe
        "7 Aug 1965: Separation Agreement signed (incorporates 1961/62 water agreements); 9 Aug 1965: Separation — Singapore independence"] });
 add("Timeline of Events", { id:"wd-tl-mid", title:"Timeline: 1971–1993", when:"1971–1993",
   q:"Give the key dates of Singapore–Malaysia relations from 1971 to 1993.",
+  exp:"This period mixes cooperation with friction. The FPDA, the 1988 MoU and the 1990 Supplementary Agreement show the two sides building practical links, while the Pedra Branca map, the Herzog visit and Malindo Darsasa show recurring tension. Singapore signing water agreements with Indonesia in 1990–91 signals an early effort to reduce dependence on Malaysia, which links to the later self-sufficiency drive.",
   pts:["1971: Five Power Defence Arrangements (FPDA) signed; 1979: Malaysia publishes map claiming Pedra Branca",
        "18–19 Nov 1986: Chaim Herzog visits Singapore — protests",
        "1988: MoU on water, gas, ferry, proposed new bridge",
@@ -31,6 +34,7 @@ add("Timeline of Events", { id:"wd-tl-mid", title:"Timeline: 1971–1993", when:
        "1993: Linggui Reservoir Project completed"] });
 add("Timeline of Events", { id:"wd-tl-late", title:"Timeline: 1994–2000", when:"1994–2000",
   q:"Give the key dates of the dispute from 1994 to 2000.",
+  exp:"The late 1990s cluster shows several disputes overlapping: Malaysia going back on the CIQ deal, Lee’s Johor remarks, Lim Hng Kiang’s comments on water quality and the RSAF airspace ban all came within a short span, and water threats resurfaced with them. Singapore’s 1997 measures to cut dependence and the 1998 package approach show both sides looking for ways out, ending the period with the 2000 price talks.",
   pts:["1994: Pedra Branca case brought to ICJ (referral agreed)",
        "1997: Malaysia reneges on CIQ/KTM land agreement; SM Lee's Johor crime remarks reignite water threats; 10 Jun 1997: Singapore announces measures to reduce water dependence",
        "1998: agreement to discuss bilateral issues as a ‘package’; release of The Singapore Story",
@@ -39,6 +43,7 @@ add("Timeline of Events", { id:"wd-tl-late", title:"Timeline: 1994–2000", when
        "Nov 2000: Abdurrahman Wahid's provocative remarks on water supply to Singapore"] });
 add("Timeline of Events", { id:"wd-tl-exam", title:"Timeline exam focus", when:"Independence–2000",
   q:"What exam cautions apply to the dispute's timeline?",
+  exp:"The syllabus stops at 2000, so post-2000 events should not be used as main evidence in essays, though SBQ sources may date from later and you need context to judge their provenance. The 25-year review clause matters because whether Malaysia used or lost its right to review in 1986/87 became the core legal argument of the 2000s. Knowing this lets you spot the purpose behind sources on either side.",
   pts:["Syllabus period is Independence–2000",
        "The SBQ may still use sources set slightly after 2000 — know the 2000s events broadly for provenance analysis, not for essay substantiation",
        "Note the ‘25-year price review’ clause (1986/1987) — central to the 2000s legal dispute over Malaysia's ‘right to review’"] });
@@ -46,18 +51,21 @@ add("Timeline of Events", { id:"wd-tl-exam", title:"Timeline exam focus", when:"
 /* ── III. Overview of Water Agreements ── */
 add("Overview of Water Agreements", { id:"wd-background", title:"Background to water imports", when:"1920s–1964",
   q:"Why did Singapore come to rely on Johor water?",
+  exp:"Singapore’s local catchments could not keep up with its growing population, so the colonial government turned to Johor, starting the dependence in 1927. The droughts of the early 1960s showed how exposed Singapore was, which is why it sought the longer, larger 1961 and 1962 agreements. This explains why dependence on Johor water became a structural feature that Malaysia could later use as leverage.",
   pts:["Singapore initially relied on local catchments (Thomson/MacRitchie, Pearl's Hill, Lower Pierce)",
        "Rapid 1920s population growth pushed the colonial government to look to Johor, beginning with the 1927 Gunong Pulai Scheme",
        "Droughts of 1961–62 and 1963–64 exposed Singapore's vulnerability and directly motivated the 1961/1962 agreements"] });
 add("Overview of Water Agreements", { id:"wd-1927", title:"1927 Gunong Pulai agreement", when:"5 Dec 1927",
   q:"What were the terms of the 1927 water agreement?",
   clue:"Deal between Singapore municipal commissioners and Sultan Ibrahim: rent of 30 sen/acre, water otherwise free.",
+  exp:"The 1927 agreement was a simple colonial arrangement in which Singapore paid rent on the land but got the water free. Its importance is mainly as the start of Singapore’s reliance on Johor water. Because it was overridden by the 1961 and 1962 agreements, it is not the legal basis of the later dispute, which centred on the terms of those later agreements.",
   pts:["Between Singapore municipal commissioners & Sultan Ibrahim of Johor (Gunong Pulai Scheme)",
        "Singapore pays 30 sen/acre rent on Gunong Pulai land; water otherwise free",
        "Overridden by the 1961 & 1962 Agreements"] });
 add("Overview of Water Agreements", { id:"water6162", title:"1961 & 1962 Water Agreements", when:"1961–1962",
   q:"What were the terms of the 1961 Tebrau & Scudai and 1962 Johor River Water Agreements?",
   clue:"Two pacts: one for 50 years to 2011, one for 99 years to 2061 (up to 250 million gallons/day); 3 sen raw, 50 cents treated.",
+  exp:"These agreements gave Singapore long-term rights to Johor water at very low raw-water prices, in return for supplying Johor with some treated water at a set price. The droughts of the early 1960s explain why Singapore wanted such long-term guarantees. The 25-year review clause, with arbitration if talks failed, is key, because the later dispute turned on whether Malaysia had used that right in time.",
   pts:["1961 Tebrau & Scudai (takes effect 1 Sep / signed 2 Oct): exclusive right to draw water for 50 years (to 2011)",
        "1961: Singapore supplies Johor treated water up to 12% of raw water drawn (min. 4 million gallons/day); rent RM5/acre + 3 sen/1,000 gallons raw water; Malaysia pays 50 cents/1,000 gallons for treated water",
        "1962 Johor River (28 Sep): right to draw ALL water in a designated area for 99 years (to 2061); up to 250 million gallons/day (1.14m m³)",
@@ -66,12 +74,14 @@ add("Overview of Water Agreements", { id:"water6162", title:"1961 & 1962 Water A
        "Droughts of 1961–62 and 1963–64 directly motivated them"] });
 add("Overview of Water Agreements", { id:"wd-sep-agreement", title:"1965 Separation Agreement & water", when:"7 Aug 1965",
   q:"How did the 1965 Separation Agreement treat the water agreements?",
+  exp:"By folding the water agreements into the Separation Agreement, writing the guarantee into Malaysia’s Constitution and registering it with the UN, the water supply was tied to the terms on which Singapore became independent. This is why Singapore treats any threat to the agreements as a threat to its sovereignty, and why it later argued that both sides were bound to comply fully.",
   pts:["Incorporates the 1961 & 1962 agreements",
        "Guarantee of water supply written into the Malaysian Constitution",
        "Registered with the UN"] });
 add("Overview of Water Agreements", { id:"wd-1988-mou", title:"1988 MoU", when:"27–28 Jun 1988",
   q:"What did the 1988 MoU provide?",
   clue:"Followed 6 years of talks from 1982: sale of water and gas, a Changi Point–SE Johor ferry, an undecided new bridge.",
+  exp:"The MoU shows cooperation was possible, even though it took six years of negotiation. It linked water with gas and a ferry service, showing water being dealt with alongside other practical issues. It also laid the groundwork for the 1990 Supplementary Agreement, so it is evidence that water could act as a vehicle for cooperation, not just a source of conflict.",
   pts:["Came after 6 years of negotiation (from 1982)",
        "Sale of water & gas by Malaysia; new Changi Point–SE Johor ferry service",
        "Basis for the 1990 Supplementary Agreement",
@@ -79,6 +89,7 @@ add("Overview of Water Agreements", { id:"wd-1988-mou", title:"1988 MoU", when:"
 add("Overview of Water Agreements", { id:"wd-1990-supp", title:"1990 Supplementary Agreement", when:"24 Nov 1990",
   q:"What were the terms of the 1990 Supplementary Agreement?",
   clue:"PUB–Johor deal allowing Singapore to build the Linggiu Dam at its own cost; ~21,600 ha designated, RM320 million compensation.",
+  exp:"The Supplementary Agreement deepened cooperation: Singapore paid to build the Linggiu Dam and compensated Johor for the land, which increased how much water it could draw from the Johor River. A separate document guaranteeing adherence shows both sides wanted the deal to be secure. This is good evidence of water cooperation reflecting improved relations, completed with the reservoir in 1993.",
   pts:["Supplements the 1962 Johor River Agreement; separate document guarantees adherence by both sides",
        "Singapore may build the Linggiu Dam (cost borne by Singapore) to aid extraction from the Johor River",
        "Johor designates ~21,600 ha (216 km²); Singapore pays RM320 million compensation + RM30/1,000 sq ft annual rent",
@@ -86,6 +97,7 @@ add("Overview of Water Agreements", { id:"wd-1990-supp", title:"1990 Supplementa
        "Linggui Reservoir Project completed 1993"] });
 add("Overview of Water Agreements", { id:"wd-2000-request", title:"Aug 2000 price request", when:"Aug 2000",
   q:"What did Malaysia request on water in Aug 2000, and what was agreed?",
+  exp:"Placing the price request inside a wider package let both sides trade concessions on several issues at once. Malaysia wanted a higher water price and other gains, while Singapore wanted long-term supply after 2061, and SM Lee accepted Mahathir’s additions. Agreeing a list of issues, including 45 sen, ended the syllabus period positively, though Malaysia later argued this showed Singapore had conceded its right to review.",
   pts:["Malaysia requests raw water price raised to 45 sen/1,000 gallons as part of a ‘package’",
        "Package also: post-2061 supply, RSAF airspace, KTM/Bukit Timah land, RM3bn early CPF withdrawal",
        "Mahathir adds a Causeway-replacement bridge proposal + water price revision; agreed to by SM Lee",
@@ -94,6 +106,7 @@ add("Overview of Water Agreements", { id:"wd-2000-request", title:"Aug 2000 pric
 /* ── IV.1 Pattern of Bilateral Relations ── */
 add("Causes: Pattern of Bilateral Relations", { id:"wd-sep-legacy", title:"Legacy of Separation", when:"1963–65",
   q:"How did the legacy of Separation underlie the water dispute?",
+  exp:"The bitterness of Merger and Separation left distrust that hung over later relations, including water. The root clash was between the PAP’s multiracial meritocracy and the Alliance’s Malay-privilege model, worsened by economic rivalry as KL saw Singapore as a competitor. This explains why the water dispute was a symptom of deeper problems: disagreements over water carried the weight of these unresolved tensions.",
   pts:["Deeper mutual distrust rooted in the bitterness of Merger (1963–65) and Separation — a long-term ‘pervasive overhang’",
        "Root divergence: PAP's multicultural meritocracy vs. Alliance's communalism/Malay privileges",
        "Economic: federal govt in KL saw Singapore as an economic competitor rather than Malaysia's trade outlet",
@@ -101,6 +114,7 @@ add("Causes: Pattern of Bilateral Relations", { id:"wd-sep-legacy", title:"Legac
        "Ideological/racial: UMNO's Social Contract gave Chinese economic primacy in exchange for Malay bumiputera privileges; PAP's ‘Malaysian Malaysia’ vision angered Malay ultras"] });
 add("Causes: Pattern of Bilateral Relations", { id:"wd-merger-politics", title:"PAP–Alliance political rivalry", when:"1963–1965",
   q:"What political events in Merger led to Separation?",
+  exp:"These events show rivalry turning into crisis. The PAP winning Malay seats and then contesting federal seats alarmed UMNO, the Utusan campaign and Albar’s speech helped spark the 1964 riots, and the MSC was the final straw as UMNO suspected Lee of seeking to lead Malaysia. Separation followed. This history is why later disputes carried racial and political suspicion.",
   pts:["PAP won Malay seats in the 1963 Singapore state election",
        "PAP's failed 1964 federal bid for 9 seats (won only 1) escalated rivalry",
        "July 1964: Utusan Melayu campaign + Syed Jaafar Albar's speech → race riots after the Prophet Muhammad's birthday procession (21 deaths, 460 injuries, official figures)",
@@ -108,18 +122,21 @@ add("Causes: Pattern of Bilateral Relations", { id:"wd-merger-politics", title:"
        "9 Aug 1965: Separation — Singapore independent within the Commonwealth; admitted to UN in Sep 1965"] });
 add("Causes: Pattern of Bilateral Relations", { id:"wd-abang-adik", title:"Irvin Lim: abang-adik syndrome", when:"Post-1965",
   q:"How did Irvin Lim Fang Jau characterise Malaysia's attitude to Singapore?",
+  exp:"Lim’s “abang-adik” idea describes Malaysia treating Singapore as the younger brother that must be kept in its place, rooted in the baggage of Separation. His point that domestic politics does not stop at the water’s edge means Malaysian leaders used disputes with Singapore for domestic purposes. This helps explain why water threats often seemed symbolic, asserting status rather than solving real shortages.",
   pts:["“Regional political commentators have long described the perennial attempt by Malaysia to put Singapore in its place as a manifestation of an abang-adik [big brother-small brother] syndrome”",
        "It “comes with a heavy historical baggage ever since the latter's separation”",
        "“Domestic politics often extends beyond — not stop — at the water's edge”",
        "Source: Irvin Lim Fang Jau, quoted in IDSS Monograph No. 3, pg. 81"] });
 add("Causes: Pattern of Bilateral Relations", { id:"wd-geography", title:"Geographical & geopolitical factors", when:"1965–2000",
   q:"How did geography and geopolitics shape Singapore–Malaysia relations?",
+  exp:"Being separated by only a narrow strait ties the two states’ security and economies together, so neither can afford a total break. Shared ASEAN and FPDA membership reflect this, with the FPDA based on the idea that their defence is indivisible. But because exercises could be cancelled to show displeasure, the FPDA also works as a gauge of how relations are going at any time.",
   pts:["1km-wide Johor Strait ties security & economic interests together; strong cross-Causeway kinship",
        "Both founding ASEAN members; cooperate via the FPDA (1971, with UK/Australia/NZ) — founded on the principle that Singapore's and Malaysia's defence is indivisible",
        "FPDA = confidence-building measure AND barometer of relations (exercises sometimes called off to express displeasure)",
        "Singapore's split from Malaysia is unique in SEA as the only non-violent split of a minority region from a dominant one"] });
 add("Causes: Pattern of Bilateral Relations", { id:"wd-race", title:"Ethno-religious & ideological factors", when:"1964–2000",
   q:"Why did race and religion make Singapore a target in Malaysian politics?",
+  exp:"Race made disputes with Singapore emotionally powerful in Malaysia, especially since riots in 1964 and 1969 showed violence could spread across the Causeway. As a successful Chinese-majority city, Singapore made an easy scapegoat for politicians wanting to distract or rally voters. Badawi admits leaders had to be seen acting, which explains why Malaysian governments escalated issues like water even when the practical stakes were small.",
   pts:["Race remains a major bone of contention — racial violence risks spillover (1964 riots began in Singapore; 1969 riots began in Malaysia)",
        "Singapore's majority-Chinese, economically successful city-state identity makes it a convenient scapegoat for Malaysian politicians seeking to divert attention from domestic issues or mobilise the masses",
        "Abdullah Badawi (1990 speech): “An anti-Singapore bandwagon is a popular vehicle in Malaysia because it often involves race and religion and therefore has tremendous emotional appeal”",
@@ -127,12 +144,14 @@ add("Causes: Pattern of Bilateral Relations", { id:"wd-race", title:"Ethno-relig
 add("Causes: Pattern of Bilateral Relations", { id:"wd-leverage", title:"Water as leverage — Tunku's threat", when:"9 Aug 1965",
   q:"What role did water play as leverage in bilateral relations?",
   clue:"On the very day of Separation, the Malaysian PM told the British High Commissioner Johor's taps could be turned off.",
+  exp:"Singapore’s dependence on Johor water gave Malaysia a lever it could pull whenever other disputes arose. The Tunku’s remark on the very day of Separation shows this thinking existed from the start: water could be used to pressure Singapore’s foreign policy. This explains why water kept reappearing in unrelated disputes and why Singapore saw it as a threat to its independence.",
   pts:["Because Singapore depends on Malaysia for water, the issue became a recurring LEVERAGE POINT/flashpoint whenever other disputes arose",
        "Tunku Abdul Rahman to the British High Commissioner, 9 Aug 1965: “If Singapore's foreign policy is prejudicial to Malaysia's interests, we could always bring pressure to bear on them by threatening to turn off the water in Johor.”"] });
 
 /* ── IV.2 Singapore's Perspective ── */
 add("Causes: Singapore's Perspective", { id:"wd-scarcity", title:"Water scarcity in Singapore", when:"1963–1999",
   q:"Why is water an existential issue for Singapore?",
+  exp:"Singapore has plenty of rain but little groundwater or natural freshwater, so it is severely water-stressed, and rising population and consumption made demand far larger. The memory of WWII, when cutting the Causeway pipes and losing the reservoirs hastened the Fall of Singapore, made water a matter of survival. This explains why Singapore treated water threats as existential rather than merely economic.",
   pts:["Among the 8 worst water-stressed countries in Asia (alongside Middle East states); the only ASEAN country facing severe water scarcity",
        "Despite abundant rainfall — due to scarce groundwater and few natural freshwater bodies",
        "1963–1999: population rose from 1.8m to 3.9m; per capita consumption rose from 154 to 327 litres/person; total consumption rose 4.7x",
@@ -140,6 +159,7 @@ add("Causes: Singapore's Perspective", { id:"wd-scarcity", title:"Water scarcity
        "Water is thus tied to the nation-state's existential security narrative"] });
 add("Causes: Singapore's Perspective", { id:"wd-sanctity", title:"Sanctity of water agreements", when:"1965–1987",
   q:"Why did Singapore insist on the sanctity of the water agreements?",
+  exp:"The guarantee was written into Malaysia’s Constitution and the UN-registered Separation Agreement, so Singapore sees it as part of its sovereignty. Malaysia’s own 1968 statement that such treaties were fundamental makes its later push for revision look inconsistent. Since Johor did not seek a review in 1986/87, likely because it would also raise what Malaysia paid for treated water, Singapore argued Malaysia had lost the right.",
   pts:["1961/1962 guarantee enacted into the Malaysian Constitution and annexed to the 1965 Separation Agreement (registered with the UN) — sanctity symbolic of Singapore's sovereignty",
        "1968: Malaysian UN representative M.O. Ariff affirmed some treaties were ‘so fundamental to existence of States’ they could not be dispensed with — citing the Singapore water treaty explicitly (later ironic given Malaysia's price-revision attempts)",
        "Johor did NOT request review in 1986/1987 — widely speculated because raising the raw water price would also raise the price Malaysia paid Singapore for treated water",
@@ -147,6 +167,7 @@ add("Causes: Singapore's Perspective", { id:"wd-sanctity", title:"Sanctity of wa
        "S Jayakumar: “The significance of the water price, to both countries, is Singapore's existence as a sovereign nation separate from Malaysia, and the sanctity of the most solemn agreements” (Water Talks? If Only It Could, pg. 69)"] });
 add("Causes: Singapore's Perspective", { id:"wd-saf", title:"SAF as deterrence", when:"1965–2000s",
   q:"How did the water threat shape Singapore's defence?",
+  exp:"Because a water cut-off could threaten Singapore’s survival, building its own armed forces became insurance against it. Lee’s blunt answer to Mahathir shows Singapore was prepared to use force to restore supply in an emergency, which acted as deterrence. The high defence spending of around 5% of GDP reflects how seriously this threat was taken. It shows water shaping Singapore’s security policy, not just its economy.",
   pts:["Existential threat of water cut-off contributed to building an indigenous SAF as a ‘credible insurance against a cut of supply of water’ (Irvin Lim Fang Jau)",
        "LKY (From Third World to First, p. 276): Mahathir asked what the SAF was for; LKY replied they feared “a random act of madness like cutting off our water supplies”",
        "LKY: “in an emergency, we would have to go in, forcibly if need be, to repair damaged pipes and machinery and restore the water flow”",
@@ -155,6 +176,7 @@ add("Causes: Singapore's Perspective", { id:"wd-saf", title:"SAF as deterrence",
 /* ── IV.3 Malaysia's Domestic Politics ── */
 add("Causes: Malaysia's Domestic Politics", { id:"wd-my-optics", title:"Malaysia's economic interests & optics", when:"1990–1991",
   q:"How did Malaysia's domestic water situation feed the dispute?",
+  exp:"Malaysia had real water problems but could not raise the raw-water price on its own, so selling cheap water to Singapore while its own states faced rationing looked bad politically. Kog notes the anger that Johor seemed to put Singapore first. However, since PUB usually supplied extra treated water when Malaysia asked, the threats look more about asserting status than real need.",
   pts:["Malaysia faces its own water insecurity (population/economic growth + pollution/urbanisation) but is contractually bound not to unilaterally raise the raw water price — can't reflect scarcity value",
        "Optics: politically unpopular to keep selling raw water to Singapore ‘cheaply’ while Malaysian states (e.g. Johor 1990, Malacca 1991) undergo water rationing",
        "Kog Yue Choong: some states suffer chronic shortages while others enjoy surpluses; critics said “the Johor government seemed to put Singaporean needs before those of the state” (IDSS Monograph No. 3, pg. 38)",
@@ -164,6 +186,7 @@ add("Causes: Malaysia's Domestic Politics", { id:"wd-my-optics", title:"Malaysia
 add("Causes: Interrelatedness of Disputes", { id:"herzog", title:"1986 Chaim Herzog visit", when:"Nov 1986",
   q:"How did the 1986 Herzog visit escalate into a water threat, and how was it de-escalated?",
   clue:"An Israeli president's state visit, following Mahathir's anti-Zionist speech, led Malaysia to recall its High Commissioner and threaten the taps.",
+  exp:"The Herzog visit shows how an unrelated issue could escalate to water threats. Singapore’s quiet Israeli links were sensitive for Muslim-majority Malaysia, and Mahathir, having just given an anti-Zionist speech to outflank PAS, felt personally affronted, while Singapore refused to cancel on sovereignty grounds. Malaysia’s threats, including cutting water, show the flashpoint dynamic, and Suharto’s mediation shows regional help in calming things down.",
   pts:["Singapore used Israeli help to build the SAF (Israelis code-named ‘Mexicans’ for secrecy) — sensitive given Malaysia's Malay-Muslim identity",
        "Mahathir's anti-Zionist speech (aimed at outflanking PAS) preceded the visit announcement by 2 weeks; he took the visit as a personal affront and demanded cancellation — Singapore refused (sovereignty)",
        "Herzog visited 18–20 Nov 1986 amid protests",
@@ -172,6 +195,7 @@ add("Causes: Interrelatedness of Disputes", { id:"herzog", title:"1986 Chaim Her
        "Suharto mediated in Feb 1987, symbolically crossing the Causeway"] });
 add("Causes: Interrelatedness of Disputes", { id:"afcwater", title:"Post-AFC tensions & water", when:"1997–1998",
   q:"Why was the period after the 1997 Asian Financial Crisis so tense, and how did water figure?",
+  exp:"The Asian Financial Crisis put both economies under stress and set off a string of disputes at once, from CLOB and interest rates to CPF, CIQ, airspace and Pedra Branca. With so many issues overlapping, water became a strategic bargaining tool rather than a standalone issue. Sorting the disputes into AFC-related, mixed and circumstantial helps you judge how far the crisis itself caused the tension.",
   pts:["Generally seen as one of the worst periods of tension since Separation",
        "Water took on a more strategic dimension amid several parallel disputes",
        "Economic (directly AFC-related): CLOB, high interest rates in Singapore",
@@ -180,6 +204,7 @@ add("Causes: Interrelatedness of Disputes", { id:"afcwater", title:"Post-AFC ten
 add("Causes: Interrelatedness of Disputes", { id:"wd-clob", title:"CLOB dispute", when:"1990–1998",
   q:"What was the CLOB dispute?",
   clue:"A section of the Stock Exchange of Singapore set up in 1990 where Malaysian shares dominated; banned for Malaysian shares from 31 August 1998.",
+  exp:"Malaysia had opposed the CLOB from the start, and the AFC made it a real worry: with Malaysian shares traded in Singapore, Malaysia faced regulatory risk and blamed short-selling via the CLOB for its market and currency falls. Banning trading of Malaysian shares on it was part of Mahathir’s wider control of finance. This is a dispute directly caused by the AFC, feeding into the overall tension.",
   pts:["CLOB (Central Limit Order Book): a section of the SES established 1990, the year SES split from the KLSE",
        "Not dedicated to Malaysian shares, but they made up the majority traded due to historical reasons and investor familiarity",
        "KLSE strongly objected to its formation in 1990, warning investors about the risks of trading on an ‘unrecognised market’",
@@ -189,6 +214,7 @@ add("Causes: Interrelatedness of Disputes", { id:"wd-clob", title:"CLOB dispute"
        "Category: economic (directly AFC-related)"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-interest", title:"Singapore's high interest rates", when:"1998",
   q:"Why did Singapore's interest rates become a dispute after the AFC?",
+  exp:"Mahathir’s strategy to save the ringgit relied on lower rates and capital controls, so Singapore’s higher ringgit deposit rates seemed to undermine it by attracting money and speculation. Singapore insisted rates were set by the market, not the government. The clash shows how different crisis responses created suspicion, making it a dispute rooted directly in the AFC.",
   pts:["Mahathir cut Malaysian rates + imposed capital controls (banned offshore ringgit exchange, pegged to USD) to stabilise the ringgit",
        "Cutting rates reduced short-term speculative buys",
        "Singapore's high ringgit (deposit) rates were seen as sabotage/speculation-inducing",
@@ -196,6 +222,7 @@ add("Causes: Interrelatedness of Disputes", { id:"wd-interest", title:"Singapore
        "Category: economic (directly AFC-related)"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-cpf", title:"CPF withdrawal dispute", when:"Jul 1998",
   q:"What was the CPF withdrawal dispute and how was it linked to water?",
+  exp:"Malaysian workers who lost jobs wanted their CPF savings early, but Singapore law did not allow it. Mahathir denied any connection with water, yet the CPF request came just a week before he raised the water issue, which suggests issues were being linked. That is why it is classed as mixed: partly an AFC-driven economic grievance and partly part of the wider bargaining over water.",
   pts:["Retrenched West Malaysian workers wanted early CPF withdrawal",
        "Singapore law only allowed withdrawal at 55/disability/permanent departure",
        "Mahathir denied linking it to water, but the CPF request came just a week before water was raised (Jul 1998)",
@@ -203,6 +230,7 @@ add("Causes: Interrelatedness of Disputes", { id:"wd-cpf", title:"CPF withdrawal
 add("Causes: Interrelatedness of Disputes", { id:"wd-ciq", title:"Relocation of CIQ", when:"1989–2011",
   q:"What was the CIQ dispute?",
   clue:"Singapore moved its customs post from Tanjong Pagar to Woodlands in 1989; a 1990 deal with Daim Zainuddin was reneged on in 1997.",
+  exp:"Singapore moved its checkpoint to Woodlands to fight drug smuggling and got Malaysia to agree to co-locate in 1990. Malaysia’s reversal in 1997 came during a tense period, so the timing deepened Malaysian suspicion of Singapore. It is classed as circumstantial because it was not caused by the AFC, but it added to the pile of disputes that water was tied up with.",
   pts:["1989: Singapore moved its CIQ to Woodlands (from Tanjong Pagar) to curb drug smuggling; wanted Malaysia to co-locate",
        "Points of Agreement (POA) signed 27 Nov 1990 (LKY–Daim Zainuddin)",
        "1997: Malaysia reneged, stayed at Tanjong Pagar — timing fuelled Malaysian suspicion of Singapore",
@@ -210,25 +238,30 @@ add("Causes: Interrelatedness of Disputes", { id:"wd-ciq", title:"Relocation of 
        "Category: circumstantial (not directly AFC-related)"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-rsaf", title:"RSAF airspace revoked", when:"Sep 1998",
   q:"What happened over RSAF use of Malaysian airspace?",
+  exp:"Revoking the RSAF’s use of southern Johor airspace was both a cause and a sign of bad relations: it added a new grievance, but it also reflected mistrust that already existed. This mirrors the way water itself worked as both symptom and cause, and it later became one of the items in the package negotiations.",
   pts:["Sep 1998: Malaysia revoked RSAF's use of southern Johor airspace",
        "Both exacerbated tensions and was symptomatic of pre-existing mistrust"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-bridge", title:"Causeway-replacement bridge", when:"2000",
   q:"How did the proposal to rebuild the Causeway as a bridge fit into bilateral talks?",
+  exp:"The bridge proposal shows how the package widened to include issues raised by either side. It was Malaysia’s idea, not originally on Singapore’s agenda, but SM Lee accepted it as part of the give-and-take. Since it did not involve direct competition between the two states, it was less contentious, showing that not every bilateral issue was a source of friction.",
   pts:["2000: Mahathir proposes replacing the Causeway with a bridge",
        "Not originally on Singapore's bilateral agenda, but SM Lee agreed to include it in the 2000 ‘package’ negotiations",
        "Less contentious — no direct state competition"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-lky-remarks", title:"LKY's provocative remarks", when:"1996–1998",
   q:"How did Lee Kuan Yew's remarks inflame relations in 1996–98?",
+  exp:"These episodes show how a leader’s words could inflame relations. Lee’s comments on re-merger, Johor crime and Malaysian politicians in his memoirs were read in Malaysia as insulting or provocative, sparking press fury and even contributing to Malaysia skipping an FPDA exercise. Since water threats resurfaced after the Johor remarks, they show personal remarks feeding into the water dispute.",
   pts:["1996: LKY's remark that re-merger would be ‘easier’ if Malaysia were meritocratic — read as provocative; Mahathir called it insincere",
        "1997: LKY called Johor crime-ridden (in a defamation-suit affidavit re: Tang Liang Hong) — fury in the Malaysian press; LKY apologised",
        "1998: unflattering remarks about Malaysian politicians in LKY's memoirs (The Singapore Story) angered the Malaysian elite — contributed to Malaysia skipping an Oct 1998 FPDA exercise"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-lim-hng-kiang", title:"Lim Hng Kiang's water-quality remarks", when:"May 1998",
   q:"Why did Lim Hng Kiang's May 1998 remarks matter?",
+  exp:"Lim’s questioning of Malaysian treated-water quality touched the water issue directly and was taken as an insult. In an already tense climate, it strengthened Malaysian calls to scrap the water agreements altogether. It shows how a single comment could escalate the dispute, supporting the argument that leaders’ remarks, not just structural factors, drove tensions.",
   pts:["Questioned the quality of Malaysian treated water",
        "Interpreted as an insult",
        "Amplified Malaysian calls to dissolve the water agreements entirely"] });
 add("Causes: Interrelatedness of Disputes", { id:"wd-mahathir", title:"Mahathir's confrontational diplomacy", when:"1981–2003, 2018–2020",
   q:"What was Mahathir's role in the water dispute, and what may have motivated him?",
+  exp:"Water-cutoff threats line up closely with Mahathir’s time in office, which suggests his personal style of confrontational diplomacy was a major driver. The suggested motives link back to wider themes: abang status and resentment of Singapore’s success, Malay politics and PAS, and distracting from his conflict with Anwar. Because these motives are not confirmed, treat them as interpretations to weigh rather than established fact.",
   pts:["PM 1981–2003, 2018–2020; practised ‘confrontational diplomacy’ (Najib Razak's later term); consistently antagonistic toward Singapore",
        "Water-cutoff threats correlate specifically with his terms",
        "Possible motives (not officially confirmed): historical baggage/asserting ‘abang’ status; resentment of Singapore's economic success",
@@ -239,6 +272,7 @@ add("Causes: Interrelatedness of Disputes", { id:"wd-mahathir", title:"Mahathir'
 add("Management of the Dispute", { id:"wd-funds-water", title:"‘Funds for Water’ deal", when:"Nov 1998",
   q:"What was the ‘Funds for Water’ deal and why did it fall away?",
   clue:"Goh Chok Tong went to KL; Singapore offered loans for the ringgit in return for guaranteed long-term supply with no price review.",
+  exp:"This deal shows water used as a tool for cooperation. Malaysia needed money during the AFC, and Singapore was willing to lend in return for long-term water security without price revisions, a trade both sides could accept. When Malaysia’s economy recovered and it no longer needed the loans, Mahathir dropped the deal and proposed linking everything, which led to the package approach.",
   pts:["Goh Chok Tong visited KL on Mahathir's invitation to discuss water, RSAF airspace and CIQ together",
        "Malaysia requested financial loans for its depreciating ringgit; Singapore agreed (goodwill given market risk)",
        "In return Singapore sought a guaranteed long-term water supply (no price review under current agreements)",
@@ -246,6 +280,7 @@ add("Management of the Dispute", { id:"wd-funds-water", title:"‘Funds for Wate
        "As Malaysia's economy recovered, Mahathir dropped the loan request and proposed linking ALL outstanding bilateral issues — the ‘package’ approach"] });
 add("Management of the Dispute", { id:"wd-package", title:"‘Package’ approach", when:"1998–2000",
   q:"What was the ‘package’ approach to bilateral issues?",
+  exp:"Bundling all issues allowed trade-offs, since each side could concede on some points to gain on others, and this predictability eased tensions. The low 3 sen raw-water price compared with the 50 sen treated-water price explains why Malaysia pushed for an increase. The period ends positively, but because Malaysia kept revising its demands, the package was never formally adopted and collapsed after 2000.",
   pts:["1998: Mahathir proposes discussing water alongside other bilateral issues as one ‘package’ — eased tensions via mutual concessions and predictability",
        "Aug 2000: Malaysia requests raw water price rise to 45 sen/1,000 gallons (from 3 sen, 1961 rate) — not formally adopted due to further unilateral revisions in the early 2000s",
        "Singapore still buys raw water at 3 sen/1,000 gallons and sells treated water to Johor at 50 sen/1,000 gallons (as of the notes)",
@@ -253,6 +288,7 @@ add("Management of the Dispute", { id:"wd-package", title:"‘Package’ approac
        "Ends the syllabus period (2000) on a broadly positive note — but would collapse in the early 2000s"] });
 add("Management of the Dispute", { id:"wd-catchments", title:"Local catchments", when:"1963–2002",
   q:"How did Singapore expand local catchments?",
+  exp:"Expanding local catchments was Singapore’s main way of reducing its reliance on Johor. Damming rivers, building stormwater collection and heavy spending meant that by 2002 about half the water supply came from catchments. River clean-ups and better sewerage supported this. The more water Singapore produced itself, the less leverage Malaysia’s water threats carried.",
   pts:["Post-1963 Public Utilities Ordinance (PUB established)",
        "Damming of 7 rivers; SEA's first stormwater collection system",
        "S$1.9 billion capex (1963–1993)",
@@ -261,6 +297,7 @@ add("Management of the Dispute", { id:"wd-catchments", title:"Local catchments",
 add("Management of the Dispute", { id:"newater", title:"NEWater & desalination", when:"1997–2011",
   q:"How did NEWater and desalination reduce Singapore's dependence on Malaysia?",
   clue:"Recycled water unveiled at the 9 Aug 2002 National Day Parade, alongside desalination plans first announced in 1997.",
+  exp:"NEWater and desalination added new sources that did not depend on Malaysia at all. The goal of large volumes of water from these “new taps” allowed Singapore to say it would not renew the 1961 agreement, which then expired in 2011. This is a central reason tensions eased: once Singapore relied less on Johor, Malaysia’s ability to use water as leverage shrank.",
   pts:["Desalination plans announced 1997 (pre-qualification tenders for a 20-year contract, early 2000s)",
        "NEWater introduced 9 Aug 2002 (National Day Parade); formally rolled out 2003",
        "Goal: 55 mgd (257,000 m³) of freshwater from new ‘taps’ by 2010",
@@ -268,18 +305,21 @@ add("Management of the Dispute", { id:"newater", title:"NEWater & desalination",
 add("Management of the Dispute", { id:"wd-indonesia-water", title:"Importing water from Indonesia", when:"1987–1991",
   q:"What came of Singapore's plan to import water from Indonesia?",
   clue:"A 1990–91 deal for 1,000 million gallons/day for 100 years from Sungei Kampar that never materialised.",
+  exp:"Indonesia offered a geographically workable alternative supplier, and the agreements for a large 100-year supply would have greatly cut dependence on Malaysia. But the plan collapsed amid Indonesia’s instability after the AFC during the move from Suharto to Habibie. It shows Singapore actively diversifying, while also showing the limits of relying on another neighbour.",
   pts:["1987: LKY publicly expresses interest — geographically viable alternative to Malaysia",
        "28 Aug 1990: Water Agreement signed (Singapore–Indonesia)",
        "1991: further agreement confirms 1,000 million gallons/day for 100 years, drawing from Sungei Kampar (West Sumatra)",
        "Never materialised — derailed by Indonesia's post-AFC political instability (Suharto → Habibie democratic transition)"] });
 add("Management of the Dispute", { id:"wd-demand", title:"Demand-side measures", when:"10 Jun 1997",
   q:"What demand-side measures did Singapore announce in 1997?",
+  exp:"These measures attacked the problem from the demand side by using less water rather than finding more. Pricing water to reflect its scarcity, public campaigns and incentives or laws for industry to conserve and recycle all reduced consumption. Announced in 1997, during rising tension, they show Singapore responding to Malaysian threats by reducing the dependence that made those threats effective.",
   pts:["10 Jun 1997: Singapore announces measures to cut water dependence",
        "Tariff restructuring to reflect scarcity value",
        "PUB's annual ‘Save Water’ campaigns",
        "Industrial conservation/recycling incentives and legislation"] });
 add("Management of the Dispute", { id:"wd-mgmt-exam", title:"Exam focus: management", when:"1998–2003",
   q:"How should Section V (management) be used in essays?",
+  exp:"This section is your counterweight to the flashpoint argument. The funds-for-water deal and the package show water being used to build cooperation, so you can argue water was both cause and symptom of relations. The alternative sources explain why tensions faded after 2003: as Singapore’s dependence fell, so did Malaysia’s leverage, making the water threat less powerful.",
   pts:["Key pivot: water/cooperation used constructively (funds-for-water, ‘package’ approach) — contrast with the flashpoint dynamic to argue water is BOTH cause and symptom",
        "Alternative sources (NEWater, desalination, Indonesia, catchments) explain WHY tensions eased after 2003",
        "Reduced dependence = reduced Malaysian leverage"] });
@@ -287,6 +327,7 @@ add("Management of the Dispute", { id:"wd-mgmt-exam", title:"Exam focus: managem
 /* ── VI. After 2000 (Context Only) ── */
 add("Development after 2000 (Context Only)", { id:"wd-post2000-tl", title:"Timeline 2001–2003", when:"2001–2003",
   q:"What were the key events of the water dispute in 2001–2003?",
+  exp:"After 2000 Malaysia kept raising its price demands and recast the agreements as unequal British treaties, while Singapore insisted on legal obligations. Mahathir’s cancelling of the package and attempt to separate water from other issues ended the cooperative approach. Singapore’s release of the correspondence was a defensive move, and the dispute faded once Mahathir stepped down. Use this mainly for SBQ provenance.",
   pts:["21 Feb 2001: Malaysia requests increase from 45 sen to 60 sen; early 2002: Mahathir calls the agreements ‘unequal treaties’ forced by the British",
        "Feb 2002: Singapore sends diplomatic note re: package + legal obligations; Mar 2002: Malaysia denies faltering commitment to the package",
        "9 Aug 2002: PUB launches NEWater at NDP; Sep 2002: Malaysia requests increase from 60 sen to RM6.25",
@@ -295,16 +336,19 @@ add("Development after 2000 (Context Only)", { id:"wd-post2000-tl", title:"Timel
        "31 Oct 2003: Mahathir steps down; not required for SBQ substantiation but useful for provenance"] });
 add("Development after 2000 (Context Only)", { id:"wd-profiteer", title:"‘Profiteering’ charge & rebuttal", when:"2000s",
   q:"Why did the dispute re-emerge after 2000, and how did Singapore rebut the ‘profiteering’ charge?",
+  exp:"Malaysia’s charge relied on comparing the 3 sen raw-water price with the 50 sen treated price. Singapore’s rebuttal was that treating water cost far more, so it was subsidising Johor, and that Malaysia itself sold water to Johor residents at much higher prices. The other triggers, like the tudung ban and FTAs, plus Mahathir’s stance, show the revival was tied to wider tensions, not just price.",
   pts:["Malaysia: Singapore ‘profiteered’ — buying raw water at 3 sen, selling treated at 50 sen",
        "Singapore: treating water costs RM2.40/1,000 gallons, so it absorbs a RM1.90 subsidy per 1,000 gallons",
        "Malaysia itself profited selling to Johor residents at RM3.95/1,000 gallons",
        "Other possible triggers: Pulau Pisang lighthouse, tudung ban in Singapore schools, Singapore's bilateral FTAs — plus Mahathir's hardline posture"] });
 add("Development after 2000 (Context Only)", { id:"wd-review-right", title:"Right to review the price", when:"2000s",
   q:"What were the two sides' positions on Malaysia's right to review the water price?",
+  exp:"The two positions hinge on what happened in 1986/87 and in 2000. Singapore argued that because Malaysia did not use its review right in time, the right had lapsed and new demands were provocative. Malaysia argued that by negotiating a 45 sen price in 2000, SM Lee had accepted that Malaysia could still review. This explains why the package talks became legally contested later.",
   pts:["Singapore: Malaysia's formal review right expired in 1987 (unused) — further revisions are provocative",
        "Malaysia: SM Lee's Aug 2000 bilateral negotiation (to 45 sen) implicitly conceded Malaysia's right to review"] });
 add("Development after 2000 (Context Only)", { id:"wd-framing-2002", title:"Framing the dispute 2002–03", when:"2002–2003",
   q:"How was the dispute framed publicly in 2002–2003?",
+  exp:"Calling the agreements unequal colonial treaties, and suggesting Malaysia could void them by law, directly challenged Singapore’s view that they were part of its sovereignty and brought Malaysian media into the fight. Singapore’s publication of the correspondence was a deliberate defence, as Jayakumar admits, which matters when judging the purpose and bias of sources. The dispute eased once Mahathir left office.",
   pts:["Early 2002: Mahathir frames the agreements as unequal British-imposed treaties — draws Malaysian media in",
        "24 Oct 2002: Rais Yatim says Malaysia could pass domestic legislation to void the agreements — challenge to Singapore's sovereignty framing",
        "25 Jan 2003: Singapore releases prior correspondence — a deliberate, defensive act (SBQ provenance point for bias/purpose)",
@@ -312,6 +356,7 @@ add("Development after 2000 (Context Only)", { id:"wd-framing-2002", title:"Fram
        "Dispute subsides after Mahathir steps down (31 Oct 2003)"] });
 add("Development after 2000 (Context Only)", { id:"wd-2018", title:"2018 renewed disagreements", when:"2016–2020",
   q:"What happened to the water issue in 2016–2020?",
+  exp:"Najib’s reaffirmation of the 1962 Agreement shows that under a different leader relations on water could be calm. When Mahathir returned and called the price ridiculous, the dispute revived, and Singapore again pointed to the UN-registered Separation Agreement. Since it stalled again after he resigned, this strongly supports the link between the dispute and Mahathir’s personal leadership.",
   pts:["Dec 2016: Najib affirms commitment to 1962-level supply despite Malaysian water challenges",
        "Jan 2018 Leaders' Retreat: Najib–Lee Hsien Loong joint statement reaffirms the 1962 Agreement",
        "Jul 2018: Mahathir (returned as PM) calls the price ‘ridiculous’, seeks renegotiation of the 1962 Agreement",
@@ -321,6 +366,7 @@ add("Development after 2000 (Context Only)", { id:"wd-2018", title:"2018 renewed
 /* ── VII. Consequences ── */
 add("Consequences of the Dispute", { id:"wd-conseq-sgmy", title:"Consequences for Singapore–Malaysia relations", when:"1965–2002",
   q:"How did the water issue affect Singapore–Malaysia relations?",
+  exp:"Water pushes relations in two directions: disputes like CIQ, CLOB and CPF made it a flashpoint that worsened ties, while funds-for-water and the package show cooperation improving them. The underlying reason is mutual need, since Singapore buys raw water and Johor buys back treated water. Goh’s view that Singapore should not aim for full self-reliance treats water as a symbol of this lasting interdependence.",
   pts:["Water intersects with other issues in TWO directions",
        "[NEGATIVE] water disputes as a flashpoint (e.g. CIQ, CLOB, CPF) → deterioration of relations",
        "[POSITIVE] water cooperation as a symptom of cooperation (e.g. ‘funds for water’, ‘package’) → improvement",
@@ -330,6 +376,7 @@ add("Consequences of the Dispute", { id:"wd-conseq-sgmy", title:"Consequences fo
 add("Consequences of the Dispute", { id:"wd-conseq-indo", title:"Consequences for Singapore–Indonesia relations", when:"1990–2000",
   q:"How did water affect Singapore–Indonesia relations?",
   clue:"Gus Dur in Nov 2000 spoke of jointly restricting supply with Mahathir to ‘teach Singapore a lesson’.",
+  exp:"Even without actual water sales, Indonesia showed attitudes similar to Malaysia’s: resentment that Singapore relied on neighbours, environmental worries and accusations of exploitation. Gus Dur’s talk of joining Malaysia to restrict water to teach Singapore a lesson shows a desire to check Singapore, and it strengthened Singapore’s push for self-reliance. It was less serious because nothing was formally put in place.",
   pts:["Indonesia's proposed water sales never materialised, but Indonesia showed similar attitudes to Malaysia",
        "Resentment/scapegoating: belief Singapore's success depends on neighbours' goodwill (water, raw materials, trade); unhappiness over potential ecological damage from the Sungei Kampar reservoir; accusations Singapore ‘exploited’ Indonesia",
        "Nov 2000: President Abdurrahman Wahid (‘Gus Dur’) called Singapore profit-minded and manipulative",
@@ -337,6 +384,7 @@ add("Consequences of the Dispute", { id:"wd-conseq-indo", title:"Consequences fo
        "Overall less serious than the Malaysia dispute, as no plans were formally implemented"] });
 add("Consequences of the Dispute", { id:"wd-essay-synth", title:"Essay synthesis", when:"1965–2000",
   q:"How can the water dispute be structured in an essay?",
+  exp:"This structure lets you show water working in three ways: reflecting deep distrust from Separation, worsening relations as a flashpoint, and enabling cooperation when both sides gained from calm, as during the AFC. The Malaysia–Indonesia comparison adds depth: both displayed big-sibling attitudes, but only Malaysia had binding agreements to use as leverage, which explains why its dispute escalated further.",
   pts:["(a) SYMPTOM of deeper Singapore–Malaysia distrust/Separation legacy",
        "(b) CAUSE of further deterioration via its flashpoint role",
        "(c) VEHICLE for cooperation when both sides had incentive to de-escalate (AFC period)",
@@ -347,6 +395,7 @@ add("Consequences of the Dispute", { id:"wd-essay-synth", title:"Essay synthesis
 add("Annex: Other Sources of Tension", { id:"pedrabranca", title:"Pedra Branca dispute", when:"1979–2008",
   q:"How did the Pedra Branca dispute arise and develop?",
   clue:"A 2,000m² reef with the Horsburgh Lighthouse (1851), claimed on a 1979 Malaysian map as part of Johor.",
+  exp:"Pedra Branca was uncontested for over a century, so Malaysia’s 1979 map claim, linked to defining territory before UNCLOS, created a new dispute. The two sides based their claims on different histories: Johor’s original sovereignty versus Singapore’s long administration and treaties, with Johor itself disclaiming ownership in 1953. Political use of the issue in Malaysia escalated it and added to the tensions surrounding water.",
   pts:["Pedra Branca (Pulau Batu Putih): 2,000m² reef where the Singapore Strait meets the South China Sea; Horsburgh Lighthouse built 1851, maintained by British then Singapore",
        "No contention through the 1960s; Singapore held de facto sovereignty since the 1840s",
        "1979: Malaysia's first map claim (part of Johor) — tied to defining territory ahead of UNCLOS (1973–82); Feb 1980: Singapore rejects via diplomatic note, noting unilateral map-making",
@@ -356,6 +405,7 @@ add("Annex: Other Sources of Tension", { id:"pedrabranca", title:"Pedra Branca d
        "Escalated in the 1990s via press attacks; with other issues set the backdrop for deteriorating water relations in the 2000s"] });
 add("Annex: Other Sources of Tension", { id:"wd-pb-icj", title:"Pedra Branca: ICJ resolution", when:"1994–2019",
   q:"How was the Pedra Branca dispute resolved, and what followed?",
+  exp:"Referring the case to the ICJ shows the two states choosing a legal route, though it took over a decade to submit. The ICJ accepted that Johor originally held sovereignty but ruled that Singapore’s long administration and Malaysia’s silence had transferred it, while Malaysia got Middle Rocks. Najib’s later attempt to reopen the case and Singapore’s symbolic step in 2019 show the issue stayed politically sensitive.",
   pts:["Sep 1994: Goh–Mahathir agree to refer to the ICJ; Jun 1995 bilateral talks on referral fail; case only submitted 2005",
        "May 2008: ICJ awards Pedra Branca to Singapore — Johor held original sovereignty, but Singapore's long administration + Malaysia's non-response meant sovereignty had passed to Singapore by 1980",
        "Middle Rocks awarded to Malaysia; South Ledge unresolved (belongs to whichever state's territorial waters it falls in — undemarcated)",
@@ -363,6 +413,7 @@ add("Annex: Other Sources of Tension", { id:"wd-pb-icj", title:"Pedra Branca: IC
        "Feb 2019: Singapore adds Pedra Branca to East Coast GRC ahead of 2020 election — symbolic sovereignty affirmation (no permanent residents; access restricted)"] });
 add("Annex: Other Sources of Tension", { id:"wd-defence", title:"Singapore's defence posture", when:"1970s–1990s",
   q:"What was Singapore's security posture and doctrine?",
+  exp:"Singapore’s very high defence spending reflects its sense of vulnerability as a small state next to larger neighbours, worsened by the racial tensions of independence. Its doctrine changed from “Poisonous Shrimp”, deterring attack by being hard to swallow, to “Swift and Decisive Victory”, because deterrence alone meant fighting only on home soil. This links to the SAF’s role as insurance against a water cut-off.",
   pts:["Defence budget highest in SEA: ~5% of GDP, 25–30% of annual budget",
        "Reflects insecurity from small size relative to Malaysia/Indonesia and independence-era Malay-Chinese tensions",
        "1970s–80s ‘Poisonous Shrimp’: deterrence via being ‘small but indigestible’",
@@ -370,6 +421,7 @@ add("Annex: Other Sources of Tension", { id:"wd-defence", title:"Singapore's def
 add("Annex: Other Sources of Tension", { id:"malindo", title:"Operation Malindo Darsasa 3AB", when:"9 Aug 1991",
   q:"What was Malindo Darsasa 3AB and how did Singapore respond?",
   clue:"A Malaysia–Indonesia simulated airborne assault 18km from Woodlands on Singapore's National Day, met by Operation Trojan.",
+  exp:"Holding a simulated airborne assault close to Singapore on its National Day was read as a deliberate provocation, so Singapore answered with a full alert and partial mobilisation. Malaysian politicians then threatened to take back Pedra Branca or even Singapore. This shows how one dispute could quickly feed into others, the same dynamic that made water a recurring flashpoint.",
   pts:["9 Aug 1991 (Singapore's National Day): Malaysia–Indonesia joint exercise — simulated airborne assault just 18km from Woodlands",
        "Singapore viewed it as highly provocative (timing, offensive nature, proximity)",
        "Response: Operation Trojan — full SAF alert, partial reserve mobilisation (incl. armoured brigade), live ammunition issued",
@@ -378,11 +430,13 @@ add("Annex: Other Sources of Tension", { id:"malindo", title:"Operation Malindo 
 /* ── Quick-Recall Summary ── */
 add("Quick-Recall Summary", { id:"wd-summary-causes", title:"Summary: causes & stances", when:"1965–2000",
   q:"Summarise the root cause and each side's stance.",
+  exp:"The root cause combines history and structure: Separation left distrust, and Singapore’s dependence on Malaysian water gave Malaysia a lasting lever. Singapore’s stance rests on survival and sovereignty, which is why it defended the agreements and built the SAF. Malaysia’s escalations came from domestic pressures, including Mahathir’s style and the optics of selling water cheaply. Use this as a framework for causation essays.",
   pts:["Root cause: Separation legacy + structural asymmetry (Singapore's water dependence) created a persistent flashpoint",
        "Singapore: sanctity of 1961/62 agreements = sovereignty; existential survival concern; built SAF as deterrence",
        "Malaysia: domestic politics (Mahathir's ‘confrontational diplomacy’, water optics, economic pressures) drove periodic escalation"] });
 add("Quick-Recall Summary", { id:"wd-summary-dynamics", title:"Summary: dynamics & resolution", when:"1986–2018",
   q:"Summarise the flashpoint and cooperative dynamics and the path to resolution.",
+  exp:"This summary sets out the dispute’s full path. Water was used as leverage in unrelated disputes, but it also enabled cooperation through the funds-for-water deal and the package. Over time, Singapore’s push for its own water sources removed much of Malaysia’s leverage. The flare-ups after 2000 matching Mahathir’s time in office show that leadership remained a key variable even as structural dependence declined.",
   pts:["Flashpoint: water threats used as leverage in unrelated disputes (Herzog visit, AFC-era CLOB/CPF/CIQ/RSAF)",
        "Cooperative: ‘funds for water’ (1998) and ‘package’ approach show water enabling cooperation too",
        "Resolution path: self-sufficiency drive (catchments, NEWater, desalination, Indonesia attempt) reduced Malaysia's leverage over time",

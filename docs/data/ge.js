@@ -6,6 +6,7 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"ge", sec, src:S, qs:"me" }
 /* ── The Big Picture ── */
 add("The Big Picture", { id:"ge-define", title:"Defining “the global economy”", when:"framework",
   q:"What is “the global economy”? Name the lenses through which it can be understood.", qs:"notes",
+  exp:"The definition stresses interdependence: production, distribution and consumption link economies, firms and individuals across borders and blocs, so a shock in one place travels to others. The lenses matter because the same event looks different depending on whether you sort countries by income, structure, geography or ideology. Calling it “development” rather than “growth” reminds you the topic covers crisis as well as boom, so essays should not assume the story is one of steady progress.",
   pts:["The interconnected, interdependent system of production, distribution and consumption of goods and services worldwide",
        "i.e. economic interactions among economies, businesses and individuals, within or between economic blocs",
        "Lenses: level of development/income (Developed vs Less Developed); structure (industrialised vs industrialising)",
@@ -13,6 +14,7 @@ add("The Big Picture", { id:"ge-define", title:"Defining “the global economy�
        "“Development” includes both growth and crisis — a neutral term, not necessarily positive"] });
 add("The Big Picture", { id:"ge-phases", title:"Four-phase periodisation", when:"1945–1990s",
   q:"State the four-phase periodisation of the global economy, 1945–2000, and the key idea of each phase.",
+  exp:"The four phases give your essay a timeline for judging which factor mattered most when: US aid dominates reconstruction, liberalisation and active governments drive the Golden Age, and US decline marks the late 1960s. Examiners reward showing that the weight of each factor shifted across phases. The phases are also linked, not separate stories, because the Crisis Decades grew out of problems such as US overstretch and financial liberalisation that started during the Golden Age.",
   pts:["1945–1952: Postwar Economic Reconstruction — rebuilding war-devastated Europe & Japan with US aid",
        "1952–late 1960s: Postwar Economic Liberalisation (“Golden Age of Capitalism”) — free trade, mixed economy, unprecedented growth",
        "Late 1960s–1973: Reversal/slowing of liberalisation — US decline begins; Bretton Woods under strain",
@@ -21,6 +23,7 @@ add("The Big Picture", { id:"ge-phases", title:"Four-phase periodisation", when:
        "Seeds of the 1970s crises (financial liberalisation, US overstretch) were sown during the Golden Age itself"] });
 add("The Big Picture", { id:"ge-narrative", title:"The master narrative", when:"1945–2000",
   q:"Summarise the master narrative of the global economy from 1945 to the Crisis Decades.",
+  exp:"The narrative is a chain of cause and effect. US aid and security guarantees, driven by containment and the wish for a multilateral order, rebuilt Europe and Japan and fed the Golden Age. But that very recovery created rivals, and together with deficits and Vietnam costs it eroded the US dominance that Bretton Woods depended on. The collapse of that system, plus the oil shocks, protectionism and debt, then fell hardest and longest on developing countries.",
   pts:["1945–52: USA dominant, using aid (Marshall Plan, Japan occupation aid) and security guarantees (NATO, US–Japan Treaty)",
        "Motivated by Cold War containment and a liberal, multilateral world economy (Pax Americana)",
        "1952–late 1960s: Golden Age — trade barriers fell (GATT), blocs formed (EEC, EFTA, EPU), MNCs expanded, Keynesian mixed economies grew",
@@ -29,6 +32,7 @@ add("The Big Picture", { id:"ge-narrative", title:"The master narrative", when:"
        "These hit developing countries far harder and for far longer than developed ones"] });
 add("The Big Picture", { id:"ge-indicators", title:"Growth vs crisis: key indicators", when:"1950–97",
   q:"Contrast the Golden Age (1950–73) and Crisis Decades (1973–97) on GDP growth, trade, inflation, unemployment and productivity.",
+  exp:"Each indicator roughly halves or worsens after 1973: growth falls from about 5% to the 2% range, trade growth slows sharply, inflation more than doubles and unemployment rises from near full employment to double digits in places. Productivity growth falling to under half its earlier rate helps explain the slowdown. Use this table to prove that the post-1973 period was a genuine break from the Golden Age, not just a minor downturn.",
   pts:["GDP growth (advanced capitalist): ~5% (1963–73) vs 2.5% (1973–79) → 2.7% (80s) → 2.2% (90s)",
        "World export volume growth: 8% p.a. (1960–73) vs 4.5% (73–79) → 1.5% (80s) → 4.5% (90–95)",
        "Inflation (industrialised): ~4% (1950–73) vs 9.9% average; 12.5% in 1974",
@@ -38,6 +42,7 @@ add("The Big Picture", { id:"ge-indicators", title:"Growth vs crisis: key indica
 /* ── Postwar Reconstruction (1945–1952) ── */
 add("Postwar Reconstruction (1945–1952)", { id:"ge-postwar-state", title:"The state of the world after WWII", when:"1945",
   q:"Which areas were worst hit by WWII, and what did reconstruction require?",
+  exp:"Because destruction was uneven, recovery needed more than money: command economies had to go, prices and wages had to be freed, and the dollar shortage had to end so countries could import the capital goods to rebuild. Germany was the crux because West Germany was Europe’s largest market and main capital-goods exporter, so the rest of Europe could not recover while it stayed weak. This explains why US policy soon focused on rebuilding Germany rather than punishing it.",
   pts:["Destruction uneven: worst hit were Germany, Eastern Europe, large areas of China and Japan",
        "Serious damage also in Britain, Italy and Greece",
        "Required: abolishing command economies; liberalising prices/wages; ending the “dollar shortage” to import capital goods",
@@ -45,6 +50,7 @@ add("Postwar Reconstruction (1945–1952)", { id:"ge-postwar-state", title:"The 
        "West Germany was Europe’s largest market and prime capital-goods exporter, so rebuilding it was essential"] });
 add("Postwar Reconstruction (1945–1952)", { id:"ge-europe-recon", title:"Reconstruction in Europe", when:"1945–1973",
   q:"Why was Germany central to European reconstruction, and what do historians say about reconstruction growth?",
+  exp:"Germany’s rebuilding mattered for everyone because of its role as Europe’s largest market and capital-goods supplier, which is why the Marshall Plan set out to remobilise German industry. Historians such as Dumke and Temin confirm that reconstruction growth drove Europe’s postwar “miracles”, and Vonyó shows the effect lasted to the end of the Golden Age. This supports the view that much Golden Age growth was recovery from a damaged base, not only new policy.",
   pts:["Germany defeated/divided, but its rebuilding was vital to the whole region’s recovery",
        "The Marshall Plan deliberately aimed to remobilise German industry",
        "Reconstruction growth econometrically confirmed by Dumke (1990) and Temin (2002)",
@@ -53,12 +59,14 @@ add("Postwar Reconstruction (1945–1952)", { id:"ge-europe-recon", title:"Recon
 add("Postwar Reconstruction (1945–1952)", { id:"ge-japan-occupation", title:"US occupation and the Reverse Course in Japan", when:"1945–1952",
   q:"What was the “Reverse Course” in occupied Japan, and why did the US adopt it?",
   clue:"MacArthur-led reforms gave way, 1947/48–1950, to prioritising economic rehabilitation over punitive demilitarisation.",
+  exp:"The Reverse Course shows US priorities changing with the Cold War. Early occupation reforms aimed to demilitarise and reform Japan, but economic crisis and the likely communist victory in China made Washington fear that a weak Japanese economy would strengthen domestic communists and threaten all of East Asia. So rebuilding Japan’s economy took priority over punishment. It is good evidence that US aid was driven by containment as much as generosity.",
   pts:["1945–1952: US occupation under Gen. MacArthur enacted sweeping military, political, economic and social reforms",
        "Reverse Course (1947/48–1950): economic crisis + fear of communism (esp. likely CCP victory in China)",
        "US prioritised Japan’s economic rehabilitation over punitive demilitarisation",
        "Key US motivation: weak Japanese economy → stronger domestic communist movement → threat to all of East Asia"] });
 add("Postwar Reconstruction (1945–1952)", { id:"ge-miracles", title:"West German and Japanese “economic miracles”", when:"1949–73",
   q:"Give the growth statistics for the West German and Japanese economic miracles and world industrial production.",
+  exp:"These figures show why the term “miracle” is used: West Germany doubled industrial output in seven years and Japan averaged over 10% growth to become the third-largest economy by 1970. World industrial production also reached a record growth rate, so the boom was not confined to two countries. In an essay, pair these statistics with the catch-up argument to test whether the growth was truly miraculous or partly a rebound from wartime destruction.",
   pts:["West Germany: real GDP growth averaged 7.4% (1949–59); industrial production doubled 1950–57; GNP grew 9–10%/yr",
        "Japan (‘Japanese Miracle’, 1954–73): average growth >10%/yr",
        "Japan: 7.1% (1945–58) → 9.5% (1959–70); 3rd largest economy by 1970",
@@ -66,12 +74,14 @@ add("Postwar Reconstruction (1945–1952)", { id:"ge-miracles", title:"West Germ
 add("Postwar Reconstruction (1945–1952)", { id:"ge-birddog", title:"Operation Bird Dog", when:"1948",
   q:"What was Operation Bird Dog and what was its effect?",
   clue:"1948 West German currency reform replacing the Reichsmark that launched the Wirtschaftswunder.",
+  exp:"Operation Bird Dog shows how a single monetary reform could unlock recovery. Replacing the discredited Reichsmark with the Deutsche Mark restored a working currency, and industrial production jumped 15% within weeks and 50% within six months. That is why it is treated as the start of the Wirtschaftswunder. It is useful evidence that deliberate policy, backed by the occupying powers, rather than chance alone, helped launch West Germany’s miracle.",
   pts:["1948, West Germany: replaced the Reichsmark with the Deutsche Mark",
        "Industrial production +15% (June–July 1948)",
        "Industrial production +50% (June–Dec 1948)",
        "Start of the Wirtschaftswunder (“Miracle on the Rhine”)"] });
 add("Postwar Reconstruction (1945–1952)", { id:"ge-vanderwee", title:"Van Der Wee: catch-up growth", when:"evaluation",
   q:"What irony does Van Der Wee highlight about postwar prosperity, and how can it be used in an essay?",
+  exp:"Van Der Wee’s point is that high postwar growth rates partly reflect how low the starting point was after depression and war: rebuilding from ruins naturally produces fast catch-up growth. This does not mean policy was irrelevant, but it weakens claims that the recovery was purely the result of clever policy. Use it as the counter-argument in “how miraculous was the recovery” essays, then weigh it against genuinely new features such as unprecedented cooperation.",
   pts:["Postwar prosperity was preceded by depression and war",
        "Growth partly reflects a low post-destruction starting base (“catch-up growth”), not purely policy success",
        "Useful counter-argument when evaluating “how miraculous” the recovery really was"] });
@@ -79,12 +89,14 @@ add("Postwar Reconstruction (1945–1952)", { id:"ge-vanderwee", title:"Van Der 
 /* ── Golden Age of Capitalism (1952–1973) ── */
 add("Golden Age of Capitalism (1952–1973)", { id:"ge-liberalisation-def", title:"Economic liberalisation defined", when:"1952–1973",
   q:"Define economic liberalisation.",
+  exp:"Liberalisation means the state stepping back from controlling the economy: freeing trade, removing subsidies, price controls and rationing, and shrinking or privatising public services. The common thread is fewer state restrictions so that trade can flow freely. Keep this definition precise because the Golden Age combined liberalised trade with a larger state role at home through the mixed economy, and good essays recognise both sides of that combination.",
   pts:["Government policies promoting free trade and deregulation",
        "Removing subsidies, price controls and rationing",
        "Downsizing/privatising public services",
        "i.e. reducing state restrictions to promote free trade"] });
 add("Golden Age of Capitalism (1952–1973)", { id:"ge-boom-scale", title:"Scale of the Golden Age boom", when:"1950–73",
   q:"What statistics show the scale and spread of the Golden Age boom?",
+  exp:"The figures prove the boom was both large and widespread. OECD economies grew strongly, but developing countries and even the communist bloc also grew, and Brett’s 1960s data show low-income countries growing too. Hobsbawm’s quadrupling of manufacturing and tenfold rise in manufactured trade, plus examples like Italy’s cars and world telephones, show it reached everyday consumption. Use these to show the Golden Age was global, not just Western.",
   pts:["1950–73: OECD-16 real GDP (esp. Japan, W. Germany, France, USA, UK) grew 4.8% p.a.; labour productivity +4.5%",
        "Developing countries grew 6%; communist bloc 5% (Kenwood & Lougheed, 2001)",
        "1960s: industrialised 5.2%, middle-income LDCs 5.9%, low-income 4.4% (Brett, 1985) — boom genuinely widespread",
@@ -93,6 +105,7 @@ add("Golden Age of Capitalism (1952–1973)", { id:"ge-boom-scale", title:"Scale
        "World telephones: 270 million (1971) → nearly double by 1981"] });
 add("Golden Age of Capitalism (1952–1973)", { id:"ge-golden-features", title:"Defining features of the Golden Age", when:"1952–1973",
   q:"What were the defining features of the Golden Age of Capitalism?",
+  exp:"These features explain what made the Golden Age distinctive rather than just fast. Mass consumption turned luxuries into normal goods, US-led multilateral institutions replaced the protectionist pre-war system, and Hobsbawm stresses a technological revolution creating entirely new products. Alongside these, the mixed economy gave governments a far larger share of national income. These are the novel elements to cite when arguing the boom was more than catch-up growth.",
   pts:["Mass consumption society: luxuries (fridge, washing machine, telephone) became the expected standard in rich countries",
        "Unprecedented international cooperation, led mainly by the US through multilateral institutions (Bretton Woods, GATT)",
        "These replaced the pre-war bilateral/protectionist system",
@@ -100,6 +113,7 @@ add("Golden Age of Capitalism (1952–1973)", { id:"ge-golden-features", title:"
        "Rise of the mixed economy: governments took 25–33% of national income in Western Europe alongside private enterprise"] });
 add("Golden Age of Capitalism (1952–1973)", { id:"ge-communist-golden", title:"Why the communist bloc was not part of the Golden Age", when:"1950s–1980",
   q:"Why weren’t the communist bloc / some Third World economies considered part of the “Golden Age of Capitalism” despite comparable growth rates?", qs:"notes",
+  exp:"The label “Golden Age of Capitalism” depends on how and how long growth happened, not just its rate. Communist and some Third World growth came from structural factors rather than capitalist policy, did not last (Soviet growth slipped from above Western rates to under 2% after 1980), and was not spread widely within those blocs. This helps you justify why essays focus on capitalist economies while still acknowledging growth elsewhere.",
   pts:["Growth was driven by structural factors, not capitalist policy",
        "Growth was short-lived/unsustained",
        "USSR growth fell from faster-than-the-West in the 1950s to 2.4% by the 1970s, <2% after 1980",
@@ -108,6 +122,7 @@ add("Golden Age of Capitalism (1952–1973)", { id:"ge-communist-golden", title:
 /* ── Role of the USA, Western Europe and Japan ── */
 add("Role of the USA, Western Europe and Japan", { id:"ge-us-motives", title:"US motivations for rebuilding Europe and Japan", when:"1945–1952",
   q:"Why did the USA rebuild Western Europe and Japan?",
+  exp:"The three motives reinforce each other. Containment meant a poor Europe or Japan could fall to Soviet subversion, so prosperity was security. A new internationalist attitude, reacting against pre-war nationalism, pushed the US toward a multilateral order it would lead. And self-interest meant rebuilt allies became markets that kept US wartime production high. In essays, show that US generosity and self-interest were combined, not opposites.",
   pts:["Cold War/ideological: impoverished countries vulnerable to Soviet subversion; strong Europe/Japan = bulwark against communism",
        "New American attitude: reversal of isolationism after the Depression/WWII",
        "Sought a liberal world order under its leadership (Pax Americana) and multilateral, not bilateral, solutions — reacting against pre-war excessive nationalism",
@@ -115,6 +130,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-us-motives", title:"US
 add("Role of the USA, Western Europe and Japan", { id:"marshallecon", title:"Marshall Plan’s economic role", when:"1948–1952",
   q:"What did Marshall Aid fund, how did it differ from earlier loans, and what was its economic impact?",
   clue:"$13 billion of US aid to Western Europe, 1948–1952, a clean break from piecemeal emergency loans.",
+  exp:"Marshall Aid differed from the earlier piecemeal loans because it was planned long-term reconstruction rather than emergency gap-filling. It moved from feeding people in year one to supplying capital goods, raw materials and fuel that rebuilt production, and recipients’ GNP rose 15–25%. Requiring Europeans to cooperate also created the OEEC, linking US aid to later European integration. This makes it strong evidence for the US role in reconstruction.",
   pts:["$13 billion to Western Europe, 1948–1952",
        "Contrast: 1945–47 piecemeal loans (UK $4.4bn, France $1.9bn, Italy $513m) only plugged emergency gaps",
        "Funded food/feed/fertiliser (~1/3, mostly year 1), then capital goods, raw materials, fuel",
@@ -122,6 +138,7 @@ add("Role of the USA, Western Europe and Japan", { id:"marshallecon", title:"Mar
        "Required European collaboration/integration → Economic Commission for Europe (ECE) and OEEC (later OECD)"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-japan-aid", title:"US aid to occupied Japan", when:"1945–1965",
   q:"How much US aid did Japan receive during the Occupation, what did it fund, and what growth followed?",
+  exp:"US aid to Japan was smaller than Marshall Aid, but it targeted a country with about 40% of its industry destroyed and covered a meaningful share of imports, mostly food. The key long-term effect was indirect: land reform increased competition, and rebuilding meant new factories with the best modern machines, giving Japan an edge over victor states with older plants. That helps explain the strong 1953–65 growth figures.",
   pts:["$2.3 billion during the Occupation",
        "~40% of Japan’s industrial plants/infrastructure destroyed",
        "Aid = ~15% of imports, ~4% of GNP (59% food, 15% industrial materials, 12% transport equipment)",
@@ -129,6 +146,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-japan-aid", title:"US 
        "1953–65: GDP +9%/yr; manufacturing/mining +13%; construction +11%; infrastructure +12%"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-us-defence", title:"US underwriting of defence", when:"1949–1970",
   q:"How did the US underwriting of defence free resources for European and Japanese growth?",
+  exp:"By paying for Western defence through NATO, military aid and the 1960 treaty with Japan, the US let its allies spend less on arms and more on growth. Japan’s defence spending dropped below 1% of GDP, and Patrick and Rosovsky estimate its economy would have been 30% smaller without the US umbrella. This is strong quantified evidence that the US security role, not just aid, drove European and Japanese recovery.",
   pts:["NATO (April 1949): US committed to collective defence of Western Europe; first integrated military command (first Supreme Commander: Gen. Eisenhower)",
        "Mutual Defence Assistance Programme (Oct 1949): $1.4bn → $5.222bn after the Korean War",
        "Mutual Security Act (1951–61): $33.4bn in arms/services + $3.3bn surplus weaponry",
@@ -137,6 +155,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-us-defence", title:"US
        "Patrick & Rosovsky (1976): Japan’s economy would have been 30% smaller by 1976 had it borne its full defence burden"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-us-market", title:"US market access for European and Japanese exports", when:"1947–1960s",
   q:"How did the US absorb European and Japanese exports?",
+  exp:"Recovery needed buyers as well as aid, and the US provided them. The OEEC share of US imports jumped to half, and Eisenhower cut tariffs and resisted protectionist pressure, preferring a voluntary export restraint over tariffs against Japan. The result was Japan’s first-ever trade surplus, with the US taking over 30% of Japanese exports. This shows the US deliberately opened its own market to rebuild allies, even at some cost to its industries.",
   pts:["OEEC share of US imports: 14% (1947) → 50% (1952)",
        "Joint Committee on US–Japan Trade (1958); US Trade Act 1958 let Eisenhower cut tariffs by 20%",
        "Eisenhower resisted protectionism (stainless-steel flatware dispute, 1958), proposing a Japanese Voluntary Export Restraint (VER) instead of tariffs",
@@ -144,12 +163,14 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-us-market", title:"US 
        "Over the next decade the US absorbed >30% of Japan’s exports"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-us-aid-significance", title:"Significance of US aid", when:"1950s–60s",
   q:"What was the significance of US aid for the global economy?",
+  exp:"US aid did more than rebuild: it opened markets that fuelled the liberalisation era. Gilpin calls the Cold War the “political glue” because allies set aside economic rivalries to keep the anti-Soviet alliance together. The irony is that early dependence on the US held back competition only until Europe and Japan recovered, after which they challenged the US. This links the US’s growth-era role directly to its later relative decline.",
   pts:["Opened large overseas markets → fuelled trade/growth in the liberalisation era (1950s–60s)",
        "Cold War became the “political glue” holding the world economy together (Gilpin, 2001)",
        "US allies subordinated nationalist/economic differences to maintain the anti-Soviet alliance",
        "Early dependency on the US prevented W. Europe/Japan competing with it — setting up the eventual reversal once they recovered"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-mixed-economy", title:"The mixed economy and its objectives", when:"postwar",
   q:"What new belief underpinned the mixed economy, and what were its five objectives?",
+  exp:"The mixed economy came from a lesson drawn from the 1930s: laissez-faire was blamed for the Depression, which only war spending ended. So governments now put domestic full employment ahead of external balance and pursued growth faster than historical rates. The five objectives show the ambition of this model, though some could pull against each other, such as full employment and price stability. This is the policy basis of the Golden Age’s government-led growth.",
   pts:["Belief: pre-war laissez-faire liberalism caused the Depression, only solved by the catastrophe of war",
        "Balance-of-payments equilibrium gave way to domestic full-employment goals; growth became an obsession — to grow faster than the historical average",
        "Objectives: full employment; production at full capacity",
@@ -157,6 +178,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-mixed-economy", title:
        "Balance-of-payments equilibrium"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-keynes", title:"Keynesian economic principles", when:"1936–early 1970s",
   q:"Explain Keynesian principles and their status in the postwar West.",
+  exp:"Keynesianism gave governments a tool to smooth the business cycle: spend more and run deficits in recessions, spend less or tax more when demand is too high, with interest rates working faster than budgets. Wartime spending, which produced full employment in every combatant state, seemed to prove it worked. That is why it dominated Western policy until the early 1970s, when stagflation exposed its limits.",
   pts:["J.M. Keynes, General Theory (1936)",
        "Government should use taxation, expenditure and monetary policy to temper market instability and maintain full employment",
        "Demand management: raise spending (budget deficits) in recessions (infrastructure, housing); cut spending/raise taxes to curb demand",
@@ -165,6 +187,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-keynes", title:"Keynes
        "Dominant policy framework in Western industrialised countries until the early 1970s"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-welfare", title:"The welfare system", when:"1942–1960s",
   q:"Why did welfare systems expand after WWII, and how generous did they become?",
+  exp:"Welfare expansion was partly political: governments feared the appeal of communism and fascism, so they offered collective protection against sickness, age and unemployment. It also had an economic effect, since rising social spending in France and Britain acted as a demand stimulus in line with Keynesian ideas. The generosity of the 1960s, with some states paying the unemployed 80% of former wages, marks the high point before the cost pressures of the crisis years.",
   pts:["Separate from, but linked to, Keynesianism; partly driven by fear of communism/fascism’s appeal",
        "Collective provision for those affected by accidents, sickness, age, unemployment",
        "UK: Beveridge Report (1942) → comprehensive welfare state by 1948",
@@ -173,6 +196,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-welfare", title:"The w
        "By the 1960s some governments guaranteed the unemployed 80% of former wages"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-planning", title:"Government-led growth planning", when:"1946–1980s",
   q:"Give national examples of government-led growth planning and their outcomes.",
+  exp:"These cases show active states steering growth. France’s Monnet Plan funded modernisation and infrastructure, Japan’s MITI and five-year plans set targets that were beaten so often they had to be raised, and Taiwan and South Korea moved from import substitution to export-led industry. Their planning, such as Taiwan founding ITRI after 1973, also helped soften external shocks. Use these to argue that government agency, not just US aid or free markets, drove growth.",
   pts:["France: Monnet Plan / Planning Commission (1946) — sectoral plans, funded modernisation, subsidised rail/electricity; growth 4.6% (1950–59), 5.8% (1960–69)",
        "Japan: MITI “Inclined Production Mode” (steel, coal, cotton); Economic Planning Agency 5-year plans (from 1957)",
        "Japan: Ikeda’s “double income in 10 years” (1960); growth targets repeatedly outstripped ahead of schedule, requiring revision",
@@ -182,6 +206,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-planning", title:"Gove
 add("Role of the USA, Western Europe and Japan", { id:"ge-atlantic-charter", title:"Atlantic Charter", when:"14 Aug 1941",
   q:"What did the Atlantic Charter set out, and what did it lead to?",
   clue:"Roosevelt–Churchill statement of postwar war aims that underpinned the Declaration by United Nations.",
+  exp:"The Atlantic Charter matters because it set the goals of the postwar order before the war ended: freer trade, economic cooperation, social security and self-determination. Those aims fed directly into the UN declaration and inspired NATO, GATT and the end of empires. It shows that the US-led liberal order was planned in advance, which supports arguing that postwar growth rested on deliberate design rather than chance.",
   pts:["14 August 1941 — Roosevelt & Churchill",
        "Aims: no territorial aggrandisement; self-determination; reduced trade restrictions",
        "Global cooperation for “improved labor standards, economic advancement and social security”; freedom from fear/want; disarmament of aggressors",
@@ -190,6 +215,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-atlantic-charter", tit
 add("Role of the USA, Western Europe and Japan", { id:"ge-bw-conference", title:"Bretton Woods Conference", when:"July 1944",
   q:"What happened at the Bretton Woods Conference and what lessons from the 1930s shaped it?",
   clue:"44 nations met in New Hampshire in July 1944, adopting structures essentially proposed by the US.",
+  exp:"Bretton Woods was shaped by the lesson of the 1930s that tariffs, competitive devaluations and rival blocs had deepened the Depression and destabilised the world, so cooperation came to be seen as necessary for both peace and prosperity. The US could largely dictate the outcome because of its overwhelming economic power. The IMF and World Bank it created became the institutional framework for postwar growth, which is why US influence outlasted its relative decline.",
   pts:["44 nations met in New Hampshire, July 1944",
        "Structures created were essentially those the US proposed, reflecting its overwhelming postwar economic power",
        "1930s lessons: high tariffs, competitive devaluation, discriminatory trade blocs worsened the Depression and destabilised the world",
@@ -197,11 +223,13 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-bw-conference", title:
        "Created the IMF and the IBRD (World Bank)"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-us-trade-policy", title:"US trade policy leadership", when:"1945–1947",
   q:"How did the US lead postwar trade liberalisation?",
+  exp:"The US led trade liberalisation by acting first: renewing the Trade Agreements Act so the president could halve tariffs, then negotiating a large set of bilateral deals at Geneva. Turning those 123 agreements into GATT made tariff cuts multilateral and lasting. This shows US leadership was practical as well as rhetorical, and links US policy to the trade growth of the Golden Age.",
   pts:["1945: US Trade Agreements Act renewed; president empowered to cut tariffs up to 50%",
        "Nov 1946 Geneva talks (23 countries) → 123 bilateral trade agreements",
        "Consolidated into the General Agreement on Tariffs and Trade (GATT)"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-donors", title:"Western Europe and Japan as aid donors and partners", when:"1960–1980s",
   q:"Compare the USA, Western Europe and Japan as aid donors and trade/investment partners.",
+  exp:"The figures show European states giving a larger share of GNP in aid than the US by 1979, and Japan becoming a major donor within about a decade, especially to South Korea and Taiwan. European and Japanese MNCs also balanced US dominance in investment. Together this shows former aid recipients taking on the US’s role, which is useful for “compare the roles” questions and for arguing that growth did not depend on the US alone.",
   pts:["1979 aid as % of GNP: France 0.59%, W. Germany 0.44%, UK 0.52% vs US 0.2%, Japan 0.26%",
        "European & Japanese MNCs grew rapidly from the 1970s–80s, balancing former US dominance in FDI",
        "Japan joined OECD’s DAC; aid rose $246m (1960) → $5.8bn (1973) — 4th largest DAC donor by 1974",
@@ -209,6 +237,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-donors", title:"Wester
        "Japan as trade/investment partner: the Flying Geese model"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-us-changing", title:"The changing role of the USA", when:"1964–1975",
   q:"How did the role of the USA change by the late 1960s?",
+  exp:"The US moved from benefactor to a declining, more self-interested actor because its trade surplus shrank to a deficit by 1971 and its productivity growth lagged far behind France, Germany and Japan, which the notes link to heavy unproductive defence spending. Meanwhile Europe and Japan took up roles as donors, trading centres and investors. This is key evaluation evidence that the importance of the US changed over time.",
   pts:["Shifted from dominant benefactor to a declining, more self-interested actor",
        "US trade surplus: $6.6bn (1964) → $600m (1968/69) → $2.7bn deficit (1971) (Brett, 1985)",
        "1960–75 productivity growth: US only 2.7% vs France 5.6%, Germany 5.7%, Japan 9.7%",
@@ -217,6 +246,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-us-changing", title:"T
 add("Role of the USA, Western Europe and Japan", { id:"ge-epu", title:"European Payments Union", when:"1950",
   q:"What problem did the EPU solve, how did it work, and what did it achieve?",
   clue:"1950 multilateral compensation system backed by a $500m US grant, letting surpluses offset deficits.",
+  exp:"Bilateral payments deals were choking European trade because any deficit had to be paid in scarce gold or dollars. The EPU fixed this by letting surpluses with one country cancel deficits with another, backed by a US grant, and by requiring discriminatory barriers to be removed. Trade then grew at record rates and full convertibility was restored by 1958. It shows how regional cooperation, with US support, drove European growth.",
   pts:["Problem: bilateral payments agreements restricted intra-European trade, since deficits had to be settled in scarce gold/dollars",
        "Solution: multilateral compensation system ($500m US grant) — surplus with one country offsets deficit with another",
        "Mandated removal of discriminatory trade measures",
@@ -225,6 +255,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-epu", title:"European 
 add("Role of the USA, Western Europe and Japan", { id:"eec", title:"European Economic Community", when:"1957/58",
   q:"Who were the EEC’s members, what kind of union was it, and what had it achieved by 1969?",
   clue:"The 1957/58 “Common Market” of six states created by the Treaty of Rome.",
+  exp:"As a customs union, the EEC removed internal tariffs while setting a common external tariff, so members traded far more with each other. Hitting the tariff target early and achieving free movement and harmonised VAT by 1969 shows how quickly integration advanced, and intra-EEC trade quadrupled. This is strong evidence for Western Europe’s own role in promoting regional growth, beyond what the US provided.",
   pts:["Members: Belgium, France, Italy, Luxembourg, Netherlands, West Germany",
        "Customs union: free internal trade + common external tariff",
        "Treaty of Rome (1957) 12-year tariff phase-out target reached early (10.5 years)",
@@ -233,6 +264,7 @@ add("Role of the USA, Western Europe and Japan", { id:"eec", title:"European Eco
 add("Role of the USA, Western Europe and Japan", { id:"ge-efta", title:"European Free Trade Association", when:"1960",
   q:"What was EFTA and what did it achieve?",
   clue:"1960 alternative bloc of seven states unwilling or unable to join the Common Market, including the UK.",
+  exp:"EFTA gave states that would not or could not join the EEC, such as Britain, their own route to freer trade. It cut tariffs on most industrial goods even faster than the EC, showing that integration was not limited to one bloc. Later EFTA–EC talks led toward the European Economic Area, so the two blocs ended up converging. Use EFTA to show that European regional cooperation was broad and competitive.",
   pts:["Members: Austria, Denmark, Norway, Portugal, Sweden, Switzerland, UK",
        "Alternative bloc for states unwilling/unable to join the EEC",
        "By end-1966: most industrial products tariff-free, two years ahead of the EC",
@@ -240,6 +272,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-efta", title:"European
 add("Role of the USA, Western Europe and Japan", { id:"ge-cap", title:"Common Agricultural Policy", when:"1962/1967",
   q:"Why was the CAP introduced, how did it work, and what were its downsides?",
   clue:"EEC farm scheme of annual target prices, import tariffs and guaranteed purchase of surpluses.",
+  exp:"CAP responded to low food output, poor farm incomes and uncoordinated national policies by guaranteeing prices and buying up surpluses behind import tariffs. The problem was that target prices sat well above world prices, so consumers and taxpayers paid more, and CAP swallowed about two-thirds of the EEC budget. It is a good “to what extent” example: integration was promoted, but at a real economic cost.",
   pts:["Context: low postwar food production, farmer incomes lower than other sectors, non-harmonised national policies",
        "Aims: raise productivity; fair farmer incomes; guarantee supply; stabilise markets; harmonise competition rules",
        "Mechanism: annual “target prices” per product/region; import tariffs; EEC obliged to buy surplus at guaranteed minimum prices",
@@ -248,12 +281,14 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-cap", title:"Common Ag
 add("Role of the USA, Western Europe and Japan", { id:"ge-flying-geese", title:"Flying Geese model", when:"1930s model",
   q:"Explain the Flying Geese model of industrial development.",
   clue:"Akamatsu Kaname’s 1930s model of industries cascading through Asia in a V-formation.",
+  exp:"The model explains how development spreads through Asia in stages: a poorer economy imports technology, builds its own industries and then exports. As Japan moves up into more advanced industries, it hands off those losing comparative advantage to the Tigers, then ASEAN, then China. It gives you a framework for explaining Japan’s regional role, which the Korea and Taiwan cases then illustrate.",
   pts:["Devised by Akamatsu Kaname in the 1930s",
        "Less-developed economy imports new products/technology → develops “homogeneous industries” + related capital goods industries → enters export stage",
        "Industries cascade from Japan → Asian Tigers → ASEAN → China in a V-formation",
        "Japan sheds industries losing comparative advantage"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-japan-korea", title:"Japan’s role in South Korea", when:"1965–1970s",
   q:"How did Japan promote South Korea’s growth through investment, trade and technology transfer?",
+  exp:"Korea shows the Flying Geese model in action. Normalisation in 1965 brought Japanese compensation and capital for the chaebols, and Japan became Korea’s largest foreign investor. Japan then shifted declining industries such as steel and shipbuilding to Korea, where Koreans went on to lead the world in them. This is strong evidence that Japan, not only the US, promoted regional growth through investment and technology transfer.",
   pts:["1965 normalisation of relations → Japan paid $800m compensation",
        "Japanese loans/capital/investment for Chaebols",
        "Japan overtook the US as largest foreign investor in the early 1970s",
@@ -261,6 +296,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-japan-korea", title:"J
        "Koreans became global leaders in these industries"] });
 add("Role of the USA, Western Europe and Japan", { id:"ge-japan-taiwan", title:"Japan’s role in Taiwan", when:"1952–78",
   q:"How did Japan influence Taiwan’s development through investment, technology and business culture?",
+  exp:"Japan was not Taiwan’s biggest investor, as overseas Chinese and US capital were larger, so its influence worked mainly through example. Taiwan copied Japan’s development sequence and modelled government bodies on Japanese ones, and business leaders like Acer’s Stan Shih looked to Sony and Philips. This shows Japan’s regional role operated through policy models and business culture as well as money, a useful nuance compared with the Korean case.",
   pts:["1952–78: $1.92bn total investment, 17% ($321m) from Japan (vs 31% overseas Chinese, 30% US, 12% Europe)",
        "Favoured sectors: electronics/electrical, chemicals",
        "Followed Japan’s sequence: technical assistance → agriculture → labour-intensive export industry",
@@ -270,6 +306,7 @@ add("Role of the USA, Western Europe and Japan", { id:"ge-japan-taiwan", title:"
 /* ── Role of MNCs ── */
 add("Role of MNCs", { id:"ge-mnc-def", title:"Defining the MNC", when:"framework",
   q:"Define a multinational corporation and state its principal objective.",
+  exp:"Spero and Hart’s strict definition separates true MNCs from firms that merely trade abroad: a real MNC owns and runs affiliates in many countries and earns much of its revenue there. Its aim of producing at the lowest cost for world markets explains why MNCs chose locations with cheap inputs or tax concessions. Being clear on this definition helps you argue precisely about private firms’ contribution to global growth.",
   pts:["A firm that owns and manages economic units in two or more countries, typically via FDI",
        "Spero & Hart (2003): a firm engaging only in overseas trade or contracting is NOT truly multinational",
        "True MNCs: many foreign affiliates, many countries, high proportion of assets/revenue/profit from abroad, multinational staff",
@@ -277,6 +314,7 @@ add("Role of MNCs", { id:"ge-mnc-def", title:"Defining the MNC", when:"framework
        "Principal objective: least costly production for world markets (efficient locations or tax concessions from host governments)"] });
 add("Role of MNCs", { id:"mncs", title:"How MNCs drove global growth", when:"1950s–1970s",
   q:"By what mechanisms did MNCs drive global growth, and how did their activity change from the late 1960s?",
+  exp:"Each mechanism spreads growth across borders: FDI builds industry in host countries, cheaper inputs cut costs, technology moves to new places and bigger markets allow larger-scale production. Adding banks with worldwide branches and foreign currency lending from the late 1960s widened MNC influence into finance. That shift matters later, because international bank lending became the channel for the petrodollar loans behind the debt crisis.",
   pts:["FDI in developed and developing countries",
        "Lowering production costs (cheap labour, raw materials, energy, weaker regulation)",
        "Technology transfer to host countries; FDI-funded industrial development in developing countries",
@@ -285,6 +323,7 @@ add("Role of MNCs", { id:"mncs", title:"How MNCs drove global growth", when:"195
        "From late 1960s the financial system was added — banks offered worldwide branch networks and foreign currency lending (Brett, 1985)"] });
 add("Role of MNCs", { id:"ge-us-mncs", title:"American MNCs and the US economy", when:"1950–1984",
   q:"How did American MNCs boost the US economy, and what statistics show their scale?",
+  exp:"American MNCs served US interests in several ways: they kept foreign markets open to US capital, got around developing countries’ import-substitution barriers, let US firms compete on cost and earned foreign exchange that funded US global power. Their scale, with output bigger than every national economy except the US and USSR, shows private firms became major economic actors. This links MNC growth to the wider story of US dominance.",
   pts:["Wilkins (1974): “multinational corporation” was virtually a euphemism for overseas expansion of America’s giant corporations",
        "Ensured open access for American capital abroad (extension of Marshall Plan logic); overcame 1960s ISI trade barriers",
        "Foreign production of labour-intensive goods let US firms compete with low-cost producers, while US exports arguably increased",
@@ -293,6 +332,7 @@ add("Role of MNCs", { id:"ge-us-mncs", title:"American MNCs and the US economy",
        "US FDI: $11.8bn (1950) → $233.4bn (1984); in 1981 >2/5 of world FDI"] });
 add("Role of MNCs", { id:"ge-mnc-host", title:"MNCs and host-country economies", when:"1950s–1960s",
   q:"How did MNCs boost host-country economies?",
+  exp:"MNCs helped host countries by putting capital into advanced manufacturing and petroleum, spreading modern management methods and absorbing spare labour, which raised wages. The productivity gap shows the stakes: European workers were only 40% as productive as Americans in 1950, and Marshall Plan factory visits helped close it. Use this to show that MNCs boosted growth in recipient economies, not just in the US.",
   pts:["FDI: largest share into advanced manufacturing (autos, chemicals, electronics)",
        "Petroleum another major segment (~36% of US FDI in LDCs at one point)",
        "Technology transfer of modern managerial techniques (mass production, scientific management)",
@@ -300,6 +340,7 @@ add("Role of MNCs", { id:"ge-mnc-host", title:"MNCs and host-country economies",
        "Employment: absorbed excess/idle labour, raising wages and living standards"] });
 add("Role of MNCs", { id:"ge-euro-japan-mncs", title:"Rise of European and Japanese MNCs", when:"1960s–1984",
   q:"What evidence shows European and Japanese MNCs balancing US predominance?",
+  exp:"Once the technology gap narrowed, European and Japanese firms such as Hoechst, Volkswagen and Japanese carmakers expanded abroad, including into the US itself. The falling US share of overseas investment and the surge of FDI into the US show the earlier one-way flow from America reversing. This mirrors the broader shift of the late 1960s and 1970s, as US relative dominance declined and its rivals took up similar roles.",
   pts:["Technology gap narrowed in the 1960s–70s",
        "Hoechst: 117 plants in 45 countries (mostly post-1950); Volkswagen factories in Argentina, Brazil, Canada, Ecuador, Egypt, Mexico, Nigeria, Peru, South Africa, Yugoslavia",
        "Japanese FDI in the US: $303m (1951–72 total) → $16.5bn by 1984; in W. Europe $1.1bn by 1984",
@@ -308,12 +349,14 @@ add("Role of MNCs", { id:"ge-euro-japan-mncs", title:"Rise of European and Japan
        "FDI into the US: $34.6bn → $159.6bn (1977–84) — reversal of the earlier one-way flow"] });
 add("Role of MNCs", { id:"ge-mnc-shift-why", title:"Why the MNC shift occurred", when:"1970s",
   q:"Why did European and Japanese MNC expansion occur in the 1970s?",
+  exp:"These causes show the 1970s environment pushing firms abroad. Better transport and communications made running distant plants easier, and friendlier government policies helped. Crisis conditions also played a role: unstable currencies made the US attractive as a safe haven, and rising trade barriers meant firms had to produce inside protected markets. So the crisis years, ironically, encouraged MNC expansion.",
   pts:["Compression of time/space (transport & communications improvements)",
        "Government policies increasingly favourable to MNCs",
        "Fluctuating exchange rates/currency instability encouraged investment in the US as a safe haven",
        "Rising trade barriers pushed firms to set up local subsidiaries/joint ventures in protected markets"] });
 add("Role of MNCs", { id:"ge-mnc-scale", title:"Scale and power of MNCs", when:"1960–1984",
   q:"What statistics show the scale and power of MNCs, and how can this be used in essays?",
+  exp:"The figures show MNCs growing faster than national economies, controlling a large share of world output and making up over half of the world’s largest economic entities by 1972. Intragroup trade and exports to affiliates show much international trade happening inside firms. Use this to argue that private capital, not only states, drove growth, while Brett links US capital outflows to the US’s weaker productivity and relative decline.",
   pts:["~30% of total world production (1969); largest 300 MNCs grew 10.1% (1960–66) vs 5.1% for developed economies",
        "57 of the world’s 100 largest economic entities were MNCs (1972)",
        "Sales of 200 largest firms: 17% (1960) → 26% (1984) of non-socialist world GNP",
@@ -325,6 +368,7 @@ add("Role of MNCs", { id:"ge-mnc-scale", title:"Scale and power of MNCs", when:"
 add("International Organisations & Arrangements", { id:"brettonwoods", title:"Bretton Woods system", when:"1944–1971",
   q:"How did the Bretton Woods adjustable-peg system work, and why was the dollar its anchor?",
   clue:"Adjustable-peg monetary order: currencies fixed to a dollar convertible at $35/oz, fully functional from 1958.",
+  exp:"Bretton Woods pegged currencies to the dollar and the dollar to gold to prevent the competitive devaluations of the 1930s. The dollar became the anchor because the US held three-quarters of the world’s gold, so no other currency could carry that role. But this placed the burden of keeping gold at $35 and managing dollar supply on the US alone, a structural weakness that became unsustainable once dollars piled up abroad.",
   pts:["Negotiated July 1944 (44 countries); gold backed the US dollar; other currencies pegged to the dollar",
        "Rates fixed at the start, changed only in defined special circumstances",
        "Objective: exchange rate stability, prevent competitive devaluations, promote growth — responding to 1930s devaluation wars",
@@ -333,6 +377,7 @@ add("International Organisations & Arrangements", { id:"brettonwoods", title:"Br
        "US bore responsibility for fixing gold’s price and adjusting dollar supply — later unsustainable"] });
 add("International Organisations & Arrangements", { id:"ge-imf", title:"The IMF", when:"1944–",
   q:"What was the IMF’s role and mechanism, and what was “conditionality”?",
+  exp:"The IMF worked like a shared reserve: members paid in quotas, and countries with payment deficits could borrow from the pool for short periods, so they did not need to devalue or cut trade. Its large Suez Crisis loans show it in action. But tying bigger loans to stricter conditions and inspecting how funds were used created resentment, a theme that grows with later structural adjustment programmes.",
   pts:["Role: monitor exchange rates; short-term loans for balance-of-payments deficits — a “buffer stock” of currencies",
        "Members pay quota-based deposit (mostly own currency, 1/4 gold/dollars); deficit countries borrow from the pool",
        "Loans repayable within 5 years; larger loans → more stringent conditions",
@@ -340,6 +385,7 @@ add("International Organisations & Arrangements", { id:"ge-imf", title:"The IMF"
        "“Conditionality”: IMF inspected borrowers to ensure “proper” use of funds — caused resentment"] });
 add("International Organisations & Arrangements", { id:"ge-saps", title:"Structural Adjustment Programmes and Mexico", when:"1982–1985",
   q:"What reforms did SAPs require, and how did Mexico’s first SAP fare?",
+  exp:"SAPs made loans conditional on reforms such as devaluation, cutting public spending and jobs, privatisation and deregulation, aiming to fix the causes of payment problems rather than just fund them. Mexico, the first case, saw early improvements in imbalances and inflation, but these faded and adjustment had stalled by 1985. This shows that IMF conditionality did not reliably deliver lasting recovery, useful for evaluating international institutions.",
   pts:["Reforms for an IMF/World Bank loan: devalue currency; cut public sector employment/subsidies/spending",
        "Privatise state enterprises; deregulate to attract foreign investment; close tax loopholes",
        "Mexico (1982) the first SAP country: strengthened financial policy + exchange/trade liberalisation; large initial devaluation",
@@ -348,6 +394,7 @@ add("International Organisations & Arrangements", { id:"ge-saps", title:"Structu
 add("International Organisations & Arrangements", { id:"imfkorea", title:"IMF in South Korea (Asian Financial Crisis)", when:"1997–2001",
   q:"What were the terms and human costs of the IMF bailout of South Korea in the Asian Financial Crisis?",
   clue:"$60bn package in 1997 with conditions, repaid ahead of maturity, while citizens donated wedding bands and medals.",
+  exp:"By the IMF’s own measures the Korean bailout worked, since Korea reformed and repaid early. But the social cost was severe: most households lost income and unemployment more than tripled, and citizens gave up wedding rings and medals to help repay. Use this to argue that “success” by Washington’s standards can hide heavy human costs, a strong evaluation point in “assess the extent” essays.",
   pts:["$60bn IMF-led bailout package (1997 Asian Financial Crisis)",
        "Conditions: flexible exchange rates, tighter monetary policy, structural reform, more foreign participation in domestic finance",
        "Repaid in full by Aug 2001, ahead of maturity",
@@ -356,6 +403,7 @@ add("International Organisations & Arrangements", { id:"imfkorea", title:"IMF in
        "Even “successful” IMF interventions imposed severe social costs"] });
 add("International Organisations & Arrangements", { id:"ge-washington", title:"The Washington Consensus", when:"1990",
   q:"What was the Washington Consensus, what were its ten points, and why did it cause friction?",
+  exp:"The ten points share one logic: shrink the state’s role and let markets, trade and foreign investment allocate resources, with fiscal discipline and secure property rights. This clashed with the state-led development models many developing countries had adopted in the 1950s, so the package was seen as imposed from outside. That explains the friction and resentment toward the IMF, World Bank and US Treasury.",
   pts:["John Williamson (1990): 10-point “standard” package promoted by IMF, World Bank, US Treasury for crisis-hit developing countries",
        "1. Reduce budget deficits 2. Redirect spending to high-return areas (away from subsidies) 3. Reform tax system",
        "4. Liberalise interest rates 5. Competitive single exchange rate 6. Reduce trade restrictions",
@@ -363,6 +411,7 @@ add("International Organisations & Arrangements", { id:"ge-washington", title:"T
        "Contradicted the state-dominated development models many LDCs embraced in the 1950s — source of friction and resentment"] });
 add("International Organisations & Arrangements", { id:"ge-ibrd", title:"The World Bank (IBRD)", when:"1947–1994",
   q:"What was the World Bank’s role and how did its lending evolve?",
+  exp:"Where the IMF lent short-term for payment problems, the World Bank lent long-term for reconstruction and then development. Its focus moved from postwar Europe to middle-income and finally almost entirely developing economies, and its commitments grew enormously. Sub-Saharan Africa receiving the largest share relative to GNP shows how dependent the poorest regions became on such assistance.",
   pts:["Long-term financial assistance for postwar reconstruction and, later, Third World development",
        "First loans: Holland, Denmark, France ($250m to France in 1947; $497m total to Europe just after the war)",
        "1950s: shifted to middle-income/European-settler economies; thereafter almost exclusively developing economies",
@@ -370,6 +419,7 @@ add("International Organisations & Arrangements", { id:"ge-ibrd", title:"The Wor
        "By 1993 OECD+OPEC development assistance $54.5bn; Sub-Saharan Africa largest share relative to GNP (11.5%)"] });
 add("International Organisations & Arrangements", { id:"ge-bw-significance", title:"Significance and fragility of Bretton Woods", when:"1948–1971",
   q:"How did Bretton Woods link stability to growth, and what built-in fragility was visible before 1971?",
+  exp:"Fixed rates gave investors confidence, which encouraged investment, production and trade, as the export growth figures show. But the weaknesses were visible early: full convertibility only began in 1958, Britain gave up reserve-currency status in 1967, and foreign-held dollars outnumbered US reserves by 1961. This supports the argument that the 1970s crisis was built into the Golden Age, not caused only by external shocks.",
   pts:["Fixed exchange rates → investor confidence → more FDI, production, trade",
        "1948–68: non-communist merchandise exports +290%; 1948–60 exports $53bn → $112.3bn (>6%/yr); 1960s volume growth >8%/yr",
        "Fragility: full fixed-rate convertibility only began in 1958",
@@ -378,6 +428,7 @@ add("International Organisations & Arrangements", { id:"ge-bw-significance", tit
        "Seeds of the 1970s crisis sown DURING the Golden Age, not only by external shocks"] });
 add("International Organisations & Arrangements", { id:"ge-gatt", title:"GATT and its principles", when:"30 Oct 1947",
   q:"What was GATT and what were its three operating principles?",
+  exp:"GATT was a treaty that worked like an institution, aiming to cut trade barriers while keeping some regulation. Its principles reinforced each other: most-favoured-nation status meant a concession to one member applied to all, cutting barriers expanded trade, and reciprocity meant everyone gave and gained. This multilateral design is what made it different from the pre-war system of bilateral deals and rival blocs.",
   pts:["Signed 30 Oct 1947 by 23 countries; a treaty that functioned as an organisation",
        "Aimed to minimise trade barriers (quotas, tariffs, subsidies) while preserving some regulation",
        "Principle 1: non-discrimination/multilateralism (“Most-Favoured-Nation”)",
@@ -385,12 +436,14 @@ add("International Organisations & Arrangements", { id:"ge-gatt", title:"GATT an
        "Principle 3: unconditional reciprocity among signatories"] });
 add("International Organisations & Arrangements", { id:"ge-gatt-rounds", title:"Key GATT rounds", when:"1947–1993",
   q:"Outline the significance of the Geneva, Kennedy, Tokyo and Uruguay GATT rounds.",
+  exp:"The rounds show GATT’s agenda widening over time: Geneva cut tariffs among countries holding most world trade, Kennedy brought in development and anti-dumping, Tokyo tackled non-tariff barriers and Uruguay added services and intellectual property while creating the WTO. The rising value of trade covered shows growing scope. Note that the Tokyo Round’s dispute rules were still unenforceable, a weakness the WTO later addressed.",
   pts:["Geneva (1947): 23 countries (80% of world trade); 45,000 tariff cuts, ~35% average; US led by example",
        "Kennedy Round (1962–67): broadened scope to LDC development; anti-dumping agreement; $40bn trade",
        "Tokyo Round (1973–79): non-tariff barriers; clarified dispute settlement (still unenforceable); $155bn trade",
        "Uruguay Round (1986–93): widest-ever scope (services, IP, “built-in agenda” on agriculture); created the WTO; $3.7 trillion trade"] });
 add("International Organisations & Arrangements", { id:"ge-gatt-significance", title:"Significance of trade liberalisation", when:"1950s–60s",
   q:"Why was GATT trade liberalisation significant, and how did its success set up later problems?",
+  exp:"Lower tariffs let countries specialise by comparative advantage, which cut costs and raised exports, as world trade growth and West Germany’s soaring export share show. The twist is that GATT’s success at cutting tariffs on manufactures pushed governments to protect industries with non-tariff barriers instead. This links Golden Age liberalisation directly to the New Protectionism of the crisis years.",
   pts:["Comparative advantage → efficient production → economies of scale → lower costs/prices → more exports, demand, forex",
        "1950s–60s: world trade grew 8%/yr on average (Judt, 2005)",
        "W. Germany’s share of world manufactured exports: 7.3% (1950) → 19.3% (1960)",
@@ -398,6 +451,7 @@ add("International Organisations & Arrangements", { id:"ge-gatt-significance", t
 add("International Organisations & Arrangements", { id:"ge-wto", title:"World Trade Organisation", when:"1995",
   q:"How did the WTO differ from GATT, and what trade outcomes followed for developing countries?",
   clue:"1995 successor body covering goods, services and intellectual property with binding dispute resolution.",
+  exp:"The WTO fixed GATT’s main gaps by covering services and intellectual property and giving binding dispute settlement. The outcomes show developing countries trading more, with their share of world trade rising and manufactures dominating their exports, while East Asian tariffs fell and poverty among “new globalisers” dropped sharply. This shows liberalisation resuming after the protectionist decades.",
   pts:["Superseded GATT in 1995; covers goods, services AND intellectual property",
        "Binding dispute resolution (unlike GATT); prohibits discrimination but allows exceptions (environment, security)",
        "Developing countries’ share of world trade: ~1/4 (early 1970s) → 1/3 by 1990s/2000s; manufactures 80% of their exports",
@@ -407,6 +461,7 @@ add("International Organisations & Arrangements", { id:"ge-wto", title:"World Tr
 /* ── Lecture 1 Concluding Thoughts ── */
 add("Lecture 1 Concluding Thoughts", { id:"ge-l1-synthesis", title:"Synthesis: growth of the global economy", when:"evaluation",
   q:"What synthesis points conclude the study of the growth of the global economy?",
+  exp:"These points are ready-made evaluation. The “miracle” view is weakened by catch-up growth, deliberate US policy and institutional design. Focusing on the capitalist West is justified by its share of world output, but it leaves other economies under-studied. Growth was not linear, as the leading factor shifted across phases, and even Western outcomes were uneven. US influence lasted through its institutions as Europe and Japan rose.",
   pts:["“Economic miracle” framing debatable — structural reasons (catch-up, deliberate US policy, institutional design) make it “less of a miracle”",
        "Discussion skewed to industrialised economies — justified as the capitalist bloc had 75% of world production and 80%+ of manufacturing exports",
        "But developing/socialist economies are comparatively understudied",
@@ -417,6 +472,7 @@ add("Lecture 1 Concluding Thoughts", { id:"ge-l1-synthesis", title:"Synthesis: g
 /* ── Centrally-Planned Economies ── */
 add("Centrally-Planned Economies", { id:"ge-ussr", title:"USSR and Eastern Europe’s planned economies", when:"1945–1989",
   q:"How did the centrally-planned economies perform, and why did they sour by the 1970s?",
+  exp:"Planned economies grew fast at first because they rebuilt quickly and industrialised from a backward base, but their growth slowed steadily. Favouring capital goods caused consumer shortages, full employment with poor planning produced mistakes, and technological backwardness made exports uncompetitive, building debt to the West. These economic failures helped bring down communist rule in 1989, a useful contrast with the capitalist Golden Age.",
   pts:["USSR repaired war damage with extraordinary speed; grew rapidly until late 1960s",
        "Growth: 4.8%/yr (1960s) → 2.4% (1970s) → <2% after 1980 (recalculated to Western standards)",
        "Eastern Europe followed the Soviet model (nationalised banking/industry, collectivised agriculture except Poland); industrialised from a backward base",
@@ -427,6 +483,7 @@ add("Centrally-Planned Economies", { id:"ge-ussr", title:"USSR and Eastern Europ
 /* ── Challenges: the Crisis Decades ── */
 add("Challenges: the Crisis Decades", { id:"ge-crisis-intro", title:"The “Crisis Decades”: introduction", when:"1973–1990s",
   q:"How does Hobsbawm characterise the period after 1973, and what is the key analytical question about its causes?",
+  exp:"Hobsbawm’s view that the Golden Age foundations “had crumbled” frames the crisis years. The key debate is whether the causes were structural or triggered by events, and the best answer is both: dependence on the dollar was a built-in flaw while the 1973 oil shock was a trigger. Stress that effects were uneven, as Western industrial regions suffered while Japan coped well and developing countries piled up debt.",
   pts:["Hobsbawm (1999): “a world which lost its bearings and slid into instability and crisis… the foundations of the Golden Age had crumbled”",
        "Key question: causes built into Golden Age growth, or triggered by singular external events (oil shocks) in the 1970s–80s?",
        "Best essays argue BOTH — Bretton Woods’ over-reliance on the dollar was structural; the 1973 oil shock a singular trigger",
@@ -434,6 +491,7 @@ add("Challenges: the Crisis Decades", { id:"ge-crisis-intro", title:"The “Cris
        "Developing countries, after 1950s–60s success, saw debt mount dramatically"] });
 add("Challenges: the Crisis Decades", { id:"ge-crisis-stats", title:"Indicators of crisis", when:"1971–1998",
   q:"What statistics on inflation, unemployment, growth and trade indicate crisis after 1973?",
+  exp:"These statistics show every main indicator worsening together after 1973: inflation leaping into double digits, unemployment rising and staying high, and growth, productivity and trade all slowing sharply. Seeing high inflation and high unemployment at the same time is what made the period so hard to manage. Use these to prove a clear break from the Golden Age when describing the Crisis Decades.",
   pts:["World inflation: 5.9% (1971) → 9.6% (1973) → >15% (1974); industrialised economies averaged 9.9%",
        "Consumer prices +10% average (1973–80) vs +4% (1950–73)",
        "OECD unemployment: >4% by 1975, >5% by 1979; 1980–89 avg 6.9%, 1989–97 avg 7.1%, >10% in several years (1993–98)",
@@ -441,12 +499,14 @@ add("Challenges: the Crisis Decades", { id:"ge-crisis-stats", title:"Indicators 
        "Productivity post-1973 under half the 1950–73 rate; trade growth 8%/yr (1960–73) → 4.5% → 1.5% (80s) → 4.5% (90–95)"] });
 add("Challenges: the Crisis Decades", { id:"ge-crisis-uneven", title:"Geographically uneven crisis", when:"1973–1980s",
   q:"Which countries kept growing during the Crisis Decades, showing the crisis was geographically uneven?",
+  exp:"Only a few countries kept 3%+ growth after 1973, and in the 1980s the newly advanced Asian economies far outgrew the West. This shows that the Crisis Decades were not a global crisis in the same way everywhere. It supports essays that distinguish between regions, for example Japan and the Asian Tigers versus Western manufacturing heartlands that faced their competition.",
   pts:["1973–80 only a handful posted 3%+ growth: Norway (4.9%), Canada (4.3%), Japan (3.6%)",
        "1980s: newly advanced Asian economies vastly outperformed the West",
        "Singapore (8.2%), Korea (7.1%)",
        "Taiwan (6.5%), Hong Kong (5.3%)"] });
 add("Challenges: the Crisis Decades", { id:"ge-dollar-overvalued", title:"Why the dollar became overvalued", when:"1960–1969",
   q:"Why did the US dollar become overvalued in the 1960s?",
+  exp:"The dollar became overvalued because the US kept sending dollars abroad through aid, military spending (especially Vietnam) and investment, while Great Society spending widened deficits and the trade surplus vanished. More dollars circulated than US gold could cover at $35 an ounce, so traders expected devaluation and sold dollars. Failed fixes and falling gold reserves show the problem was structural, setting up the Nixon Shock.",
   pts:["Surplus of dollars from foreign aid, military spending, foreign investment — not enough gold to cover them at $35/oz",
        "Military outflows to Asia: <$1bn/yr (1960–64) → $2.7bn/yr average (1969–70) (Vietnam War)",
        "Johnson’s “Great Society”: federal deficit $5,922m (1964) → $8,702m (1967) → $25,161m (1968)",
@@ -456,18 +516,21 @@ add("Challenges: the Crisis Decades", { id:"ge-dollar-overvalued", title:"Why th
 add("Challenges: the Crisis Decades", { id:"nixonshock", title:"Nixon Shock", when:"15 Aug 1971",
   q:"What did Nixon’s New Economic Policy of August 1971 involve and what were his aims?",
   clue:"President’s 15 August 1971 “New Economic Policy” — the beginning of the end for fixed exchange rates.",
+  exp:"Nixon’s policy tackled domestic and international problems together. Tax cuts and a price-wage freeze targeted jobs and inflation, while suspending gold convertibility protected the dollar from speculators. The 10% import surcharge pressured trading partners to revalue or lower barriers. Ending convertibility removed the anchor of Bretton Woods, so this marks the start of its collapse and of the US putting national interest before the system.",
   pts:["15 August 1971: Nixon announced his “New Economic Policy” — beginning of the end for fixed rates",
        "“Create more and better jobs” + “stop the rise in the cost of living” → tax cuts + 90-day price/wage freeze",
        "“Protect the dollar from… international money speculators” → suspended dollar’s convertibility into gold",
        "Extra 10% tariff on dutiable imports — to pressure partners to revalue currencies / lower trade barriers"] });
 add("Challenges: the Crisis Decades", { id:"ge-bw-collapse", title:"Timeline to Bretton Woods’ collapse", when:"Dec 1971–Mar 1973",
   q:"Trace the steps from the Smithsonian Agreement to the end of Bretton Woods.",
+  exp:"The Smithsonian Agreement tried to save fixed rates by resetting them around a cheaper dollar, but speculation returned and forced another devaluation. By March 1973 the European currencies were floating jointly against the dollar, which effectively ended Bretton Woods. The sequence shows that once dollar-gold convertibility had gone, patched-up fixed rates could not hold against market pressure.",
   pts:["Dec 1971: Smithsonian Agreement (G-10) — new fixed rates around a devalued dollar",
        "Feb 1973: renewed speculative pressure → further dollar devaluation",
        "March 1973: G-10 agreed 6 EC members would tie currencies together and jointly float against the USD",
        "Effectively ended Bretton Woods in favour of floating exchange rates"] });
 add("Challenges: the Crisis Decades", { id:"ge-finlib", title:"Effects of financial liberalisation", when:"late 1960s–1981",
   q:"Define financial liberalisation and explain its effects.",
+  exp:"Freeing finance let capital flow more easily and, with floating rates, sent oil exporters’ surpluses into international banks, flooding them with money to lend. Developing countries then covered growing deficits by borrowing in capital markets instead of relying on aid. The resulting poorly regulated system, risky lending and hedge funds made crises easier to spread, which links financial liberalisation directly to the later debt crisis.",
   pts:["Removing/reducing government regulation of finance, allowing greater market/private participation; later part of Washington Consensus",
        "Increased capital flow: controls on international capital movements reduced/removed",
        "Floating rates: currency controls relaxed from late 1960s; oil exporters’ surpluses deposited in international banks, boosting liquidity",
@@ -476,6 +539,7 @@ add("Challenges: the Crisis Decades", { id:"ge-finlib", title:"Effects of financ
        "Hedge funds grew, often used by major banks as a “front” for risky transactions"] });
 add("Challenges: the Crisis Decades", { id:"ge-gilpin-bridge", title:"Gilpin: from Bretton Woods to debt", when:"1970s–80s",
   q:"How does Gilpin link the end of Bretton Woods to the 1980s Debt Crisis?",
+  exp:"Gilpin’s point is that Bretton Woods had imposed discipline on lending and money creation, so its collapse removed a brake on debt. That opened the way for the huge build-up of private and international debt in the late 1970s and early 1980s. Use this as the link between Part F and the Debt Crisis, showing one crisis causing the next rather than treating them as isolated events.",
   pts:["Gilpin (2001): abandonment of Bretton Woods meant loss of international financial discipline",
        "“The door had been opened for the vast expansion of private, national, and international debt that occurred in the late 1970s and early 1980s”",
        "The theoretical bridge from the Bretton Woods collapse to the Debt Crisis",
@@ -485,6 +549,7 @@ add("Challenges: the Crisis Decades", { id:"ge-gilpin-bridge", title:"Gilpin: fr
 add("Oil Crises", { id:"oilcrisis", title:"1973 Oil Crisis", when:"Oct 1973–Mar 1974",
   q:"What caused the 1973 oil crisis and how far did prices rise?",
   clue:"Arab-dominated OPEC cut exports 5% a month, then embargoed the US, Netherlands and Denmark over Israel’s 1967 gains.",
+  exp:"The 1973 crisis was political: Arab-dominated OPEC used oil supply to pressure Israel’s supporters, first cutting exports and then imposing an embargo. Prices rose very quickly and stayed about a third above pre-crisis levels even after the embargo ended, so the shock lasted. This makes 1973 the clearest example of an external trigger in the debate over whether the crisis decades were caused by events or structural flaws.",
   pts:["Oct 1973: Arab-dominated OPEC cut crude exports 5%/month until Israel evacuated territories occupied in the 1967 war",
        "Dec 1973: full OPEC embargo against the US, Netherlands, Denmark",
        "Prices +70% in Oct 1973 (to >$5/barrel), +130% more by Dec 1973 (to ~$12/barrel)",
@@ -492,18 +557,21 @@ add("Oil Crises", { id:"oilcrisis", title:"1973 Oil Crisis", when:"Oct 1973–Ma
 add("Oil Crises", { id:"ge-oil1979", title:"1979 Oil Crisis", when:"1979",
   q:"What triggered the 1979 oil crisis and what happened to prices?",
   clue:"Revolution in a major oil exporter cut global crude supply, causing shortages and panic buying.",
+  exp:"Unlike 1973, the 1979 shock came from revolution in Iran disrupting supply rather than a deliberate embargo, but the result was similar: shortages, panic buying and prices nearly tripling. Prices settled at a high level even after the peak faded. Together with 1973, it shows the global economy’s vulnerability to oil supply, and it helped prompt the Volcker Shock that followed.",
   pts:["Triggered by the Iranian Revolution",
        "Turmoil in a major exporter sharply cut global crude supply → shortages and panic buying",
        "Price per barrel nearly tripled within 12 months to $39.50",
        "Settled around $30/barrel after OPEC failed to fully sustain the peak"] });
 add("Oil Crises", { id:"ge-oil-dependence", title:"Why oil mattered so much", when:"1950–1971",
   q:"Why were the oil shocks so disruptive to Western Europe?",
+  exp:"Western Europe had become heavily dependent on oil, mostly imported, with some countries importing nearly all of theirs. Because oil prices had barely moved for decades, economies had built that dependence on cheap oil. So the sudden spikes of 1973 and 1979 hit especially hard, since there was no gradual adjustment. This explains why oil shocks caused such severe inflation and recession.",
   pts:["Oil = 8.5% of W. Europe’s energy consumption (1950) → 60% by 1970, mostly imported",
        "Italy 75% import-dependent; Portugal 80%",
        "Prices almost flat for decades: Saudi light crude $1.93/barrel (1955) → only $2.18 (1971) (Judt, 2005)",
        "Made the 1973/79 spikes all the more disruptive"] });
 add("Oil Crises", { id:"ge-stagflation", title:"Short-term impact: inflation, stagnation, stagflation", when:"1961–1979",
   q:"What were the short-term impacts of the oil shocks on oil-importing economies?",
+  exp:"Higher oil prices raised production costs that fed through to manufactured goods, pushing up inflation, while output and employment fell. That combination, stagflation, broke the Keynesian toolkit: raising interest rates fought inflation but deepened recession, while cutting them did the reverse, and spending cuts were politically impossible with rising unemployment. This explains why governments struggled and later changed priorities.",
   pts:["Inflation: 3.1% (1961–69) → 6.4% (1969–73) → 11.9% (1973–79), from rising production costs passed to manufactures",
        "Usual anti-inflation tools politically unavailable as they would deepen unemployment",
        "1974–75: OECD unemployment +7 million",
@@ -512,6 +580,7 @@ add("Oil Crises", { id:"ge-stagflation", title:"Short-term impact: inflation, st
        "Raising rates curbed inflation but deepened stagnation; lowering them fed inflation — monetary policy alone could not solve both"] });
 add("Oil Crises", { id:"ge-oil-developing", title:"Oil crises: long-term impact on developing economies", when:"1973–1980s",
   q:"Why did the oil crises have a longer-term negative effect on oil-importing developing economies?",
+  exp:"Developing importers had no cushion: paying more for oil pushed their deficits up sharply, forcing import cuts that reduced investment, growth and consumption, and output per head fell in much of Sub-Saharan Africa. They avoided depression only by borrowing heavily, which built the debt that exploded in 1982. This asymmetry with developed economies is one of the most important comparative points in the topic.",
   pts:["Core point: longer-term negative effect on developing importers, while developed economies mitigated it over time",
        "Non-oil LDC deficits: $11.5bn (1973) → $45.9bn (1975) → $35.8bn (1978) (Brett, 1985)",
        "Imports severely cut → declines in investment, growth, consumption",
@@ -519,18 +588,21 @@ add("Oil Crises", { id:"ge-oil-developing", title:"Oil crises: long-term impact 
        "Only large-scale lending prevented depression — survival by accumulating debt, seeding the 1982 Debt Crisis"] });
 add("Oil Crises", { id:"ge-oil-developed", title:"Oil crises: adaptation by developed economies", when:"1970s",
   q:"How did developed and newly industrialising economies adapt to the oil crises?",
+  exp:"Richer economies could adapt: they found alternative energy, restructured industry to use less oil and shifted demand to fuel-efficient cars. Newly industrialising economies like Taiwan moved into technology-intensive industries and used construction to absorb the shock, as with ITRI. This contrasts with developing importers that could only borrow, and explains why the oil crises had a shorter impact on developed economies.",
   pts:["Searched for alternative energy sources",
        "Industrial restructuring to reduce oil dependence (e.g. more fuel-efficient cars produced in Asia)",
        "NIEs (e.g. Taiwan) shifted to technology-intensive industries",
        "Major construction projects to cushion the shock (e.g. ITRI established 1973)"] });
 add("Oil Crises", { id:"ge-monetarism", title:"Policy shift to fighting inflation", when:"1970s–80s",
   q:"How did government policy priorities change in response to the oil crises?",
+  exp:"Because Keynesian tools failed against stagflation, many governments changed their main goal from full employment and growth to controlling inflation. The monetarist reasoning was that governments themselves cause inflation through excessive borrowing and unbalanced budgets, so the cure was to cut public spending. Privatisation fitted this shift, promising efficiency and raising money from sales. This sets up Reaganomics and Thatcherism as the leading examples.",
   pts:["Many governments abandoned employment/growth as primary aim in favour of containing inflation",
        "Governments “create” inflation via excessive borrowing/unbalanced budgets",
        "So monetarist policy targeted cuts in government spending (Pollard, 1997)",
        "Privatisation drives gained momentum — efficiency grounds and to generate sale proceeds"] });
 add("Oil Crises", { id:"reaganthatcher", title:"Reaganomics and Thatcherism: policies", when:"1979–1990",
   q:"What policies made up Reaganomics and Thatcherism?",
+  exp:"Both programmes reversed the postwar mixed economy by shrinking the state. Reagan cut taxes and social spending and deregulated, betting that gains would “trickle down”, while Volcker’s high interest rates attacked inflation. Thatcher privatised major state industries, cut income taxes and shifted to taxing consumption through VAT. Together they show the move from Keynesian full employment to market-led, anti-inflation policy.",
   pts:["Reaganomics (1981–89): tax cuts, decreased social spending, increased military spending, deregulation — “trickle-down”",
        "Volcker (Fed Chair) raised the federal funds rate to 20% by 1980 to crush inflation (“Volcker Shock”)",
        "US top marginal tax: 70% → 50% (1982) → 38.5% (1987) → eventually 28%; corporate tax 48% → 34%",
@@ -538,6 +610,7 @@ add("Oil Crises", { id:"reaganthatcher", title:"Reaganomics and Thatcherism: pol
        "UK basic income tax cut to 25%; higher rate 83% → 40%; shift to indirect tax (VAT 8% → 15%)"] });
 add("Oil Crises", { id:"ge-reagan-thatcher-outcomes", title:"Reaganomics and Thatcherism: outcomes", when:"1979–1990",
   q:"What were the outcomes of Reaganomics and Thatcherism?",
+  exp:"The results were mixed, which makes them good evaluation material. Reaganomics saw millions of new jobs and inflation cut to 4%, and Thatcherism saw falling unemployment after 1986 and a better-performing British Telecom. But UK inflation stayed high by international standards and manufacturing took nearly nine years to recover. So the new policies tamed some problems but at a slow and uneven pace.",
   pts:["Reagan: 21+ million jobs created (Dec 1982–June 1990, per Laffer); inflation cut to 4%",
        "Unemployment fell below 6% (from a 1986 high of 6.6% alongside 3.5% GDP growth)",
        "Thatcher: unemployment fell from 3.3 million (1986) to half that by 1990",
@@ -546,6 +619,7 @@ add("Oil Crises", { id:"ge-reagan-thatcher-outcomes", title:"Reaganomics and Tha
        "Manufacturing output did not recover to pre-Thatcher levels until winter 1988, nearly 9 years in"] });
 add("Oil Crises", { id:"ge-oil-catalyst", title:"Oil crises as catalyst for further crises", when:"1970s–1982",
   q:"How did the oil crises feed into further challenges?",
+  exp:"The oil crises caused further problems in two ways. To save foreign exchange, countries cut imports and pushed exports, which fed New Protectionism. And oil-importing developing countries borrowed from commercial banks on easier terms than the IMF offered, so when the Volcker Shock raised interest rates their debts became unpayable. This shows the crises were a connected chain, not separate events.",
   pts:["New Protectionism: economies cut imports/boosted exports to conserve foreign exchange",
        "1982 Debt Crisis: oil-importing LDCs overborrowed from commercial banks to cope with oil costs",
        "Banks attracted them with generous terms/less stringent conditions than the IMF",
@@ -554,6 +628,7 @@ add("Oil Crises", { id:"ge-oil-catalyst", title:"Oil crises as catalyst for furt
 /* ── Protectionism ── */
 add("Protectionism", { id:"newprotectionism", title:"Traditional vs New Protectionism", when:"1970s–",
   q:"Define protectionism and distinguish traditional from New Protectionism.",
+  exp:"The key difference is the tool used. Traditional protectionism relied on tariffs, which are easy to measure and so could be negotiated down under GATT. New Protectionism used quotas, standards, subsidies and voluntary restraints, which are subjective and hard to quantify, so GATT’s tariff-cutting approach worked less and less well. That explains why protectionism grew from the 1970s even as tariffs kept falling.",
   pts:["Protectionism: government policies restricting international trade to help domestic industries",
        "Traditional: before the 1970s; tariff or monetary barriers; GATT signatories committed to reducing it; easy to quantify and negotiate down",
        "New (from 1970s): new ways to shield domestic industries amid mounting economic challenges",
@@ -562,6 +637,7 @@ add("Protectionism", { id:"newprotectionism", title:"Traditional vs New Protecti
        "Subjective, hard to quantify — made GATT tariff-reduction agreements progressively less effective"] });
 add("Protectionism", { id:"ge-np-us-decline", title:"Cause 1: weakening US will and capacity", when:"1965–1985",
   q:"How did the weakening US political will and economic capacity to maintain free trade cause New Protectionism?",
+  exp:"The US had built and defended free trade, but by the late 1960s its deficits and foreign liabilities were growing far faster than its reserves. Recovered European and Japanese rivals outcompeted US industry, as the car sector and the first goods trade deficit since 1893 show, while the EEC traded more internally behind CAP. The Nixon Shock signalled that the US would now put national interest ahead of the multilateral system.",
   pts:["US deficit: $2.9bn (1967) → $19.8bn (1971), totalling $33.4bn (1967–71); foreign liabilities $33.2bn → $67.8bn",
        "1971: gold/forex reserves $13.19bn vs liabilities $67.81bn (vs $15.45bn/$25.18bn in 1965)",
        "Recovered Europe/Japan more assertive/nationalistic; outcompeted the US in manufactures (quality, cost)",
@@ -570,6 +646,7 @@ add("Protectionism", { id:"ge-np-us-decline", title:"Cause 1: weakening US will 
        "Nixon Shock (1971): ended convertibility and fixed rates, 10% import tax — questioned US commitment to multilateralism"] });
 add("Protectionism", { id:"ge-np-institutions", title:"Cause 2: ineffective international institutions", when:"1974–1990s",
   q:"How did ineffective international institutions lead governments to privilege national problems?",
+  exp:"Hobsbawm’s point is that the problem was control: nobody had the tools to manage the world economy. With stagflation hurting growth and jobs, and GATT unable to deal with hard-to-measure non-tariff barriers or rival regional blocs, governments turned to protecting their own economies. The irony that GATT’s tariff success pushed states toward non-tariff barriers shows how growth-era institutions shaped the crisis.",
   pts:["Hobsbawm (1999): capitalism’s operations “had become uncontrollable. Nobody knew what to do about the vagaries of the world economy”",
        "Stagflation (1974–79): developed-country real GNP growth 2.7%; inflation 13.4% (1974); OECD unemployment avg 4.9%",
        "GATT struggled with subjective, less quantifiable non-tariff barriers",
@@ -577,6 +654,7 @@ add("Protectionism", { id:"ge-np-institutions", title:"Cause 2: ineffective inte
        "Ironically GATT’s SUCCESS in cutting manufacturing tariffs pushed countries to non-tariff barriers"] });
 add("Protectionism", { id:"ge-np-lobbies", title:"Cause 3: domestic lobby groups", when:"1970s–1982",
   q:"Why did domestic lobby pressure make protectionism politically sensible?",
+  exp:"Technological change and the new international division of labour destroyed jobs faster than new ones appeared, and weakened unions could no longer protect workers in other ways. The pain was concentrated in import-exposed sectors, with US auto and steel unemployment far above the national rate in 1982. Concentrated losses created strong political pressure, so protection made sense for governments even if it hurt the wider economy.",
   pts:["Rapid technological change → structural unemployment (cyclical, structural, new international division of labour)",
        "Production shed labour faster than the economy created jobs",
        "Trade unions weakened by depression + hostile neo-liberal governments",
@@ -584,6 +662,7 @@ add("Protectionism", { id:"ge-np-lobbies", title:"Cause 3: domestic lobby groups
        "Concentrated pain in import-exposed sectors created strong pressure for protection"] });
 add("Protectionism", { id:"ge-np-harder", title:"Cause 4: New Protectionism harder to reduce", when:"1985–1999",
   q:"Why was New Protectionism harder to reduce, and how did US trade law entrench it?",
+  exp:"Non-tariff barriers were hard to remove because they could not be easily measured or negotiated down, and they were politically cheaper than devaluing or improving competitiveness. Reagan’s Omnibus Trade Act made the US target surplus countries, and VERs, bilateral talks and retaliation spread the approach as others copied it. This explains why New Protectionism became entrenched rather than a short-term reaction.",
   pts:["Non-tariff barriers subjective, hard to quantify",
        "More useful/less politically costly than devaluation or improving competitiveness",
        "Reagan’s Omnibus Foreign Trade and Competitiveness Act (1988, renewed 1994 & 1999): 10% bilateral surplus-reduction requirement on surplus countries",
@@ -591,6 +670,7 @@ add("Protectionism", { id:"ge-np-harder", title:"Cause 4: New Protectionism hard
        "US also used VERs, bilateral talks (MOSS, Structural Impediments Initiative, US–Japan Framework) and aggressive trade retaliation"] });
 add("Protectionism", { id:"ge-protect-benefits", title:"Short-run benefits of protectionism", when:"1970–1990s",
   q:"What were the short-run benefits of protectionism? Illustrate with India’s pharmaceutical industry.",
+  exp:"Protection can shield infant industries and jobs until they can compete. India’s Patents Act is the standout case: waiving drug patents let Indian firms make generics at scale, so their market share and numbers soared, while tariff revenue funded key sectors. Use this as a balancing point that protectionism sometimes enabled self-sufficient development, while noting the notes call it a rare case.",
   pts:["Safeguards domestic industries from lower-cost/subsidised competitors; esp. infant export industries",
        "Job creation via consumption of domestic goods",
        "India’s Patents Act (1970) waived IP protection for drugs, letting firms produce generics at scale",
@@ -598,6 +678,7 @@ add("Protectionism", { id:"ge-protect-benefits", title:"Short-run benefits of pr
        "Higher tariffs raised revenue used to subsidise key sectors — rare case of protectionism enabling self-sufficient development"] });
 add("Protectionism", { id:"ge-protect-costs", title:"Longer-term costs of protectionism", when:"1973–1985",
   q:"What were the longer-term negative impacts of protectionism?",
+  exp:"In the long run protection shrank output and trade, with world trade actually falling in 1982. It helped one country at its partners’ expense, and because economies were now linked through liberalisation, those losses spread across borders. Distorted comparative advantage and less specialisation cut efficiency and exports, while retaliation and devaluations like the Plaza Accord failed to fix deficits. So short-term gains came with lasting costs.",
   pts:["1973–75: industrial production fell 10%/yr; international trade fell 13%",
        "World trade volume growth 1.2% (1980), 0.8% (1981), fell 2.2% (1982)",
        "Prioritised one country at partners’ expense; the same liberalisation mechanisms now transmitted crises across borders",
@@ -605,6 +686,7 @@ add("Protectionism", { id:"ge-protect-costs", title:"Longer-term costs of protec
        "Tit-for-tat tensions: Nixon Shock 1971; Plaza Accord 1985 — US devalued to boost exports but deficits with Japan and China persisted"] });
 add("Protectionism", { id:"ge-protect-ldcs", title:"Disproportionate impact on developing countries", when:"1970s",
   q:"Why did protectionism disproportionately harm developing countries?",
+  exp:"Developing countries were hit hardest because GATT cuts mainly helped manufactured trade among rich countries, while the industries that kept protection, like textiles, steel and footwear, were exactly where poorer countries could compete. As commodity exporters they faced old tariffs plus new non-tariff barriers, so they lost markets and revenue. This supports the theme that the crisis decades were far worse for developing economies.",
   pts:["GATT tariff cuts mainly benefited manufactured-goods trade between DEVELOPED countries",
        "Industries winning continued protection (textiles/apparel, steel, cars, footwear, consumer electronics) were those LDCs needed access to",
        "LDCs as exporters of primary commodities faced lingering tariffs AND new non-tariff barriers",
@@ -612,6 +694,7 @@ add("Protectionism", { id:"ge-protect-ldcs", title:"Disproportionate impact on d
 add("Protectionism", { id:"ge-uruguay-beef", title:"Uruguay and Colombia’s meat exports", when:"1972–1977",
   q:"How did EEC protectionism damage Uruguayan and Colombian beef exports?",
   clue:"EEC sanitary rules and 1974 import restrictions devastated two Latin American meat exporters.",
+  exp:"This case shows how developed-country protection could wipe out a developing country’s export earnings. Uruguay had already been shut out of other markets by sanitary rules, so new EEC beef restrictions removed its biggest remaining buyer and halved export earnings in a year. Colombia’s beef exports to the EEC disappeared entirely. Use it as concrete evidence for the disproportionate harm of New Protectionism on poorer economies.",
   pts:["EEC sanitary regulations had already closed Canada, Japan and US markets to Uruguayan beef for years",
        "From early 1974, new EEC restrictions on beef/veal cut Uruguay’s largest remaining market",
        "Uruguay’s chilled/frozen beef exports: peak US$138m (1974) → US$68m (1975)",
@@ -619,6 +702,7 @@ add("Protectionism", { id:"ge-uruguay-beef", title:"Uruguay and Colombia’s mea
        "Colombian beef exports to the EEC: US$17m (1973) → zero by mid-1977"] });
 add("Protectionism", { id:"ge-coop-g7-wef", title:"Continued cooperation: G7, WEF, GATT, EEC", when:"1971–1997",
   q:"How did the G6/G7/G8, WEF, GATT rounds and EEC sustain cooperation despite protectionism?",
+  exp:"Despite protectionism, cooperation continued in new forms: the G7 gave leaders an annual forum, though without binding power, the WEF brought business and governments together, GATT rounds kept cutting tariffs until the WTO emerged, and the EEC kept expanding. This supports the synthesis point that you should not overstate the breakdown of cooperation in the crisis years.",
   pts:["G6/G7/G8: informal grouping (US, France, UK, Germany, Japan, Italy → +Canada 1976 → +Russia 1997) meeting annually",
        "G7 has no legislative power; recommendations not legally binding",
        "WEF (1971): Geneva-based NGO for public-private collaboration; Davos Annual Meeting; CEOs, politicians, academics, NGOs",
@@ -627,6 +711,7 @@ add("Protectionism", { id:"ge-coop-g7-wef", title:"Continued cooperation: G7, WE
 add("Protectionism", { id:"ge-plaza", title:"Plaza Accord", when:"22 Sept 1985",
   q:"What was agreed in the Plaza Accord and what did it achieve?",
   clue:"Five-power 1985 agreement to depreciate the dollar against the yen and Deutsche Mark.",
+  exp:"The Plaza Accord was coordinated action to fix trade imbalances by pushing down the dollar against the yen and mark, with the US promising deficit cuts and Japan and Germany promising to raise demand. It fixed the US–German imbalance but not the US–Japanese one. This shows cooperation was still possible, but also its limits, since structural factors kept some deficits in place.",
   pts:["22 Sept 1985: France, West Germany, Japan, UK, US",
        "Agreed to depreciate the USD vs Yen/Deutsche Mark to correct trade imbalances",
        "Corrected the US–Germany imbalance but not US–Japan",
@@ -634,6 +719,7 @@ add("Protectionism", { id:"ge-plaza", title:"Plaza Accord", when:"22 Sept 1985",
 add("Protectionism", { id:"ge-erm", title:"Exchange Rate Mechanism", when:"1979",
   q:"What was the ERM?",
   clue:"Part of the European Monetary System from 1979, reducing currency variability ahead of single-currency union.",
+  exp:"The ERM tied EEC currencies more closely to reduce exchange-rate swings, a regional answer to the instability left by the end of Bretton Woods. It also served as a step toward monetary union, leading to ERM II alongside the euro. Use it as evidence that European cooperation deepened during the crisis decades rather than collapsing.",
   pts:["Introduced 1979 as part of the European Monetary System",
        "Reduced exchange rate variability among EEC members",
        "Ahead of eventual single-currency union",
@@ -643,6 +729,7 @@ add("Protectionism", { id:"ge-erm", title:"Exchange Rate Mechanism", when:"1979"
 add("Debt Crises of the 1980s", { id:"ge-debt-overview", title:"Third World Debt Crisis: overview", when:"Aug 1982–",
   q:"When is the debt crisis dated from, and who were the largest debtors?",
   clue:"Began when Mexico declared in August 1982 it could no longer service its debt.",
+  exp:"Mexico’s 1982 announcement marks the start because it set off a chain of defaults and near-defaults across many countries. The size of the debts of Brazil, Mexico and Argentina, and Time’s remark about so many nations owing so much with so little hope of repayment, show the scale. This frames the debt crisis as a systemic problem rather than a few unlucky countries.",
   pts:["Dated from August 1982, when Mexico declared it could no longer service its debt",
        "Triggered a wave of sovereign defaults/near-defaults worldwide",
        "By 1985 ~10 LDCs were heavy debtors unable to service debt",
@@ -650,6 +737,7 @@ add("Debt Crises of the 1980s", { id:"ge-debt-overview", title:"Third World Debt
        "Time (Jan 1984): “Never in history have so many nations owed so much money with so little promise of repayment”"] });
 add("Debt Crises of the 1980s", { id:"ge-overborrowing", title:"Cause: overborrowing from commercial banks", when:"1970s–1983",
   q:"Why did Third World states overborrow from commercial banks in the 1970s?",
+  exp:"Developing countries borrowed because oil and essential imports cost more than their cheap exports earned, leaving persistent deficits. Low interest rates and banks flush with petrodollars made loans easy, and avoiding the IMF meant escaping strict conditions. But without structural reform, borrowing only treated symptoms, so countries became highly exposed when rates rose. This sets up why the Volcker Shock was so damaging.",
   pts:["Borrowed to pay for expensive oil and essential imports during the oil crises",
        "Unfavourable terms of trade: cheap exports could not cover Western imports → persistent BOP deficits",
        "Attractive while rates were low, to fund industry, infrastructure, welfare — but without structural reform only eased symptoms",
@@ -657,6 +745,7 @@ add("Debt Crises of the 1980s", { id:"ge-overborrowing", title:"Cause: overborro
        "Many LDCs avoided the IMF (less generous, strict conditionality) for riskier commercial loans"] });
 add("Debt Crises of the 1980s", { id:"ge-borrow-scale", title:"Scale of Third World borrowing", when:"1973–1983",
   q:"What statistics show the scale of Third World and Latin American borrowing?",
+  exp:"The figures show how fast debt built up, with Latin American government debt rising tenfold in a decade and most Third World debt owed to private lenders. The key comparison is policy choice: many Latin American governments kept borrowing after the oil shock instead of tightening spending as Far Eastern and European states did, which fed hyperinflation. This explains why Latin America was hit especially hard.",
   pts:["Latin America borrowed $50bn in 1981, taking total foreign debt to $300bn",
        "Third World as a whole owed $750bn abroad (3/4 to private financiers)",
        "Latin American government external debt rose TENFOLD (1973–83); private-sector debt FOURFOLD",
@@ -665,6 +754,7 @@ add("Debt Crises of the 1980s", { id:"ge-borrow-scale", title:"Scale of Third Wo
 add("Debt Crises of the 1980s", { id:"volcker", title:"Volcker Shock", when:"1979–1982",
   q:"What was the Volcker Shock and how did it trigger the debt crisis?",
   clue:"Newly appointed Fed Chair raised short-term US rates from ~10% to above 20% for almost three years.",
+  exp:"Volcker raised rates to crush US inflation, and it worked, but world rates followed and Latin American debt was tied to US rates. Each point increase added billions in interest, so debtors borrowed more just to service old loans until lenders took fright and stopped, causing panic. Mexico’s 1982 announcement followed. This shows a domestic US policy spreading across borders, a key example of global interdependence.",
   pts:["1979: Fed Chair Paul Volcker raised US short-term rates ~10% → 15% → above 20%, sustained almost 3 years (to late 1982)",
        "World rates followed; US inflation fell to 4% — but rate-indexed Latin American petrodollar debt became far less serviceable",
        "Real rates on LDC debt: barely kept pace with inflation (1974–80) → 6% (1981) → 8% (1982); each 1-point US rise cost debtors $4–5bn/yr",
@@ -673,6 +763,7 @@ add("Debt Crises of the 1980s", { id:"volcker", title:"Volcker Shock", when:"197
        "Argentina & Brazil: debt-to-exports 130% → 200% (1976–82); interest/exports 10% → >20% (~50% Argentina)"] });
 add("Debt Crises of the 1980s", { id:"ge-debt-shortterm", title:"Debt crisis: immediate impact", when:"1971–1990",
   q:"What was the immediate short-term impact of the debt crisis?",
+  exp:"The immediate effect was panic: banks had tied money up in long-term loans, so fear of bank runs spread, and investors pulled out. Capital flight in countries like Argentina and Venezuela equalled most or all of new borrowing, so loans flowed straight back out. The jump in total debt and the doubling of indebted countries, mostly in Africa, shows how widely the crisis spread.",
   pts:["Loss of faith in commercial banks; fear of “run on the bank”, since funds were tied up in long-term projects",
        "Developing-country indebtedness: $87bn (1971) → $810bn (1984)",
        "Indebted countries rose from 12 to 24 by 1990, the majority in Africa",
@@ -680,6 +771,7 @@ add("Debt Crises of the 1980s", { id:"ge-debt-shortterm", title:"Debt crisis: im
        "Argentina: 60% of debt increase (1979–81); Venezuela: >100%"] });
 add("Debt Crises of the 1980s", { id:"ge-debt-longterm", title:"Debt crisis: long-run divergence", when:"1983–1988",
   q:"How did the debt crisis widen the gap between developed and developing economies in the long run?",
+  exp:"After the crisis, banks lent far more cautiously and creditor governments tightened rules, so developing countries lost access to new money and stagnated, as Mexico’s near-zero growth shows. Developed countries had stronger institutions and resources, so they recovered. This repeats the pattern of the oil crises, giving you a consistent comparative argument about developed and developing economies.",
   pts:["Banks far more cautious about new lending; creditor governments imposed stricter foreign-loan regulations",
        "Developing countries (esp. Latin America) suffered prolonged stagnation",
        "Mexico’s real GDP grew just 0.1%/yr on average, 1983–88",
@@ -687,6 +779,7 @@ add("Debt Crises of the 1980s", { id:"ge-debt-longterm", title:"Debt crisis: lon
        "Same pattern as the oil crises"] });
 add("Debt Crises of the 1980s", { id:"ge-imf-debt", title:"IMF assistance and conditionality in the debt crisis", when:"1982–1993",
   q:"What role did IMF assistance and conditionality play in managing the debt crisis?",
+  exp:"The IMF became the gatekeeper: debtors could only renegotiate if they accepted austerity and structural adjustment such as deregulation, privatisation and trade liberalisation. Most of Latin America signed agreements by 1983, and Mexico’s loan came with free-market conditions. These conditions became the Washington Consensus, linking debt-crisis management to the friction over IMF policy seen elsewhere.",
   pts:["Debtors accepted IMF austerity (budget cuts, low credit growth = “absorption” reduction) as condition for renegotiating loans",
        "Plus structural adjustment (deregulation, privatisation, trade liberalisation)",
        "By end-1983: 17 Latin American countries had IMF adjustment agreements",
@@ -694,6 +787,7 @@ add("Debt Crises of the 1980s", { id:"ge-imf-debt", title:"IMF assistance and co
        "These reforms became the “Washington Consensus” (US Treasury + IMF + World Bank)"] });
 add("Debt Crises of the 1980s", { id:"debtmanagement", title:"Managing the Third World Debt Crisis", when:"1982–early 1990s",
   q:"How did the Paris Club, London Club, US assistance, Baker Plan and Brady Plan manage the debt crisis?",
+  exp:"The responses evolved from short-term rescue to real relief. Early help like the 1982 package to Mexico only bought 90 days, and Paris and London Club deals mainly rescheduled debt. The Baker Plan shifted to growth and market access, Toronto terms began partial cancellation for the poorest, and the Brady Plan finally allowed actual debt reduction. The crisis ended only when relief was agreed and investors returned.",
   pts:["Paris Club: creditor-country officials coordinating rescheduling, conditional on IMF agreement; Venice terms (1987) extended repayment",
        "Toronto terms (Oct 1988): partial cancellation for poorest (33.33%; 50% by Dec 1991)",
        "London Club: private-creditor equivalent; end-1989 held 14% of Sub-Saharan debt but received 19% of debt service",
@@ -705,6 +799,7 @@ add("Debt Crises of the 1980s", { id:"debtmanagement", title:"Managing the Third
 /* ── Lecture 2 Concluding Thoughts ── */
 add("Lecture 2 Concluding Thoughts", { id:"ge-l2-synthesis", title:"Synthesis: challenges in the global economy", when:"evaluation",
   q:"What synthesis points conclude the study of challenges in the global economy?",
+  exp:"These are your main evaluation lines for the crisis decades. Developed and developing countries faced very different conditions, which explains the unequal impact. Cooperation changed form rather than vanished. New Protectionism left lasting barriers to future liberalisation. The oil shocks exposed existing weaknesses rather than creating new ones. And the Volcker Shock shows crises still spread across borders.",
   pts:["Industrialised countries could borrow cheaply in the 1970s and restore BOP equilibrium; developing ones took expensive loans that trapped them for much of the 1980s",
        "Crisis years reversed growth-era cooperation, but it persisted in altered forms (G7, WEF, GATT rounds, Plaza Accord, ERM) — don’t overstate the breakdown",
        "New Protectionism made FUTURE liberalisation harder — lasting structural consequences",
@@ -714,6 +809,7 @@ add("Lecture 2 Concluding Thoughts", { id:"ge-l2-synthesis", title:"Synthesis: c
 /* ── Exam Revision Toolkit ── */
 add("Exam Revision Toolkit", { id:"ge-timeline-1", title:"Master timeline: 1941–1967", when:"1941–1967",
   q:"Give the key events of the master timeline from 1941 to 1967.",
+  exp:"The first half of the timeline traces how the postwar order was built: wartime planning (Atlantic Charter, Bretton Woods), US aid and security (Marshall Plan, NATO), then European integration (EPU, EEC, EFTA, CAP) and Japan’s rise. It ends with the UK’s 1967 devaluation, an early crack in Bretton Woods. Use it to place evidence in the right phase of the four-phase framework.",
   pts:["1941 Atlantic Charter; July 1944 Bretton Woods → IMF + IBRD; 1945–52 US Occupation of Japan",
        "1947 GATT signed (23 countries), Marshall Plan announced; 1948–52 Marshall Aid ($13bn)",
        "1949 NATO, Mutual Defence Assistance Programme; 1950 EPU; 1954–73 Japanese Miracle",
@@ -721,6 +817,7 @@ add("Exam Revision Toolkit", { id:"ge-timeline-1", title:"Master timeline: 1941�
        "1962/1967 CAP introduced/operational; 1962–67 Kennedy Round; 1965 Japan–South Korea normalisation; 1967 UK devaluation"] });
 add("Exam Revision Toolkit", { id:"ge-timeline-2", title:"Master timeline: 1971–1999", when:"1971–1999",
   q:"Give the key events of the master timeline from 1971 to 1999.",
+  exp:"The second half runs from the breakdown of Bretton Woods through the oil shocks, the policy responses (Volcker, Thatcher, Reagan) and the debt crisis, to managed recovery through the Plaza Accord, Brady Plan and the WTO. Notice how the events cluster as chains, such as 1979’s oil shock and Volcker Shock leading to 1982. This helps you show cause and effect rather than listing events.",
   pts:["1971: Nixon Shock (15 Aug), Smithsonian Agreement (Dec), WEF founded; March 1973 floating rates; Oct–Dec 1973 First Oil Crisis",
        "1973–79 Tokyo Round; 1976 G6 → G7; 1979 Second Oil Crisis, Volcker Shock, ERM",
        "1979–90 Thatcherism; 1981–89 Reaganomics; Aug 1982 Mexico default announcement",
@@ -728,6 +825,7 @@ add("Exam Revision Toolkit", { id:"ge-timeline-2", title:"Master timeline: 1971�
        "1992/94 EEA; 1995 WTO; 1997 G8, Asian Financial Crisis; 1999 euro with ERM II"] });
 add("Exam Revision Toolkit", { id:"ge-glossary-1", title:"Glossary: economic systems and institutions", when:"glossary",
   q:"Define: mixed economy, Keynesianism, Bretton Woods System, conditionality, SAP, Washington Consensus.",
+  exp:"These terms belong together: the mixed economy and Keynesianism describe the growth-era model of active government, Bretton Woods was its monetary framework, and conditionality, SAPs and the Washington Consensus describe the later market-oriented reforms imposed on borrowers. Knowing the precise meanings lets you contrast the state-led Golden Age with the market-led responses of the crisis years.",
   pts:["Mixed Economy: government intervention (Keynesian demand management, welfare) combined with private enterprise",
        "Keynesianism: government should manage demand via fiscal/monetary policy to maintain full employment",
        "Bretton Woods System: fixed exchange rates pegged to the USD, itself convertible to gold at $35/oz",
@@ -736,6 +834,7 @@ add("Exam Revision Toolkit", { id:"ge-glossary-1", title:"Glossary: economic sys
        "Washington Consensus: 10-point package (fiscal discipline, liberalisation, privatisation) of IMF/World Bank/US Treasury"] });
 add("Exam Revision Toolkit", { id:"ge-glossary-2", title:"Glossary: trade and crisis terms", when:"glossary",
   q:"Define: New Protectionism, stagflation, petrodollars, Flying Geese Model, MNC, VER.",
+  exp:"These terms mostly belong to the crisis years and the regional story: New Protectionism and VERs describe the non-tariff barriers that spread after the 1970s, stagflation the economic condition that broke Keynesian policy, and petrodollars the money that fuelled the debt crisis. The Flying Geese model and MNC definitions explain how growth spread. Precise definitions help you use these concepts accurately.",
   pts:["New Protectionism: post-1970s barriers using non-tariff tools (quotas, VERs, subsidies, standards)",
        "Stagflation: simultaneous high inflation AND stagnation/high unemployment",
        "Petrodollars: OPEC surplus oil revenues deposited in Western banks, later lent to developing countries",
@@ -744,23 +843,27 @@ add("Exam Revision Toolkit", { id:"ge-glossary-2", title:"Glossary: trade and cr
        "VER: exporter’s agreement to voluntarily limit exports to another country, avoiding formal tariffs/quotas"] });
 add("Exam Revision Toolkit", { id:"ge-essay-type1", title:"Essay type 1: “How far was X responsible?”", when:"essay framework",
   q:"How far/to what extent was [X] responsible for the growth/crisis of the global economy?", qs:"notes",
+  exp:"This structure turns a “how far” question into a weighed judgement. You first show how the given factor contributed, then test it against at least two other factors with evidence, and finally decide which mattered most. The strongest answers show that the ranking changes across the four phases, for example the US dominating reconstruction but mattering less once Europe, Japan and MNCs grew.",
   pts:["(1) Explain how X contributed",
        "(2) Weigh X against at least 2 other factors using specific evidence",
        "(3) Conclude with a reasoned judgment on relative importance, ideally across the four periods",
        "Factors to weigh: USA vs W. Europe/Japan’s agency vs MNCs vs international institutions vs structural/external shocks (oil crises)"] });
 add("Exam Revision Toolkit", { id:"ge-essay-type2", title:"Essay type 2: “Assess the impact of [event]”", when:"essay framework",
   q:"Assess the impact of [event] on the global economy.", qs:"notes",
+  exp:"Impact questions reward breaking the impact down. Short-term and long-term effects often differ, developed and developing economies suffered very differently, and regions like Japan and Western industrial heartlands did not share the same fate. The oil and debt crises are the clearest cases because developing countries suffered longer, so this framework directly uses the topic’s main comparative point.",
   pts:["Differentiate short-term vs long-term impact",
        "Differentiate developed vs developing economies",
        "Differentiate regions (e.g. Japan vs Western manufacturing heartlands)",
        "Lecture flags this explicitly for the oil crises and debt crisis — examiners reward this nuance"] });
 add("Exam Revision Toolkit", { id:"ge-essay-type3", title:"Essay type 3: “How similar/different were A and B?”", when:"essay framework",
   q:"How similar/different were the roles of [Player A] and [Player B]?", qs:"notes",
+  exp:"Comparison questions need paired evidence. The aid-donor comparison shows Europe and Japan taking up the US’s role, the oil and debt crises show how developed and developing economies experienced the same shocks differently, and traditional versus new protectionism contrasts tariffs with non-tariff barriers. Each pairing lets you judge similarity and difference rather than describe each side separately.",
   pts:["USA vs Western Europe/Japan as aid donors (Part C8)",
        "Developed vs developing economies’ experience of the oil/debt crises",
        "Traditional vs new protectionism (Part H1)"] });
 add("Exam Revision Toolkit", { id:"ge-essay-type4", title:"Essay type 4: inevitable or a “miracle”?", when:"essay framework",
   q:"Was the growth of the global economy (1945–73) inevitable / a ‘miracle’?", qs:"notes",
+  exp:"The “miracle” question invites a balanced answer. Catch-up growth from a low base, deliberate US choices and designed institutions all suggest the growth had clear causes rather than being miraculous. But Hobsbawm’s points about unprecedented cooperation and a technological revolution show genuinely new features. So the best judgement is that growth was explicable but still more than simple catch-up.",
   pts:["Counter: catch-up growth logic (low post-war base)",
        "Counter: deliberate US policy choices, not chance",
        "Counter: institutional design of Bretton Woods/GATT, not spontaneous",
@@ -768,6 +871,7 @@ add("Exam Revision Toolkit", { id:"ge-essay-type4", title:"Essay type 4: inevita
        "So significantly more than just “catch-up”"] });
 add("Exam Revision Toolkit", { id:"ge-causal-chains", title:"Causal chains linking the topic", when:"1945–1990s",
   q:"State the four causal chains that link sections of the topic in essays.",
+  exp:"These chains let you link sections instead of writing separate stories. The first shows the US’s success creating its own decline, the second and third show two routes to the debt crisis, through financial liberalisation and through oil shocks and the Volcker Shock, and the fourth shows how US decline and weak institutions produced protectionism that hurt poorer countries. Making these links explicit is what examiners reward.",
   pts:["US aid & security guarantees → European/Japanese recovery → Golden Age liberalisation → relative US decline → Bretton Woods collapse",
        "Bretton Woods collapse → financial liberalisation → expanded lending/petrodollars → Third World overborrowing → Debt Crisis",
        "Oil Crises → inflation/stagflation in developed economies → Volcker Shock → spike in global interest rates → Debt Crisis",
