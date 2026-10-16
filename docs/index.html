@@ -114,6 +114,8 @@ textarea{line-height:28px;background-image:repeating-linear-gradient(transparent
 .verdict{font-size:13px;color:var(--muted)}
 .your{border-left:3px solid var(--blue);padding:6px 12px;color:var(--blue);white-space:pre-wrap;font-size:14px;max-height:200px;overflow:auto;background:var(--blue-soft);border-radius:0 8px 8px 0}
 .tip{border:1px solid var(--warn);background:var(--warn-soft);border-radius:8px;padding:8px 12px;font-size:13.5px}
+.explain{border-left:3px solid var(--blue);background:var(--blue-soft);border-radius:0 8px 8px 0;padding:10px 12px;font-size:15px;line-height:1.5;max-width:65ch}
+.explain b{display:block;font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--blue);margin-bottom:4px}
 .reveal-title{font:700 22px var(--display)}
 .done{text-align:center;padding:24px 8px;display:grid;gap:10px;justify-items:center}
 .done .big{font:700 52px var(--display);color:var(--red)}
@@ -363,6 +365,7 @@ function progress(){ const n=round.queue.length; $("#pfill").style.width=(100*ro
 function stageClear(){ const s=$("#stage"); s.innerHTML=""; $("#sbody").scrollTop=0; return s; }
 function metaFor(t, key, extra){ const r=recOf(key); return el("div",{class:"meta"}, el("span",{class:"eyebrow",text:`${t.paper} · ${t.theme} · ${extra||t.name}`}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})); }
 function srcTag(c){ return el("div",{class:"srctag"}, el("b",{text:c.qs==="notes"?"Question from your notes":"Question written for you"}), ` · facts from ${c.src}${c.sec?" · "+c.sec:""}`); }
+function explain(c){ return c.exp?el("div",{class:"explain"}, el("b",{text:"Explanation"}), c.exp):null; }
 function showCard(){
   progress();
   if(round.i>=round.queue.length) return showSummary();
@@ -401,7 +404,7 @@ function markRecall(key,c,answer){
   s.append(metaFor(t,key), el("h2",{class:"qtitle",text:c.title}),
     answer.trim()?el("div",{class:"your",text:answer}):el("div",{class:"hint",text:"No answer written. Read the points below and try it again next time."}),
     el("div",{class:"hint",text:"Tap each point your answer covered. Auto-matched ticks are a guess from shared words; fix them if they're wrong."}),
-    list, el("div",{class:"scoreline"},scoreEl,verdict), srcTag(c));
+    list, explain(c), el("div",{class:"scoreline"},scoreEl,verdict), srcTag(c));
   setActions(el("button",{class:"btn",text:"Save mark and continue",onclick:()=>next(key,got.filter(Boolean).length/c.pts.length)}));
 }
 
@@ -417,6 +420,7 @@ function checkIdentify(key,c,guess){
   s.append(metaFor(t,key), el("p",{class:"clue",text:c.clue}), guess.trim()?el("div",{class:"your",text:guess}):null,
     el("div",{}, el("div",{class:"eyebrow",text:"Answer"}), el("div",{class:"reveal-title",text:`${c.title} (${c.when})`})),
     guess.trim()?el("div",{class:"hint",text:likely?"Looks like a match.":"Doesn't look like a match. Mark it yourself if you used a different name."}):null,
+    explain(c),
     el("details",{}, el("summary",{class:"hint",text:"Revise the key points"}), el("ul",{},c.pts.map(p=>el("li",{text:p})))));
   setActions(el("button",{class:"btn ghost",text:"I missed it",onclick:()=>next(key,0)}), el("button",{class:"btn",text:"I got it",onclick:()=>next(key,1)}));
 }
@@ -487,14 +491,14 @@ $("#resetyes").onclick=()=>{ state.cards={}; state.days={}; save(); $("#resetcon
 function renderBrowse(){
   const q=norm($("#search").value.trim()), box=$("#browse"); box.innerHTML=""; let n=0;
   for(const t of TOPICS){
-    const cs=CASES.filter(c=>c.t===t.key&&(!q||norm([c.title,c.when,c.q,c.sec||"",...c.pts].join(" ")).includes(q)));
+    const cs=CASES.filter(c=>c.t===t.key&&(!q||norm([c.title,c.when,c.q,c.sec||"",c.exp||"",...c.pts].join(" ")).includes(q)));
     if(!cs.length) continue; n+=cs.length;
     box.append(el("div",{class:"eyebrow",style:"margin-top:8px",text:`${t.paper} · ${t.theme} · ${t.name}`}));
     let sec=null;
     cs.forEach(c=>{ const r=recOf("recall:"+c.id);
       if(c.sec&&c.sec!==sec){ sec=c.sec; box.append(el("div",{class:"sec",text:sec})); }
       box.append(el("details",{class:"case"}, el("summary",{}, el("b",{text:c.title}), el("span",{class:"hint",text:c.when}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})),
-        el("p",{text:c.q}), el("ul",{},c.pts.map(p=>el("li",{text:p}))), srcTag(c),
+        el("p",{text:c.q}), el("ul",{},c.pts.map(p=>el("li",{text:p}))), explain(c), srcTag(c),
         el("button",{class:"linkbtn",text:"Drill this case",onclick:()=>startRound("recall",["recall:"+c.id])}))); });
   }
   $("#browsecount").textContent=`${n} cards`;

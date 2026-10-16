@@ -2,7 +2,8 @@
 // The cards themselves live in data/<topic>.js, one file per topic, each built line by line
 // from the study notes in the "History" Drive folder. Nothing has been added from outside those notes.
 // Card schema: id, t (topic key), sec (section of the notes), src (source file), qs ("notes" if the
-//   question wording comes from the notes, "me" if written for the drill), title, when, q, pts, clue?
+//   question wording comes from the notes, "me" if written for the drill), title, when, q, pts,
+//   exp (explanation shown after answering, from the notes), clue?
 
 window.TOPICS = [
   { key: "cw1", paper: "P1", theme: "Theme I", name: "Origins of the Cold War", src: "Cold_War_Study_Notes_Theme1" },
