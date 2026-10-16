@@ -6,30 +6,35 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"it", sec, src:S, qs:"me" }
 /* ── Part A: General framework ── */
 add("General framework: causes of inter-state tension", { id:"it-underlying-immediate", title:"Underlying vs immediate factors", when:"framework",
   q:"What is the difference between underlying and immediate factors in explaining inter-state tension?",
+  exp:"Underlying factors tell you why a particular pair of states was liable to clash at all; immediate factors tell you why the clash happened when it did. Neither alone is a full explanation, so strong answers pair a structural reason with a trigger. Remember the syllabus also splits consequences into the bilateral relationship and the effect on ASEAN, and every case study in this topic is organised on that same structure.",
   pts:["Underlying factors explain the propensity for tension between particular states — why some pairs are more prone to conflict, independent of any trigger",
        "Immediate factors explain why tension escalated into an open dispute at a specific point in time",
        "A good answer shows both: the deep structural reason two states were liable to clash, and the proximate trigger",
        "Syllabus separates causes from consequences; consequences split into (a) the bilateral relationship and (b) impact on regional cooperation / ASEAN"] });
 add("General framework: causes of inter-state tension", { id:"it-hist-animosity", title:"Historical animosities", when:"framework",
   q:"How do historical animosities cause inter-state tension?",
+  exp:"Historical animosity works by shaping perception: once states expect hostility from each other, later interactions are read through suspicion and distrust. The notes single out subjugation as the most durable memory, because being dominated or colonised by a neighbour leaves the deepest scar. This is why pairs like Vietnam–Cambodia, with a history of domination, produce graver tensions than others.",
   pts:["Generate antagonistic perceptions that cloud subsequent interactions — pervasive overhang of mutual suspicion and distrust",
        "Can arise from ethnic-religious difference or clashes in the personalities of leaders",
        "Previous experiences of subjugation tend to be the most deeply imprinted onto national memory",
        "A history of one state dominating or colonising another leaves the deepest and most durable scar"] });
 add("General framework: causes of inter-state tension", { id:"it-colonial-legacy", title:"Colonial legacy as basis for claims", when:"framework",
   q:"How did colonial legacies create a historical basis for inter-state tension?",
+  exp:"New states inherited borders drawn by colonial powers and then used those same treaties to justify their own claims, so colonial ambiguity became post-colonial conflict. It works in two ways: vague wording creates overlapping claims, as with the 1878 Sabah agreement, and borders that split one community encourage cross-border support for separatists, as with the Moro Muslims. Both mechanisms appear in the Sabah case, making it the clearest example.",
   pts:["Colonial powers demarcated boundaries via treaties with pre-colonial kingdoms or other colonial powers",
        "Independent governments later used these colonial-era instruments as the basis for territorial claims",
        "Vagueness in original agreements produced overlapping claims (e.g. ambiguous Malay term in the 1878 Sabah agreement)",
        "In more serious cases, colonial carving split ethnic communities across borders → cross-border support for separatists (e.g. Moro/Sabah Muslim community split between Philippines and Malaysia)"] });
 add("General framework: causes of inter-state tension", { id:"it-ethnic-religious", title:"Ethnic-religious rifts", when:"framework",
   q:"How significant were ethnic-religious rifts as a cause of inter-state tension in SEA?",
+  exp:"Ethnic-religious difference is a primordial background factor: it explains why animosity exists, not why a dispute breaks out at a given time. The notes stress that no SEA inter-state tension has arisen purely from it, and even the one explicit case, Singapore–Malaysia during Merger, was bound up with political and ideological differences. In an essay it should be weighed as a contributing, not a decisive, cause.",
   pts:["A largely primordial factor — explains underlying animosity rather than serving as an explicit trigger",
        "No SEA inter-state tension has broken out purely over ethnic-religious difference",
        "Only case where it surfaced explicitly: Singapore–Malaysia tensions during Merger (1962–65)",
        "Even then it was entangled with political and ideological differences"] });
 add("General framework: causes of inter-state tension", { id:"it-ideology", title:"Ideology", when:"framework",
   q:"How did ideology act as both a source of tension and of cooperation in SEA?",
+  exp:"Ideology covers both systems like communism versus anti-communism and the outlook of individual leaders, such as Sukarno’s ultra-nationalism. The key evaluative point is that it cuts both ways: it drove tension with Vietnam and Konfrontasi, yet shared anti-communism also bonded ASEAN in 1967 and united it against Vietnam in the 1980s. This makes ideology useful for arguing that the same factor can produce conflict or cooperation depending on alignment.",
   pts:["Used broadly: grand political systems (communism vs democracy) and the worldview/temperament of individual leaders",
        "Vietnam's tension with SEA states 1979–1990: infringement of Cambodian sovereignty and communist influence projected onto the region",
        "Sukarno's ultra-nationalism → regional superiority complex and hard-line stance during Konfrontasi (1963–1966)",
@@ -37,12 +42,14 @@ add("General framework: causes of inter-state tension", { id:"it-ideology", titl
        "Common stance against communist Vietnam in the 1980s produced ‘ASEAN's finest hour’"] });
 add("General framework: causes of inter-state tension", { id:"it-borders-econ", title:"Shared borders and economic interests", when:"framework",
   q:"How do shared borders/national security and economic interests cause inter-state tension?",
+  exp:"Adjacent states tend to treat boundary infringements as security threats, real or perceived, which pushes them toward escalation. But because states respond to border threats differently, a shared border cannot explain tension on its own, so other factors must be identified. Economic interests matter mainly for the South China Sea, which is not a case study here but becomes relevant to ASEAN security cooperation in the 1990s.",
   pts:["Tension between adjacent neighbours: infringements of boundaries interpreted as security threats (real or perceived) → tough, escalatory stances",
        "Caution: states do not always respond to border threats identically, so a shared border alone cannot fully explain tension",
        "Economic interests most significant in the South China Sea, among claimants to the Spratlys",
        "SCS dispute is explicitly not a case study for this topic, but matters for ASEAN's security cooperation in the 1990s"] });
 add("General framework: causes of inter-state tension", { id:"it-leaders", title:"The role of leaders", when:"framework",
   q:"Why does the role of leaders deserve separate treatment in explaining inter-state tension?",
+  exp:"The dictum ‘States do not make policies, statesmen do’ captures the argument that individual leaders, not just structures, drive inter-state relations. Newly independent leaders were nationalists protective of sovereignty and status, and long tenures plus centralised, authoritarian states magnified their personal influence. Since ASEAN itself rested on a small elite’s relationships, personal ties could make or break regional cohesion, which supports leader-focused essay arguments.",
   pts:["Dictum: ‘States do not make policies, statesmen do’",
        "Early independence: post-war leaders were nationalist figures anxious to protect newly won sovereignty and standing in the region",
        "Long-serving leaders — Suharto, Lee Kuan Yew, Tunku Abdul Rahman, later Mahathir — personally shaped relations",
@@ -50,6 +57,7 @@ add("General framework: causes of inter-state tension", { id:"it-leaders", title
        "ASEAN founded by a small elite of first-generation leaders; their personal relationships could make or break cohesion"] });
 add("General framework: causes of inter-state tension", { id:"it-source-context", title:"Reading sources in context", when:"framework",
   q:"What four-part checklist do the notes give for placing a source on inter-state tension in context?",
+  exp:"The checklist follows from seeing a dispute as a conscious policy choice shaped by historical baggage plus present pressures. Each item covers one source of pressure: long-run patterns of animosity, domestic troubles pushing leaders to harder stances, linked bilateral issues that worsen or ease each other, and the Cold War context including the 1975 US withdrawal. Using all four lets you place any source in context rather than reading it in isolation.",
   pts:["A dispute is a conscious foreign policy decision; foreign policy = historical baggage + immediate environmental challenges",
        "1. Pattern of interaction — e.g. Vietnam–Cambodia (and less so Singapore–Malaysia) carry deep-seated animosity, so tensions develop more gravely",
        "2. Domestic challenges — political/economic pressures can push leaders to harsher stances",
@@ -57,6 +65,7 @@ add("General framework: causes of inter-state tension", { id:"it-source-context"
        "4. Geopolitical considerations — the Cold War (esp. re Vietnam) and the 1975 US withdrawal from the region"] });
 add("General framework: causes of inter-state tension", { id:"it-consequences", title:"Consequences: variation in outcome", when:"framework",
   q:"What are the two broad outcome-paths of inter-state disputes, and their effect on regional cooperation?",
+  exp:"Because causes combine in different ways, outcomes vary too. Disputes managed peacefully, by conflict avoidance in the ‘ASEAN Way’ or by resolution, do little harm to regional cooperation and can even help it, while spats or armed conflict damage it. This gives a consistent template: assess each case’s causes, trigger and leaders, then judge its bilateral and ASEAN consequences against these two paths.",
   pts:["Peaceful management/resolution — via conflict avoidance (the ‘ASEAN Way’) or definitive resolution",
        "In these cases impact on regional cooperation is minimal or even beneficial",
        "Diplomatic spats or armed conflict — deleterious effects on regional cooperation",
@@ -65,6 +74,7 @@ add("General framework: causes of inter-state tension", { id:"it-consequences", 
 /* ── Part B: Konfrontasi ── */
 add("Konfrontasi (1963–1966)", { id:"it-konf-chron-1", title:"Konfrontasi chronology 1961–1962", when:"May 1961–Dec 1962",
   q:"Trace the events leading to Konfrontasi from May 1961 to December 1962.",
+  exp:"This sequence shows a striking reversal: in late 1961 Indonesia publicly had no objection to Malaysia, yet within a year it was hostile. The bridge is the West Irian settlement of August 1962, which removed Indonesia’s need for international goodwill, followed by the Brunei Revolt of December 1962, which provided a grievance and showed local opposition existed. The chronology is useful for distinguishing underlying motives from the timing of confrontation.",
   pts:["May 1961: ‘Malaysia’ proposed — Federation of Malaya, Brunei, North Borneo (Sabah), Sarawak, Singapore",
        "Oct 1961: Britain approves; Cobbold Commission set up to determine whether North Borneo and Sarawak support joining",
        "9 & 20 Nov 1961: Subandrio's UN speeches — Indonesia has no territorial claims to Malaya, Philippines or Borneo; ‘no objections’ to merger",
@@ -72,6 +82,7 @@ add("Konfrontasi (1963–1966)", { id:"it-konf-chron-1", title:"Konfrontasi chro
        "Dec 1962: Brunei Revolt under A.M. Azahari, rapidly crushed by British forces"] });
 add("Konfrontasi (1963–1966)", { id:"it-konf-chron-2", title:"Konfrontasi chronology 1963–1967", when:"Jan 1963–Feb 1967",
   q:"Trace the course of Konfrontasi from January 1963 to February 1967.",
+  exp:"The chronology shows confrontation moving from rhetoric to raids to sabotage, while diplomacy such as Maphilindo failed and Indonesia isolated itself by leaving the UN. The decisive break came not from military defeat but from the 1965 Gestapu coup and Suharto’s rise, with Konfrontasi ending in 1966 before Sukarno formally left office in 1967. This timing is the core evidence for the role-of-leaders argument.",
   pts:["Late Jan 1963: Subandrio declares confrontation against Malaysia, an accomplice of neo-colonialists and neo-imperialists",
        "12 Apr 1963: first raid — police post at Tebedu, Sarawak; 31 Jul 1963: Maphilindo and Manila Accord signed",
        "16 Sep 1963: Federation of Malaysia formally established",
@@ -81,6 +92,7 @@ add("Konfrontasi (1963–1966)", { id:"it-konf-chron-2", title:"Konfrontasi chro
 add("Konfrontasi (1963–1966)", { id:"konfrontasi", title:"Konfrontasi: Indonesia's superiority complex", when:"1963–1966",
   q:"What was the deepest underlying cause of Konfrontasi?",
   clue:"Indonesia's 1963–66 armed campaign against the new Federation, rooted in its self-image as ‘first among equals’ in the Malay world.",
+  exp:"Indonesia’s size, its bloody revolutionary struggle and the Indonesia Raya ideal together produced a belief that it was the natural leader of the Malay world. Measured against that, Malaya’s peaceful British-managed independence looked unearned, so an enlarged Malaysia seemed both a strategic rival and an insult to Indonesia’s status as ‘first among equals’. This superiority complex is the underlying cause, explaining why Indonesia was prone to clash with Malaysia at all.",
   pts:["Long-nursed Indonesian sense of superiority over maritime neighbours",
        "Rooted in its sheer size and population",
        "Revolutionary heritage from armed independence struggle against the Dutch (Aug 1945 – Dec 1949)",
@@ -89,6 +101,7 @@ add("Konfrontasi (1963–1966)", { id:"konfrontasi", title:"Konfrontasi: Indones
        "Expanded Malaysia seen as a strategic threat to Indonesia's regional leadership and an affront to its self-image as ‘first among equals’"] });
 add("Konfrontasi (1963–1966)", { id:"it-jeshurun", title:"Chandran Jeshurun on Malaya–Indonesia relations", when:"postwar",
   q:"How did Chandran Jeshurun explain the uneasy Malaya–Indonesia relationship?",
+  exp:"Jeshurun locates the problem in how each state became independent: a British-influenced Malayan leadership versus revolutionaries who had fought the Dutch. Because their political formation was so different, he argues an uneasy relationship was almost predetermined. This historian’s view supports treating the superiority complex and contrasting nationalist credentials as the underlying cause of Konfrontasi, beneath any immediate trigger.",
   pts:["Chandran Jeshurun, Malaysia: Fifty Years of Diplomacy, 1957–2007, pp. 39–40",
        "Political evolution of both countries in the postwar years ‘more or less predetermined the uneasy nature of their bilateral relationship’",
        "Malaya's British-influenced political leadership stood in stark contrast to the more revolutionary-minded Indonesians",
@@ -96,6 +109,7 @@ add("Konfrontasi (1963–1966)", { id:"it-jeshurun", title:"Chandran Jeshurun on
 add("Konfrontasi (1963–1966)", { id:"it-west-irian", title:"West Irian dispute as context", when:"1950–1969",
   q:"How did the West Irian dispute shape Indonesia's confrontation of Malaysia?",
   clue:"Indonesia's dispute with the Netherlands over Western New Guinea, regarded as unfinished decolonisation business.",
+  exp:"West Irian explains Indonesia’s changing stance on Malaysia. While it still needed international goodwill against the Dutch, Jakarta disclaimed any interest in Borneo; once it won West Irian in 1962 through diplomatic pressure plus the threat of force, it felt emboldened to try the same formula on Malaysia. It is therefore key strategic context for the timing of Konfrontasi, not just background.",
   pts:["Dutch resisted Indonesian claims since 1950; Sukarno threatened force backed by Soviet arms",
        "US-brokered intervention → UN administration in 1962; to Indonesia after a 1969 plebiscite amid intimidation by Suharto's New Order",
        "While unresolved, Indonesia downplayed objections to Malaysia — Subandrio's 1961 speeches disclaimed claims to Borneo — needing goodwill against the Dutch",
@@ -103,6 +117,7 @@ add("Konfrontasi (1963–1966)", { id:"it-west-irian", title:"West Irian dispute
        "Having won West Irian by diplomatic pressure plus threat of force, Indonesia applied the same formula against Malaysia"] });
 add("Konfrontasi (1963–1966)", { id:"it-konf-motives", title:"Multiple motivations behind Konfrontasi", when:"1963",
   q:"What were the multiple, overlapping motivations behind Konfrontasi?",
+  exp:"Konfrontasi was not mono-causal: strategic status anxieties, resentment over the 1958 rebellion refugees, the ideological clash between Sukarno and the Tunku, PKI pressure and domestic economic diversion all operated together. The neo-colonialism charge, backed by pointing to AMDA, gave these motives a public justification. For essays, this lets you argue for interacting causes rather than a single explanation.",
   pts:["Strategic/territorial threat — expanded Malaysia challenged Indonesia's self-conception as regional leader",
        "Suspicion over 1958 Outer Island rebellion — Malaya suspected of harbouring dissidents; no extradition treaty for these refugees",
        "Ideological/personal clash — Sukarno's ultra-nationalist, PKI-aligned stance vs Tunku's pro-Western, anti-communist position (fresh off defeating MCP)",
@@ -111,6 +126,7 @@ add("Konfrontasi (1963–1966)", { id:"it-konf-motives", title:"Multiple motivat
        "Sukarno and PKI leader D.N. Aidit: Malaysia ‘a manifestation of neo-colonialism’, citing AMDA (est. 19 Sep 1957)"] });
 add("Konfrontasi (1963–1966)", { id:"it-legge-jones", title:"Legge and Jones on Konfrontasi", when:"1961–1965",
   q:"What do J.D. Legge and Matthew Jones argue about Indonesia's motives in Konfrontasi?",
+  exp:"Legge emphasises Indonesia’s status and anti-colonial sensitivity: as the regional major power it expected to be consulted, and it resented Britain shaping territories to keep its influence. Jones adds a security grievance: refugees from the 1958 rebellion and suspicions of Malayan designs on Sumatra. Together they show both status and suspicion drove Konfrontasi, so the two historians can be used to support a multi-causal argument.",
   pts:["J.D. Legge, Sukarno: A Political Biography, p. 406: Indonesia, ‘as the major power in the region’, felt a right to intimate consultation on territories near her borders",
        "Legge: since an imperial power was disposing of possessions to maintain its own influence, Sukarno was ‘particularly sensitive’",
        "Matthew Jones, Conflict and Confrontation in Southeast Asia: 1961–1965, p. 106: animosity engendered by political refugees from the 1958 Outer Island rebellion in Malaya",
@@ -118,6 +134,7 @@ add("Konfrontasi (1963–1966)", { id:"it-legge-jones", title:"Legge and Jones o
 add("Konfrontasi (1963–1966)", { id:"bruneirevolt", title:"Brunei Revolt", when:"Dec 1962",
   q:"What was the Brunei Revolt and why was it significant as an immediate trigger of Konfrontasi?",
   clue:"Armed rising led by A.M. Azahari after his allies were outvoted in the Legislative Council; crushed by British forces.",
+  exp:"Azahari’s alternative North Borneo Federation was blocked politically because the Sultan, unwilling to surrender absolute rule and at odds over oil revenue, favoured Malaysia and his nominees outvoted the elected members. The failed revolt still mattered: it gave Indonesia a usable argument that East Malaysian support for merger was weaker than claimed, and showed Sukarno there were local sympathisers to mobilise. That makes it the immediate trigger rather than an underlying cause.",
   pts:["A.M. Azahari: pro-Indonesian Bruneian politician, veteran of Indonesian independence war; proposed North Borneo Federation of Brunei, Sabah, Sarawak",
        "Azahari's allies won all 16 elected Legislative Council seats but were outvoted by the Sultan's nominees",
        "Sultan favoured Malaysia — reluctant to surrender absolute rule; disagreement over allocation of Brunei's oil revenue",
@@ -126,6 +143,7 @@ add("Konfrontasi (1963–1966)", { id:"bruneirevolt", title:"Brunei Revolt", whe
        "Showed Sukarno local sympathisers existed who could be mobilised against Malaysia"] });
 add("Konfrontasi (1963–1966)", { id:"it-konf-escalation", title:"Escalation to armed conflict", when:"1963–1966",
   q:"How did Konfrontasi escalate into armed conflict from 1963 to 1966?",
+  exp:"Even after the Brunei Revolt failed, Sukarno escalated from declaration to raids, incursions and sabotage such as the MacDonald House bombing. However, AMDA brought in British, Australian and New Zealand support, so Indonesia gained little militarily, and diplomacy like Maphilindo collapsed. Leaving the UN deepened Indonesia’s isolation, showing that confrontation was failing on both military and diplomatic fronts.",
   pts:["Late Jan 1963: Subandrio declared Indonesia could not but adopt confrontation",
        "12 Apr 1963: first cross-border raid on police post at Tebedu, Sarawak",
        "Raids across Borneo land border; attempted amphibious and airborne incursions into Peninsular Malaysia; sabotage in Singapore and Malaysia",
@@ -134,6 +152,7 @@ add("Konfrontasi (1963–1966)", { id:"it-konf-escalation", title:"Escalation to
        "Maphilindo (Jul 1963) collapsed; Indonesia withdrew from UN Jan 1965"] });
 add("Konfrontasi (1963–1966)", { id:"it-konf-resolution", title:"Resolution through leadership change", when:"1965–1967",
   q:"How did Konfrontasi end, and what does this show about the role of leaders?",
+  exp:"Konfrontasi ended because the leadership changed, not because the underlying causes disappeared. After the Gestapu coup destroyed the PKI, the anti-communist Suharto had strong reasons to mend relations and rescue an economy the Borneo campaign had worsened. Since the superiority complex and ideological rivalry could persist yet the conflict stopped, this is strong evidence for the weight of individual leaders in SEA inter-state relations.",
   pts:["1965 Gestapu coup → destruction of PKI; gradual displacement of left-leaning Sukarno by anti-communist Suharto",
        "Suharto had incentive to mend relations and repair an economy left in shambles — worsened by the costly Borneo campaign",
        "Formally ended Aug 1966; Sukarno nominal head of state until Feb 1967",
@@ -141,6 +160,7 @@ add("Konfrontasi (1963–1966)", { id:"it-konf-resolution", title:"Resolution th
        "Strong evidence for the weight of individual leaders in SEA inter-state relations"] });
 add("Konfrontasi (1963–1966)", { id:"it-realign-1975", title:"Realignment after 1975", when:"1975 onwards",
   q:"How did the unification of Vietnam in 1975 affect Malaysia–Indonesia relations and ASEAN?",
+  exp:"A unified communist Vietnam changed the strategic calculations: Malaysia and Indonesia saw it as a useful counterweight to an assertive China pressing South China Sea claims, which drew them closer. Thailand, being close to Vietnam, felt threatened rather than reassured. This divergence in threat perception is important because it reappears as a split within ASEAN over how to respond to the Third Indochina War.",
   pts:["Unified communist Vietnam (1975) created new alignment incentives improving Malaysia–Indonesia relations",
        "Both saw a strong Vietnam as a useful bulwark against an increasingly assertive China",
        "Especially as Beijing pressed its claim over the whole South China Sea",
@@ -148,6 +168,7 @@ add("Konfrontasi (1963–1966)", { id:"it-realign-1975", title:"Realignment afte
        "Divergent threat perception recurs in the Third Indochina War"] });
 add("Konfrontasi (1963–1966)", { id:"it-konf-consequences", title:"Consequences of Konfrontasi", when:"1966–2014",
   q:"What were the bilateral and regional consequences of Konfrontasi?",
+  exp:"Bilaterally, relations normalised quickly under Suharto, but the 2014 warship naming row shows the memory of Konfrontasi still causes friction with Singapore, and it shaped Singapore’s emphasis on deterrence. Regionally, the conflict delayed institution-building until 1966 opened the way to ASEAN. It illustrates the ASEAN Way in reverse: without conflict-avoidance norms, rivalries escalated, while post-1966 normalisation laid the ground for consensus diplomacy.",
   pts:["Relations normalised quickly after 1966 under the New Order, but wounds proved durable",
        "2014: Indonesia named a warship after the two MacDonald House saboteurs; Singapore barred it from ports and refused to exercise alongside it",
        "Last time Singaporean soldiers (1st and 2nd Singapore Infantry Regiments, under Malaysian command) saw action in a major armed conflict — resonance for Singapore's emphasis on deterrence",
@@ -157,6 +178,7 @@ add("Konfrontasi (1963–1966)", { id:"it-konf-consequences", title:"Consequence
 /* ── Part C: Sabah dispute ── */
 add("The Sabah dispute (1962–present)", { id:"it-sabah-chron-1", title:"Sabah chronology 1704–1963", when:"1704–1963",
   q:"Trace the history of the Sabah dispute from 1704 to 1963.",
+  exp:"The early chronology shows the dispute’s two roots: the Sulu Sultanate’s historic claim and the 1878 agreement whose word pajakan was read as cession by the British but lease by Sulu. The US claims of 1906 and 1920 show the claim long predated 1962, so the real question is why Macapagal revived it then. Sabah’s 1963 entry into Malaysia, and Manila’s rejection of the UN findings, turned a legal argument into a diplomatic rupture.",
   pts:["1704–1877: Sabah held to be part of Sulu Sultanate (Sultan of Brunei having earlier ceded it to Sulu)",
        "1878: British North Borneo Company agreement with Sultan of Sulu for annual payment; pajakan translated ‘grant/cede’ by British, ‘lease’ by Sulu",
        "1888: Sabah formally becomes a British colony; 1906 & 1920: US files pro forma claims, ignored by British",
@@ -164,6 +186,7 @@ add("The Sabah dispute (1962–present)", { id:"it-sabah-chron-1", title:"Sabah 
        "1963: Sabah joins Malaysia; UN mission validates support; Philippines rejects it and refuses to recognise Malaysia"] });
 add("The Sabah dispute (1962–present)", { id:"it-sabah-chron-2", title:"Sabah chronology 1968–1977", when:"1968–1977",
   q:"Trace the Sabah dispute from 1968 to 1977.",
+  exp:"This phase is the dispute at its worst: the Corregidor plot, collapsed Bangkok talks and Republic Act 5446 all hardened positions, though relations were restored by late 1969. From 1972 the dispute became entangled with the Moro revolt, as Sabah sheltered separatists, while Marcos wrote the claim into his 1973 constitution. His unfulfilled 1977 promise shows how nationalist domestic opinion constrained any Philippine leader from dropping the claim.",
   pts:["Mar 1968: Corregidor Incident (Jabidah Massacre) — exposure suspends diplomatic relations",
        "Jun–Jul 1968: Bangkok talks collapse; Malaysia walks out after Philippines insists on ICJ",
        "Sep 1968: Republic Act 5446 affirms sovereignty over Sabah — law remains in force; Dec 1969: relations fully restored",
@@ -172,6 +195,7 @@ add("The Sabah dispute (1962–present)", { id:"it-sabah-chron-2", title:"Sabah 
        "1977: Marcos at ASEAN Summit promises to drop claim, never follows through given Congressional nationalist sentiment"] });
 add("The Sabah dispute (1962–present)", { id:"it-sabah-chron-3", title:"Sabah chronology 1986–2020", when:"1986–2020",
   q:"Trace the Sabah dispute from 1986 to 2020.",
+  exp:"After Marcos fell, relations improved through a change of approach rather than a settlement: Aquino could not get Congress to drop the claim, so Ramos and Mahathir built cooperation through visits, a Joint Commission and a defence pact, then shelved the dispute in 1998. Lahad Datu in 2013 and Malaysia ending its payments show the issue never disappeared. This illustrates management in abeyance rather than resolution.",
   pts:["1986: fall of Marcos opens opportunity to repair ties; 1987: Aquino fails to convince Congress to drop the claim",
        "Feb 1993: Ramos makes first Philippine state visit to Malaysia since 1968; Malaysia–Philippines Joint Commission",
        "Feb 1994: Mahathir leads reciprocal trade delegation; Sep 1994: defence cooperation pact",
@@ -181,6 +205,7 @@ add("The Sabah dispute (1962–present)", { id:"it-sabah-chron-3", title:"Sabah 
 add("The Sabah dispute (1962–present)", { id:"sabah", title:"Historical-legal basis of the Sabah dispute", when:"1704–1963",
   q:"What is the historical-legal basis of the Philippine claim to Sabah, and how does Malaysia counter it?",
   clue:"‘One of the most protracted and contentious disputes in maritime Southeast Asia in the 1960s’, resting on the 1878 pajakan agreement.",
+  exp:"The dispute rests on a genuine historical-legal basis rather than being invented for domestic politics, which explains its persistence. The crux is the 1878 agreement: Malaysia treats the annual payment as proof of a purchase, while the Philippines reads pajakan as a lease, so Britain never had valid title to transfer in 1963. It is ultimately a translation dispute with sovereignty consequences, and the best example of colonial-legacy causes.",
   pts:["Described as ‘one of the most protracted and contentious disputes in maritime Southeast Asia in the 1960s’",
        "Genuine (if contested) historical-legal foundation — not manufactured purely for domestic politics",
        "Philippines: Sabah part of Sulu Sultanate 1704–1877; Manila is legal successor, Sultan ceded rights in 1962",
@@ -188,6 +213,7 @@ add("The Sabah dispute (1962–present)", { id:"sabah", title:"Historical-legal 
        "Britain transferred Sabah to Malaysia in 1963 — illegitimate to the Philippines since Britain never had valid title to convey"] });
 add("The Sabah dispute (1962–present)", { id:"it-soliven", title:"Soliven on the Sabah ‘free’ elections", when:"5 May 1968",
   q:"What did Maximo Soliven argue about the Sabahan vote to join Malaysia?",
+  exp:"Soliven attacks the legitimacy of Sabah’s choice by arguing that the British and Malaysians controlled the elections and easily outmanoeuvred a few UN observers. His point is that the Philippine claim was simply trying to ‘even things up’. As a 1968 Manila newspaper source, it reflects Filipino nationalist opinion, so it is useful as evidence of the domestic sentiment that kept the claim alive rather than as neutral evidence.",
   pts:["Maximo V. Soliven, Manila Times, 5 May 1968, p. 5",
        "British and Malaysians ‘continue to harp on the allegedly “free” elections’ in which Sabahans ‘voted’ to join",
        "Elections conducted by British and Malaysians ‘who easily ran circles around a handful of UN observers’",
@@ -195,6 +221,7 @@ add("The Sabah dispute (1962–present)", { id:"it-soliven", title:"Soliven on t
 add("The Sabah dispute (1962–present)", { id:"it-macapagal", title:"Philippine responsibility: Macapagal's 1962 claim", when:"1962–1966",
   q:"Why did the Philippines actively pursue the Sabah claim from 1962, and what were the effects?",
   clue:"President who sought to shed the Philippines' image as America's ‘little brown brother’.",
+  exp:"Because the legal claim existed long before 1962, its timing needs a separate explanation, and the notes point to domestic politics: Macapagal wanted to prove independence from the US and raise the Philippines’ standing, with the Sultan’s 1962 cession as a trigger. The claim then broke diplomatic relations and froze ASA, a main reason for its demise. Leifer’s comment that the public justifications were implausible reinforces the domestic-motive reading.",
   pts:["Legal claim predated 1962 (1906, 1920), so the timing needs explaining — domestic political motivation decisive",
        "Macapagal sought to shed image as America's ‘little brown brother’; frustration at US Congress not releasing US$73 million war-damage compensation",
        "To raise the Philippines' international profile and standing; Sultan of Sulu's 1962 conditional cession gave a fresh trigger",
@@ -204,6 +231,7 @@ add("The Sabah dispute (1962–present)", { id:"it-macapagal", title:"Philippine
 add("The Sabah dispute (1962–present)", { id:"corregidor", title:"Corregidor Incident / Jabidah Massacre", when:"Mar 1968",
   q:"What was the Corregidor Incident and how did it affect Malaysia–Philippines relations and ASEAN?",
   clue:"Covert commando unit trained under Marcos to infiltrate and sabotage Sabah; trainees killed by Filipino troops.",
+  exp:"The Corregidor plot shows the Marcos government was prepared to manufacture a pretext to seize Sabah by force, an escalation beyond legal argument. The two accounts of the killings differ and neither can be proven, so be careful not to state one as fact. What is certain is the consequence: exposure suspended diplomatic relations and strained ASEAN only a year after its founding, and it later fed Malaysian distrust of Marcos.",
   pts:["Philippine army under Marcos covertly trained a commando unit at Corregidor to infiltrate and sabotage Sabah — pretext for military intervention",
        "Account 1: trainees mutinied over poor camp conditions and were killed by Filipino troops",
        "Account 2: trainees deceived (told they'd fight domestic Communists), murdered once the Sabah mission leaked, to preserve secrecy",
@@ -211,6 +239,7 @@ add("The Sabah dispute (1962–present)", { id:"corregidor", title:"Corregidor I
        "Exposure suspended diplomatic relations; severe strain on nascent ASEAN, founded the previous year"] });
 add("The Sabah dispute (1962–present)", { id:"it-aquino-diversion", title:"Aquino: ‘Sabah! A Game of Diversion’", when:"Oct 1968",
   q:"What did Senator Benigno Aquino Jr. argue in ‘Sabah! A Game of Diversion’ (1968), and why is it valuable?",
+  exp:"Aquino argues that Marcos revived the Sabah claim only after his government’s failures made public anger dangerous, using a foreign enemy to divert attention. Its value lies in the explicit comparison with Sukarno, which links Sabah and Konfrontasi through a shared mechanism of leaders externalising domestic discontent. As an opposition senator’s attack, it should also be read as politically motivated, though it supports the domestic-diversion argument.",
   pts:["Early 1966 Marcos was content to leave the claim in the docket while building an image of Asian leader",
        "“After 1,000 days of misrule...the growing wrath of the people must be diverted!”",
        "“like Sukarno of Indonesia, why not conjure a foreign devil? Why not Malaysia? Why not Sabah?”",
@@ -218,6 +247,7 @@ add("The Sabah dispute (1962–present)", { id:"it-aquino-diversion", title:"Aqu
        "Links two case studies through a shared mechanism — leaders externalising domestic discontent"] });
 add("The Sabah dispute (1962–present)", { id:"it-sabah-1968-69", title:"Diplomatic confrontation 1968–1969", when:"Jun 1968–Dec 1969",
   q:"How did diplomatic confrontation over Sabah unfold in 1968–1969?",
+  exp:"Talks broke down because the two sides wanted different routes: the Philippines insisted on the ICJ, which Malaysia refused, prompting a walkout. Manila then took the ICJ demand to the UN, and Malaysia retaliated by boycotting ASEAN meetings until the publicity stopped. This shows how a bilateral dispute directly disrupted the new regional organisation before relations were restored in December 1969.",
   pts:["Bangkok talks Jun–Jul 1968 collapsed when Filipinos demanded the ICJ",
        "Malaysia's Tan Sri Ghazali bin Shafie refused; delegation walked out — ‘nothing more to talk about’",
        "Philippine Foreign Secretary repeated ICJ demand at the UN in October 1968",
@@ -226,6 +256,7 @@ add("The Sabah dispute (1962–present)", { id:"it-sabah-1968-69", title:"Diplom
 add("The Sabah dispute (1962–present)", { id:"sabahmindanao", title:"Malaysian responsibility: Sabah and the Moro rebels", when:"1972–1980",
   q:"How was Malaysia also responsible for the dispute's development through Sabahan support for the Moro rebels?",
   clue:"Sabah's chief minister Tun Mustapha provided arms routes, camps and sanctuary to Mindanao separatists until 1976.",
+  exp:"Malaysia’s responsibility comes from the same colonial-legacy mechanism: US colonisation split the Mindanao Muslims, tied to Sulu, from Sabah, creating cross-border sympathy. Tun Mustapha used that link to supply and shelter the Moros until his 1976 defeat, after which the arms flow ended. Since Malaysia officially denied involvement, the most defensible judgement is that it did not actively stop support, because cracking down on its own Muslim constituencies carried high domestic costs.",
   pts:["Colonial legacy: 1898 US colonisation split the Mindanao Muslim community (tied to Sulu) from Sabah; it sought integration with Sabah since 1946",
        "Tun Mustapha provided weapons supply route, training camps, sanctuary (alongside Libyan funding) until electoral defeat April 1976",
        "Arms flow sharply declined and ceased by December 1976",
@@ -233,6 +264,7 @@ add("The Sabah dispute (1962–present)", { id:"sabahmindanao", title:"Malaysian
        "Most defensible view: Malaysia may not have actively prevented domestic Islamic groups' support, given domestic political cost of a crackdown"] });
 add("The Sabah dispute (1962–present)", { id:"it-cheman-st", title:"Che Man and Straits Times on Moro support", when:"1972–1983",
   q:"What evidence do W.K. Che Man and The Straits Times (1974) give of Malaysian support for the Moro rebels?",
+  exp:"Che Man shows the scale of Sabah’s role under Tun Mustapha, as training camp, supply base and sanctuary, with very large numbers of evacuees in Sabah. The Straits Times supplies both a motive, pressuring Manila to drop the Sabah claim, and hard figures on weapons and ammunition. Together they support the argument that Sabahan support was substantial and linked to the Sabah dispute, despite official Malaysian denials.",
   pts:["W.K. Che Man, Muslim Separatism, p. 139: Tun Datu Mustapha Harun played a dominant role in assisting the Moro struggle",
        "Che Man: 1972–1976 Sabah used as training camp, supply depot, communications centre and sanctuary",
        "Che Man: in 1983 an estimated 160,000 to 200,000 evacuees living in Sabah",
@@ -240,6 +272,7 @@ add("The Sabah dispute (1962–present)", { id:"it-cheman-st", title:"Che Man an
        "Straits Times: rebels received at least 200,000 rounds of ammunition and 5,407 weapons, from hand grenades to anti-aircraft guns"] });
 add("The Sabah dispute (1962–present)", { id:"it-sabah-linkage", title:"Inter-relatedness of Sabah and Mindanao", when:"1970s",
   q:"How were the Sabah claim and the Mindanao separatist issue linked as bargaining chips?",
+  exp:"The notes treat the Sabah claim and Mindanao separatism as one bargaining game: Malaysia possibly tolerated support for the Moros to push Manila into dropping the claim, while Marcos’s 1977 promise was partly meant to get Malaysia to cut ties with the MNLF. This illustrates the framework point that bilateral issues are inter-related. Malaysian distrust of Marcos after Corregidor meant progress came only under his successors, paralleling Konfrontasi.",
   pts:["Best read as a single interlocking bargaining dynamic, not two separate disputes",
        "Malaysia possibly tolerated Sabahan support for Moros to pressure the Philippines to abandon the claim",
        "Marcos, Aug 1977 KL ASEAN summit: Philippines ‘taking definite steps to eliminate one of the burdens of ASEAN, the claim...to Sabah’",
@@ -247,6 +280,7 @@ add("The Sabah dispute (1962–present)", { id:"it-sabah-linkage", title:"Inter-
        "Malaysian leaders never trusted Marcos given the 1968 Corregidor plot; progress only under successors — paralleling Konfrontasi"] });
 add("The Sabah dispute (1962–present)", { id:"it-sabah-abeyance", title:"Managing an unresolved dispute", when:"1986–1998",
   q:"How has the Sabah dispute been managed despite remaining unresolved?",
+  exp:"Neither side can afford to resolve the dispute: Filipino nationalism stops Manila renouncing the claim, while Malaysia cannot cede Sabah or crack down on sympathetic Muslim parties. So instead of the ICJ, both governments put the claim aside and cooperated on separate economic and military tracks. Blaming the Philippine Senate was a face-saving device that let ties warm without either side conceding, an example of the ASEAN Way of holding disputes in abeyance.",
   pts:["Both sides have domestic incentives for status quo: Filipino nationalism (incl. Sulu descendants) vs Malaysia never ceding Sabah or cracking down on Muslim parties",
        "Malaysia consistently refuses ICJ arbitration; dispute held in abeyance with cooperation on separate tracks",
        "Ramos's 1993 state visit (first since 1968) set up the Joint Commission",
@@ -256,6 +290,7 @@ add("The Sabah dispute (1962–present)", { id:"it-sabah-abeyance", title:"Manag
 add("The Sabah dispute (1962–present)", { id:"it-lahad-datu", title:"Lahad Datu standoff", when:"Feb–Mar 2013",
   q:"What happened at Lahad Datu in 2013, and what does it show about management of the Sabah dispute?",
   clue:"200–300 armed men of the self-styled ‘Royal Army of Sulu’ landed in Sabah for Jamalul Kiram III.",
+  exp:"Lahad Datu tested the management arrangement when non-state actors tried to force the issue in Kiram’s name. The Philippine government’s refusal to back him and its call for the militants to go home shows the bilateral agreement to keep the status quo held. Yet domestic protests and calls to pursue the claim show why Manila still cannot formally renounce it, so the episode confirms rather than overturns the framework.",
   pts:["200–300 armed men of the ‘Royal Army of Sulu’ landed in Sabah for self-proclaimed Sultan Jamalul Kiram III (title not officially recognised by Manila)",
        "A month of clashes: 80 dead — 68 militants, 10 Malaysian security personnel, 2 civilians; survivors arrested, charged or deported",
        "Confirms the management framework: Philippine government refused to back Kiram, called on militants to stand down and return home",
@@ -264,6 +299,7 @@ add("The Sabah dispute (1962–present)", { id:"it-lahad-datu", title:"Lahad Dat
 /* ── Part D: Third Indochina War ── */
 add("Third Indochina War (1978–1979)", { id:"it-tiw-chron-1", title:"Third Indochina War chronology to 1977", when:"1950s–Dec 1977",
   q:"Trace the background to the Third Indochina War from the 1950s to December 1977.",
+  exp:"The background shows long-running border hostility between Cambodia and Vietnam well before 1975, plus an early Sino-Vietnamese split from 1973 as China backed the anti-Vietnamese Khmer Rouge. After 1975, with the Khmer Rouge in power and Vietnam reunified, attacks on Vietnam began, and Hanoi’s large December 1977 operation led Phnom Penh to break relations. The chronology helps you separate deep animosity from the escalating immediate sequence.",
   pts:["1950s–60s: escalating border conflicts under ultra-nationalist Phnom Penh regime",
        "1969: 50,000–60,000 Vietnamese troops in Kampuchean border provinces; Sihanouk orders attacks on them",
        "1973: Paris Peace Accords (27 Jan); clashes begin at Sino-Vietnamese border and over SCS islands; 1974: China strengthens position via Khmer Rouge",
@@ -272,6 +308,7 @@ add("Third Indochina War (1978–1979)", { id:"it-tiw-chron-1", title:"Third Ind
        "31 Dec 1977: Radio Phnom Penh denounces Vietnam, suspends relations, calls for ‘people's war’"] });
 add("Third Indochina War (1978–1979)", { id:"it-tiw-chron-2", title:"Third Indochina War chronology 1978", when:"Feb–Dec 1978",
   q:"Trace the escalation toward Vietnam's invasion of Kampuchea during 1978.",
+  exp:"During 1978 each side’s moves hardened the other: Chinese supplies to Kampuchea and the rejection of Vietnam’s peace and demilitarised-zone proposals closed the diplomatic route, while the ethnic Chinese issue worsened Sino-Vietnamese relations. The Soviet treaty of November 1978 then gave Hanoi security, and KNUFNS gave it political cover, before the December invasion. The sequence shows the invasion followed failed diplomacy and secured Great Power backing.",
   pts:["1 Feb 1978: China ships fresh military supplies to Kampuchea; 5 Feb: Vietnam's three-point peace proposal effectively rejected",
        "Feb 1978: demilitarised border zone proposal rejected by China-backed Khmer Rouge; 20 Feb: Hanoi Radio blames ‘international reactionaries’",
        "30 Apr / 24 May 1978: China protests treatment of ethnic Chinese; alleges 70,000 refugees fled to China",
@@ -281,6 +318,7 @@ add("Third Indochina War (1978–1979)", { id:"it-tiw-chron-2", title:"Third Ind
 add("Third Indochina War (1978–1979)", { id:"thirdindochina", title:"Third Indochina War: invasion and aftermath", when:"Jan 1979–1995",
   q:"What happened after Vietnam's invasion of Kampuchea, and how was the conflict eventually resolved?",
   clue:"Vietnam's decade-long occupation of Kampuchea from Jan 1979, resolved at Paris in Oct 1991.",
+  exp:"The aftermath shows the conflict widening and then slowly unwinding. Vietnam installed and legally anchored the PRK, but the UN kept recognising Democratic Kampuchea, and China launched its punitive invasion. Resolution came only when Vietnam itself changed direction through Doi Moi and the 1988 Politburo Resolution, with Thai reciprocation, a multilateral Paris settlement in 1991 and ASEAN membership in 1995 marking the end of confrontation.",
   pts:["8 Jan 1979: pro-Vietnamese PRK established; UN still recognises Democratic Kampuchea",
        "18 Feb 1979: Vietnam–PRK Treaty of Friendship provides legal basis for Vietnamese troops",
        "17 Feb–Mar 1979: China invades northern Vietnam with ≈200,000 PLA troops",
@@ -289,6 +327,7 @@ add("Third Indochina War (1978–1979)", { id:"thirdindochina", title:"Third Ind
        "Oct 1991: Paris Peace Conference resolves crisis; 1995: Vietnam joins ASEAN"] });
 add("Third Indochina War (1978–1979)", { id:"it-viet-superiority", title:"Vietnamese cultural superiority", when:"pre-colonial–1954",
   q:"How did Vietnamese cultural superiority underlie the Third Indochina War?",
+  exp:"This is the deepest underlying cause: Vietnam saw itself as a civilising power over the Khmers, across the Sinic–Indic cultural frontier, as the Chandler extract shows. That attitude was then reinforced twice, by French rule centred on Hanoi and by the Vietminh’s victory, each confirming Vietnamese primacy in Indochina. It explains Vietnam’s propensity to dominate Cambodia, though not the timing of the 1978 invasion.",
   pts:["‘Long-standing proprietary attitude of pre-colonial vintage’ toward Kampuchea and Laos",
        "Vietnam–Kampuchea border is the frontier between Sinic and Indic cultural spheres",
        "Vietnamese viewed themselves as civilisers of a supposedly barbarous Khmer people",
@@ -297,12 +336,14 @@ add("Third Indochina War (1978–1979)", { id:"it-viet-superiority", title:"Viet
        "Reinforced by the Vietminh's decisive victory, consolidating leadership among the three territories"] });
 add("Third Indochina War (1978–1979)", { id:"it-viet-expansion", title:"Vietnamese historical expansionism", when:"1400s–1830s",
   q:"What was the historical pattern of Vietnamese territorial expansion into Cambodia?",
+  exp:"These episodes show that Vietnamese superiority was not just an attitude but led to real territorial expansion and control, from the Mekong delta to the nam tien and Minh Mang’s Vietnamisation. Each stage removed Khmer land or autonomy, leaving lasting Cambodian resentment. The annals’ image of Cambodia as a child to be raised captures the paternalistic outlook, which helps explain the historic Cambodian fear of Vietnamese domination.",
   pts:["From the late 1400s: Vietnamese penetration into the Mekong delta",
        "1620s nam tien (‘march to the south’) under the Nguyen dynasty: large-scale occupation, removal of Khmers — lasting Cambodian resentment",
        "1830s under King Minh Mang: ‘Vietnamisation’ of Cambodia — mobilising Khmers, imposed cultural reform, direct administration displacing the monarchy",
        "Vietnamese annals (Chandler, p. 116): “Cambodia is a small country...we should maintain it as a child. We will be its mother; its father will be Siam.”"] });
 add("Third Indochina War (1978–1979)", { id:"it-duiker", title:"Duiker on the Vietnam–Kampuchea conflict", when:"1975–1979",
   q:"How does William Duiker explain the Vietnam–Democratic Kampuchea conflict?",
+  exp:"Duiker roots the conflict in centuries of mutual suspicion since the march to the South, with Vietnam seeing itself as restoring a historic protectorate. His key analytical point is that the border dispute alone could have been settled peacefully; it became violent because of Cambodian fear of domination. This makes his work ideal evidence for the framework’s distinction between underlying causes and the immediate trigger.",
   pts:["Duiker, Vietnam since the Fall of Saigon, p. 168: rooted in mutual suspicion and animosity dating from the precolonial ‘march to the South’",
        "Duiker p. 168: Vietnamese saw themselves as fulfilling their historic destiny to restore protectorate status over Khmer and Lao states",
        "Duiker p. 154: had the border dispute been the only issue, it ‘could have been resolved without recourse to violence’",
@@ -310,6 +351,7 @@ add("Third Indochina War (1978–1979)", { id:"it-duiker", title:"Duiker on the 
        "Shows the proximate trigger alone is insufficient — the underlying/immediate distinction"] });
 add("Third Indochina War (1978–1979)", { id:"it-viet-security", title:"Vietnam's immediate security concerns", when:"1975–1978",
   q:"What immediate security concerns drove Vietnam toward war with Kampuchea?",
+  exp:"Separate from historical attitudes, Vietnam faced a genuinely hostile and unstable neighbour: the Khmer Rouge saw Vietnam as an enemy to be wiped out, attacked from 1975 and killed Vietnamese civilians in 1977. Because Kampuchea was too weak to serve as a stable buffer, Hanoi concluded only a controllable regime could secure its western flank. The rejected demilitarised-zone proposal complicates any simple story of unprovoked Vietnamese aggression.",
   pts:["Khmer Rouge saw Vietnam's residual military presence and historical dominance as an existential threat; attacked from 1975",
        "Ieng Sary (1977): ‘1976 was the key year...they still have the American imperialists, the revisionists, the KGB, and Vietnam...these enemies must be progressively wiped out’",
        "Kampuchea's internal instability — too debilitated by civil war and purges to be a stable buffer; Vietnam sought a subordinate, controllable regime",
@@ -318,6 +360,7 @@ add("Third Indochina War (1978–1979)", { id:"it-viet-security", title:"Vietnam
        "Feb 1978 demilitarised zone proposal shows Hanoi entertained a non-invasive settlement"] });
 add("Third Indochina War (1978–1979)", { id:"it-leifer-satellite", title:"Leifer on Kampuchea as satellite; ‘big powerism’", when:"1979",
   q:"How does Leifer frame Vietnam's behaviour, and what was ‘big powerism’?",
+  exp:"Leifer argues Vietnam acted rationally: if Kampuchea was bound to be someone’s satellite, Hanoi wanted it to be its own. This links cultural and strategic explanations and is useful for a balanced, multi-causal essay. But the Lao-Kampuchea Agreement of 1979, with resettlement and Vietnamese troops in both states, shows ambition went beyond security into hegemony, which the notes call ‘big powerism’ rooted in Vietnam’s traditional view of unequal Indochinese relations.",
   pts:["Leifer, p. 213: “To the extent that Kampuchea can only be a satellite of another country, the Vietnamese have been determined on geopolitical grounds...that it should be their satellite.”",
        "Frames Vietnam's behaviour as geopolitically rational, not purely ancient cultural superiority — counterweight for multi-causal essays",
        "By 1979 ambitions extended to regional hegemony: Lao-Kampuchea Agreement of 22 March 1979",
@@ -326,6 +369,7 @@ add("Third Indochina War (1978–1979)", { id:"it-leifer-satellite", title:"Leif
 add("Third Indochina War (1978–1979)", { id:"sinoviet79", title:"Collapse of the Sino-Vietnamese alliance", when:"1968–1979",
   q:"How did the Sino-Vietnamese alliance collapse into war by 1979?",
   clue:"China had been Hanoi's ‘rear base’ in the Second Indochina War; by Feb 1979 ≈200,000 PLA troops invaded northern Vietnam.",
+  exp:"The alliance broke down in stages: Hanoi’s peace talks with the US diverged from Chinese wishes, the stalemate made Cambodia and Laos an arena of competition, and triangular diplomacy set their interests against each other. After 1973 China feared a Moscow-aligned Vietnam dominating Indochina, as Zhou’s encirclement remark shows. The decisive blow, though, was China backing the Khmer Rouge, since it was Kampuchea’s conflict with Vietnam that made war likely.",
   pts:["Through the Second Indochina War (to 1968) China was Vietnam's main aid supplier and ‘rear base’ (Mao); Vietnam sided with China against Soviet ‘revisionism’",
        "Post-Tet: Hanoi's peace talks with Washington (to 1973 Paris Accords) diverged from Chinese preferences",
        "Post-1968 stalemate turned Cambodia and Laos into an arena of Sino-Vietnamese competition; 1969 internationalisation amid Nixon's triangular diplomacy",
@@ -334,12 +378,14 @@ add("Third Indochina War (1978–1979)", { id:"sinoviet79", title:"Collapse of t
        "Zhou Enlai, Apr 1968: US and USSR encircling China — ‘The circle is getting complete, except [the part of] Vietnam.’"] });
 add("Third Indochina War (1978–1979)", { id:"it-ethnic-chinese", title:"Ethnic Chinese exodus and ‘Asian Cuba’", when:"1975–1978",
   q:"How did the treatment of ethnic Chinese in Vietnam intensify Sino-Vietnamese tension?",
+  exp:"The ethnic Chinese exodus turned a strategic rivalry into a public grievance. As departures accelerated in 1978, China protested openly and cited refugee numbers, while branding Vietnam an ‘Asian Cuba’ to frame it as a Soviet pawn. This shows how the issue intensified tension and fitted China’s wider fear that Vietnam was part of Soviet strategy against it.",
   pts:["Exodus of ethnic Chinese began as early as 1975",
        "Sharply accelerated in 1978 amid wartime panic atmosphere",
        "China publicly protested April–May 1978, claiming 70,000 refugees had already fled",
        "China characterised Vietnam as an ‘Asian Cuba’ — a Soviet client and pawn in global Soviet strategy"] });
 add("Third Indochina War (1978–1979)", { id:"it-sino-soviet", title:"Sino-Soviet rivalry as backdrop", when:"1960s–1978",
   q:"How did the Sino-Soviet rivalry form the external backdrop to the Third Indochina War?",
+  exp:"The Sino-Soviet split explains why China viewed Vietnam with growing suspicion: as Hanoi depended more on Soviet aid, Beijing feared it would tilt to Moscow, and the Tet-era disagreements confirmed this. By 1969 China responded to encirclement by moving toward the West and confronting the USSR, which in turn sharpened its contest with Hanoi over Indochina. It is context that turned a regional conflict into part of a Great Power struggle.",
   pts:["Sino-Soviet split of the 1960s is the essential external backdrop",
        "Beijing feared Hanoi would tilt toward Moscow given growing dependence on Soviet aid; Tet-era disagreements confirmed this",
        "By 1969 China pursued rapprochement with the West while intensifying confrontation with the USSR",
@@ -347,6 +393,7 @@ add("Third Indochina War (1978–1979)", { id:"it-sino-soviet", title:"Sino-Sovi
 add("Third Indochina War (1978–1979)", { id:"it-soviet-treaty", title:"Soviet-Vietnamese Treaty as ‘green light’", when:"3 Nov 1978",
   q:"Why was the Soviet-Vietnamese Treaty of Friendship (Nov 1978) the decisive enabling condition for invasion?",
   clue:"Treaty signed 3 Nov 1978 whose Article 6 committed mutual consultation if either party was attacked or threatened.",
+  exp:"The notes argue the treaty, not the border clashes, gave the final green light, as Chang Pao-Min puts it. Its mutual consultation clause acted as strategic reinsurance, reducing Vietnam’s risk from Chinese retaliation and so making invasion a calculated option. It shows the invasion combined strategic necessity, a historic feud and Great Power patronage, which supports a multi-causal argument about enabling conditions.",
   pts:["Signed 3 November 1978; Article 6 commits mutual consultation/action if either is attacked or threatened",
        "The notes: this — not the border clashes — was the final permissive condition for invasion",
        "Chang Pao-Min, p. 75: ‘it was clearly the conclusion of the Soviet-Vietnamese Treaty...that gave the final green light’",
@@ -354,6 +401,7 @@ add("Third Indochina War (1978–1979)", { id:"it-soviet-treaty", title:"Soviet-
        "Invasion = immediate strategic necessity + historically rooted feud + calculated bet enabled by Great Power patronage"] });
 add("Third Indochina War (1978–1979)", { id:"it-us-view", title:"US Cold War view of the conflict", when:"1979",
   q:"How did the US and China view Vietnam's invasion, and what paradox resulted?",
+  exp:"Both the US and China read the invasion through Cold War logic: Deng presented Vietnam as part of a Soviet basing network, and Washington saw Hanoi as a Soviet proxy. This produced the paradox of the West effectively supporting the genocidal Khmer Rouge’s UN seat. Oksenberg’s description of Hanoi’s policy as ‘genocidal’ inverts the actual record, a vivid illustration for source questions of bloc logic overriding humanitarian facts.",
   pts:["US read the conflict entirely through a Cold War containment lens; Khmer Rouge genocide submerged beneath view of Vietnam as Soviet proxy",
        "Paradox: West effectively supported the genocidal Khmer Rouge's UN recognition over the Vietnamese-installed PRK",
        "Deng Xiaoping to Carter (Jan–Feb 1979): ‘Afghanistan, Iran, Vietnam—the Soviet Union is beginning to get bases’; two positions of strength linked by sea",
@@ -361,6 +409,7 @@ add("Third Indochina War (1978–1979)", { id:"it-us-view", title:"US Cold War v
        "Rhetorical inversion: ‘genocidal’ applied to Vietnam though the Khmer Rouge perpetrated the genocide — bloc logic overriding the humanitarian record"] });
 add("Third Indochina War (1978–1979)", { id:"it-special-relationship", title:"‘Special relationship’ and Dec 1977 invasion", when:"Dec 1977–Feb 1978",
   q:"What was the political dispute over the ‘special relationship’, and how did the Dec 1977 offensive and peace proposals unfold?",
+  exp:"The Khmer Rouge faced a double bind: accepting the special relationship meant losing autonomy and nationalist legitimacy, while rejecting it made Kampuchea Vietnam’s enemy. Vietnam’s December 1977 offensive, Phnom Penh’s break in relations and its unworkable preconditions for talks show neither side would compromise. The ignored February 1978 peace plan, implicitly backed even by China, shows diplomacy was attempted but failed.",
   pts:["Khmer Rouge saw Vietnam's ‘special relationship’ as a disguised first step to an Indochinese Federation",
        "Double bind: accepting compromised autonomy and CPK's nationalist legitimacy; rejecting made Kampuchea Vietnam's declared enemy",
        "16 Dec 1977: Vietnam invades eastern frontier zones with 30,000–60,000 troops; 31 Dec: Radio Phnom Penh denounces ‘so-called Socialist Republic of Vietnam’",
@@ -369,6 +418,7 @@ add("Third Indochina War (1978–1979)", { id:"it-special-relationship", title:"
 add("Third Indochina War (1978–1979)", { id:"it-invasion-1978", title:"Invasion of 25 December 1978", when:"25 Dec 1978–8 Jan 1979",
   q:"What happened when Vietnam invaded Kampuchea in December 1978?",
   clue:"150,000 troops overran Democratic Kampuchea within two weeks, ending Pol Pot's government.",
+  exp:"Vietnam invaded only after diplomacy failed and Soviet backing was secured, and its forces overran Democratic Kampuchea quickly. The invasion ended a regime responsible for the deaths of close to a quarter of Cambodians and enabled food aid. Yet the UN kept recognising the deposed regime, showing Cold War politics overriding humanitarian considerations, which is useful for questions on legitimacy and international responses.",
   pts:["By end-1978, diplomacy exhausted and Soviet backing secured, Vietnam resolved to remove the Khmer Rouge",
        "25 Dec 1978: 150,000 Vietnamese troops invaded; DK forces overrun within two weeks",
        "Pol Pot's government responsible for deaths of close to a quarter of all Cambodians between 1975 and Dec 1978",
@@ -376,6 +426,7 @@ add("Third Indochina War (1978–1979)", { id:"it-invasion-1978", title:"Invasio
        "8 Jan 1979: PRK installed; UN still recognised DK — Cold War politics overriding humanitarian considerations"] });
 add("Third Indochina War (1978–1979)", { id:"it-china-war", title:"China's response and the Feb 1979 border war", when:"Feb 1978–Mar 1979",
   q:"How did China respond to the crisis, culminating in the February 1979 border war?",
+  exp:"China’s supplies to Kampuchea and Hanoi’s accusations against ‘international reactionaries’ show the Vietnam–Kampuchea war had become a proxy contest with China. The Soviet treaty convinced Beijing that Vietnam was a full Soviet client, so after the invasion China launched a large but limited one-month incursion. Its purpose was punitive, to show Vietnamese aggression in Indochina had a cost, not to occupy territory.",
   pts:["Fresh Chinese military supplies from 1 Feb 1978 read by Hanoi as China backing Phnom Penh's intransigence",
        "Hanoi Radio, 10 Feb 1978: ‘imperialists and international reactionaries’ equipped ‘a dozen divisions’ with long range artillery and war planes; Kampucheans ‘turned friends into foes’",
        "Nov 1978 treaty convinced China Vietnam was a fully committed Soviet client",
@@ -383,6 +434,7 @@ add("Third Indochina War (1978–1979)", { id:"it-china-war", title:"China's res
        "Lasted roughly a month; withdrew March 1979 — punitive, limited incursion showing Vietnamese aggression carried a cost"] });
 add("Third Indochina War (1978–1979)", { id:"it-thai-viet", title:"Impact on Thailand–Vietnam relations", when:"1975–1980s",
   q:"How did the Third Indochina War reshape Thailand–Vietnam relations and ASEAN cohesion?",
+  exp:"Thailand and Vietnam already distrusted each other through Cold War alignments, with Thailand fearing subversion even though those fears were not fully realistic. Vietnam’s rapid conquest of Kampuchea made the threat feel real, so Thailand became a frontline state, and border clashes followed. Its hardline demand for total withdrawal, backed by Singapore, clashed with Malaysia and Indonesia’s moderate approach, showing divergent threat perceptions within ASEAN.",
   pts:["Thailand: stridently anti-communist frontline state that aided the US in the Vietnam War; aligned with China on anti-Soviet grounds from late 1960s",
        "Vietnam saw Thailand as a US client with an oppressive neo-colonial economic system; Thailand feared subversion via ethnic Vietnamese and Thai Communist Party",
        "Thai fears never fully realistic — Vietnam's Communist Party cut ties with its Thai counterpart in 1978 — but conquest of Kampuchea escalated them",
@@ -390,6 +442,7 @@ add("Third Indochina War (1978–1979)", { id:"it-thai-viet", title:"Impact on T
        "Thai and Vietnamese troops clashed as Vietnamese forces pursued resistance fighters across the Thai-Kampuchean border"] });
 add("Third Indochina War (1978–1979)", { id:"it-thai-viet-thaw", title:"Thai–Vietnamese rapprochement", when:"1986–1995",
   q:"How did Thai–Vietnamese relations improve from 1986 onward?",
+  exp:"Relations improved only when Vietnam changed its own strategy: Doi Moi and the 1988 Politburo Resolution moved it away from confrontation with ASEAN, and Chatichai’s ‘battlefield to a market place’ reciprocated. This supports the framework’s point that shared economic interest can be a route out of ideological conflict. The Paris settlement and Vietnam’s 1995 ASEAN entry show how the end of the Cold War could transform even entrenched hostility.",
   pts:["1986 Doi Moi initiated wind-down of the Kampuchean occupation",
        "May 1988 Thirteenth Politburo Resolution: end confrontation between socialist Indochina and capitalist ASEAN",
        "Aug 1988 Chatichai: turn Indochina ‘from a battlefield to a market place’ — shared economic interest as route out of ideological conflict",
@@ -397,12 +450,14 @@ add("Third Indochina War (1978–1979)", { id:"it-thai-viet-thaw", title:"Thai�
        "Vietnam's 1995 ASEAN accession: yesterday's frontline adversary became a member — end of Cold War transformed entrenched hostility"] });
 add("Third Indochina War (1978–1979)", { id:"it-gilks", title:"Anne Gilks on encirclement", when:"1970–1979",
   q:"What does Anne Gilks argue about the stakes of a unified Vietnam?",
+  exp:"Gilks argues that a unified Vietnam made Soviet dominance of Indochina more possible, making China’s fear of encirclement more real after the war. Because a stronger Vietnam raised the stakes for both Moscow and Beijing, the Vietnam–Kampuchea conflict was bound up with Sino-Soviet rivalry. Use this source to explain why China treated Vietnam’s actions as a strategic threat rather than a local dispute.",
   pts:["Anne Gilks, The Breakdown of the Sino-Vietnamese Alliance, 1970–1979, p. 131",
        "Danger of encirclement in the postwar years ‘was more real’",
        "Soviet Union would have more opportunity to establish dominance throughout Indochina through its close relationship with Vietnam",
        "A more powerful unified Vietnam ‘significantly raised the stakes for the Soviet Union as well as for China’"] });
 add("Third Indochina War (1978–1979)", { id:"it-tiw-synthesis", title:"Why the Third Indochina War resists single-factor explanation", when:"1978–1979",
   q:"Why does the Third Indochina War resist a single-factor explanation?",
+  exp:"Each causal layer explains only part of the war: culture and history explain propensity but not timing, security explains motive but not the scale, Sino-Vietnamese rivalry needs the Cambodia relationship to explain the battleground, and the Cold War explains why Vietnam could act, not why it wanted to. The strongest answers therefore combine them in layers, with the Soviet treaty as the final enabler. This is the clearest illustration of the framework’s underlying-plus-immediate approach.",
   pts:["Cultural/historical layer alone cannot explain the 1978–79 timing — superiority and expansionism long predated the war",
        "Immediate security layer alone cannot explain the scale — the Feb 1978 DMZ proposal shows a less drastic option was rejected by the other side",
        "Sino-Vietnamese rivalry alone cannot explain why Cambodia became the battleground — requires the Vietnam–Cambodia relationship",
@@ -412,35 +467,41 @@ add("Third Indochina War (1978–1979)", { id:"it-tiw-synthesis", title:"Why the
 /* ── Part E: Cross-case synthesis ── */
 add("Cross-case synthesis", { id:"it-compare-causes-1", title:"Comparing causes: animosity, colonial borders, ethnicity, ideology", when:"1962–1979",
   q:"Compare the role of historical animosity, colonial borders, ethnic-religious rifts and ideology across Konfrontasi, Sabah and the Third Indochina War.",
+  exp:"The comparison shows which structural causes weighed most in each case: historical animosity is strongest in the Third Indochina War, colonial borders are central to Sabah, and ideology is central to Konfrontasi and the Third Indochina War but minor for Sabah. Ethnic-religious rifts matter more for Sabah and Indochina than Konfrontasi. This helps in comparative essays to argue that the same factor varies in importance from case to case.",
   pts:["Historical animosity: Konfrontasi strong (superiority complex); Sabah moderate (Sulu legacy); 3IW very strong (centuries of expansionism)",
        "Colonial-legacy borders: Konfrontasi present (Borneo territories); Sabah central (1878 treaty ambiguity); 3IW present (French Indochina unity)",
        "Ethnic-religious rift: Konfrontasi minor; Sabah significant (Moro/Sabah Muslims); 3IW significant (Sinic vs Indic divide)",
        "Ideology: Konfrontasi central (communism vs anti-communism); Sabah minor; 3IW central (Sino-Soviet split)"] });
 add("Cross-case synthesis", { id:"it-compare-causes-2", title:"Comparing causes: borders, economics, leaders, great powers", when:"1962–1979",
   q:"Compare the role of shared borders, economic interests, leaders and great powers across the three case studies.",
+  exp:"Shared borders are a central trigger only in Indochina, since Sabah is a maritime claim, and economic interests are minor in all three. Leaders are decisive in Konfrontasi and Sabah but only significant in Indochina, where Great Power involvement is decisive instead. This contrast lets you argue that leaders mattered most in maritime disputes, while external powers dominated the Indochina conflict.",
   pts:["Shared border/security: Konfrontasi present; Sabah not contiguous (maritime claim); 3IW central trigger",
        "Economic interests: Konfrontasi minor (distraction motive); Sabah minor; 3IW minor (resource/territory secondary)",
        "Role of leaders: Konfrontasi decisive (Sukarno/Suharto); Sabah decisive (Macapagal/Marcos); 3IW significant (Pol Pot/Hanoi leadership)",
        "External Great Power: Konfrontasi moderate (UK/Aus/NZ via AMDA); Sabah minimal; 3IW decisive (USSR/China/US triangle)"] });
 add("Cross-case synthesis", { id:"it-compare-resolution", title:"How each dispute was resolved or managed", when:"1965–1998",
   q:"How was each of the three disputes resolved or managed, and what was the decisive turning point?",
+  exp:"The three cases end in three different ways: Konfrontasi through regime change, Sabah through permanent abeyance, and the Third Indochina War through Vietnam’s own reorientation plus a multilateral settlement. Comparing the turning points shows that resolution depended on leadership change in one case, on management rather than settlement in another, and on both domestic change and international diplomacy in the third.",
   pts:["Konfrontasi: definitively ended via regime change; full normalisation and ASEAN co-founding — turning point 1965–67 Suharto succession",
        "Sabah: never resolved; held in permanent abeyance with cooperation on separate tracks — 1993 Ramos visit; 1998 shelving",
        "3IW: resolved only via Vietnam's strategic reorientation (Doi Moi) plus multilateral settlement — 1991 Paris Peace Conference"] });
 add("Cross-case synthesis", { id:"it-links-1", title:"Thematic links: diversion and leadership change", when:"1962–1998",
   q:"What thematic links connect the case studies regarding domestic diversion and leadership change?",
+  exp:"Aquino’s 1968 speech links Sukarno and Marcos as leaders who used external confrontation to distract from failure at home. In both cases, de-escalation followed a change of leader rather than any change in the underlying facts of the dispute. Together these links form strong evidence for the framework’s argument that individual leaders, not just structures, drive SEA inter-state relations.",
   pts:["Domestic diversion: Konfrontasi (Sukarno) and Sabah (Marcos) explicitly compared — Aquino's 1968 speech draws the parallel",
        "Leaders used external confrontation to distract from domestic political or economic failure",
        "Resolution requires leadership change: Sukarno→Suharto; Marcos→Aquino→Ramos",
        "De-escalation tracked a change of leader, not of the underlying structural facts — evidence for the role of leaders"] });
 add("Cross-case synthesis", { id:"it-links-2", title:"Thematic links: colonial borders, great powers, ASEAN", when:"1962–1998",
   q:"What thematic links connect the case studies regarding colonial borders, great power patronage, threat perceptions and the ASEAN Way?",
+  exp:"Colonial borders splitting communities recur as a generative cause in both Konfrontasi and Sabah. Great Power backing worked as an active ‘green light’, not just background, in Konfrontasi and Indochina. ASEAN’s split on Vietnam was foreshadowed by post-1975 Malaysia–Indonesia views, and the post-1990s Sabah approach shows how holding disputes in abeyance limits damage to regional cooperation. These links help build cross-case essay arguments.",
   pts:["Colonial borders splitting ethnic communities recur: Borneo territories in Konfrontasi; Sulu/Moro split between Sabah and Mindanao",
        "Great Power patronage as enabling condition: Britain/Commonwealth shaped Konfrontasi's military balance; Soviet backing was Vietnam's precondition — ‘green lights’",
        "Divergent threat perceptions toward Vietnam: post-1975 Malaysia/Indonesia counterweight view foreshadows Malaysia/Indonesia vs Thailand/Singapore split over Cambodia",
        "‘ASEAN Way’ of holding disputes in abeyance, seen in post-1990s Sabah management, minimises impact on regional cooperation"] });
 add("Cross-case synthesis", { id:"it-key-dates", title:"Essay-ready key dates", when:"1961–1995",
   q:"What key dates anchor any answer on inter-state tensions in SEA?",
+  exp:"These dates give a framework for any answer: 1961–63 launches both Konfrontasi and the Sabah claim, 1966–67 brings Suharto and ASEAN, and 1968 marks leaders using external disputes for domestic diversion. 1975 is the hinge year after which Vietnam becomes central, leading to the 1978–79 wars, while 1991 and 1995 mark the end of Indochina–ASEAN confrontation. Anchoring arguments to them shows clear chronological understanding.",
   pts:["1961–63: Malaysia proposed and realised; Konfrontasi begins (1963); Sabah claim first asserted (1962)",
        "1966–67: Konfrontasi ends; Suharto takes power; ASEAN founded (1967)",
        "1968: Corregidor Incident — pivotal year for Philippine and Indonesian leaders using external disputes for domestic diversion",
