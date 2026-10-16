@@ -8,6 +8,7 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"ec", sec, src:S, qs:"me" }
 /* ── Part A: Analytical framework ── */
 add("Framework", { id:"ec-three-aims", title:"The three economic aims", when:"framework",
   q:"Define the three economic aims of SEA governments and the key tension within each.",
+  exp:"The three aims are a yardstick for judging every country, and the key insight is that they pull against each other: chasing equity through quotas or collectivisation can cut productivity, while nationalism that shuts out foreign capital starves the economy of investment and competition. So no government could maximise all three at once. Essays are rewarded for showing how each state traded one aim off against another, not for listing policies.",
   pts:["Growth: increase in GDP/productive capacity/national income, usually via industrialisation — pursued via ISI → EOI, agricultural modernisation, foreign investment; can be achieved while equity is sacrificed",
        "Equity: fair distribution of wealth and opportunity across population/ethnic groups — land reform, redistribution, affirmative action (e.g. NEP), welfare; pursuing equity over efficiency (quotas, collectivisation) often reduces growth",
        "Economic nationalism: indigenising wealth and production, reducing foreign/minority control, self-sufficiency — nationalisation, restrictions on foreign investment and minorities, protectionism",
@@ -15,6 +16,7 @@ add("Framework", { id:"ec-three-aims", title:"The three economic aims", when:"fr
        "The aims often conflicted — a strong essay weighs how a country traded off between them"] });
 add("Framework", { id:"ec-newin-aims", title:"Weighing the aims: the Ne Win example", when:"1962–88",
   q:"Using Ne Win's Burma, show how the three aims should be weighed against each other.",
+  exp:"Ne Win shows why the aims cannot simply be counted up. Burma scored on equity and nationalism, yet these gains came amid stagnation, so ordinary people shared equally in a shrinking pie. Because growth underpins the other two, its absence makes the overall verdict a failure, a ‘hollow victory’. Use this as the template for weighing aims in any evaluation essay rather than treating them as equal ticks.",
   pts:["Burmese Way to Socialism achieved equity: top 25% earned only 5× the bottom 25%",
        "Achieved economic nationalism: foreign trade/investment banned, Indian/Chinese minorities squeezed out",
        "Comprehensively failed on growth",
@@ -22,11 +24,13 @@ add("Framework", { id:"ec-newin-aims", title:"Weighing the aims: the Ne Win exam
        "Model answer for weighing the three aims"] });
 add("Framework", { id:"ec-owen", title:"Owen's categorisation of economic approaches", when:"framework",
   q:"What are Owen's three categories of economic approach, and which countries fit each?",
+  exp:"Owen's categories let you group cases for comparison, but the labels describe ideology more than practice: even ‘capitalist’ states ran big SOEs and intervened. The useful distinction is how far the state tried to abolish private property and plan everything. Note that Burma and Indonesia both moved category over time, which lets you link a change of approach to a change in economic results.",
   pts:["Capitalist: committed to private property and enterprise, though still ran large SOEs and intervened indirectly — Philippines, Thailand, Malaysia, Singapore, Indonesia (New Order, post-1965), South Vietnam (1954–75)",
        "Socialist: attempted to eliminate private property; central planning over all economic decisions — Burma (post-1962), North Vietnam (1954–75), Socialist Republic of Vietnam (post-1975)",
        "‘Third Way’: vaguely socialist principles, straddled capitalist and socialist methods; ideology often prioritised over sound management — Burma under U Nu (pre-1962), Indonesia's Guided Democracy (1957–65)"] });
 add("Framework", { id:"ec-isi-eoi", title:"ISI vs EOI", when:"framework",
   q:"Compare ISI and EOI: what each is, why ISI came first, mechanisms and problems.",
+  exp:"ISI made sense first because new states needed to diversify away from primary exports and create non-farm jobs, and protection gave infant industries room to grow. But the same protection removed pressure to be efficient and handed out licences that bred cronyism. EOI cured complacency by exposing firms to world competition, at the cost of greater reliance on foreigners. This logic explains why the timing of the switch mattered so much.",
   pts:["ISI: produce manufactured/intermediate goods domestically to replace imports; EOI: produce goods of comparative advantage for export",
        "Why ISI first: diversifies away from primary exports, creates non-agrarian jobs, builds base for later EOI, addresses immediate post-independence problems; EOI overcomes small domestic market and forces efficiency via international competition",
        "ISI mechanism: tariffs and import restrictions protect ‘infant’ industries; EOI: loosen import restrictions, incentivise foreign investment",
@@ -34,6 +38,7 @@ add("Framework", { id:"ec-isi-eoi", title:"ISI vs EOI", when:"framework",
        "EOI problems: hard to compete with established developed-country industries; can undermine economic nationalism via foreign dependence/leverage"] });
 add("Framework", { id:"ec-salvatore", title:"Salvatore: ISI and EOI as sequential", when:"framework",
   q:"What is Salvatore's view of ISI and EOI, and what regional pattern supports it?",
+  exp:"Salvatore shifts the question from ‘which strategy?’ to ‘when did you move on?’. ISI is a stage, useful especially for larger countries, but staying too long lets protected firms and their political patrons entrench themselves, as in the Philippines and Indonesia. Singapore's early leap to EOI shows the payoff of a fast transition. In essays, this lets you explain divergent outcomes among capitalist states that all used ISI.",
   pts:["ISI and EOI are not true alternatives but can be applied sequentially",
        "ISI useful early (especially for larger nations); EOI becomes necessary later",
        "Differentiator is whether the country successfully TRANSITIONED from ISI to EOI at the right time",
@@ -41,6 +46,7 @@ add("Framework", { id:"ec-salvatore", title:"Salvatore: ISI and EOI as sequentia
        "Singapore skipped most of ISI and moved to EOI fastest (from mid-1960s) → success"] });
 add("Framework", { id:"ec-miracle", title:"Why the ‘miracle economies’?", when:"framework",
   q:"What four factors explain the ‘miracle economies’, and what was the World Bank's ‘recipe’?",
+  exp:"The four factors and the World Bank recipe both stress that success came from deliberate government choices, not luck: commitment to development, sound policy, and openness that was controlled rather than total. The US tie supplied security and markets. Use this as a checklist to test each country: the stronger performers tick most boxes, while laggards fail on sound policy or controlled integration.",
   pts:["Strong commitment of governments to economic development",
        "Sound economic policies",
        "Controlled integration into the global market",
@@ -48,18 +54,21 @@ add("Framework", { id:"ec-miracle", title:"Why the ‘miracle economies’?", wh
        "World Bank, The East Asian Miracle (1993): high domestic savings/investment, tax policies favouring investment, secure well-regulated bank-based financial system, pro-export incentives, openness to foreign tech/investment"] });
 add("Framework", { id:"ec-why-govt", title:"Why government had to lead", when:"at independence",
   q:"Why did governments play a dominant economic role across all SEA states?",
+  exp:"Because colonial economies were extractive, independence left no local business class or planning institutions, so only the state could supply capital and direction. This is why intervention was universal across capitalist and socialist states alike. The analytical point for essays is to move beyond ‘did the state intervene?’ to how it intervened (direct ownership versus incentives) and how well (efficient versus cronyist).",
   pts:["Colonial powers left no indigenous business class or domestic institutions for economic planning — extractive, not developmental",
        "At independence only the state had the capital and oversight to fill the vacuum",
        "Explains dominant government role in ALL SEA states, capitalist or socialist",
        "Difference lies in HOW (direct SOE control vs indirect incentive-setting) and HOW WELL (efficient vs corrupt/cronyist), not WHETHER"] });
 add("Framework", { id:"ec-tarling", title:"Tarling's two roles of government", when:"framework",
   q:"Explain Tarling's framework of the government's two roles in capitalist and socialist economies.",
+  exp:"Tarling separates what governments planned from how they took part. Both systems planned, but they participated very differently: capitalist states mostly shaped the environment for private and foreign firms, while socialist states tried to run production themselves. This framework helps structure a ‘role of government’ essay, comparing countries on both roles rather than lumping all intervention together.",
   pts:["Planning (capitalist): national development plans with growth targets, e.g. Malaysia's First Malaysia Plan 1969",
        "Planning (socialist): centralised Five-Year/Four-Year Plans, e.g. Vietnam's 2nd FYP 1976; Burma's Four-Year Plans",
        "Participation (capitalist): indirect — political stability, fiscal policy, pro-business climate, technocrats, attracting FDI/aid + some SOEs (JTC, FELDA, Pertamina)",
        "Participation (socialist): direct and total — state owns/runs virtually all production via central planning, nationalisation, state monopolies"] });
 add("Framework", { id:"ec-other-factors", title:"Ethnic minorities and foreign aid as factors", when:"framework",
   q:"How did ethnic minorities and foreign aid/investment shape economic change?",
+  exp:"The colonial role of Chinese and Indian minorities in trade and finance explains why economic nationalism so often meant targeting them, from Burma's expulsions to Malaysia's NEP. External aid followed Cold War alignment, so a country's foreign policy shaped its access to capital. Mention these factors to show that economic outcomes were not purely domestic policy choices.",
   pts:["Chinese and Indians dominated colonial-era trade/banking/capital provision → post-independence resentment",
        "Economic nationalism often targeted them (Indians expelled from Burma; NEP targeting Chinese corporate dominance)",
        "Cold War-driven aid: Thailand from the US; Vietnam from USSR/China via COMECON",
@@ -67,6 +76,7 @@ add("Framework", { id:"ec-other-factors", title:"Ethnic minorities and foreign a
        "Multilateral institutions: World Bank, IMF, ADB"] });
 add("Framework", { id:"ec-green-rev", title:"Green Revolution and electronics take-off", when:"1930s–80s",
   q:"What were the Green Revolution and the electronics take-off, and who benefited most?",
+  exp:"These two developments were regional opportunities, and outcomes depended on whether countries could seize them. New rice technology could end famine and generate exports, while electronics rewarded states with skilled labour and openness. Singapore's prepared workforce let it lead, while states locked into outdated heavy industry missed out. This supports the argument that policy and human capital, not just external trends, decided results.",
   clue:"High-yielding rice IR8, developed mid-1960s in the Philippines, plus fertilisers and machinery; later a late-1970s industrial boom in chips and components.",
   pts:["Green Revolution (1930s–70s): high-yielding rice IR8 (developed at IRRI, Philippines, mid-1960s) + fertilizers/irrigation/machinery",
        "Averted famine, created exportable surplus",
@@ -75,6 +85,7 @@ add("Framework", { id:"ec-green-rev", title:"Green Revolution and electronics ta
        "Burma, Vietnam, Indonesia struggled to adapt — outdated heavy industry, lack of skilled labour"] });
 add("Framework", { id:"ec-gdp-table", title:"GDP growth rates 1961–2001", when:"1961–2001",
   q:"Give average annual GDP growth rates by decade, 1961–2001 (Lim, p.43).",
+  exp:"The table gives hard evidence for ranking performance: Singapore leads in every decade, Malaysia and Thailand form a solid middle, and the Philippines and Myanmar trail. Decade patterns also reveal turning points, such as the Philippines' collapse in the 1980s and Thailand's slowdown in the 1990s. Myanmar's 1990s figure is a trap: high growth from a very low base does not mean it caught up.",
   pts:["Singapore: 10.0 / 9.0 / 7.4 / 7.0; 1961–2001 avg 8.3",
        "Malaysia: 6.5 / 7.9 / 6.0 / 6.6; avg 6.7",
        "Thailand: 8.2 / 6.9 / 7.9 / 4.4; avg 6.8",
@@ -86,6 +97,7 @@ add("Framework", { id:"ec-gdp-table", title:"GDP growth rates 1961–2001", when
 /* ── Part B: Malaysia ── */
 add("Malaysia", { id:"ec-my-narrative", title:"Malaysia: core narrative", when:"1957–1990s",
   q:"Outline the core narrative of Malaysia's economic development.",
+  exp:"Malaysia's story is driven by the ethnic question: hands-off ISI left wealth racially lopsided, the 1969 riots forced a turn to equity through the NEP, and later Mahathir swung back toward growth via heavy industry, privatisation and technology. Its steady 6.7% average shows a successful but balanced approach that traded off aims rather than maximising growth like Singapore.",
   pts:["Laissez-faire ISI (1957–71)",
        "Racial inequity sparks 1969 riots → New Economic Policy (1971–90)",
        "Mahathir's heavy industry and privatisation (1980s)",
@@ -93,6 +105,7 @@ add("Malaysia", { id:"ec-my-narrative", title:"Malaysia: core narrative", when:"
        "Average GDP growth 6.7% (1961–2001) — solid but behind Singapore"] });
 add("Malaysia", { id:"ec-my-colonial", title:"Malaysia's colonial economy", when:"colonial–1957",
   q:"What colonial economic legacy did Malaysia inherit?",
+  exp:"British policy tied each race to an economic role, so wealth gaps became ethnic gaps, which is why race dominated politics afterwards. Heavy dependence on tin and rubber made diversification urgent. Leaving economic management with the Chinese under the Social Contract explains the early laissez-faire approach and why Malay grievances built up until the NEP.",
   pts:["Ethnic division of labour: Europeans top; Chinese (tin mining, middlemen) and Indians (rubber tappers, chettiars) middle; Malays in traditional agriculture",
        "Reinforced by British policy: Chinese Protectorate 1877, Malay land reservations for padi",
        "‘Race became the leitmotiv’ of Malaysian politics (Drabble)",
@@ -100,6 +113,7 @@ add("Malaysia", { id:"ec-my-colonial", title:"Malaysia's colonial economy", when
        "Economic management stayed with the Chinese community per the UMNO–MCA Social Contract"] });
 add("Malaysia", { id:"ec-my-pioneer", title:"Pioneer Industries Programme", when:"1958–71",
   q:"What was the Pioneer Industries Programme and what was its critical flaw?",
+  exp:"The programme produced quick early gains because processing and simple consumer goods were easy to substitute. But since incentives went to every firm without targeting, there was no strategy to move into new sectors, reflecting a lack of planning expertise. Once the small domestic market filled up, manufacturing stalled. This is a textbook illustration of the limits of ISI, especially non-discretionary ISI.",
   clue:"1958 scheme supporting processing of tin, rubber, timber and consumables such as biscuits; status-holding firms rose from 18 to 246.",
   pts:["1958: supported processing of primary products (tin, rubber, timber) + consumables (beverages, vegetable oil, biscuits)",
        "Firms with pioneer status: 18 → 246 (1959–71)",
@@ -108,12 +122,14 @@ add("Malaysia", { id:"ec-my-pioneer", title:"Pioneer Industries Programme", when
        "Domestic market saturated; manufacturing stagnated at 9% of GDP in the 1960s"] });
 add("Malaysia", { id:"ec-my-merger", title:"Merger (1963) and Separation (1965)", when:"1963–69",
   q:"What was the economic rationale of Merger, and how did Separation relate to the 1969 riots?",
+  exp:"Merger had a clear economic logic: Singapore's port and Borneo's resources would complement the peninsula. Separation, however, revealed how racial and economic tensions undermined such arrangements, and that inequity fed into the 1969 riots. The link to remember is that the riots then became the trigger for the NEP, connecting political events directly to economic policy change.",
   pts:["Malaysia (1963): Federation of Malaya + Singapore + Sabah + Sarawak",
        "Rationale: Singapore as export outlet/entrepot; Sabah/Sarawak's natural resources",
        "Brunei opted out over oil revenue-sharing disputes",
        "Singapore's Separation (1965) exposed racial/economic inequity, contributing to the 13 May 1969 race riots"] });
 add("Malaysia", { id:"nep", title:"New Economic Policy: rationale and targets", when:"1971–90",
   q:"Why was the NEP introduced, and what were its objectives and targets?",
+  exp:"The 1970 figures show wealth was owned by foreigners and Chinese while poverty was overwhelmingly Malay, so economic function was identified with race, a recipe for unrest after 1969. The NEP framed redistribution as a means to national unity. Note that the targets grew the Malay share by shrinking the foreign share rather than taking from the Chinese, which made restructuring politically manageable.",
   clue:"1971 affirmative-action programme after the 13 May riots, seeking 30% Malay corporate ownership.",
   pts:["By 1970 corporate wealth: 63% foreign, 35% other Malaysians (mostly Chinese), only 2% Malay",
        "75% of households below the poverty line were Malay",
@@ -121,6 +137,7 @@ add("Malaysia", { id:"nep", title:"New Economic Policy: rationale and targets", 
        "Targets: Malay share → 30%; foreign share ↓ to 30%; Chinese share allowed to rise slightly to 40%"] });
 add("Malaysia", { id:"ec-my-nep-poverty", title:"NEP: poverty eradication and education", when:"1971–90",
   q:"How did the NEP pursue poverty eradication and bumiputera advancement through education/employment?",
+  exp:"Since Malay poverty was concentrated in rural agriculture, the NEP attacked it through land schemes and support for smallholders. Education and job preferences tackled the second objective by moving Malays into modern occupations. The emergence of a Malay middle class is evidence that the NEP genuinely began breaking the link between race and economic function.",
   pts:["State investment in agriculture/rural development for bumiputera",
        "FELDA (1956) — land schemes",
        "RISDA — financing rubber smallholders",
@@ -128,6 +145,7 @@ add("Malaysia", { id:"ec-my-nep-poverty", title:"NEP: poverty eradication and ed
        "Created a new Malay middle class by the late 1970s"] });
 add("Malaysia", { id:"ec-my-nep-equity", title:"NEP: bumiputera corporate equity", when:"1975–85",
   q:"What mechanisms and bodies built bumiputera corporate equity under the NEP?",
+  exp:"Rather than waiting for Malay entrepreneurs to emerge, the state built bumiputera ownership directly: it screened firms, injected capital, and used trust agencies to buy foreign companies. Purchases like Guthrie and the nationalisation of oil served both equity and economic nationalism at once, because Malay shares grew by reducing foreign ownership. This shows the state, not markets, drove restructuring.",
   pts:["Screening, state capital injections, joint ventures",
        "Industrial Coordination Act (1975)",
        "PERNAS (1978 trading corp)",
@@ -135,6 +153,7 @@ add("Malaysia", { id:"ec-my-nep-equity", title:"NEP: bumiputera corporate equity
        "Economic nationalism via state purchase of foreign assets: Petronas nationalised oil (1974); London Tin → Malaysian Mining Corp"] });
 add("Malaysia", { id:"ec-my-nep-fdi", title:"NEP's FDI contradiction", when:"1968–71",
   q:"Why did the NEP court foreign investment despite aiming to reduce foreign ownership?",
+  exp:"The NEP's planners knew bumiputera capital alone could not supply the investment, skills and competition needed for growth. So even while cutting the foreign share of ownership, they courted foreign manufacturers with incentives and tariff-free zones for exporters. This is a good example of pragmatic balancing between nationalism and growth, contrasting with Burma, which excluded foreign capital entirely.",
   pts:["Recognised FDI was needed for capital/expertise/competition",
        "Investment Incentives Act (1968)",
        "Free Trade Zone Act (1971): tariff-free for firms exporting ≥80%",
@@ -142,6 +161,7 @@ add("Malaysia", { id:"ec-my-nep-fdi", title:"NEP's FDI contradiction", when:"196
        "Deliberate balance — FDI provided capital/competition bumiputera-focused capital alone could not"] });
 add("Malaysia", { id:"ec-my-hicom", title:"Look East and HICOM", when:"1981–85",
   q:"What were Mahathir's ‘Look East’ policy and HICOM, and why did HICOM run into crisis?",
+  exp:"Mahathir wanted heavy industry to create a bumiputera industrial class, inspired by Japan and Korea. But the ventures were too small to be efficient and were funded by government loans, so losses turned into public debt. The scale of the deficit shows the cost of state-led industrialisation pursued for social goals, a parallel to the ISI problems of protected, politically driven industry.",
   clue:"1981 state heavy-industry corporation behind Proton, Perwaja Steel and Kedah Cement.",
   pts:["‘Look East’: modelled Malaysia on Japan/South Korea, admiring their work ethic",
        "HICOM (1981): state-led investment in cars, cement, steel, motorcycles — Kedah Cement, Perwaja Steel, Proton",
@@ -150,6 +170,7 @@ add("Malaysia", { id:"ec-my-hicom", title:"Look East and HICOM", when:"1981–85
        "Public enterprises = 64.3% of public sector deficit (1980–85)"] });
 add("Malaysia", { id:"ec-my-privatisation", title:"Privatisation and Malaysia Incorporated", when:"1983–92",
   q:"How did Mahathir respond to the HICOM crisis?",
+  exp:"Faced with HICOM's losses, Mahathir changed course pragmatically rather than doubling down, bringing private capital and competition into state enterprises and treating the private sector as a partner. Devaluation and deregulation boosted exports. This flexibility is a key difference from Burma, where the state clung to its enterprises, and helps explain Malaysia's continued growth.",
   pts:["Privatisation (1983): sale of SOEs; private financing of state projects; contracting out services; competition into state monopolies",
        "‘Malaysia Incorporated’ (1983): public and private sectors as partners, not opposites",
        "13 SOEs privatised by 1992",
@@ -157,6 +178,7 @@ add("Malaysia", { id:"ec-my-privatisation", title:"Privatisation and Malaysia In
        "Devaluation a common regional strategy (also Thailand, Indonesia)"] });
 add("Malaysia", { id:"ec-my-deepening", title:"Industrial deepening and widening", when:"1986–1990s",
   q:"What characterised Malaysia's industrial deepening and widening from 1986?",
+  exp:"From 1986 policy priorities shifted from redistributing wealth to upgrading the economy, so incentives targeted R&D, technology and skills. The jump in manufacturing's share of exports shows the strategy worked. Supporting local tech firms combined growth with a nationalist aim of building domestic capability. Use this to argue that Malaysia ultimately put growth ahead of equity.",
   pts:["Industrialisation now mattered more than equity",
        "Manufacturing = 60% of exports by 1990 (vs 20% a decade earlier)",
        "Promotion of Investments Act (1986) — R&D incentives; Action Plan for Industrial Technology Development (1990) — Vision 2020",
@@ -164,18 +186,21 @@ add("Malaysia", { id:"ec-my-deepening", title:"Industrial deepening and widening
        "MTDC (1993) invested in 8 local tech firms (e.g. Proton, Sapura) by year-end"] });
 add("Malaysia", { id:"ec-my-rasiah", title:"Rasiah on growth vs equity", when:"post-1990",
   q:"What does Rasiah's comment on Mahathir reveal about Malaysia's priorities after 1990?",
+  exp:"Rasiah's quote is direct evidence of priorities: the equity target was missed, yet Mahathir would not slow industrialisation to reach it. This proves growth trumped equity once the NEP formally ended. In essays, use it to show that the three aims were consciously traded off, and that Malaysia's approach was pragmatic rather than single-mindedly redistributive.",
   pts:["Mahathir ‘expressed sadness in the failure of bumiputeras to meet the 30% corporate equity ownership’",
        "But he was ‘not prepared to achieve it at the expense of checking the pace of industrialisation’",
        "Growth prioritised over equity once the NEP formally ended in 1990",
        "Even though equity goals were not fully met"] });
 add("Malaysia", { id:"ec-my-dereg", title:"Financial deregulation and NPLs", when:"mid-1980s–1997",
   q:"How did Malaysian financial policy evolve from the mid-1980s to 1997?",
+  exp:"Deregulation brought investment but, without oversight, also bad loans. The 1989 Act shows the authorities could learn and re-regulate, yet by the 1990s easy credit returned and NPLs rebuilt, leaving the economy exposed in 1997. The lesson for essays is that financial liberalisation without sustained regulation creates vulnerability, a theme shared across the region's crisis stories.",
   pts:["Mid-1980s deregulation attracted FDI and eased credit, but weak oversight → NPLs ~30% of commercial bank loans by 1987–88",
        "Banking and Financial Institutions Act (1989): stringent regulation, sound practices/cash reserves; foreign borrowing needed Bank Negara approval",
        "Lessons forgotten by 1990s: easy credit returned → renewed NPL build-up",
        "1997 AFC: KLSE composite index 1,238 points (Dec 1996) → 594 (Dec 1997)"] });
 add("Malaysia", { id:"ec-my-afc", title:"Malaysia's 1997 vulnerability", when:"1997",
   q:"How did the root cause of Malaysia's 1997 vulnerability differ from Thailand/Indonesia?",
+  exp:"Malaysia was hit in 1997 for a different reason from its neighbours: bubbles in domestic property and shares rather than foreign borrowing, made worse by bank mergers that tied lenders to the stock market. Because supervision and transparency were relatively good, the problem was exposure rather than poor governance. This lets you contrast crisis causes across countries rather than treating 1997 as one story.",
   pts:["NOT massive foreign debt (unlike Indonesia) but overheating of domestic property and stock markets",
        "Property loans = 45–55% of lending; KLSE 3rd largest in Asia-Pacific; market capitalisation = 300% of GDP",
        "Bank-finance company mergers (Sime Darby + UMBC → Sime Bank) increased stock-market exposure",
@@ -183,6 +208,7 @@ add("Malaysia", { id:"ec-my-afc", title:"Malaysia's 1997 vulnerability", when:"1
        "Vulnerability from current account deficit + volatile stock market, not poor governance"] });
 add("Malaysia", { id:"ec-my-eval-equity", title:"Evaluating the NEP (equity)", when:"1971–90",
   q:"Evaluate the NEP's success in achieving equity.",
+  exp:"The NEP clearly moved the numbers, multiplying bumiputera equity and cutting poverty, and built a Malay middle class. But it missed its target, and benefits went disproportionately to a politically connected few, so redistribution was narrower than intended. A balanced verdict is substantial but incomplete success, with the cronyism caveat showing equity among races did not mean equity within the Malay community.",
   pts:["Bumiputera corporate equity 2.4% → 20.3% (1971–90)",
        "Poverty 40.3% → 15%",
        "Bumiputera employment shifted to secondary/tertiary sectors; new Malay middle class",
@@ -190,6 +216,7 @@ add("Malaysia", { id:"ec-my-eval-equity", title:"Evaluating the NEP (equity)", w
        "Rewards concentrated in a politically connected ‘oligopoly’ (e.g. North-South Highway → United Engineers/UMNO)"] });
 add("Malaysia", { id:"ec-my-eval-growth", title:"Evaluating Malaysia (growth, unity, finance)", when:"1960s–1997",
   q:"Evaluate Malaysia's record on growth/diversification, national unity and financial stability.",
+  exp:"Malaysia succeeded on growth, diversifying away from its main commodities and becoming a NIC, after the weak 1960s. But affirmative action entrenched ethnicity as the basis of privilege, so it may have hurt the very unity the NEP aimed at, and regional gaps opened. Its banks were well run yet exposed by asset bubbles. This supports a mixed overall verdict.",
   pts:["Industry % of GDP 24.7% → 41.7% (1970–90); 3 main exports 54.4% → 44.5% of total",
        "Export growth 20% (1990–95); became a NIC under Mahathir; but 1960s manufacturing stagnated at 9%",
        "Unity: affirmative action reinforced ethnic identity as basis for privilege — divisive long-term",
@@ -197,12 +224,14 @@ add("Malaysia", { id:"ec-my-eval-growth", title:"Evaluating Malaysia (growth, un
        "Finance: transparent, well-regulated, quick on NPLs pre-1997, but vulnerable via stock/property overheating and current account deficit"] });
 add("Malaysia", { id:"ec-my-govt", title:"Malaysian government role by period", when:"1960s–1990s",
   q:"Summarise the nature of Malaysian government intervention in each period.",
+  exp:"The periodisation shows the Malaysian state constantly adjusting its role: hands-off in the 1960s, deeply interventionist for equity in the 1970s, a failed heavy-industry push then retreat in the 1980s, and finally a growth-focused, technology-upgrading role. This flexibility in response to problems is the main argument for why Malaysia performed solidly, unlike rigid regimes such as Burma.",
   pts:["1960s: laissez-faire, no long-term strategy — Pioneer Industries Programme; First Malaysia Plan (1966–70)",
        "1970s: NEP-driven, intensive — rural development; FELDA, PERNAS, PNB restructuring ethnic ownership",
        "1980s: state-led heavy industry (HICOM) → crisis → deregulation, devaluation, privatisation",
        "1986 onward: plans/institutions to deepen technology and human capital; less ethnically targeted, more growth-focused"] });
 add("Malaysia", { id:"ec-my-chinese", title:"Chinese dominance and the NEP's urgency", when:"1980s",
   q:"How does the regional data on Chinese economic dominance explain the urgency of the NEP?",
+  exp:"The data show the Chinese controlled a share of listed capital far beyond their share of the population, so ethnicity and economic power overlapped. In a country where the Chinese were a large minority and Malays held political power, this imbalance was politically explosive. It explains why redistribution was seen as urgent and not just desirable after 1969.",
   pts:["Malaysia: Chinese 28.0% of population but 69% of listed-firm capitalisation",
        "One of the higher Chinese population shares in the region",
        "Control still very disproportionate to population",
@@ -211,6 +240,7 @@ add("Malaysia", { id:"ec-my-chinese", title:"Chinese dominance and the NEP's urg
 /* ── Part C: Singapore ── */
 add("Singapore", { id:"ec-sg-narrative", title:"Singapore: core narrative", when:"1959–1990s",
   q:"Outline the core narrative of Singapore's economic development.",
+  exp:"Singapore's path was shaped by having nothing to fall back on: with no resources or hinterland, losing Malaysia and the British bases left export-led growth as the only option. Each later stage, from technology in 1979 to services and regionalisation, was a deliberate upgrade to stay competitive. Its 8.3% average makes it the benchmark against which other SEA economies are judged.",
   pts:["Entrepot with no industrial base or natural resources",
        "Brief ISI under Malaysia (1960–65)",
        "Forced into rapid EOI after Separation (1965) and British withdrawal (1971)",
@@ -218,12 +248,14 @@ add("Singapore", { id:"ec-sg-narrative", title:"Singapore: core narrative", when
        "Average GDP growth 8.3% (1961–2001) — region's top performer"] });
 add("Singapore", { id:"ec-sg-context", title:"Why Singapore's path differed", when:"1947–1950s",
   q:"Why did Singapore's starting point differ from its neighbours'?",
+  exp:"Singapore's colonial role as an entrepot meant it began independence already open, trade-oriented and with a workforce concentrated in services and commerce rather than farming. Lacking a primary sector removed the temptation to rely on commodities, so it had to industrialise for export. This explains why it could skip most of ISI and why its starting point differs from resource-rich neighbours.",
   pts:["British developed it as an entrepot, not industrial centre — 1950s growth <2%",
        "No agrarian sector, no natural resources, tiny domestic market — no ‘fallback’ primary sector",
        "Entrepot trade gave exposure to a wide range of goods; inherently open, export-oriented economy",
        "1947 workforce: services 30.9%, commerce 23.2%, agriculture only 8.1% — different human-capital starting point"] });
 add("Singapore", { id:"ec-sg-exportgdp", title:"Exports as % of GDP", when:"1950–2000",
   q:"Give exports as % of GDP for SEA states, 1950–60 vs 1990–2000.",
+  exp:"The table measures openness and shows the region's two extremes. Singapore was already hugely export-oriented and became more so, while Myanmar's exports collapsed to almost nothing, the only country to move backwards. Every other state became more open over time. Use this to support the argument that trade orientation tracked economic success, contrasting EOI winners with Burma's autarky.",
   pts:["Singapore 126.7 → 177.4",
        "Malaysia 53.3 → 94.4",
        "Indonesia 25.0 → 30.8",
@@ -232,6 +264,7 @@ add("Singapore", { id:"ec-sg-exportgdp", title:"Exports as % of GDP", when:"1950
        "Philippines 12.0 → 39.7"] });
 add("Singapore", { id:"ec-sg-reports", title:"Foreign reports and the EDB", when:"1955–68",
   q:"Which foreign reports shaped Singapore's industrialisation, and what was the EDB?",
+  exp:"Singapore did not improvise its strategy: successive foreign reports advised a government-led, FDI-friendly industrialisation, and the government built institutions to deliver it. The EDB was crucial because it made investing simple for foreign firms, and it spawned other bodies that handled finance, productivity and industrial land. This shows early planning and capable institutions were foundations of later success.",
   clue:"Three reports, the last by a Dutch economist in 1961, led to a ‘one-stop investment agency’ set up in August 1961.",
   pts:["IBRD Report (1955): government's infrastructural role + attract FDI",
        "Lyle Report (1959): Pioneer Industries Ordinance and Industrial Expansion Ordinance",
@@ -240,6 +273,7 @@ add("Singapore", { id:"ec-sg-reports", title:"Foreign reports and the EDB", when
        "Spawned DBS, National Productivity Board, JTC by 1968"] });
 add("Singapore", { id:"ec-sg-crisis", title:"Merger, Separation and British withdrawal", when:"1963–71",
   q:"How did Merger, Separation and British withdrawal force Singapore towards EOI?",
+  exp:"Separation removed the domestic market that ISI depended on, and British withdrawal threatened a large share of jobs and income, so the old strategy became impossible. Singapore kept some ISI only to absorb unemployment, but pivoted to EOI using its human capital, location and port. This is a key example of crisis forcing a beneficial policy change, explaining why Singapore transitioned to EOI faster than anyone.",
   pts:["Merger (1963): Malaysia as hinterland + common market — common market never materialised, contributing to Separation",
        "Separation (1965): lost hinterland/common market; Malaysia now a competitor",
        "British withdrawal (announced July 1967, completed Dec 1971): 40,000 jobs = 10% of national income",
@@ -247,6 +281,7 @@ add("Singapore", { id:"ec-sg-crisis", title:"Merger, Separation and British with
        "Leveraged human capital, location and port status"] });
 add("Singapore", { id:"ec-sg-levers", title:"Export incentives and manpower training", when:"1968–76",
   q:"What export incentives and manpower policies supported Singapore's EOI?",
+  exp:"EOI needed both a reason for firms to export and the workers to make it possible. Tax breaks, cheap export finance and credit insurance lowered the risk of exporting, while education reforms produced the technical and vocational skills that manufacturers required. The eightfold rise in technical enrolment shows the state deliberately building human capital, which also prepared Singapore for its later shift to higher technology.",
   pts:["Concessionary tax rates; lower MAS interest rates for export financing",
        "Export Credit Insurance Scheme (1976); Small Industries Finance Scheme (1976)",
        "Industrial training centres; 1968 education restructuring (technical/vocational)",
@@ -254,6 +289,7 @@ add("Singapore", { id:"ec-sg-levers", title:"Export incentives and manpower trai
        "Technical/vocational enrolment rose 8× (1966–76)"] });
 add("Singapore", { id:"ec-sg-fdi", title:"FDI policy, stability and results", when:"1960–80",
   q:"What FDI and political/infrastructure levers did Singapore use, and with what results?",
+  exp:"Singapore made itself as attractive as possible to foreign capital: tax breaks, free repatriation of profits, easy entry for skilled people and, from 1978, full foreign ownership. Political stability and the near-elimination of industrial disputes reassured investors. The results, with foreign firms dominating exports and manufacturing share the highest in the region, show FDI-led EOI worked, though it also implied reliance on foreign firms.",
   pts:["Pioneer-status tax exemptions; free profit repatriation; simplified immigration for skilled/capital holders",
        "1978: 100% foreign ownership allowed (‘major turning point’)",
        "PAP stability: lost man-days 129,893 (1960) → 1,001 (1977), a 99% decline; strong transport/communication legacy",
@@ -261,6 +297,7 @@ add("Singapore", { id:"ec-sg-fdi", title:"FDI policy, stability and results", wh
        "Manufacturing share of GDP 13.2% (1960) → 29.1% (1980) — highest in the region"] });
 add("Singapore", { id:"ec-sg-sir", title:"Second Industrial Revolution", when:"1979–84",
   q:"What was Singapore's ‘Second Industrial Revolution’?",
+  exp:"Once full employment created labour shortages, competing on cheap labour no longer made sense, so the government steered industry towards high-value, skill-intensive products. These goods also faced less protectionism than textiles. New state bodies supported the shift, and the near-doubling of value-added per worker shows upgrading succeeded. It illustrates Singapore's habit of restructuring proactively before its advantages ran out.",
   clue:"Late-1970s labour shortage prompted a deliberate move into integrated circuits, computers and aircraft components.",
   pts:["Labour shortage by late 1970s → shift away from low-value labour-intensive industry to R&D, engineering design, software",
        "Goh Chok Tong's 1981 Budget: 10-year Economic Development Plan for the Eighties",
@@ -269,12 +306,14 @@ add("Singapore", { id:"ec-sg-sir", title:"Second Industrial Revolution", when:"1
        "Value-added per worker nearly doubled (1979–84)"] });
 add("Singapore", { id:"ec-sg-recession", title:"1985 recession", when:"1981–86",
   q:"Why did Singapore suffer a recession in 1985?",
+  exp:"The 1985 recession was partly self-inflicted, as the high-wage policy designed to push upgrading made Singapore costlier for investors, and partly external, from global slowdown, protectionism and weak shipbuilding. Its significance is that even the region's best performer was exposed to world trends, which is evidence for the ‘external vulnerability’ limitation and helped prompt the 1986 rethink towards services.",
   pts:["High-wage policy (to attract skilled labour) + tight labour market reduced investment attractiveness",
        "Global slowdown + developed-world protectionism",
        "Low oil prices hurt shipbuilding/ship-repair (¼ of manufacturing)",
        "Demonstrated vulnerability to global trends"] });
 add("Singapore", { id:"ec-sg-services", title:"Shift to services", when:"1986 onward",
   q:"What did the 1986 Economic Committee recommend, and how did services grow?",
+  exp:"After the 1985 recession showed the risk of relying on manufacturing alone, the 1986 committee added services as a second engine, aiming to make Singapore a full-service business hub. The steady rise of services in GDP shows the plan took effect. Strict financial regulation meant this sector strengthened rather than endangered the economy, as its resilience in 1997 demonstrated.",
   pts:["Chaired by Lee Hsien Loong: TWO engines of growth — manufacturing AND services",
        "Vision of Singapore as a ‘total business centre’ — the ‘clusters’ concept",
        "Cluster Development Fund (S$1 billion, 1995)",
@@ -282,12 +321,14 @@ add("Singapore", { id:"ec-sg-services", title:"Shift to services", when:"1986 on
        "MAS's strict regulation meant finance withstood the 1997 AFC far better than peers"] });
 add("Singapore", { id:"ec-sg-regional", title:"Regionalisation", when:"1990s",
   q:"How did Singapore pursue regionalisation in the 1990s?",
+  exp:"A city-state has limited land and labour, so the government pushed Singapore firms to invest in neighbouring economies, creating an external ‘second wing’ for growth. The rapid growth of investment abroad and the flow of regional headquarters into Singapore show the strategy worked. It is another example of the state actively directing capital to overcome structural limits.",
   pts:["‘Second wing’/‘Singapore Inc.’ — integrate Singapore firms with regional economies",
        "Johor-Riau Growth Triangle; Suzhou Industrial Park",
        "Direct investment abroad S$8.7bn → S$16.9bn (1989–90), S$28.2bn by 1993",
        "Over 60 major TNCs made Singapore their Asia-Pacific HQ since 1986"] });
 add("Singapore", { id:"ec-sg-indicators", title:"Singapore's quantitative indicators", when:"1970–2000",
   q:"What do Singapore's industry, manufacturing and export indicators show?",
+  exp:"These figures need careful reading. Industry and manufacturing shares peaked around 1980 and then dipped, but this reflected the planned move into higher-value technology and services, not decline. Meanwhile primary exports fell sharply, showing diversification away from entrepot-era commodities. In essays, explain that structural change, not just industry's share, measures success for an advanced economy.",
   pts:["Industry % of GDP: 36.4 (1970) → 38.8 (1980) → 34.8 (1990)",
        "Manufacturing % of GDP: 20.5 (1970) → 29.1 (1980) → 27.1 (1990)",
        "3 main exports % of total: 39.8 (1985) → 50.2 (2000)",
@@ -295,6 +336,7 @@ add("Singapore", { id:"ec-sg-indicators", title:"Singapore's quantitative indica
        "Falling industry share NOT failure — reflects deliberate shift to higher-value technology and services"] });
 add("Singapore", { id:"ec-sg-lim", title:"Lim Chong Yah's three factors", when:"evaluation",
   q:"What three factors does Lim Chong Yah give for Singapore's success?",
+  exp:"Lim's factors explain success through efficiency, openness and good government. The third is decisive: because the PAP was not captured by cronies or the military, it could make economically rational decisions. The contrast with Marcos's Philippines and Suharto's Indonesia lets you argue that the quality of the state, not merely the amount of intervention, separated success from failure.",
   pts:["Free-enterprise system — efficiency while neighbours grappled with over-protectionism",
        "Outward-looking orientation — extension of entrepot history",
        "Able and honest government — ‘the leadership of the state was crucial, critical, and indispensable’",
@@ -302,23 +344,27 @@ add("Singapore", { id:"ec-sg-lim", title:"Lim Chong Yah's three factors", when:"
        "Contrast: Philippines (Marcos cronies Benedicto, Cuenca); Indonesia (military cooption limited state autonomy)"] });
 add("Singapore", { id:"ec-sg-limits", title:"Singapore's Achilles' heels", when:"1985–2009",
   q:"What were the limitations of Singapore's economic model?",
+  exp:"These weaknesses temper the success story. Growth was unevenly shared, with inequality widening; openness made the economy vulnerable to every global downturn; dependence on imported essentials shaped foreign policy; and a small, ageing population forced reliance on immigration. Use them to give a balanced evaluation, showing that Singapore's model achieved growth at some cost to equity and security.",
   pts:["Inequality (1990 census): 20% of households <$700/month; 50% <$2,100; top 10% $9,700+; Gini deteriorated",
        "External vulnerability: 1985 recession; 1997–98 AFC (STI fell 62%, Feb'97–Sep'98; GDP growth 0.3% in 1998); 2009 global financial crisis",
        "Resource dependence: imports nearly all essentials, especially food → emphasis on defence/regional diplomacy",
        "Labour shortage: small population + falling birth rate → politically sensitive immigration; pro-family policies limited success"] });
 add("Singapore", { id:"ec-sg-1997", title:"Why Singapore weathered 1997 better", when:"1997",
   q:"Why did Singapore weather the 1997 crisis better than its neighbours?",
+  exp:"Singapore's resilience came from fundamentals: it earned more than it spent abroad, relied on FDI rather than foreign loans, and its banks were tightly supervised. The conclusion that openness alone does not cause crises is important because Singapore was the most open economy yet suffered least, so the damage elsewhere must reflect weak domestic policy. This supports comparisons with Thailand and Indonesia.",
   pts:["Current account surplus 15.4% in 1997 (vs deficits elsewhere)",
        "No external debt since 1995 — FDI-reliant, not foreign-loan-reliant",
        "Strict MAS supervision: 6% bank reserve requirement since 1975; 18%/10% liquid asset requirements for banks/finance companies",
        "Conclusion: ‘economic openness and globalisation are not sufficient factors’ — sound domestic policy matters"] });
 add("Singapore", { id:"ec-sg-boards", title:"Statutory boards and tripartism", when:"1968–1990",
   q:"What statutory boards and labour mechanisms did the Singapore government use?",
+  exp:"Statutory boards let the government intervene through specialised, efficient agencies, each handling a task such as investment, trade or industrial land. Tripartism gave unions and employers a seat with government in setting wages, so disputes were settled by negotiation rather than strikes. Industrial peace was itself a selling point for foreign investors, linking labour policy to the FDI strategy.",
   pts:["~70 statutory boards by 1990: EDB (FDI), National Productivity Board (1972), Trade Development Board (1983, later IE Singapore → Enterprise Singapore), Small Enterprise Bureau (1986), JTC (1968)",
        "NTUC + National Wages Council (1971) — tripartite government/NTUC/employers coordination",
        "Eliminated labour unrest almost entirely — last strike before 2012 was in 1986"] });
 add("Singapore", { id:"ec-sg-holdings", title:"State holding companies and cooption", when:"1969–1994",
   q:"How did Singapore use state-owned holding companies and coopt the private sector?",
+  exp:"The state owned a huge corporate portfolio, so Singapore was far from laissez-faire, yet these firms operated commercially in vital sectors. Bringing business leaders into policymaking committees meant the state worked with private capital rather than over it. Rodan's phrase captures this partnership. Use it as evidence that Singapore's intervention was extensive but collaborative.",
   pts:["Temasek Holdings, MND Holdings, Singapore Technologies — by 1990 sole shareholder of 50 companies + stakes in 566 subsidiaries",
        "Vital-sector SOEs: Jurong/Keppel Shipyard, Neptune Orient Lines (1969), Singapore Airlines (1972), Singapore Petroleum Company (1969)",
        "1986 Economic Committee included business representatives",
@@ -326,6 +372,7 @@ add("Singapore", { id:"ec-sg-holdings", title:"State holding companies and coopt
        "‘Institutionalisation of interaction between capital and state’ (Rodan)"] });
 add("Singapore", { id:"ec-sg-nature", title:"Nature, not extent, of intervention", when:"comparison",
   q:"How did the NATURE of Singapore's intervention differ from Indonesia/Philippines?",
+  exp:"This is a high-value essay distinction: Singapore intervened as much as its neighbours, so extent alone cannot explain success. What differed was purpose and criteria. Singapore used SOEs to support private capital and judged them on efficiency, while in Indonesia and the Philippines politics and cronies drove decisions and foreign borrowing filled gaps, leaving them exposed in 1997.",
   pts:["Extent comparable to other SEA states, but nature differed fundamentally",
        "SOE purpose: Singapore stimulated/collaborated with private capital; Indonesia/Philippines — state domination over private capital or crony capture",
        "Decision criteria: Singapore gave economic efficiency ‘highest priority’; elsewhere political considerations replaced economic criteria",
@@ -334,6 +381,7 @@ add("Singapore", { id:"ec-sg-nature", title:"Nature, not extent, of intervention
 /* ── Part D: Burma ── */
 add("Burma", { id:"ec-bm-paradox", title:"The central paradox of Burma", when:"1948–2000",
   q:"What is the central paradox of Burma's economic history?",
+  exp:"Burma started with advantages most neighbours lacked, so its poor outcome cannot be blamed on endowment or circumstance. That leaves policy as the explanation, particularly extreme nationalisation and isolation. This makes Burma the strongest case for arguing that government choices determine economic outcomes, and the narrative shows each regime making a different but still damaging choice.",
   pts:["At independence: abundant natural resources, high literacy, no population pressure, favourable land-man ratio",
        "Arguably BETTER endowed than neighbours (British education policy, sparse population)",
        "Yet lowest GDP growth in the region (except briefly in the 1990s) and the most closed economy",
@@ -341,18 +389,21 @@ add("Burma", { id:"ec-bm-paradox", title:"The central paradox of Burma", when:"1
        "Narrative: U Nu's Third Way fails (1948–62) → Ne Win's autarky (1962–88) → SLORC's contradictory market opening (post-1988)"] });
 add("Burma", { id:"ec-bm-snapshot", title:"Burma: quantitative snapshot", when:"1961–2000",
   q:"Give the key quantitative indicators of Burma's economic position.",
+  exp:"Each figure points to the same failure: low growth, an economy still dominated by agriculture, and almost no manufacturing, even compared with other socialist states. Most strikingly, exports shrank as a share of GDP while every neighbour grew more open. Together they show that decades of supposed industrialisation achieved little and that isolation from trade was central to Burma's decline.",
   pts:["GDP growth 1961–2001: 4.3% — lowest in SEA except for the 1990s rebound",
        "1990: agriculture 57.3% of GDP (highest in region); industry 10.5%, manufacturing 7.8% (lowest)",
        "Least industrialised socialist economy, even vs Cambodia/Laos; only country where primary industry's GDP share did NOT fall in the 1990s",
        "Exports as % of GDP 21.0% (1950–60) → 1.3% (1990–2000) — the only country whose exports COLLAPSED"] });
 add("Burma", { id:"ec-bm-colonial", title:"Burma's colonial legacy and Saya San", when:"1930–40",
   q:"What colonial economic legacy did Burma inherit, and why did the Saya San Rebellion matter?",
+  exp:"Burma's colonial economy relied on primary exports with almost no industry, and Indian moneylenders became hated after foreclosing on peasants' land. The Saya San Rebellion showed how deep this resentment ran. That history explains why post-independence nationalism targeted the Indian minority, linking colonial grievances directly to later policies of expulsion and indigenisation.",
   pts:["Primary export base (rice, lumber, oil); exports US$173m (1939–40); industry near non-existent",
        "Chettiar (Indian) moneylenders dominated finance, foreclosed on peasants → tenant farming",
        "Saya San Rebellion (1930–31): resentment of Chettiars/colonial economy, crushed only with massed British/Indian troops",
        "This resentment shaped post-independence policy toward the Indian minority"] });
 add("Burma", { id:"ec-bm-pyidawtha", title:"Pyidawtha Plan", when:"Aug 1952",
   q:"What was the Pyidawtha Plan?",
+  exp:"U Nu's plan reflected Buddhist welfare ideals and aimed to improve rural life through social spending and land redistribution, building on Burma's strengths in rice and teak. It fits Owen's ‘Third Way’: socialist-sounding goals pursued without full central planning. Its ambitious land target sets up the later judgement on whether ideals were matched by competent implementation.",
   clue:"U Nu's Buddhist-principled ‘land of happiness’ welfare plan aiming to reallocate 10 million acres.",
   pts:["‘Land of happiness’ — Buddhist-principled welfare plan",
        "Education, public health, subsidised housing, irrigation, debt relief",
@@ -360,6 +411,7 @@ add("Burma", { id:"ec-bm-pyidawtha", title:"Pyidawtha Plan", when:"Aug 1952",
        "Target: reallocate 10 million acres of land by 1955"] });
 add("Burma", { id:"ec-bm-pyidawtha-fail", title:"Failure of the Pyidawtha Plan", when:"1956–60",
   q:"Why had the Pyidawtha Plan failed by 1956?",
+  exp:"The plan failed partly through its own design, because state marketing boards paid farmers below world prices and removed any reason to produce more, and partly through bad luck and weak capacity: falling rice prices, lack of funds, loss of skilled Indians and incompetent land reform. The DSI foreshadowed military control of the economy. This shows ideology outrunning management, the hallmark of the Third Way.",
   pts:["State Agricultural Marketing Board bought rice below global price → no productivity incentive; State Teak Board underperformed non-state teak",
        "Global rice price slump (-25%, 1955–56); lack of funds (war damage + insurgency)",
        "Mass Indian emigration removed technical personnel",
@@ -368,6 +420,7 @@ add("Burma", { id:"ec-bm-pyidawtha-fail", title:"Failure of the Pyidawtha Plan",
        "Defense Services Institute (DSI, 1951): interest-free capital, tax-exempt — precursor to military-economic dominance"] });
 add("Burma", { id:"burmeseway", title:"Burmese Way to Socialism", when:"1962–65",
   q:"What did the Burmese Way to Socialism involve, and how far did state control extend by 1965?",
+  exp:"Ne Win moved from Third Way to full socialism, nationalising banks, industry and distribution within about a year so the state controlled almost all trade. Prioritising heavy industry over agriculture was a strategic error in an agrarian economy, the same mistake Vietnam made. This card explains the scale of state control behind the later collapse of rice exports and growth.",
   clue:"Ne Win's 30 April 1962 programme: oil company, banks and consumer industries taken over within about a year; People's Stores Corporation monopoly.",
   pts:["30 April 1962: exploitative capitalism replaced by state-directed social justice; inward-looking import substitution",
        "Nationalised Burma Oil Company (Jan 1963), all banks (23 Feb 1963), all major industries by June 1963, consumer industries (Aug 1963)",
@@ -376,6 +429,7 @@ add("Burma", { id:"burmeseway", title:"Burmese Way to Socialism", when:"1962–6
        "Heavy industry over agriculture: agricultural investment fell 5%, manufacturing rose 25% (1962–73) — paralleling Vietnam"] });
 add("Burma", { id:"ec-bm-agri", title:"Burma's agricultural stagnation", when:"1963–73",
   q:"Why did Burmese agriculture stagnate under Ne Win despite new technology?",
+  exp:"The key point is that Burma had the technology but not the incentive. Compulsory quotas, fixed low prices and orders on what to plant meant farmers gained nothing from producing more, so yields stayed flat despite more fertiliser and new seeds. This proves that policy disincentives, not technical backwardness, caused stagnation, a point that also applies to Vietnamese collectivisation.",
   pts:["Agrarian Committees (Tenancy Law 1963): compulsory quotas, fixed state prices, land loss for non-compliance",
        "State dictated WHAT to grow — forced cotton in Mandalay/Sagaing, banning rice/groundnuts/onions",
        "Fertiliser use ↑6×, HYV seeds from 1971",
@@ -383,18 +437,21 @@ add("Burma", { id:"ec-bm-agri", title:"Burma's agricultural stagnation", when:"1
        "Cause: disincentives from land policy, not lack of technology"] });
 add("Burma", { id:"ec-bm-rice", title:"Rice export collapse and forex crisis", when:"1962–73",
   q:"Give the evidence of Burma's rice export collapse and foreign exchange crisis.",
+  exp:"These numbers show the chain of failure: farming disincentives collapsed rice exports, Burma's main earner, which turned a trade surplus into a deficit and drained foreign reserves. Without foreign exchange, Burma could not import the capital goods its industrialisation needed, so agricultural failure undermined industry as well. This is concrete evidence for the growth failure of the Burmese Way.",
   pts:["Rice exports 1,521,000 tons (1962/63) → 204,000 tons (1972/73)",
        "Rice as % of total exports 42.2% (1962) → 14.9% (1972) — struggling to feed itself",
        "Trade surplus 228.2m kyat (1962) → trade deficit 235.4m kyat (1972)",
        "Forex reserves 8.19m kyat (1965) → 3.461m kyat (1972)"] });
 add("Burma", { id:"ec-bm-blackmarket", title:"Hmaung-kho black market", when:"early 1980s",
   q:"What was the hmaung-kho and how large was it?",
+  exp:"When the state banned private trade and its monopolies could not supply goods, people turned to smuggling and illegal markets. The black market's vast share of goods traded shows the official economy had largely failed and that controls were unenforceable. It is useful evidence that extreme state control did not eliminate private exchange, it simply pushed it underground.",
   clue:"Burmese term meaning ‘taking refuge in the dark’.",
   pts:["‘Taking refuge in the dark’ — illegal economy filling the gap",
        "By early 1980s an estimated 70–80% of goods in Yangon/Mandalay markets came from illegal/smuggled sources",
        "Response to state monopolies, banned private trade and shortages under the Burmese Way to Socialism"] });
 add("Burma", { id:"ec-bm-private", title:"Suffocation of Burma's private sector", when:"1963–65",
   q:"How did Ne Win suffocate the private sector and isolate Burma?",
+  exp:"Ne Win did not just regulate private enterprise, he abolished it, closing firms and confiscating property across society, which threw huge numbers out of work. The 1965 law went further than even Indonesia's Article 33, which reserved only strategic industries for the state. Restricting visas cut Burma off from outside contact. Together these show autarky pursued to an extreme.",
   pts:["All private banks/trading enterprises nationalised; private rice trade banned (1963)",
        "~1,000 private firms closed, ~2 million workers unemployed",
        "Confiscated 814 private schools, 17 printing firms, 9 mission hospitals, 132 factories, 182 cinemas, 24 shipping companies, mines",
@@ -402,18 +459,21 @@ add("Burma", { id:"ec-bm-private", title:"Suffocation of Burma's private sector"
        "1964: visas restricted to 24-hour visits, confined to Rangoon"] });
 add("Burma", { id:"ec-bm-minorities", title:"Burma's expulsion of minorities", when:"mid-1960s–1972",
   q:"How did Burma treat its Chinese and Indian minorities, and what happened to overseas trade?",
+  exp:"Expelling Indians and squeezing out Chinese achieved economic nationalism, but these communities took their capital and skills with them. The collapse of trade at the very time Thailand and Malaysia were expanding exports highlights the cost. This comparison is useful in essays to show that nationalism pursued without regard to growth caused Burma to fall behind similar neighbours.",
   pts:["Restrictive laws squeezed out Chinese",
        "Most remaining Indians forcibly repatriated by mid-1960s, taking capital/expertise",
        "Overseas trade collapsed to 37% of its 1961–62 level by 1971–72",
        "Same period Thailand/Malaysia ramping UP exports"] });
 add("Burma", { id:"ec-bm-fouryear", title:"Burma's Four-Year Plans", when:"1971–78",
   q:"What partial reforms did Ne Win attempt from 1971, and what were the results?",
+  exp:"By 1971 even Ne Win recognised failure, so the reforms restored some incentives through better procurement prices, bonuses and openness to aid and investment. Growth improved noticeably under the second plan, showing incentives worked when given. But these were adjustments within socialism rather than a change of system, which helps explain why the recovery proved shallow.",
   pts:["First BSPP Congress (1971): agriculture re-prioritised; profit motive (performance bonuses); foreign aid sought",
        "1st Four-Year Plan (1971–74): fertiliser supply, revised marketing → GDP growth 2.2% (1971–72), 2.2% (1972–73)",
        "2nd Four-Year Plan (1974): higher paddy prices; ‘Whole Township Special Paddy Production Programme’; private/foreign investment incentives",
        "Exceeded 4.5% target — 5.9% (1976–77), 6.4% (1977–78)"] });
 add("Burma", { id:"ec-bm-shallow", title:"Burma's shallow recovery", when:"1980s",
   q:"Why was Burma's recovery in the 1970s–80s shallow?",
+  exp:"The 1970s gains did not last because the system itself remained: agriculture fell behind population growth, private firms stayed tiny, and growth depended on foreign loans. A country that once exported oil and rice now imported both, a dramatic reversal. Printing money to cover deficits brought inflation, setting the stage for the desperate demonetisation measures that followed.",
   pts:["By mid-1980s agricultural production failed to keep pace with population",
        "Once world's largest crude oil exporter and ‘granary of the East’ — net importer of oil and rice in the 1980s",
        "Only 13 of ~40,000 private establishments employed >50 workers",
@@ -421,6 +481,7 @@ add("Burma", { id:"ec-bm-shallow", title:"Burma's shallow recovery", when:"1980s
        "Government printed money to cover budget shortfalls → inflation"] });
 add("Burma", { id:"demonetisation", title:"1985 and 1987 demonetisations", when:"1985, Sept 1987",
   q:"What were Burma's demonetisations, and how did they lead to Ne Win's fall?",
+  exp:"Demonetisation was meant to strike at black marketeers but was easily evaded, so it hurt ordinary savers instead, especially in 1987 when no exchange was allowed and new notes reflected Ne Win's superstition. Wiping out people's savings turned economic failure into political crisis, leading to the 1988 uprising and Ne Win's fall. This links economic mismanagement directly to regime change.",
   clue:"Ne Win voided banknotes twice; only notes that were multiples of his lucky number survived.",
   pts:["1985: 20/50/100-kyat notes voided; ≤5,000 kyat exchangeable freely, larger sums needed proof of legal earning or faced confiscation/fines",
        "Aimed at black marketeers but circumvented by splitting cash among relatives",
@@ -429,11 +490,13 @@ add("Burma", { id:"demonetisation", title:"1985 and 1987 demonetisations", when:
        "Ordinary Burmese lost life savings → dissent (late 1987) → 8888 Uprising (Aug 1988) → Ne Win's fall → SLORC"] });
 add("Burma", { id:"ec-bm-static", title:"Burma's static structure by 1990", when:"1975–90",
   q:"What shows that Burma's economic structure remained ‘remarkably static’?",
+  exp:"After decades of claiming to prioritise industry, Burma's economy in 1990 was still dominated by agriculture, with a tiny manufacturing sector. Within manufacturing, the shift towards simple food processing and away from clothing shows the sector was becoming less, not more, sophisticated. This evidence shows that socialist industrialisation failed even on its own terms.",
   pts:["1990: agriculture 57.3% of GDP, industry 10.5%, manufacturing 7.8% — despite industrial emphasis since the 1960s",
        "Food and beverages share of manufacturing ROSE 69.8% → 76.8% (1975/76–1988/89)",
        "Clothing FELL 7.8% → 3.6%"] });
 add("Burma", { id:"ec-bm-fil", title:"SLORC's Foreign Investment Law", when:"Nov 1988",
   q:"What reforms did SLORC introduce from September 1988?",
+  exp:"After 1988 SLORC reversed Ne Win's autarky on paper, inviting foreign investment, guaranteeing against nationalisation and opening border trade. These measures explain the 1990s rise in growth. But reading this alongside the Tucker card is essential, because the reforms were limited in practice, so the opening was more apparent than real.",
   pts:["Foreign Investment Law (Nov 1988): wholly foreign-owned enterprises/joint ventures (min. 35% foreign stake)",
        "Guarantees against nationalisation, profit repatriation; tax breaks",
        "Abolished some state monopolies; lowered taxes",
@@ -441,18 +504,21 @@ add("Burma", { id:"ec-bm-fil", title:"SLORC's Foreign Investment Law", when:"Nov
        "Oil exploration deals with Korea/Japan/Australia/US"] });
 add("Burma", { id:"ec-bm-tucker", title:"Tucker on SLORC's contradiction", when:"1988–94",
   q:"What was the core contradiction of SLORC's market reforms (Tucker)?",
+  exp:"Tucker shows SLORC wanted market benefits while keeping state control, two goals that cancelled each other out. Monopolies on Burma's key products continued and many exports were banned even under an ‘open-door’ policy. His quip sums it up: liberalisation excluded the very goods that mattered. Use this to argue that post-1988 reform was superficial and limited its results.",
   pts:["Declared ‘proper evolution of the market-oriented economic system’ AND that ‘the initiative… must be kept in the hands of the state and the national people’",
        "State monopolies over teak, gems, ore, banking, broadcasting continued",
        "Dec 1990 ‘open-door’ trade policy yet export of 28 goods banned by 1994 (teak, rice, oil, gems)",
        "‘the SLORC lifted restrictions on everything except most things Burma produced and traded’ (Tucker)"] });
 add("Burma", { id:"ec-bm-asean", title:"Burma: ASEAN, trade and pariah status", when:"1985–2003",
   q:"How did Burma's external position develop after 1988?",
+  exp:"Burma did not return to total isolation, joining ASEAN and expanding trade, but rising imports offset much of the gain. Its brutal repression of democracy brought Western sanctions and drove out multinationals, so political conduct directly limited economic opening. This contrasts with Vietnam, whose reforms helped it gain Western acceptance.",
   pts:["Joined ASEAN 1997 (interest indicated 1995) — no regression to total isolation",
        "Trade volume rose 6.8× (1985–2003) but imports rose 5.5×, offsetting gains",
        "Brutal suppression of pro-democracy movement → Western sanctions",
        "Coca-Cola, Apple and other MNCs forced to exit"] });
 add("Burma", { id:"fivepercent", title:"Army control: only 5% privately owned", when:"end-1997",
   q:"How far did SLORC actually privatise Burma's economy by 1997?",
+  exp:"Despite market rhetoric, almost nothing was privatised, and the army controlled industry, finance and most trade. Tucker's remark that benefits rose with rank shows the economy served the military elite, so reform redistributed control within the regime rather than to private enterprise. This is strong evidence that SLORC's liberalisation was more about military interests than genuine market reform.",
   clue:"By end-1997 only a twentieth of large firms were private and no large SOE had been sold off.",
   pts:["By end-1997 only 5% of large firms privately owned",
        "NO large SOE privatised",
@@ -460,12 +526,14 @@ add("Burma", { id:"fivepercent", title:"Army control: only 5% privately owned", 
        "‘…the higher the rank, the greater the benefit’"] });
 add("Burma", { id:"ec-bm-rice90s", title:"SLORC-era rice and tourism", when:"1988–96",
   q:"Why were SLORC-era agricultural and tourism gains unsustainable?",
+  exp:"The rise in rice output and exports looked impressive but rested on soil-exhausting multi-cropping and on cutting what Burmese people ate, so it was not real productivity growth and soon collapsed. Tourism failed because the regime's human rights record deterred visitors. Both show that SLORC's gains were fragile and that political repression undermined economic strategy.",
   pts:["Rice production 13m → 19.5m tons (1988–95); exports rose to 1 million tons (1994)",
        "Unsustainable: multi-cropping exhausted soil; gains partly from cutting domestic consumption",
        "Exports crashed back to 353,000 tons by 1995",
        "‘Visit Myanmar Year’ 1996 largely failed — human rights record deterred visitors; hotels empty"] });
 add("Burma", { id:"ec-bm-limits", title:"Burma: structural limitations", when:"evaluation",
   q:"What structural limitations explain Burma's decline (Than & Tan)?",
+  exp:"Than and Tan's point is that neighbours with similar resources grew fast, so Burma's decline must be due to policy. The listed limitations show how: heavy industry without foreign exchange stalled, closing off trade dragged GDP down, and instability scared off aid and investors. Hla Myint's point that certainty matters more than tax incentives explains why SLORC's incentives achieved little.",
   pts:["Decline ‘particularly telling when set against… its neighbours… countries with which Burma shares a similar resource base’ (Than & Tan) — divergence due to POLICY",
        "Socialist contradiction: heavy industry in an agrarian economy without base → forex shortage → capital goods unimportable → industrialisation stalled (same as Vietnam)",
        "Absence of trade: GDP slid with trade orientation; exports 21.0% → 1.3% of GDP while every other economy rose",
@@ -473,11 +541,13 @@ add("Burma", { id:"ec-bm-limits", title:"Burma: structural limitations", when:"e
        "Hla Myint (1971): investors care less about tax ‘handouts’ than reduced bureaucracy and long-term political/security certainty"] });
 add("Burma", { id:"ec-bm-equity", title:"Burma: equity vs growth revisited", when:"1972",
   q:"Can Burma's achievements in equity and nationalism be counted as success?",
+  exp:"Burma shows equity and nationalism are not worth much on their own. Incomes were relatively equal and minorities were pushed out, but in an economy this weak, equality simply meant shared poverty and nationalism meant isolation. The quoted judgement lets you argue that growth is the precondition for the other aims to count as achievements.",
   pts:["Achieved relative equity: 1972 top 25% earned only 5× bottom 25%",
        "Achieved economic nationalism: indigenised production by expelling Chinese/Indian minorities",
        "But ‘the parlous overall state of the economy… means it is difficult to credit this as an achievement of any sort’"] });
 add("Burma", { id:"ec-bm-govt", title:"Burma: role of the government", when:"1948–2010",
   q:"Summarise the Burmese government's economic role across periods.",
+  exp:"Across periods the Burmese state moved from modest intervention to total control, and its problem was combining rigid ideology with poor expertise, so even technology and large foreign loans were wasted. After 1988, repression brought sanctions that blocked liberalisation. Comparing this with Singapore shows heavy intervention was not the issue itself; its nature and competence were.",
   pts:["Pre-1958: modest (pyidawtha, DSI, limited state monopolies); 1958 Ne Win caretaker govt — first major state enterprises",
        "1962–88: total intervention — ‘excessive intervention… suffocated private enterprise and failed to build a base for long-term industrialisation’",
        "Poor expertise compounded ideology — mismanaged agricultural technology caused stagnation",
@@ -487,6 +557,7 @@ add("Burma", { id:"ec-bm-govt", title:"Burma: role of the government", when:"194
 /* ── Part E: Vietnam ── */
 add("Vietnam", { id:"ec-vn-theme", title:"Vietnam's defining theme: pragmatism", when:"1975–2000",
   q:"Why is Vietnam the model case of socialist pragmatism?",
+  exp:"Vietnam matters because it shows a socialist regime can recognise failure and change course. A change of leadership let reform come from within, deliberately, rather than through collapse as in Burma. Following China rather than the USSR meant opening the economy while keeping the Party in control, which preserved stability. Use it to counter the assumption that socialism automatically means failure.",
   pts:["Narrative: split legacy → failed socialist transformation (1976–80) → limited reforms (1981–85) → Doi Moi (1986) → high growth in 1990s",
        "Abandoned a failing model, unlike Burma which clung to autarky until internal collapse",
        "Leadership transition (Le Duan's death 1986 → Nguyen Van Linh) enabled a planned pivot",
@@ -494,17 +565,20 @@ add("Vietnam", { id:"ec-vn-theme", title:"Vietnam's defining theme: pragmatism",
        "Modelled on Deng Xiaoping's China (1978), NOT Gorbachev's USSR (economic AND political liberalisation)"] });
 add("Vietnam", { id:"ec-vn-colonial", title:"Vietnam's colonial legacy and partition", when:"1944–54",
   q:"What colonial legacy and Cold War division shaped Vietnam's economy?",
+  exp:"French rule left an agrarian economy with exploitative labour and widespread tenancy, and the wartime famine showed how vulnerable food supply was. Partition in 1954 then gave the two halves opposite systems and patrons. This explains why reunified Vietnam inherited two very different economies, which became important when socialist policies were imposed on the capitalist South.",
   pts:["Agrarian colonial economy (rice, rubber, coffee, coal); French corvée → tenant farming on absentee-landlord land",
        "Famine (1944–45): hundreds of thousands died — Japanese diverted rice, Allied bombing disrupted transport",
        "Geneva Conference (1954) after Dien Bien Phu: North (socialist DRV, Soviet/Chinese-backed) vs South (capitalist, US-backed)"] });
 add("Vietnam", { id:"ec-vn-south", title:"South Vietnam's US-dependent economy", when:"1954–74",
   q:"What characterised South Vietnam's economy (1954–74)?",
+  exp:"South Vietnam's industry depended on US aid rather than its own capacity, and war and insurgency discouraged investment. Falling from rice exporter to massive importer shows how war wrecked agriculture. Because the economy rested almost entirely on American aid, it collapsed when the US withdrew, illustrating the danger of dependence on a single external patron.",
   pts:["Diem's industrial development: consumer goods (sugar, textiles, processed foods) with US aid",
        "Couldn't meet population needs; rural insurgency deterred investment",
        "Rice: from leading exporter to ceasing net exports after 1965; imports 12× exports during the war",
        "Almost wholly dependent on US aid by late 1960s — collapse when US withdrew (1971, completed via 1973 Paris Peace Accords)"] });
 add("Vietnam", { id:"ec-vn-north", title:"North Vietnam's socialist economy", when:"1954–74",
   q:"Describe North Vietnam's planning and collectivisation (1954–74).",
+  exp:"The North industrialised rapidly with Soviet and Chinese aid, but collectivised agriculture undermined itself. Because work points rewarded time rather than effort or quality, peasants had no reason to work harder, and fixed low prices kept wages low. This mirrors Burma's experience: socialist systems that removed rewards for productivity stalled regardless of investment.",
   pts:["Most mineral resources (gold, zinc, iron, tin) but industry only 1.5% of output in 1954",
        "National Planning Board (1955) → 1st FYP (1961): >90% of industry/agriculture nationalised by 1965",
        "Industrial output +15%/year (1959–64) with Soviet/Chinese aid (80% from Moscow) — fertiliser plants, power stations, steel complex near Hanoi",
@@ -512,6 +586,7 @@ add("Vietnam", { id:"ec-vn-north", title:"North Vietnam's socialist economy", wh
        "Points awarded by TIME spent, not quality → killed incentives; low wages from fixed low prices"] });
 add("Vietnam", { id:"ec-vn-plots", title:"Five percent plots", when:"1960s–1974",
   q:"What did the ‘five percent plots’ reveal about collectivisation?",
+  exp:"The tiny private plots outproduced collective land per hectare and supplied most of farmers' income, a natural experiment showing that people worked harder when they kept the fruits of their labour. The Party ignoring this evidence shows ideology overriding economics. It sets up why decollectivisation under Directive 100 and Resolution 10 later delivered such gains.",
   clue:"Private plots on a small share of cooperative land out-yielding collective farms; data shown to Le Duan in 1974.",
   pts:["Private plots = 5% of cooperative land",
        "Produced 2–3× the yield per hectare of collective farms",
@@ -519,6 +594,7 @@ add("Vietnam", { id:"ec-vn-plots", title:"Five percent plots", when:"1960s–197
        "Party ignored the data even when shown in 1974 (Le Duan)"] });
 add("Vietnam", { id:"ec-vn-war", title:"War damage and communist aid", when:"1963–75",
   q:"What was the impact of US bombing and communist aid on North Vietnam?",
+  exp:"Bombing destroyed much of the North's small industrial base and the infrastructure needed to rebuild it. Communist aid was large but heavily military and could only prevent total collapse. The point for essays is that war damage was a genuine external handicap for Vietnam, which must be weighed alongside its own policy mistakes when explaining poor performance before 1986.",
   pts:["US bombing (1966–75) devastated industry and transport",
        "UN 1976 mission: 183 dams/canals and 884 water installations needed repair; 9 of 30 provincial capitals destroyed",
        "Soviet aid >1 billion roubles (1963–67, 60% military)",
@@ -526,11 +602,13 @@ add("Vietnam", { id:"ec-vn-war", title:"War damage and communist aid", when:"196
        "Prevented collapse but couldn't offset war damage"] });
 add("Vietnam", { id:"ec-vn-reunify", title:"Reunification: human cost and early measures", when:"1975–82",
   q:"What human cost and initial measures followed reunification?",
+  exp:"War and the refugee exodus stripped Vietnam of people, including many skilled professionals it needed to rebuild. Early policy was mixed, with some openness to investment and ASEAN, but nationalising banks and foreign firms showed ideology still dominated. This sets up the full socialist transformation of the South and its damaging results.",
   pts:["~1.5 million killed in the war; ~1 million refugees by Oct 1982 (UNHCR), incl. tens of thousands of skilled professionals",
        "Some capitalist-like measures: agricultural expansion (1m new jobs); joint ventures + profit repatriation; outreach to ASEAN",
        "BUT private banks abolished; foreign manufacturing/industrial firms nationalised after Saigon's fall"] });
 add("Vietnam", { id:"vietnamfyp", title:"Vietnam's 2nd Five-Year Plan", when:"1976–80",
   q:"What did Vietnam's 2nd Five-Year Plan aim for, and how far did it fall short?",
+  exp:"The plan repeated the North's earlier mistake of prioritising heavy industry in an agrarian economy and extended collectivisation to the South. Missing every target by a wide margin, with idle factories and rationed rice, shows comprehensive failure. Conflict with China and in Cambodia added to the burden. Compare this to Burma's similar heavy-industry error.",
   clue:"Post-reunification plan repeating the North's heavy-industry error, with New Economic Zones and Mekong agro-farms.",
   pts:["Heavy industry prioritised again; science/technology (mechanised agriculture)",
        "Large-scale collectivisation (Mekong Delta agro-farms) + relocation to New Economic Zones",
@@ -539,6 +617,7 @@ add("Vietnam", { id:"vietnamfyp", title:"Vietnam's 2nd Five-Year Plan", when:"19
        "By 1980: capacity utilisation <50%; rice rationed (1977–80); black market; 1979 war with China + Cambodia occupation (1979–89)"] });
 add("Vietnam", { id:"ec-vn-stage1", title:"Stage I: abolition of private trade", when:"March 1978",
   q:"What happened in Stage I of the socialist transformation of the South?",
+  exp:"Abolishing private trade overnight, with confiscations and broken promises of compensation, destroyed the commercial class of the South. Many merchants fled as refugees, taking skills and capital with them. This shows how ideological transformation damaged the economy's human capital, paralleling Burma's expulsion of its trading minorities.",
   clue:"Night-time confiscations by ‘youth squads’ triggered an exodus of merchants.",
   pts:["Without warning, all major private enterprises placed under state control",
        "‘Youth squads’ confiscated goods at night",
@@ -546,6 +625,7 @@ add("Vietnam", { id:"ec-vn-stage1", title:"Stage I: abolition of private trade",
        "Merchant exodus of refugees"] });
 add("Vietnam", { id:"ec-vn-stage2", title:"Stage II: collectivisation of the South", when:"Dec 1978–82",
   q:"Why did collectivisation of the South fail?",
+  exp:"Collectivisation failed in the South because its peasants owned their land, so they had far more to lose than the North's tenants and resisted fiercely, even destroying property rather than surrendering it. Coercion could not overcome this. The tiny cooperative membership and collapsing rice output show the policy's failure and explain why reform began with agriculture.",
   pts:["‘New Management System’: work-exchange teams → pilot cooperatives → large collectives; equipment/livestock seized",
        "Southern peasants mostly freeholders (vs Northern tenants) → fierce resistance: reselling land, destroying equipment/livestock, refusing collective labour",
        "Party used mass meetings, household pressure, threats of ‘counterrevolutionary’ arrest",
@@ -553,18 +633,21 @@ add("Vietnam", { id:"ec-vn-stage2", title:"Stage II: collectivisation of the Sou
        "Rice 11.83m tons (1976) → 9.79m (1979); Mekong Delta 950,000 → 398,000 tons"] });
 add("Vietnam", { id:"ec-vn-fyp-funds", title:"2nd FYP failure: lack of funds", when:"1976–80",
   q:"Why did Vietnam lack funds for the 2nd Five-Year Plan?",
+  exp:"Vietnam relied on foreign aid, but geopolitics cut it off from every side: Soviet aid fell short, China withdrew after Vietnam sided with Moscow, the US never paid promised aid, and invading Cambodia brought an embargo and huge defence spending. This shows Cold War alignment and foreign policy choices directly undermined economic plans.",
   pts:["Soviet aid averaged $1bn/yr (promised $2.7bn)",
        "China cancelled all aid after Vietnam joined CMEA (1978) — Sino-Soviet rivalry",
        "US Carter administration never honoured promised $3bn reconstruction aid (1973 Paris Agreement)",
        "1979 Cambodia invasion → US/allied trade embargo + 50% of national expenditure to defence"] });
 add("Vietnam", { id:"ec-vn-fyp-causes", title:"2nd FYP failure: other causes", when:"1976–81",
   q:"Apart from funds, why did the 2nd Five-Year Plan fail?",
+  exp:"Beyond money, Vietnam lacked the physical and human capacity to use resources, as Duiker notes it struggled to absorb even the aid it received. Excluding experienced people because of their political or ethnic ties put ideology above competence, and rural resistance blocked collectivisation. Together these show that internal weaknesses, not just external factors, caused failure.",
   pts:["War damage: docks lacked equipment/stevedores; highway potholed; ⅓ of trucks idle for spare parts",
        "‘Vietnam was having considerable difficulty in absorbing foreign aid even when it was provided’ (Duiker)",
        "Lack of expertise: cadres couldn't switch to peacetime; experienced people excluded for US/Southern/Chinese ties — ideology over competence",
        "Rural resistance: only 9% of peasants/7% of cultivated land in southern cooperatives by 1981"] });
 add("Vietnam", { id:"ec-vn-directive100", title:"Directive 100", when:"Jan 1981",
   q:"What was Directive 100 and what were its effects?",
+  exp:"Directive 100 introduced incentives within socialism: households farmed their own plots and could profit from surplus output, so productivity rose. But because quotas were negotiable and inputs remained state-controlled, the system was gamed and resented. Its partial success proved incentives worked while its flaws showed half-measures were not enough, pointing towards fuller reform.",
   clue:"January 1981 contract system — households sell a quota to the state and keep the surplus.",
   pts:["Contract system: households cultivate own plots, not collective labour",
        "Sell a quota to the state; keep surplus for bonus-price state sale OR free market",
@@ -572,12 +655,14 @@ add("Vietnam", { id:"ec-vn-directive100", title:"Directive 100", when:"Jan 1981"
        "Peasants gamed quotas (colluding with managers for low targets); resented poor state-controlled inputs"] });
 add("Vietnam", { id:"ec-vn-3rdfyp", title:"3rd Five-Year Plan", when:"1981–85",
   q:"What did Vietnam's 3rd Five-Year Plan do, and with what results?",
+  exp:"The 3rd plan broadened Directive 100's logic by cutting subsidies, permitting some private enterprise and giving cities trading freedom. The improved growth and even an agricultural export surplus showed decentralisation paid off. This stage matters because it shows Vietnam's reform was gradual and evidence-driven, building confidence before the full Doi Moi pivot.",
   pts:["Abolished state subsidies on food/consumer goods",
        "Private sector allowed in forestry/fisheries/retail",
        "HCMC, Hanoi, Haiphong, Da Nang got own import-export corporations; intensified Soviet aid-seeking",
        "Industrial production +~10%/yr; grain +~5%/yr; 1983 agricultural export surplus"] });
 add("Vietnam", { id:"ec-vn-doimoi", title:"Doi Moi: context and goal", when:"Dec 1986",
   q:"Why was Doi Moi adopted at the 6th Party Congress, and what was its goal?",
+  exp:"Doi Moi came from both pressure and opportunity: Soviet aid was shrinking and the US embargo blocked Western and multilateral finance, while the death of Le Duan allowed a reformer to lead. Copying China's gradualism meant liberalising markets while keeping Party control. This explains why reform was deliberate and stable, unlike Burma's crisis-driven changes.",
   clue:"‘Renovation’ adopted in December 1986 under Nguyen Van Linh.",
   pts:["Gorbachev's reforms cut Soviet aid",
        "US embargo (since 1964 for North, extended 1975) blocked IMF/World Bank/ADB and deterred Western/Japanese aid",
@@ -586,6 +671,7 @@ add("Vietnam", { id:"ec-vn-doimoi", title:"Doi Moi: context and goal", when:"Dec
        "Deng's China model — gradualism and stability; Party supremacy preserved, liberalisation confined to economy"] });
 add("Vietnam", { id:"ec-vn-doimoi-measures", title:"Doi Moi reform measures", when:"1987–89",
   q:"What decentralisation, foreign investment and diplomatic measures did Doi Moi involve?",
+  exp:"These measures dismantled central planning by freeing prices and cutting bureaucracy, and they opened Vietnam to foreign investment with strong guarantees. Negotiating an end to the Cambodia occupation tackled the cause of Vietnam's isolation. Together they were mutually reinforcing, which is why Doi Moi is described as coherent compared with SLORC's contradictory reforms.",
   pts:["Reduced ministries/bureaucracy; subsidies abolished, market prices",
        "By 1989 central planning formally discarded for a market-oriented economy",
        "1987: wholly foreign-owned companies allowed in all sectors except defence",
@@ -593,6 +679,7 @@ add("Vietnam", { id:"ec-vn-doimoi-measures", title:"Doi Moi reform measures", wh
        "From 1989: negotiations with ASEAN to end Cambodia occupation; interest in membership"] });
 add("Vietnam", { id:"ec-vn-res10", title:"Resolution 10", when:"April 1988",
   q:"What did Resolution 10 do, and what prompted it?",
+  exp:"Resolution 10 responded to overwhelming evidence that collectives underperformed: rice output was still below 1942 levels and northern cooperative farmers produced far less than free southern farmers. Giving long land tenure and ending quotas meant farmers kept their gains, effectively privatising agriculture. The later rice boom confirms that incentives, not technology, had been the missing element.",
   clue:"April 1988 measure giving 10–15 year land tenure, mirroring China's Household Responsibility System.",
   pts:["De facto privatised agriculture: 10–15 year land tenure (expected to become inheritable/perpetual)",
        "Collective labour requirement removed; farmers could buy from private suppliers",
@@ -600,11 +687,13 @@ add("Vietnam", { id:"ec-vn-res10", title:"Resolution 10", when:"April 1988",
        "Prompted by: 1986 rice output still BELOW 1942 levels; Northern cooperative farmers produced 52% LESS than free Southern farmers"] });
 add("Vietnam", { id:"ec-vn-results", title:"Doi Moi results 1986–90", when:"1986–90",
   q:"What were the results of Doi Moi from 1986 to 1990?",
+  exp:"Doubling growth, private sector expansion and trade within a few years gives quick evidence that Doi Moi worked. The rise of the private sector in particular shows reform unleashed activity that central planning had suppressed. Use these figures to support the argument that pragmatic adaptation, rather than socialism itself, determined Vietnam's turnaround.",
   pts:["Economic growth doubled 3% → 6%",
        "Private sector growth 10% → 25%",
        "International trade doubled $1bn → $2bn"] });
 add("Vietnam", { id:"ec-vn-1990s", title:"Vietnam's 1990s growth", when:"1991–2000",
   q:"Give the evidence for Vietnam's economic success in the 1990s.",
+  exp:"The 1990s figures show reform producing sustained, world-leading growth. The transformation from rationing rice to being a top exporter is the clearest proof that decollectivisation worked. Rapid trade growth reflects Vietnam's opening, and the ambitious targets show confidence in continuing reform. This is strong evidence for the verdict that Vietnam succeeded once it adapted.",
   pts:["7th Congress (1991) reaffirmed Doi Moi; GDP growth avg 8.2% early 1990s, 9.5% in 1995–96 — highest in world",
        "Industrial output +~15%; agricultural +6%; per capita rice 242kg (1987) → 293kg (1989)",
        "World's 3rd-largest rice exporter (after US, Thailand): 0.91m tons (1988) → 1.95m (1992), >3m tons/yr by decade's end",
@@ -612,6 +701,7 @@ add("Vietnam", { id:"ec-vn-1990s", title:"Vietnam's 1990s growth", when:"1991–
        "Draft Strategy to 2000 (Dec 1990): double per capita income, +50% rice, triple electricity, 5× exports"] });
 add("Vietnam", { id:"ec-vn-integration", title:"Vietnam: infrastructure, aid and embargo", when:"1991–2005",
   q:"What positive trends in infrastructure, diplomacy and privatisation followed?",
+  exp:"Diplomatic normalisation unlocked the money Vietnam had been denied: ASEAN membership, donor pledges led by Japan and the lifting of the US embargo brought in aid and investment. Infrastructure and new private-company laws helped absorb it. This shows how resolving foreign policy problems, especially Cambodia, was essential to economic success, the opposite of Burma's pariah path.",
   pts:["6 transport projects by end-1995 (e.g. National Road 14, bridges $610m)",
        "ASEAN investment $173m in 34 projects by Sept 1991; ASEAN membership accepted 1994, formalised 1995",
        "Donors' meeting (Nov 1993): 23 donors pledged $1.86bn (Japan largest)",
@@ -619,11 +709,13 @@ add("Vietnam", { id:"ec-vn-integration", title:"Vietnam: infrastructure, aid and
        "Enterprise Law (1999); non-state production share 22% → 27% (2000–2004)"] });
 add("Vietnam", { id:"ec-vn-diversify", title:"Vietnam's lagging diversification", when:"1985–2004",
   q:"How far did Vietnam diversify its economy?",
+  exp:"Despite fast growth, Vietnam still had the smallest manufacturing share among its peers, and its exports became more concentrated even as their mix changed. This shows growth outpaced structural transformation, partly because Vietnam started late after its socialist decade. It gives a balanced qualification to Doi Moi's success in essays.",
   pts:["Manufacturing % of GDP (2004): Thailand 35.2, Malaysia 31.5, Indonesia 28.3, Philippines 23.0, Vietnam 20.3 — still lagging",
        "3 main exports rose 43.0% (1985) → 54.5% (2000) of total",
        "Exports shifted from frozen shrimp/oil seeds/coal to petroleum/garments/shrimp but remained concentrated"] });
 add("Vietnam", { id:"ec-vn-limits", title:"Vietnam: persistent limitations", when:"1988–2002",
   q:"What limitations persisted in Vietnam even after Doi Moi?",
+  exp:"Doi Moi did not end Vietnam's problems. The state sector remained huge, corruption and unreliability deterred investors so much promised money never arrived, and growth was uneven, with poverty falling slowly in the mountains and among minorities while inequality rose. These show the trade-off: Vietnam gained growth but sacrificed some of the equity it had under socialism.",
   pts:["SOEs still 50% of output in 1997 — ‘the government's inability or reluctance to expand the private sector’",
        "Bribery demands, contracts invalidated for better offers; PERC (Hong Kong) rated Vietnam the ‘riskiest place’",
        "Only ⅓ of promised $20bn (1988–95) disbursed",
@@ -631,6 +723,7 @@ add("Vietnam", { id:"ec-vn-limits", title:"Vietnam: persistent limitations", whe
        "Richest:poorest decile 10.6× (1996) → 12× (1999) → 12.5× (2001–02); ethnic minorities 14% of population, 29% of poor (1998)"] });
 add("Vietnam", { id:"ec-vn-govt", title:"Vietnam: role of the government", when:"1990–95",
   q:"Why did the state sector not shrink after Doi Moi (Vasavakul)?",
+  exp:"Vasavakul's point is that ending central planning freed markets but did not shrink the state, which actually grew faster than the private sector, with the army running businesses. So Doi Moi changed how the state operated rather than reducing it. This nuance prevents oversimplifying Vietnam as becoming capitalist and connects to its persistent SOE dominance.",
   pts:["‘the party determined the course… the central government… translated party guidelines into plans’ (Vasavakul)",
        "State sector grew 10.5%/yr (1990–95) vs non-state 6%/yr",
        "Vietnamese People's Army: 12% of standing force in commercial enterprises by 1993; local militias ran 160+ enterprises",
@@ -638,6 +731,7 @@ add("Vietnam", { id:"ec-vn-govt", title:"Vietnam: role of the government", when:
        "Doi Moi liberalised MARKETS, not the state's economic footprint"] });
 add("Vietnam", { id:"ec-vn-hoa", title:"The Hoa squeezed out", when:"post-1975",
   q:"What happened to Vietnam's ethnic Chinese (Hoa) after reunification?",
+  exp:"Like Burma, Vietnam targeted its ethnic Chinese minority, nationalising their firms and persecuting suspected capitalists, so many fled. This pursued economic nationalism and ideological purity but drained capital and commercial skills from the South. It gives a direct parallel with Burma's expulsions for comparative essays on treatment of minorities.",
   pts:["Southern ethnic Chinese squeezed out economically",
        "Nationalisation of their enterprises + persecution of suspected capitalists/ex-South-government supporters",
        "Fled abroad, overlapping with the wider refugee exodus"] });
@@ -645,6 +739,7 @@ add("Vietnam", { id:"ec-vn-hoa", title:"The Hoa squeezed out", when:"post-1975",
 /* ── Part F: Cross-country synthesis ── */
 add("Cross-country synthesis", { id:"ec-f1-paths", title:"Master comparison: paths", when:"1948–2000",
   q:"Compare Malaysia, Singapore, Burma and Vietnam on category, endowment, early strategy and turning point.",
+  exp:"The comparison shows resource endowment did not predict outcomes: resource-poor Singapore grew fastest while best-endowed Burma grew slowest. Each turning point was triggered by a crisis, but what mattered was the response. This table is useful for structuring comparative paragraphs that link starting conditions, strategy and policy shifts to growth results.",
   pts:["Category: Malaysia/Singapore capitalist; Burma ‘Third Way’ → socialist → contradictory market; Vietnam socialist, reformed via Doi Moi",
        "Endowment: Malaysia rich (tin, rubber, palm oil); Singapore almost none; Burma rich — BEST endowed; Vietnam minerals North, Mekong South",
        "Growth 1961–2001: 6.7% / 8.3% / 4.3%; Vietnam 8–9.5% in 1990s after disastrous 1976–85",
@@ -652,12 +747,14 @@ add("Cross-country synthesis", { id:"ec-f1-paths", title:"Master comparison: pat
        "Turning points: 1969 riots → NEP; 1965 Separation + 1971 withdrawal; 1988 8888 → SLORC; 1986 Doi Moi"] });
 add("Cross-country synthesis", { id:"ec-f1-capital", title:"Master comparison: equity, capital, 1997", when:"1948–2000",
   q:"Compare the four on equity issue, treatment of foreign/minority capital and 1997 vulnerability.",
+  exp:"These dimensions show each country faced a different equity problem and treated foreign capital differently, from Singapore's open embrace to Burma's exclusion. Their 1997 experiences differed too. The key subtlety is that Burma and Vietnam escaped the crisis because they were less integrated, not because their policies were sound, so insulation should not be mistaken for strength.",
   pts:["Equity: Malaysia ethnic gap; Singapore Gini (class); Burma equity at cost of growth; Vietnam regional + ethnic minority poverty",
        "Capital: Malaysia restricted but courted FDI; Singapore courted FDI (100% ownership 1978); Burma expelled minorities, banned foreign trade/investment; Vietnam nationalised foreign/Hoa firms, reopened to FDI 1987",
        "1997: Malaysia domestic overheating + current account deficit; Singapore sound fundamentals",
        "Burma insulated (closed/pariah) ‘for the wrong reasons’; Vietnam insulated (less integrated into global capital markets)"] });
 add("Cross-country synthesis", { id:"ec-f2-mysg", title:"Three aims: Malaysia and Singapore", when:"verdict",
   q:"Did Malaysia and Singapore achieve the three aims?",
+  exp:"Malaysia and Singapore illustrate two ways of balancing the aims. Malaysia achieved respectable progress on all three, while Singapore maximised growth by consciously giving up nationalism and accepting widening inequality. This comparison lets you argue that the most successful economy by growth was not necessarily the most successful overall, depending on how the aims are weighed.",
   pts:["Malaysia growth strong and diversified (NIC); equity partial (poverty 40.3% → 15%, short of 30%); nationalism partial (2.4% → 20.3%, FDI essential)",
        "Malaysia verdict: best BALANCE of the three aims",
        "Singapore growth outstanding (ISI → EOI → tech/services); equity weakest (Gini — class, not ethnic)",
@@ -665,32 +762,37 @@ add("Cross-country synthesis", { id:"ec-f2-mysg", title:"Three aims: Malaysia an
        "Singapore verdict: most successful by growth, by deliberately NOT prioritising nationalism"] });
 add("Cross-country synthesis", { id:"ec-f2-bmvn", title:"Three aims: Burma and Vietnam", when:"verdict",
   q:"Did Burma and Vietnam achieve the three aims?",
+  exp:"Burma and Vietnam both began with equity and nationalism at the expense of growth. Burma never changed, and its nationalism directly caused stagnation, so it failed overall. Vietnam rebalanced, giving up some nationalism and equity to achieve growth. The contrast shows that success depended on willingness to adjust the mix of aims when it was not working.",
   pts:["Burma: catastrophic growth; equity achieved amid poverty (hollow); nationalism extreme — and directly CAUSED growth failure",
        "Burma verdict: overall failure — nationalism and equity without growth are not success",
        "Vietnam growth: failure pre-1986, strong 1986–2000 (9.5% peak); equity achieved pre-1986 but WORSENED after",
        "Vietnam nationalism strong pre-1986, diluted after to attract FDI",
        "Vietnam verdict: best example of LEARNING and ADAPTATION"] });
 add("Cross-country synthesis", { id:"burmavsvietnam", title:"Why Burma failed where Vietnam succeeded", when:"1986–2000",
-  q:"Why did Burma fail where Vietnam (eventually) succeeded?", qs:"notes",
+  q:"Why did Burma fail where Vietnam (eventually) succeeded?",
+  exp:"Since both countries made the same early mistakes for the same reasons, the explanation for divergence lies in what came after. Vietnam reformed early, consistently and in a way that won international acceptance; Burma reformed late, half-heartedly and while repressing its people, bringing sanctions. This is an ideal comparative argument that leadership and reform quality, not ideology, decided outcomes.", qs:"notes",
   pts:["Both had near-identical initial strategies and failed for similar reasons (forex shortage, agricultural disincentives, lack of expertise)",
        "Willingness: Ne Win reform REACTIVE, forced by 8888 (1988); Vietnam's 1986 leadership change enabled PROACTIVE reform from within",
        "Coherence: SLORC contradictory (state monopolies, 28-good export bans); Doi Moi consistent (decentralisation + Resolution 10 + FDI law)",
        "International: Burma pariah, sanctions, MNC exodus; Vietnam embargo lifted (1994) → IMF/World Bank/ADB",
        "Result: Burma stagnation despite 7.4% off tiny base; Vietnam 8–9.5%, major rice exporter, FDI"] });
 add("Cross-country synthesis", { id:"ec-sg-vs-my", title:"Singapore vs Malaysia", when:"comparison",
-  q:"Singapore vs Malaysia: same region, different outcomes — why?", qs:"notes",
+  q:"Singapore vs Malaysia: same region, different outcomes — why?",
+  exp:"Singapore and Malaysia had similar governance quality, so differences came from circumstances and priorities. Lack of resources forced Singapore into EOI early, while Malaysia's commodities let it delay. Malaysia's ethnic politics required redistribution that slowed growth and enabled some cronyism, whereas Singapore's government was free to focus on efficiency. This helps explain Singapore's faster growth.", qs:"notes",
   pts:["Resources: Malaysia's tin/rubber allowed delayed EOI; Singapore forced into EARLY EOI (mid-1960s vs end of 1970s for most)",
        "Ethnic politics: NEP shaped Malaysian policy; PAP governance not built around ethnic redistribution",
        "Both relatively honest, technocratic, but Singapore's freedom from interest-group capture allowed faster planning",
        "Crony capture partial in Malaysia (UMNO-linked privatisation contracts), much more limited in Singapore"] });
 add("Cross-country synthesis", { id:"ec-f5-pattern", title:"Common pattern: ISI → EOI → diversification", when:"1948–2000",
   q:"How did the capitalist and socialist economies differ in following the ISI → EOI → diversification track?",
+  exp:"The capitalist economies followed a broadly similar progression of ISI, then EOI, then diversification, differing in timing. The socialist economies could not start that path until they first abandoned central planning, with Doi Moi functioning as Vietnam's EOI pivot. Burma never completed that pivot, which explains its persistent backwardness. This framework helps compare countries stage by stage.",
   pts:["Capitalist economies broadly followed the track; socialist had to pivot away from central planning first",
        "Stage 1: Malaysia ISI (1957–71); Singapore ISI (1960–65); Burma U Nu (1948–62); Vietnam heavy industry (1955–86)",
        "Stage 2: NEP + FDI (1971–90); forced EOI (1965–79); Ne Win autarky — NO EOI stage; Doi Moi (1986–) — functional EOI pivot",
        "Stage 3: heavy industry → deepening; tech/services (1979) → regionalisation; SLORC incomplete opening (1988–); FDI & ASEAN integration (1990s)"] });
 add("Cross-country synthesis", { id:"ec-pitfalls", title:"Common essay pitfalls", when:"exam",
   q:"What common essay pitfalls should be avoided on this theme?",
+  exp:"These pitfalls reflect what examiners reward: judging success against all three aims, avoiding simplistic ideological explanations, and taking starting points into account. The emphasis on the nature and direction of intervention, rather than its existence, is key because every government intervened. Following these turns narration into analysis and supports judgements with specific evidence.",
   pts:["Don't treat growth as the only measure — weigh growth vs equity vs nationalism",
        "Don't assume socialism = failure/capitalism = success: Singapore succeeded through GOVERNANCE QUALITY; Vietnam once it ADAPTED; Burma failed through EXTREME rigidity",
        "Don't ignore starting point: Burma more damning, Singapore more impressive",
@@ -698,6 +800,7 @@ add("Cross-country synthesis", { id:"ec-pitfalls", title:"Common essay pitfalls"
        "Intervention was universal — discriminate by NATURE (technocratic vs corrupt/dogmatic) and DIRECTION (market-stimulating vs market-replacing)"] });
 add("Cross-country synthesis", { id:"ec-memory", title:"Memory cues", when:"exam",
   q:"Give the one-line memory cue for each of Malaysia, Singapore, Burma and Vietnam.",
+  exp:"Each cue compresses a country's causal chain: Malaysia's ethnic politics drove restructuring, Singapore's expulsion forced it to excel through openness, Burma squandered the best endowment, and Vietnam pragmatically pivoted. Remembering the chain rather than isolated facts helps you explain cause and effect in essays and quickly recall the turning points and evidence for each case.",
   pts:["Malaysia: ‘Race, Resources, Restructuring’ — 1969 riots → NEP → HICOM → privatisation → 1997 via DOMESTIC overheating",
        "Singapore: ‘Entrepot, Expelled, Excellence’ — forced EOI → 1979 tech → 1986 services → regionalisation",
        "Burma: ‘Best Endowed, Worst Outcome’ — pyidawtha → Burmese Way → rice collapse → demonetisations → 8888 → SLORC",
@@ -705,7 +808,8 @@ add("Cross-country synthesis", { id:"ec-memory", title:"Memory cues", when:"exam
 
 /* ── Thailand ── */
 add("Thailand", { id:"ec-th-overview", title:"Thailand: overview and coups", when:"1961–2001",
-  q:"What distinguishes Thailand's economic record, and why did coups not derail growth?", qs:"notes",
+  q:"What distinguishes Thailand's economic record, and why did coups not derail growth?",
+  exp:"Thailand's strong record despite frequent coups is explained by continuity: whoever took power kept the market economy, so investors faced little real policy uncertainty, and the monarchy dampened conflict. Its distinctive strength was an independent private, largely Chinese, business class that neither the state nor foreign capital could dominate. That is the key contrast with Indonesia and the Philippines.", qs:"notes",
   pts:["Second only to Singapore in average GDP growth, 1961–2001 (6.8%)",
        "Successful EOI transition by mid-1980s, similar to Malaysia",
        "Private sector (autonomous, predominantly Chinese) resilient against state intervention and foreign capital — unlike Indonesia/Philippines",
@@ -713,18 +817,21 @@ add("Thailand", { id:"ec-th-overview", title:"Thailand: overview and coups", whe
        "Monarchy balanced different groups, kept national conflict low"] });
 add("Thailand", { id:"ec-th-independence", title:"What independence meant for Thailand", when:"pre-WWII onward",
   q:"How did never being colonised shape Thailand's development?",
+  exp:"Because Thailand was never colonised, local commerce had room to grow, producing an independent business class. That class could replace foreign firms after the war and act as a counterweight to the state, so state power never swamped private capital. This chain of cause and effect explains why Thailand could later shift to EOI successfully and why it differs from Indonesia.",
   pts:["More economic space → autonomous (predominantly Chinese) commerce class",
        "This bourgeoisie stepped into the vacuum left by foreign enterprises after WWII",
        "Societal check on the state — state never overwhelmed private capital (unlike Indonesia)",
        "Private commerce, initiative and capital enabled successful EOI transition"] });
 add("Thailand", { id:"ec-th-chinese-early", title:"Thailand's early Chinese business class", when:"1910s–1930s",
   q:"What evidence shows an active Chinese business class in Thailand before WWII, and why was industrialisation still limited?",
+  exp:"The numbers of traders and millers in 1929 show an unusually commercialised economy for an agrarian state, driven by Chinese entrepreneurs. Yet this did not produce industry, because profits were sent abroad and the Bowring Treaty forced free trade, leaving no tariff protection for local manufacturing. This explains why commercial vitality did not translate into early industrialisation.",
   pts:["Active from 1910s: Nai Lert (cars), Nai Boonrawd (brewery), Nai Kokliang (cigarettes)",
        "Formed trade associations; petitioned against Western privileges",
        "1929 survey: 20,259 rice traders, 3,709 rice millers, 12,738 timber traders, 7,053 forestry traders (Pasuk & Baker)",
        "Limits: Chinese remitted earnings home; Bowring Treaty (1855) forced liberal trade — no tariff protection"] });
 add("Thailand", { id:"ec-th-1932", title:"1932 Revolution and Phibun's nationalism", when:"1932–45",
   q:"How did economic nationalism develop after the 1932 Revolution?",
+  exp:"After 1932 Phibun used state enterprises to push out Western and Chinese influence, an early form of economic nationalism comparable to later policies elsewhere. The state built firms across manufacturing and the rice trade. Thailand still relied on primary exports like its neighbours, but it differed in how commercialised its economy already was, and escaping wartime devastation preserved this base.",
   pts:["Phibun: ‘a Thai economy for the Thai people’ — drove out Western AND Chinese influence",
        "By 1945, 30 state enterprises: cotton/paper mills (Defence Ministry), sugar factories, Thai Rice Company (70–80% of export rice by 1939), stake in Siam Steam Navigation",
        "State helped start ‘public utilities, consumer goods, and primary product trade companies’ mid-1930s–late 1940s (Pasuk & Baker)",
@@ -732,12 +839,14 @@ add("Thailand", { id:"ec-th-1932", title:"1932 Revolution and Phibun's nationali
        "Spared WWII devastation"] });
 add("Thailand", { id:"ec-th-phibun", title:"Phibun's state-led development", when:"1947–57",
   q:"What was the state's role under Phibun (1947–57)?",
+  exp:"Phibun's development was state-led but unplanned: monopolies and state firms were set up piecemeal without a coherent ISI strategy, though they did start industrialisation. The rising government share of investment shows how far the state expanded. Hewison's ‘haphazard’ label makes this a useful contrast with Sarit's more systematic approach that followed.",
   pts:["Hewison: ‘haphazard state-led development’ — no coherent ISI plan but kick-started industrialisation",
        "State monopolies: brewing, paper, sugar refining, gunny sacks",
        "State right to intervene: airlines, petroleum refineries, electricity, banks",
        "Government share of domestic investment 32% (1952) → 38% (1953–55)"] });
 add("Thailand", { id:"ec-th-anti-chinese", title:"Phibun's anti-Chinese policies and private resilience", when:"1952–mid-1950s",
   q:"How did Phibun's anti-Chinese economic nationalism work, and why did the private sector survive it?",
+  exp:"Phibun's nationalism aimed to control Chinese wealth and force assimilation, and pressured Western firms. But in practice the state needed Chinese capital, so monopolies became joint ventures and Chinese tycoons allied with the military rulers, with firms like Bangkok Bank growing. This shows nationalism in Thailand reshaped rather than replaced private business, unlike Burma's expulsions.",
   pts:["1952 directive forced Chinese into centralised associations (gold, jewellery, banking)",
        "Aimed to force Chinese to assimilate; Western firms like Shell threatened with closure (Hewison)",
        "Some petty trading/services reserved for Thai nationals",
@@ -745,6 +854,7 @@ add("Thailand", { id:"ec-th-anti-chinese", title:"Phibun's anti-Chinese policies
        "By mid-1950s Thai-Chinese groups allied with the 1947 coup group — nationalism didn't replace private business"] });
 add("Thailand", { id:"ec-th-sarit", title:"Sarit and kanphatthana", when:"1957–77",
   q:"How did Sarit change Thailand's development strategy, and what drove the change?",
+  exp:"Sarit shifted the state from owning enterprises to creating the conditions for private and foreign investment. This was encouraged by the US, which wanted a stable anti-communist ally built on private capital, and by World Bank advice. His use of technocrats shows a move to competent planning. This is the turning point towards the indirect intervention typical of capitalist SEA.",
   clue:"Late-1950s ‘development’ ideology, a 1959 IBRD report and frugal technocracy.",
   pts:["Indirect government role — promote private sector + foreign investment, not state-led growth",
        "State focus: infrastructure, administration, planning machinery",
@@ -753,23 +863,27 @@ add("Thailand", { id:"ec-th-sarit", title:"Sarit and kanphatthana", when:"1957�
        "Sarit appointed technocrats; personally frugal and hardworking"] });
 add("Thailand", { id:"ec-th-agri", title:"Thai agriculture under Sarit", when:"1947–1980",
   q:"How did Thailand develop agriculture as a comparative advantage?",
+  exp:"Sarit built on Thailand's comparative advantage in agriculture by expanding irrigation and opening new land. The rise of crops such as maize and cassava past rice shows diversification within agriculture itself. This mattered because agricultural growth provided exports and income while industry developed, showing Thailand used its existing strengths rather than abandoning them.",
   pts:["Irrigated land 600,000 ha (1947) → 2.2 million ha (1969) (Tarling)",
        "1968: other crops (maize, kenaf, cassava) passed rice in export value for first time",
        "Agricultural holdings nearly doubled 1950–80 (to ~22 million ha) as virgin land opened"] });
 add("Thailand", { id:"ec-th-aid", title:"US aid and Thai domestic capital", when:"1950–79",
   q:"What foreign aid did Thailand receive, and why did domestic capital stay dominant?",
+  exp:"Thailand's Cold War role brought large US aid and wartime spending, boosting demand and investment. Yet foreign capital stayed a small share of investment and most large firms remained Thai-owned, because a strong domestic business class already existed. This contrasts with Indonesia and the Philippines and supports the argument that local capital underpinned Thai resilience.",
   pts:["1951–69: over $900m US aid/loans; Japanese joint ventures invited",
        "Vietnam War windfall (1950–75): $650m economic aid + $1bn military assistance + $1bn base costs; GIs on R&R boosted demand",
        "Foreign capital only 12% of capital formation (1964–72)",
        "1979 survey: 308 of 500 largest firms fully Thai-owned (Pasuk & Baker)"] });
 add("Thailand", { id:"ec-th-institutions", title:"Thailand's investment institutions", when:"1959–77",
   q:"What institutions underpinned the state's infrastructural role in Thailand?",
+  exp:"These bodies provided the guarantees, incentives and planning that encouraged private and foreign investment, the core of Sarit's indirect approach. But the IFCT shows the system favoured well-connected banking families over smaller businesses, an early sign of crony capitalism. The NESDB's 4th Plan matters as the formal point at which Thailand switched from ISI to EOI.",
   pts:["Promotion of Investment Act (1960, amended 1977): no nationalisation; tax holidays; conditional profit repatriation",
        "Board of Investment (1959)",
        "IFCT (1959): dominated by Lamsam/Sophonpanich-linked directors → favoured powerful bourgeoisie over small capitalists",
        "NESDB (1959): produced National Plans — the 4th (1977–81) marked ISI → EOI switch"] });
 add("Thailand", { id:"ec-th-sarit-eval", title:"Evaluating Sarit's policies", when:"1957–80",
   q:"Evaluate Sarit's development policies.",
+  exp:"Sarit's policies achieved real structural change: manufactured exports rose sharply and industry overtook agriculture, while development boosted regime legitimacy. But the benefits were concentrated among a few Sino-Thai families and military leaders with business stakes, and protection kept rising. Use this to argue his era combined growth with cronyism and over-protection that later eroded competitiveness.",
   pts:["FDI 1960–80: 6 million baht; manufactured exports 1.2% (1960) → 32.3% (1980) of total",
        "Manufacturing/industry overtook agriculture's GDP share by 1971; kanphatthana tied development to unity/legitimacy",
        "15–20 (mostly Sino-Thai) families main beneficiaries; Bangkok Bank = 1/3 of banking, financed 42% of exports",
@@ -777,6 +891,7 @@ add("Thailand", { id:"ec-th-sarit-eval", title:"Evaluating Sarit's policies", wh
        "Average protection level more than doubled in the 1970s"] });
 add("Thailand", { id:"ec-th-gdp", title:"Structure of Thai GDP", when:"1951–93",
   q:"How did the structure of Thai GDP change, 1951–93 (Hewison; Lim)?",
+  exp:"The table charts Thailand's transformation: agriculture's share fell from half of GDP to a tenth, while manufacturing and industry rose steadily, overtaking agriculture around 1971. The steepest change came in the 1980s, after the EOI switch. Use these figures as quantitative evidence that Thai industrialisation was substantial and that EOI accelerated it.",
   pts:["1951: agriculture 50.1, manufacture 10.3",
        "1960: 39.8 / 12.5 / industry 19.0",
        "1971: 29.8 / 17.5 / 25.7",
@@ -785,6 +900,7 @@ add("Thailand", { id:"ec-th-gdp", title:"Structure of Thai GDP", when:"1951–93
        "1993: 10.0 / 28.5"] });
 add("Thailand", { id:"thaieoi", title:"Thailand's switch to EOI", when:"1977–86",
   q:"What pressures forced Thailand's switch from ISI to EOI?",
+  exp:"Thailand's switch to EOI was pushed by crisis: oil shocks and the end of US aid removed external support, political turmoil caused capital flight, and rising debt approached the danger point. The 4th Plan responded by promoting exports while trying to spread industry beyond Bangkok to improve equity. This shows external pressure, as in Singapore, driving the transition from ISI.",
   clue:"Oil shocks, US withdrawal and the 4th National Plan of 1977–81.",
   pts:["1970s oil shocks + US withdrawal → end of regular aid",
        "1973–76 political chaos → capital flight; widening urban–rural gap (jobs around Bangkok)",
@@ -793,18 +909,21 @@ add("Thailand", { id:"thaieoi", title:"Thailand's switch to EOI", when:"1977–8
        "Debt service ratio 19.7% (mid-1980s), near IMF's 20% danger point"] });
 add("Thailand", { id:"ec-th-eoi-policies", title:"Thai EOI investment and export policies", when:"1985–98",
   q:"What policies promoted investment and exports in Thailand?",
+  exp:"Export incentives, special credit and permission for full foreign ownership of exporters made Thailand attractive to foreign manufacturers, mainly from Japan and the US. The rise in FDI shows the policies worked. The post-1997 spike is different: foreigners bought distressed Thai firms, showing how the crisis shifted ownership towards foreign capital.",
   pts:["BoI promoted joint ventures (mostly Japanese/American): Siam Motors, Saha Union",
        "1985: export taxes abolished; Bank of Thailand exporter credit; 100% foreign ownership if exporting all/most output",
        "FDI avg US$900m/yr (1986–89) → US$2bn/yr (1990–96) → US$5.1bn (1998) as foreigners bought distressed firms",
        "1970–95 FDI: Japan 30%, US 17%, Hong Kong 16.3%, EU 10.6%, Singapore 10.4%, Taiwan 6%; 37.2% into manufacturing"] });
 add("Thailand", { id:"ec-th-peg", title:"The baht peg", when:"1978–85",
   q:"How did Thailand's baht peg work, and why was it changed in 1981–84?",
+  exp:"A fixed, low baht gave exporters stability and cheap prices abroad, as the worked example shows: a weaker currency makes Thai goods cheaper to foreign buyers and raises sales. But tying the baht to the dollar meant a strong dollar made Thai exports dear, so Thailand devalued and switched to a basket to reduce reliance on one currency.",
   pts:["Pegged at fixed LOW rate vs USD — fixed = stability; low = cheap exports",
        "100-baht good: at US$1 = 25 baht costs US$4; at 50 baht US$2 (more sales); at 10 baht US$10 (fewer)",
        "1978–85 USD appreciated → baht too → exports dearer",
        "Forced 1981 devaluation + 1984 switch to a currency BASKET peg"] });
 add("Thailand", { id:"ec-th-plaza", title:"Plaza Accord boom", when:"1985–late 1980s",
   q:"How did the Plaza Accord boost Thailand's economy?",
+  exp:"The Plaza Accord weakened the dollar, and since the baht was tied heavily to it, the baht fell too, making Thai exports cheap, especially to Japan. Rising costs elsewhere pushed Japanese and other firms to relocate to Thailand, creating a boom. Thailand then raised the dollar's weighting to capture more of this benefit, showing currency policy was deliberately used to drive exports.",
   clue:"1985 agreement by five powers to devalue the dollar.",
   pts:["Plaza Accord (1985; France/W. Germany/Japan/UK/US) devalued the USD to help US exports and fix US–Japan imbalance",
        "Baht depreciated too → Thai exports to Japan cheap → boom",
@@ -812,11 +931,13 @@ add("Thailand", { id:"ec-th-plaza", title:"Plaza Accord boom", when:"1985–late
        "Thailand raised USD weighting in basket back to 90%"] });
 add("Thailand", { id:"ec-th-scaling", title:"Scaling down the Thai state", when:"1987–88",
   q:"How did Thailand scale down the state's role?",
+  exp:"The 6th Plan shows a deliberate retreat of the state from production, with government recast as a facilitator of private enterprise. Removing the NESDB's oversight of major projects confirms this. Thailand could do this safely because a capable private business class existed to take over, which is the main distinction from countries where the state had to keep leading.",
   pts:["6th Plan (1987): public sector to be ‘a planner, supporter and facilitator of private sector participation’",
        "‘The government will withdraw from activities which can be carried out better… by the private sector’",
        "1988: NESDB relieved of supervising all major government investment projects"] });
 add("Thailand", { id:"ec-th-eoi-success", title:"Success of Thai EOI", when:"1980–2000",
   q:"What evidence shows Thailand's EOI succeeded?",
+  exp:"The figures show EOI transformed Thailand from a farm-based economy into one dominated by manufacturing and services, with exports shifting to high-technology goods and becoming less concentrated. The fastest export growth among capitalist neighbours and Thai firms investing abroad show the strength of this change. Use this as the core evidence for Thailand's success, before qualifying it with inequality and crisis.",
   pts:["1980–90 sharpest rise in manufacture/industry share; export growth 14% (1980s), highest among capitalist SEA",
        "Manufacturing 16.4% (1952) → 33.9% (2000) of GDP; 2000: agriculture 10.9%, services 39.7%",
        "Mid-1980s agriculture still ~25% of GDP, 75% of workforce, >60% of export value",
@@ -824,6 +945,7 @@ add("Thailand", { id:"ec-th-eoi-success", title:"Success of Thai EOI", when:"198
        "Thai firms expanded overseas — Thaksin's Shin Corp into Indochina, Indonesia, India"] });
 add("Thailand", { id:"ec-morley-exports", title:"Export growth and composition (Morley)", when:"1970–95",
   q:"Give export growth rates (1970–80/1980–90/1990–95) and primary export shares (1975→1994) (Morley).",
+  exp:"Morley's table allows comparison: all five economies reduced reliance on primary exports, showing a regional shift to manufacturing. Thailand had the fastest export growth in the 1970s and 1980s. Indonesia's negative 1980s growth and high remaining primary share reflect its oil dependence, while the Philippines' weak 1980s figure matches its crisis under Marcos.",
   pts:["Singapore: 4.2 / 9.9 / 17.6; primary 49.8 → 15.5",
        "Malaysia: 4.8 / 8.6 / 20.0; primary 68.6 → 24.6",
        "Thailand: 10.3 / 14.0 / 18.6; primary 76.2 → 26.9",
@@ -831,12 +953,14 @@ add("Thailand", { id:"ec-morley-exports", title:"Export growth and composition (
        "Indonesia: 7.2 / -0.3 / 11.7; primary 97.6 → 47.0"] });
 add("Thailand", { id:"ec-th-inequality", title:"Thai inequality and wealth concentration", when:"1962–2002",
   q:"What income, regional and wealth inequalities accompanied Thai growth?",
+  exp:"Thailand's growth reduced absolute poverty dramatically but widened inequality, as the rising Gini shows. Benefits concentrated in Bangkok and in Sino-Thai business groups, while the rural Northeast lagged. This shows growth did not bring equity, a key qualification for any evaluation and a parallel to Singapore's widening income gap.",
   pts:["Gini 0.41 (1965) → 0.52 (2000)",
        "Total poverty 88.3% → 9.8% (1962–2002), but rural poverty ~4× urban",
        "Bangkok 16% of population, 48.2% of GDP (1989) → 55.4% (1993); Northeast 34%+ of population, ~11% of GDP",
        "Mid-1980s: only 3 of 70+ leading business groups non-Chinese (one the Crown Property Bureau)"] });
 add("Thailand", { id:"afcthai", title:"Thailand and the 1997 AFC", when:"1990–97",
   q:"How did debt, crony lending and financial liberalisation sow the seeds of the 1997 AFC in Thailand?",
+  exp:"Thailand's crisis grew from borrowing too much, especially short-term foreign money, after liberalisation removed capital controls and the BIBF channelled foreign loans into a lending boom. Weak oversight let bad and politically connected loans hide, as the BBC collapse showed. With so much short-term debt, any loss of confidence could trigger a run, which is what happened in 1997.",
   clue:"BIBF, a 1996 bank collapse linked to Rakesh Saxena, and US$69bn of mostly short-term bank debt.",
   pts:["External debt 16.6% → 51.3% of GNP by 2004; current account deficit 7.9% of GDP (1996)",
        "Banks could carry bad debt 12 months unreported",
@@ -845,6 +969,7 @@ add("Thailand", { id:"afcthai", title:"Thailand and the 1997 AFC", when:"1990–
        "Foreign bank debt US$29bn (1993) → US$69bn (mid-1997), 70% short-term"] });
 add("Thailand", { id:"ec-th-protection", title:"Thai over-protection and lost competitiveness", when:"1985–97",
   q:"How did over-protection and lack of upgrading erode Thai competitiveness?",
+  exp:"High protection let Thai firms survive without upgrading technology, so industries like autos and textiles stayed low-value and dependent on foreign firms. When wages rose sharply, Thailand lost its cost advantage without having moved up the value chain, and export growth collapsed. This shows ISI-style protection left a legacy that weakened Thailand just before 1997.",
   pts:["1985 effective protection for manufacturing 52%, nearly double Philippines/Malaysia",
        "National electronics institute only mooted in 1997",
        "Real wages +70% mid-1990s → export growth 28% → 0%; ‘lack of industrial upgrading began to catch up with it in 1996’ (Doner & Ramsay)",
@@ -852,12 +977,14 @@ add("Thailand", { id:"ec-th-protection", title:"Thai over-protection and lost co
        "Textiles: ISI firms' low-quality cloth unusable by export garment makers → value-added lost"] });
 add("Thailand", { id:"ec-th-govt", title:"Thailand: role of the government", when:"1947–1990s",
   q:"How did the role of the Thai government differ from the rest of SEA?",
+  exp:"Hewison's comment suggests Thai success came more from its private sector than from wise government. The state's role varied between Phibun's monopolies and Sarit's private-sector promotion, and it could retreat in the 1980s because businesses were ready to step in. This distinguishes Thailand from Indonesia and the Philippines, where weak private sectors left the state, or cronies, in charge.",
   pts:["‘a case where the market has compensated for government failures’ (Hewison)",
        "Phibun (semi-govt monopolies) vs Sarit (systematic intervention encouraging private enterprise)",
        "1980s state scaled back under pressure — private class ready to fill the gap",
        "Main distinction: resilient, autonomous private business community took over from foreign firms (post-war) and the state (post-1985)"] });
 add("Thailand", { id:"ec-th-chinese", title:"The Chinese in Thailand", when:"1890s–1980s",
   q:"Trace the role of the Chinese community in Thailand's economy.",
+  exp:"The Chinese relationship with Thai rulers moved from royal partnership to tension after 1932, then back to alliance because military governments needed their capital. Over time Chinese firms built international links, making them central to Thai industrialisation. Their extraordinary share of listed capital relative to population explains both their importance and the earlier nationalist resentment.",
   pts:["From 1890s: patron-client with monarchy — Siam Commercial Bank 1906, Siam Cement 1913",
        "1932 Revolution → Thai xenophobia",
        "Post-WWII military governments, short of capital, re-allied with Chinese",
@@ -867,6 +994,7 @@ add("Thailand", { id:"ec-th-chinese", title:"The Chinese in Thailand", when:"189
 /* ── Indonesia ── */
 add("Indonesia", { id:"ec-id-overview", title:"Indonesia: overview and phases", when:"1949–1990s",
   q:"Summarise Indonesia's growth record and phases of development.",
+  exp:"Indonesia's phases track oil and politics: Sukarno's nationalist Guided Economy collapsed, the 1970s oil windfall funded state-led growth, and the oil crash forced deregulation. Its solid average growth hides the key weakness, captured in the quoted judgement: cronyism and opacity undercut success by the late 1990s. This makes Indonesia the case of statistical success limited by poor governance.",
   pts:["Avg 5.7% (1961–2001), fastest in 1970s oil boom",
        "‘cronyism and the lack of transparency limited the economic success of development strategies by the end of the 1990s’",
        "1949–65: revolution/crisis — Guided Economy, nationalisation, ISI",
@@ -874,12 +1002,14 @@ add("Indonesia", { id:"ec-id-overview", title:"Indonesia: overview and phases", 
        "1980s–90s: oil crash — deregulation, financial reform, private sector"] });
 add("Indonesia", { id:"ec-id-weak", title:"Indonesia's weak foundation", when:"1949–57",
   q:"Why did the Indonesian state become pre-eminent after 1949?",
+  exp:"Indonesia emerged from war devastated, and its colonial economy had been run by Dutch and Chinese capital, leaving no indigenous business class to take over. So the state became dominant because nothing else could fill the gap, not because of ideology. This links directly to the framework card on why governments had to lead, and explains the later fusion of state power and business.",
   pts:["High mortality, food shortages, destroyed capital",
        "Colonial agrarian economy dominated by Dutch and Chinese capital — no domestic bourgeoisie",
        "State pre-eminence out of NECESSITY, not ideology",
        "~2% per capita GNP growth most years before 1957"] });
 add("Indonesia", { id:"ec-id-guided", title:"Guided Economy and its ISI failure", when:"1957–65",
   q:"What was Sukarno's Guided Economy and why did its ISI strategy fail?",
+  exp:"Sukarno pursued nationalism by seizing Dutch assets and investing in heavy industry, but replacing experienced managers with inexperienced officers and rejecting foreign expertise crippled the enterprises. Spending far beyond available finance was covered by central bank credit, which caused huge deficits. This shows ISI failing through incompetence and ideology rather than flaws in the strategy alone.",
   pts:["Nationalism: expropriated Dutch property, anti-Chinese discrimination, heavy industry, anti-‘neo-colonialism’ (Tarling)",
        "~300 Dutch plantations + 300 firms nationalised (1957)",
        "Strategy: forex from oil/minerals/agri → heavy industry (steel, shipyards) with credit and protection",
@@ -887,6 +1017,7 @@ add("Indonesia", { id:"ec-id-guided", title:"Guided Economy and its ISI failure"
        "1959 8-year plan: 12-fold spending rise without financing → central bank credit = half of spending by mid-1960s"] });
 add("Indonesia", { id:"ec-id-sukarno-collapse", title:"Sukarno's economic collapse", when:"1959–67",
   q:"How did foreign policy and aid choices contribute to Sukarno's economic collapse?",
+  exp:"Sukarno's foreign policy wrecked the economy: military confrontations drained the budget, he rejected Western aid, and communist aid was insufficient and dried up with the Sino-Soviet split. Printing money brought hyperinflation and falling living standards. The collapse of exports and reserves shows the scale of failure and explains why Suharto made economic recovery the basis of his legitimacy.",
   pts:["Konfrontasi (1963–66), West Irian (1961–62) drained finances",
        "1964: told US ambassador to ‘go to hell with your aid’; NAM leader",
        "Communist aid: USSR ~$1bn military + $215m economic; Eastern Europe $290m; 9,200 soldiers Soviet-trained — cooled by 1964 (Sino-Soviet split)",
@@ -894,6 +1025,7 @@ add("Indonesia", { id:"ec-id-sukarno-collapse", title:"Sukarno's economic collap
        "Exports US$931m (1959) → US$685m (1966); reserves US$313m → US$17m (1960–67)"] });
 add("Indonesia", { id:"ec-id-neworder", title:"New Order: inheritance and foreign aid", when:"1966–80s",
   q:"What did Suharto inherit and how did he attract foreign investment/aid?",
+  exp:"Because his legitimacy rested on fixing the economy, Suharto reversed Sukarno's course: technocrats rebuilt ties with the West, seized assets were returned, investment was guaranteed and Konfrontasi ended. His anti-communism attracted Western and Japanese aid through the IGGI. This shows how a foreign policy realignment unlocked capital, similar to Vietnam's later diplomatic opening.",
   pts:["Inherited inflation, unemployment, corruption, inefficient state industry, empty reserves, Konfrontasi; legitimacy based on development",
        "‘Berkeley Mafia’ — US-trained technocrats mediated with West",
        "Returned expropriated assets; 1967 Foreign Investment Law; ended Konfrontasi (1966)",
@@ -901,12 +1033,14 @@ add("Indonesia", { id:"ec-id-neworder", title:"New Order: inheritance and foreig
        "Aid shift to Japan/West; IGGI (1967, 14 nations; $2.5bn est. 1985/86); IMF advisory role"] });
 add("Indonesia", { id:"ec-id-oil", title:"Indonesia's 1970s oil boom", when:"1970–81",
   q:"How did the 1970s oil boom affect Indonesia?",
+  exp:"Vatikiotis stresses luck: soaring oil prices turned Indonesia's oil into a windfall that funded rapid growth and doubled per capita income. This matters for evaluation because much 1970s success came from commodity prices rather than policy, which is why the later oil glut exposed weaknesses and forced reform.",
   pts:["‘Indonesia, not to mention Suharto, was also lucky… almost literally a pot of gold’ (Vatikiotis)",
        "Oil export revenues grew 45.5% (1970–81)",
        "Oil <US$3/barrel (1972) → >US$30 (1980)",
        "GDP growth 7–8%/yr; per capita income US$260 → US$500+"] });
 add("Indonesia", { id:"ec-id-agri", title:"Indonesian infrastructure and Green Revolution", when:"1968–89",
   q:"How did the New Order develop infrastructure and agriculture?",
+  exp:"Oil revenue funded infrastructure and an agricultural push using state agencies to supply credit, seeds and stable rice prices. Rice self-sufficiency was pursued for political stability as well as economics, and output more than doubled. This is one of the New Order's clearest successes and shows the Green Revolution working where incentives and support were combined.",
   pts:["Housing, health, education; food self-sufficiency programme",
        "Bulog: rice procurement/distribution/pricing; Sekneg allocated construction contracts",
        "Bimas: credit + new seed varieties",
@@ -914,11 +1048,13 @@ add("Indonesia", { id:"ec-id-agri", title:"Indonesian infrastructure and Green R
        "Rice 12m tons (1968) → 29m (1989); yields 2.14 → 4.23 tons/ha"] });
 add("Indonesia", { id:"ec-id-stateisi", title:"Indonesian state ISI corporations", when:"1970s",
   q:"What role did state corporations play in Indonesian ISI?",
+  exp:"In the 1970s the state, led by Pertamina, built heavy and basic industries and dominated output in sectors like cement. But oil still dominated exports, so diversification was shallow. This shows state ISI expanding capacity without reducing commodity dependence, leaving Indonesia exposed when oil prices fell in the 1980s.",
   pts:["Pertamina + Department of Industry: petrochemicals, steel, cement, forestry products",
        "1975: state firms produced 75% of cement, 52% of paper/machinery, 40% of food manufacturing",
        "Still heavily reliant on oil exports into the 1980s — shallow diversification"] });
 add("Indonesia", { id:"ec-id-glut", title:"Oil glut and deregulation", when:"1982–88",
   q:"How did the oil glut lead to deregulation in Indonesia?",
+  exp:"When oil prices halved, government revenue and growth fell sharply, so the state could no longer fund growth itself. It responded by turning to private enterprise, foreign investment and exports, simplifying licensing and opening banking. This illustrates crisis forcing a shift from ISI towards EOI, but the rapid bank expansion also sowed later financial problems.",
   pts:["Early-1980s glut (demand slowdown, conservation, US production): 1982–86 prices <half 1981 peak",
        "27% plunge in oil tax revenue; growth halved by 1985",
        "Response: deregulation/private sector, infrastructure/FDI, transition toward EOI",
@@ -926,6 +1062,7 @@ add("Indonesia", { id:"ec-id-glut", title:"Oil glut and deregulation", when:"198
        "Oct 1988 package: loosened rules for private banks; 40+ licenses in 2 years"] });
 add("Indonesia", { id:"ec-id-dereg-reality", title:"Deregulation: diversification or cronyism?", when:"1982–mid-1990s",
   q:"Did Indonesian deregulation produce diversification or cronyism?",
+  exp:"Deregulation produced real diversification on paper, with non-oil exports and manufacturing rising and growth recovering. But the benefits went mainly to big Chinese conglomerates close to the regime, so control shifted from officials to cronies rather than to open competition. Suharto also protected strategic sectors for nationalist reasons. Use this to argue deregulation was partial and captured.",
   pts:["Statistics: non-oil exports 31% → 50%; manufacturing 13% → 18% of GDP; growth 2% (1982) → 7% (1990); manufactured exports <US$1bn → >US$9bn",
        "‘simply opened up new areas of expansion for the larger business groups’ (Vatikiotis)",
        "Conglomerates: Liem Sioe Leong, Soerjadjaja (Astra), Widjaja (Sinar Mas)",
@@ -933,17 +1070,20 @@ add("Indonesia", { id:"ec-id-dereg-reality", title:"Deregulation: diversificatio
        "Limits: timber export ban; ‘strategic industries’ protected from privatisation"] });
 add("Indonesia", { id:"ec-id-repelita", title:"FDI and Repelita priorities", when:"1979–94",
   q:"How did Indonesia's Five Year Plans pivot toward industry?",
+  exp:"The successive plans show a deliberate change of priorities: after aiming for agricultural growth in the late 1970s, the state targeted industry from 1984. Combined with the sharp rise in FDI, this shows Indonesia attempting the shift towards industrialisation after the oil boom ended, matching the move to EOI elsewhere in the region.",
   pts:["FDI six-fold increase 1980–90 (Rigg)",
        "Repelita III (1979–84): agriculture prioritised (14.0%)",
        "Repelita IV (1984–89) and V (1989–94): industry 9.5%, 8.5% vs agriculture 3.0%, 3.6%"] });
 add("Indonesia", { id:"ec-id-growth", title:"Indonesia's growth indicators", when:"1965–2000",
   q:"What quantitative indicators show Indonesia's rapid growth?",
+  exp:"These indicators show genuine development: inflation tamed, life expectancy and poverty sharply improved, a middle class emerging and the economy moving from agriculture to industry and services. Exports also became less concentrated and less reliant on primary goods. This is the case for New Order success, which must then be weighed against cronyism and inequality.",
   pts:["Inflation: thousands % → <10% (1980s); life expectancy 50 (1980) → 60 (1990)",
        "Poverty 60% (1970) → 17% (1987) → 11% (1997); middle class by 1970s",
        "3 main exports: petroleum/plywood/rubber 69.3% (1985) → petroleum/garments/telecoms 30.2% (2000); primary 70–80% → 42.9%",
        "Agriculture % GDP 51 (1965) → 24 (1980) → 16 (1996); industry 13 → 42 → 43; services 36 → 34 → 41"] });
 add("Indonesia", { id:"ec-id-monopolies", title:"Suharto-era crony monopolies", when:"1969–1990",
   q:"Give examples of crony monopolies under Suharto and their costs.",
+  exp:"These monopolies show how the Suharto family and allies such as Liem were handed exclusive rights that raised costs for the rest of the economy, a direct drag on efficiency. Deregulation, rather than ending this, gave cronies new opportunities. Use these concrete examples to support the argument that cronyism limited Indonesia's success and contrasts with Singapore's efficiency-driven state.",
   pts:["Bogasari flour (1969): govt, Liem Sioe Leong, Suharto's step-brother",
        "Krakatau Steel (1984): Liem's $800m for cold-rolled steel import monopoly — +25–45% steel sheet costs (World Bank)",
        "Panca Holding (plastics; Suharto's son/brother): $30m on $320m imports (1986), +15–20% costs",
@@ -951,6 +1091,7 @@ add("Indonesia", { id:"ec-id-monopolies", title:"Suharto-era crony monopolies", 
        "Madam ‘Tien Percent’ — 10% cut; ‘deregulation… reinforce[d]… state power’ (Rodan, Hewison & Robison); Suharto family wealth (Morley)"] });
 add("Indonesia", { id:"pertamina", title:"The Pertamina affair", when:"1974–76",
   q:"What was the Pertamina affair and why did it matter?",
+  exp:"Pertamina borrowed heavily abroad for grand projects with little oversight, betting oil prices would keep rising. When they levelled off, its debts equalled about two-thirds of national output, and the scandal hurt Indonesia's credit standing. It is a case study in how unchecked state enterprises and foreign borrowing could endanger the whole economy.",
   clue:"Ibnu Sutowo's state oil company borrowed lavishly and was found to owe US$10bn in 1974.",
   pts:["Ibnu Sutowo launched LNG/fertiliser/steel projects on lavish foreign borrowing",
        "Bet post-1973 oil prices would stay high; they stabilised March 1974",
@@ -958,12 +1099,14 @@ add("Indonesia", { id:"pertamina", title:"The Pertamina affair", when:"1974–76
        "Sutowo resigned (1976); damaged credibility with creditors"] });
 add("Indonesia", { id:"ec-id-robison", title:"Robison's bureaucratic capitalism", when:"New Order",
   q:"What is Robison's concept of ‘bureaucratic capitalism’?",
+  exp:"Robison explains Indonesian cronyism as officials, especially soldiers, using public office to build private wealth, echoing pre-colonial rulers. Because there was no indigenous entrepreneurial class, big business came from the state, Chinese capitalists or partnerships between them. This concept lets you explain why intervention served private interests rather than development.",
   pts:["‘growth of state-sponsored private business groups’ (Robison)",
        "Officials (esp. military) treated offices as personal fiefs, like pre-colonial Javanese rulers",
        "Built private empires while consolidating power",
        "Lacking indigenous entrepreneurs, big firms built by state, Chinese capitalists, or both"] });
 add("Indonesia", { id:"ec-id-inequality", title:"Indonesia's relative inequality", when:"1970–2007",
   q:"What forms of inequality and resentment accompanied Indonesian growth?",
+  exp:"Growth widened the gap between cities and countryside and concentrated activity on Java. Resentment of officials and their Chinese partners erupted in riots in 1974 and in violence against the Chinese after 1997. Transmigration, meant to ease Javanese overcrowding, failed and created new conflicts. This shows growth without equity produced instability, a key limitation of the New Order.",
   pts:["Urban incomes 42% above rural (1970) → 92% (1993); 205% in Jakarta",
        "Malari Affair (Jan 1974) during PM Tanaka's visit — resentment of bureaucratic capitalists and cukong",
        "Post-1997 anti-Chinese violence, allegedly officially backed",
@@ -971,12 +1114,14 @@ add("Indonesia", { id:"ec-id-inequality", title:"Indonesia's relative inequality
        "Transmigration (1973) failed: poor soil, local resentment, religious tensions → post-1998 violence (~1000 deaths to 2007)"] });
 add("Indonesia", { id:"ec-id-limits", title:"Indonesia's shallow diversification and debt", when:"1980s",
   q:"What limited Indonesia's diversification and burdened it with debt?",
+  exp:"Despite growth, Indonesia remained dependent on oil and primary exports, and protected auto conglomerates never built core capabilities such as engine production. Heavy foreign borrowing gave Asia's largest debt, but lack of transparency meant much of it leaked away. This explains why statistical growth did not produce a durable industrial base.",
   pts:["Primary products 70–80% of export revenue in 1980s; oil 70% of export earnings (1980)",
        "Astra/Indomobil dominance + 100–300% tariffs → no domestic ENGINE capacity",
        "Foreign loans 42% of development budget (1980); Asia's largest debt by 1989 (~US$58bn)",
        "Funds leaked due to lack of transparency"] });
 add("Indonesia", { id:"ec-id-financial", title:"Indonesia's pre-crisis vulnerabilities", when:"1988–97",
   q:"What financial vulnerabilities did Indonesia have before 1997?",
+  exp:"Indonesia entered 1997 with banks that had multiplied faster than regulation, lending to connected firms on the assumption of state rescue, as Bank Central Asia's loans to other Liem firms show. Corporate debt far exceeded reserves, so when the baht fell and confidence broke, the rupiah collapsed. This shows weak governance, not openness alone, made the crisis so severe.",
   pts:["Rupiah fluctuated up to 10%/day after baht devaluation; Suharto's health",
        "Liem's Bank Central Asia: 60% of loans owed by other Liem firms — moral hazard",
        "Banks 124 (1988) → 244 (1994), regulation lagged",
@@ -984,6 +1129,7 @@ add("Indonesia", { id:"ec-id-financial", title:"Indonesia's pre-crisis vulnerabi
        "Corporate debt >$60bn vs $24bn reserves"] });
 add("Indonesia", { id:"ec-id-govt", title:"Indonesia: role of the government", when:"1949–1990s",
   q:"Why and how did the Indonesian state dominate the economy?",
+  exp:"Robison argues that, without a strong national bourgeoisie, state officials could seize economic power. The Chinese had capital but were politically excluded, and indigenous traders were too weak, so the state filled the gap. Article 33 and approval rules institutionalised this dominance. Compare with Thailand, where a strong private class limited the state.",
   pts:["Absence of national bourgeoisie let military, party, officials appropriate power (Robison)",
        "Chinese politically excluded; Javanese traders lacked resources",
        "Article 33: ‘important’ sectors ‘under the powers of the State’ — oil under Pertamina, ship/aircraft under Ministry of Technology",
@@ -991,6 +1137,7 @@ add("Indonesia", { id:"ec-id-govt", title:"Indonesia: role of the government", w
        "PMDN (1968): no business without state approval"] });
 add("Indonesia", { id:"ec-id-govt-eval", title:"Evaluating Indonesian intervention", when:"evaluation",
   q:"Was government intervention in Indonesia necessary, and where did it go wrong?",
+  exp:"The notes give a balanced verdict: intervention was needed to supply infrastructure and stability that no private class could, and stability attracted aid. The key test is motive: where intervention aimed at efficiency, it retreated appropriately; where it served personal profit, it persisted and held back EOI. This contrast with Singapore is an ideal evaluative argument.",
   pts:["Necessary: no infrastructure, no autonomous middle class, instability",
        "Public goods lack profit incentive",
        "‘The New Order's obsession with order has been one of its best selling points in the corridors of western finance’ (Vatikiotis)",
@@ -998,6 +1145,7 @@ add("Indonesia", { id:"ec-id-govt-eval", title:"Evaluating Indonesian interventi
        "Contrast Singapore's (and partly Malaysia's) genuine privatisation"] });
 add("Indonesia", { id:"ec-id-chinese", title:"The Indonesian Chinese and the cukong system", when:"1973–74",
   q:"How did Indonesia handle its ‘Chinese problem’, and what was the result?",
+  exp:"Policies favouring indigenous business aimed to answer resentment of Chinese dominance, seen in the 1973–74 riots. But because indigenous firms lacked capital and skills, the rules were evaded through cukong partnerships in which an indigenous front held the licence while the Chinese partner ran the business. This shows affirmative action failing where it ignored economic realities, unlike Malaysia's partial success.",
   clue:"‘Masalah Cina’, Bandung and Malari riots, and indigenous front-men holding licenses.",
   pts:["‘Masalah Cina’ — disproportionate control vs 3.8% of population; Astra, Liem Groups",
        "Bandung (Oct 1973), Malari (Jan 1974) riots against general–Chinese alliances",
@@ -1007,6 +1155,7 @@ add("Indonesia", { id:"ec-id-chinese", title:"The Indonesian Chinese and the cuk
 /* ── The Philippines ── */
 add("Philippines", { id:"philfailure", title:"Philippine development failure", when:"1950s–2007",
   q:"Why did the Philippines fail to realise its economic potential?",
+  exp:"The Philippines began with real advantages and an early lead in ISI, yet fell far behind Thailand, so its failure must be explained by policy and politics. Like Indonesia, a dominant state became a vehicle for cronies, and as an oil importer it was hit hard by the oil shocks. Its distinctive weakness was failing to move from ISI to EOI, shown by the 1980s collapse.",
   clue:"Once touted as Asia's second NIC after Japan, by 2007 its per capita GDP was under half Thailand's.",
   pts:["Advantages: US ties, English-speaking workforce, regional ISI pioneer — ‘Asia's second NIC after Japan’",
        "On par with Thailand mid-1970s; 2007 per capita GDP US$1,192 vs Thailand's US$2,750",
@@ -1015,28 +1164,33 @@ add("Philippines", { id:"philfailure", title:"Philippine development failure", w
        "UNIQUE: ISI → EOI transition less successful than Thailand/Malaysia/Indonesia; 1981–90 growth 1.8%"] });
 add("Philippines", { id:"ec-ph-colonial", title:"Philippine colonial legacy of inequity", when:"colonial–1946",
   q:"What colonial legacy of inequity did the Philippines inherit?",
+  exp:"Colonial rule concentrated land in the hands of the ilustrado elite, leaving masses of tenant farmers whose grievances fuelled insurgencies, so land reform became a permanent but unresolved issue. The Bell Act deal showed early dependence on the US, trading resource rights for aid. These legacies explain both the Philippines' persistent inequality and its later reliance on foreign funds.",
   pts:["Tobacco/sugar plantations owned by ilustrados, worked by tenant farmers",
        "Landless poor recruited by Huk, then NPA, insurgencies",
        "Land reform a recurring, never-resolved issue",
        "Philippine Rehabilitation Act: US$620m aid for ratifying Bell Act — US corporations' rights to resources; criticised as ceding sovereignty"] });
 add("Philippines", { id:"ec-ph-phases", title:"Philippine phases of development", when:"1950s–1990s",
   q:"Outline the Philippines' phases of economic development.",
+  exp:"The phases mirror Indonesia's: state-led ISI and nationalism, then foreign-funded state growth, then liberalisation forced by crisis. What differs is how each phase was shaped by political events, especially martial law and regime change. Use this outline to frame an essay around the failed ISI to EOI transition, the central thread of Philippine economic history.",
   pts:["1950s–60s (pre-martial law): state-led ISI, economic nationalism, rapid industrialisation",
        "1970s–80s (oil surge, recession, martial law): FDI and state-led growth — agri, aid, state ISI, infrastructure",
        "1980s–90s (instability, regime change): deregulation, privatisation, trade liberalisation, breaking monopolies"] });
 add("Philippines", { id:"ec-ph-isi", title:"Rapid early Philippine ISI", when:"1950–60",
   q:"How did early ISI transform the Philippine economy?",
+  exp:"Early ISI worked impressively, building on processing export crops and using import and currency controls to protect new industry. Manufacturing's rapid rise in the 1950s was unmatched in the region. The table, however, shows that after 1960 manufacturing barely grew as a share of GDP, setting up the argument that ISI's early success was not converted into sustained industrialisation.",
   pts:["Export agriculture + preferential US market access; processing of export crops (sugar milling, vegetable oil, cigars)",
        "1950s: import controls, forex controls, tax incentives",
        "Manufacturing 8% → 20% of GDP; agriculture 42% → 26% (1950–60)",
        "GDP (agri/manu/industry): 1950 42/8/14; 1960 26/20/28; 1970 28/23/30; 1980 23/25/37; 1990 22/25/35 (Hutchison)"] });
 add("Philippines", { id:"ec-ph-isi-fail", title:"Failure of Philippine ISI", when:"1950s–1970s",
   q:"Why did Philippine ISI fall into the classical pitfall?",
+  exp:"Protection meant Philippine firms never had to become competitive, so when 1970s commodity slumps and foreign protectionism hit, the economy lacked efficient industries able to export. Internal weakness combined with external shock blocked the move to EOI. This is the classic ISI pitfall and the clearest contrast with Thailand, which managed the transition later.",
   pts:["High tariffs/quantitative restrictions discouraged efficiency",
        "1970s recession exposed weakness: commodity slump + protectionism hit garments, footwear, electronics",
        "Failed to transition to EOI in 1970s, unlike Thailand a decade later"] });
 add("Philippines", { id:"ec-ph-filipino-first", title:"Filipino First", when:"1954–65",
   q:"What economic nationalism did the Philippines pursue against the Chinese?",
+  exp:"Filipino First pursued economic nationalism by pushing the Chinese out of key trades and reserving industries for Filipino owners, much as Sukarno did in Indonesia. The rise in Filipino control of import trade shows it worked on its own terms. It sets up a contrast with Marcos, who later reversed this approach and co-opted Chinese-Filipino business.",
   clue:"Garcia-era movement paralleling Sukarno; 1954 Act pushed Chinese out of corn and rice.",
   pts:["‘Filipino First’ (Garcia) paralleled Sukarno",
        "Retail Trade Nationalization Act (1954): Chinese out of corn/rice",
@@ -1044,6 +1198,7 @@ add("Philippines", { id:"ec-ph-filipino-first", title:"Filipino First", when:"19
        "Filipino share of import trade 23% → 70% (1948–65)"] });
 add("Philippines", { id:"ec-ph-land-early", title:"Early Philippine land reform", when:"1945–63",
   q:"What were the early Philippine land reform attempts, and what recurring pattern do they show?",
+  exp:"Magsaysay showed land reform could weaken insurgency, but every later law was blocked or diluted because Congress was dominated by the landowners reform would hurt. The recurring pattern is the key synthesis point: since the political elite was the landowning class, real redistribution was structurally impossible. Use it in any essay on Philippine equity.",
   pts:["Huk insurgency (1945–54) drew landless support",
        "Magsaysay: military action + land reform (amnesty, Economic Development Corp) — Huks defeated by 1954",
        "Land Reform Act (1955) — first law for seizure of private land, blocked by ilustrado Congress",
@@ -1051,6 +1206,7 @@ add("Philippines", { id:"ec-ph-land-early", title:"Early Philippine land reform"
        "Pattern (1955, 1963, 1972, 1987, Ramos): bold intent undermined because the elite WAS the landowning class"] });
 add("Philippines", { id:"ec-ph-1970s", title:"1970s recession and foreign borrowing", when:"1967–83",
   q:"How did the 1970s recession and Marcos' borrowing shape the Philippine economy?",
+  exp:"The collapse of sugar prices hurt an export-dependent economy, and the 1970s growth that followed was built on foreign loans rather than productive strength. Debt soared under Marcos and servicing passed the IMF danger level, so the 1983 crisis exposed the weakness. This shows growth funded by borrowing stored up problems that caused the 1980s collapse.",
   pts:["Sugar 67 cents/lb (1974) → 7 cents (1978)",
        "5.9% growth in 1970s, financed by loans",
        "1967 Investment Incentives Act: FDI, TNC joint ventures",
@@ -1058,6 +1214,7 @@ add("Philippines", { id:"ec-ph-1970s", title:"1970s recession and foreign borrow
        "Debt service >20% (1972–77); 90-day debt sought with IMF after 1983 Aquino assassination; World Bank Consultative Group"] });
 add("Philippines", { id:"ec-ph-agri", title:"Martial law state corporations and IR8", when:"1961–81",
   q:"What happened to state corporations and agriculture under martial law?",
+  exp:"Martial law expanded state corporations rapidly, showing the state's growing role. The Green Revolution, developed at IRRI in the Philippines, brought rice self-sufficiency and doubled output. But exports still relied on a few primary products, so agricultural success did not translate into a broad export base, consistent with the failed transition to EOI.",
   pts:["Government corporations nearly TRIPLED within a decade",
        "Rice self-sufficiency first achieved 1972",
        "~70% of export value (1967–71) from sugar, coconut, forestry",
@@ -1065,6 +1222,7 @@ add("Philippines", { id:"ec-ph-agri", title:"Martial law state corporations and 
        "Rice 3.9m tons (1961) → 7.9m (1981)"] });
 add("Philippines", { id:"ec-ph-sap", title:"Structural adjustment", when:"1980s",
   q:"What happened to the Philippine economy in the early 1980s?",
+  exp:"Loan-financed manufacturing exports grew, but political uncertainty around Marcos and the 1983 assassination triggered capital flight and crisis, revealing dependence on foreign funds. The sector table shows industrial and manufacturing growth collapsing in the 1980s. World Bank-led liberalisation came at a bad time, during global slowdown, so its effect was limited while debt ballooned.",
   pts:["Garments value 7× in the decade (Ker); cement/textiles late 1970s",
        "Marcos' health, succession, cronies → disunity; 1983 assassination → capital flight",
        "Sectoral growth 1960–70/1970–80/1980–93/1994: GDP 5.1/6.0/1.4/4.5; agri 4.3/4.0/1.2/2.9; industry 6.0/8.2/-0.1/6.0; manufacturing 6.7/0.1/0.8/5.2",
@@ -1072,6 +1230,7 @@ add("Philippines", { id:"ec-ph-sap", title:"Structural adjustment", when:"1980s"
        "Foreign debt 6.6% of GNP → 49.4% (1983); US$27bn before Marcos' fall"] });
 add("Philippines", { id:"ec-ph-pd27", title:"Presidential Decree No. 27", when:"Oct 1972",
   q:"What was Marcos' land reform and why did it fail?",
+  exp:"Marcos's land reform looked bold, but it was driven as much by politics as by equity, targeting rival landowners like the Aquinos while sparing his own allies. Weak administration and difficult pricing hampered it further. It shows the recurring pattern of land reform being undermined, this time by being turned into a weapon against opponents.",
   clue:"October 1972 decree making holdings over 7 hectares liable to compulsory sale; Aquino family land among the first seized.",
   pts:["Holdings >7 ha liable for compulsory sale to tenants at set prices",
        "Motive: rural popularity AND undermine rival landowners (Aquino land first)",
@@ -1079,6 +1238,7 @@ add("Philippines", { id:"ec-ph-pd27", title:"Presidential Decree No. 27", when:"
        "Became a tool to punish opponents"] });
 add("Philippines", { id:"ec-ph-aquino", title:"Slow recovery under Aquino", when:"1987–92",
   q:"Why was recovery under Corazon Aquino slow?",
+  exp:"Aquino attempted to dismantle crony monopolies and open trade, which boosted investment and exports. But inherited Marcos-era debt, little impact on inequality and a series of external and natural shocks dragged growth back down. The quoted verdict captures the point: democracy returned, but the new government could not deliver prosperity in such conditions.",
   pts:["Aim: ‘honor… financial obligations, dismantle import controls and monopolies… initiate trade reform’ (Abinales & Amoroso)",
        "FDI quadrupled; export value doubled",
        "Poverty fell only ~3%; richest 10% held 40% of income vs poorest 30% 10%",
@@ -1086,12 +1246,14 @@ add("Philippines", { id:"ec-ph-aquino", title:"Slow recovery under Aquino", when
        "Growth 6.7%/5.5% (1988/89) → <3% (1990–91); ‘ability to foster economic prosperity was found wanting’"] });
 add("Philippines", { id:"ec-ph-carp", title:"Aquino's CARP", when:"1987–88",
   q:"Why was Aquino's Comprehensive Agrarian Reform Program weak?",
+  exp:"Even with economists arguing land reform would boost growth by raising consumption, CARP was weakened because Aquino delayed, left details to a landowner-dominated Congress, and herself came from a landowning family. This fits the recurring pattern perfectly: reform failed because those who controlled policy were those who would lose from it.",
   pts:["Cabinet dominated by ilustrado-linked business",
        "NEDA argued land reform also a growth necessity (redistribution → consumption)",
        "Delayed, left specifics to landowner Congress → loophole-ridden law",
        "Aquino from one of the wealthiest landowning families"] });
 add("Philippines", { id:"ec-ph-ramos", title:"Ramos' Philippines 2000", when:"1992–98",
   q:"What liberalisation did Ramos pursue under ‘Philippines 2000’, with what results?",
+  exp:"Ramos pursued the most sweeping liberalisation in Philippine history, and special economic zones turned electronics into the main export, with investment peaking in 1994. But privatisation often passed assets to existing elites. Land redistribution finally accelerated, though incompletely. This shows genuine reform whose benefits were partly captured by the same elite, a recurring Philippine problem.",
   pts:["Target NIC by 2000: lower tariffs, quantitative controls lifted, capital controls removed, energy opened",
        "Privatisation; monopolies broken; 100% foreign ownership",
        "SEZs (e.g. Subic Bay) → electronics new export driver; FDI peaked 1994",
@@ -1099,17 +1261,20 @@ add("Philippines", { id:"ec-ph-ramos", title:"Ramos' Philippines 2000", when:"19
        "Land reform: 4.6m of 8.1m ha distributed by 1998"] });
 add("Philippines", { id:"ec-ph-telecom", title:"Telecommunications liberalisation", when:"1992–93",
   q:"What does telecommunications show about Philippine liberalisation?",
+  exp:"Telecoms shows the limits of liberalisation: opening the sector brought many new entrants, yet the old monopoly stayed dominant and the same elite families controlled the market. Competition increased, but ownership did not broaden. Use it as a case study that deregulation in the Philippines changed the rules more than it changed who held economic power.",
   pts:["1992: Cojuangco family's PLDT held 90% of 1 million phone lines",
        "1993 liberalisation: 13 companies entered",
        "PLDT still far ahead; Ayala, Lopez, Gokongwei still dominate"] });
 add("Philippines", { id:"ec-ph-quant", title:"Philippine export concentration", when:"1980–2000",
   q:"What do Philippine structure and export indicators show?",
+  exp:"The Philippines' industrial share stalled after 1980, unlike Thailand's continued deepening. Its exports became more concentrated, dominated by electronics, which is the opposite of the diversification seen in Thailand and Indonesia. This suggests a narrow, assembly-based industrial base rather than deep industrialisation, a key contrast point for essays.",
   pts:["Industrial share stagnant since 1980s (37% → 35%); agriculture 23% → 22%",
        "1985 top exports: coconut oil, fruit/nuts, electronics — 27.4%",
        "2000: electronics/semiconductors, data processing machines, telecoms — 64.7%",
        "Concentration ROSE — opposite of Thailand/Indonesia"] });
 add("Philippines", { id:"crony", title:"Crony capitalism under Marcos", when:"1970s–80s",
   q:"How did crony capitalism damage the Philippine economy under Marcos?",
+  exp:"These examples show how Marcos's cronies gained monopolies and favours, extracting profits from growers and the state rather than competing. When they failed, the government bailed them out, so they had no incentive to be efficient. Hutchison's point is that replacing economic with political criteria prevented the economy from becoming internationally competitive, explaining Philippine underperformance.",
   clue:"Benedicto's sugar commission, Lucio Tan's Fortune Tobacco and bailouts of Marinduque Mining.",
   pts:["Roberto Benedicto: Philippine Sugar Commission didn't pass higher 1980s prices to growers",
        "Lucio Tan's Fortune Tobacco: largest cigarette maker via Palace favours; allegedly gave Marcos equity, wrote own tax code, printed own tax stamps",
@@ -1118,11 +1283,13 @@ add("Philippines", { id:"crony", title:"Crony capitalism under Marcos", when:"19
        "Cojuangco PLDT dominance persisted"] });
 add("Philippines", { id:"ec-ph-debt", title:"Burden of external debt", when:"1986–92",
   q:"How did external debt constrain the Philippines?",
+  exp:"Much Marcos-era borrowing funded loss-making entities and prestige projects that generated no income, so the debt brought no lasting benefit. Repaying it later consumed a large share of output, leaving Aquino little room for reform. This links cronyism and borrowing directly to the slow recovery of the late 1980s.",
   pts:["Loans went to ‘bankrupt government entities… monuments, government buildings and bridges of love’ (Abinales & Amoroso)",
        "Debt repayment ~10% of GDP annually under Aquino",
        "‘foreign debt hemorrhage’ (De Dios & Hutchcroft) limited options"] });
 add("Philippines", { id:"ec-ph-banks", title:"Philippine financial soundness", when:"1996–97",
   q:"Why was the Philippine financial system sounder than Thailand's or Indonesia's before 1997?",
+  exp:"Philippine banks were better run thanks to American-style standards and training, and earlier crises had already forced tough rules on capital, insider lending and property loans. Low leverage, little short-term debt and few bad loans meant less exposure to sudden capital flight. Conservative licensing kept growth slower but safer. This explains why the weakest grower suffered less in 1997.",
   pts:["‘some of the best bank managers in Asia… accounting norms above most Asian countries’ (Delhaise)",
        "Leverage (1996): Philippines 6.90, Singapore 7.55, Thailand 10.91, Indonesia private 12.73, Malaysia 14.23",
        "Short-term <20% of foreign debt (vs >50% Thailand/Indonesia/Malaysia); NPLs 3% vs Thailand 8%, Malaysia 5.3%",
@@ -1130,12 +1297,14 @@ add("Philippines", { id:"ec-ph-banks", title:"Philippine financial soundness", w
        "Only ~5 new banks vs 100+ in Indonesia; peso floated 9 days after baht (11 July 1997)"] });
 add("Philippines", { id:"ec-ph-delhaise", title:"Avoiding the excesses", when:"1997",
   q:"How do Delhaise and Montes explain the Philippines' 1997 outcome?",
+  exp:"Delhaise and Montes give a balanced verdict: Philippine governance was too weak to deliver miracle growth, but strong enough to avoid the reckless excesses that ruined others. Floating the peso rather than wasting reserves defending it was one such sensible choice. This supports the argument that slower growth and financial stability were two sides of the same caution.",
   pts:["‘Even though it missed the benefits of explosive growth, it also avoided the excesses’ (Delhaise)",
        "Governance ‘too un-Asian’ for the Asian miracle group (Montes)",
        "‘not good enough to permit faster growth, but… good enough to prevent large policy errors’ (Montes)",
        "Central bank did NOT spend reserves defending the peso"] });
 add("Philippines", { id:"ec-ph-govt", title:"Philippines: role of the government", when:"1951–1970s",
   q:"What planning and state bodies characterised Philippine intervention?",
+  exp:"Successive governments built extensive planning and state enterprises, peaking under Marcos with hundreds of public companies and NEDA under the president's own control. This shows Philippine intervention was large in extent, so its failure cannot be blamed on too little state involvement. As with Indonesia, the problem was the nature of intervention, which served politics and cronies.",
   pts:["Macapagal: first national planning — Program Implementation Agency, early 1960s decontrols",
        "Marcos: Planning, Programming, Budgeting System + Development Budget Coordinating Committee",
        "300+ public enterprises",
@@ -1143,6 +1312,7 @@ add("Philippines", { id:"ec-ph-govt", title:"Philippines: role of the government
        "By 1970s: PNOC, National Power, National Fertilizer, PNB, DBP"] });
 add("Philippines", { id:"ec-ph-chinese", title:"The Chinese-Filipinos", when:"1950s–1997",
   q:"How did the treatment of Chinese-Filipinos change, and what backlash followed?",
+  exp:"The Philippines had the smallest Chinese share of population and of capital in the region, yet still disproportionate. Policy swung from Garcia's discrimination to Marcos's co-option of Chinese-Filipino tycoons as allies. The surge of kidnappings in the 1990s shows the social backlash against wealth visibly tied to cronyism, supporting the argument that Chinese capital could be a source of instability.",
   pts:["1.3% of population but 50–60% of listed-firm capitalisation — smallest share and lowest control",
        "Interests in 4 large banks + textiles, food, real estate, manufacturing",
        "Garcia's ‘Filipino First’ began discrimination with ISI",
@@ -1152,12 +1322,14 @@ add("Philippines", { id:"ec-ph-chinese", title:"The Chinese-Filipinos", when:"19
 /* ── Comparative cluster analysis ── */
 add("Comparative cluster analysis", { id:"ec-cl-growth", title:"Growth performance compared", when:"1961–2001",
   q:"What does comparative growth performance show about Thailand, Indonesia and the Philippines?",
+  exp:"The comparison shows that sustained success came to the capitalist states that achieved the EOI transition, Thailand and Malaysia. Indonesia's growth looks good but rested heavily on an oil windfall, making it less robust. The Philippines underperformed because it never convincingly made the transition. Use this to argue the transition, not capitalism itself, was decisive.",
   pts:["Notes' ranking: Singapore > Malaysia > Thailand > Indonesia > Myanmar > Philippines (table: Thailand 6.8, Malaysia 6.7)",
        "Thailand and Malaysia only capitalist states with SUCCESSFUL EOI transition by mid-1980s",
        "Indonesia's growth driven by COMMODITY WINDFALL (oil) — less robust",
        "Philippines the clear underperformer — only one of the three failing ISI → EOI"] });
 add("Comparative cluster analysis", { id:"ec-cl-isi-eoi", title:"Why some made the ISI → EOI transition", when:"comparison",
   q:"Why did some SEA economies succeed in moving from ISI to EOI while others did not?",
+  exp:"The comparison identifies why transitions succeeded or failed. Where protected firms belonged to cronies, they resisted losing protection, so ISI persisted. Where a capable private class existed, as in Thailand, or the state was willing to withdraw, EOI could take hold. Indonesia's oil income reduced the pressure to change. This gives a clear causal explanation for comparative essays.",
   pts:["Thailand YES (mid-1980s): private sector + domestic capital + peg + state scaled back",
        "Malaysia YES: NEP-guided but attracted FDI-led EOI",
        "Indonesia PARTIAL: oil delayed urgency; cronies captured deregulation; no engine capacity",
@@ -1165,12 +1337,14 @@ add("Comparative cluster analysis", { id:"ec-cl-isi-eoi", title:"Why some made t
        "Failure: crony beneficiaries resisted removal of protection; success: capable private class OR a state willing to withdraw"] });
 add("Comparative cluster analysis", { id:"ec-cl-state", title:"Role of the state: a spectrum", when:"comparison",
   q:"Compare the role of the state in Thailand, Indonesia and the Philippines.",
+  exp:"All three began with heavy intervention because they lacked a strong private class, so intervention itself does not explain outcomes. What mattered was what followed: Thailand's state genuinely retreated and private business took over, while Indonesia and the Philippines turned state power into patronage. This spectrum lets you argue that capture by private interests, not intervention, caused failure.",
   pts:["All relied on heavy initial intervention out of necessity; key is what came AFTER",
        "Thailand: state-led (Phibun) but checked; scaled back from 1957 and esp. 1985 → market ‘compensated for government failures’",
        "Indonesia: dominant by necessity; nominally scaled back but REINFORCED via cronyism → ‘bureaucratic capitalism’",
        "Philippines: dominant from 1950s; intensified under Marcos (300+ enterprises) → ‘patrimonialist plunder’"] });
 add("Comparative cluster analysis", { id:"chinesecapital", title:"Role of Chinese capital in SEA", when:"1980s",
   q:"How large was ethnic Chinese economic control, and how did political responses differ?",
+  exp:"Chinese economic dominance existed everywhere, so its presence cannot by itself explain different outcomes. What varied was the political response: accommodated in Thailand, it stabilised the economy, while in Indonesia and the Philippines its alliance with regimes bred resentment and violence. This framing helps answer essays on whether Chinese communities were essential to development.",
   clue:"Rigg's table: population shares from 1.3% to 70% but listed-firm control from 50% to 81%.",
   pts:["Population vs listed-firm capitalisation (Rigg): Singapore 70.0/81%; Thailand 10.0/81%; Indonesia 3.8/73%; Malaysia 28.0/69%; Philippines 1.3/50–60%",
        "Region-wide pattern; the POLITICAL RESPONSE varied",
@@ -1179,6 +1353,7 @@ add("Comparative cluster analysis", { id:"chinesecapital", title:"Role of Chines
        "Philippines: Marcos co-opted (Lucio Tan) → 1990s kidnapping backlash; STABILISING (Thailand) vs INSTABILITY (Indonesia, Philippines)"] });
 add("Comparative cluster analysis", { id:"ec-cl-equity", title:"Equity and income inequality compared", when:"1965–2000",
   q:"Compare growth and inequality in Thailand, Indonesia and the Philippines.",
+  exp:"All three cases show growth without equity, so the two aims were not naturally compatible. But the causes differ: Thailand and Indonesia's gaps were mainly regional and urban-rural, while the Philippines' inequality stemmed from colonial land ownership that its landowning elite never reformed. Distinguishing these mechanisms makes an equity essay more analytical.",
   pts:["All three: aggregate growth + worsening/persistent inequality",
        "Thailand: Gini 0.41 → 0.52; Bangkok 48.2% → 55.4% of GDP at 16% of population",
        "Indonesia: urban–rural gap 42% → 92%; Java; transmigration failure",
@@ -1186,6 +1361,7 @@ add("Comparative cluster analysis", { id:"ec-cl-equity", title:"Equity and incom
        "Thailand/Indonesia regional/urban-rural; Philippines rooted in LAND OWNERSHIP STRUCTURE"] });
 add("Comparative cluster analysis", { id:"afccompare", title:"Comparing 1997 AFC vulnerability", when:"1988–97",
   q:"Compare the roots of the 1997 AFC in Thailand, Indonesia and the Philippines.",
+  exp:"The table shows why Thailand and Indonesia were hit hardest: rapid financial liberalisation, heavy short-term foreign debt, crony lending and bad loans left them exposed when confidence collapsed. The Philippines, with conservative banking, low short-term debt and a deliberate float, suffered less. Comparing vulnerabilities this way lets you evaluate causes rather than tell a single story.",
   clue:"BIBF vs the October 1988 bank package vs BSP conservatism; currencies floated 2 and 11 July.",
   pts:["Liberalisation: Thailand Article VIII/BIBF; Indonesia Oct 1988 (banks 124 → 244); Philippines ~5 new banks",
        "Short-term debt: Thailand 70% of US$69bn; Indonesia >50%; Philippines <20% (~3% top banks)",
@@ -1195,17 +1371,20 @@ add("Comparative cluster analysis", { id:"afccompare", title:"Comparing 1997 AFC
        "Outcome: Thailand epicentre; Indonesia among worst hit; Philippines affected less (Delhaise)"] });
 add("Comparative cluster analysis", { id:"ec-cl-afc-synthesis", title:"AFC synthesis: growth vs stability", when:"1997",
   q:"What broader argument does the Philippine case support about the AFC?",
+  exp:"The Philippine contrast reveals that the same policies that drove rapid growth in Thailand and Indonesia, liberalisation and short-term foreign borrowing, also made them fragile. Philippine caution, learned through earlier crises, meant slower growth but a softer landing. This supports a sophisticated argument that speed of growth and financial stability involved a trade-off.",
   pts:["Same factors that drove Thai/Indonesian growth made them vulnerable",
        "Conservative governance, from repeated earlier crises, → slower growth but softer 1997 landing",
        "TRADE-OFF between growth speed (liberalisation) and financial stability — no SEA economy escaped it"] });
 add("Comparative cluster analysis", { id:"ec-cl-exports", title:"Export diversification 1985 vs 2000", when:"1985–2000",
   q:"Compare export diversification in Thailand, Indonesia and the Philippines, 1985–2000.",
+  exp:"Thailand and Indonesia reduced their reliance on a few export goods, consistent with genuine or partial industrial transformation. The Philippines moved the other way, becoming dependent on electronics assembly, which is low in value added and easily disrupted. Use it to show that export growth alone does not prove deep industrialisation.",
   pts:["Thailand 28.7% → 23.3% — diversifying",
        "Indonesia 69.3% → 30.2% — diversifying from higher base",
        "Philippines 27.4% → 64.7% — CONCENTRATING",
        "Philippines' reliance on low value-added electronics assembly — fragile, not deep"] });
 add("Comparative cluster analysis", { id:"ec-glossary-1", title:"Glossary: concepts", when:"glossary",
   q:"Define kanphatthana, Berkeley Mafia, cukong system, bureaucratic capitalism and ilustrado.",
+  exp:"These terms each capture a mechanism you can use in analysis: kanphatthana links development to legitimacy, the Berkeley Mafia explains Indonesia's Western realignment, cukong and bureaucratic capitalism explain how Indonesian intervention became patronage, and the ilustrados explain why Philippine land reform failed. Using them precisely shows conceptual understanding rather than narration.",
   pts:["Kanphatthana: Sarit's ‘development’ ideology tying growth to national unity and his legitimacy",
        "Berkeley Mafia: US-trained Indonesian technocrats mediating with Western aid/investment",
        "Cukong: indigenous ‘front’ holds licenses; non-indigenous (often Chinese) partner owns/runs",
@@ -1213,6 +1392,7 @@ add("Comparative cluster analysis", { id:"ec-glossary-1", title:"Glossary: conce
        "Ilustrado: Philippine landowning elite that blocked/diluted land reform"] });
 add("Comparative cluster analysis", { id:"ec-glossary-2", title:"Glossary: financial terms", when:"glossary",
   q:"Define DOSRI, BIBF, debt service ratio and leverage ratio.",
+  exp:"These financial terms explain the 1997 crisis comparisons. DOSRI rules show why Philippine banks avoided insider lending, the BIBF shows how short-term money flooded into Thailand, the debt service ratio measures how close a country is to a debt crisis, and the leverage ratio measures bank health. Using them lets you explain vulnerability precisely.",
   pts:["DOSRI: Philippine curbs on credit to directors, officers, stockholders and related interests",
        "BIBF: Bangkok International Banking Facility (1993) — conduit for short-term foreign lending",
        "Debt service ratio: repayment (interest + principal) as % of export earnings; IMF danger ~20%",
@@ -1220,56 +1400,65 @@ add("Comparative cluster analysis", { id:"ec-glossary-2", title:"Glossary: finan
 
 /* ── Exam application ── */
 add("Exam application", { id:"ec-essay-intervention", title:"Essay: necessity of intervention", when:"essay",
-  q:"To what extent was government intervention necessary for economic development in Southeast Asia?", qs:"notes",
+  q:"To what extent was government intervention necessary for economic development in Southeast Asia?",
+  exp:"The essay plan balances necessity and limits. Indonesia and the Philippines show the state had to lead because no capable business class existed, while Thailand shows less intervention could succeed where private capital was strong. The best judgement turns on what happened after the early phase: whether the state stepped back for efficiency or was captured by cronies.", qs:"notes",
   pts:["Indonesia/Philippines for NECESSITY: absent domestic bourgeoisie",
        "Thailand for LIMITS: private sector resilience meant less intervention was needed",
        "Indonesia: state pre-eminence arose out of necessity, not ideology; public goods lacked profit incentive",
        "Discriminate by what happened after the initial phase — scaled back for efficiency (Thailand) or captured for rent-extraction (Indonesia, Philippines)"] });
 add("Exam application", { id:"ec-essay-chinese", title:"Essay: ethnic Chinese essential?", when:"essay",
-  q:"Assess the view that ethnic Chinese communities were essential to Southeast Asian economic development.", qs:"notes",
+  q:"Assess the view that ethnic Chinese communities were essential to Southeast Asian economic development.",
+  exp:"The argument works by treating Chinese dominance as a regional constant, shown by Rigg's data, and then arguing that their contribution depended on how states handled them. In Thailand, an accommodated Chinese bourgeoisie made EOI possible, but in Indonesia and the Philippines their ties to regimes caused unrest. This lets you reach a qualified judgement on ‘essential’.", qs:"notes",
   pts:["Use Rigg's population vs capitalisation table",
        "Contrast political handling: Thailand accommodation vs Indonesia violence vs Philippines moderate tension",
        "Thailand: Chinese bourgeoisie enabled the EOI transition (stabilising force)",
        "Indonesia/Philippines: Chinese wealth a source of political instability (Malari, cukong, kidnappings)"] });
 add("Exam application", { id:"ec-essay-equity", title:"Essay: growth at the cost of equity?", when:"essay",
-  q:"How far do you agree that economic growth in Southeast Asia came at the cost of equity?", qs:"notes",
+  q:"How far do you agree that economic growth in Southeast Asia came at the cost of equity?",
+  exp:"The three countries offer different forms of the same problem: rising income inequality in Thailand, an urban-rural gap in Indonesia and unresolved land concentration in the Philippines. Showing three mechanisms rather than one strengthens the argument that growth tended to come at the expense of equity, while allowing you to explain why the causes differed.", qs:"notes",
   pts:["Thailand: Gini coefficients",
        "Indonesia: urban–rural gap",
        "Philippines: ilustrado land issue",
        "Three DIFFERENT mechanisms of the same tension"] });
 add("Exam application", { id:"ec-essay-afc", title:"Essay: causes of the AFC", when:"essay",
-  q:"Evaluate the causes of the 1997 Asian Financial Crisis.", qs:"notes",
+  q:"Evaluate the causes of the 1997 Asian Financial Crisis.",
+  exp:"A strong answer uses the comparative table to weigh causes rather than narrate one country. The Philippines shows that strong banking and low short-term debt reduced damage, implying that liberalisation and weak oversight were key causes. Malaysia adds a different cause, domestic asset bubbles, which proves the crisis had more than one route.", qs:"notes",
   pts:["Use the comparative vulnerability table",
        "Philippines as contrast case shows nuanced, non-single-cause thinking",
        "Factors: financial liberalisation, short-term debt share, crony/related-party lending, NPLs, currency policy",
        "Malaysia distinct: domestic property/stock overheating, not foreign debt"] });
 add("Exam application", { id:"ec-essay-isieoi", title:"Essay: comparing ISI → EOI", when:"essay",
-  q:"Compare the transition from ISI to EOI in two Southeast Asian economies.", qs:"notes",
+  q:"Compare the transition from ISI to EOI in two Southeast Asian economies.",
+  exp:"Thailand and the Philippines make the sharpest pairing because they started at similar levels but diverged. Thailand's private sector, domestic capital and active currency management enabled EOI, while Philippine protected firms, cronies and instability blocked it. Indonesia provides a middle case where oil cushioned the need to change. This structure supports explicit comparison.", qs:"notes",
   pts:["Thailand (success) vs Philippines (failure) — cleanest pairing",
        "Indonesia a ‘partial success/oil-cushioned’ middle case",
        "Thailand: autonomous Chinese bourgeoisie, domestic capital, baht peg, state scaled back",
        "Philippines: protected ISI firms inefficient, 1970s shocks, cronyism and instability"] });
 add("Exam application", { id:"ec-connect", title:"Connecting to earlier lectures", when:"exam",
   q:"How can Thailand, Indonesia and the Philippines be linked to Malaysia, Singapore, Burma and Vietnam?",
+  exp:"These links let you compare across lectures: Thailand and Malaysia both achieved EOI but handled Chinese business differently, Indonesia and Burma show different degrees of state control from similar nationalist origins, and Philippine and Vietnamese land policies contrast political control with equity. Such cross-country links earn more credit than single-country narration.",
   pts:["Thailand's 1977 EOI switch comparable to Malaysia's — both succeeded",
        "Malaysia restricted Chinese business via NEP quotas; Thailand largely did not",
        "Indonesia's Article 33 vs Burma's more extreme nationalisation — DEGREE of state control",
        "Philippine land reform vs Vietnam's agricultural reorganisation — political control vs genuine equity"] });
 add("Exam application", { id:"ec-essay-socialism", title:"Essay: Burma vs Vietnam under socialism", when:"essay", src:S2,
-  q:"Account for the differing fortunes of Burma and Vietnam under socialism.", qs:"notes",
+  q:"Account for the differing fortunes of Burma and Vietnam under socialism.",
+  exp:"Since both countries started with the same socialist mistakes, the essay must explain divergence through what followed: Vietnam's proactive leadership, coherent reforms and diplomatic opening, versus Burma's late, contradictory reforms and pariah status. The advice to pair growth figures with these factors means explaining why numbers differed, not just stating that they did.", qs:"notes",
   pts:["Willingness: Burma reactive (8888); Vietnam proactive (1986 leadership change)",
        "Coherence: SLORC contradictions vs mutually reinforcing Doi Moi",
        "International: Burma pariah vs Vietnam embargo lifted (1994)",
        "Pair the growth gap with these rows, not alone"] });
 add("Exam application", { id:"ec-essay-structure", title:"Essay: structural transformation", when:"essay", src:S2,
-  q:"How far did Southeast Asian economies achieve structural transformation, not just growth?", qs:"notes",
+  q:"How far did Southeast Asian economies achieve structural transformation, not just growth?",
+  exp:"This question tests whether growth changed what economies produced. Thailand clearly transformed, the Philippines stalled after early gains, Indonesia's industrial jump was tied to oil, and Burma barely changed. Singapore's falling industry share is a trap, as it reflects a move into services. This evidence lets you distinguish growth from structural transformation.", qs:"notes",
   pts:["Thailand: agriculture 50.1% (1951) → 10.0% (1993); manufacturing 10.3% → 28.5%",
        "Philippines: manufacturing 20% (1960) → 25% (1990), flat; manufacturing growth 0.1% (1970–80), 0.8% (1980–93)",
        "Indonesia: industry jump concentrated in 1970s oil decade",
        "Burma: agriculture 57.3%, manufacturing 7.8% (1990)",
        "Singapore's falling industry share reflects services pivot, not decline"] });
 add("Exam application", { id:"ec-essay-exports", title:"Essay: export diversification", when:"essay", src:S2,
-  q:"Assess the extent to which Southeast Asian economies diversified their exports after independence.", qs:"notes",
+  q:"Assess the extent to which Southeast Asian economies diversified their exports after independence.",
+  exp:"The data show broad diversification across the region, with export openness and manufacturing rising, but with clear exceptions. Myanmar's exports collapsed, Indonesia stayed relatively dependent on primary goods, and the Philippines became more concentrated. Using these exceptions lets you argue that diversification was widespread but uneven, and explain each exception through policy.", qs:"notes",
   pts:["Exports % of GDP rose everywhere except Myanmar (21.0% → 1.3%)",
        "Primary exports fell (Singapore 49.8 → 15.5; Malaysia 68.6 → 24.6; Thailand 76.2 → 26.9; Philippines 77.9 → 18.5) but stayed high in Indonesia (97.6 → 47.0)",
        "Philippines' concentration rose 27.4% → 64.7% — strongest counter-example"] });
