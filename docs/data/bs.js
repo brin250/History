@@ -5,7 +5,8 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"bs", sec, src:S, qs:"me" }
 
 /* ── 0. Syllabus map ── */
 add("0. Syllabus Map", { id:"bs-syllabus", title:"Bosnian War: syllabus map and essential questions", when:"1992–1995",
-  q:"What was the Bosnian War? State the syllabus content points and essential questions for this case.", qs:"notes",
+  q:"What was the Bosnian War? State the syllabus content points and essential questions for this case.",
+  exp:"The syllabus frames Bosnia as an intra-state conflict to be studied in three steps: why it happened, how different actors shaped it, and how well it was managed. Keeping these categories in mind helps you organise evidence, for example separating domestic actors like Republika Srpska from external ones like Serbia, the US and NATO, and judging peace processes against the essential question of effectiveness.", qs:"notes",
   pts:["Theme III: Conflict and Cooperation (1945–2000); Topic 2: Causes, Development and Management of Intra-State Conflicts",
        "Causes: domestic politics, economic interests, ethnic and religious nationalisms",
        "Role of actors: domestic (state and non-state); major powers and other external state actors; the UN and regional organisations",
@@ -16,6 +17,7 @@ add("0. Syllabus Map", { id:"bs-syllabus", title:"Bosnian War: syllabus map and 
 /* ── 1. Introduction & background ── */
 add("1. Introduction & Background", { id:"yugoslavcollapse", title:"Rise and fall of Yugoslavia", when:"1918–Jan 1992",
   q:"How was Yugoslavia created and held together, and when did it cease to exist?",
+  exp:"Yugoslavia joined peoples with different histories into one state, and it was held together mainly by Tito’s communist rule and its non-aligned position between the blocs. The fact that groups lived together under a repressive government for decades matters: when communism collapsed in the early 1990s, that cohesion was not deep enough to survive, and the federation dissolved by January 1992.",
   clue:"“The land of South Slavs”, created after WWI, reunified by Tito's partisans, a non-aligned federation of six republics that dissolved by Jan 1992.",
   pts:["Created at the end of WWI when Croat, Slovenian and Bosnian Austro-Hungarian territories united with the Serbian Kingdom",
        "Broke up under Nazi occupation (Nazi-allied independent Croat state); reunified when Tito's communist-dominated partisans liberated it",
@@ -25,12 +27,14 @@ add("1. Introduction & Background", { id:"yugoslavcollapse", title:"Rise and fal
        "Groups coexisted 40 years under repressive communism, but by Jan 1992 the SFRY had dissolved into its constituent states"] });
 add("1. Introduction & Background", { id:"bs-multiethnic", title:"Bosnia-Herzegovina: a multi-ethnic republic", when:"1991 census",
   q:"Why was Bosnia-Herzegovina especially vulnerable to nationalist territorial aspirations?",
+  exp:"Bosnia had no ethnic majority, with Bosniaks, Serbs and Croats largely matching three different religions. Its location between Serbia and Croatia meant Serb and Croat nationalists in Bosnia could look to neighbouring states for support. This combination made Bosnia the place where competing territorial claims collided most violently once Yugoslavia broke up.",
   pts:["Western Balkan Peninsula; long influenced by stronger regional powers vying for control",
        "Islam, Orthodox Christianity and Roman Catholicism correspond broadly to Bosniaks, Serbs and Croats",
        "1991 census: Bosniak Muslims 44%, Orthodox Serbs 31%, Catholic Croats 17% — the most multi-ethnic Yugoslav republic",
        "Multi-ethnic population plus position between Serbia and Croatia made it vulnerable to nationalist territorial aspirations"] });
 add("1. Introduction & Background", { id:"referendum92", title:"1992 independence referendum and declaration", when:"29 Feb–6 Apr 1992",
   q:"How did Bosnia-Herzegovina become independent, and why was the referendum contested?",
+  exp:"The referendum showed the ethnic divide: Bosniaks and Croats voted for independence while the SDS led a Serb boycott, arguing Serbs would become a minority in an Islamic state. Because turnout fell short of the two-thirds rule, Serbs could challenge its legitimacy, yet independence was declared and recognised. Serb leaders answered by declaring Republika Srpska the same day as recognition, setting the stage for war.",
   clue:"A vote boycotted by one community: 64% turnout, 99.7% in favour, short of the two-thirds constitutional threshold.",
   pts:["Held 29 Feb–1 Mar 1992, after the first free elections of 1990 and rising ethnic tensions",
        "Strongly favoured by Bosniaks and Croats; Bosnian Serbs boycotted — SDS said Serbs would become “a national minority in an Islamic state”, blocked ballot boxes with armed irregulars (though thousands of urban Serbs voted yes)",
@@ -40,6 +44,7 @@ add("1. Introduction & Background", { id:"referendum92", title:"1992 independenc
        "12 May 1992: Bosnian Serb Assembly adopted the “Six Strategic Goals of the Serbian Nation”"] });
 add("1. Introduction & Background", { id:"bs-outbreak", title:"Outbreak and scale of the war", when:"1992–1995",
   q:"How did the war spread after recognition, and what was its human cost?",
+  exp:"Recognition did not create a functioning state; instead Serb forces backed by Yugoslavia quickly took 70% of Bosnia and besieged Sarajevo. Ethnic nationalists, sometimes helped by Serbia and Croatia, fought to seize the land they claimed, and ethnic cleansing displaced over two million people. Burg and Shoup explain the core problem: mutually exclusive ideas of statehood that the international community failed to reconcile.",
   pts:["Within a month of recognition the Siege of Sarajevo began; by then the VRS controlled 70% of Bosnia",
        "VRS backed by Yugoslavia; Bosnian Army backed by the new Republic of Croatia and the unrecognised proto-state of Herzeg-Bosnia",
        "Ethnic nationalists, sometimes backed by Serbia and Croatia, tried to take territories they claimed",
@@ -49,7 +54,8 @@ add("1. Introduction & Background", { id:"bs-outbreak", title:"Outbreak and scal
 
 /* ── 2.1 Causes: Domestic politics ── */
 add("2.1 Causes — Domestic Politics", { id:"bs-communism-collapse", title:"Collapse of communism and post-Tito devolution", when:"1974–1991",
-  q:"Can I explain the domestic political causes of the Bosnian War (collapse of communism, constitutional crisis, competing nationalisms)?", qs:"notes",
+  q:"Can I explain the domestic political causes of the Bosnian War (collapse of communism, constitutional crisis, competing nationalisms)?",
+  exp:"Two pressures combined. Internally, the 1974 constitution and Tito’s death left a weak centre and powerful republics. Externally, the end of the Cold War removed the Soviet threat that had encouraged unity and shifted Western money and attention elsewhere. With both the internal glue and the external incentive gone, the federation had little to hold it together.", qs:"notes",
   pts:["After Tito's death (1980), the 1974 constitution devolved real power to the republics and autonomous provinces",
        "Collective presidency of eight provincial representatives and a weak federal government",
        "Collapse of communism in Eastern Europe (1989), German unification (1990) and imminent Soviet collapse eroded stability",
@@ -57,6 +63,7 @@ add("2.1 Causes — Domestic Politics", { id:"bs-communism-collapse", title:"Col
        "Removal of the Soviet threat removed a powerful incentive for Yugoslav cooperation"] });
 add("2.1 Causes — Domestic Politics", { id:"bs-breakdown", title:"Summary of the Yugoslav breakdown", when:"1990–Apr 1992",
   q:"Summarise how Yugoslavia broke down between 1990 and 1992.",
+  exp:"The 1990 elections replaced former communists with nationalist or separatist parties in most republics, while Milošević’s side held Serbia and Montenegro. Four republics then declared independence, but the key unresolved question was the status of Serbs and Croats living outside their home republics. That question produced the wars, first in Croatia and then most severely in multi-ethnic Bosnia.",
   pts:["1990: socialists lost power to ethnic separatist parties in the first multi-party elections, except in Montenegro and Serbia (Milošević and allies won)",
        "Nationalist rhetoric intensified on all sides",
        "Jun 1991–Apr 1992: Slovenia, Croatia, Bosnia-Herzegovina and Macedonia declared independence; Montenegro and Serbia stayed federated",
@@ -64,6 +71,7 @@ add("2.1 Causes — Domestic Politics", { id:"bs-breakdown", title:"Summary of t
        "Led to the Yugoslav Wars — first in Croatia, then most severely in Bosnia-Herzegovina"] });
 add("2.1 Causes — Domestic Politics", { id:"bs-14th-congress", title:"14th Congress and the 1990 elections", when:"Jan–Dec 1990",
   q:"How did the 14th Congress of the League of Communists and the 1990 elections deepen the crisis?",
+  exp:"Serbia’s demand for one person, one vote would have strengthened the Serb plurality, while Slovenia and Croatia wanted power devolved to the republics. When they were outvoted and walked out, the all-Yugoslav party collapsed, removing a key unifying institution. The elections that followed confirmed the split, and Serb communities in Croatia rebelled rather than accept minority status, leading to the Croatian War.",
   clue:"A Serbian demand for “one person, one vote” provoked a Slovene–Croat walkout that dissolved the all-Yugoslav party.",
   pts:["Jan 1990: Serbian delegation (Milošević) insisted on “one person, one vote”, empowering the Serb plurality",
        "Slovenes (backed by Croats) sought devolution, were voted down and walked out with the Croats, dissolving the all-Yugoslav Communist party",
@@ -72,7 +80,8 @@ add("2.1 Causes — Domestic Politics", { id:"bs-14th-congress", title:"14th Con
        "Kučan (Slovenia) and Tuđman (Croatia) favoured autonomy; Serbia and Montenegro favoured unity",
        "Croatian independence drive made Croatia's Serbs rebel and try to secede — the Croatian War of 1991"] });
 add("2.1 Causes — Domestic Politics", { id:"bs-competition", title:"Competition for influence among Serbs, Croats and Muslims", when:"Nov 1991–Mar 1992",
-  q:"Can I outline the sequence of events from the 1991 Bosnian Serb referendum to the 1992 declarations of independence and outbreak of full-scale war?", qs:"notes",
+  q:"Can I outline the sequence of events from the 1991 Bosnian Serb referendum to the 1992 declarations of independence and outbreak of full-scale war?",
+  exp:"Each step built a parallel Serb state inside Bosnia: a Serb referendum to stay with Yugoslavia, then the proclamation of a Serb republic in January 1992, both rejected as illegal by the Bosnian government. Bosnia’s own independence referendum and recognition then led Serbs to declare full independence. Rival claims to the same territory made war almost certain once recognition came.", qs:"notes",
   pts:["Nov 1991: Bosnian Serb referendum overwhelmingly for a Serbian republic within Bosnia's borders in a common state with Serbia and Montenegro",
        "9 Jan 1992: self-proclaimed Bosnian Serb assembly proclaimed a “Republic of the Serb people of Bosnia and Herzegovina”",
        "Bosnian government declared the referendum and Serb Autonomous Regions (SARs) unconstitutional, illegal and invalid",
@@ -81,7 +90,8 @@ add("2.1 Causes — Domestic Politics", { id:"bs-competition", title:"Competitio
 
 /* ── 2.2 Causes: Economic interests ── */
 add("2.2 Causes — Economic Interests", { id:"bs-debt", title:"Yugoslav growth, debt and IMF austerity", when:"1960–1988",
-  q:"Can I explain the economic causes of the Bosnian War (Yugoslav debt crisis, IMF austerity, regional inequality)?", qs:"notes",
+  q:"Can I explain the economic causes of the Bosnian War (Yugoslav debt crisis, IMF austerity, regional inequality)?",
+  exp:"Debt from the 1970s proved far larger than expected, so the IMF imposed austerity in the 1980s. That hardship made people resent the elites who had borrowed recklessly, and the Agrokomerc scandal exposed those elites living well while others suffered. Strikes and denunciations of a corrupt system show how economic failure eroded the legitimacy of the communist order that held Yugoslavia together.", qs:"notes",
   pts:["1960–1980: annual GDP growth averaged 6.1%; free medical care, literacy 91%, life expectancy 72; armed forces among Europe's best-equipped",
        "Over-expansion caused inflation and recession; 1970s debt initially estimated US$6 billion, turned out US$21 billion",
        "1980s austerity under stringent IMF conditions bred resentment of Communist elites' reckless foreign borrowing",
@@ -89,6 +99,7 @@ add("2.2 Causes — Economic Interests", { id:"bs-debt", title:"Yugoslav growth,
        "1987–88 strikes: workers demanded higher wages as IMF ended subsidies; whole system denounced as corrupt"] });
 add("2.2 Causes — Economic Interests", { id:"bs-end-coldwar-econ", title:"Loss of Western support after Gorbachev", when:"1985–1990s",
   q:"How did the easing of the Cold War undermine the Yugoslav economy and Communist Party?",
+  exp:"The West had been generous to Yugoslavia because a non-Soviet communist state was useful for destabilising the Soviet bloc. Once Gorbachev eased Cold War tensions, that strategic value disappeared and so did Western willingness to restructure its debts. The Communist Party lost the external support it depended on, linking the economic cause directly to the end of the Cold War.",
   pts:["After Gorbachev became General Secretary (1985), the West was no longer generous in restructuring Yugoslav debt",
        "A non-Soviet-bloc communist example was no longer needed to destabilise the Soviet bloc",
        "This removed the external status quo the Communist Party depended on to remain viable",
@@ -96,6 +107,7 @@ add("2.2 Causes — Economic Interests", { id:"bs-end-coldwar-econ", title:"Loss
        "1990s: wars, loss of markets and mismanaged/non-transparent privatisation brought further trouble to all former republics"] });
 add("2.2 Causes — Economic Interests", { id:"bs-markovic", title:"Marković's market reforms", when:"1989–1990",
   q:"What were Ante Marković's reforms and why did they fail?",
+  exp:"Marković’s reforms, agreed with the US in return for aid, brought brief success in cutting inflation and building reserves, but production fell and enterprises struggled. They failed largely because republics resisted: Serbia rejected the programme, imposed duties on Croatian and Slovene goods and took central bank money for its own spending. Inflation returned, showing how republic interests undermined federal economic policy.",
   clue:"A 1989 aid deal with George H.W. Bush bought a devalued currency, wage freeze and “property transformation”, but inflation returned at 120% a year.",
   pts:["1989: federal PM Ante Marković met President Bush for a new aid package; Yugoslavia agreed to a devalued currency, wage freeze, sharp spending cuts, ending socially owned worker-managed firms",
        "Belgrade nomenclature with Western advisers had already liberalised foreign investment law",
@@ -105,6 +117,7 @@ add("2.2 Causes — Economic Interests", { id:"bs-markovic", title:"Marković's 
        "Serbia and Vojvodina rejected his 1989 programme; Serbia imposed duties on Croatian/Slovene imports and took $1.5 billion from the central bank"] });
 add("2.2 Causes — Economic Interests", { id:"bs-inequality", title:"Regional inequality and separatism", when:"1989",
   q:"How did regional economic inequality fuel separatism?",
+  exp:"Yugoslavia had huge regional gaps in wealth, with Slovenia many times richer per head than Kosovo and unemployment worst in poorer areas. Richer republics had reason to want more autonomy, and poorer ones had grievances, so inequality encouraged separatism. This explains how economic differences turned into political tension between the republics.",
   pts:["Workplace-democracy elements gave workers democratic control but high regional inequality",
        "Slovenia's GDP per capita $12,383 vs Kosovo's $1,592 by 1989",
        "SFRY Gini index 0.32–0.35, mainly due to regional inequality",
@@ -114,13 +127,15 @@ add("2.2 Causes — Economic Interests", { id:"bs-inequality", title:"Regional i
 /* ── 2.3 Causes: Ethnic & religious nationalisms ── */
 add("2.3 Causes — Ethnic & Religious Nationalisms", { id:"bs-ottoman-habsburg", title:"Ottoman and Habsburg legacies", when:"14th–19th century",
   q:"How did Ottoman and Habsburg rule shape Bosnia's ethnic and religious identities?",
+  exp:"Ottoman rule brought Islam to many Bosnians and allowed religious coexistence, which Bosniaks remembered positively, while Christian communities looked to Western and Central Europe and developed distinct identities. Habsburg rule then promoted Catholicism and controlled Muslim religious life, raising Catholic-Orthodox tensions and Muslim opposition. These layers of rule left the separate, religiously based identities that later became national ones.",
   pts:["Ottoman rule nearly 400 years: Islam became prominent; religious tolerance let Christian and Jewish communities coexist",
        "Orthodox and Catholic communities had ties to Western/Central European spheres, giving a distinct identity; Bosniaks remembered the era as stable and flourishing",
        "Habsburgs expanded into Croatia, Slavonia and parts of Hungary; Bosnia under Austro-Hungarian rule from 1878",
        "Habsburgs promoted Catholicism, increasing Catholic–Orthodox tensions",
        "Muslim clergy became Austro-Hungarian state officials and had to break ties with the Ottoman Sultan — opposed by many Bosnian Muslims"] });
 add("2.3 Causes — Ethnic & Religious Nationalisms", { id:"bs-20c-tensions", title:"Twentieth-century roots of ethnic tension", when:"1918–1991",
-  q:"Can I explain the ethnic and religious causes of the Bosnian War, including the historical background from Ottoman rule to the 1990 elections?", qs:"notes",
+  q:"Can I explain the ethnic and religious causes of the Bosnian War, including the historical background from Ottoman rule to the 1990 elections?",
+  exp:"Each period added grievances: Serbian-dominated rule after WWI angered non-Serbs, and WWII collaboration and conflict left deep scars. Communism suppressed these tensions rather than resolving them, so they resurfaced when it collapsed. Because religion was tied to national identity, its revival with nationalism and violence sharpened the divide between Serbs, who wanted to stay in Yugoslavia, and Bosniaks and Croats, who wanted independence.", qs:"notes",
   pts:["WWI/creation of Yugoslavia: united peoples with distinct identities and grievances; centralised Serbian-monarchy rule fuelled non-Serb resentment",
        "WWII: Axis occupation, puppet regimes and resistance; collaboration and conflict left long-standing grievances",
        "Communist era: downplayed divisions, suppressed nationalism, promoted a Yugoslav identity — tensions merely suppressed, resurfacing in the late 1980s",
@@ -128,12 +143,14 @@ add("2.3 Causes — Ethnic & Religious Nationalisms", { id:"bs-20c-tensions", ti
        "Religion tied to national identity; its role elevated by the demise of communism, revived nationalism and wartime violence"] });
 add("2.3 Causes — Ethnic & Religious Nationalisms", { id:"bs-parties", title:"SDA, HDZ and SDS: the 1990 nationalist parties", when:"1990",
   q:"Which nationalist parties came to power in Bosnia's Nov 1990 elections, and what did each stand for?",
+  exp:"The first free elections brought three ethnic parties to power, each representing one community: the SDA for Muslims, the HDZ for Croats and the SDS for Serbs. Their religious and national roots show how identity had become the basis of politics. The SDS’s goal of keeping Serbs in Yugoslavia and its creation of Serb autonomous regions and a separate assembly directly opposed the SDA’s push for independence.",
   pts:["Nov 1990: first free elections put nationalist parties into power",
        "SDA (Izetbegović): founded 26 May 1990 in Sarajevo as a “party of Muslim cultural-historic circle”; imams of the Islamic Community took part; rooted in the old Yugoslav Muslim Organization",
        "HDZ (Stjepan Kljuić): founded 18 Aug 1990, first convention in Sarajevo; Christian democratic Croatian nationalist party for Bosnian Croats",
        "SDS (Radovan Karadžić): founded 1990 to unify Bosnian Serbs (as Rašković's SDS did in Croatia) and stay in Yugoslavia"] });
 add("2.3 Causes — Ethnic & Religious Nationalisms", { id:"bs-sds-plan", title:"SDS preparations for takeover", when:"Sep–Dec 1991",
   q:"How did the SDS prepare for the Serb takeover of Bosnian municipalities?",
+  exp:"The secret December 1991 document set out a centralised plan for Serbs to take over each municipality through shadow governments, crisis headquarters and coordination with the JNA. Its existence matters because it shows ethnic mobilisation was prepared in advance rather than a spontaneous reaction to independence, supporting the argument that the war involved premeditated nationalist planning.",
   pts:["From Sep 1991: established “Serb Autonomous Regions” throughout Bosnia",
        "After Bosnian parliament voted on sovereignty (15 Oct 1991), a separate Serb Assembly founded 24 Oct 1991 in Banja Luka",
        "Nov 1991: referendum favouring staying in a federal state with Serbia/Montenegro",
@@ -143,6 +160,7 @@ add("2.3 Causes — Ethnic & Religious Nationalisms", { id:"bs-sds-plan", title:
 /* ── 3. Master timeline ── */
 add("3. Master Timeline", { id:"bs-tl-1991-92", title:"Timeline: Oct 1991 – Apr 1992", when:"Oct 1991–Apr 1992",
   q:"Give the key dates from the Serb Assembly to the outbreak of war.",
+  exp:"The sequence shows rival state-building happening at once: Serb and Croat entities formed in late 1991, the Bosnian government declared them illegal, and the EC’s Lisbon plan was signed then abandoned. Independence and recognition were immediately followed by the siege of Sarajevo and Serb declarations of independence, showing how quickly political division became war.",
   pts:["24 Oct 1991: SDS forms Assembly of the Serb People; 9–10 Nov: Serb referendum to remain in Yugoslavia",
        "18 Nov 1991: Herzeg-Bosnia (HZ-HB) established; 23 Nov: declared unlawful by the Bosnian government",
        "9 Jan 1992: Republic of the Serb people proclaimed; Feb 1992: Carrington-Cutiliero (Lisbon) plan; 28 Feb: Serbian Republic constitution",
@@ -150,6 +168,7 @@ add("3. Master Timeline", { id:"bs-tl-1991-92", title:"Timeline: Oct 1991 – Ap
        "5 Apr: Siege of Sarajevo begins; 6 Apr: US/EC recognition, RS declared; 7 Apr: Serbian Republic declares independence; 8 Apr: HVO formed"] });
 add("3. Master Timeline", { id:"bs-tl-1992", title:"Timeline: May – Nov 1992", when:"May–Nov 1992",
   q:"Give the key dates of May–Nov 1992.",
+  exp:"1992 saw the war become organised and internationalised: the VRS was created with clear strategic goals, the UN admitted Bosnia and imposed sanctions on Yugoslavia, and UNPROFOR took on Sarajevo airport. At the same time the Bosnian-Croat alliance began to break down into the Croat–Bosniak War, while NATO began enforcing UN measures at sea.",
   pts:["2 May: Serbs blockade Sarajevo (≥500,000 bombs eventually); 12 May: Six Strategic Objectives, VRS created under Mladić",
        "22 May: Bosnia admitted to UN; 30 May: Res. 757 bans trade, travel etc. with FRY; late May–Jun: HVO counter-offensive in Mostar",
        "8 Jun: Res. 758 extends UNPROFOR to Sarajevo airport; 3 Jul: Herzeg-Bosnia formally declared; 21 Jul: Izetbegović–Tuđman Friendship agreement",
@@ -157,6 +176,7 @@ add("3. Master Timeline", { id:"bs-tl-1992", title:"Timeline: May – Nov 1992",
        "18 Oct: Croat–Bosniak War begins (to 23 Feb 1994); 16 Nov: Res. 787; 22 Nov: Operation Maritime Guard"] });
 add("3. Master Timeline", { id:"bs-tl-1993-94", title:"Timeline: 1993 – 1994", when:"Jan 1993–Dec 1994",
   q:"Give the key dates of 1993–1994.",
+  exp:"These years show diplomacy failing as fighting continued: Vance-Owen and Owen-Stoltenberg were rejected while Srebrenica was shelled and safe areas declared. The turning point came in 1994, when the Washington Agreement ended the Croat–Bosniak War and NATO moved into combat, shifting the balance against the Serbs even as Goražde and Bihać saw heavy fighting.",
   pts:["9 Jan 1993: Bosniaks attack Kravica, VRS severs Srebrenica–Žepa link; Jan 1993: Vance-Owen negotiations begin; Muslim–Croat war breaks out",
        "12 Apr: Srebrenica shelled (56 dead, 14 children); 16 Apr: Res. 819 safe area; 30 Apr–6 May: Vance-Owen signed then rejected (96% in referendum)",
        "May 1993: five more safe areas; 4 Jun: Res. 836; 18 Jun: Owen declares plan “dead”",
@@ -164,6 +184,7 @@ add("3. Master Timeline", { id:"bs-tl-1993-94", title:"Timeline: 1993 – 1994",
        "23 Feb 1994: Bosniak–Croat ceasefire; 28 Feb: Banja Luka Incident; 1 Mar: provisional Federation; 18 Mar: Washington Agreement; Mar–Apr: Goražde offensive; 10 Apr: first close air support; Nov–Dec: Bihać Crisis"] });
 add("3. Master Timeline", { id:"bs-tl-1995", title:"Timeline: 1995", when:"May–Dec 1995",
   q:"Give the key dates of 1995, from the Goražde hostages to IFOR.",
+  exp:"The 1995 events show the chain that ended the war: Serb hostage-taking and the Srebrenica massacre led the London Conference to make NATO airstrikes easier, while Operation Storm reversed Serb gains. The Sarajevo market attack triggered Deliberate Force, and military pressure then produced Holbrooke’s deal, Dayton, the lifting of sanctions and IFOR’s deployment.",
   pts:["28 May: 33 British UN servicemen captured near Goražde; 9–11 Jul: Srebrenica captured, ~8,000 killed",
        "21 Jul: London Conference — UN military commander may request airstrikes without civilian UN officials; summer: Operation Storm",
        "28 Aug: Sarajevo marketplace mortar kills 37; 30 Aug–20 Sep: Operation Deliberate Force (338 targets); 14 Sep: Holbrooke secures end of the siege",
@@ -173,6 +194,7 @@ add("3. Master Timeline", { id:"bs-tl-1995", title:"Timeline: 1995", when:"May�
 /* ── 4. Key military developments ── */
 add("4. Key Military Developments", { id:"sarajevo", title:"Siege of Sarajevo", when:"5 Apr 1992–29 Feb 1996",
   q:"Describe the Siege of Sarajevo and its human cost.",
+  exp:"The siege shows the imbalance created by the war: Serb forces held the hills with heavy weapons, while the ARBiH had large numbers but no heavy weapons or armour, so it could defend the city but not break the siege. The huge bombardment and civilian death toll made Sarajevo a symbol of the war, and the siege lasted until the Dayton Agreement ended it.",
   clue:"A capital encircled by 13,000 troops in the surrounding hills, hit by at least 500,000 bombs, lifted only after the 1995 peace agreement.",
   pts:["Besieged first by the JNA, then the VRS, aiming at a Republika Srpska including Bosniak-majority areas",
        "Siege force of 13,000 in the surrounding hills with artillery, tanks and small arms",
@@ -182,18 +204,21 @@ add("4. Key Military Developments", { id:"sarajevo", title:"Siege of Sarajevo", 
        "13,952 killed incl. 5,434 civilians; ARBiH 3,587 fatalities; Bosnian Serb military casualties 2,241"] });
 add("4. Key Military Developments", { id:"bs-srebrenica-1993", title:"Srebrenica: the 1993 build-up", when:"Apr 1992–Apr 1993",
   q:"How did Srebrenica become a vulnerable, besieged enclave by 1993?",
+  exp:"Srebrenica changed hands early and became a base for Muslim attacks on Serb villages, which enraged the VRS. After the Kravica attack, the VRS cut its link to Žepa and shrank the enclave, which filled with refugees while aid convoys were blocked. Its isolation and overcrowding made it highly vulnerable, which is why it was later declared a safe area, and why its fall in 1995 was so catastrophic.",
   pts:["VRS overran the town Apr 1992; Muslim irregulars recaptured it in May, using it as a base for guerrilla raids on Serb settlements (winter 1992–93)",
        "Jan 1993: Bosnian Muslims attacked Kravica; VRS took Konjević Polje and Cerska, severing the Srebrenica–Žepa link",
        "Enclave reduced to 150 km²; 50–60,000 refugees sleeping in the open; VRS blockaded aid convoys; terror on both sides",
        "12 Apr 1993: VRS artillery attack left 56 dead, 73 wounded, incl. 14 children killed in a school playground"] });
 add("4. Key Military Developments", { id:"bs-gorazde", title:"Attacks on Goražde", when:"May 1992–May 1995",
   q:"What happened at Goražde during the war?",
+  exp:"Goražde was besieged for most of the war, with shelling of civilians and attacks reinforced by Serbs from Serbia. The 1994 offensive led to NATO’s first close air support mission, and the 1995 capture of British UN soldiers showed how exposed lightly armed peacekeepers were. It illustrates both Serb pressure on the enclaves and the limits of UN protection.",
   pts:["Besieged by the VRS from as early as 4 May 1992, attacked from three sides",
        "Indiscriminate shelling of civilian buildings, frequent sniping; fighting intensified on weekends as Serbs from Serbia proper joined",
        "30 Mar–23 Apr 1994: major Serb offensive to overrun the town",
        "28 May 1995: UNPROFOR posts assaulted; 33 British servicemen of the Royal Welch Fusiliers captured at gunpoint"] });
 add("4. Key Military Developments", { id:"bs-bihac", title:"Bihać Crisis", when:"Nov–Dec 1994",
   q:"Why was the Bihać Crisis potentially the most explosive point of the war to that date?",
+  exp:"Bihać was explosive because so many forces fought there at once, including two Serb armies, a breakaway Muslim faction, Bosnian government troops and Croatia’s army. With rival Muslim forces and cross-border involvement, it shows how the war was not a simple three-sided conflict, and how fighting could pull neighbouring states in directly.",
   clue:"The heaviest fighting of 1994, in a north-west pocket (Cazinska Krajina) contested by six different military formations.",
   pts:["Heaviest fighting of 1994, in the Bihać pocket, Cazinska Krajina, north-west Bosnia (Serbs failed to take it in 1992)",
        "Battleground for six formations: Bosnian Serb army; Serb army of the RSK (across the Croatian border); Abdić's breakaway Muslim faction",
@@ -201,7 +226,8 @@ add("4. Key Military Developments", { id:"bs-bihac", title:"Bihać Crisis", when
 
 /* ── 5. Domestic actors ── */
 add("5. Domestic Actors", { id:"bs-republic", title:"The Republic of Bosnia and Herzegovina", when:"1992–1995",
-  q:"Can I compare the roles and goals of the three main domestic actors: the Republic of Bosnia and Herzegovina, Herzeg-Bosnia (HVO) and Republika Srpska (VRS)?", qs:"notes",
+  q:"Can I compare the roles and goals of the three main domestic actors: the Republic of Bosnia and Herzegovina, Herzeg-Bosnia (HVO) and Republika Srpska (VRS)?",
+  exp:"The Republic was the recognised state, but the Serb and Croat entities competing with it meant it was seen in practice as representing mainly Bosniaks, despite its formally mixed leadership. The arms embargo left its army without heavy weapons, explaining why it could defend cities but not break sieges. Comparing it with RS and Herzeg-Bosnia shows a state struggling against non-state rivals.", qs:"notes",
   pts:["War marked by competition between the state (the Republic) and non-state actors (Republika Srpska, Croatian Republic of Herzeg-Bosnia)",
        "Seceded from the SFRY on 3 Mar 1992; war lasted 3 years",
        "Serb and Croat entities unrecognised by the Bosnian state and international governments",
@@ -209,6 +235,7 @@ add("5. Domestic Actors", { id:"bs-republic", title:"The Republic of Bosnia and 
        "ARBiH defended Sarajevo and besieged cities mostly without heavy weapons/armour due to the arms embargo"] });
 add("5. Domestic Actors", { id:"bs-herzeg-bosnia", title:"Croatian Republic of Herzeg-Bosnia: establishment", when:"Oct 1991–Oct 1992",
   q:"How and why was Herzeg-Bosnia established?",
+  exp:"Herzeg-Bosnia was presented as local self-administration with no plan to secede, but Croat leaders privately spoke of a common Croatian state, and its leadership was close to Croatia from the start. Croats justified it by the JNA attack on Ravno and the Bosnian government’s failure to respond. The gap between its stated aims and its leaders’ goals explains why the government declared it unlawful.",
   clue:"A Croat “political, cultural, economic and territorial whole” proclaimed 18 Nov 1991 under Mate Boban, claiming ~30% of Bosnia.",
   pts:["Oct 1991: JNA destroyed the Croat village of Ravno — first Croat casualties in Bosnia; Izetbegović did not react",
        "12 Nov 1991: Kordić and Boban (HDZ BiH) pursued “an age-old dream, a common Croatian State”, a banovina as “initial phase”",
@@ -217,13 +244,15 @@ add("5. Domestic Actors", { id:"bs-herzeg-bosnia", title:"Croatian Republic of H
        "Izetbegović rejected an offered Croatia–Bosnia confederation; 3 Jul 1992 formally declared, adopting the Croatian dinar and language; Bosnian Posavina joined Oct 1992"] });
 add("5. Domestic Actors", { id:"bs-hvo", title:"The HVO and Croat–Bosnian cooperation", when:"Apr–Oct 1992",
   q:"What was the HVO, and why did the Izetbegović–Tuđman cooperation agreement collapse?",
+  exp:"The HVO was formed for Croat self-defence and even included many Bosniaks at first, and the 1992 agreement put it under ARBiH command while arms flowed through Croatia. The alliance collapsed under the strain of an assassination, Serb victories and a major HVO–ARBiH battle at Prozor. Underneath were diverging aims, as Croat separatism clashed with the Bosnian government’s position.",
   pts:["HVO formed 8 Apr 1992 as Herzeg-Bosnia's military; Bosniaks made up 20–30% of it",
        "Legal rationale: Yugoslav laws allowing self-defence when government would not defend citizens; Boban cited 13 destroyed Croat villages (incl. Ravno)",
        "Mostar (designated capital) besieged by JNA then VRS from Apr 1992; late May HVO counter-offensive drove out VRS",
        "21 Jul 1992: Agreement on Friendship and Cooperation placed HVO under ARBiH command; weapons sent via Croatia despite the embargo",
        "Collapsed Oct 1992 after the assassination of Blaž Kraljević (HOS), the fall of Posavina/Bosanski Brod/Jajce to the VRS, and an HVO–ARBiH battle in Prozor"] });
 add("5. Domestic Actors", { id:"croatbosniak", title:"The Croat–Bosniak War", when:"18 Oct 1992–23 Feb 1994",
-  q:"Can I explain the causes, course and resolution of the Croat-Bosniak War (1992–1994)?", qs:"notes",
+  q:"Can I explain the causes, course and resolution of the Croat-Bosniak War (1992–1994)?",
+  exp:"The former allies fell out as each side pursued its own goals: the HVO purged Bosniaks and favoured ethnic partition, while Croats left the ARBiH as the government stressed its Islamic character. Open war followed by early 1993. It ended in 1994 under US pressure, with the Washington Agreement creating a federation whose renewed joint operations helped shift the balance against the Serbs.", qs:"notes",
   clue:"A “war within a war” between former allies, fought from Oct 1992 until a lasting ceasefire on 23 Feb 1994.",
   pts:["A “war within a war” between the Republic and Herzeg-Bosnia (backed by Croatia); ARBiH and HVO had initially fought together vs JNA/VRS",
        "Summer 1992: HVO purged Bosniak members; as the government stressed its Islamic character, Croats left/were expelled from the ARBiH",
@@ -232,6 +261,7 @@ add("5. Domestic Actors", { id:"croatbosniak", title:"The Croat–Bosniak War", 
        "23 Feb 1994 ceasefire; Washington Agreement (18 Mar 1994) — HVO had suffered big losses; created the Federation and resumed joint operations vs Serbs, altering the military balance"] });
 add("5. Domestic Actors", { id:"bs-washington", title:"Owen-Stoltenberg, Grude and the Washington Agreement", when:"Jul 1993–Mar 1994",
   q:"How did peace proposals affect Herzeg-Bosnia, leading to the Washington Agreement?",
+  exp:"Owen-Stoltenberg’s three-republic plan encouraged Croats to proclaim their own republic, but by 1994 the HVO had lost much of its territory and hardliners like Boban were removed. Weakened, the Croats were open to US pressure, which produced the Washington Agreement and a federation of ten cantons. This shows how military losses and US involvement combined to end the Croat–Bosniak War.",
   clue:"A Clinton-hosted ceremony on 18 Mar 1994 that divided Croat/government territory into ten autonomous cantons.",
   pts:["Late Jul 1993 Owen-Stoltenberg Plan: three ethnic republics (Serbs 53%, Bosniaks 30%, Croats 17%) — Croats and Serbs accepted; Bosniaks rejected, wanting eastern/western territory and Adriatic access",
        "28 Aug 1993: Croatian Republic of Herzeg-Bosnia proclaimed in Grude as “republic of the Croats in Bosnia and Herzegovina”; not recognised",
@@ -240,6 +270,7 @@ add("5. Domestic Actors", { id:"bs-washington", title:"Owen-Stoltenberg, Grude a
        "18 Mar 1994: signed by Silajdžić, Granić and Zubak (plus Izetbegović and Tuđman) at a Clinton-hosted ceremony; ten autonomous cantons, ending the Croat-Bosniak War"] });
 add("5. Domestic Actors", { id:"bs-rs-formation", title:"Formation of Republika Srpska", when:"Oct 1991–Aug 1992",
   q:"How was Republika Srpska formed?",
+  exp:"The SDS argued major changes needed all three communities’ agreement and warned Serbs would secede if independence was declared. It then built a Serb state step by step: assembly, referendum, proclamation and constitution, with the constitution even claiming areas where Serbs were a minority because of WWII. Once Bosnia was recognised, it declared independence, showing secession was the planned response.",
   pts:["Self-proclaimed statelet under VRS control, formed 1992 to safeguard Bosnian Serb interests; war expelled most Croats/Bosniaks from its territory, with Serbs flowing in",
        "24 Oct 1991: SDS Assembly argued the constitution required unanimity of all three sides; SDA pursued independence (backed by Europe/US); SDS said Serbs would secede by self-determination",
        "21 Nov 1991: municipalities with over 50% voting to remain in Yugoslavia proclaimed federal Yugoslav territory",
@@ -247,12 +278,14 @@ add("5. Domestic Actors", { id:"bs-rs-formation", title:"Formation of Republika 
        "Declared independence 7 Apr 1992; 12 Aug 1992 became simply Republika Srpska"] });
 add("5. Domestic Actors", { id:"bs-vrs", title:"The VRS and Republika Srpska's crimes", when:"1992–1995",
   q:"What role did the VRS play, and what crimes were RS leaders accused of?",
+  exp:"The VRS turned the Serb leadership’s goals into military reality, controlling about 70% of Bosnia by 1993. Its leaders have been accused of genocide, ethnic cleansing, running camps and destroying heritage, with Srebrenica and the siege of Sarajevo as the gravest examples. This links Karadžić’s strategic objectives directly to the war’s worst crimes.",
   pts:["12 May 1992: Karadžić announced six “strategic objectives”; assembly created the VRS under Ratko Mladić (commander of the Yugoslav Second Military District)",
        "By 1993 Republika Srpska controlled about 70% of Bosnia",
        "Accused of war crimes, crimes against humanity, genocide, ethnic cleansing, detention/concentration camps, destroying cultural heritage",
        "Gravest: Srebrenica Genocide 1995 (nearly 8,000 Bosniak men and boys executed) and the Sarajevo siege (12,000 civilian casualties)"] });
 add("11. Annex", { id:"bs-six-objectives", title:"Karadžić's Six Strategic Objectives", when:"12 May 1992",
   q:"List Karadžić's Six Strategic Objectives of the Serb people in Bosnia and Herzegovina.",
+  exp:"The objectives show the Serb leadership aimed at a territorially connected Serb state separated from the other communities, linked by corridors, with river borders, a divided Sarajevo and sea access. Achieving clear ethnic borders in a mixed country required removing other groups, so these goals help explain why ethnic cleansing was central to the war rather than a side effect.",
   pts:["1. State borders separating the Serb people from the other two ethnic communities",
        "2. A corridor between Semberija and Krajina",
        "3. A corridor in the Drina valley — eliminate the Drina as a border separating Serbian states",
@@ -262,7 +295,8 @@ add("11. Annex", { id:"bs-six-objectives", title:"Karadžić's Six Strategic Obj
 
 /* ── 5.4 Violence and ethnic cleansing ── */
 add("5.4 Ethnic Cleansing", { id:"bs-cleansing-def", title:"UN definitions of ethnic cleansing and civilian toll", when:"1992–1995",
-  q:"Can I give examples of ethnic cleansing carried out by Serb, Croat and Bosniak forces, and cite the UN's definitions of ethnic cleansing?", qs:"notes",
+  q:"Can I give examples of ethnic cleansing carried out by Serb, Croat and Bosniak forces, and cite the UN's definitions of ethnic cleansing?",
+  exp:"The UN definitions stress that ethnic cleansing is a deliberate policy to make an area ethnically uniform by force or terror, and the list of methods, from murder and rape to destroying property, shows its range. Using them helps you show that all three factions carried out cleansing, even though the scale of Serb actions was greatest.", qs:"notes",
   pts:["Interim report (S/25274): “rendering an area ethnically homogeneous by using force or intimidation to remove persons of given groups from the area”",
        "Final report (S/1994/674): “a purposeful policy designed by one ethnic or religious group to remove by violent and terror-inspiring means the civilian population of another…”",
        "Practices: murder, torture, arbitrary detention, executions, rape, ghettoisation, deportation, attacks on civilians, human shields, property destruction, attacks on hospitals and Red Cross sites",
@@ -270,6 +304,7 @@ add("5.4 Ethnic Cleansing", { id:"bs-cleansing-def", title:"UN definitions of et
        "Media cited 200,000+ dead/injured/missing as late as 1994; Bosnian Institute for Public Health (Oct 1995): 146,340 killed, 174,914 wounded in ARBiH territory"] });
 add("5.4 Ethnic Cleansing", { id:"bs-serb-cleansing", title:"Serb ethnic cleansing campaign", when:"Apr–Aug 1992",
   q:"What was the scale and method of the Serb ethnic cleansing campaign of 1992?",
+  exp:"The campaign aimed to secure Serb territorial claims by force in the first months of the war, using militias and SDS activists after paramilitary occupation of Muslim towns. Most expulsions came in early 1992, sharply cutting the non-Serb population in targeted municipalities and razing hundreds of villages. RS’s constitution defining it as the state of the Serb people shows the exclusionary aim behind it.",
   pts:["Apr–Jun 1992 in eastern Bosnia, eastern Herzegovina, Sava valley, Bosanska Krajina and Sarajevo suburbs, by local militia and SDS activists after paramilitary occupation",
        "700,000–1,000,000 Bosniaks expelled from Serb-held territory",
        "RS constitution (Art I.1): “the state of the Serb people”, no mention of others; discriminatory measures followed",
@@ -277,6 +312,7 @@ add("5.4 Ethnic Cleansing", { id:"bs-serb-cleansing", title:"Serb ethnic cleansi
        "850 Bosniak and Croat villages razed"] });
 add("5.4 Ethnic Cleansing", { id:"bs-prijedor", title:"Prijedor, Banja Luka and other Serb-held towns", when:"1992",
   q:"Give examples of Serb ethnic cleansing in specific towns.",
+  exp:"These towns show a repeated pattern: non-Serbs lost jobs, were marked, detained in camps, robbed or forced to sign away property, while local Serb police did not intervene. In places like Višegrad violence became massacre. The similarity across towns supports the view that cleansing was systematic, carried out to make territory Serb.",
   pts:["Prijedor (from 30 Apr 1992): non-Serbs dismissed; intellectuals to Omarska; from 31 May white flags/armbands, then bused to Omarska, Trnopolje, Keraterm; radio urged Serbs to “lynch” Bosniaks and Croats",
        "Banja Luka: evictions, forced labour, property surrendered without compensation; night attacks by paramilitaries unprevented by Serb police",
        "Foča, Vlasenica, Brčko, Bosanski Šamac: forced removals; near Vlasenica police ordered to make territory “100% clean” of Bosniaks; Kozluk (Jun 1992) removals by truck/train",
@@ -284,12 +320,14 @@ add("5.4 Ethnic Cleansing", { id:"bs-prijedor", title:"Prijedor, Banja Luka and 
        "Višegrad (1992): hundreds shot on a bridge and thrown in the river or burnt alive in houses; women raped; a man dragged behind a car"] });
 add("5.4 Ethnic Cleansing", { id:"bs-croat-cleansing", title:"Croat ethnic cleansing", when:"1992–1993",
   q:"What ethnic cleansing was carried out by Croat forces?",
+  exp:"Croat forces expelled Serbs early in the war, then turned on Bosniaks in areas Herzeg-Bosnia wanted, using camps, eviction, massacres and threats like the three-hour warning at Vitez. Boban’s orders show this was directed policy. This evidence shows ethnic cleansing was not only a Serb practice and links to the Croat–Bosniak War over territory.",
   pts:["Early 1992: Croat forces routed Serb civilians near Odžak/Bosanska Posavina to Croatia; May 1992 Serbs expelled from Herzegovina, houses burned",
        "1993: with the attack on Mostar, Bosniaks put in Croat-run camps; evicted from western Mostar, Stolac, Čapljina",
        "Boban ordered persecution using “artillery, eviction, violence, rape, robbery and extortion”; Heliodrom and Dretelj camps; Ahmići and Stupni Do massacres",
        "Vitez and Zenica (Apr 1993): leave within three hours or be killed; 5,000 expelled from Vitez, 20,000–25,000 from Croat-controlled Mostar; Prozor shops looted and burned"] });
 add("5.4 Ethnic Cleansing", { id:"bs-bosniak-cleansing", title:"Bosniak ethnic cleansing and parties' attitude to peace", when:"1992–1994",
   q:"What ethnic cleansing was carried out by Bosniak forces, and how committed were the warring parties to peace?",
+  exp:"Bosniak forces also expelled Serbs and Croats in places like Konjic and Bugojno, and Topalović’s killings in Sarajevo show abuses within the besieged city. Some postwar departures had mixed motives, though. Since all the warring parties showed little intention to settle, responsibility for peace fell to international actors, which leads into the evaluation of outside mediation.",
   pts:["Former Bosnian Army members charged with crimes against humanity against Serbs in Konjic (May 1992)",
        "1993 Goražde siege: some Serbs expelled, others under house arrest; Mar 1993 campaign to expel Croats from Konjic; thousands of Croats expelled from Bugojno (1993–94)",
        "Mušan Topalović's forces abducted and killed mostly Serbs in Bistrik, Sarajevo, until police killed him (Oct 1993)",
@@ -298,7 +336,8 @@ add("5.4 Ethnic Cleansing", { id:"bs-bosniak-cleansing", title:"Bosniak ethnic c
 
 /* ── 6. External state actors ── */
 add("6. External State Actors", { id:"bs-serbia", title:"Serbia's aid to the Bosnian Serbs", when:"1991–1995",
-  q:"Can I explain the roles of Serbia, Russia and the USA as external state actors? (Serbia)", qs:"notes",
+  q:"Can I explain the roles of Serbia, Russia and the USA as external state actors? (Serbia)",
+  exp:"Serbia was not a neutral neighbour: the VRS came out of the Yugoslav army, and Belgrade funded, equipped and helped plan its operations, keeping it supplied despite sanctions. Milošević controlled Serb forces in Bosnia as part of a plan to link Serb areas into one state. This makes Serbia central to explaining both the Serb military advantage and why pressure on Belgrade mattered for peace.", qs:"notes",
   pts:["Milošević President of Serbia 1991–1997, controlled Serb forces in Bosnia 1992–1995",
        "Strategic plan: link Serb-populated areas into a separate Serb state with non-Serbs permanently removed — only by force, fear and war crimes",
        "VRS “under the overall control” of Belgrade and the Yugoslav Army, which funded, equipped and helped plan operations; VRS arose from Yugoslav forces in Bosnia",
@@ -306,6 +345,7 @@ add("6. External State Actors", { id:"bs-serbia", title:"Serbia's aid to the Bos
        "VRS led by Ratko Mladić, who served in the Croatian War (1991–92) and is accused of war crimes"] });
 add("6. External State Actors", { id:"bs-russia", title:"Russia's support for Serbia and the Bosnian Serbs", when:"1992–1995",
   q:"Why and how did Russia support Serbia and the Bosnian Serbs?",
+  exp:"Russia’s support grew from shared Slavic and Orthodox identity and a long history of backing Serbia in the Balkans. It backed Milošević and the Bosnian Serbs politically, and Russian volunteers fought with Serb units. In diplomacy this meant Russia sought terms more favourable to the Serbs, which caused friction in the Contact Group.",
   pts:["Balkans long at the centre of great-power competition; Russia backed Slavic and Orthodox allies",
        "Shared Slavic heritage, language, literature and art, and experience of Ottoman and Habsburg dominance fostered kinship",
        "Moscow backed Milošević and Bosnian Serb leaders 1992–1995",
@@ -313,12 +353,14 @@ add("6. External State Actors", { id:"bs-russia", title:"Russia's support for Se
        "In the Contact Group pushed changes to make plans more attractive to Bosnian Serbs, causing friction with the US, UK, France and Germany"] });
 add("6. External State Actors", { id:"bs-us-overview", title:"US disengagement and the ‘CNN effect’", when:"1992–1995",
   q:"Why did the US move from disengagement to involvement in Bosnia?",
+  exp:"The US first stayed out because Americans paid little attention to Bosnia and Bush preferred to avoid direct engagement. Under Clinton, the CNN effect of violent images created moral outrage and political pressure, especially ahead of the 1996 election. US policy therefore shifted with domestic opinion, leading to NATO intervention in 1995.",
   pts:["Before 1992 the American public was not concerned with Yugoslavia",
        "Balkan conflicts shifted opinion and redefined America's role in Europe; US/NATO intervened in 1995 after years of indecision",
        "George H.W. Bush administration selectively engaged, deferring direct engagement in the early months",
        "Clinton more engaged due to the ‘CNN effect’ (emotional imagery sparking outrage and pressure for humanitarian intervention) and opinion shifts before the 1996 election"] });
 add("6. External State Actors", { id:"bs-us-phase1-2", title:"US policy phases 1–2: reluctance and diplomacy (Watson, 2018)", when:"1990–spring 1994",
   q:"Describe the first two phases of US policy towards Bosnia (Watson, 2018).",
+  exp:"In the first phase, the US saw the crisis as a European problem after the Gulf War and lawmakers would not back any side. In the second, it engaged diplomatically through sanctions and multilateralism with allies, but avoided direct involvement, with Clinton waiting to see. The Markale attack and the US-pressured Washington Agreement mark growing engagement, though Congress still criticised the policy.",
   pts:["Phase 1: 1990 CIA report predicted Yugoslavia would stop functioning within a year and dissolve within two; lawmakers wary of backing any group",
        "Gulf War costs led US to cede the decisive role in an “intrinsically European problem” (Boyadjeva, 2002); little media attention or public awareness",
        "Phase 2: despite diplomacy and Congressional hearings (1992–93), no plan for direct involvement; 1992 US proposed an oil embargo and freezing Yugoslav assets, backed by Moscow",
@@ -326,6 +368,7 @@ add("6. External State Actors", { id:"bs-us-phase1-2", title:"US policy phases 1
        "Feb 1994 first Markale market attack (68 killed, 144 injured); Mar 1994 US pressured Muslims and Croats into the Federation; spring 1994 Congress criticised Clinton"] });
 add("6. External State Actors", { id:"bs-us-phase3", title:"US policy phase 3: armed intervention", when:"Apr 1994–Dec 1995",
   q:"How did the US move to armed intervention and the Dayton settlement?",
+  exp:"After Goražde, and especially after the Srebrenica massacre, the US and NATO moved to armed action, with Clinton wanting to ‘hit ’em hard’ through Deliberate Force. That military pressure led to a ceasefire and the Dayton negotiations, and the US secured troops from many countries for the peace force. It shows that decisive US involvement came only after the worst atrocities.",
   pts:["Apr 1994: after the bombing of Goražde the international community became more active",
        "US and NATO Secretary General Manfred Wörner called for additional airstrikes",
        "Jul 1995: Srebrenica — upwards of 7,000 men and boys slain, thousands expelled; one of the largest ethnic-cleansing movements",
@@ -335,6 +378,7 @@ add("6. External State Actors", { id:"bs-us-phase3", title:"US policy phase 3: a
 /* ── 7. UN and regional organisations ── */
 add("7. UN & Regional Organisations", { id:"bs-carrington", title:"Carrington-Cutiliero (Lisbon) Plan", when:"Feb–Mar 1992",
   q:"What did the Carrington-Cutiliero plan propose, and why did it fail?",
+  exp:"The plan tried to prevent war by dividing power and districts along ethnic lines, even where no group was a majority. All three sides signed, but Izetbegović pulled out within a week, possibly over ethnic partition or promised US support for recognition. It failed, yet its idea of a Bosnia divided between three groups shaped every later international plan.",
   clue:"The first EC mediation, before full-scale war: a state of “three constituent units, based on national principles”, signed by all on 18 Mar 1992.",
   pts:["Editore, 2014: four attempts before Dayton — by the EC, the UN with the EC, the USA, and the Contact Group (1994)",
        "EC mediation by Jose Cutiliero (chief negotiator) and Lord Carrington (conference chair) in Feb 1992, before full-scale war",
@@ -343,6 +387,7 @@ add("7. UN & Regional Organisations", { id:"bs-carrington", title:"Carrington-Cu
        "Failed for lack of a uniform approach, but a Bosnia divided politically and territorially became a feature of later plans"] });
 add("7. UN & Regional Organisations", { id:"vanceowen", title:"Vance-Owen Peace Plan", when:"Jan–Jun 1993",
   q:"What did the Vance-Owen Peace Plan propose, and why did it fail?",
+  exp:"Vance-Owen tried to keep Bosnia united through ten semi-autonomous regions and power-sharing, but the Serbs rejected it, and the Clinton administration would not support it or provide troops to implement it, weakening European backing. Since ethnic cleansing had already divided the country, the plan was outdated when announced. It was the last attempt to save a mixed, united Bosnia, so later plans moved toward partition.",
   clue:"A joint UN–EC plan negotiated from Jan 1993 to divide Bosnia into ten semi-autonomous regions; declared “dead” on 18 Jun 1993.",
   pts:["Aug 1992 London Conference created the permanent ICFY in Geneva — Owen (EC) and Vance (UN)",
        "From early Jan 1993: ten semi-autonomous regions; nine-member presidency split equally, rotating President, interim provincial governments by 1991 census, veto on vital concerns — transitional to a new constitution",
@@ -351,19 +396,22 @@ add("7. UN & Regional Organisations", { id:"vanceowen", title:"Vance-Owen Peace 
        "RS president signed 30 Apr 1993; RS Assembly rejected 6 May, then 96% in a referendum; Owen declared it “dead” 18 Jun",
        "Already obsolete — the last plan to salvage a mixed, united Bosnia; Vance resigned 1 Apr 1993, replaced by Thorvald Stoltenberg 1 May"] });
 add("7. UN & Regional Organisations", { id:"bs-owen-stoltenberg", title:"Owen-Stoltenberg Plan", when:"Jul–Aug 1993",
-  q:"Can I compare the major peace plans (Carrington-Cutiliero, Vance-Owen, Owen-Stoltenberg) and explain why each failed? (Owen-Stoltenberg)", qs:"notes",
+  q:"Can I compare the major peace plans (Carrington-Cutiliero, Vance-Owen, Owen-Stoltenberg) and explain why each failed? (Owen-Stoltenberg)",
+  exp:"Owen-Stoltenberg accepted the reality of ethnic division by proposing a union of three ethnic republics with Serbs getting the largest share. Croats and Serbs accepted it, but Izetbegović rejected it as partition, and the Croat–Bosniak war overshadowed it. Comparing the plans shows a shift from preserving a united Bosnia toward partition, with each failing because one party refused.", qs:"notes",
   pts:["Jul 1993 Geneva: constitutional principles for a Union of Republics of Bosnia-Herzegovina — three ethnic republics, a first step to confederation",
        "20 Aug 1993 map: Serbs 53%, Muslims 30%, Croats 17%",
        "Rejected by Izetbegović as a partition of Bosnia",
        "Intensifying Croat–Bosnian Government war overwhelmed serious consideration"] });
 add("7. UN & Regional Organisations", { id:"bs-nato-1992", title:"NATO 1992: early involvement and monitoring", when:"Feb–Oct 1992",
-  q:"Can I trace the evolution of NATO's involvement from monitoring (1992) to enforcement (1993) to direct combat (1994–95)? (1992 monitoring)", qs:"notes",
+  q:"Can I trace the evolution of NATO's involvement from monitoring (1992) to enforcement (1993) to direct combat (1994–95)? (1992 monitoring)",
+  exp:"NATO began cautiously, issuing statements and then monitoring sanctions at sea and the no-fly zone from the air. These steps were largely symbolic and involved no force, but they created the operations and structures that later allowed enforcement. This is the first stage of a gradual escalation from monitoring to combat.", qs:"notes",
   pts:["NATO's role began political and symbolic, later expanding to large-scale air operations aimed at long-term peace",
        "Feb 1992: statement urging belligerents to allow UN peacekeepers — symbolic but paved the way",
        "Jul 1992 (Helsinki): assist UN monitoring of sanctions (Res. 713, 757) — Operation Maritime Monitor off Montenegro, with the WEU's Sharp Guard in the Strait of Otranto (16 Jul)",
        "9 Oct 1992: Res. 781 no-fly zone; 16 Oct NATO added Operation Sky Monitor"] });
 add("7. UN & Regional Organisations", { id:"bs-nato-enforce", title:"NATO late 1992–1993: enforcing compliance", when:"Nov 1992–Jun 1995",
   q:"How did NATO move into enforcement in 1992–93?",
+  exp:"NATO moved from watching to enforcing when Resolution 787 allowed it to stop and inspect ships, the first authorised use of force to back a Security Council resolution. Deny Flight then enforced the no-fly zone, and NATO agreed to give close air support to UNPROFOR when the UN asked. Each new UN resolution expanded what NATO could do.",
   pts:["16 Nov 1992: Res. 787; 22 Nov NATO's Operation Maritime Guard could stop and inspect ships — “the first authorised use of force to back a UN Security Council resolution”",
        "With Turkish, Dutch and German support, NATO aircraft could shoot down aircraft violating the blockade",
        "31 Mar 1993: Res. 816 authorised enforcing the no-fly zone; Operation Deny Flight from 12 Apr 1993",
@@ -371,6 +419,7 @@ add("7. UN & Regional Organisations", { id:"bs-nato-enforce", title:"NATO late 1
        "15 Jun 1995: Maritime Guard and WEU activities merged into Operation Sharp Guard"] });
 add("7. UN & Regional Organisations", { id:"bs-nato-combat", title:"NATO 1994–mid 1995: first combat", when:"Feb 1994–Jul 1995",
   q:"How did NATO become directly involved in combat in 1994–95?",
+  exp:"NATO crossed into combat when it shot down Serb jets at Banja Luka, its first ever combat action, and then bombed near Goražde. The downing of O’Grady and the Srebrenica massacre increased pressure for stronger action. The London Conference removed civilian UN officials from airstrike decisions, clearing the way for large-scale bombing.",
   clue:"Four Serb jets shot down on 28 Feb 1994 — the alliance's first combat action in its history.",
   pts:["28 Feb 1994 Banja Luka Incident: NATO shot down four Serb jets under Deny Flight — first combat action in its history",
        "10 Apr 1994: first close air support mission, bombing Serb targets at Goražde at UN commanders' request",
@@ -379,6 +428,7 @@ add("7. UN & Regional Organisations", { id:"bs-nato-combat", title:"NATO 1994–
        "21 Jul 1995 London Conference (16 nations): Boutros-Ghali let Gen. Bernard Janvier request NATO airstrikes without consulting civilian UN officials; strikes for attacks on any safe area"] });
 add("7. UN & Regional Organisations", { id:"nato95", title:"Operation Deliberate Force", when:"30 Aug–20 Sep 1995",
   q:"What was Operation Deliberate Force and why was it decisive?",
+  exp:"After the Sarajevo market attack, NATO launched a large bombing campaign against Serb targets. Combined with Operation Storm’s ground gains, this changed the military balance and pushed the Bosnian Serbs to negotiate at Dayton. It is decisive evidence that force, rather than mediation alone, brought the war to an end, and NATO then provided IFOR to implement the peace.",
   clue:"A large-scale NATO bombing campaign against 338 Serb targets, triggered by a mortar shell that killed 37 in a Sarajevo marketplace.",
   pts:["28 Aug 1995: Serb mortar hit Sarajevo marketplace, killing 37; Admiral Leighton Smith recommended retaliatory strikes",
        "30 Aug–20 Sep 1995: large-scale bombing of 338 individual Serb targets",
@@ -389,6 +439,7 @@ add("7. UN & Regional Organisations", { id:"nato95", title:"Operation Deliberate
 /* ── 8. Effectiveness ── */
 add("8. Effectiveness — Mediation", { id:"bs-icfy", title:"International Conference on the Former Yugoslavia (ICFY)", when:"Aug 1992",
   q:"How effective was the ICFY's London meeting of Aug 1992?",
+  exp:"The ICFY set out sensible principles, rejecting gains won by force and balancing Bosnia’s territorial integrity with recognition of its communities. But the great powers would not impose a settlement and neither Serbs nor Muslims wanted to negotiate, so the principles had no effect: fighting escalated within days, shown by the Sarajevo market shelling. It also worsened splits between Boutros-Ghali and European states.",
   clue:"A UN–EC conference convened in London in late Aug 1992 whose principles included non-recognition of gains won by force.",
   pts:["Great powers unwilling to impose a settlement by force pursued talks, though Serbs and Muslims had little interest",
        "Principles: cessation of fighting, end to force, non-recognition of gains by force, sovereignty/territorial integrity, inviolable borders",
@@ -396,7 +447,8 @@ add("8. Effectiveness — Mediation", { id:"bs-icfy", title:"International Confe
        "Great differences among participants; 30 Aug Alipasino Polje market shelled (apparently by Serbs), 15 killed, 100 wounded",
        "Deepened the rift between Boutros-Ghali and the European states negotiating on the ground"] });
 add("8. Effectiveness — Mediation", { id:"contactgroup", title:"The Contact Group", when:"Apr 1994–1995",
-  q:"Can I evaluate the effectiveness of the Contact Group and UNPROFOR, citing specific achievements and limitations? (Contact Group)", qs:"notes",
+  q:"Can I evaluate the effectiveness of the Contact Group and UNPROFOR, citing specific achievements and limitations? (Contact Group)",
+  exp:"The Contact Group brought the main powers together in a flexible, informal format, and its 51–49 map became the basis for later talks. But its members disagreed, notably over lifting the arms embargo and Russia’s push for terms favourable to the Serbs, which probably prolonged the process. Cutting contact with the Bosnian Serbs after their rejection also removed its ability to communicate with them.", qs:"notes",
   clue:"An informal five-power group formed in Apr 1994 whose 51–49 map was rejected by the Serbs as an “American diktat”.",
   pts:["Formed Apr 1994 after the Sarajevo market shelling, where the EU, CSCE/OSCE and UN had failed; deliberately informal, flexible and confidential",
        "France, Germany, Russia, UK, US — coordinating EU, Russian and US initiatives",
@@ -405,7 +457,8 @@ add("8. Effectiveness — Mediation", { id:"contactgroup", title:"The Contact Gr
        "Limits: internal splits (US/Germany wanted to lift the arms embargo, France/UK opposed; Russia sought pro-Serb changes) probably prolonged resolution",
        "Ceasing contact with the Bosnian Serbs ended its communicator role; UK/France/Russia attempts in late 1994–95 rejected by parties or by US/Germany"] });
 add("8. Effectiveness — Sanctions", { id:"bs-sanctions", title:"Sanctions and arms embargo on Serbia", when:"May 1992–Nov 1995",
-  q:"Can I explain the significance of sanctions and the arms embargo, and evaluate their effectiveness?", qs:"notes",
+  q:"Can I explain the significance of sanctions and the arms embargo, and evaluate their effectiveness?",
+  exp:"Sanctions and embargoes appeal because they are stronger than diplomacy but less risky than military action. In Bosnia, however, they neither prevented the war nor deterred aggressors, and arguably the arms embargo gave the Serbs an early advantage over the government side, leading to a three-year stalemate. They are useful evidence that coercive measures without force had limited effect.", qs:"notes",
   pts:["30 May 1992: Res. 757 (13–0) banned trade, scientific/technical cooperation, sports/cultural exchanges, air travel and officials' travel; next day Bush seized ~US$200 million of Yugoslav assets",
        "16 Nov 1992: Res. 787 shipment ban plus naval blockades (Maritime Guard, Sharp Guard); over a hundred UNSC resolutions on the conflict",
        "Res. 820 (Apr 1993) and 942 (Sep 1994) banned import-export and froze RS assets; Res. 1022 suspended sanctions (22 Nov 1995)",
@@ -413,6 +466,7 @@ add("8. Effectiveness — Sanctions", { id:"bs-sanctions", title:"Sanctions and 
        "In Bosnia they neither prevented war in 1992 nor deterred aggressors; arguably gave Serbs an initial advantage, producing a three-year stalemate"] });
 add("8. Effectiveness — Dayton", { id:"bs-road-to-dayton", title:"Road to Dayton: Operation Storm and US diplomacy", when:"Summer–Sep 1995",
   q:"How did military and diplomatic changes in 1995 open the road to Dayton?",
+  exp:"In 1995 the balance of power changed: Operation Storm, helped by US-backed training of the Croatian army, gave the Serbs their first defeat in four years and changed every side’s thinking. The US now threatened airstrikes if Serbs attacked safe areas or refused to negotiate, and NATO bombing after the Sarajevo attack forced compliance. Holbrooke used this pressure to secure the end of the siege and the framework for Dayton.",
   clue:"The largest European land offensive since WWII retook Krajina with little resistance — the first Serb defeat in four years.",
   pts:["Summer 1995 Operation Storm: Bosniak and Croat forces recaptured Serb-held territory — largest European land offensive since WWII",
        "Clinton had authorised a private company using retired US military personnel to train the Croatian army; Krajina taken with little resistance — first Serb defeat in four years",
@@ -420,7 +474,8 @@ add("8. Effectiveness — Dayton", { id:"bs-road-to-dayton", title:"Road to Dayt
        "Clinton sent Anthony Lake and Peter Tarnoff to present a framework to Europe; US would bomb Serbs if they threatened safe areas or refused to negotiate",
        "1 Sep: Holbrooke announced Geneva talks; strikes resumed on Serb non-compliance; 14 Sep 1995 Karadžić and Mladić signed to end the Sarajevo siege"] });
 add("8. Effectiveness — Dayton", { id:"dayton", title:"Dayton Accords", when:"1 Nov–14 Dec 1995",
-  q:"Can I explain how and why the Dayton Accords succeeded where earlier peace plans failed?", qs:"notes",
+  q:"Can I explain how and why the Dayton Accords succeeded where earlier peace plans failed?",
+  exp:"Dayton succeeded where earlier plans failed because it followed a shift in the military balance and was backed by US-led pressure. The isolated venue kept leaders from negotiating through the media, and the agreement kept Bosnia as one state with two parts, with strong international bodies to enforce it. Peace has lasted, but Annex 4 still entrenches the divisions that shape Bosnian politics.", qs:"notes",
   clue:"Talks at Wright-Patterson Air Force Base, Ohio, initialled after 21 days and signed in Paris on 14 Dec 1995.",
   pts:["1 Nov 1995: Izetbegović, Milošević, Tuđman with US, UK, France, Germany, Italy, Russia, EU at Wright-Patterson AFB — chosen to stop negotiating via the media",
        "After 21 days the General Framework Agreement was initialled by Izetbegović, Tuđman and Milošević; signed Paris 14 Dec 1995",
@@ -432,6 +487,7 @@ add("8. Effectiveness — Dayton", { id:"dayton", title:"Dayton Accords", when:"
 /* ── 8.4 UNPROFOR & safe areas ── */
 add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-res", title:"UNPROFOR's mandate and key resolutions", when:"Jun 1992–Jun 1993",
   q:"What resolutions guided UNPROFOR in Bosnia?",
+  exp:"The resolutions show UNPROFOR’s mandate expanding step by step, from securing Sarajevo airport to supporting aid across Bosnia and then protecting six safe areas. Resolution 836 allowed force in self-defence and NATO air power, but the wording remained limited. This gap between stronger mandates and limited means is the key to judging UNPROFOR’s effectiveness.",
   pts:["Established Jun 1992 as an extension of Croatia's UNPROFOR (Feb 1992); mandate mainly to protect humanitarian aid delivery",
        "Res. 758 (8 Jun 1992): Sarajevo airport security and aid; Res. 770 (13 Aug 1992, Ch. VII): “all measures necessary” for aid",
        "Res. 776 (14 Sep 1992): support UNHCR relief throughout Bosnia and protect where UNHCR considered necessary",
@@ -439,13 +495,15 @@ add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-res", title:"UNPROFOR's manda
        "Res. 836 (4 Jun 1993, Ch. VII): UNPROFOR may use force in self-defence vs bombardment of safe areas; NATO may use “all necessary measures, through the use of air power”"] });
 add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-phases", title:"Phases of UNPROFOR's mandate", when:"1992–1995",
   q:"Describe the four phases of UNPROFOR's mandate.",
+  exp:"UNPROFOR’s role grew from protecting the Sarajevo airlift, to escorting aid convoys, to guarding safe areas, then to monitoring the Federation ceasefire and weapons zones. Its strength was increased but its basic mandate never changed, so it was given more tasks without the authority to enforce them. That mismatch explains why it could deliver aid but not protect civilians.",
   pts:["Phase 1: from 5 Jun 1992 protected Sarajevo airport and corridor; 3 Jul 1992–31 Jan 1993 UNHCR airlift of 2,476 aircraft carrying 27,460 tons",
        "Phase 2 (Res. 776): protect ICRC and UNHCR activities, schedule convoys, negotiate passage; self-defence if obstructed",
        "Phase 3: Res. 819 Srebrenica safe area free “from armed attack or any other hostile act”; May 1993 Bihać, Sarajevo, Goražde, Žepa, Tuzla added",
        "Phase 4: monitored the Feb 1994 US-brokered ceasefire, zones of separation and weapons control points; strength raised but mandate never altered",
        "31 Mar 1995: restructured into three operations; 20 Dec 1995 reflagged under IFOR"] });
 add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-ach", title:"UNPROFOR: achievements", when:"1992–1995",
-  q:"Can I evaluate the effectiveness of the Contact Group and UNPROFOR, citing specific achievements and limitations? (UNPROFOR achievements)", qs:"notes",
+  q:"Can I evaluate the effectiveness of the Contact Group and UNPROFOR, citing specific achievements and limitations? (UNPROFOR achievements)",
+  exp:"UNPROFOR’s security made possible a massive aid effort, including the Sarajevo airlift, which UNHCR called the longest-running in history, and it supported thousands of humanitarian workers. The notes conclude it helped reduce human suffering. This is the strongest case for UNPROFOR, though it should be weighed against its failure to protect people.", qs:"notes",
   pts:["Delivered aid more efficiently; reopened routes and helped restore public services",
        "Jul 1992–end 1995: UNHCR delivered ~950,000 tonnes, incl. 160,000 tonnes to Sarajevo in over 12,000 flights",
        "UNHCR coordinated UN institutions and supported 3,000 humanitarian personnel from over 250 organisations",
@@ -453,6 +511,7 @@ add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-ach", title:"UNPROFOR: achiev
        "Conclusion: UNPROFOR contributed to reducing human suffering"] });
 add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-lim", title:"UNPROFOR: limitations", when:"1992–1995",
   q:"What were the limitations of UNPROFOR and the UN in Bosnia?",
+  exp:"UNPROFOR would not enforce aid delivery and gave no real security to the safe areas, two of which fell with no UN response. Its presence did not deter major offensives or ethnic cleansing, and the UN was sidelined by the Contact Group and Dayton, with NATO playing the decisive role. Its humanitarian record is overshadowed by its failure to protect civilians.",
   pts:["Did little about access denial; refused to interpret its mandate as enforcing aid delivery",
        "Despite Chapter VII tasks, no safe area was secured and two fell without UN reaction",
        "Scale of ethnic cleansing where blue helmets were deployed overshadowed its humanitarian record",
@@ -460,6 +519,7 @@ add("8.4 UNPROFOR & Safe Areas", { id:"bs-unprofor-lim", title:"UNPROFOR: limita
        "No ICFY plan accepted by all; UN sidelined in the Contact Group and at Dayton; NATO decisive with Deliberate Force"] });
 add("8.4 UNPROFOR & Safe Areas", { id:"srebrenica", title:"Srebrenica Genocide and the failure of safe areas", when:"9–11 Jul 1995",
   q:"What happened at Srebrenica in July 1995, and what did it reveal about UN safe areas?",
+  exp:"Srebrenica was meant to be protected as a safe area, yet the VRS took it and killed about 8,000 men and boys without the UN reacting. It shows that a safe area declaration without real security or deterrence meant little. The massacre led directly to the London Conference making NATO airstrikes easier, so it was a turning point toward forceful intervention.",
   clue:"A UN “safe area” since Apr 1993, captured by the VRS under Mladić on Karadžić's orders; about 8,000 Muslim men and boys killed.",
   pts:["Declared a “safe area” by Res. 819 (16 Apr 1993) after the 12 Apr shelling",
        "9–11 Jul 1995: Karadžić ordered its conquest; VRS under Mladić captured the enclave",
@@ -470,13 +530,15 @@ add("8.4 UNPROFOR & Safe Areas", { id:"srebrenica", title:"Srebrenica Genocide a
 /* ── 9–10. Summaries ── */
 add("9. Summary of Causes", { id:"bs-causes-summary", title:"Causes of the Bosnian War at a glance", when:"1974–1992",
   q:"Why did the Bosnian War occur? Summarise the three causal categories.",
+  exp:"The three causes worked together: the collapse of communism and federal authority created a political vacuum, debt, austerity and inequality discredited the system and encouraged separatism, and historical ethnic and religious grievances gave nationalist parties a ready base. The SDS’s secret plan shows mobilisation was organised. A strong essay explains how these factors reinforced each other rather than listing them.",
   pts:["Domestic politics: 1974-constitution devolution; collapse of communism; 1990 nationalist victories (SDA, HDZ, SDS); 1990 Congress collapse; 1991–92 independence declarations",
        "Economic: US$21 billion debt and IMF austerity; Agrokomerc (1987); strikes 1987–88; loss of Western strategic interest after the Cold War",
        "Economic: Marković's reforms gave short-term gains but inflation up to 120% annually; Serbia diverted central bank funds; regional inequality (Slovenia $12,383 vs Kosovo $1,592)",
        "Ethnic/religious: layered Ottoman, Austro-Hungarian, Serbian-monarchy and WWII grievances; communist suppression meant tensions resurfaced, not resolved",
        "SDS's secret Dec 1991 takeover plan shows premeditated ethnic mobilisation"] });
 add("10. Summary of Key Players", { id:"bs-players-summary", title:"Key players: EC/ICFY, UN and NATO roles", when:"1992–1995",
-  q:"Can I evaluate, overall, how effective international conflict management was in the Bosnian War?", qs:"notes",
+  q:"Can I evaluate, overall, how effective international conflict management was in the Bosnian War?",
+  exp:"Overall, conflict management was largely ineffective until 1995. EC and UN plans failed, the Contact Group was divided, and UNPROFOR delivered aid but could not protect civilians. What worked was US engagement and NATO force, combined with Croat and Bosniak battlefield gains, which pushed the Serbs to Dayton. This supports the argument that diplomacy only succeeded once backed by credible force.", qs:"notes",
   pts:["EC: first mediation (Lisbon Plan) collapsed within a week; with the UN co-convened ICFY; Owen co-led the failed Vance-Owen and Owen-Stoltenberg plans",
        "UN: over a hundred resolutions, sanctions (757), arms embargo, six safe areas; UNPROFOR protected aid but would not enforce safe areas; sidelined by the Contact Group and Dayton",
        "Contact Group: 51–49 map (Jul 1994) rejected; internal splits over the arms embargo likely prolonged resolution",

@@ -6,12 +6,14 @@ const add = (sec, o) => CASES.push(Object.assign({ t:"ai", sec, src:S, qs:"me" }
 /* ── 1.1 Setting the Scene ── */
 add("Setting the Scene", { id:"ai-ottoman-palestine", title:"The land in the 1880s", when:"1880s",
   q:"What was the political and demographic situation of the land in the 1880s?",
+  exp:"This sets the baseline: before modern nationalism the land was not a political unit at all, just parts of two Ottoman districts, and its mostly Arab population of different faiths lived together peacefully. That matters because it shows the conflict was not inevitable or ancient; it emerged later, when Zionism, Arab nationalism and British policy turned a shared, unbounded territory into a contested national homeland.",
   pts:["Neither “Palestine” nor “Israel” existed as political entities",
        "Area was part of two Ottoman districts: the Sanjak of Jerusalem and the Vilayet of Beirut",
        "Population overwhelmingly Arab (mostly Sunni Muslim, with a Christian minority)",
        "Under Ottoman rule, Jews, Christians and Muslims co-existed peacefully"] });
 add("Setting the Scene", { id:"ai-starting-points", title:"Starting points and framing of the conflict", when:"framework",
   q:"What possible ‘starting points’ of the conflict have historians debated, and how does the lecture series frame it?",
+  exp:"Historians can trace the conflict back to religious or colonial origins, but the lecture deliberately frames it as a clash of two modern nationalisms. Fraser’s point about different names for the same land captures why: each people saw the territory as the fulfilment of its own national destiny, Arabs as a land owed independence and Jews as statehood after persecution, so two valid claims collided over one space.",
   pts:["Possible starting points: biblical enmity (Isaac/Ishmael), the advent of Islam, Muhammad’s quarrel with the Jews of Medina, 19th-century Zionism, or British colonial policy",
        "Lecture series treats it as fundamentally a conflict of competing nationalisms emerging with the rise of nationalism in the Middle East",
        "Fraser (2015): Arabs and Jews had different names for the land, reflecting totally different views of its past, present and future",
@@ -20,6 +22,7 @@ add("Setting the Scene", { id:"ai-starting-points", title:"Starting points and f
 /* ── 1.2 Significance of the Middle East ── */
 add("Significance of the Middle East", { id:"ai-me-significance", title:"Significance of the Middle East over time", when:"18th c.–post-Cold War",
   q:"How did the significance of the Middle East change from the late 18th century to after the Cold War?",
+  exp:"The region’s value kept rising as the reasons for outside interest changed: first as a strategic route, then oil, then as a Cold War arena. Because outside powers redrew borders after WWI and kept intervening, local conflicts were constantly entangled with great-power interests, which is why Brown calls it the most penetrated subsystem. Use this to explain why the Arab-Israeli dispute never stayed purely local.",
   pts:["Late 18th c.–early 1900s: source of great-power rivalry; 1908 British discovery of oil in Persia raised its value as the Europe–Far East gateway",
        "After WWI: Ottoman Empire dissolved; Britain and France redrew boundaries, installing new Arab rulers over artificial states",
        "After WWII: region became the principal global energy source",
@@ -27,6 +30,7 @@ add("Significance of the Middle East", { id:"ai-me-significance", title:"Signifi
        "After Cold War: despite the 1993 Israel–PLO Accord, still volatile — L. Carl Brown: “the most penetrated international relations subsystem in today’s world”"] });
 add("Significance of the Middle East", { id:"ai-two-levels", title:"Two levels of the conflict", when:"framework",
   q:"At what two levels must the Arab-Israeli conflict be read?",
+  exp:"The exam focus stresses that the conflict works on two levels at once: Palestinians versus Israel over the land, and Arab states versus Israel over security and regional power. Superpower involvement from the 1950s ran across both. Keeping the levels separate helps in essays, for example Camp David settled an inter-state dimension (Egypt-Israel) while leaving the Palestinian dimension unresolved.",
   pts:["(1) The Palestinian–Israeli dimension",
        "(2) The wider Arab states vs. Israel dimension",
        "Superpower involvement cut across both levels from the 1950s onward"] });
@@ -34,6 +38,7 @@ add("Significance of the Middle East", { id:"ai-two-levels", title:"Two levels o
 /* ── 1.3 Cause A: Decolonisation ── */
 add("Cause A: Decolonisation", { id:"promises", title:"Conflicting British wartime promises", when:"1915–1917",
   q:"What overlapping promises did Britain make during WWI, and why did they sow the seeds of conflict?",
+  exp:"Britain needed allies against the Ottomans, so it made promises to different parties that could not all be kept: Arab sovereignty to Hussein, a carve-up of the region with France, and a Jewish national home in the Balfour Declaration. Because none of these documents fixed borders, Zionists and Arab nationalists each believed Palestine had been promised to them. This is the core evidence for decolonisation creating the structural conditions for conflict.",
   clue:"To win allies against the Ottomans (allied with Germany), London pledged land to the Sharif of Mecca, carved spheres with Paris, and favoured a Jewish national home.",
   pts:["Hussein–McMahon Correspondence (1915–16): Arab Ottoman territory to return to Arab sovereignty (excluding only present-day Lebanon and parts of Syria) in exchange for the Arab Revolt; Palestine NOT excluded, despite Britain’s later claims",
        "Sykes-Picot (May 1916): secret Anglo-French convention (with Russian assent) dividing Syria, Iraq, Lebanon, Palestine into British/French spheres — France’s interests in Syria/Aleppo, Britain’s need for secure access to Suez and India",
@@ -42,12 +47,14 @@ add("Cause A: Decolonisation", { id:"promises", title:"Conflicting British warti
        "Result: both Zionists and Arab nationalists believed Palestine had been promised to them — neither document specified actual borders"] });
 add("Cause A: Decolonisation", { id:"ai-mandate", title:"The Palestine Mandate", when:"1922–1948",
   q:"Why was the British Mandate in Palestine fundamentally contradictory, and how inconsistent was Britain’s position?",
+  exp:"The Mandate asked Britain to build a Jewish national home while protecting the rights of all Palestinians, two goals that pulled against each other. Britain’s inconsistency, backing Zionism internationally but often favouring Arabs on the ground to keep Muslim opinion onside, meant it satisfied neither side. Incidents like 1929 showed it could not even protect civilians, so both communities lost trust in British rule.",
   clue:"League of Nations arrangement from 1922 under which Britain governed the territory, not as a colony.",
   pts:["Governed as a League of Nations Mandate from 1922, not as a colony",
        "Tasked with establishing a Jewish national home while safeguarding the rights of all Palestinians — fundamentally contradictory",
        "Internationally Britain tended to support Zionism; on the ground officials often favoured the Arabs (mindful of regional Muslim opinion)"] });
 add("Cause A: Decolonisation", { id:"ai-1930s-mandate", title:"Arab Revolt, Peel Commission and 1939 White Paper", when:"1930s",
   q:"How did the 1930s (Arab Revolt, Peel Commission, 1939 White Paper) deepen the conflict?",
+  exp:"Nazi persecution drove Jewish immigration up, which made Arabs fear becoming a minority and led to the Arab Revolt. Britain’s responses then failed both sides: Peel’s partition was rejected by Arabs and withdrawn, while the 1939 White Paper calmed Arabs only temporarily and was seen by Jews as betraying Balfour on the eve of the Holocaust. Each attempted fix hardened positions rather than resolving them.",
   pts:["Nazi persecution drove a surge in Jewish immigration; Arabs feared becoming a minority",
        "1936 general strike escalated into the Arab Revolt (1936–1939)",
        "Peel Commission (1937) recommended partition — rejected by Palestinian Arabs and other Arab states; Britain retracted the offer",
@@ -55,6 +62,7 @@ add("Cause A: Decolonisation", { id:"ai-1930s-mandate", title:"Arab Revolt, Peel
        "Pacified Arabs temporarily but seen by Jews as a betrayal of the Balfour pledge — especially tragic given the looming Holocaust"] });
 add("Cause A: Decolonisation", { id:"ai-ww2-withdrawal", title:"Why British withdrawal became inevitable", when:"1945–Feb 1947",
   q:"What five factors made British withdrawal from Palestine, and a Jewish state, almost inevitable after WWII?",
+  exp:"These factors reinforced each other: Britain was too weakened to keep paying for the Mandate, the US was now backing a Jewish state, the Holocaust and refugee crisis made Zionist statehood seem urgent and won sympathy, and violence made British rule untenable. Together they explain why Britain handed the problem to the UN in 1947, and why the path to a Jewish state looked almost inevitable.",
   pts:["Decline of British Empire: post-war economic crisis made the costly Mandate unsustainable; Britain sought an “honourable way out” from 1945",
        "US willingness to get involved: Jewish-American Zionist lobbying; by 1944 most US politicians backed a Jewish state",
        "Holocaust: murder of 6 million Jews intensified the push for statehood as the only guarantee of Jewish security, and won sympathy",
@@ -63,6 +71,7 @@ add("Cause A: Decolonisation", { id:"ai-ww2-withdrawal", title:"Why British with
        "By Feb 1947 Britain decided to end the Mandate, withdraw, and hand the problem to the UN"] });
 add("Cause A: Decolonisation", { id:"partition", title:"UN Partition Plan (Resolution 181)", when:"29 Nov 1947",
   q:"What did the 1947 UN Partition Plan propose, how did each side respond, and how was it voted?",
+  exp:"UNSCOP judged both claims valid but irreconcilable, so partition seemed the only option, yet its design created new problems: fragmented, non-contiguous states and a large Arab population inside the Jewish state. Zionists accepted it as a first step despite reservations, while Arab leaders rejected it outright and prepared for war. The vote turned a political dispute into open civil conflict.",
   clue:"UNSCOP judged both claims equally valid but irreconcilable; the General Assembly voted 33–13 with 10 abstentions.",
   pts:["UNSCOP: Jewish and Arab claims equally valid but irreconcilable — recommended separate Arab and Jewish states",
        "Arab state: Gaza strip, Galilee, Nablus/Hebron/Beersheba area (~43%, incl. the water-rich highlands)",
@@ -72,11 +81,13 @@ add("Cause A: Decolonisation", { id:"partition", title:"UN Partition Plan (Resol
        "Resolution 181 passed UNGA 29 Nov 1947: 33 for, 13 against, 10 abstentions; all 5 Arab member states voted against"] });
 add("Cause A: Decolonisation", { id:"ai-civil-war-4748", title:"Civil war and end of the Mandate", when:"1947–14 May 1948",
   q:"What happened between the partition vote and the end of the Mandate?",
+  exp:"Once partition passed, both communities fought to control territory before the British left, and Britain intervened only occasionally as it withdrew. Plan Dalet showed Zionist forces taking land beyond the partition lines. When the Mandate expired on 14 May 1948, the power vacuum meant there was no authority to stop communal fighting turning into a full war.",
   pts:["1947–48 Civil War between Jewish and Arab communities as the British organised withdrawal, intervening only occasionally",
        "Zionist forces launched Plan Dalet, conquering territory beyond the partition lines",
        "At midnight, 14 May 1948, the Mandate expired and Britain disengaged, leaving a power vacuum"] });
 add("Cause A: Decolonisation", { id:"ai-superpower-israel", title:"Superpower support for the formation of Israel", when:"1917–1948",
   q:"Why did both the USA and the USSR support the formation of Israel?",
+  exp:"The two superpowers backed Israel for different reasons. US support grew from Zionist lobbying, Holocaust revelations and Truman’s sympathy, shifting political Zionism’s centre to Washington. The USSR set aside its ideological hostility to Zionism out of pragmatism, hoping Israel would be socialist and would speed Britain’s decline. Their rare agreement helped partition pass and gave Israel immediate recognition.",
   pts:["USA: Wilson endorsed the Balfour Declaration and the Mandate; 1942 Biltmore Program called for unrestricted Jewish immigration and a Jewish state",
        "Holocaust revelations shifted the centre of political Zionism from London to Washington",
        "Truman (sympathetic due to evangelical upbringing) endorsed the 1947 Partition Plan and recognised Israel on 14 May 1948",
@@ -85,6 +96,7 @@ add("Cause A: Decolonisation", { id:"ai-superpower-israel", title:"Superpower su
        "USSR supported partition in 1947, preferring a binational state but backing partition as the fallback"] });
 add("Cause A: Decolonisation", { id:"ai-us-objectives", title:"US involvement and objectives", when:"1947 onward",
   q:"What drew the US into the Middle East, and what were its objectives?",
+  exp:"The decline of Britain and France left a vacuum the US filled, mainly for oil and to contain Soviet expansion. Its commitment to Israel, reinforced by a strong domestic lobby, sometimes strained relations with Arab states, so the US used aid and arms sales to keep clients in its orbit and tip the regional balance. This tension between oil interests and support for Israel runs through US policy in every war.",
   pts:["Post-WWII vacuum (decline of Britain/France); motivated by oil and commercial interests",
        "Truman Doctrine (March 1947) committed the US to containing Soviet expansion in the Middle East; strong domestic pro-Israel lobby",
        "Economic: steady flow of Arab oil — its loss would cut US GNP by ~13%",
@@ -93,6 +105,7 @@ add("Cause A: Decolonisation", { id:"ai-us-objectives", title:"US involvement an
        "Arms balance: weapons to US clients (Israel, Saudi Arabia, pre-revolutionary Iran)"] });
 add("Cause A: Decolonisation", { id:"ai-ussr-involvement", title:"Soviet involvement over time", when:"1940s–1973+",
   q:"How did Soviet involvement in the Middle East evolve from the 1940s to after 1973?",
+  exp:"Soviet involvement grew in reaction to Western moves such as the Baghdad Pact, and Arab ties to Moscow rested more on anti-Western feeling than real loyalty. Arms transfers bought ties with radical states like Egypt and Syria, but the USSR mostly reacted to events rather than controlling them, and its influence waned after 1973. This supports arguments that Soviet power in the region was limited and cautious.",
   pts:["Both superpowers sought influence to safeguard oil interests and strategic routes by cultivating client states",
        "1940s: limited involvement, focused on Eastern Europe",
        "1950s (Khrushchev): “courtship phase” responding to Western encirclement (Baghdad Pact); Arab ties driven more by anti-Western than pro-Soviet feeling",
@@ -103,6 +116,7 @@ add("Cause A: Decolonisation", { id:"ai-ussr-involvement", title:"Soviet involve
 /* ── 1.4–1.5 Security & Territorial Sovereignty ── */
 add("Cause B: Security", { id:"ai-security", title:"Arab vs Israeli security interests", when:"1948–1979",
   q:"Compare Arab and Israeli security interests as causes of the conflict.",
+  exp:"Each side’s security needs fed the other’s fears. Arab states worried about Israeli expansion and wanted to balance its military strength, while Israel felt existentially threatened by hostile neighbours and border attacks, so it built up military superiority. That superiority in turn confirmed Arab fears, creating a security dilemma that made the conflict self-reinforcing.",
   pts:["Arab: territorial integrity — concern over Israeli expansionism/annexation (occupied territories, Golan Heights)",
        "Arab: regional balance of power — counterbalance Israeli military power via alliances",
        "Arab: Palestinian issue seen as central to Arab solidarity and security",
@@ -111,6 +125,7 @@ add("Cause B: Security", { id:"ai-security", title:"Arab vs Israeli security int
        "Israeli: military superiority — heavy investment in defence tech, intelligence, missile defence"] });
 add("Cause C: Territorial Sovereignty", { id:"ai-declaration", title:"Declaration of the State of Israel", when:"14 May 1948",
   q:"How did the declaration of Israel turn territorial disputes into war?",
+  exp:"Both sides had been arming since partition, so Israel’s declaration of statehood on 14 May 1948 immediately triggered invasion by neighbouring Arab states. The attack galvanised Israeli society and the IDF expanded rapidly, while Plan Dalet aimed to push borders beyond the UN lines and remove Palestinian Arabs. The dispute over sovereignty thus turned from communal fighting into inter-state war.",
   clue:"At midnight the Jewish Agency proclaimed a state in its allotted territory; Ben-Gurion became PM and Weizmann President.",
   pts:["Both sides began arming themselves after Zionists accepted partition",
        "Mandate formally ended 15 May 1948",
@@ -122,6 +137,7 @@ add("Cause C: Territorial Sovereignty", { id:"ai-declaration", title:"Declaratio
 /* ── 1.6 Cause D: Nationalism ── */
 add("Cause D: Nationalism", { id:"ai-arab-nationalism", title:"Arab and Pan-Arab nationalism", when:"19th c.–1960s",
   q:"What were the elements of Arab nationalism, and what did Pan-Arab nationalism advocate?",
+  exp:"Arab nationalism was defined by what it opposed: Ottoman rule, European colonialism and Zionism. Because its supporters disagreed over territory and political systems, it split after WWI into Pan-Arabism and local nationalisms. Pan-Arabism’s goal of one Arab nation peaked in the 1960s, which helps explain both Nasser’s appeal and why its decline after 1967 mattered.",
   pts:["Schulze (2017): Zionism and Arab nationalism developed almost in parallel in the 19th c. as secular ideologies of emancipation and self-determination",
        "Arab nationalism’s three elements: anti-Turkish, anti-colonial/anti-imperial, anti-Zionist",
        "Not unified — differing views on autonomy, territorial unit, political system → split into Pan-Arab and localised nationalisms after WWI",
@@ -129,12 +145,14 @@ add("Cause D: Nationalism", { id:"ai-arab-nationalism", title:"Arab and Pan-Arab
        "Advocated political, cultural, socioeconomic unity of all Arabs (Mashreq to Maghreb) in a single nation-state based on shared language and history"] });
 add("Cause D: Nationalism", { id:"ai-palestinian-nationalism", title:"Palestinian Arab nationalism", when:"early 20th c.",
   q:"How and when did Palestinian Arab nationalism develop?",
+  exp:"Palestinian identity was slow to form: most people identified with family, village or religion, with nationalism mostly among intellectuals. It developed specifically in reaction to Zionism and only became a cohesive national discourse during the 1936–39 Arab Revolt against the Zionist project and British rule. This shows Palestinian nationalism was shaped by the conflict itself.",
   pts:["Formed in the early 20th century specifically in opposition to Zionism",
        "Most Palestinian Arabs identified by family/tribe/village/religion rather than nationally",
        "Nationalist self-definition among intellectuals traced back to Ottoman reforms of 1872",
        "A cohesive national discourse only emerged with the 1936–1939 Arab Revolt, a reaction to Zionism and British colonialism"] });
 add("Cause D: Nationalism", { id:"ai-zionism-herzl", title:"Zionism and Theodor Herzl", when:"1896–1897",
   q:"Distinguish classical from modern political Zionism, and explain Herzl’s role.",
+  exp:"Classical Zionism was a religious hope tied to the coming of the Messiah, while modern political Zionism was a secular, Enlightenment-influenced answer to European antisemitism that rejected assimilation. Herzl turned the idea into an organised movement through Der Judenstaat and the First Zionist Congress, setting the practical aims of immigration and land acquisition that directly brought Zionism into competition with Arabs in Palestine.",
   clue:"Viennese journalist who wrote Der Judenstaat and convened a congress in Basle.",
   pts:["Classical Zionism: Diasporic ties to the Land of Israel and belief in restoration with the Messiah’s coming",
        "Modern political Zionism: 19th c., influenced by Enlightenment ideas; rejected assimilation; Jewish state the only solution to European antisemitism",
@@ -145,12 +163,14 @@ add("Cause D: Nationalism", { id:"ai-zionism-herzl", title:"Zionism and Theodor 
 /* ── 1.7 Cause E: Religion ── */
 add("Cause E: Religion", { id:"ai-early-clashes", title:"Early clashes under the Mandate", when:"1920",
   q:"What were the early clashes under the Mandate and how did Jewish and Arab organisation differ?",
+  exp:"The 1920 riots showed Arab anger at growing Jewish settlement from the start of the Mandate. The key contrast is organisational: Jews built strong institutions like the Jewish Agency, while Palestinian Arabs stayed divided by family and religious loyalties and could not form comparable bodies. This imbalance gave the Zionist movement a lasting advantage in pressing its claims.",
   pts:["April 1920: Arab riots vented frustration at growing Jewish settlement and organisation",
        "Sir Herbert Samuel — first civilian governor, a prominent Zionist — tried to be fair to both sides",
        "Jews developed extensive institutions (Jewish Agency for Palestine, Jewish National Council)",
        "Palestinian Arabs remained divided by family/religious loyalty, unable to form comparable unified bodies"] });
 add("Cause E: Religion", { id:"ai-wailing-wall", title:"1929 Wailing Wall Incident", when:"1928–1929",
   q:"What triggered the 1929 Wailing Wall Incident and what were its consequences?",
+  exp:"A small dispute over benches and a screen at the Western Wall escalated because Muslims saw it as strengthening Jewish claims to a site bound up with the Temple Mount. The violence exposed Britain’s inability to protect civilians, and its response angered both sides in turn: the Passfield White Paper upset Zionists, then British backtracking upset Arabs. It shows how religion intensified the national conflict.",
   clue:"Benches and a screen brought by worshippers to a holy wall were seized by police, sparking a small civil war.",
   pts:["Trigger: 1928 dispute over Jewish worshippers bringing benches/a screen to the Western Wall — seen by Muslims as strengthening Jewish claims and blocking a thoroughfare",
        "Police seized the items, provoking Zionist protests; fights escalated into a small civil war over the following year",
@@ -159,6 +179,7 @@ add("Cause E: Religion", { id:"ai-wailing-wall", title:"1929 Wailing Wall Incide
        "Britain’s subsequent backtracking then angered Arabs"] });
 add("Cause E: Religion", { id:"ai-1930s-religion", title:"1930s escalation and 1939 roundtable", when:"1933–1939",
   q:"How did the conflict escalate in the 1930s, and why did both sides reject the 1939 White Paper?",
+  exp:"Rising Jewish immigration after 1933 fuelled Arab fears and the 1936 Revolt, and the failure of Peel and the 1939 conference showed the sides would not even talk. The 1939 White Paper was rejected by both: Jews saw it as betrayal at their moment of greatest peril, while Arabs objected that it delayed independence and did not fully stop immigration. A policy that pleased neither shows how irreconcilable the aims had become.",
   pts:["Hitler’s rise (from 1933) caused a flood of Jewish immigration → 1936 Arab Revolt",
        "Peel Commission (1937) partition rejected by Palestinian Arabs (backed by Arab states); Britain retracted",
        "1939 roundtable conference failed — Jewish and Arab leaders would not even sit together",
@@ -166,6 +187,7 @@ add("Cause E: Religion", { id:"ai-1930s-religion", title:"1930s escalation and 1
        "Jews: betrayal of Balfour on the eve of the Holocaust; Arabs: rejected it as it postponed independence and didn’t fully halt immigration"] });
 add("Cause E: Religion", { id:"ai-jerusalem", title:"Religious significance of Jerusalem", when:"framework",
   q:"Why does Jerusalem’s significance to three faiths make territorial compromise so fraught?",
+  exp:"Jerusalem holds core holy sites for all three faiths, and they physically overlap: the Western Wall is part of the enclosure of the Temple Mount, where the Dome of the Rock and al-Aqsa stand. As Goldschmidt and Al-Marashi note, Muslims feared Jewish actions at the Wall could become a claim on the Mount itself. Overlapping sacred claims make dividing or sharing the city especially difficult.",
   pts:["Judaism: promised land; holiest city; Temple Mount held the biblical Temples; Jews pray facing Jerusalem; Western Wall the holiest accessible prayer site",
        "Islam: Temple Mount (al-Haram al-sharif) third-holiest site after Mecca and Medina — Night Journey and Ascension; Muslims originally prayed facing Jerusalem",
        "Christianity: life of Jesus; Church of the Holy Sepulchre (Crucifixion, burial, Resurrection); Garden of Gethsemane",
@@ -175,6 +197,7 @@ add("Cause E: Religion", { id:"ai-jerusalem", title:"Religious significance of J
 /* ── 1.8 Cause F: Economic Interests ── */
 add("Cause F: Economic Interests", { id:"ai-econ-disparities", title:"Economic disparities between Arabs and Jews", when:"1948–1979",
   q:"What economic disparities between Arabs and Jews fuelled the conflict (1948–1979)?",
+  exp:"After 1948, Israeli laws expropriated Palestinian land and gave it to Jewish settlements with better access to water, land and investment, while Arab workers faced discrimination and low wages. Refugees also strained the economies of host states. These inequalities deepened Palestinian grievances and poverty, so economics acted as an aggravating factor that kept the conflict alive.",
   pts:["Land: much pre-1948 land Arab-owned; Absentee Property Law, Land Acquisition Law expropriated Palestinian land",
        "Expropriated land went to Jewish settlements/kibbutzim with strong government support",
        "Jewish settlements got preferential access to water, fertile land, infrastructure; Arab towns received less government funding",
@@ -182,6 +205,7 @@ add("Cause F: Economic Interests", { id:"ai-econ-disparities", title:"Economic d
        "Refugee influx strained host states, causing marginalisation, unemployment and poverty among Palestinians"] });
 add("Cause F: Economic Interests", { id:"ai-anglo-french-econ", title:"Anglo-French economic and strategic interests", when:"1916–1963",
   q:"What were Britain’s and France’s economic and strategic interests regarding Israel?",
+  exp:"Anglo-French interests explain both the Sykes-Picot carve-up and later support for Israel. France became a close military ally in the 1950s, supplying arms and nuclear help, because it shared Israel’s hostility to radical Arab nationalism given its own war in Algeria. Britain kept trade and investment ties. These links led directly to the 1956 collusion against Nasser.",
   pts:["Sykes-Picot driven by French investments in Syria (esp. Aleppo) and Britain’s access to India via Suez and the Persian Gulf",
        "Both UK and France recognised Israel early and supported its UN membership",
        "France: one of Israel’s closest military allies in the 1950s — weapons from 1953, Mirage fighters, first nuclear reactor (agreement Oct 1957, completed 1963)",
@@ -190,6 +214,7 @@ add("Cause F: Economic Interests", { id:"ai-anglo-french-econ", title:"Anglo-Fre
        "1956: Israel, France, UK conspired over Suez (detailed in Part 2)"] });
 add("Cause F: Economic Interests", { id:"ai-weigh-causes", title:"Weighing the causes", when:"essay skill",
   q:"How should the six causes of the Arab-Israeli conflict be weighed against each other?",
+  exp:"The exam focus asks you to weigh causes, not list them. A strong line is that decolonisation, through Britain’s contradictory promises, created the structural conditions, while competing Arab and Jewish nationalisms made two peoples’ claims to the same land irreconcilable. Religion and economics then work best as factors that intensified the conflict rather than root causes.",
   pts:["Weigh the six factors rather than just list them",
        "Decolonisation (contradictory British promises) created the structural conditions",
        "Competing nationalisms (Arab vs Jewish) made conflict over the same land essentially irreconcilable",
@@ -198,6 +223,7 @@ add("Cause F: Economic Interests", { id:"ai-weigh-causes", title:"Weighing the c
 /* ── Part 2: 1948 War ── */
 add("1948 War / Al Nakba", { id:"1948war", title:"1948 War of Independence / Al Nakba", when:"Dec 1947–Jan 1949",
   q:"How do Israeli and Arab narratives of the 1948 war differ, and what were its key dates?",
+  exp:"The two names show how one war carries opposite meanings: for Israel it was survival and statehood, for Palestinians a catastrophe of defeat and dispersal. The timeline shows the pattern of the war: invasion, UN truces that were broken, Bernadotte’s assassination, then a series of separate armistices in 1949. This contested memory is useful evidence when discussing how narratives shape the conflict.",
   clue:"First conflict of the series; one side calls it independence, the other “the Catastrophe”.",
   pts:["Israeli: “War of Independence” — Israel proclaimed, survived the Arab invasion, expanded territory",
        "Arab: “Al Nakba” (“The Catastrophe”) — Arab defeat, de-legitimation of Arab governments, dispersal of Palestinians",
@@ -207,6 +233,7 @@ add("1948 War / Al Nakba", { id:"1948war", title:"1948 War of Independence / Al 
        "Armistices: Egypt 24 Feb, Lebanon 23 Mar, Jordan 3 Apr, Syria 20 Jul 1949"] });
 add("1948 War / Al Nakba", { id:"ai-1948-leadup", title:"Lead-up: inter-communal civil war", when:"Nov 1947–May 1948",
   q:"How did inter-communal violence develop after the partition vote?",
+  exp:"The partition plan created non-contiguous, indefensible territories containing hostile populations, so both sides armed to secure their areas. The Arab strike sparked clashes that became civil war, and atrocities like Deir Yassin and the convoy ambush escalated fear on both sides. Plan Dalet’s instructions to drive out inhabitants link this phase directly to the later refugee problem.",
   pts:["Proposed territories non-contiguous, indefensible, with pockets of ‘enemy population’",
        "Arab Higher Committee’s 2–4 Dec strike (echoing 1936–39) sparked clashes that became full civil war",
        "Atrocities: Deir Yassin massacre (250 Arabs killed); Arab ambush of a Jewish medical convoy (75 killed)",
@@ -214,6 +241,7 @@ add("1948 War / Al Nakba", { id:"ai-1948-leadup", title:"Lead-up: inter-communal
        "Haganah’s Plan Dalet: secure Jewish areas and UN-allotted territory; specified target Palestinian towns and instructions for driving out inhabitants"] });
 add("1948 War / Al Nakba", { id:"ai-1948-why-israel-won", title:"Why the Arabs lost in 1948", when:"1948–1949",
   q:"Why were the Arab states defeated in 1948?",
+  exp:"Arab armies were smaller, poorly equipped and divided, with states partly fighting to block each other’s gains rather than for Palestine. Israel’s forces were better trained, more motivated because they were fighting for survival, and actually outnumbered all Arab armies combined. Goldschmidt and Al-Marashi add that poor Arab morale was a major reason for defeat, so explanations should stress both Arab weakness and Israeli strength.",
   pts:["Invasion under the banner of ‘liberating Palestine’ turned communal violence into inter-state war",
        "Arab armies poorly equipped/trained (except Transjordan’s); disunity — states fought partly to block each other’s gains and compete for hegemony",
        "Israeli forces better trained and more motivated, fighting for survival",
@@ -221,6 +249,7 @@ add("1948 War / Al Nakba", { id:"ai-1948-why-israel-won", title:"Why the Arabs l
        "Israelis committed more troops than all Arab armies combined; poor Arab morale, fluctuating between under- and overestimating Jewish strength"] });
 add("1948 War / Al Nakba", { id:"ai-1948-powers", title:"Role of the great powers in 1948", when:"1948",
   q:"How did the great powers’ role in 1948 hurt the Arabs more than Israel?",
+  exp:"Great-power confusion hurt the Arabs more because Israel gained recognition from both superpowers and arms from Czechoslovakia despite the embargo. Britain, the power most inclined to favour the Arabs, was too dependent on the US to challenge its policy openly. So the outside support that mattered flowed to Israel, while the Arabs lacked a committed patron.",
   pts:["Confusion among the Great Powers hurt the Arabs more than Israel",
        "US and USSR both rushed to recognise Israel",
        "Communist Czechoslovakia sold large quantities of arms to Israel despite a general arms embargo",
@@ -228,6 +257,7 @@ add("1948 War / Al Nakba", { id:"ai-1948-powers", title:"Role of the great power
        "But Britain depended too heavily on US support to challenge US policy openly"] });
 add("1948 War / Al Nakba", { id:"ai-bernadotte", title:"Bernadotte’s mediation and the truces", when:"Jun–Sep 1948",
   q:"What did UN mediator Count Bernadotte achieve, and why did the truces fail?",
+  exp:"Bernadotte secured a truce meant to stop either side gaining advantage, but both bypassed its limits and the IDF used it to reorganise and receive Czech arms. His compromise plan was rejected by both sides, and fighting resumed after each truce. His assassination by the Stern Gang showed how little power UN mediation had amid entrenched violence.",
   clue:"Swedish count who secured a month-long truce from 11 June 1948 and was later killed by the Stern Gang.",
   pts:["Secured month-long truce from 11 Jun 1948, supervised by observers from Belgium, France, Sweden, US",
        "Both sides bypassed truce limits — IDF reorganised and trained as Czech materiel arrived",
@@ -236,6 +266,7 @@ add("1948 War / Al Nakba", { id:"ai-bernadotte", title:"Bernadotte’s mediation
        "Assassinated by Stern Gang in Sep 1948; American Ralph Bunche became mediator"] });
 add("1948 War / Al Nakba", { id:"ai-bunche-rhodes", title:"Bunche’s proximity talks on Rhodes", when:"Jan 1949",
   q:"How were the 1949 armistices secured, and what territory did Israel end up controlling?",
+  exp:"Because no Arab state would negotiate directly with Israel, Bunche used proximity talks, shuttling proposals between delegations in separate rooms. This produced the 1949 armistices, but they froze a military outcome in which Israel held over 75% of the former Mandate, far beyond the partition plan. The method ended the fighting without any mutual recognition.",
   clue:"Delegations sat in separate hotel suites on a Greek island while an American mediator shuttled proposals.",
   pts:["By early 1949 Israel controlled all of Palestine except Gaza (Egypt) and the West Bank (Jordan)",
        "Egyptian/Israeli delegations in separate hotel suites; Bunche shuttled proposals since no Arab state would negotiate directly",
@@ -243,6 +274,7 @@ add("1948 War / Al Nakba", { id:"ai-bunche-rhodes", title:"Bunche’s proximity 
        "Israel controlled over 75% of the former Mandate, far more than the Partition Plan proposed"] });
 add("1948 War / Al Nakba", { id:"ai-untso", title:"UNTSO and the Mixed Armistice Commissions", when:"29 May 1948",
   q:"What were UNTSO and the Mixed Armistice Commissions?",
+  exp:"UNTSO supervised the armistices and became a vital communication channel between enemies who would not otherwise talk. The MACs, with a UNTSO chairman holding the deciding vote, were the only formal forum where Arabs and Israelis met. Their importance shows how limited contact was, but as unarmed observers they could report violations, not stop them.",
   pts:["UNTSO established by UNSC Resolution 50; mandate reaffirmed by Resolution 73 (1949)",
        "Supervised the four General Armistice Agreements; vital communication channel between implacable enemies",
        "By 1953 UNTSO superseded the UNCCP as the primary UN Middle East mechanism",
@@ -250,6 +282,7 @@ add("1948 War / Al Nakba", { id:"ai-untso", title:"UNTSO and the Mixed Armistice
        "MACs were the only formal forum where Arabs and Israelis could meet"] });
 add("1948 War / Al Nakba", { id:"ai-unccp-lausanne", title:"UNCCP and the Lausanne Conference", when:"Dec 1948–Sep 1949",
   q:"What were the UNCCP and the Lausanne Conference, and what did they achieve?",
+  exp:"The UNCCP was created to reach a final settlement on borders, refugees and territory, and it convened the Lausanne Conference to pair Arab refugee concerns with Israeli border concerns. Lausanne ended without agreement, showing that bringing the parties together could not bridge irreconcilable aims. It is evidence that diplomacy in 1949 failed at the deeper root causes.",
   clue:"Commission created by GA Resolution 194 convened a Swiss conference seeking a declaration of principles.",
   pts:["UNCCP established by GA Resolution 194 (Dec 1948): France, Turkey, US and UNTSO",
        "Tasked with final settlement — borders, refugees, status of West Bank/Gaza/East Jerusalem; proposed Lausanne",
@@ -258,12 +291,14 @@ add("1948 War / Al Nakba", { id:"ai-unccp-lausanne", title:"UNCCP and the Lausan
        "Unresolved tensions meant both sides kept pursuing irreconcilable aims beyond diplomacy"] });
 add("1948 War / Al Nakba", { id:"ai-arab-divisions-1948", title:"Arab divisions in 1948", when:"1948",
   q:"How were the Arab states divided during the 1948 war?",
+  exp:"Arab unity against partition hid rival ambitions: Abdullah wanted a Greater Syria, which Egypt and Saudi Arabia opposed for fear of Hashemite expansion. On the battlefield the Egyptian army and Arab Legion undercut each other, then blamed one another for defeat. This disunity is a key reason the Arabs lost and helps explain the political instability that followed.",
   pts:["United in opposing partition but deeply divided in practice",
        "Jordan’s King Abdullah wanted a “Greater Syria”; Egypt and Saudi Arabia opposed it, fearing Hashemite expansion",
        "Egyptian army and Arab Legion undercut each other",
        "As the tide turned, they blamed one another for the defeat"] });
 add("1948 War / Al Nakba", { id:"ai-refugees-1948", title:"The Palestinian refugee problem", when:"1948–1949",
   q:"How large was the 1948 refugee problem, and why was it not resolved?",
+  exp:"The refugee problem was huge, and it stayed unresolved because every party had reasons to block a solution: most Arab states refused to absorb refugees for political reasons, refugees wanted to return home, and Israel feared a hostile fifth column. The causes are contested, with Israel blaming Arab states and Arabs alleging deliberate expulsion. UNRWA camps became sites of lasting bitterness that shaped Palestinian identity.",
   pts:["200,000 had left before the Arab invasion; UN estimated 750,000 by early 1949, 940,000 by June 1949, from 369 towns/villages",
        "~150,000 remained and became Israeli citizens",
        "Israel: invading Arab armies urged Palestinians to vacate temporarily; Arabs: deliberate expulsion/ethnic cleansing",
@@ -272,6 +307,7 @@ add("1948 War / Al Nakba", { id:"ai-refugees-1948", title:"The Palestinian refug
        "Defeat and dispossession became foundational to Palestinian identity; refugees destabilised host states"] });
 add("1948 War / Al Nakba", { id:"ai-1948-impact", title:"Regional impact of the 1948 war", when:"1949–1952",
   q:"What was the impact of the 1948 war on the region?",
+  exp:"Israel gained territory but, without Arab recognition, remained a garrison state with no real security, and partitioned Jerusalem fuelled aims for a united city. Defeat humiliated Arab regimes, leading to coups and assassinations in Syria, Jordan and Egypt, including Nasser’s rise, and a surge of Arab nationalism. The war’s outcome therefore set up the next conflicts.",
   pts:["Israel’s territory grew 21% beyond partition; only Gaza, East Jerusalem and the West Bank outside Israeli control",
        "Jerusalem’s partition (Jewish holy sites inaccessible) fuelled aspirations for a united Jerusalem",
        "Israel a “garrison state” — continued Arab non-recognition meant no real security",
@@ -279,6 +315,7 @@ add("1948 War / Al Nakba", { id:"ai-1948-impact", title:"Regional impact of the 
        "Surge in Arab nationalism as a direct response to defeat"] });
 add("1948 War / Al Nakba", { id:"ai-eval-truces-1948", title:"Evaluating the UN mediator and truces", when:"1948",
   q:"How effective were the UN mediator and truces in 1948?",
+  exp:"The truces did pause the fighting and Bernadotte tried to tackle the underlying partition issues, so there was some short-term success. But they were stop-gaps: Israel imported arms during them, fighting grew more intense afterwards, both sides rejected his plan, and his murder exposed the UN’s impotence. Overall this shows diplomacy managing symptoms rather than causes.",
   pts:["Achievement: both UNSC truces brought temporary cessation of fighting",
        "Achievement: Bernadotte’s Palestinian Union proposal (separate Jewish/Palestinian/Transjordan units) tried to resolve partition issues",
        "Limitation: short-lived stop-gaps — Israel imported arms despite the embargo; fighting intensified after each truce",
@@ -286,6 +323,7 @@ add("1948 War / Al Nakba", { id:"ai-eval-truces-1948", title:"Evaluating the UN 
        "Limitation: his assassination highlighted the impotence of UN recommendations"] });
 add("1948 War / Al Nakba", { id:"ai-eval-armistice", title:"Evaluating the 1949 Armistice Agreements", when:"1949",
   q:"How effective were the 1949 Armistice Agreements?",
+  exp:"The armistices ended active fighting, but they were not peace treaties: Arabs refused to recognise Israel and Israel refused territorial compromise. Specific demands such as Jordan’s land for peace, Syria’s claim on the Sea of Galilee and Egypt’s on the Negev were unacceptable to Israel. Because the aims stayed irreconcilable, the agreements contained the conflict without resolving it.",
   pts:["Achievement: series of separate agreements ending active violence in the immediate term",
        "Limitation: full peace never achieved — Arabs refused recognition; Israel refused territorial compromise",
        "Jordan never ratified the non-belligerency pact — Abdullah’s ‘land for peace’ demand unacceptable to Israel",
@@ -293,6 +331,7 @@ add("1948 War / Al Nakba", { id:"ai-eval-armistice", title:"Evaluating the 1949 
        "Irreconcilable aims: Arabs wanted repatriation + territory; Israel wanted recognition without concessions or compromising its Jewish character"] });
 add("1948 War / Al Nakba", { id:"ai-eval-untso", title:"Evaluating UNTSO, UNCCP and MACs", when:"1948–1956",
   q:"How effective were UNTSO, the UNCCP and the MACs as peacekeeping mechanisms?",
+  exp:"UNTSO and the MACs gave impartial reporting of breaches and the only formal Arab-Israeli forum, and grew more important as wider peace efforts stalled. Kopops et al. call UNTSO the most successful UN initiative in the region from 1948 to 1956. But they had no enforcement power, parties used meetings for propaganda, Israel withdrew from cooperation, and infiltration continued, so they observed rather than kept the peace.",
   pts:["Observers (22 officers by Aug 1949, under US Brig.-Gen. William Riley) investigated complaints and reported breaches",
        "MACs the only forum for formal contact, with theoretically binding chairman rulings; grew more important on refugees, Jerusalem, blockade",
        "Limitation: no mechanism to enforce MAC resolutions; parties argued their general cause rather than specific incidents",
@@ -301,6 +340,7 @@ add("1948 War / Al Nakba", { id:"ai-eval-untso", title:"Evaluating UNTSO, UNCCP 
        "Kopops et al. (2015): 1948–56 UNTSO was the most successful UN initiative in the region; observers often scapegoats, but its peace observation survived collapse of peace conferences"] });
 add("1948 War / Al Nakba", { id:"ai-1948-negative-peace", title:"1948: negative vs positive peace", when:"essay skill",
   q:"What is the key argument on the effectiveness of conflict management in 1948?",
+  exp:"The exam focus argument separates two goals: ending fighting (negative peace) and resolving root causes (positive peace). In 1948–49 the UN mechanisms achieved the first but not the second, so territory, refugees and non-recognition carried forward into 1956, 1967 and 1973. This is a useful framework for judging every later intervention.",
   pts:["Mechanisms succeeded at the LIMITED goal of ending active fighting (negative peace)",
        "Failed at resolving root causes (positive peace)",
        "Territorial disputes, refugee status and mutual non-recognition carried forward into 1956, 1967 and 1973"] });
@@ -308,6 +348,7 @@ add("1948 War / Al Nakba", { id:"ai-1948-negative-peace", title:"1948: negative 
 /* ── Part 3: Suez Crisis ── */
 add("Suez Crisis (1956)", { id:"suez", title:"Suez Crisis / Tripartite Aggression", when:"Oct–Nov 1956",
   q:"What was the nature of the 1956 Suez-Sinai campaign, and what were its key dates?",
+  exp:"Suez was two coordinated operations, Anglo-French and Israeli, held together by shared hostility to Nasser rather than a long alliance. France’s conflict with Egypt over Algeria made it Israel’s partner and arms supplier. The timeline shows the speed of events, from canal nationalisation to invasion, then UN resolutions and a ceasefire within days, followed by a UNEF deployment that lasted until 1967.",
   clue:"Two coordinated operations — one Anglo-French, one Israeli — aimed at deposing Nasser after he nationalised a waterway.",
   pts:["Two separate but coordinated operations sharing the aim of deposing Nasser — a convergence of interests, not a long-standing alliance",
        "Israel–Britain relations rocky; Israel–France cordial under Mendès-France, reinforced by French-Egyptian tension over Algeria; Israel acquired French warplanes and reactor help",
@@ -317,18 +358,21 @@ add("Suez Crisis (1956)", { id:"suez", title:"Suez Crisis / Tripartite Aggressio
        "UNEF I deployed 7 Nov 1956–17 Jun 1967"] });
 add("Suez Crisis (1956)", { id:"ai-nasser-rise", title:"Rise of Nasser", when:"1952–1955",
   q:"How did Nasser rise to power, and what policies made him a threat to Israel and the West?",
+  exp:"Nasser came to power through the 1952 coup and pursued Arab Socialism and the Aswan Dam. Buying arms from communist states defied the West and drew Soviet aid, while after the 1955 Gaza Raid he waged what amounted to economic warfare on Israel through commando camps, boycott and closing shipping routes. He thus became a threat to both Western interests and Israeli security, uniting them against him.",
   pts:["1952 coup against the corrupt King Farouk; Nasser in power from 1954",
        "‘Arab Socialism’: nationalised foreign banks/insurance, encouraged industrialisation, pursued the Aswan Dam (electricity, flood control, +25% arable land)",
        "Bought $200 million of arms from communist countries, drawing Soviet aid",
        "After the 1955 Gaza Raid: commando camps for refugees, economic boycott, closure of Suez Canal and Gulf of Aqaba to Israeli shipping — economic warfare"] });
 add("Suez Crisis (1956)", { id:"ai-fedayeen-tensions", title:"Fedayeen raids and border clashes", when:"1950–1956",
   q:"How did fedayeen raids and border clashes heighten Israeli-Egyptian tensions in the 1950s?",
+  exp:"Fedayeen raids caused rising Israeli casualties through the 1950s, and Israel’s harsh responses, shoot-to-kill orders, mining and expulsions, hardened Arab attitudes in turn. Both sides also used covert action: Egypt only backed saboteurs after the 1955 Gaza Raid, while Israel’s own saboteurs tried to split Egypt from the West. The cycle of raid and reprisal built the tension that fed into Suez.",
   pts:["Fedayeen raids from Gaza, Jordan, Syria intensified — Israeli deaths/wounded rose from 19/31 (1950) to 54/129 (1956)",
        "Israel responded with shoot-to-kill orders, border mining, expulsion operations — hardening Arab attitudes",
        "By mid-1953 Israel accused Egypt of using minelayers/saboteurs with Bedouin guides; Egyptian state support began only after the 1955 Gaza Raid",
        "Israel’s own saboteurs (arrested by Egypt) sought discord between Egypt and the West, stalling British withdrawal and Western aid"] });
 add("Suez Crisis (1956)", { id:"ai-gaza-raid-czech", title:"1955 Gaza Raid and Czech Arms Deal", when:"Feb 1955–Apr 1956",
   q:"How did the 1955 Gaza Raid lead to an arms race between Egypt and Israel?",
+  exp:"A single killing led to Israel’s Gaza Raid, which killed 38 Egyptian soldiers and pushed Nasser to seek arms from the Soviet bloc. The Czech deal and the closure of the Straits of Tiran looked to Israel like a decisive shift in the balance, so it turned to France for large arms supplies. This action-reaction chain shows how local reprisals escalated into a regional arms race with outside powers drawn in.",
   clue:"Operation Black Arrow killed 38 Egyptian soldiers; Cairo replied with MiGs, tanks and bombers from the Soviet bloc.",
   pts:["Feb 1955: Egyptian squad killed an Israeli cyclist near Rehovot",
        "Operation Black Arrow (Gaza Raid, 28 Feb) killed 38 Egyptian soldiers",
@@ -337,12 +381,14 @@ add("Suez Crisis (1956)", { id:"ai-gaza-raid-czech", title:"1955 Gaza Raid and C
        "French aid: 12 Mystère IV fighters (Apr 1956), then 72 more Mystères, 120 AMX light tanks, 40 Super Sherman tanks"] });
 add("Suez Crisis (1956)", { id:"ai-canal-nationalisation", title:"Nationalisation of the Suez Canal", when:"26 Jul 1956",
   q:"Why did Nasser nationalise the Suez Canal and why were Britain and France outraged?",
+  exp:"Nasser nationalised the canal to pay for the Aswan Dam after the US withdrew funding to pressure him, so the move was partly a response to Western leverage. For Britain and France it threatened their shareholdings and access to Middle East oil, and confirmed their suspicion of his anti-colonial stance, which is why they were outraged even though he offered full compensation.",
   pts:["Canal completed by French engineers in 1869; controlled by Britain/France for 87 years; vital for cheap oil shipping to Europe",
        "Nationalised to fund the Aswan Dam after the US withdrew Aswan financing in July 1956",
        "Threatened British/French stockholdings and Western access to Middle East oil",
        "Britain/France outraged despite Nasser’s offer of full compensation"] });
 add("Suez Crisis (1956)", { id:"ai-sevres-collusion", title:"British-French-Israeli collaboration", when:"Spring–Nov 1956",
   q:"What were the motives and plan behind British-French-Israeli collaboration in 1956?",
+  exp:"Each partner had its own motive: France wanted to stop Egyptian support for Algeria, Britain feared losing influence, oil routes and ground to the Soviets, and Israel wanted to end raids and the blockade. The plan used Israel’s invasion as a pretext for Anglo-French ‘intervention’ to ‘protect’ the canal. US pressure halted the operation, exposing how far the old powers now depended on Washington.",
   pts:["Spring 1956: France concluded controlling the Algerian revolution required overthrowing Nasser",
        "French shuttle diplomacy (Sep–Oct 1956) secured the tripartite alliance",
        "Britain: Middle East oil production share fell 49%→14%; Egypt rejected the Baghdad Pact; Czech deal signalled Soviet influence; Canal its key oil route",
@@ -351,18 +397,21 @@ add("Suez Crisis (1956)", { id:"ai-sevres-collusion", title:"British-French-Isra
        "200 British/French bombers destroyed economic targets and air force; paratroops forced to halt by US pressure"] });
 add("Suez Crisis (1956)", { id:"ai-us-halts-suez", title:"Why the US intervened to halt the war", when:"Nov 1956",
   q:"Why did the US intervene to halt the Suez war?",
+  exp:"The US acted for Cold War and political reasons rather than out of sympathy for Egypt: it feared Soviet intervention and disruption to NATO oil supplies, wanted to stay even-handed for oil interests, and Eisenhower was campaigning on peace. Backing the invasion would also have been hypocritical while condemning the Soviet crackdown in Hungary. This shows the US emerging as the decisive arbiter in the region.",
   pts:["Fear full-scale war would invite Soviet intervention; Dulles saw the Canal as crucial to NATO oil supplies",
        "US policy of even-handedness, driven by oil interests and arms-race prevention",
        "Eisenhower’s 1956 re-election campaign on a peace platform",
        "US had just condemned Soviet intervention in Hungary — backing aggression in Egypt would be hypocritical and distract from Soviet actions"] });
 add("Suez Crisis (1956)", { id:"ai-res-997-998", title:"UNGA Resolutions 997 and 998", when:"2–4 Nov 1956",
   q:"What did UNGA Resolutions 997 and 998 do, and how did the US force capitulation?",
+  exp:"Resolution 997 demanded a ceasefire and withdrawal, and Israel’s acceptance under US pressure left Britain and France stranded mid-invasion. The US then used economic pressure, threatening sanctions and the collapse of the pound, to force them to give in. Resolution 998 created the emergency force that became UNEF I, so US pressure plus UN machinery ended the war together.",
   pts:["Res 997 (2 Nov, US-sponsored): immediate ceasefire and withdrawal of all forces from Egypt",
        "Israel, under severe US pressure, accepted — leaving Britain/France mid-invasion without the Canal",
        "US threatened sanctions, severing US–Israeli relations, and selling sterling reserves to collapse the pound",
        "Res 998 (4 Nov): authorised the UN Secretary-General to set up an emergency international UN Force"] });
 add("Suez Crisis (1956)", { id:"ai-hammarskjold", title:"Hammarskjöld and ‘Chapter Six and a Half’", when:"1956",
   q:"How did Dag Hammarskjöld define UN peacekeeping during Suez?",
+  exp:"Resolution 998 gave little detail, so Hammarskjöld effectively invented peacekeeping himself. His ‘Chapter Six and a Half’ idea placed it between peaceful settlement and enforcement, and his three principles of consent, impartiality and non-use of force set the rules for future missions. The consent principle, however, later became UNEF I’s fatal weakness.",
   clue:"Swedish Secretary-General who coined a phrase placing peacekeeping between two Charter chapters.",
   pts:["Res 998 gave wide latitude with no articulated strategy — he largely defined strategy himself",
        "“Chapter Six and a Half”: between peaceful resolution (Ch VI) and forceful action (Ch VII), neither explicit in the Charter",
@@ -370,6 +419,7 @@ add("Suez Crisis (1956)", { id:"ai-hammarskjold", title:"Hammarskjöld and ‘Ch
        "Published in the ‘Summary Study’ of UNEF I"] });
 add("Suez Crisis (1956)", { id:"ai-unef1", title:"UNEF I mandate", when:"7 Nov 1956–17 Jun 1967",
   q:"What was UNEF I’s mandate and why was it new?",
+  exp:"UNEF I was new because it combined observer functions with Hammarskjöld’s peacekeeping principles, deploying a force rather than just observers as in 1948–49. Its tasks, supervising withdrawal, acting as a buffer, clearing the canal and supporting the armistice, show it was designed to hold the ceasefire in place. It was run by the Secretary-General under General Assembly authority.",
   pts:["First-ever combination of observer-mission elements with new peacekeeping principles — unlike 1948/49 observer missions",
        "Set up by the General Assembly as a subsidiary organ under Article 22, directed by the Secretary-General",
        "Supervise withdrawal of French, Israeli and UK forces from Egypt",
@@ -377,6 +427,7 @@ add("Suez Crisis (1956)", { id:"ai-unef1", title:"UNEF I mandate", when:"7 Nov 1
        "Supervise the Canal clearing; secure cooperation in implementing the armistice"] });
 add("Suez Crisis (1956)", { id:"ai-eval-hammarskjold-unef1", title:"Evaluating Hammarskjöld and UNEF I", when:"1956–1967",
   q:"How effective were Hammarskjöld and UNEF I in managing the conflict?",
+  exp:"UNEF I achieved withdrawal, reopened the canal and kept a relatively quiet decade, setting the model for later missions. But its dependence on consent was a structural flaw: when Nasser ordered it out in 1967, U Thant had to comply, and the war followed. Being lightly armed and thinly spread also limited it. The exam focus uses this to show both innovation and weakness.",
   pts:["Hammarskjöld defined peacekeeping for the first time; ‘Summary Study’ set precedent for future PKOs; kept Israeli-Egyptian peace for 11 years",
        "UNEF I: orderly withdrawal of Israeli, British, French forces; Canal reopened; 1957–1967 a relatively quiet decade",
        "Set precedent: consent, neutrality, minimum force",
@@ -385,6 +436,7 @@ add("Suez Crisis (1956)", { id:"ai-eval-hammarskjold-unef1", title:"Evaluating H
        "~500 sq km covered by only 72 permanent observation posts"] });
 add("Suez Crisis (1956)", { id:"ai-suez-consequences", title:"Consequences of the Suez War", when:"1956–",
   q:"What were the consequences of the Suez War for each party?",
+  exp:"Suez had an ironic outcome: Egypt lost militarily but Nasser won prestige for defying the West and kept the canal. Israel gained shipping rights, fewer raids and a stronger reputation. Britain and France were the real losers as their influence collapsed, and the vacuum was filled by the US and USSR. This is the turning point for the shift from European to superpower influence.",
   pts:["Egypt: military defeat but immense prestige for defying the West; kept the Canal, nationalised remaining holdings, secured Aswan funding, gained UNEF",
        "Israel: Gulf of Aqaba shipping freedom, limited fedayeen control; regional-power status, deterred Arab war for years; US relations recovered",
        "France & Britain: losers — decline of influence across Middle East, Africa, Southeast Asia",
@@ -394,6 +446,7 @@ add("Suez Crisis (1956)", { id:"ai-suez-consequences", title:"Consequences of th
 /* ── Part 4: Six-Day War ── */
 add("Six-Day War (1967)", { id:"sixday", title:"Six-Day War / al-Naksa", when:"5–10 Jun 1967",
   q:"What was the Six-Day War and what was its outcome?",
+  exp:"The war came from escalating attacks and reprisals that no party actually wanted to end in war, which makes it a good case of a slide into conflict through miscalculation. Its outcome changed the conflict: Israel occupied large territories and brought many Palestinians under its control, while Egypt, Jordan and Syria were humiliated. These occupied lands became the basis of later land-for-peace diplomacy.",
   clue:"Third war in under two decades; Palestinians call it “The Setback”. Israel ended up in Sinai, Golan, Gaza, West Bank and East Jerusalem.",
   pts:["a.k.a. the June War (Israel) / al-Naksa, “The Setback”",
        "Triggered by intensifying attacks/retaliation in late 1966–early 1967",
@@ -403,6 +456,7 @@ add("Six-Day War (1967)", { id:"sixday", title:"Six-Day War / al-Naksa", when:"5
        "Casualties: Egypt 12,000 soldiers; Israel 766"] });
 add("Six-Day War (1967)", { id:"ai-plo-formation", title:"Fatah and the formation of the PLO", when:"1957–1964",
   q:"Why and how were Fatah and the PLO formed, and how did the PLO become a focus of rivalry?",
+  exp:"1948 and 1956 showed Palestinians that both Arab states and Israel sidelined their cause, prompting Fatah’s guerrilla campaign. Nasser created the PLO partly to control fedayeen activity and prevent destabilisation, so until 1967 it was under Arab, mainly Egyptian, control. It then became an object of rivalry among Arab states, while renewed independent raids increased Israeli insecurity.",
   clue:"Arafat’s group founded in Kuwait in 1957; Nasser’s Cairo summit body created in 1964.",
   pts:["1948 and 1956 showed the Palestinian cause marginalised — spurring revival",
        "Fatah formed 1957 (Kuwait) under Yasser Arafat and Khalīl al-Wazīr (Abū Jihād) — low-intensity guerrilla warfare",
@@ -411,6 +465,7 @@ add("Six-Day War (1967)", { id:"ai-plo-formation", title:"Fatah and the formatio
        "Focal point of rivalry (Egypt vs Syria vs Iraq); independent fedayeen operations increased after 1964"] });
 add("Six-Day War (1967)", { id:"ai-tensions-6667", title:"Rising tensions 1966–67 and the Battle of Samu", when:"Feb 1966–Apr 1967",
   q:"What events raised tensions in 1966–67?",
+  exp:"Each event raised the stakes: a radical Ba’athist regime in Syria worsened border clashes, the Egypt-Syria defence pact boosted Syrian confidence and Israeli fears, and Israel’s raid on Samu showed heavy reprisals against Jordan. The April 1967 air battle led Nasser to pledge support to Syria, tying Egypt into any future Israeli-Syrian fighting. These commitments made escalation hard to stop.",
   pts:["23 Feb 1966: militant Ba’athists take power in Syria",
        "Aug 1966: Israeli-Syrian clash near the Sea of Galilee; Nov 1966: Egypt-Syria mutual defence pact",
        "13 Nov 1966 Samu: Israeli assault on a West Bank village after a Fatah landmine — 3 civilians and 14 Arab Legion soldiers killed, 54 wounded, clinic, school and 140 houses damaged",
@@ -418,6 +473,7 @@ add("Six-Day War (1967)", { id:"ai-tensions-6667", title:"Rising tensions 1966�
        "Nasser pledged to assist Syria in any future Israeli attack"] });
 add("Six-Day War (1967)", { id:"ai-1967-timeline", title:"Slide to war and course of the Six-Day War", when:"13 May–10 Jun 1967",
   q:"Trace the key events from 13 May to 10 June 1967.",
+  exp:"A false Soviet report started a rapid chain: Egyptian troops into Sinai, UNEF withdrawn, and the closure of the Straits, which Israel treated as a casus belli. Jordan and Iraq joining Egypt raised Israel’s sense of encirclement, so it struck first. Its air superiority, together with Arab disunity letting it fight each enemy in turn, explains the rapid victory and the huge gap in casualties.",
   pts:["13 May: Podgorny tells Sadat Israeli troops mobilised to invade Syria (false); 14 May: Egyptian troops into Sinai",
        "18 May: Nasser requests UNEF I withdrawal, U Thant complies; 22 May: Straits of Tiran closed — casus belli",
        "30 May: King Hussein signs defence pact with Egypt; Iraq joins",
@@ -425,7 +481,8 @@ add("Six-Day War (1967)", { id:"ai-1967-timeline", title:"Slide to war and cours
        "7 Jun: Res 234; East Jerusalem captured; Jordan ceasefire. 8 Jun: Egypt ceasefire after losing Sharm al-Sheikh",
        "9 Jun: Golan captured; 10 Jun: Syria accepts ceasefire"] });
 add("Six-Day War (1967)", { id:"ai-soviet-false-intel", title:"Why did the USSR spread false intelligence?", when:"May 1967",
-  q:"Why did the USSR spread false intelligence in 1967?", qs:"notes",
+  q:"Why did the USSR spread false intelligence in 1967?",
+  exp:"Historians offer five explanations, from deliberate provocation to simple error. Brezhnev’s secret report points to miscalculation: Moscow did not want war but wrongly thought Israel too weak for a two-front war and could not control its Arab allies, as Nasser’s unconsulted closure of the Gulf showed. This supports the view that the war resulted from misjudgement rather than conspiracy.", qs:"notes",
   pts:["To relieve pressure on Syria, believing both sides would stop short of war",
        "Simply an inaccurate, poorly evaluated report",
        "USSR deliberately misled by Israel",
@@ -434,12 +491,14 @@ add("Six-Day War (1967)", { id:"ai-soviet-false-intel", title:"Why did the USSR 
        "Kremlin wrongly thought Israel too weak for a two-front war; alarmed by Nasser’s unconsulted Aqaba closure and Israel’s rapid victory"] });
 add("Six-Day War (1967)", { id:"ai-ussr-1967-war", title:"Soviet conduct during the Six-Day War", when:"Jun 1967",
   q:"How did the USSR act during the fighting in 1967?",
+  exp:"The USSR’s caution during the war fits the miscalculation view: it would not take military action or airlift arms and instead sought a UN ceasefire to restore the prewar position. Only when Damascus looked threatened did it press Israel hard, prompting Johnson to get Israel to stop. Both superpowers were keen to avoid direct confrontation.",
   pts:["Unwilling to take military action or airlift weapons",
        "Focused on diplomacy — UN-mediated ceasefire to restore the status quo ante",
        "Only when Damascus seemed threatened did it sharply raise pressure on Israel",
        "This prompted Johnson to persuade Israel to halt"] });
 add("Six-Day War (1967)", { id:"ai-us-1967", title:"US policy before and during 1967", when:"1950–1967",
   q:"How did US policy toward Israel and the region evolve up to and during 1967?",
+  exp:"The US moved from limiting arms sales to supplying Israel with tanks and aircraft, reasoning this would deter an arms race and stop Israel going nuclear or launching a preventive war. But it did not tackle the cross-border raids. During the war it wanted a quick ceasefire to avoid Soviet intervention, yet did not press for immediate withdrawal, wanting peace settlements first, a position that shaped Resolution 242.",
   pts:["Until the early 1960s adhered to the 1950 Tripartite Declaration — pressed Israel to withdraw post-Suez, limited arms sales",
        "By 1963 deemed unsustainable given Soviet arms to Egypt; sold M48A3 tanks (1965) and A-4 Skyhawks (1966) to deter an arms race",
        "After Samu (Nov 1966), voted to condemn Israel and airlifted aid to Jordan — but failed to address cross-border raids",
@@ -447,6 +506,7 @@ add("Six-Day War (1967)", { id:"ai-us-1967", title:"US policy before and during 
        "After 5 June did not press for immediate withdrawal — peace settlements should precede pullback"] });
 add("Six-Day War (1967)", { id:"ai-ross-vietnam", title:"Dennis Ross on Johnson and Vietnam", when:"14 May–5 Jun 1967",
   q:"Why, according to Dennis Ross, was Johnson ‘missing in action’ before the 1967 war?",
+  exp:"Ross explains why the most pro-Israel president did so little to stop the slide to war: Vietnam absorbed policymakers’ attention, the Pentagon resisted diverting resources and Johnson’s standing in Congress was weak. Officials could not even find Eisenhower’s commitments on the Straits. This supports arguments that superpower distraction, not just regional actors, allowed the crisis to escalate.",
   pts:["Johnson the most emotionally pro-Israel US president, yet ‘missing in action’ 14 May–5 June 1967",
        "Vietnam’s demand on attention: Pentagon reluctance to divert resources, eroded Congressional standing",
        "State Department staff struggled even to locate Eisenhower’s commitments on the Straits of Tiran",
@@ -454,6 +514,7 @@ add("Six-Day War (1967)", { id:"ai-ross-vietnam", title:"Dennis Ross on Johnson 
        "Historiography: a counter to narratives treating 1967 as purely regional"] });
 add("Six-Day War (1967)", { id:"res242", title:"UNSC Resolutions 234 and 242", when:"7 Jun & 22 Nov 1967",
   q:"What did Resolution 242 provide, and how did the parties respond?",
+  exp:"Resolution 242 balanced Israeli withdrawal against Arab recognition and secure boundaries, which is why it became the ‘land for peace’ formula. Each side accepted it for different clauses: Israel for secure boundaries, Egypt and Jordan for withdrawal. The PLO rejected it because it mentioned Palestinians only as refugees. It was never fully implemented but framed later diplomacy up to Camp David.",
   clue:"November 1967 landmark text embodying ‘land for peace’; the PLO rejected it until 1988.",
   pts:["Res 234 (7 Jun): Soviet-proposed, unanimous ceasefire by 2000 GMT, 7 June 1967",
        "242: withdrawal of Israeli forces from territories occupied in the recent conflict; termination of belligerency; secure, recognised boundaries",
@@ -463,6 +524,7 @@ add("Six-Day War (1967)", { id:"res242", title:"UNSC Resolutions 234 and 242", w
        "Never fully implemented, but the touchstone through Camp David and beyond"] });
 add("Six-Day War (1967)", { id:"ai-eval-242", title:"Evaluating Resolution 242", when:"1967–1991",
   q:"How effective was Resolution 242?",
+  exp:"242 contained all the key elements for peace and had US and Soviet backing, giving each party something and laying the groundwork for Camp David and Oslo. But it relied on diplomatic pressure with no enforcement, and its vague wording let Arabs and Israelis read the withdrawal clause differently. Ignoring settlements and Palestinian statehood also left major obstacles, so it was a framework rather than a solution.",
   pts:["Ended the war; embodied recognition, inadmissibility of acquiring territory by war, peace, refugees; backed by US + USSR",
        "Israel: right to exist in secure boundaries; Arabs: ‘land for peace’ — groundwork for Camp David and Oslo; Palestinians: just refugee settlement",
        "Limitation: no enforcement — not substantively acted on until the 1991 Madrid Conference (24 years later)",
@@ -470,6 +532,7 @@ add("Six-Day War (1967)", { id:"ai-eval-242", title:"Evaluating Resolution 242",
        "Did not address settlement expansion or Palestinian self-determination/statehood"] });
 add("Six-Day War (1967)", { id:"ai-1967-aftermath", title:"Aftermath of the Six-Day War", when:"1967–1970",
   q:"What were the consequences of the 1967 war for each party?",
+  exp:"Israel became the dominant regional power, but the Arab response at Khartoum ruled out peace while privately accepting military defeat. The war weakened Nasser and Pan-Arabism, and convinced Palestinians that Arab states would never free them, boosting Fatah and independent Palestinian action. The exam focus calls 1967 the pivot point because it created land for peace and radicalised Palestinian nationalism.",
   pts:["Israel: territory tripled; strategic depth; East Jerusalem/Western Wall a source of immense joy; dominant regional power",
        "International: US–USSR stalemate shifted focus to the UN (→ 242)",
        "Arabs: Khartoum Summit (Sep 1967) “no peace, no recognition, no negotiation” — yet privately knew they could not win; Egypt abandoned the Yemen War; 1968 Syrian coup; War of Attrition; Nasser’s leadership claim diminished; Pan-Arabism declined, challenged by political Islam and local nationalisms",
@@ -480,6 +543,7 @@ add("Six-Day War (1967)", { id:"ai-1967-aftermath", title:"Aftermath of the Six-
 /* ── Part 5: Yom Kippur War ── */
 add("Yom Kippur War (1973)", { id:"yomkippur", title:"Yom Kippur / October / Ramadan War", when:"6–24 Oct 1973",
   q:"What caused the 1973 war, and why does Yapp argue conditions for peace after 1967 were not right?",
+  exp:"The 1973 war grew out of an unresolved post-1967 deadlock. Yapp explains why peace failed after 1967: the Arabs could not negotiate from total defeat, Israel saw no need for concessions after victory, and neither the international community nor the superpowers could create or impose a settlement. War became a way to change those conditions.",
   clue:"Egypt and Syria attacked on the Jewish Day of Atonement; Israel was outnumbered 12-to-1 at the outset.",
   pts:["Causes: unresolved Palestinian question, border tension, new Egyptian/Syrian leadership, superpower interest, failed diplomacy after 1967",
        "Fought between Israel and Egypt + Syria, beginning on Yom Kippur, October 1973",
@@ -488,12 +552,14 @@ add("Yom Kippur War (1973)", { id:"yomkippur", title:"Yom Kippur / October / Ram
        "Yapp: superpowers lacked the will and ability to impose peace"] });
 add("Yom Kippur War (1973)", { id:"ai-palestinian-extremism", title:"Rise of Palestinian extremism", when:"1967–1973",
   q:"How did Palestinian extremism rise after 1967?",
+  exp:"The 1967 defeat showed that Arab states would not liberate Palestine, so Palestinians became politically independent under Arafat and Fatah. Groups like the PFLP turned to terrorism abroad, and Israel’s heavy bombing of refugee camps in response inflamed Arab opinion further. This cycle kept the Palestinian issue at the centre of regional tension before 1973.",
   pts:["1967 showed Arab states unable/unwilling to liberate Palestine — further 350,000–400,000 refugees; 665,000 under Israeli control",
        "Palestinians grew politically independent; Arafat the decisive voice; Fatah’s influence grew",
        "PFLP advocated terrorism in Europe/America",
        "Provoked massive Israeli bombing raids on refugee camps in Syria/Jordan, inflaming Arab opinion"] });
 add("Yom Kippur War (1973)", { id:"ai-war-of-attrition", title:"War of Attrition", when:"Mar 1969–8 Aug 1970",
   q:"What were the aims and outcome of the War of Attrition?",
+  exp:"Nasser used low-level attacks along the canal to wear Israel down and keep superpower interest alive, especially to secure more Soviet arms. Israel answered with deep strikes into Egypt. The 1970 ceasefire came only after heavy losses and a US understanding that Israel would respect 242, showing that neither full war nor diplomacy had broken the stalemate.",
   clue:"Egypt-initiated bombardment and commando raids along the Canal against the Bar Lev Line.",
   pts:["Egypt-initiated low-intensity war from Mar 1969 — bombardment and commando raids along the Canal",
        "Aims: wear Israel down, dislodge it from Sinai, keep superpower interest (more Soviet arms), destroy the Bar Lev Line",
@@ -501,12 +567,14 @@ add("Yom Kippur War (1973)", { id:"ai-war-of-attrition", title:"War of Attrition
        "Ceasefire 8 Aug 1970 — Nasser agreed after heavy losses and US agreement Israel would respect 242 and withdraw"] });
 add("Yom Kippur War (1973)", { id:"ai-sadat-peace-offer", title:"Sadat’s 1971 peace offer", when:"1970–1971",
   q:"Why did Sadat first offer peace, and why did Israel reject it?",
+  exp:"Sadat wanted to end ‘no war, no peace’ because the closed canal was costing Egypt revenue and Israel still held Sinai. His 1971 offer of peace for withdrawal failed because Israel distrusted him, and Dayan’s view, shared by many Israelis, was that holding the 1967 land kept Israel strong. With no urgency on Israel’s side, diplomacy alone could not move the situation.",
   pts:["Nasser died of a heart attack, 28 Sep 1970; Sadat sought to distinguish his leadership",
        "Wanted to end “no war, no peace” — Israel out of Sinai and the Canal reopened (closure cost toll/tax revenue)",
        "Feb 1971: offered permanent peace for withdrawal from Sinai — Israel distrusted him",
        "Dayan believed holding 1967 land kept Israel strong — widely shared, so no urgency to negotiate"] });
 add("Yom Kippur War (1973)", { id:"ai-sadat-war-aims", title:"Sadat opts for war", when:"1972–1973",
   q:"Why did Sadat opt for a limited war, and how did he prepare?",
+  exp:"Sadat chose a limited war for political ends: he knew Egypt could not defeat Israel but believed a show of strength would force negotiation, restore Egyptian morale, raise his standing and ease economic pressure. Expelling Soviet advisors pressured Moscow for arms and distanced it from the war, while new SAMs reduced the risk of a 1967-style air defeat. Israeli overconfidence, shown by Sharon’s boast, helped make surprise possible.",
   pts:["Only a display of military power could force Israel to negotiate; never intended more than a limited operation",
        "Objectives: break defeatism; boost regional standing; force return of Suez/Sinai; reduce defence burden (Aswan, Yemen, re-equipment); attract investment and US aid",
        "Expelled 15,000 Soviet advisors (18 Jul 1972) to pressure faster arms and dissociate the USSR",
@@ -514,12 +582,14 @@ add("Yom Kippur War (1973)", { id:"ai-sadat-war-aims", title:"Sadat opts for war
        "Sharon (Sep 1973): no target between Baghdad and Khartoum, incl. Libya, Israel could not capture — Israeli over-confidence"] });
 add("Yom Kippur War (1973)", { id:"ai-syria-complicity", title:"Syrian complicity and war planning", when:"Nov 1972–Jan 1973",
   q:"How did Egypt and Syria coordinate for war, and what were Asad’s motives?",
+  exp:"Sadat coordinated secretly with Asad for a two-front surprise attack, timed for when the US was distracted by Watergate and Vietnam, and placed forces under joint command with wider Arab backing. Asad’s goals differed: he wanted to secure his presidency and regain the Golan, but did not see war as a route to peace. This difference helps explain why only Egypt later made peace.",
   pts:["30 Nov 1972: Sadat and Defence Minister Ahmad Ismail Ali decided on war",
        "Coordinated with Hafez al-Assad for a two-front surprise attack timed for US distraction (Watergate, Vietnam, Agnew’s tax scandal)",
        "Asad: consolidate his 1970 presidency; reclaim the Golan (lost while he was Defence Minister); did not see war as a step to peace",
        "31 Jan 1973: joint command; Saudi/Algerian backing and Libyan funding"] });
 add("Yom Kippur War (1973)", { id:"ai-1973-course", title:"Course of the 1973 war", when:"6–24 Oct 1973",
   q:"Trace the course of the October 1973 war and how it ended.",
+  exp:"Israel was caught by surprise because it overestimated Arab weakness, and early Arab gains were large. A US airlift then helped Israel recover, cross the canal and trap the Egyptian Third Army. The superpowers stepped in to impose a ceasefire, and Soviet threats to intervene raised fears of confrontation, so the war ended through great-power crisis management rather than a decisive victory.",
   pts:["Israeli intelligence failed despite warnings — underestimated Arab frustration, overestimated weakness",
        "Canal positions overrun; Syria advanced into Golan; IDF outnumbered 12-to-1; holiday ultimately eased mobilisation",
        "Massive US airlift turned the tide; no US troops (Sadat assured Kissinger it was limited)",
@@ -528,12 +598,14 @@ add("Yom Kippur War (1973)", { id:"ai-1973-course", title:"Course of the 1973 wa
        "Fighting ended 24 Oct after Soviet troop alert and threat to relieve the trapped Third Army"] });
 add("Yom Kippur War (1973)", { id:"ai-oil-weapon", title:"The oil weapon", when:"1973–1974",
   q:"What was the Arab oil weapon and why did 1973 create conditions for negotiation?",
+  exp:"The oil embargo punished states seen as pro-Israel and showed the Arabs had a new form of economic leverage, adding to their confidence. Combined with the fact that their armies were not crushed as in 1967, this meant Arab leaders could negotiate without humiliation. That is why 1973 produced conditions for negotiation better than at any time since 1948.",
   pts:["Arab OPEC halted exports to the US and Netherlands, cut overall exports by 25%, until 1974",
        "Punished pro-Israel states and boosted Arab confidence",
        "Arab forces not militarily defeated this time",
        "Combined with oil gains, conditions far more conducive to negotiation than at any point since 1948"] });
 add("Yom Kippur War (1973)", { id:"ai-res-338-unef2", title:"Resolutions 338/339, UNEF II and UNDOF", when:"Oct 1973–May 1974",
   q:"What did Resolutions 338 and 339 provide, and what were UNEF II and UNDOF?",
+  exp:"Resolution 338 linked the ceasefire directly to implementing 242 and starting negotiations, so it tied military events to the peace process. 339 reinforced the ceasefire and sent observers. UNEF II and UNDOF then separated the forces on the Egyptian and Syrian fronts, showing the UN moving to larger, better-resourced forces to hold disengagement agreements in place.",
   pts:["Res 338 (22 Oct): ceasefire within 12 hours; implement 242 in all its parts; negotiations immediately and concurrently",
        "Res 339 (23 Oct): confirmed ceasefire, forces to return to positions; immediate dispatch of observers",
        "UNEF II (25 Oct 1973): supervise Res 340 ceasefire; ~7,000 troops by 20 Feb 1974; UNTSO moved as interim",
@@ -541,6 +613,7 @@ add("Yom Kippur War (1973)", { id:"ai-res-338-unef2", title:"Resolutions 338/339
        "UNDOF (31 May 1974): ~1,300 on Golan per May 1974 Disengagement — ceasefire, disengagement, zones, minefields"] });
 add("Yom Kippur War (1973)", { id:"shuttle", title:"Kissinger’s shuttle diplomacy", when:"1973–1975",
   q:"What did Kissinger’s shuttle diplomacy achieve, and what were its goals and drawbacks?",
+  exp:"Kissinger’s short flights between capitals produced three disengagement agreements in under two years. His goals were to back Israel’s hold on 1967 land and reduce Soviet influence, and Watergate gave him free rein. His step-by-step method gave Egypt enough visible progress and laid the groundwork for Camp David, but the way it favoured Israel while appearing neutral damaged Arab trust in piecemeal diplomacy.",
   clue:"Media coined the term for a US Secretary of State’s short flights among Middle East capitals after October 1973.",
   pts:["Jan 1974: Sinai I in eight days; May 1974: Syrian-Israeli disengagement after a month; Sep 1975: Sinai II",
        "Goals: support Israel’s claim to 1967 land; reduce Soviet influence — Watergate gave him latitude",
@@ -550,6 +623,7 @@ add("Yom Kippur War (1973)", { id:"shuttle", title:"Kissinger’s shuttle diplom
        "Achievement: Six-Point Agreement (checkpoints, supplies, prisoner exchange); expanded UNEF II; UNEF-patrolled DMZ almost immediately"] });
 add("Yom Kippur War (1973)", { id:"ai-agreements-7375", title:"Key agreements 1973–1975", when:"Nov 1973–Sep 1975",
   q:"What were the key agreements on the path to peace from 1973 to 1975?",
+  exp:"These agreements built up step by step: Kilometre 101 stabilised the ceasefire, Geneva failed after its opening, and Sinai I and the Syrian agreement separated forces with UN zones in between. Sinai II went further, with pledges against force and the reopening of the canal. Each small step built enough confidence to make the 1978 Camp David negotiations possible.",
   pts:["11 Nov 1973 Six-Point Agreement (Kilometre 101): first Israel-Egypt agreement since 1949",
        "21–29 Dec 1973 Geneva Conference: US/USSR co-chaired; failed to reconvene after opening speeches",
        "18 Jan 1974 Sinai I: Israel withdrew west of the Canal; three zones (Egyptian, UN, Israeli); UNEF in UN zone",
@@ -557,6 +631,7 @@ add("Yom Kippur War (1973)", { id:"ai-agreements-7375", title:"Key agreements 19
        "1–4 Sep 1975 Sinai II: no force/blockade pledge; Cairo regained more Sinai (incl. oilfields); Canal reopened first time since 1967"] });
 add("Yom Kippur War (1973)", { id:"campdavid", title:"Camp David Accords and Peace Treaty", when:"17 Sep 1978; 26 Mar 1979",
   q:"What was agreed at Camp David and in the 1979 Egypt-Israel Peace Treaty?",
+  exp:"Camp David worked because Carter met each side separately when trilateral talks proved unworkable. The Egypt-Israel framework traded Sinai for full recognition and shipping rights, making Egypt the first Arab state to recognise Israel in 1979. The second framework offered Palestinian autonomy based on 242 and 338, but it was far less concrete, which is the source of its later criticism.",
   clue:"12-day summit between Carter, Sadat and Begin; the treaty was signed on the White House lawn.",
   pts:["Signed by Carter, Sadat, Begin after a 12-day summit (5–17 Sep 1978); Carter/Vance had hoped to reconvene Geneva",
        "Trilateral format unsustainable — Carter/Vance met delegations separately",
@@ -565,6 +640,7 @@ add("Yom Kippur War (1973)", { id:"campdavid", title:"Camp David Accords and Pea
        "Mar 1979 Carter flew to Cairo/Jerusalem; treaty signed 26 Mar 1979 — Egypt first Arab state to recognise Israel"] });
 add("Yom Kippur War (1973)", { id:"ai-camp-david-implications", title:"Implications of Camp David", when:"1979–1981",
   q:"What were the implications of Camp David and the peace treaty for each party?",
+  exp:"Israel gained most: a secure southern border, the largest Arab army removed from the conflict and resources freed, while it expanded West Bank settlements. Egypt gained Sinai and US aid but was isolated by the Arab League, and Sadat was assassinated. Palestinians and other Arabs rejected the deal, and Said’s quote captures why: Palestinians would not accept a future decided for them by others.",
   pts:["Arabs: open hostility, none followed Egypt; Palestinian exclusion a rallying point",
        "Palestinians: PLO rejected outright; refugees and Israeli control of West Bank/Gaza unresolved",
        "Egypt: Arab League boycott, HQ to Tunis, membership suspended; Sadat accused of abandoning Palestinians; lack of promised growth fuelled criticism",
@@ -573,6 +649,7 @@ add("Yom Kippur War (1973)", { id:"ai-camp-david-implications", title:"Implicati
        "Edward Said: “You cannot expect millions of Arab Palestinians to go away, or to be content with occupation…”"] });
 add("Yom Kippur War (1973)", { id:"ai-eval-camp-david", title:"Evaluating Camp David and the 1979 treaty", when:"1978–1982",
   q:"How effective were the Camp David Accords and the Egypt-Israel Peace Treaty?",
+  exp:"Camp David was a real breakthrough, ending the state of war, returning Sinai and achieving the first Arab recognition of Israel, proving negotiation could work. But it was limited to Egypt and Israel: the Palestinian questions of statehood, borders, refugees and Jerusalem were left open and settlements went unchecked. It is best judged as a bilateral success that left the core conflict unresolved.",
   pts:["First Arab-Israeli peace treaty — ended state of war since 1948; trade, tourism, security cooperation",
        "Sinai withdrawal completed in 1982; first-ever Arab recognition of Israel’s right to exist",
        "Set precedent that intractable conflicts could be resolved through negotiation",
@@ -580,6 +657,7 @@ add("Yom Kippur War (1973)", { id:"ai-eval-camp-david", title:"Evaluating Camp D
        "No provisions to halt settlement expansion; limited to the Egypt-Israel dimension"] });
 add("Yom Kippur War (1973)", { id:"ai-eval-unef2-undof", title:"Evaluating UNEF II and UNDOF", when:"1973–1979+",
   q:"How effective were UNEF II and UNDOF?",
+  exp:"UNEF II was strongly successful: no war, few disputes, low casualties and withdrawal leading to Camp David, though relations stayed cool and the Palestinian issue persisted. UNDOF kept the Golan front from returning to full war, but could not stop minor violations or reach a settlement, and relied on self-reported figures and predictable inspections that allowed cheating. Both depended on the parties’ cooperation.",
   pts:["UNEF II: no Israel-Egypt war during deployment; only 5 low-level militarised disputes; 51 peacekeeper deaths over ~6 years",
        "UNEF II facilitated withdrawal, return of territory, and Camp David; but relations far from ‘warm’",
        "UNDOF: supervised ceasefire and buffer zone; no full-scale war on the Golan",
@@ -590,18 +668,21 @@ add("Yom Kippur War (1973)", { id:"ai-eval-unef2-undof", title:"Evaluating UNEF 
 /* ── Part 6: Synthesis ── */
 add("Synthesis & Exam Preparation", { id:"ai-four-wars", title:"The four wars at a glance", when:"1948–1979",
   q:"Summarise the trigger, outcome and UN/diplomatic response for each of the four wars.",
+  exp:"Laying the wars side by side shows a pattern: each war ended with a UN or diplomatic response that stopped fighting but left grievances that fed the next. 1948 created the refugee problem, 1956 produced the first peacekeeping force, 1967 produced the land-for-peace formula, and only 1973, where Arabs were not crushed, led to an actual peace through Camp David.",
   pts:["1948: independence + Arab invasion; Israel +21%, 700-800k refugees; UNTSO, armistices, Lausanne (failed)",
        "1956: nationalisation; Egypt triumphant politically, Britain/France collapse; UNEF I, Res 997/998",
        "1967: mobilisation, UNEF withdrawal, Tiran closure; Israel triples territory; Res 242",
        "1973: Sadat/Asad surprise attack; restores Arab dignity; Res 338/339, UNEF II, UNDOF, shuttle → Camp David"] });
 add("Synthesis & Exam Preparation", { id:"ai-superpower-evolution", title:"Superpowers across the conflict", when:"1948–1973",
   q:"How did the superpower dynamic evolve across the four wars?",
+  exp:"The superpowers moved from joint recognition of Israel in 1948, to the US acting as arbiter and replacing Britain and France in 1956, to Soviet miscalculation in 1967 and deepening US support for Israel. By 1973 they were directly managing the crisis together, despite a moment of possible confrontation. Throughout, both sought to avoid a direct clash.",
   pts:["1948: both recognised Israel; Czechoslovakia armed it; Britain tilted to Arabs but constrained",
        "1956: US decisive arbiter; eclipse of British/French power",
        "1967: Soviet miscalculation helps trigger war; both avoid confrontation; US support deepens",
        "1973: Kissinger-Brezhnev crisis management; brief possible confrontation over the Third Army; oil weapon adds economic dimension"] });
 add("Synthesis & Exam Preparation", { id:"ai-un-evolution", title:"Evolution of UN mechanisms", when:"1948–1974",
   q:"Trace the evolution of UN mechanisms and their key limitations.",
+  exp:"The exam focus traces a thread from pure observation in 1948 to an armed but consent-based force in 1956, a diplomatic framework in 1967, and larger forces in 1973. UN mechanisms became more robust, but each still depended on the parties’ consent and goodwill. That is why lasting peace came from bilateral diplomacy at Camp David rather than from the UN itself.",
   pts:["UNTSO (1948): unarmed observers — could only report violations",
        "UNEF I (1956): first armed force (‘Chapter 6½’) — consent-dependent",
        "Res 242 (1967): diplomatic framework — no enforcement, ambiguous",
@@ -609,12 +690,14 @@ add("Synthesis & Exam Preparation", { id:"ai-un-evolution", title:"Evolution of 
        "Throughline: more robust but consent-dependent — lasting peace came from BILATERAL diplomacy (Camp David)"] });
 add("Synthesis & Exam Preparation", { id:"ai-historiography", title:"Key historiographical debates", when:"historiography",
   q:"What are the key historiographical debates on the Arab-Israeli conflict?",
+  exp:"Each debate shows a contested interpretation you can use in essays. On 1967, the Brezhnev report supports miscalculation over conspiracy. On 1948 refugees, the flight-versus-expulsion question remains contested memory. Ross shows US distraction mattered, not just regional actors. On Kissinger, his step-by-step success came at the cost of Arab trust in piecemeal diplomacy.",
   pts:["1967 causes: Soviet miscalculation, Israeli pre-emption, or Nasser’s brinkmanship? Polish-sourced Brezhnev report supports miscalculation",
        "1948 exodus: organic flight (Israeli) vs systematic expulsion (Arab) — historians divided",
        "Ross: Vietnam distraction enabled the 1967 slide to war",
        "Kissinger: real agreements, but step-by-step approach (favouring Israel while appearing neutral) damaged Arab trust"] });
 add("Synthesis & Exam Preparation", { id:"ai-effectiveness-criteria", title:"Structuring effectiveness questions", when:"essay skill",
-  q:"How effective was [X] in managing the Arab-Israeli conflict? What criteria should you use?", qs:"notes",
+  q:"How effective was [X] in managing the Arab-Israeli conflict? What criteria should you use?",
+  exp:"Using explicit criteria lets you judge rather than narrate: did it stop fighting, address root causes, work without depending on consent, set a precedent, and who paid for its gaps. Applied across the period, pre-1973 efforts achieved only negative peace, while 1973–79 achieved lasting peace only because both sides had incentives, and even then only between Egypt and Israel.", qs:"notes",
   pts:["Did it stop immediate fighting (negative peace)?",
        "Did it address root causes — territory, refugees, recognition, security (positive peace)?",
        "Was it enforceable or dependent on consent? Did it set a durable precedent?",
@@ -623,6 +706,7 @@ add("Synthesis & Exam Preparation", { id:"ai-effectiveness-criteria", title:"Str
        "Band 1: organise thematically (combatants / superpowers / UN), using four wars as evidence"] });
 add("Synthesis & Exam Preparation", { id:"ai-glossary", title:"Glossary of key terms", when:"glossary",
   q:"Define: Casus belli, Fedayeen, Land for peace, Corpus separatum, MAC, Khartoum Resolution.",
+  exp:"These terms carry key arguments. A casus belli explains why Israel saw the Straits closure as grounds for war, and fedayeen raids show the cross-border cycle of attack and reprisal. Land for peace is the logic of 242 and Camp David. Corpus separatum and the MACs show early UN attempts at compromise and contact, while Khartoum’s refusals show the post-1967 deadlock.",
   pts:["Casus belli: an act or event that justifies or provokes war",
        "Fedayeen: Palestinian guerrillas conducting cross-border raids from the 1950s",
        "Land for peace: Israeli withdrawal for Arab recognition and peace (central to 242)",
