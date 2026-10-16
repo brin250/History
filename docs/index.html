@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>H2 History Case Drill</title>
+<meta name="description" content="Active-recall drill on H2 History case studies, built from your Paper 1 and Paper 2 notes.">
+<meta name="theme-color" content="#1f45a8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Case Drill">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* An exam script on a phone: ruled answer sheet, examiner's red pen for marking, ink-blue for the candidate. */
+:root{
+  --paper:#f6f7f9; --sheet:#ffffff; --rule:#dfe4ec; --ink:#1b2333; --muted:#5d6779;
+  --blue:#1f45a8; --blue-soft:#e6ecfa; --red:#c2262e; --red-soft:#fbe9ea;
+  --ok:#1f7a4d; --ok-soft:#e3f3ea; --warn:#9a6400; --warn-soft:#fbf0d9; --on-blue:#ffffff;
+  --display:"Spectral",Georgia,"Times New Roman",serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:10px; --tabh:58px;
+  --sl:max(16px,env(safe-area-inset-left,0px)); --sr:max(16px,env(safe-area-inset-right,0px));
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#11151d; --sheet:#181d27; --rule:#2a3140; --ink:#e4e8f0; --muted:#98a2b5;
+  --blue:#8fb0ff; --blue-soft:#1d2a4a; --red:#ff7b80; --red-soft:#3a1f24;
+  --ok:#6fd3a0; --ok-soft:#163327; --warn:#f0c065; --warn-soft:#3a2e15; --on-blue:#0d1530; color-scheme:dark}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--body);overscroll-behavior-y:none}
+[hidden]{display:none!important}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+button,input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.eyebrow{font:600 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hint{font-size:12.5px;color:var(--muted)}
+
+/* App chrome */
+.topbar{position:sticky;top:0;z-index:5;background:var(--paper);padding:calc(env(safe-area-inset-top,0px) + 10px) var(--sr) 10px var(--sl);display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--rule)}
+.topbar h1{font-size:22px;font-weight:700}
+.streak{font:600 12px var(--mono);padding:4px 10px;border-radius:999px;background:var(--red-soft);color:var(--red);white-space:nowrap}
+main.views{max-width:760px;margin:0 auto;padding:16px var(--sr) calc(var(--tabh) + env(safe-area-inset-bottom,0px) + 24px) var(--sl);display:grid;gap:16px}
+nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--sheet);border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(3,1fr);padding:0 var(--sr) env(safe-area-inset-bottom,0px) var(--sl)}
+nav.tabbar button{height:var(--tabh);border:0;background:none;display:grid;place-items:center;gap:0;font-size:11.5px;color:var(--muted);cursor:pointer;padding:6px 0}
+nav.tabbar svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
+nav.tabbar button[aria-selected="true"]{color:var(--blue);font-weight:600}
+
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:16px;display:grid;gap:12px;min-width:0}
+.today{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.today div{display:grid;gap:2px}
+.today b{font:700 28px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.today span{font-size:12px;color:var(--muted)}
+.modes{display:grid;gap:10px}
+.mode{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:14px;cursor:pointer}
+.mode:active{transform:scale(.99)}
+.mode .ic{width:44px;height:44px;border-radius:10px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font:700 18px var(--display)}
+.mode b{display:block;font-size:16px}
+.mode .go{font:600 12px var(--mono);color:var(--blue)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.spread{justify-content:space-between}
+.btn{border:1px solid var(--blue);background:var(--blue);color:var(--on-blue);border-radius:var(--r);padding:11px 18px;font-weight:600;cursor:pointer;min-height:44px}
+.btn.ghost{background:transparent;color:var(--blue)}
+.btn.red{background:var(--red);border-color:var(--red);color:var(--on-blue)}
+.btn.wide{width:100%}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.linkbtn{border:0;background:none;color:var(--blue);cursor:pointer;font-size:13px;padding:6px 0;min-height:32px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;display:inline-flex;gap:6px;align-items:center;min-height:34px}
+.chip[aria-pressed="true"]{border-color:var(--blue);background:var(--blue-soft);color:var(--blue)}
+.chip .n{font:11px var(--mono);color:var(--muted)}
+select{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:6px 8px;min-height:36px}
+.install{border:1px dashed var(--blue);background:var(--blue-soft)}
+.weak li{margin:2px 0}
+
+/* Session (full screen) */
+.session{position:fixed;inset:0;z-index:20;background:var(--paper);display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.s-top{padding:calc(env(safe-area-inset-top,0px) + 8px) var(--sr) 8px var(--sl);display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;border-bottom:1px solid var(--rule);background:var(--paper)}
+.x{width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:var(--sheet);cursor:pointer;font-size:18px;line-height:1}
+.pbar{height:6px;border-radius:999px;background:var(--rule);overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--blue);transition:width .25s}
+.count{font:12.5px var(--mono);color:var(--muted)}
+.s-body{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:16px var(--sr) 24px var(--sl)}
+.sheet{max-width:760px;margin:0 auto;background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);position:relative;overflow:hidden}
+.sheet::before{content:"";position:absolute;top:0;bottom:0;left:24px;width:1px;background:var(--red);opacity:.45}
+.sheet-in{padding:16px 16px 18px 38px;display:grid;gap:12px}
+@media (min-width:600px){.sheet::before{left:44px}.sheet-in{padding-left:62px}}
+.s-actions{padding:10px var(--sr) calc(env(safe-area-inset-bottom,0px) + 10px) var(--sl);border-top:1px solid var(--rule);background:var(--sheet);display:flex;gap:8px;align-items:center;justify-content:center}
+.s-actions .btn{flex:1;max-width:360px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.box{font:600 11px var(--mono);padding:2px 7px;border-radius:999px;background:var(--blue-soft);color:var(--blue)}
+.qtitle{font-size:clamp(21px,5.5vw,28px);font-weight:700;line-height:1.2}
+.qtext{font-size:16px;max-width:65ch}
+.clue{font-family:var(--display);font-size:20px;line-height:1.4;max-width:60ch;margin:0}
+textarea,input[type=text]{width:100%;background:transparent;border:1px solid var(--rule);border-radius:8px;padding:10px 12px;color:var(--blue);font-size:16px}
+textarea{line-height:28px;background-image:repeating-linear-gradient(transparent 0 27px,var(--rule) 27px 28px);background-position:0 9px;min-height:40vh;resize:vertical}
+.marks{display:grid;gap:8px;list-style:none;margin:0;padding:0}
+.mark{display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:start;border:1px solid var(--rule);border-radius:8px;padding:10px;cursor:pointer;background:var(--paper)}
+.mark .tick{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--rule);display:grid;place-items:center;font:700 16px var(--display);color:transparent}
+.mark[aria-checked="true"]{border-color:var(--red);background:var(--red-soft)}
+.mark[aria-checked="true"] .tick{border-color:var(--red);color:var(--red)}
+.mark .auto{font:10.5px var(--mono);color:var(--muted);margin-left:6px}
+.scoreline{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;border-top:1px dashed var(--rule);padding-top:12px}
+.score{font:700 30px var(--display);color:var(--red);font-variant-numeric:tabular-nums}
+.verdict{font-size:13px;color:var(--muted)}
+.your{border-left:3px solid var(--blue);padding:6px 12px;color:var(--blue);white-space:pre-wrap;font-size:14px;max-height:200px;overflow:auto;background:var(--blue-soft);border-radius:0 8px 8px 0}
+.tip{border:1px solid var(--warn);background:var(--warn-soft);border-radius:8px;padding:8px 12px;font-size:13.5px}
+.reveal-title{font:700 22px var(--display)}
+.done{text-align:center;padding:24px 8px;display:grid;gap:10px;justify-items:center}
+.done .big{font:700 52px var(--display);color:var(--red)}
+
+/* Progress */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:600px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stat{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:12px 14px}
+.stat b{display:block;font:700 26px var(--display);font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--muted)}
+.topicrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--rule)}
+.topicrow:last-child{border-bottom:0}
+.topicrow .num{font:12px var(--mono);color:var(--muted);text-align:right}
+.bar{grid-column:1/-1;display:flex;height:9px;border-radius:999px;overflow:hidden;background:var(--rule)}
+.bar i{display:block;height:100%}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+textarea.code{min-height:90px;background-image:none;line-height:1.4;font:12px var(--mono);color:var(--ink)}
+
+/* Cases */
+details.case{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:10px 14px}
+details.case summary{cursor:pointer;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;list-style-position:outside}
+details.case summary b{font-family:var(--display);font-size:16px}
+details.case ul{margin:8px 0 2px;padding-left:20px}
+details.case p{margin:8px 0 0;color:var(--muted);font-size:13.5px}
+.casegroup{display:grid;gap:8px}
+@media (prefers-reduced-motion:no-preference){.sheet-in>*{animation:rise .2s ease both}@keyframes rise{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <h1 id="viewtitle">Today</h1>
+  <span class="streak" id="streak" title="Days in a row with at least one card marked">0-day streak</span>
+</header>
+
+<main class="views">
+  <!-- TODAY -->
+  <section id="view-today" class="views" style="padding:0">
+    <div class="card">
+      <div class="today">
+        <div><b id="t-due">0</b><span>due now</span></div>
+        <div><b id="t-new">0</b><span>not yet tried</span></div>
+        <div><b id="t-done">0</b><span>marked today</span></div>
+      </div>
+      <button class="btn wide" id="quickstart">Start review</button>
+      <div class="row spread">
+        <span class="hint" id="topicsummary"></span>
+        <button class="linkbtn" id="edittopics">Change topics</button>
+      </div>
+    </div>
+
+    <div class="card" id="topicpanel" hidden>
+      <div class="row spread"><h2 style="font-size:18px">Topics</h2><button class="linkbtn" id="closetopics">Done</button></div>
+      <div id="topicsets" class="casegroup"></div>
+      <div class="row"><label class="hint" for="roundsize">Cards per round</label>
+        <select id="roundsize"><option>5</option><option>10</option><option>15</option><option>20</option></select></div>
+    </div>
+
+    <div class="eyebrow">Practice modes</div>
+    <div class="modes">
+      <button class="mode" data-mode="recall"><span class="ic">✎</span><span><b>Recall</b><span class="hint">See a case study, write what you remember, mark it against your notes.</span></span><span class="go">Start</span></button>
+      <button class="mode" data-mode="identify"><span class="ic">?</span><span><b>Name it</b><span class="hint">Read a description and name the case study.</span></span><span class="go">Start</span></button>
+      <button class="mode" data-mode="apply"><span class="ic">¶</span><span><b>Apply</b><span class="hint">Plan an essay or SBCS answer, then check which cases your notes would use.</span></span><span class="go">Start</span></button>
+    </div>
+
+    <div class="card weak" id="weakcard" hidden>
+      <div class="eyebrow">Your weakest cases</div>
+      <ul id="weaklist" style="margin:0;padding-left:20px"></ul>
+    </div>
+
+    <div class="card install" id="installcard" hidden>
+      <b>Put Case Drill on your home screen</b>
+      <span class="hint" id="installtext"></span>
+      <button class="btn" id="installbtn" hidden>Install app</button>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section id="view-progress" class="views" style="padding:0" hidden>
+    <div class="stats" id="stats"></div>
+    <div class="card">
+      <div class="row spread"><h2 style="font-size:18px">By topic</h2></div>
+      <div class="legend"><span><i style="background:var(--rule)"></i>New</span><span><i style="background:var(--red)"></i>Shaky</span><span><i style="background:var(--warn)"></i>Learning</span><span><i style="background:var(--ok)"></i>Secure</span></div>
+      <div id="topicrows"></div>
+    </div>
+    <div class="card">
+      <h2 style="font-size:18px">Back up or move your progress</h2>
+      <span class="hint">Progress is stored on this device. Copy the backup code to keep it safe or to move it to another phone or computer.</span>
+      <div class="row"><button class="btn ghost" id="exportbtn">Copy backup code</button><button class="btn ghost" id="importshow">Restore from code</button></div>
+      <textarea class="code" id="backupcode" aria-label="Backup code" hidden></textarea>
+      <div class="row" id="importrow" hidden><button class="btn" id="importbtn">Restore</button><span class="hint" id="importmsg"></span></div>
+    </div>
+    <div class="card">
+      <div class="row"><button class="btn ghost" id="resetask">Reset all progress</button>
+        <span id="resetconfirm" class="row" hidden><button class="btn red" id="resetyes">Yes, clear everything</button><button class="linkbtn" id="resetno">Cancel</button></span></div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="view-cases" class="views" style="padding:0" hidden>
+    <input type="text" id="search" placeholder="Search cases, dates, people…" aria-label="Search the case bank">
+    <span class="hint" id="browsecount"></span>
+    <div id="browse" class="casegroup"></div>
+  </section>
+
+  <p class="hint" id="foot"></p>
+</main>
+
+<nav class="tabbar" role="tablist">
+  <button role="tab" data-view="today" aria-selected="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Today</button>
+  <button role="tab" data-view="progress" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Progress</button>
+  <button role="tab" data-view="cases" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6"/></svg>Cases</button>
+</nav>
+
+<div class="session" id="session" hidden role="dialog" aria-modal="true" aria-label="Practice round">
+  <div class="s-top">
+    <button class="x" id="closesession" aria-label="End round">✕</button>
+    <div class="pbar"><i id="pfill" style="width:0"></i></div>
+    <span class="count" id="pcount"></span>
+  </div>
+  <div class="s-body" id="sbody"><div class="sheet"><div class="sheet-in" id="stage"></div></div></div>
+  <div class="s-actions" id="actions"></div>
+</div>
+
+<script src="cases.js"></script>
+<script src="essays.js"></script>
+<script>
+(function(){
+const TOPICS = window.TOPICS, CASES = window.CASES, ESSAYS = window.ESSAYS;
+const TOPIC = Object.fromEntries(TOPICS.map(t=>[t.key,t]));
+const CASE = Object.fromEntries(CASES.map(c=>[c.id,c]));
+const ESSAY = Object.fromEntries(ESSAYS.map(e=>[e.id,e]));
+const DAY = 864e5, INTERVAL = [0,1,2,4,8,16];
+const LS_KEY = "h2-case-drill-v1";
+const $ = s => document.querySelector(s);
+const el = (tag, attrs={}, ...kids) => { const n=document.createElement(tag); for(const [k,v] of Object.entries(attrs)){ if(k==="class") n.className=v; else if(k==="text") n.textContent=v; else if(k.startsWith("on")) n.addEventListener(k.slice(2),v); else n.setAttribute(k,v);} for(const k of kids.flat()) if(k!=null&&k!==false) n.append(k.nodeType?k:document.createTextNode(k)); return n; };
+
+/* ---------- state ---------- */
+let state = { v:1, cards:{}, days:{}, settings:{ topics:TOPICS.map(t=>t.key), size:10 } };
+try{ const s=JSON.parse(localStorage.getItem(LS_KEY)||"null"); if(s&&s.v===1) state=Object.assign(state,s,{settings:Object.assign(state.settings,s.settings||{})}); }catch(e){}
+state.days = state.days || {};
+function save(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){} }
+const dayKey = (t=Date.now()) => { const d=new Date(t); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
+function streak(){ let n=0, t=Date.now(); if(!state.days[dayKey(t)]) t-=DAY; while(state.days[dayKey(t)]){ n++; t-=DAY; } return n; }
+
+/* ---------- scheduling ---------- */
+const recOf = k => state.cards[k] || { b:0, due:0, n:0, last:0 };
+function itemsForMode(mode){
+  const on = new Set(state.settings.topics);
+  if(mode==="apply") return ESSAYS.filter(e=>on.has(e.t)).map(e=>"essay:"+e.id);
+  return CASES.filter(c=>on.has(c.t)).map(c=>mode+":"+c.id);
+}
+function buildQueue(keys, size){
+  const now=Date.now(), items=keys.map(k=>({k,r:recOf(k)}));
+  const due=items.filter(x=>x.r.n>0&&x.r.due<=now).sort((a,b)=>a.r.b-b.r.b||a.r.due-b.r.due);
+  const fresh=shuffle(items.filter(x=>x.r.n===0));
+  const later=items.filter(x=>x.r.n>0&&x.r.due>now).sort((a,b)=>a.r.due-b.r.due);
+  return [...due,...fresh,...later].slice(0,size).map(x=>x.k);
+}
+function grade(key, frac){
+  const r=Object.assign({},recOf(key));
+  if(frac>=0.8) r.b=Math.min(5,r.b+1); else if(frac>=0.5) r.b=Math.max(1,r.b); else r.b=1;
+  r.n++; r.last=Date.now(); r.score=Math.round(frac*100);
+  r.due = frac<0.5 ? Date.now() : Date.now()+INTERVAL[r.b]*DAY;
+  state.cards[key]=r; const d=dayKey(); state.days[d]=(state.days[d]||0)+1; save();
+}
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+/* ---------- matching (a suggestion only) ---------- */
+const STOP=new Set("the and for with that this from into were was are has had have its their than then them they which while about after before over under between by of to in on at as an a or be is it not but also only more most each per vs via".split(" "));
+const norm=s=>s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g,"").replace(/[–—]/g,"-");
+const tokens=s=>norm(s).match(/[a-z]+|\d+(?:\.\d+)?/g)||[];
+const keyTerms=p=>[...new Set(tokens(p).filter(w=>!STOP.has(w)&&(w.length>=4||/\d/.test(w))))];
+function autoMatch(point, answer){
+  const ans=new Set(tokens(answer)), txt=norm(answer), terms=keyTerms(point); if(!terms.length) return false;
+  let hit=0,num=false; for(const w of terms){ if(ans.has(w)||(w.length>=6&&txt.includes(w.slice(0,6)))){ hit++; if(/\d/.test(w)) num=true; } }
+  return hit/terms.length>=0.34 || (num&&hit>=2);
+}
+function titleMatch(title, text){
+  const terms=keyTerms(title).filter(w=>!/^\d+$/.test(w)), g=new Set(tokens(text)), gt=norm(text);
+  const h=terms.filter(w=>g.has(w)||(w.length>=5&&gt.includes(w.slice(0,5)))).length;
+  return !!text.trim() && terms.length>0 && h/terms.length>=0.5;
+}
+
+/* ---------- today view ---------- */
+function renderToday(){
+  const now=Date.now(), keys=itemsForMode("recall");
+  $("#t-due").textContent = keys.filter(k=>{const r=recOf(k);return r.n>0&&r.due<=now;}).length;
+  $("#t-new").textContent = keys.filter(k=>recOf(k).n===0).length;
+  $("#t-done").textContent = state.days[dayKey()]||0;
+  const s=streak(); $("#streak").textContent = s+"-day streak";
+  const n=state.settings.topics.length;
+  $("#topicsummary").textContent = n===TOPICS.length ? `All ${TOPICS.length} topics · ${state.settings.size} cards per round` : `${n} of ${TOPICS.length} topics · ${state.settings.size} cards per round`;
+  $("#quickstart").disabled = !keys.length;
+  const weak = CASES.map(c=>({c,r:recOf("recall:"+c.id)})).filter(x=>x.r.n>0&&x.r.score<80).sort((a,b)=>a.r.score-b.r.score).slice(0,4);
+  $("#weakcard").hidden = !weak.length; $("#weaklist").innerHTML="";
+  weak.forEach(x=>$("#weaklist").append(el("li",{}, el("button",{class:"linkbtn",text:`${x.c.title} · ${x.r.score}%`, onclick:()=>startRound("recall",["recall:"+x.c.id])}))));
+}
+function renderTopics(){
+  $("#roundsize").value=String(state.settings.size);
+  const box=$("#topicsets"); box.innerHTML=""; const on=new Set(state.settings.topics);
+  for(const paper of ["P1","P2"]){
+    const ts=TOPICS.filter(t=>t.paper===paper), allOn=ts.every(t=>on.has(t.key));
+    box.append(el("div",{class:"casegroup"},
+      el("div",{class:"row spread"}, el("span",{class:"eyebrow",text:paper==="P1"?"Paper 1 · International order":"Paper 2 · Southeast Asia"}),
+        el("button",{class:"linkbtn",text:allOn?"None":"All",onclick:()=>{ const s=new Set(state.settings.topics); ts.forEach(t=>allOn?s.delete(t.key):s.add(t.key)); state.settings.topics=[...s]; save(); renderTopics(); renderToday(); }})),
+      el("div",{class:"chips"}, ts.map(t=>el("button",{class:"chip","aria-pressed":String(on.has(t.key)),onclick:()=>{ const s=new Set(state.settings.topics); s.has(t.key)?s.delete(t.key):s.add(t.key); state.settings.topics=[...s]; save(); renderTopics(); renderToday(); }}, t.name, el("span",{class:"n",text:String(CASES.filter(c=>c.t===t.key).length)}))))));
+  }
+}
+$("#edittopics").onclick=()=>{ $("#topicpanel").hidden=false; renderTopics(); $("#topicpanel").scrollIntoView({behavior:"smooth",block:"start"}); };
+$("#closetopics").onclick=()=>{ $("#topicpanel").hidden=true; };
+$("#roundsize").onchange=e=>{ state.settings.size=+e.target.value; save(); renderToday(); };
+$("#quickstart").onclick=()=>startRound("recall");
+document.querySelectorAll(".mode").forEach(b=>b.onclick=()=>startRound(b.dataset.mode));
+
+/* ---------- session ---------- */
+let round=null;
+function startRound(mode, keys){
+  const q = keys || buildQueue(itemsForMode(mode), state.settings.size);
+  if(!q.length) return;
+  round={mode,queue:q,i:0,results:[],requeued:new Set()};
+  $("#session").hidden=false; document.body.style.overflow="hidden";
+  history.pushState({session:true},"");
+  showCard();
+}
+function endRound(){ round=null; $("#session").hidden=true; document.body.style.overflow=""; renderToday(); if(curView==="progress") renderProgress(); }
+$("#closesession").onclick=()=>{ if(history.state&&history.state.session) history.back(); else endRound(); };
+window.addEventListener("popstate",()=>{ if(!$("#session").hidden) endRound(); });
+
+function setActions(...btns){ const a=$("#actions"); a.innerHTML=""; btns.forEach(b=>a.append(b)); }
+function progress(){ const n=round.queue.length; $("#pfill").style.width=(100*round.i/n)+"%"; $("#pcount").textContent=`${Math.min(round.i+1,n)} / ${n}`; }
+function stageClear(){ const s=$("#stage"); s.innerHTML=""; $("#sbody").scrollTop=0; return s; }
+function metaFor(t, key, extra){ const r=recOf(key); return el("div",{class:"meta"}, el("span",{class:"eyebrow",text:`${t.paper} · ${t.theme} · ${extra||t.name}`}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})); }
+function showCard(){
+  progress();
+  if(round.i>=round.queue.length) return showSummary();
+  const key=round.queue[round.i], [mode,id]=key.split(":");
+  if(mode==="recall") return recallCard(key,CASE[id]);
+  if(mode==="identify") return identifyCard(key,CASE[id]);
+  return applyCard(key,ESSAY[id]);
+}
+function next(key, frac){
+  grade(key,frac); round.results.push({key,frac});
+  if(frac<0.5&&!round.requeued.has(key)){ round.requeued.add(key); round.queue.push(key); }
+  round.i++; showCard();
+}
+function markList(items, got, render, onChange){
+  return el("ul",{class:"marks"}, items.map((it,i)=>{
+    const li=el("li",{class:"mark",role:"checkbox",tabindex:"0","aria-checked":String(!!got[i])}, el("span",{class:"tick","aria-hidden":"true",text:"✓"}), render(it,i));
+    const tog=()=>{ got[i]=!got[i]; li.setAttribute("aria-checked",String(got[i])); onChange(); };
+    li.addEventListener("click",tog); li.addEventListener("keydown",e=>{ if(e.key===" "||e.key==="Enter"){ e.preventDefault(); tog(); }});
+    return li; }));
+}
+
+function recallCard(key,c){
+  const s=stageClear(), t=TOPIC[c.t];
+  const ta=el("textarea",{id:"answer",placeholder:"Write everything you can recall: dates, causes, figures, people, significance, historians…","aria-label":"Your answer"});
+  s.append(metaFor(t,key), el("h2",{class:"qtitle",text:`${c.title} (${c.when})`}), el("div",{class:"qtext",text:c.q}), ta);
+  const go=()=>markRecall(key,c,ta.value);
+  setActions(el("button",{class:"btn ghost",text:"Don't know",onclick:()=>markRecall(key,c,"")}), el("button",{class:"btn",text:"Mark my answer",onclick:go}));
+  ta.addEventListener("keydown",e=>{ if(e.key==="Enter"&&(e.ctrlKey||e.metaKey)) go(); });
+}
+function markRecall(key,c,answer){
+  const s=stageClear(), t=TOPIC[c.t];
+  const got=c.pts.map(p=>answer.trim()?autoMatch(p,answer):false);
+  const scoreEl=el("span",{class:"score"}), verdict=el("span",{class:"verdict"});
+  const upd=()=>{ const k=got.filter(Boolean).length,f=k/c.pts.length; scoreEl.textContent=`${k}/${c.pts.length}`; verdict.textContent=f>=0.8?"Secure: moves up a box":f>=0.5?"Partial: back tomorrow":"Missed: back to box 1, repeats this round"; };
+  const list=markList(c.pts,got,(p,i)=>el("span",{},p,got[i]?el("span",{class:"auto",text:"matched"}):null),upd); upd();
+  s.append(metaFor(t,key), el("h2",{class:"qtitle",text:c.title}),
+    answer.trim()?el("div",{class:"your",text:answer}):el("div",{class:"hint",text:"No answer written. Read the points below and try it again next time."}),
+    el("div",{class:"hint",text:"Tap each point your answer covered. Auto-matched ticks are a guess from shared words; fix them if they're wrong."}),
+    list, el("div",{class:"scoreline"},scoreEl,verdict));
+  setActions(el("button",{class:"btn",text:"Save mark and continue",onclick:()=>next(key,got.filter(Boolean).length/c.pts.length)}));
+}
+
+function identifyCard(key,c){
+  const s=stageClear(), t=TOPIC[c.t];
+  const inp=el("input",{type:"text",id:"guess",placeholder:"Name the case study","aria-label":"Your answer",autocomplete:"off",autocapitalize:"words"});
+  s.append(metaFor(t,key), el("div",{class:"eyebrow",text:"Which case study is this?"}), el("p",{class:"clue",text:c.clue}), inp);
+  setActions(el("button",{class:"btn ghost",text:"Show me",onclick:()=>checkIdentify(key,c,"")}), el("button",{class:"btn",text:"Check",onclick:()=>checkIdentify(key,c,inp.value)}));
+  inp.addEventListener("keydown",e=>{ if(e.key==="Enter") checkIdentify(key,c,inp.value); });
+}
+function checkIdentify(key,c,guess){
+  const s=stageClear(), t=TOPIC[c.t], likely=titleMatch(c.title,guess);
+  s.append(metaFor(t,key), el("p",{class:"clue",text:c.clue}), guess.trim()?el("div",{class:"your",text:guess}):null,
+    el("div",{}, el("div",{class:"eyebrow",text:"Answer"}), el("div",{class:"reveal-title",text:`${c.title} (${c.when})`})),
+    guess.trim()?el("div",{class:"hint",text:likely?"Looks like a match.":"Doesn't look like a match. Mark it yourself if you used a different name."}):null,
+    el("details",{}, el("summary",{class:"hint",text:"Revise the key points"}), el("ul",{},c.pts.map(p=>el("li",{text:p})))));
+  setActions(el("button",{class:"btn ghost",text:"I missed it",onclick:()=>next(key,0)}), el("button",{class:"btn",text:"I got it",onclick:()=>next(key,1)}));
+}
+
+function applyCard(key,e){
+  const s=stageClear(), t=TOPIC[e.t];
+  const ta=el("textarea",{id:"plan",placeholder:"Which case studies would you use, for which side of the argument, and what evidence from each?","aria-label":"Your essay plan"});
+  s.append(metaFor(t,key,"Essay / SBCS"), el("h2",{class:"qtitle",text:e.q}), ta);
+  setActions(el("button",{class:"btn",text:"Compare with my notes",onclick:()=>markApply(key,e,ta.value)}));
+}
+function markApply(key,e,plan){
+  const s=stageClear(), t=TOPIC[e.t];
+  const got=e.use.map(id=>titleMatch(CASE[id].title,plan));
+  const scoreEl=el("span",{class:"score"}), verdict=el("span",{class:"verdict"});
+  const upd=()=>{ const k=got.filter(Boolean).length,f=k/e.use.length; scoreEl.textContent=`${k}/${e.use.length}`; verdict.textContent=f>=0.8?"Strong coverage":f>=0.5?"Partial coverage":"Thin: revisit these cases"; };
+  const list=markList(e.use,got,id=>{ const c=CASE[id]; return el("span",{}, el("b",{text:c.title+" "}), el("span",{class:"hint",text:`(${c.when}) · ${TOPIC[c.t].name}`}), el("div",{class:"hint",text:c.pts[0]})); },upd); upd();
+  s.append(metaFor(t,key,"Essay / SBCS"), el("h2",{class:"qtitle",text:e.q}), plan.trim()?el("div",{class:"your",text:plan}):null,
+    el("div",{class:"tip"}, el("b",{text:"From your notes: "}), e.tip),
+    el("div",{class:"hint",text:"Case studies your notes point to. Tap the ones your plan used."}), list, el("div",{class:"scoreline"},scoreEl,verdict));
+  setActions(el("button",{class:"btn",text:"Save and continue",onclick:()=>next(key,got.filter(Boolean).length/e.use.length)}));
+}
+function showSummary(){
+  const s=stageClear(), seen=new Set(), firsts=[];
+  for(const r of round.results) if(!seen.has(r.key)){ seen.add(r.key); firsts.push(r); }
+  const avg=firsts.length?Math.round(100*firsts.reduce((a,r)=>a+r.frac,0)/firsts.length):0;
+  const weak=firsts.filter(r=>r.frac<0.5).map(r=>{ const [m,id]=r.key.split(":"); return m==="essay"?ESSAY[id].q:CASE[id].title; });
+  $("#pcount").textContent="Done";
+  s.append(el("div",{class:"done"}, el("div",{class:"eyebrow",text:"Round complete"}), el("div",{class:"big",text:avg+"%"}),
+    el("div",{class:"hint",text:`Average first-attempt mark across ${firsts.length} cards · ${streak()}-day streak`}),
+    weak.length?el("div",{style:"text-align:left"}, el("div",{class:"eyebrow",text:"Revise these first"}), el("ul",{},weak.map(w=>el("li",{text:w})))):el("div",{class:"hint",text:"Nothing below half marks this round."})));
+  const mode=round.mode;
+  setActions(el("button",{class:"btn ghost",text:"Finish",onclick:()=>$("#closesession").click()}), el("button",{class:"btn",text:"Next round",onclick:()=>{ round=null; history.replaceState({session:true},""); const q=buildQueue(itemsForMode(mode),state.settings.size); round={mode,queue:q,i:0,results:[],requeued:new Set()}; showCard(); }}));
+}
+
+/* ---------- progress view ---------- */
+function renderProgress(){
+  const now=Date.now(), keys=CASES.map(c=>"recall:"+c.id);
+  const tried=keys.filter(k=>recOf(k).n>0).length, secure=keys.filter(k=>recOf(k).b>=5).length, due=keys.filter(k=>{const r=recOf(k);return r.n>0&&r.due<=now;}).length;
+  const box=$("#stats"); box.innerHTML="";
+  [[`${tried}/${keys.length}`,"cases attempted"],[secure,"secure (box 5)"],[due,"due now"],[streak(),"day streak"]].forEach(([b,s])=>box.append(el("div",{class:"stat"},el("b",{text:String(b)}),el("span",{text:s}))));
+  const rows=$("#topicrows"); rows.innerHTML="";
+  for(const t of TOPICS){
+    const rs=CASES.filter(c=>c.t===t.key).map(c=>recOf("recall:"+c.id)), n=rs.length;
+    const seg=[rs.filter(r=>r.n===0).length, rs.filter(r=>r.n>0&&r.b<=2).length, rs.filter(r=>r.b>=3&&r.b<=4).length, rs.filter(r=>r.b>=5).length];
+    const m=rs.filter(r=>r.n>0), avg=m.length?Math.round(m.reduce((a,r)=>a+(r.score||0),0)/m.length)+"%":"–";
+    rows.append(el("div",{class:"topicrow"},
+      el("button",{class:"linkbtn",style:"text-align:left;color:var(--ink);font-size:14px",text:`${t.name}`,title:"Drill this topic",onclick:()=>{ startRound("recall", buildQueue(CASES.filter(c=>c.t===t.key).map(c=>"recall:"+c.id), state.settings.size)); }}),
+      el("span",{class:"num",text:`${t.paper} · avg ${avg}`}),
+      el("div",{class:"bar",title:`${seg[0]} new, ${seg[1]} shaky, ${seg[2]} learning, ${seg[3]} secure`}, [["var(--rule)",seg[0]],["var(--red)",seg[1]],["var(--warn)",seg[2]],["var(--ok)",seg[3]]].map(([c,k])=>el("i",{style:`width:${100*k/n}%;background:${c}`})))));
+  }
+}
+$("#exportbtn").onclick=async()=>{
+  const code=btoa(unescape(encodeURIComponent(JSON.stringify(state))));
+  const ta=$("#backupcode"); ta.hidden=false; ta.value=code; $("#importrow").hidden=true;
+  try{ await navigator.clipboard.writeText(code); $("#exportbtn").textContent="Copied"; setTimeout(()=>$("#exportbtn").textContent="Copy backup code",1500); }catch(e){ ta.select(); }
+};
+$("#importshow").onclick=()=>{ const ta=$("#backupcode"); ta.hidden=false; ta.value=""; ta.placeholder="Paste your backup code here"; $("#importrow").hidden=false; $("#importmsg").textContent=""; ta.focus(); };
+$("#importbtn").onclick=()=>{
+  try{ const s=JSON.parse(decodeURIComponent(escape(atob($("#backupcode").value.trim())))); if(!s||s.v!==1||!s.cards) throw 0;
+    state=Object.assign({v:1,cards:{},days:{},settings:state.settings},s); save(); renderProgress(); renderToday(); $("#importmsg").textContent="Progress restored."; }
+  catch(e){ $("#importmsg").textContent="That code isn't valid. Copy the whole code and try again."; }
+};
+$("#resetask").onclick=()=>{ $("#resetconfirm").hidden=false; };
+$("#resetno").onclick=()=>{ $("#resetconfirm").hidden=true; };
+$("#resetyes").onclick=()=>{ state.cards={}; state.days={}; save(); $("#resetconfirm").hidden=true; renderProgress(); renderToday(); };
+
+/* ---------- cases view ---------- */
+function renderBrowse(){
+  const q=norm($("#search").value.trim()), box=$("#browse"); box.innerHTML=""; let n=0;
+  for(const t of TOPICS){
+    const cs=CASES.filter(c=>c.t===t.key&&(!q||norm([c.title,c.when,c.q,...c.pts].join(" ")).includes(q)));
+    if(!cs.length) continue; n+=cs.length;
+    box.append(el("div",{class:"eyebrow",style:"margin-top:8px",text:`${t.paper} · ${t.theme} · ${t.name}`}));
+    cs.forEach(c=>{ const r=recOf("recall:"+c.id);
+      box.append(el("details",{class:"case"}, el("summary",{}, el("b",{text:c.title}), el("span",{class:"hint",text:c.when}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})),
+        el("p",{text:c.q}), el("ul",{},c.pts.map(p=>el("li",{text:p}))),
+        el("button",{class:"linkbtn",text:"Drill this case",onclick:()=>startRound("recall",["recall:"+c.id])}))); });
+  }
+  $("#browsecount").textContent=`${n} case studies`;
+}
+$("#search").addEventListener("input",renderBrowse);
+
+/* ---------- tabs ---------- */
+let curView="today";
+const TITLES={today:"Today",progress:"Progress",cases:"Case bank"};
+function setView(v){
+  curView=v; $("#viewtitle").textContent=TITLES[v];
+  document.querySelectorAll("nav.tabbar button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.view===v)));
+  for(const k of Object.keys(TITLES)) $("#view-"+k).hidden=k!==v;
+  if(v==="progress") renderProgress(); if(v==="cases") renderBrowse(); if(v==="today") renderToday();
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("nav.tabbar button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
+
+/* ---------- install ---------- */
+const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+let deferred=null;
+if(!standalone){
+  const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  $("#installcard").hidden=false;
+  $("#installtext").textContent = ios ? "In Safari, tap the Share button, then Add to Home Screen. It opens full-screen and works offline." : "Use your browser menu's Install app or Add to Home screen option. It opens full-screen and works offline.";
+}
+window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); deferred=e; $("#installbtn").hidden=false; $("#installtext").textContent="Install it to open full-screen and work offline."; });
+$("#installbtn").onclick=async()=>{ if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred=null; $("#installcard").hidden=true; };
+window.addEventListener("appinstalled",()=>{ $("#installcard").hidden=true; });
+if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(()=>{});
+
+$("#foot").textContent=`${CASES.length} case studies and ${ESSAYS.length} essay prompts from the study notes in your History Drive folder. Nothing outside those notes was added.`;
+renderToday();
+})();
+</script>
+</body>
+</html>
