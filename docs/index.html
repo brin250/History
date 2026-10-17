@@ -224,6 +224,23 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
       <div class="legend"><span><i style="background:var(--rule)"></i>New</span><span><i style="background:var(--red)"></i>Shaky</span><span><i style="background:var(--warn)"></i>Learning</span><span><i style="background:var(--ok)"></i>Secure</span></div>
       <div id="topicrows"></div>
     </div>
+    <div class="card" id="synccard">
+      <h2 style="font-size:18px">Sync across devices</h2>
+      <div id="sync-off" class="casegroup">
+        <span class="hint">Keep your progress in the cloud so your phone, tablet and computer all share it. It is stored as a private file on your GitHub account. Do this once on each device:</span>
+        <ol class="hint" style="margin:0;padding-left:20px;display:grid;gap:4px">
+          <li>Sign in to GitHub and make a token that can only read and write gists (link below). Set the expiry to "No expiration" or after your exams, then copy the token.</li>
+          <li>Paste it here and tap Connect. Use the same token on every device.</li>
+        </ol>
+        <a class="linkbtn" href="https://github.com/settings/tokens/new?scopes=gist&amp;description=H2%20Case%20Drill%20sync" target="_blank" rel="noopener">Make a gist-only token on GitHub ↗</a>
+        <input type="text" id="synctoken" placeholder="Paste token (starts with ghp_)" aria-label="GitHub token" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <div class="row"><button class="btn" id="syncconnect">Connect</button><span class="hint" id="syncmsg"></span></div>
+      </div>
+      <div id="sync-on" class="casegroup" hidden>
+        <span class="hint" id="syncstatus"></span>
+        <div class="row"><button class="btn" id="syncnow">Sync now</button><button class="linkbtn" id="syncoff">Disconnect this device</button></div>
+      </div>
+    </div>
     <div class="card">
       <h2 style="font-size:18px">Back up or move your progress</h2>
       <span class="hint">Your progress saves automatically on this phone after every card. To keep a copy you can restore if the app is deleted or you change phone, save a backup file (it goes to Files / Downloads) or copy the backup code into Notes.</span>
@@ -299,7 +316,7 @@ const el = (tag, attrs={}, ...kids) => { const n=document.createElement(tag); fo
 let state = { v:1, cards:{}, days:{}, settings:{ topics:TOPICS.map(t=>t.key), size:10 } };
 try{ const s=JSON.parse(localStorage.getItem(LS_KEY)||"null"); if(s&&s.v===1) state=Object.assign(state,s,{settings:Object.assign(state.settings,s.settings||{})}); }catch(e){}
 state.days = state.days || {}; state.learned = state.learned || {};
-function save(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){} }
+function save(){ state.updated=Date.now(); try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){} if(window.queueSync) queueSync(); }
 const dayKey = (t=Date.now()) => { const d=new Date(t); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
 function streak(){ let n=0, t=Date.now(); if(!state.days[dayKey(t)]) t-=DAY; while(state.days[dayKey(t)]){ n++; t-=DAY; } return n; }
 
@@ -520,6 +537,68 @@ function showSummary(){
   setActions(el("button",{class:"btn ghost",text:"Finish",onclick:()=>$("#closesession").click()}), el("button",{class:"btn",text:"Next round",onclick:()=>{ round=null; history.replaceState({session:true},""); const q=buildQueue(itemsForMode(mode),state.settings.size); if(!q.length) return $("#closesession").click(); round={mode,queue:q,i:0,results:[],requeued:new Set()}; showCard(); }}));
 }
 
+/* ---------- cloud sync (private GitHub gist) ---------- */
+const SYNC_KEY="h2-case-drill-sync", GIST_FILE="h2-case-drill-progress.json", API="https://api.github.com";
+let sync={}; try{ sync=JSON.parse(localStorage.getItem(SYNC_KEY)||"{}")||{}; }catch(e){}
+const saveSync=()=>{ try{ localStorage.setItem(SYNC_KEY,JSON.stringify(sync)); }catch(e){} };
+async function gh(path,opt={}){
+  const res=await fetch(API+path,Object.assign({},opt,{headers:Object.assign({"Authorization":"Bearer "+sync.token,"Accept":"application/vnd.github+json"},opt.body?{"Content-Type":"application/json"}:{})}));
+  if(res.status===401) throw new Error("GitHub rejected the token. Make a new one and connect again.");
+  if(!res.ok) throw new Error("GitHub error "+res.status);
+  return res.json();
+}
+// Merge two copies of progress: for each card keep the most recent attempt; keep every learned card and study day.
+function mergeState(a,b){
+  const out={v:1,cards:{},days:{},learned:{},updated:Math.max(a.updated||0,b.updated||0),settings:(b.updated||0)>(a.updated||0)?(b.settings||a.settings):a.settings};
+  for(const k of new Set([...Object.keys(a.cards||{}),...Object.keys(b.cards||{})])){ const x=(a.cards||{})[k], y=(b.cards||{})[k]; out.cards[k]=!x?y:!y?x:((y.last||0)>(x.last||0)?y:x); }
+  for(const src of [a.days||{},b.days||{}]) for(const d in src) out.days[d]=Math.max(out.days[d]||0,src[d]);
+  for(const src of [a.learned||{},b.learned||{}]) for(const id in src) out.learned[id]=Math.max(out.learned[id]||0,src[id]);
+  return out;
+}
+let syncing=null, syncTimer=null, dirty=false;
+async function findGist(){
+  for(let page=1;page<=5;page++){ const list=await gh(`/gists?per_page=100&page=${page}`); const g=list.find(x=>x.files&&x.files[GIST_FILE]); if(g) return g.id; if(list.length<100) break; }
+  const g=await gh("/gists",{method:"POST",body:JSON.stringify({description:"H2 Case Drill progress (synced by the app)",public:false,files:{[GIST_FILE]:{content:JSON.stringify(state)}}})});
+  return g.id;
+}
+async function doSync(){
+  if(!sync.token) return;
+  if(syncing) return syncing;
+  syncing=(async()=>{
+    try{
+      if(!sync.gist){ sync.gist=await findGist(); saveSync(); }
+      const g=await gh("/gists/"+sync.gist); const f=g.files&&g.files[GIST_FILE];
+      let remote=null; if(f){ const txt=f.truncated?await (await fetch(f.raw_url)).text():f.content; try{ remote=JSON.parse(txt); }catch(e){} }
+      const merged=remote&&remote.v===1?mergeState(state,remote):state;
+      state=merged; try{ localStorage.setItem(LS_KEY,JSON.stringify(state)); }catch(e){}
+      await gh("/gists/"+sync.gist,{method:"PATCH",body:JSON.stringify({files:{[GIST_FILE]:{content:JSON.stringify(state)}}})});
+      sync.last=Date.now(); sync.error=""; dirty=false; saveSync();
+      if(!round){ renderToday(); if(curView==="progress") renderProgress(); if(curView==="learn") renderLearn(); }
+    }catch(e){ sync.error=e.message||"Couldn't reach GitHub (offline?)"; saveSync(); }
+    finally{ syncing=null; renderSync(); }
+  })();
+  return syncing;
+}
+// Push changes a few seconds after the last edit, and when the app is put in the background.
+window.queueSync=()=>{ if(!sync.token) return; dirty=true; clearTimeout(syncTimer); syncTimer=setTimeout(doSync,8000); };
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="hidden"&&dirty) doSync(); if(document.visibilityState==="visible") doSync(); });
+window.addEventListener("online",()=>doSync());
+function renderSync(){
+  const on=!!sync.token; $("#sync-off").hidden=on; $("#sync-on").hidden=!on; if(!on) return;
+  const when=sync.last?new Date(sync.last).toLocaleString([], {dateStyle:"medium",timeStyle:"short"}):"not yet";
+  $("#syncstatus").textContent = syncing?"Syncing…":(sync.error?`Last sync failed: ${sync.error}`:`Connected. Progress syncs automatically. Last synced: ${when}.`);
+}
+$("#syncconnect").onclick=async()=>{
+  const t=$("#synctoken").value.trim(); if(!t){ $("#syncmsg").textContent="Paste your token first."; return; }
+  sync={token:t}; $("#syncmsg").textContent="Connecting…";
+  try{ await gh("/user"); }catch(e){ sync={}; $("#syncmsg").textContent=e.message; return; }
+  saveSync(); $("#synctoken").value=""; $("#syncmsg").textContent=""; renderSync(); await doSync();
+};
+$("#syncnow").onclick=()=>doSync();
+// After a reset, overwrite the cloud copy instead of merging (merging would bring the old progress back).
+async function overwriteCloud(){ if(!sync.token||!sync.gist) return; try{ await gh("/gists/"+sync.gist,{method:"PATCH",body:JSON.stringify({files:{[GIST_FILE]:{content:JSON.stringify(state)}}})}); sync.last=Date.now(); saveSync(); }catch(e){} }
+$("#syncoff").onclick=()=>{ sync={}; saveSync(); renderSync(); };
+
 /* ---------- learn view ---------- */
 const openLearn=new Set();
 function renderLearn(){
@@ -590,7 +669,7 @@ async function checkStorage(){
 }
 $("#resetask").onclick=()=>{ $("#resetconfirm").hidden=false; };
 $("#resetno").onclick=()=>{ $("#resetconfirm").hidden=true; };
-$("#resetyes").onclick=()=>{ state.cards={}; state.days={}; state.learned={}; save(); $("#resetconfirm").hidden=true; renderProgress(); renderToday(); };
+$("#resetyes").onclick=()=>{ state.cards={}; state.days={}; state.learned={}; clearTimeout(syncTimer); setTimeout(overwriteCloud,0); save(); $("#resetconfirm").hidden=true; renderProgress(); renderToday(); };
 
 /* ---------- cases view ---------- */
 function renderBrowse(){
@@ -617,7 +696,7 @@ function setView(v){
   curView=v; $("#viewtitle").textContent=TITLES[v];
   document.querySelectorAll("nav.tabbar button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.view===v)));
   for(const k of Object.keys(TITLES)) $("#view-"+k).hidden=k!==v;
-  if(v==="progress"){ renderProgress(); checkStorage(); } if(v==="cases") renderBrowse(); if(v==="learn") renderLearn(); if(v==="today") renderToday();
+  if(v==="progress"){ renderProgress(); checkStorage(); renderSync(); } if(v==="cases") renderBrowse(); if(v==="learn") renderLearn(); if(v==="today") renderToday();
   window.scrollTo(0,0);
 }
 document.querySelectorAll("nav.tabbar button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
@@ -625,7 +704,7 @@ document.querySelectorAll("nav.tabbar button").forEach(b=>b.onclick=()=>setView(
 /* ---------- install ---------- */
 const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
 let deferred=null;
-if(!standalone){
+if(!standalone && !window.Capacitor){
   const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
   $("#installcard").hidden=false;
   $("#installtext").textContent = ios ? "In Safari, tap the Share button, then Add to Home Screen. It opens full-screen and works offline." : "Use your browser menu's Install app or Add to Home screen option. It opens full-screen and works offline.";
@@ -637,6 +716,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigat
 
 $("#foot").textContent=`${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 renderToday();
+doSync();
 })();
 </script>
 </body>
