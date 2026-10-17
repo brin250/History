@@ -712,5 +712,5 @@ add("Synthesis & Exam Preparation", { id:"ai-glossary", title:"Glossary of key t
        "Land for peace: Israeli withdrawal for Arab recognition and peace (central to 242)",
        "Corpus separatum: ‘separated body’ — UN’s proposed international status for Jerusalem",
        "MAC: Israel + each Arab neighbour, plus UNTSO chairman, investigating violations",
-       "Khartoum Resolution: 1967 summit “no peace, no recognition, no negotiation”"] });
+       "Khartoum Resolution: 1967 Arab Summit declaration of “no peace, no recognition, no negotiation” with Israel"] });
 })();
