@@ -3,6 +3,8 @@
 An installable study app for H2 History (9174) case studies, built from the
 study notes in the "History" Google Drive folder (Paper 1 and Paper 2).
 
+- **Learn**: work through each topic in the order of the notes, one section at a time, reading every card's
+  points and explanation, then do a quick check on that section. Only learned cards come up in review rounds.
 - **Recall**: see a case study, write what you remember, mark it against the key points.
 - **Name it**: read a description and name the case.
 - **Apply**: plan an essay/SBCS answer and check which cases the notes would use.

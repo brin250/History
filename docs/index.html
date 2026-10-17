@@ -47,7 +47,7 @@ button,input,textarea,select{font:inherit;color:inherit}
 .topbar h1{font-size:22px;font-weight:700}
 .streak{font:600 12px var(--mono);padding:4px 10px;border-radius:999px;background:var(--red-soft);color:var(--red);white-space:nowrap}
 main.views{max-width:760px;margin:0 auto;padding:16px var(--sr) calc(var(--tabh) + env(safe-area-inset-bottom,0px) + 24px) var(--sl);display:grid;gap:16px}
-nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--sheet);border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(3,1fr);padding:0 var(--sr) env(safe-area-inset-bottom,0px) var(--sl)}
+nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--sheet);border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(4,1fr);padding:0 var(--sr) env(safe-area-inset-bottom,0px) var(--sl)}
 nav.tabbar button{height:var(--tabh);border:0;background:none;display:grid;place-items:center;gap:0;font-size:11.5px;color:var(--muted);cursor:pointer;padding:6px 0}
 nav.tabbar svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
 nav.tabbar button[aria-selected="true"]{color:var(--blue);font-weight:600}
@@ -122,7 +122,7 @@ textarea{line-height:28px;background-image:repeating-linear-gradient(transparent
 
 /* Progress */
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-@media (min-width:600px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:600px){.stats{grid-template-columns:repeat(5,minmax(0,1fr))}}
 .stat{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:12px 14px}
 .stat b{display:block;font:700 26px var(--display);font-variant-numeric:tabular-nums}
 .stat span{font-size:12.5px;color:var(--muted)}
@@ -142,6 +142,17 @@ details.case summary b{font-family:var(--display);font-size:16px}
 details.case ul{margin:8px 0 2px;padding-left:20px}
 details.case p{margin:8px 0 0;color:var(--muted);font-size:13.5px}
 .casegroup{display:grid;gap:8px}
+.secrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule)}
+.secrow:last-child{border-bottom:0}
+.secrow .nm{font-size:14px}
+.secrow .num{font:12px var(--mono);color:var(--muted)}
+.secrow .bar{height:5px}
+.secrow.fin .nm{color:var(--muted)}
+details.ltopic{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:12px 14px}
+details.ltopic summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;align-items:center}
+details.ltopic summary::-webkit-details-marker{display:none}
+details.ltopic summary b{font-family:var(--display);font-size:17px}
+.lpts{margin:0;padding-left:20px;display:grid;gap:6px;font-size:16px;max-width:65ch}
 @media (prefers-reduced-motion:no-preference){.sheet-in>*{animation:rise .2s ease both}@keyframes rise{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
 </style>
 </head>
@@ -154,10 +165,16 @@ details.case p{margin:8px 0 0;color:var(--muted);font-size:13.5px}
 <main class="views">
   <!-- TODAY -->
   <section id="view-today" class="views" style="padding:0">
+    <div class="card" id="learncard">
+      <div class="row spread"><b>Learn first, then test</b><span class="hint" id="learnsummary"></span></div>
+      <div class="bar" style="height:9px"><i id="learnfill" style="width:0;background:var(--blue)"></i></div>
+      <span class="hint" id="learnnext"></span>
+      <button class="btn wide" id="learncontinue">Continue learning</button>
+    </div>
     <div class="card">
       <div class="today">
         <div><b id="t-due">0</b><span>due now</span></div>
-        <div><b id="t-new">0</b><span>not yet tried</span></div>
+        <div><b id="t-new">0</b><span>learned, not yet tested</span></div>
         <div><b id="t-done">0</b><span>marked today</span></div>
       </div>
       <button class="btn wide" id="quickstart">Start review</button>
@@ -193,6 +210,12 @@ details.case p{margin:8px 0 0;color:var(--muted);font-size:13.5px}
     </div>
   </section>
 
+  <!-- LEARN -->
+  <section id="view-learn" class="views" style="padding:0" hidden>
+    <p class="hint" style="margin:0">Work through each topic in the order of your notes, one section at a time. Read every card's points and explanation, then do a quick check on that section. Only cards you have learned come up in review rounds.</p>
+    <div id="learnlist" class="casegroup"></div>
+  </section>
+
   <!-- PROGRESS -->
   <section id="view-progress" class="views" style="padding:0" hidden>
     <div class="stats" id="stats"></div>
@@ -226,6 +249,7 @@ details.case p{margin:8px 0 0;color:var(--muted);font-size:13.5px}
 
 <nav class="tabbar" role="tablist">
   <button role="tab" data-view="today" aria-selected="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Today</button>
+  <button role="tab" data-view="learn" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M2 5c3-1.5 7-1.5 10 1 3-2.5 7-2.5 10-1v14c-3-1.5-7-1.5-10 1-3-2.5-7-2.5-10-1z"/><path d="M12 6v14"/></svg>Learn</button>
   <button role="tab" data-view="progress" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Progress</button>
   <button role="tab" data-view="cases" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6"/></svg>Cases</button>
 </nav>
@@ -271,18 +295,23 @@ const el = (tag, attrs={}, ...kids) => { const n=document.createElement(tag); fo
 /* ---------- state ---------- */
 let state = { v:1, cards:{}, days:{}, settings:{ topics:TOPICS.map(t=>t.key), size:10 } };
 try{ const s=JSON.parse(localStorage.getItem(LS_KEY)||"null"); if(s&&s.v===1) state=Object.assign(state,s,{settings:Object.assign(state.settings,s.settings||{})}); }catch(e){}
-state.days = state.days || {};
+state.days = state.days || {}; state.learned = state.learned || {};
 function save(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){} }
 const dayKey = (t=Date.now()) => { const d=new Date(t); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
 function streak(){ let n=0, t=Date.now(); if(!state.days[dayKey(t)]) t-=DAY; while(state.days[dayKey(t)]){ n++; t-=DAY; } return n; }
 
 /* ---------- scheduling ---------- */
 const recOf = k => state.cards[k] || { b:0, due:0, n:0, last:0 };
+// A card counts as learned once you've read it in Learn mode (or already tested it before Learn existed).
+const isLearned = c => !!state.learned[c.id] || ["recall","identify"].some(m=>recOf(m+":"+c.id).n>0);
 function itemsForMode(mode){
   const on = new Set(state.settings.topics);
   if(mode==="apply") return ESSAYS.filter(e=>on.has(e.t)).map(e=>"essay:"+e.id);
-  return CASES.filter(c=>on.has(c.t)&&(mode!=="identify"||c.clue)).map(c=>mode+":"+c.id);
+  return CASES.filter(c=>on.has(c.t)&&(mode!=="identify"||c.clue)&&isLearned(c)).map(c=>mode+":"+c.id);
 }
+// Sections of a topic, in the order of the notes.
+function sectionsOf(t){ const out=[], idx={}; for(const c of CASES) if(c.t===t){ const k=c.sec||"Cards"; if(!(k in idx)){ idx[k]=out.length; out.push({t,sec:k,cards:[]}); } out[idx[k]].cards.push(c); } return out; }
+function nextSection(){ const on=new Set(state.settings.topics); for(const t of TOPICS) if(on.has(t.key)) for(const s of sectionsOf(t.key)) if(s.cards.some(c=>!isLearned(c))) return s; return null; }
 function buildQueue(keys, size){
   const now=Date.now(), items=keys.map(k=>({k,r:recOf(k)}));
   const due=items.filter(x=>x.r.n>0&&x.r.due<=now).sort((a,b)=>a.r.b-b.r.b||a.r.due-b.r.due);
@@ -325,6 +354,13 @@ function renderToday(){
   const n=state.settings.topics.length;
   $("#topicsummary").textContent = n===TOPICS.length ? `All ${TOPICS.length} topics · ${state.settings.size} cards per round` : `${n} of ${TOPICS.length} topics · ${state.settings.size} cards per round`;
   $("#quickstart").disabled = !keys.length;
+  $("#quickstart").textContent = keys.length ? "Start review" : "Learn some cards first";
+  const on=new Set(state.settings.topics), pool=CASES.filter(c=>on.has(c.t)), got=pool.filter(isLearned).length;
+  $("#learnsummary").textContent=`${got} / ${pool.length} learned`;
+  $("#learnfill").style.width=(pool.length?100*got/pool.length:0)+"%";
+  const ns=nextSection();
+  $("#learnnext").textContent = ns ? `Next: ${TOPIC[ns.t].name} · ${ns.sec} (${ns.cards.filter(c=>!isLearned(c)).length} cards)` : "You've learned every card in your selected topics.";
+  $("#learncontinue").hidden=!ns;
   const weak = CASES.map(c=>({c,r:recOf("recall:"+c.id)})).filter(x=>x.r.n>0&&x.r.score<80).sort((a,b)=>a.r.score-b.r.score).slice(0,4);
   $("#weakcard").hidden = !weak.length; $("#weaklist").innerHTML="";
   weak.forEach(x=>$("#weaklist").append(el("li",{}, el("button",{class:"linkbtn",text:`${x.c.title} · ${x.r.score}%`, onclick:()=>startRound("recall",["recall:"+x.c.id])}))));
@@ -344,6 +380,7 @@ $("#edittopics").onclick=()=>{ $("#topicpanel").hidden=false; renderTopics(); $(
 $("#closetopics").onclick=()=>{ $("#topicpanel").hidden=true; };
 $("#roundsize").onchange=e=>{ state.settings.size=+e.target.value; save(); renderToday(); };
 $("#quickstart").onclick=()=>startRound("recall");
+$("#learncontinue").onclick=()=>{ const s=nextSection(); if(s) startLearn(s); };
 document.querySelectorAll(".mode").forEach(b=>b.onclick=()=>startRound(b.dataset.mode));
 
 /* ---------- session ---------- */
@@ -356,11 +393,35 @@ function startRound(mode, keys){
   history.pushState({session:true},"");
   showCard();
 }
-function endRound(){ round=null; $("#session").hidden=true; document.body.style.overflow=""; renderToday(); if(curView==="progress") renderProgress(); }
+function startLearn(sec){
+  const cards = sec.cards.some(c=>!isLearned(c)) ? sec.cards.filter(c=>!isLearned(c)) : sec.cards;
+  round={mode:"learn",sec,queue:cards.map(c=>c.id),i:0,results:[],requeued:new Set()};
+  if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
+  showCard();
+}
+function learnCard(c){
+  const s=stageClear(), t=TOPIC[c.t];
+  s.append(el("div",{class:"meta"}, el("span",{class:"eyebrow",text:`${t.name} · ${c.sec||""}`}), el("span",{class:"box",text:isLearned(c)?"Learned":"Learn"})),
+    el("h2",{class:"qtitle",text:`${c.title} (${c.when})`}), el("div",{class:"qtext",text:c.q}),
+    el("ul",{class:"lpts"}, c.pts.map(p=>el("li",{text:p}))), explain(c), srcTag(c));
+  const go=()=>{ state.learned[c.id]=Date.now(); save(); round.i++; showCard(); };
+  setActions(round.i>0?el("button",{class:"btn ghost",text:"Back",onclick:()=>{ round.i--; showCard(); }}):null, el("button",{class:"btn",text:"Got it",onclick:go}));
+}
+function learnSummary(){
+  const s=stageClear(), sec=round.sec, keys=sec.cards.map(c=>"recall:"+c.id);
+  $("#pcount").textContent="Done";
+  const secs=sectionsOf(sec.t), i=secs.findIndex(x=>x.sec===sec.sec), nxt=secs.slice(i+1).find(x=>x.cards.some(c=>!isLearned(c)))||nextSection();
+  s.append(el("div",{class:"done"}, el("div",{class:"eyebrow",text:"Section learned"}), el("div",{class:"big",style:"color:var(--blue)",text:String(round.queue.length)}),
+    el("div",{class:"hint",text:`cards read in ${TOPIC[sec.t].name} · ${sec.sec}`}),
+    el("div",{class:"hint",text:"Now test yourself on them while they're fresh. They'll also come back in review rounds from now on."})));
+  setActions(nxt?el("button",{class:"btn ghost",text:"Next section",onclick:()=>startLearn(nxt)}):el("button",{class:"btn ghost",text:"Finish",onclick:()=>$("#closesession").click()}),
+    el("button",{class:"btn",text:"Quick check",onclick:()=>{ round={mode:"recall",queue:shuffle(keys.slice()),i:0,results:[],requeued:new Set()}; showCard(); }}));
+}
+function endRound(){ round=null; $("#session").hidden=true; document.body.style.overflow=""; renderToday(); if(curView==="progress") renderProgress(); if(curView==="learn") renderLearn(); }
 $("#closesession").onclick=()=>{ if(history.state&&history.state.session) history.back(); else endRound(); };
 window.addEventListener("popstate",()=>{ if(!$("#session").hidden) endRound(); });
 
-function setActions(...btns){ const a=$("#actions"); a.innerHTML=""; btns.forEach(b=>a.append(b)); }
+function setActions(...btns){ const a=$("#actions"); a.innerHTML=""; btns.forEach(b=>{ if(b) a.append(b); }); }
 function progress(){ const n=round.queue.length; $("#pfill").style.width=(100*round.i/n)+"%"; $("#pcount").textContent=`${Math.min(round.i+1,n)} / ${n}`; }
 function stageClear(){ const s=$("#stage"); s.innerHTML=""; $("#sbody").scrollTop=0; return s; }
 function metaFor(t, key, extra){ const r=recOf(key); return el("div",{class:"meta"}, el("span",{class:"eyebrow",text:`${t.paper} · ${t.theme} · ${extra||t.name}`}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})); }
@@ -368,6 +429,7 @@ function srcTag(c){ return el("div",{class:"srctag"}, el("b",{text:c.qs==="notes
 function explain(c){ return c.exp?el("div",{class:"explain"}, el("b",{text:"Explanation"}), c.exp):null; }
 function showCard(){
   progress();
+  if(round.mode==="learn") return round.i>=round.queue.length ? learnSummary() : learnCard(CASE[round.queue[round.i]]);
   if(round.i>=round.queue.length) return showSummary();
   const key=round.queue[round.i], [mode,id]=key.split(":");
   if(mode==="recall") return recallCard(key,CASE[id]);
@@ -452,7 +514,27 @@ function showSummary(){
     el("div",{class:"hint",text:`Average first-attempt mark across ${firsts.length} cards · ${streak()}-day streak`}),
     weak.length?el("div",{style:"text-align:left"}, el("div",{class:"eyebrow",text:"Revise these first"}), el("ul",{},weak.map(w=>el("li",{text:w})))):el("div",{class:"hint",text:"Nothing below half marks this round."})));
   const mode=round.mode;
-  setActions(el("button",{class:"btn ghost",text:"Finish",onclick:()=>$("#closesession").click()}), el("button",{class:"btn",text:"Next round",onclick:()=>{ round=null; history.replaceState({session:true},""); const q=buildQueue(itemsForMode(mode),state.settings.size); round={mode,queue:q,i:0,results:[],requeued:new Set()}; showCard(); }}));
+  setActions(el("button",{class:"btn ghost",text:"Finish",onclick:()=>$("#closesession").click()}), el("button",{class:"btn",text:"Next round",onclick:()=>{ round=null; history.replaceState({session:true},""); const q=buildQueue(itemsForMode(mode),state.settings.size); if(!q.length) return $("#closesession").click(); round={mode,queue:q,i:0,results:[],requeued:new Set()}; showCard(); }}));
+}
+
+/* ---------- learn view ---------- */
+const openLearn=new Set();
+function renderLearn(){
+  const box=$("#learnlist"); box.innerHTML="";
+  for(const t of TOPICS){
+    const secs=sectionsOf(t.key), all=secs.flatMap(s=>s.cards), got=all.filter(isLearned).length;
+    const d=el("details",{class:"ltopic"}, el("summary",{}, el("b",{text:t.name}), el("span",{class:"num",style:"font:12px var(--mono);color:var(--muted)",text:`${t.paper} · ${got}/${all.length}`}),
+      el("div",{class:"bar",style:"grid-column:1/-1"}, el("i",{style:`width:${100*got/all.length}%;background:var(--blue)`}))),
+      el("div",{style:"margin-top:8px"}, secs.map(s=>{ const k=s.cards.filter(isLearned).length, done=k===s.cards.length;
+        return el("div",{class:"secrow"+(done?" fin":"")}, el("span",{class:"nm",text:s.sec}),
+          el("button",{class:"linkbtn",text:done?"Review":k?"Continue":"Learn",onclick:()=>startLearn(s)}),
+          el("span",{class:"num",text:`${k}/${s.cards.length} learned`}),
+          done?el("button",{class:"linkbtn",style:"font-size:12px",text:"Quick check",onclick:()=>startRound("recall",shuffle(s.cards.map(c=>"recall:"+c.id)))}):el("span",{}),
+          el("div",{class:"bar"}, el("i",{style:`width:${100*k/s.cards.length}%;background:var(--blue)`}))); })));
+    if(openLearn.has(t.key)) d.open=true;
+    d.addEventListener("toggle",()=>{ d.open?openLearn.add(t.key):openLearn.delete(t.key); });
+    box.append(d);
+  }
 }
 
 /* ---------- progress view ---------- */
@@ -460,7 +542,7 @@ function renderProgress(){
   const now=Date.now(), keys=CASES.map(c=>"recall:"+c.id);
   const tried=keys.filter(k=>recOf(k).n>0).length, secure=keys.filter(k=>recOf(k).b>=5).length, due=keys.filter(k=>{const r=recOf(k);return r.n>0&&r.due<=now;}).length;
   const box=$("#stats"); box.innerHTML="";
-  [[`${tried}/${keys.length}`,"cases attempted"],[secure,"secure (box 5)"],[due,"due now"],[streak(),"day streak"]].forEach(([b,s])=>box.append(el("div",{class:"stat"},el("b",{text:String(b)}),el("span",{text:s}))));
+  [[`${CASES.filter(isLearned).length}/${keys.length}`,"cards learned"],[`${tried}/${keys.length}`,"cards tested"],[secure,"secure (box 5)"],[due,"due now"],[streak(),"day streak"]].forEach(([b,s])=>box.append(el("div",{class:"stat"},el("b",{text:String(b)}),el("span",{text:s}))));
   const rows=$("#topicrows"); rows.innerHTML="";
   for(const t of TOPICS){
     const rs=CASES.filter(c=>c.t===t.key).map(c=>recOf("recall:"+c.id)), n=rs.length;
@@ -480,12 +562,12 @@ $("#exportbtn").onclick=async()=>{
 $("#importshow").onclick=()=>{ const ta=$("#backupcode"); ta.hidden=false; ta.value=""; ta.placeholder="Paste your backup code here"; $("#importrow").hidden=false; $("#importmsg").textContent=""; ta.focus(); };
 $("#importbtn").onclick=()=>{
   try{ const s=JSON.parse(decodeURIComponent(escape(atob($("#backupcode").value.trim())))); if(!s||s.v!==1||!s.cards) throw 0;
-    state=Object.assign({v:1,cards:{},days:{},settings:state.settings},s); save(); renderProgress(); renderToday(); $("#importmsg").textContent="Progress restored."; }
+    state=Object.assign({v:1,cards:{},days:{},learned:{},settings:state.settings},s); save(); renderProgress(); renderToday(); $("#importmsg").textContent="Progress restored."; }
   catch(e){ $("#importmsg").textContent="That code isn't valid. Copy the whole code and try again."; }
 };
 $("#resetask").onclick=()=>{ $("#resetconfirm").hidden=false; };
 $("#resetno").onclick=()=>{ $("#resetconfirm").hidden=true; };
-$("#resetyes").onclick=()=>{ state.cards={}; state.days={}; save(); $("#resetconfirm").hidden=true; renderProgress(); renderToday(); };
+$("#resetyes").onclick=()=>{ state.cards={}; state.days={}; state.learned={}; save(); $("#resetconfirm").hidden=true; renderProgress(); renderToday(); };
 
 /* ---------- cases view ---------- */
 function renderBrowse(){
@@ -497,7 +579,7 @@ function renderBrowse(){
     let sec=null;
     cs.forEach(c=>{ const r=recOf("recall:"+c.id);
       if(c.sec&&c.sec!==sec){ sec=c.sec; box.append(el("div",{class:"sec",text:sec})); }
-      box.append(el("details",{class:"case"}, el("summary",{}, el("b",{text:c.title}), el("span",{class:"hint",text:c.when}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})),
+      box.append(el("details",{class:"case"}, el("summary",{}, el("b",{text:c.title}), el("span",{class:"hint",text:c.when}), el("span",{class:"box",text:r.n?`Box ${r.b}`:isLearned(c)?"Learned":"New"})),
         el("p",{text:c.q}), el("ul",{},c.pts.map(p=>el("li",{text:p}))), explain(c), srcTag(c),
         el("button",{class:"linkbtn",text:"Drill this case",onclick:()=>startRound("recall",["recall:"+c.id])}))); });
   }
@@ -507,12 +589,12 @@ $("#search").addEventListener("input",renderBrowse);
 
 /* ---------- tabs ---------- */
 let curView="today";
-const TITLES={today:"Today",progress:"Progress",cases:"Case bank"};
+const TITLES={today:"Today",learn:"Learn",progress:"Progress",cases:"Case bank"};
 function setView(v){
   curView=v; $("#viewtitle").textContent=TITLES[v];
   document.querySelectorAll("nav.tabbar button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.view===v)));
   for(const k of Object.keys(TITLES)) $("#view-"+k).hidden=k!==v;
-  if(v==="progress") renderProgress(); if(v==="cases") renderBrowse(); if(v==="today") renderToday();
+  if(v==="progress") renderProgress(); if(v==="cases") renderBrowse(); if(v==="learn") renderLearn(); if(v==="today") renderToday();
   window.scrollTo(0,0);
 }
 document.querySelectorAll("nav.tabbar button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
