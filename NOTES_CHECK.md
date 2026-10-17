@@ -1,7 +1,15 @@
 # Where your notes contradict themselves
 
-Every quote below is copied word for word from the original files in your History Drive folder, with the document and section it's in. 
-I first flagged 71 possible contradictions, then re-checked each against the full text: **48 are real**, 22 turned out to be small or explained elsewhere in the notes, and 1 was a misreading. Those are listed at the end.
+Every quote is copied word for word from the original files in your History Drive folder, with the document and section it's in.
+
+How this list was made: 71 possible contradictions were flagged, each was checked against the full text, and then each was read in context to rule out cases where the two passages are about different things (different events, measures, estimates or stages).
+
+- **32 definite contradictions**: the notes say incompatible things about the same thing. These show as “Check this” on the cards.
+- **16 probably different things**: they look like clashes but are likely about different events, measures or stages. Listed with the reason.
+- **23 small or explained**: left out.
+
+
+# Part 1: Definite contradictions
 
 
 ## Cold War: origins
@@ -20,26 +28,10 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “1922 | Formation of the USSR”  
 > — *Cold War notes, 4. Manifestations of Emerging Tensions (Chronological Core Content)*
 
-**2.** §2 (Geography & Periodisation) says Tito broke from Stalin's control in 1947, but the §4 Manifestations timeline puts Yugoslavia's expulsion from COMINFORM in June 1948.
-
-> “Tito broke from Stalin's control in 1947”  
-> — *Cold War notes, 2. Geography & Periodisation*
-
-> “Yugoslavia expelled from COMINFORM”  
-> — *Cold War notes, 4. Manifestations of Emerging Tensions (Chronological Core Content)*
-
-**3.** the Marshall Plan paragraph in §4.3 first gives it as $17 billion over 4 years and then says it would amount to $13 billion from 1948–1952, without saying which figure is the one actually spent.
-
-> “announced the European Recovery Programme of $17 billion to be spent over 4 years”  
-> — *Cold War notes, 4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON*
-
-> “This would amount to $13 billion from 1948-1952.”  
-> — *Cold War notes, 4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON*
-
 
 ## Cold War: Korea, Cuba, Vietnam
 
-**4.** §13.5 (Geneva Accords) says the ARVN grew from 243,000 to 514,000 under Kennedy's advisor build-up, but §13.10 (Phases of US Involvement) says it grew by only 20,000 men in the same period.
+**2.** §13.5 (Geneva Accords) says the ARVN grew from 243,000 to 514,000 under Kennedy's advisor build-up, but §13.10 (Phases of US Involvement) says it grew by only 20,000 men in the same period.
 
 > “who trained the ARVN (which grew from 243,000 to 514,000 personnel)”  
 > — *Cold War notes, 13.5 The Geneva Accords (1954) and the USA's Disregard of Them*
@@ -47,29 +39,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “and the ARVN grew by 20,000 men”  
 > — *Cold War notes, 13.10 Phases of US Involvement: Kennedy, Johnson, Nixon*
 
-**5.** §13.10 (Phases of US Involvement) puts the US troop peak at 543,000 in 1969 (and also has 540,000 in 1968 falling to 24,000 by 1972), but the §23.3(b) Vietnam revision timeline puts the peak at 536,000 in 1968 and the drawdown as 480,000 to 23,000 by 1973.
-
-> “US forces rose from ~80,000 (1965) to a peak of 543,000 (1969)”  
-> — *Cold War notes, 13.10 Phases of US Involvement: Kennedy, Johnson, Nixon*
-
-> “US troop numbers fell from 540,000 (1968) to just 24,000 (1972)”  
-> — *Cold War notes, 13.10 Phases of US Involvement: Kennedy, Johnson, Nixon*
-
-> “peak troop levels (536,000)”  
-> — *Cold War notes, 23.3 Topic 2 Supplement — Consolidated Case-Study Revision Tables*
-
-> “troop drawdown 480,000→23,000 by 1973”  
-> — *Cold War notes, 23.3 Topic 2 Supplement — Consolidated Case-Study Revision Tables*
-
-**6.** §12.8 (Impact of the Cuban Missile Crisis) dates the Moscow–Washington Hot Line to 1962, but the §23.3(c) Cuban Missile Crisis revision timeline says it was established in Jun–Aug 1963.
-
-> “Turning point: the Moscow–Washington “Hot Line” (1962)”  
-> — *Cold War notes, 12.8 Impact on the Cold War*
-
-> “Jun–Aug 1963 | Kennedy's ‘Peace Speech’; Moscow–Washington Hotline established”  
-> — *Cold War notes, 23.3 Topic 2 Supplement — Consolidated Case-Study Revision Tables*
-
-**7.** §12.8 (Impact of the Cuban Missile Crisis) says the US raised DEFCON 3 during the 1973 Yom Kippur War, but the §23.3(c) revision table says DEFCON 2 was raised then.
+**3.** §12.8 (Impact of the Cuban Missile Crisis) says the US raised DEFCON 3 during the 1973 Yom Kippur War, but the §23.3(c) revision table says DEFCON 2 was raised then.
 
 > “raised DEFCON 3 during the 1973 Yom Kippur War”  
 > — *Cold War notes, 12.8 Impact on the Cold War*
@@ -80,7 +50,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 
 ## Cold War: end
 
-**8.** §16.3 (Key Features of US Renewed Containment) gives the US defence budget as $171bn in 1981 rising to $376bn in 1986, but the §20 historiography table gives $134bn rising to only $253bn over 1980–89.
+**4.** §16.3 (Key Features of US Renewed Containment) gives the US defence budget as $171bn in 1981 rising to $376bn in 1986, but the §20 historiography table gives $134bn rising to only $253bn over 1980–89.
 
 > “Massive US defence-budget increase: $171bn (1981) → $376bn (1986)”  
 > — *Cold War notes, 16.3 Key Features of US Renewed Containment*
@@ -88,38 +58,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Massive US defence build-up ($134bn→$253bn, 1980–89”  
 > — *Cold War notes, 20. Historical Interpretations of the End of the Cold War — Three Schools*
 
-**9.** §16.4 and §20 say Soviet defence spending rose from 22% to 27% of GDP in 1980–85, but the SDI part of §16.3 and §18.3/§18.5 put it at about 15–17% of GDP/GNP in 1983–85 (25% only as the highest estimate).
-
-> “1980–85: USSR forced to raise defence spending from 22% to 27% of GDP”  
-> — *Cold War notes, 16.4 How US Renewed Containment Led to the End of the Cold War (Reagan Victory thesis)*
-
-> “≈22%→27% of Soviet GDP diverted to defence”  
-> — *Cold War notes, 20. Historical Interpretations of the End of the Cold War — Three Schools*
-
-> “Soviet defence budget ≈15–17% of GDP in 1983”  
-> — *Cold War notes, 16.3 Key Features of US Renewed Containment — The Strategic Defense Initiative (SDI), March 1983*
-
-> “Defence spending rose from 12–14% of Soviet GNP (1965) to 15–17% (1985) — some estimates as high as 25%”  
-> — *Cold War notes, 18.3 Long-Term (1945–84) Causes of Decline — 5. External causes*
-
-> “defense spending became a greater burden, reaching 15-17% of GNP”  
-> — *Cold War notes, 18.5 Gorbachev's ‘New Thinking’ in Foreign Relations*
-
-**10.** the Reagan Doctrine part of §16.3 gives total US aid to the Mujahedeen as $2bn+ over 1979–89, but §16.4 and §20 give about $1bn a year. The Soviet cost of Afghanistan is about $8bn/yr in §16.4 and §20 but about $20bn/yr elsewhere in §16.4.
-
-> “CIA sent $2bn+ in weapons/aid to the Mujahedeen (1979–89”  
-> — *Cold War notes, 16.3 Key Features of US Renewed Containment — (b) The Reagan Doctrine (6 Feb 1985)*
-
-> “US covert Mujahedeen support (≈$1bn/yr) cost the Soviets roughly eight times as much”  
-> — *Cold War notes, 16.4 How US Renewed Containment Led to the End of the Cold War (Reagan Victory thesis)*
-
-> “the Afghan Mujahedeen programme (US $1bn/yr vs. Soviet ≈$8bn/yr)”  
-> — *Cold War notes, 20. Historical Interpretations of the End of the Cold War — Three Schools*
-
-> “the Afghan ‘bleeding wound’ (≈$20bn/yr, casualties, negative public opinion)”  
-> — *Cold War notes, 16.4 How US Renewed Containment Led to the End of the Cold War (Reagan Victory thesis)*
-
-**11.** the §17.2 summits table says Malta 1989 signed no agreements and puts the CFE Treaty and Chemical Weapons Accord in 1990 (Washington DC/Paris), but the §17.2 arms-control treaties table and the §22 checklist date both to Malta, 1989.
+**5.** the §17.2 summits table says Malta 1989 signed no agreements and puts the CFE Treaty and Chemical Weapons Accord in 1990 (Washington DC/Paris), but the §17.2 arms-control treaties table and the §22 checklist date both to Malta, 1989.
 
 > “1989 | Malta | Bush–Gorbachev; no agreements signed”  
 > — *Cold War notes, 17.2 Manifestations of US Cooperation and Accommodation, 1985–91*
@@ -136,7 +75,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “INF 1987, CFE 1989, START I 1991”  
 > — *Cold War notes, 22. Quick-Revision Checklist — Topic 3*
 
-**12.** the §18.2 milestones table lists 'Germany unified' under 1989, but §19.4 (East Germany) says Germany was formally reunited on 3 Oct 1990.
+**6.** the §18.2 milestones table lists 'Germany unified' under 1989, but §19.4 (East Germany) says Germany was formally reunited on 3 Oct 1990.
 
 > “end of Brezhnev Doctrine; Berlin Wall falls; Germany unified.”  
 > — *Cold War notes, 18.2 Key Milestones in the Decline of the USSR*
@@ -144,7 +83,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Germany formally reunited 3 Oct 1990, 11 months after the Wall fell.”  
 > — *Cold War notes, 19.4 Case Study: East Germany (German Democratic Republic)*
 
-**13.** §18.2 says Yeltsin was elected 1st President of Russia on 12 June 1991, but §18.6 (August Coup) says he made his comeback as elected President of Russia in 1990.
+**7.** §18.2 says Yeltsin was elected 1st President of Russia on 12 June 1991, but §18.6 (August Coup) says he made his comeback as elected President of Russia in 1990.
 
 > “12 Jun: Yeltsin democratically elected 1st President of Russia”  
 > — *Cold War notes, 18.2 Key Milestones in the Decline of the USSR*
@@ -152,7 +91,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “political comeback as elected President of Russia (1990)”  
 > — *Cold War notes, 18.6 The August Coup and Takeover by Yeltsin*
 
-**14.** the §18.1 table says the Slavic republics Byelorussia, Ukraine and Georgia led the declaration ending the USSR, but §18.2 and §18.7 say the Minsk Declaration was signed by Belarus (Byelorussia), Russia and Ukraine.
+**8.** the §18.1 table says the Slavic republics Byelorussia, Ukraine and Georgia led the declaration ending the USSR, but §18.2 and §18.7 say the Minsk Declaration was signed by Belarus (Byelorussia), Russia and Ukraine.
 
 > “Slavic republics (Byelorussia, Ukraine, Georgia) | 3 | Relatively active, not so poor; led the declaration ending the USSR”  
 > — *Cold War notes, 18.1 What Exactly Was the Soviet Union?*
@@ -163,15 +102,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “leaders of Byelorussian SSR, Russian SFSR and Ukrainian SSR sign the Minsk Declaration”  
 > — *Cold War notes, 18.7 Dissolution of the USSR and Resignation of Gorbachev*
 
-**15.** the §18.2 milestones table says glasnost was introduced in 1987, but §18.4 says glasnost ran from 1986.
-
-> “1987 | Glasnost (openness), decentralisation, democratisation, elections introduced.”  
-> — *Cold War notes, 18.2 Key Milestones in the Decline of the USSR*
-
-> “Glasnost (openness, from 1986)”  
-> — *Cold War notes, 18.4 Impact of Perestroika and Glasnost*
-
-**16.** §16.3(a) Military Containment says the 1972 MBFR conventional-arms talks collapsed, but the SDI impact table in §16.3 refers to a '1972 MBFR treaty' whose land-based limits SDI made obsolete.
+**9.** §16.3(a) Military Containment says the 1972 MBFR conventional-arms talks collapsed, but the SDI impact table in §16.3 refers to a '1972 MBFR treaty' whose land-based limits SDI made obsolete.
 
 > “conventional-arms talks (MBFR 1972) also collapsed.”  
 > — *Cold War notes, 16.3 Key Features of US Renewed Containment — (a) Military Containment*
@@ -179,7 +110,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Made the 1972 MBFR treaty's land-based limits obsolete”  
 > — *Cold War notes, 16.3 Key Features of US Renewed Containment — The Strategic Defense Initiative (SDI), March 1983*
 
-**17.** §17.3 says the Berlin Wall fell 10 months after Reagan's June 1987 Brandenburg Gate speech, but §16.1, §19.2 and §19.4 date the fall of the Wall to 9 Nov 1989, more than two years later.
+**10.** §17.3 says the Berlin Wall fell 10 months after Reagan's June 1987 Brandenburg Gate speech, but §16.1, §19.2 and §19.4 date the fall of the Wall to 9 Nov 1989, more than two years later.
 
 > “Reagan at the Brandenburg Gate, June 1987 — “Mr. Gorbachev, open this gate. Mr. Gorbachev, tear down this wall” (fell 10 months later”  
 > — *Cold War notes, 17.3 Economic Cooperation and Rhetoric*
@@ -193,7 +124,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “fall of the Berlin Wall, Nov 1989”  
 > — *Cold War notes, 16.1 Understanding the Terms*
 
-**18.** §16.2 dates the Brezhnev Doctrine to the 1960s–70s and says it was used to justify the 1968 occupation of Czechoslovakia, but §18.5 (Sinatra Doctrine) says it had also justified the 1956 intervention in Hungary.
+**11.** §16.2 dates the Brezhnev Doctrine to the 1960s–70s and says it was used to justify the 1968 occupation of Czechoslovakia, but §18.5 (Sinatra Doctrine) says it had also justified the 1956 intervention in Hungary.
 
 > “The Brezhnev Doctrine (USSR, 1960s–70s)”  
 > — *Cold War notes, 16.2 Reasons for US Renewed Containment — 1. Limitations of détente and continuing Cold War concerns*
@@ -205,20 +136,9 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > — *Cold War notes, 18.5 Gorbachev's ‘New Thinking’ in Foreign Relations — The Sinatra Doctrine (vs. the Brezhnev Doctrine)*
 
 
-## Japan & China
-
-**19.** the Condensed Timeline says Japan's GNP ranked 2nd in the world in 1968, but the Indicators of the 'Economic Miracle' section calls Japan the world's 3rd-largest economy, after the US and USSR, by 1973.
-
-> “1968 | Japan's GNP ranks 2nd in the world.”  
-> — *Japan notes, I. Overview: Phases & Timeline — Condensed Timeline*
-
-> “nearly one-third of the US by 1973; world's 3rd-largest economy after the US and USSR.”  
-> — *Japan notes, Indicators of the 'Economic Miracle'*
-
-
 ## Arab–Israeli
 
-**20.** section 1.5 (Territorial Sovereignty) says Plan Dalet aimed to extend borders beyond the UN partition lines (and 1.3 says it conquered territory beyond them), but the 2.2 Role of Different Actors table says it aimed at securing Jewish areas and controlling the UN-allotted Jewish-state territory.
+**12.** section 1.5 (Territorial Sovereignty) says Plan Dalet aimed to extend borders beyond the UN partition lines (and 1.3 says it conquered territory beyond them), but the 2.2 Role of Different Actors table says it aimed at securing Jewish areas and controlling the UN-allotted Jewish-state territory.
 
 > “Zionist forces later launched Plan Dalet, conquering territory beyond the partition lines.”  
 > — *Arab-Israeli guide, 1.3 Cause A: Decolonisation*
@@ -229,7 +149,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “aimed at securing Jewish areas and gaining control over UN-allotted Jewish-state territory.”  
 > — *Arab-Israeli guide, 2.2 Role of Different Actors*
 
-**21.** the 2.5 Armistice Agreements table calls the 1949 armistices “a series of separate peace agreements”, but the 5.7/5.9 Camp David sections say the 1979 Egypt–Israel treaty was the first Arab–Israeli peace treaty, ending a formal state of war that had existed since 1948.
+**13.** the 2.5 Armistice Agreements table calls the 1949 armistices “a series of separate peace agreements”, but the 5.7/5.9 Camp David sections say the 1979 Egypt–Israel treaty was the first Arab–Israeli peace treaty, ending a formal state of war that had existed since 1948.
 
 > “Resulted in a series of separate peace agreements between Israel and its Arab neighbours, ending active violence in the immediate term.”  
 > — *Arab-Israeli guide, 2.5 Evaluating the Effectiveness of Conflict Management*
@@ -240,7 +160,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “the Egypt-Israel Peace Treaty was signed on the White House lawn, 26 March 1979, formally ending the state of war.”  
 > — *Arab-Israeli guide, 5.7 The Camp David Accords (17 September 1978)*
 
-**22.** the 4.7 Aftermath of the War table says a further 1 million Palestinians came under Israeli rule after 1967, but section 5.1 (Background to the Yom Kippur War) says 665,000.
+**14.** the 4.7 Aftermath of the War table says a further 1 million Palestinians came under Israeli rule after 1967, but section 5.1 (Background to the Yom Kippur War) says 665,000.
 
 > “A further 1 million Palestinians came under Israeli rule; ~350,000 more became refugees”  
 > — *Arab-Israeli guide, 4.7 Aftermath of the War*
@@ -248,7 +168,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “a further 350,000–400,000 Palestinians became refugees, with 665,000 now under Israeli control.”  
 > — *Arab-Israeli guide, 5.1 Background to the Conflict*
 
-**23.** the 4.6 evaluation credits Resolution 242 with bringing the war to an end, but the 4.3 timeline and 4.5 show the fighting ended 7–10 June 1967 through the Resolution 234 ceasefire, months before 242 was passed (22 Nov 1967).
+**15.** the 4.6 evaluation credits Resolution 242 with bringing the war to an end, but the 4.3 timeline and 4.5 show the fighting ended 7–10 June 1967 through the Resolution 234 ceasefire, months before 242 was passed (22 Nov 1967).
 
 > “Brought the war to an end and began the resumption-of-peace process.”  
 > — *Arab-Israeli guide, 4.6 Evaluating the Effectiveness of Resolution 242*
@@ -262,24 +182,10 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “UNSC Resolution 242 (22 Nov 1967)”  
 > — *Arab-Israeli guide, 4.5 UN Intervention and Ceasefire*
 
-**24.** the 4.6 evaluation says Resolution 242 was not substantively acted on until the 1991 Madrid Conference, but 4.5, 5.4 and 5.7 present Resolution 338 (1973) as calling for its implementation and the 1978 Camp David framework as based on Resolutions 242/338.
-
-> “not substantively acted on until the 1991 Madrid Conference (24 years later)”  
-> — *Arab-Israeli guide, 4.6 Evaluating the Effectiveness of Resolution 242*
-
-> “Never fully implemented, but remained the diplomatic touchstone through to the Camp David Accords and beyond.”  
-> — *Arab-Israeli guide, 4.5 UN Intervention and Ceasefire*
-
-> “to implement Resolution 242 in all its parts”  
-> — *Arab-Israeli guide, 5.4 UN Intervention and Ceasefire*
-
-> “Based on Resolutions 242/338; addressed the Palestinian problem”  
-> — *Arab-Israeli guide, 5.7 The Camp David Accords (17 September 1978)*
-
 
 ## Indo–Pakistani
 
-**25.** Part C's 'Role of UN Intervention and Ceasefire' calls 1965 a "17-week war", but the Part C timeline runs it from 5 Aug to the 21–22 Sep ceasefire, which is only about 7 weeks.
+**16.** Part C's 'Role of UN Intervention and Ceasefire' calls 1965 a "17-week war", but the Part C timeline runs it from 5 Aug to the 21–22 Sep ceasefire, which is only about 7 weeks.
 
 > “This 17-week war caused the largest tank battle since WWII.”  
 > — *Indo-Pakistani notes, Part C — Role of UN Intervention and Ceasefire*
@@ -290,18 +196,10 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “21–22 Sep | Ceasefire accepted by India (21st) and Pakistan (22nd); war ends.”  
 > — *Indo-Pakistani notes, Part C — Timeline of Key Developments*
 
-**26.** the Sino-Indian War aftermath section says China did not provide the military support Pakistan expected in 1971, but Part D's Chinese Involvement section says China gave Pakistan moral and military aid during the war (while not intervening directly).
-
-> “In 1971, Pakistan expected Chinese military support — China did not provide it, reflecting the limits of that alliance.”  
-> — *Indo-Pakistani notes, The Sino-Indian War of 1962 — Aftermath and Significance for Indo-Pakistani Relations*
-
-> “Gave moral and military aid to Pakistan during the war, though of lesser quality than Soviet aid to India.”  
-> — *Indo-Pakistani notes, Part D — Chinese Involvement*
-
 
 ## Congo
 
-**27.** the Mulele entry in Key Domestic Actors (and the Kwilu Rebellion section) has the rebellion suppressed and Mulele in exile by early 1965, but the Master Timeline says the Kwilu rebellion ended and Mulele fled in Dec 1965.
+**17.** the Mulele entry in Key Domestic Actors (and the Kwilu Rebellion section) has the rebellion suppressed and Mulele in exile by early 1965, but the Master Timeline says the Kwilu rebellion ended and Mulele fled in Dec 1965.
 
 > “Rebellion suppressed by early 1965; Mulele fled into exile.”  
 > — *Congo guide, III. Key Domestic Actors (State & Non-State)*
@@ -312,7 +210,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Dec 1965 | Kwilu rebellion ends; Mulele flees into exile.”  
 > — *Congo guide, IV. Master Timeline*
 
-**28.** the ONUC phase table ends Phase II (the Fight for Katanga) in Dec 1964, yet the same table starts Phase III in Jan 1964 and says Katanga was defeated in Jan 1963.
+**18.** the ONUC phase table ends Phase II (the Fight for Katanga) in Dec 1964, yet the same table starts Phase III in Jan 1964 and says Katanga was defeated in Jan 1963.
 
 > “Phase II: The Fight for Katanga (21 Feb 1961–Dec 1964)”  
 > — *Congo guide, VIII. Effectiveness of Conflict Management — ONUC phases*
@@ -320,7 +218,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Phase III: Endgame in the Congo (Jan 1964–Dec 1964) | Katanga's defeat (Jan 1963) did not end ONUC's mission”  
 > — *Congo guide, VIII. Effectiveness of Conflict Management — ONUC phases*
 
-**29.** the Phase 2 Domestic Actors table says Mulele led the rebellions in Kwilu and Orientale, and the Kwilu Rebellion section has the Kwilu rebels capturing Stanleyville, but the Simba Rebellion section says the Orientale revolt was led by Gizenga, Gbenye and Soumialot and places Stanleyville's fall in that revolt.
+**19.** the Phase 2 Domestic Actors table says Mulele led the rebellions in Kwilu and Orientale, and the Kwilu Rebellion section has the Kwilu rebels capturing Stanleyville, but the Simba Rebellion section says the Orientale revolt was led by Gizenga, Gbenye and Soumialot and places Stanleyville's fall in that revolt.
 
 > “Mulele | Organised and staged rebellions against the central government in Kwilu and Orientale”  
 > — *Congo guide, VII. Phase 2: Domestic State & Non-State Actors*
@@ -337,18 +235,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 
 ## Bosnia
 
-**30.** the Siege of Sarajevo row in Key Military Developments dates the siege to 29 Feb 1996, but the same row's text and the Master Timeline say it was lifted on 14 Dec 1995 with the Dayton Accords.
-
-> “Siege of Sarajevo (5 Apr 1992 – 29 Feb 1996)”  
-> — *Bosnian War notes, 4. Key Military Developments of the War*
-
-> “Lifted following the Dayton Agreement (14 Dec 1995).”  
-> — *Bosnian War notes, 4. Key Military Developments of the War*
-
-> “14 Dec 1995 | Dayton Accords formally signed in Paris; siege of Sarajevo lifted.”  
-> — *Bosnian War notes, 3. Master Timeline of Key Events*
-
-**31.** the 1992 row of the NATO table (7.4) has the WEU's Operation Sharp Guard already running from 16 Jul 1992, but the next row says Sharp Guard was formed on 15 Jun 1995 by merging Maritime Guard with WEU naval activities.
+**20.** the 1992 row of the NATO table (7.4) has the WEU's Operation Sharp Guard already running from 16 Jul 1992, but the next row says Sharp Guard was formed on 15 Jun 1995 by merging Maritime Guard with WEU naval activities.
 
 > “coordinated with the Western European Union’s Operation Sharp Guard in the Strait of Otranto (16 Jul)”  
 > — *Bosnian War notes, 7.4 NATO's Military Intervention*
@@ -356,7 +243,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “15 Jun 1995: NATO integrated Operation Maritime Guard and Western European Union naval activities into Operation Sharp Guard”  
 > — *Bosnian War notes, 7.4 NATO's Military Intervention*
 
-**32.** section 1.3 (and the 6 Apr 1992 Master Timeline entry) says Bosnian Serbs declared independence and took the name Republika Srpska on 6 Apr 1992, but the Master Timeline's 7 Apr and 12 Aug entries and section 5.3 say they declared independence on 7 Apr and were only renamed Republika Srpska on 12 Aug 1992.
+**21.** section 1.3 (and the 6 Apr 1992 Master Timeline entry) says Bosnian Serbs declared independence and took the name Republika Srpska on 6 Apr 1992, but the Master Timeline's 7 Apr and 12 Aug entries and section 5.3 say they declared independence on 7 Apr and were only renamed Republika Srpska on 12 Aug 1992.
 
 > “on the same day, Bosnian Serb leaders declared independence and renamed their self-proclaimed entity the Republika Srpska (RS)”  
 > — *Bosnian War notes, 1.3 Independence and the Outbreak of War*
@@ -370,35 +257,10 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “declared its own independence on 7 April 1992. On 12 August 1992, the reference to Bosnia and Herzegovina was dropped and it became simply Republika Srpska.”  
 > — *Bosnian War notes, 5.3 The Republika Srpska — Background to the Formation of Republika Srpska*
 
-**33.** the opening of section 6.3 says the US and NATO began military intervention in 1995, but 6.3's own US policy phase table starts armed intervention in April 1994 (Goražde), the NATO table (7.4) puts NATO's first combat action at Banja Luka in Feb 1994, and the Key Players summary says armed intervention came in 1994–95.
-
-> “The US and NATO initiated military intervention in 1995, after years of indecision”  
-> — *Bosnian War notes, 6.3 The USA’s Initial Disengagement and Subsequent Involvement*
-
-> “Phase 3: Armed Military Intervention | April 1994: After the bombing of the Goražde Muslim enclave”  
-> — *Bosnian War notes, 6.3 — Phases in the Shift of US Policy*
-
-> “28 Feb 1994 (Banja Luka Incident): NATO fighters shot down four Serb jets under Deny Flight — NATO’s first combat action in its history.”  
-> — *Bosnian War notes, 7.4 NATO's Military Intervention*
-
-> “finally to armed intervention from 1994–95 (Gorazde bombing, pressure for the Washington Agreement, then Operation Deliberate Force)”  
-> — *Bosnian War notes, 10. Summary: Key Players in the Development of the War*
-
-
-## Forming nation-states
-
-**34.** §3.3 (Vietnam decolonisation) says Ho dissolved the ICP in Nov 1945, but §5.1 (the DRV, 1954–75) says the ICP was dissolved in 1951 when the Lao Dong Party replaced it.
-
-> “dissolved the ICP in Nov 1945 to shed the communist image”  
-> — *Forming Nation-States notes, 3.3 Violent Re-imposition of Control — Vietnam (independence from France, formalised 1954)*
-
-> “The ICP (dissolved 1951) was replaced by the Lao Dong Party (Vietnam Workers’ Party) under Ho Chi Minh”  
-> — *Forming Nation-States notes, 5.1 Vietnam, 1954–1976 — The Democratic Republic of Vietnam (North), 1954–75*
-
 
 ## National unity
 
-**35.** §6.3 (After 1975: the SRV) says about 75,000 boat people fled per month in 1978–79, which implies far more than the total of 545,000 boat people for 1978–80 given in §6.4 (Policies Towards Minorities).
+**22.** §6.3 (After 1975: the SRV) says about 75,000 boat people fled per month in 1978–79, which implies far more than the total of 545,000 boat people for 1978–80 given in §6.4 (Policies Towards Minorities).
 
 > “~75,000/month fled in 1978–79 (‘boat people’)”  
 > — *National Unity notes, 6.3 After 1975: The Socialist Republic of Vietnam*
@@ -406,7 +268,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “~two-thirds of 545,000 boat people (1978–80) were ethnic Chinese”  
 > — *National Unity notes, 6.4 Policies Towards Minorities — Shaped by Geo-Politics*
 
-**36.** the §1.3 approaches table classes Malaysia under multiculturalism/integration (with exceptions), but the §9 comparative table says Malaysia was officially assimilative (Malay pre-eminence) though accommodative in practice.
+**23.** the §1.3 approaches table classes Malaysia under multiculturalism/integration (with exceptions), but the §9 comparative table says Malaysia was officially assimilative (Malay pre-eminence) though accommodative in practice.
 
 > “Multiculturalism (Integration) | A new culture draws from all ethnic groups; minorities not compelled to adopt the dominant culture. | Less coercive, more inclusive | Singapore, Malaysia (though exceptions exist in specific policies)”  
 > — *National Unity notes, 1.3 Two Government Approaches to Building National Unity*
@@ -417,7 +279,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 
 ## SEA economic change
 
-**37.** Part A (Tarling's Framework) dates Malaysia's First Malaysia Plan to 1969, but the B8 Role of the Government table dates it to 1966–70.
+**24.** Part A (Tarling's Framework) dates Malaysia's First Malaysia Plan to 1969, but the B8 Role of the Government table dates it to 1966–70.
 
 > “National development plans setting growth targets (e.g. Malaysia's First Malaysia Plan 1969)”  
 > — *SEA Economic Change notes, PART A — 5. Government's Two Roles (Tarling's Framework)*
@@ -425,7 +287,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Pioneer Industries Programme; First Malaysia Plan (1966–70)”  
 > — *SEA Economic Change notes, B8. Role of the Government — Summary Table*
 
-**38.** Part D (Burma) and the F1 Master Comparison Table call Burma's 4.3% growth (1961–2001) the lowest in SEA, but your GDP growth tables and the Cluster Analysis ranking put the Philippines lower at 3.9%.
+**25.** Part D (Burma) and the F1 Master Comparison Table call Burma's 4.3% growth (1961–2001) the lowest in SEA, but your GDP growth tables and the Cluster Analysis ranking put the Philippines lower at 3.9%.
 
 > “Yet it ended up with the lowest GDP growth rate in the region (except briefly in the 1990s)”  
 > — *SEA Economic Change notes, PART D — BURMA*
@@ -442,7 +304,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Ranking 1961–2001: Singapore > Malaysia > Thailand > Indonesia > Myanmar > Philippines”  
 > — *SEA Economic Change notes, COMPARATIVE CLUSTER ANALYSIS — 1. Growth Performance Compared*
 
-**39.** §C2 says the EDB had spawned the National Productivity Board (with DBS and JTC) by 1968, but §C7 dates the National Productivity Board to 1972.
+**26.** §C2 says the EDB had spawned the National Productivity Board (with DBS and JTC) by 1968, but §C7 dates the National Productivity Board to 1972.
 
 > “Spawned DBS, National Productivity Board, Jurong Town Corporation (JTC) by 1968.”  
 > — *SEA Economic Change notes, C2. Late 1950s–1970s: Industrialisation & Restructuring*
@@ -450,7 +312,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “National Productivity Board (1972)”  
 > — *SEA Economic Change notes, C7. Role of the Government — Mechanisms*
 
-**40.** §E3 says Vietnam's international trade doubled from $1bn to $2bn during 1986–90, but §E4 says trade was still $1bn in 1990 and reached $2bn only in 1991.
+**27.** §E3 says Vietnam's international trade doubled from $1bn to $2bn during 1986–90, but §E4 says trade was still $1bn in 1990 and reached $2bn only in 1991.
 
 > “Results, 1986–90: economic growth doubled 3%→6%; private sector growth 10%→25%; international trade doubled $1bn→$2bn.”  
 > — *SEA Economic Change notes, E3. 1980s: Towards Decentralisation*
@@ -458,7 +320,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “International trade: $1bn (1990) → $2bn (1991) → $11bn (1995).”  
 > — *SEA Economic Change notes, E4. 1990s: Continued Economic Openness*
 
-**41.** Thailand §6.6 says manufacturing/industry overtook agriculture's GDP share by 1971, but the Structure of Thai GDP table beneath it shows agriculture still ahead in 1971 (29.8% vs 17.5%/25.7%), and §8.1 says the overtaking happened between 1970 and 1990.
+**28.** Thailand §6.6 says manufacturing/industry overtook agriculture's GDP share by 1971, but the Structure of Thai GDP table beneath it shows agriculture still ahead in 1971 (29.8% vs 17.5%/25.7%), and §8.1 says the overtaking happened between 1970 and 1990.
 
 > “Manufacturing/industry overtook agriculture's GDP share by 1971 (Table below)”  
 > — *SEA Economic Change notes, Thailand 6.6 Evaluating Sarit's Policies*
@@ -469,15 +331,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Industry overtook agriculture as % of GDP between 1970–1990”  
 > — *SEA Economic Change notes, Thailand 8.1 Quantitative Success Indicators*
 
-**42.** the Structure of Thai GDP table (Thailand §6.6) puts manufacturing at 10.3% of GDP in 1951, but §7.5 Success of EOI puts it at 16.4% in 1952.
-
-> “1951 | 50.1 | 10.3 | -”  
-> — *SEA Economic Change notes, Thailand 6.6 Evaluating Sarit's Policies (Structure of Thai GDP table)*
-
-> “Manufacturing GDP share: 16.4% (1952) → 33.9% (2000)”  
-> — *SEA Economic Change notes, Thailand 7.5 Success of EOI*
-
-**43.** Thailand §10 says Thailand and Singapore had the highest ratio of Chinese economic dominance to population share, but your Chinese-share tables (B9 and Cluster Analysis §4) give Singapore (70% of population, 81% of capital) the lowest ratio, and Indonesia (3.8%, 73%) and the Philippines (1.3%, 50–60%) much higher ratios than Thailand.
+**29.** Thailand §10 says Thailand and Singapore had the highest ratio of Chinese economic dominance to population share, but your Chinese-share tables (B9 and Cluster Analysis §4) give Singapore (70% of population, 81% of capital) the lowest ratio, and Indonesia (3.8%, 73%) and the Philippines (1.3%, 50–60%) much higher ratios than Thailand.
 
 > “highest ratio of dominance-to-population-share in the region alongside Singapore”  
 > — *SEA Economic Change notes, Thailand 10. Role of Different Communities — The Chinese*
@@ -491,21 +345,10 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Philippines | 1.3 | 50–60%”  
 > — *SEA Economic Change notes, B9. Role of Ethnic Communities*
 
-**44.** the Comparative Cluster Analysis says Thailand and Malaysia were the only two capitalist SEA states to make a successful EOI transition, but Part A classifies Singapore as capitalist and says it moved to EOI fastest (from the mid-1960s) with success.
-
-> “Thailand and Malaysia are the only two capitalist SEA states to make a SUCCESSFUL, sustained transition to EOI by the mid-1980s”  
-> — *SEA Economic Change notes, COMPARATIVE CLUSTER ANALYSIS — 1. Growth Performance Compared*
-
-> “Philippines, Thailand, Malaysia, Singapore, Indonesia (New Order, post-1965)”  
-> — *SEA Economic Change notes, PART A — 2. Owen's Categorisation of Economic Approaches*
-
-> “Singapore: skipped most of ISI, moved to EOI fastest (from mid-1960s) → success”  
-> — *SEA Economic Change notes, PART A — 3. ISI vs EOI — The Core Industrialisation Logic*
-
 
 ## ASEAN
 
-**45.** 'Reasons for the Formation of ASEAN' (1.3) lists the Jan 1968 East of Suez announcement, the 1969 Nixon Doctrine and Sino-US rapprochement (dated 1971 in 4.1 Security Context) as causes, but the 1.1 Timeline has ASEAN founded on 8 Aug 1967, before all of them.
+**30.** 'Reasons for the Formation of ASEAN' (1.3) lists the Jan 1968 East of Suez announcement, the 1969 Nixon Doctrine and Sino-US rapprochement (dated 1971 in 4.1 Security Context) as causes, but the 1.1 Timeline has ASEAN founded on 8 Aug 1967, before all of them.
 
 > “British 'East of Suez' withdrawal announced Jan 1968”  
 > — *ASEAN notes, 1.3 REASONS FOR THE FORMATION OF ASEAN (A. Transformation in the Regional Environment)*
@@ -522,7 +365,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “8 Aug 1967 | ASEAN founded in Bangkok.”  
 > — *ASEAN notes, 1.1 TIMELINE OF KEY EVENTS*
 
-**46.** the 2.1 Phases of Development table gives the Vietnamese invasion of Cambodia (1978–79) as the trigger for the phase beginning in 1976, but 2.4 Growing Institutionalisation (1976 Bali Summit) puts the 1976 shift down to the Fall of Saigon and the communist victories of 1975.
+**31.** the 2.1 Phases of Development table gives the Vietnamese invasion of Cambodia (1978–79) as the trigger for the phase beginning in 1976, but 2.4 Growing Institutionalisation (1976 Bali Summit) puts the 1976 shift down to the Fall of Saigon and the communist victories of 1975.
 
 > “1976–1992 | Increased activity especially in security; greater formalisation of structures & principles | Vietnamese invasion of Cambodia (1978–79)”  
 > — *ASEAN notes, 2.1 PHASES OF DEVELOPMENT*
@@ -530,7 +373,7 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “Why 1976? Fall of Saigon (1975), communist victories in Laos & Cambodia, US withdrawal after Paris Accords, British military gone from SEA”  
 > — *ASEAN notes, 2.4 GROWING INSTITUTIONALISATION (1976 Bali Summit — Watershed Moment)*
 
-**47.** the 3.1 Intra-ASEAN Economic Cooperation Timeline dates the Chiang Mai Initiative to 1998, but 3.4 Asian Financial Crisis & Aftermath dates it to 2000.
+**32.** the 3.1 Intra-ASEAN Economic Cooperation Timeline dates the Chiang Mai Initiative to 1998, but 3.4 Asian Financial Crisis & Aftermath dates it to 2000.
 
 > “1998 | Chiang Mai Initiative — ASEAN+3 currency swap arrangement”  
 > — *ASEAN notes, 3.1 INTRA-ASEAN ECONOMIC COOPERATION TIMELINE*
@@ -539,9 +382,9 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > — *ASEAN notes, 3.4 ASIAN FINANCIAL CRISIS (1997) & AFTERMATH*
 
 
-## Water dispute
+# Part 2: Probably different things (not real contradictions)
 
-**48.** Annex VIII 1.3 (Management & Resolution) says the ICJ based the award on the 1824 Anglo-Dutch Treaty and Singapore's 'claim of official legal ownership', but the same bullet then says the Court held that Johor had original sovereignty, which passed to Singapore through its long administration and Malaysia's non-response.
+**33.** Annex VIII 1.3 (Management & Resolution) says the ICJ based the award on the 1824 Anglo-Dutch Treaty and Singapore's 'claim of official legal ownership', but the same bullet then says the Court held that Johor had original sovereignty, which passed to Singapore through its long administration and Malaysia's non-response.
 
 > “ICJ awards Pedra Branca to Singapore (based on the 1824 Anglo-Dutch Treaty/'claim of official legal ownership')”  
 > — *Water Dispute guide, VIII. 1.3 Management & Resolution*
@@ -549,10 +392,201 @@ I first flagged 71 possible contradictions, then re-checked each against the ful
 > “reasoning: Johor held original sovereignty, but Singapore's long administration + Malaysia's non-response meant sovereignty had passed to Singapore by 1980.”  
 > — *Water Dispute guide, VIII. 1.3 Management & Resolution*
 
+**Probably fine:** It's all one bullet: the bracket may be summarising Singapore's case, and the reasoning that follows is the Court's own. Confusingly worded rather than two different claims.
 
-## Checked and left out
+**34.** §2 (Geography & Periodisation) says Tito broke from Stalin's control in 1947, but the §4 Manifestations timeline puts Yugoslavia's expulsion from COMINFORM in June 1948.
 
-These looked like contradictions at first, but on a careful reading they are small or explained in the notes themselves.
+> “Tito broke from Stalin's control in 1947”  
+> — *Cold War notes, 2. Geography & Periodisation*
+
+> “Yugoslavia expelled from COMINFORM”  
+> — *Cold War notes, 4. Manifestations of Emerging Tensions (Chronological Core Content)*
+
+**Probably fine:** Breaking from Stalin's control (1947) and being expelled from COMINFORM (June 1948) can be different events: the break came first, the formal expulsion later.
+
+**35.** the Marshall Plan paragraph in §4.3 first gives it as $17 billion over 4 years and then says it would amount to $13 billion from 1948–1952, without saying which figure is the one actually spent.
+
+> “announced the European Recovery Programme of $17 billion to be spent over 4 years”  
+> — *Cold War notes, 4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON*
+
+> “This would amount to $13 billion from 1948-1952.”  
+> — *Cold War notes, 4.3 1947–1949: Truman Doctrine, Marshall Plan, Berlin Blockade, COMECON*
+
+**Probably fine:** $17 billion is what was announced for 4 years; “would amount to $13 billion from 1948–1952” reads as what it actually came to. Likely planned vs actual, though the notes don't say so.
+
+**36.** §13.10 (Phases of US Involvement) puts the US troop peak at 543,000 in 1969 (and also has 540,000 in 1968 falling to 24,000 by 1972), but the §23.3(b) Vietnam revision timeline puts the peak at 536,000 in 1968 and the drawdown as 480,000 to 23,000 by 1973.
+
+> “US forces rose from ~80,000 (1965) to a peak of 543,000 (1969)”  
+> — *Cold War notes, 13.10 Phases of US Involvement: Kennedy, Johnson, Nixon*
+
+> “US troop numbers fell from 540,000 (1968) to just 24,000 (1972)”  
+> — *Cold War notes, 13.10 Phases of US Involvement: Kennedy, Johnson, Nixon*
+
+> “peak troop levels (536,000)”  
+> — *Cold War notes, 23.3 Topic 2 Supplement — Consolidated Case-Study Revision Tables*
+
+> “troop drawdown 480,000→23,000 by 1973”  
+> — *Cold War notes, 23.3 Topic 2 Supplement — Consolidated Case-Study Revision Tables*
+
+**Probably fine:** The figures are close (536,000–543,000) and the drawdown figures start from different years (1968 vs a later point), so these are probably different snapshots rather than a real clash. Only the peak year (1968 vs 1969) differs.
+
+**37.** §12.8 (Impact of the Cuban Missile Crisis) dates the Moscow–Washington Hot Line to 1962, but the §23.3(c) Cuban Missile Crisis revision timeline says it was established in Jun–Aug 1963.
+
+> “Turning point: the Moscow–Washington “Hot Line” (1962)”  
+> — *Cold War notes, 12.8 Impact on the Cold War*
+
+> “Jun–Aug 1963 | Kennedy's ‘Peace Speech’; Moscow–Washington Hotline established”  
+> — *Cold War notes, 23.3 Topic 2 Supplement — Consolidated Case-Study Revision Tables*
+
+**Probably fine:** “Hot Line (1962)” sits under the impact of the 1962 crisis and may just name the crisis it came out of; the revision timeline gives when it was set up (1963). Use 1963 for when it was established.
+
+**38.** §16.4 and §20 say Soviet defence spending rose from 22% to 27% of GDP in 1980–85, but the SDI part of §16.3 and §18.3/§18.5 put it at about 15–17% of GDP/GNP in 1983–85 (25% only as the highest estimate).
+
+> “1980–85: USSR forced to raise defence spending from 22% to 27% of GDP”  
+> — *Cold War notes, 16.4 How US Renewed Containment Led to the End of the Cold War (Reagan Victory thesis)*
+
+> “≈22%→27% of Soviet GDP diverted to defence”  
+> — *Cold War notes, 20. Historical Interpretations of the End of the Cold War — Three Schools*
+
+> “Soviet defence budget ≈15–17% of GDP in 1983”  
+> — *Cold War notes, 16.3 Key Features of US Renewed Containment — The Strategic Defense Initiative (SDI), March 1983*
+
+> “Defence spending rose from 12–14% of Soviet GNP (1965) to 15–17% (1985) — some estimates as high as 25%”  
+> — *Cold War notes, 18.3 Long-Term (1945–84) Causes of Decline — 5. External causes*
+
+> “defense spending became a greater burden, reaching 15-17% of GNP”  
+> — *Cold War notes, 18.5 Gorbachev's ‘New Thinking’ in Foreign Relations*
+
+**Probably fine:** These are different estimates. §18.3 itself says estimates vary (“some estimates as high as 25%”), so the notes are quoting different sources, not making an error.
+
+**39.** the Reagan Doctrine part of §16.3 gives total US aid to the Mujahedeen as $2bn+ over 1979–89, but §16.4 and §20 give about $1bn a year. The Soviet cost of Afghanistan is about $8bn/yr in §16.4 and §20 but about $20bn/yr elsewhere in §16.4.
+
+> “CIA sent $2bn+ in weapons/aid to the Mujahedeen (1979–89”  
+> — *Cold War notes, 16.3 Key Features of US Renewed Containment — (b) The Reagan Doctrine (6 Feb 1985)*
+
+> “US covert Mujahedeen support (≈$1bn/yr) cost the Soviets roughly eight times as much”  
+> — *Cold War notes, 16.4 How US Renewed Containment Led to the End of the Cold War (Reagan Victory thesis)*
+
+> “the Afghan Mujahedeen programme (US $1bn/yr vs. Soviet ≈$8bn/yr)”  
+> — *Cold War notes, 20. Historical Interpretations of the End of the Cold War — Three Schools*
+
+> “the Afghan ‘bleeding wound’ (≈$20bn/yr, casualties, negative public opinion)”  
+> — *Cold War notes, 16.4 How US Renewed Containment Led to the End of the Cold War (Reagan Victory thesis)*
+
+**Probably fine:** These could be different measures: a CIA weapons total vs overall US covert support per year, and military vs total Soviet costs. The notes don't say which, so quote the figure with its context.
+
+**40.** the §18.2 milestones table says glasnost was introduced in 1987, but §18.4 says glasnost ran from 1986.
+
+> “1987 | Glasnost (openness), decentralisation, democratisation, elections introduced.”  
+> — *Cold War notes, 18.2 Key Milestones in the Decline of the USSR*
+
+> “Glasnost (openness, from 1986)”  
+> — *Cold War notes, 18.4 Impact of Perestroika and Glasnost*
+
+**Probably fine:** §18.4 says glasnost ran “from 1986”; the 1987 row lists it among reforms introduced alongside democratisation and elections. Compatible if glasnost began in 1986 and was extended in 1987.
+
+**41.** the 4.6 evaluation says Resolution 242 was not substantively acted on until the 1991 Madrid Conference, but 4.5, 5.4 and 5.7 present Resolution 338 (1973) as calling for its implementation and the 1978 Camp David framework as based on Resolutions 242/338.
+
+> “not substantively acted on until the 1991 Madrid Conference (24 years later)”  
+> — *Arab-Israeli guide, 4.6 Evaluating the Effectiveness of Resolution 242*
+
+> “Never fully implemented, but remained the diplomatic touchstone through to the Camp David Accords and beyond.”  
+> — *Arab-Israeli guide, 4.5 UN Intervention and Ceasefire*
+
+> “to implement Resolution 242 in all its parts”  
+> — *Arab-Israeli guide, 5.4 UN Intervention and Ceasefire*
+
+> “Based on Resolutions 242/338; addressed the Palestinian problem”  
+> — *Arab-Israeli guide, 5.7 The Camp David Accords (17 September 1978)*
+
+**Probably fine:** “Not substantively acted on” (never implemented) and “remained the diplomatic touchstone” (referred to in later agreements) can both be true.
+
+**42.** the Condensed Timeline says Japan's GNP ranked 2nd in the world in 1968, but the Indicators of the 'Economic Miracle' section calls Japan the world's 3rd-largest economy, after the US and USSR, by 1973.
+
+> “1968 | Japan's GNP ranks 2nd in the world.”  
+> — *Japan notes, I. Overview: Phases & Timeline — Condensed Timeline*
+
+> “nearly one-third of the US by 1973; world's 3rd-largest economy after the US and USSR.”  
+> — *Japan notes, Indicators of the 'Economic Miracle'*
+
+**Probably fine:** Likely different comparisons: 2nd in the world in 1968 probably means among non-communist economies, while “3rd-largest after the US and USSR” includes the USSR. The notes don't say so explicitly.
+
+**43.** the Sino-Indian War aftermath section says China did not provide the military support Pakistan expected in 1971, but Part D's Chinese Involvement section says China gave Pakistan moral and military aid during the war (while not intervening directly).
+
+> “In 1971, Pakistan expected Chinese military support — China did not provide it, reflecting the limits of that alliance.”  
+> — *Indo-Pakistani notes, The Sino-Indian War of 1962 — Aftermath and Significance for Indo-Pakistani Relations*
+
+> “Gave moral and military aid to Pakistan during the war, though of lesser quality than Soviet aid to India.”  
+> — *Indo-Pakistani notes, Part D — Chinese Involvement*
+
+**Probably fine:** “Did not provide military support” most likely means China didn't intervene militarily, which Part D also says, while still giving aid. Different things.
+
+**44.** the Siege of Sarajevo row in Key Military Developments dates the siege to 29 Feb 1996, but the same row's text and the Master Timeline say it was lifted on 14 Dec 1995 with the Dayton Accords.
+
+> “Siege of Sarajevo (5 Apr 1992 – 29 Feb 1996)”  
+> — *Bosnian War notes, 4. Key Military Developments of the War*
+
+> “Lifted following the Dayton Agreement (14 Dec 1995).”  
+> — *Bosnian War notes, 4. Key Military Developments of the War*
+
+> “14 Dec 1995 | Dayton Accords formally signed in Paris; siege of Sarajevo lifted.”  
+> — *Bosnian War notes, 3. Master Timeline of Key Events*
+
+**Probably fine:** The siege was lifted after Dayton (Dec 1995), and the row's dates give its official end as 29 Feb 1996, so it ended over a period rather than on one date.
+
+**45.** the opening of section 6.3 says the US and NATO began military intervention in 1995, but 6.3's own US policy phase table starts armed intervention in April 1994 (Goražde), the NATO table (7.4) puts NATO's first combat action at Banja Luka in Feb 1994, and the Key Players summary says armed intervention came in 1994–95.
+
+> “The US and NATO initiated military intervention in 1995, after years of indecision”  
+> — *Bosnian War notes, 6.3 The USA’s Initial Disengagement and Subsequent Involvement*
+
+> “Phase 3: Armed Military Intervention | April 1994: After the bombing of the Goražde Muslim enclave”  
+> — *Bosnian War notes, 6.3 — Phases in the Shift of US Policy*
+
+> “28 Feb 1994 (Banja Luka Incident): NATO fighters shot down four Serb jets under Deny Flight — NATO’s first combat action in its history.”  
+> — *Bosnian War notes, 7.4 NATO's Military Intervention*
+
+> “finally to armed intervention from 1994–95 (Gorazde bombing, pressure for the Washington Agreement, then Operation Deliberate Force)”  
+> — *Bosnian War notes, 10. Summary: Key Players in the Development of the War*
+
+**Probably fine:** “Initiated military intervention in 1995” refers to the decisive campaign; the 1994 actions (Banja Luka, Goražde) were earlier, limited uses of force. Different scales of intervention.
+
+**46.** §3.3 (Vietnam decolonisation) says Ho dissolved the ICP in Nov 1945, but §5.1 (the DRV, 1954–75) says the ICP was dissolved in 1951 when the Lao Dong Party replaced it.
+
+> “dissolved the ICP in Nov 1945 to shed the communist image”  
+> — *Forming Nation-States notes, 3.3 Violent Re-imposition of Control — Vietnam (independence from France, formalised 1954)*
+
+> “The ICP (dissolved 1951) was replaced by the Lao Dong Party (Vietnam Workers’ Party) under Ho Chi Minh”  
+> — *Forming Nation-States notes, 5.1 Vietnam, 1954–1976 — The Democratic Republic of Vietnam (North), 1954–75*
+
+**Probably fine:** In 1945 Ho publicly “dissolved” the ICP to shed its communist image, and in 1951 it was formally replaced by the Lao Dong Party. These can be two different steps.
+
+**47.** the Structure of Thai GDP table (Thailand §6.6) puts manufacturing at 10.3% of GDP in 1951, but §7.5 Success of EOI puts it at 16.4% in 1952.
+
+> “1951 | 50.1 | 10.3 | -”  
+> — *SEA Economic Change notes, Thailand 6.6 Evaluating Sarit's Policies (Structure of Thai GDP table)*
+
+> “Manufacturing GDP share: 16.4% (1952) → 33.9% (2000)”  
+> — *SEA Economic Change notes, Thailand 7.5 Success of EOI*
+
+**Probably fine:** The two figures come from different sources in different sections and may measure manufacturing differently. Quote each with its source.
+
+**48.** the Comparative Cluster Analysis says Thailand and Malaysia were the only two capitalist SEA states to make a successful EOI transition, but Part A classifies Singapore as capitalist and says it moved to EOI fastest (from the mid-1960s) with success.
+
+> “Thailand and Malaysia are the only two capitalist SEA states to make a SUCCESSFUL, sustained transition to EOI by the mid-1980s”  
+> — *SEA Economic Change notes, COMPARATIVE CLUSTER ANALYSIS — 1. Growth Performance Compared*
+
+> “Philippines, Thailand, Malaysia, Singapore, Indonesia (New Order, post-1965)”  
+> — *SEA Economic Change notes, PART A — 2. Owen's Categorisation of Economic Approaches*
+
+> “Singapore: skipped most of ISI, moved to EOI fastest (from mid-1960s) → success”  
+> — *SEA Economic Change notes, PART A — 3. ISI vs EOI — The Core Industrialisation Logic*
+
+**Probably fine:** Singapore “skipped most of ISI”, so it didn't make a transition from ISI to EOI, which may be why the cluster analysis names only Thailand and Malaysia.
+
+
+# Part 3: Checked and left out
+
+Small differences, or explained in the notes themselves.
 
 - the Inter-State notes (B.1 Chronology) say the Malaysia idea was proposed in May 1961, but the ASEAN notes timeline (1.1) puts it in late 1961–62.  
   **Why it's fine:** The ASEAN row is a loose bundle of the Malaysia proposal with the 1962 Sabah claim; it differs from May 1961 by only a few months and both put the proposal in 1961.

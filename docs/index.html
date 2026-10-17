@@ -682,9 +682,11 @@ function renderBrowse(){
   const NC=window.NOTES_CHECK||{real:[],dropped:[]};
   $("#onlywarn").textContent = ow ? "Show all cards" : `Where your notes disagree (${NC.real.length})`;
   if(ow && !q){
-    box.append(el("div",{class:"card"}, el("b",{text:`${NC.real.length} places where your notes contradict themselves`}),
+    box.append(el("div",{class:"card"}, el("b",{text:`${NC.real.length} places where your notes definitely contradict themselves`}),
       el("span",{class:"hint",text:"Every quote is copied word for word from your Drive notes. Check these with your lecture slides or teacher. The cards that use each fact are listed below."}),
       NC.real.map(w=>warnBox(w)),
+      el("details",{}, el("summary",{class:"hint",text:`${(NC.possible||[]).length} more that look like contradictions but probably describe different things`}),
+        (NC.possible||[]).map(w=>el("div",{class:"casegroup",style:"margin:8px 0"}, warnBox(w), el("div",{class:"hint",style:"color:var(--ink)",text:"Probably fine: "+w.why})))),
       el("details",{}, el("summary",{class:"hint",text:`${NC.dropped.length} differences checked and left out (small or explained in the notes)`}),
         el("ul",{class:"hint"}, NC.dropped.map(d=>el("li",{}, d.was.replace(/^Your notes disagree: /,""), el("div",{style:"color:var(--ink)",text:"Why it's fine: "+d.reason})))))));
   }
