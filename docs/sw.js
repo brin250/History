@@ -1,5 +1,5 @@
 // Offline support: cache the app shell, serve it cache-first, refresh in the background.
-const VERSION = "case-drill-v7";
+const VERSION = "case-drill-v8";
 const SHELL = ["./", "index.html", "cases.js", "essays.js",
   "data/cw1.js", "data/cw2.js", "data/cw3.js", "data/ge.js", "data/ea.js", "data/ai.js", "data/ip.js", "data/cg.js", "data/bs.js", "data/ns.js", "data/nu.js", "data/ec.js", "data/as.js", "data/it.js", "data/wd.js", "data/warnings.js",
   "manifest.webmanifest",

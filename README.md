@@ -22,3 +22,14 @@ essay prompts are in `docs/essays.js`.
 
 GitHub Pages → Source: "Deploy from a branch" → branch `ccr-2c2c9165-5024uh`,
 folder `/docs`. The app is then at https://brin250.github.io/History/
+
+## Android app
+
+Every push builds an installable APK (`.github/workflows/android.yml`) and publishes it at
+https://github.com/brin250/History/releases/tag/android-latest. Open that page on the phone,
+download `case-drill.apk`, and allow installing from that source.
+
+## Sync across devices
+
+Progress tab → Sync across devices. Each device connects once with a GitHub token that only has
+the `gist` scope; progress is stored in a private gist and merged on every device.
