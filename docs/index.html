@@ -155,6 +155,12 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .wq{margin:6px 0 0;padding-left:18px;display:grid;gap:4px}
 .wq q{font-style:italic}
 .wsrc{display:block;font:11px var(--mono);color:var(--muted)}
+.sum h3{font:700 17px var(--display);margin:14px 0 4px}
+.sum p{margin:0 0 8px;max-width:65ch}
+.sum ul{margin:0 0 6px;padding-left:20px;display:grid;gap:4px}
+.sumcase{border:1px solid var(--rule);border-radius:8px;padding:10px 12px;display:grid;gap:6px;background:var(--paper)}
+.sumcase b{font-family:var(--display);font-size:16px}
+.sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
 .lpts{margin:0;padding-left:20px;display:grid;gap:6px;font-size:16px;max-width:65ch}
 @media (prefers-reduced-motion:no-preference){.sheet-in>*{animation:rise .2s ease both}@keyframes rise{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
 </style>
@@ -303,6 +309,21 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 <script src="data/it.js"></script>
 <script src="data/wd.js"></script>
 <script src="data/warnings.js"></script>
+<script src="data/sum-cw1.js"></script>
+<script src="data/sum-cw2.js"></script>
+<script src="data/sum-cw3.js"></script>
+<script src="data/sum-ge.js"></script>
+<script src="data/sum-ea.js"></script>
+<script src="data/sum-ai.js"></script>
+<script src="data/sum-ip.js"></script>
+<script src="data/sum-cg.js"></script>
+<script src="data/sum-bs.js"></script>
+<script src="data/sum-ns.js"></script>
+<script src="data/sum-nu.js"></script>
+<script src="data/sum-ec.js"></script>
+<script src="data/sum-as.js"></script>
+<script src="data/sum-it.js"></script>
+<script src="data/sum-wd.js"></script>
 <script src="essays.js"></script>
 <script>
 (function(){
@@ -421,6 +442,31 @@ function startLearn(sec){
   round={mode:"learn",sec,queue:cards.map(c=>c.id),i:0,results:[],requeued:new Set()};
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
   showCard();
+}
+function openSummary(t){
+  const S=(window.SUMMARIES||{})[t], T=TOPIC[t]; if(!S) return;
+  round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
+  if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
+  $("#pfill").style.width="0"; $("#pcount").textContent="Summary";
+  const s=stageClear();
+  const keysOf=ids=>ids.filter(id=>CASE[id]);
+  s.append(el("div",{class:"sum casegroup"},
+    el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Summary`}), el("h2",{class:"qtitle",text:T.name}),
+    S.question?el("div",{class:"qtext",style:"font-style:italic",text:S.question}):null,
+    (S.overview||[]).map(x=>el("p",{text:x})),
+    (S.themes||[]).map(th=>el("div",{}, el("h3",{text:th.h}), el("ul",{}, th.pts.map(x=>el("li",{text:x}))))),
+    el("h3",{text:`Case studies (${(S.cases||[]).length})`}),
+    (S.cases||[]).map(c=>{ const ids=keysOf(c.cards||[]);
+      return el("div",{class:"sumcase"}, el("div",{}, el("b",{text:c.name}), el("span",{class:"hint",text:"  "+(c.when||"")})),
+        el("div",{text:c.what}), el("ul",{}, (c.facts||[]).map(x=>el("li",{text:x}))), c.why?el("div",{class:"why",text:c.why}):null,
+        ids.length?el("div",{class:"row"},
+          el("button",{class:"linkbtn",text:"Learn these cards",onclick:()=>startLearn({t,sec:c.name,cards:ids.map(id=>CASE[id])})}),
+          el("button",{class:"linkbtn",text:"Test me",onclick:()=>{ round={mode:"recall",queue:shuffle(ids.map(id=>"recall:"+id)),i:0,results:[],requeued:new Set()}; showCard(); }})):null); }),
+    (S.historians||[]).length?el("div",{}, el("h3",{text:"Historians"}), el("ul",{}, S.historians.map(h=>el("li",{}, el("b",{text:h.who+": "}), h.view)))):null,
+    (S.exam||[]).length?el("div",{}, el("h3",{text:"Using this topic in the exam"}), el("ul",{}, S.exam.map(x=>el("li",{text:x})))):null,
+    el("div",{class:"srctag",text:`Written only from your ${T.src} notes.`})));
+  setActions(el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}),
+    el("button",{class:"btn",text:"Learn this topic",onclick:()=>{ const ns=sectionsOf(t).find(x=>x.cards.some(c=>!isLearned(c)))||sectionsOf(t)[0]; startLearn(ns); }}));
 }
 function learnCard(c){
   const s=stageClear(), t=TOPIC[c.t];
@@ -612,6 +658,7 @@ function renderLearn(){
     const secs=sectionsOf(t.key), all=secs.flatMap(s=>s.cards), got=all.filter(isLearned).length;
     const d=el("details",{class:"ltopic"}, el("summary",{}, el("b",{text:t.name}), el("span",{class:"num",style:"font:12px var(--mono);color:var(--muted)",text:`${t.paper} · ${got}/${all.length}`}),
       el("div",{class:"bar",style:"grid-column:1/-1"}, el("i",{style:`width:${100*got/all.length}%;background:var(--blue)`}))),
+      (window.SUMMARIES||{})[t.key]?el("button",{class:"btn ghost",style:"margin-top:10px;width:100%",text:"Read the topic summary",onclick:()=>openSummary(t.key)}):null,
       el("div",{style:"margin-top:8px"}, secs.map(s=>{ const k=s.cards.filter(isLearned).length, done=k===s.cards.length;
         return el("div",{class:"secrow"+(done?" fin":"")}, el("span",{class:"nm",text:s.sec}),
           el("button",{class:"linkbtn",text:done?"Review":k?"Continue":"Learn",onclick:()=>startLearn(s)}),
