@@ -34,7 +34,7 @@ L.push({
   ],
   takeaways: [
     "Colonial policy created an ethnic division of labour; 'race became the leitmotiv' (Drabble), so Malaysian economic policy was always also ethnic policy.",
-    "Laissez-faire ISI had early gains (pioneer firms 18 → 246) but was non-discretionary and stagnated at 9% of GDP: evidence of limited state capacity in the 1960s.",
+    "Laissez-faire ISI had early gains (pioneer firms 18 → 246) but was non-discretionary and stagnated at 9% of GDP: reflecting a lack of expertise and no targeted strategy in the 1960s.",
     "Separation (1965) and the 1969 riots are the turning point from laissez-faire to intensive, ethnically targeted intervention."
   ]
 });
@@ -50,7 +50,7 @@ L.push({
       { t: "Poverty 1970", d: "75% of households below the poverty line were Malay.", tone: "cause", cards: ["nep"] },
       { t: "Chinese dominance", d: "Chinese = 28% of population but 69% of listed-firm capitalisation (1980s): disproportionate, hence political urgency.", tone: "cause", cards: ["ec-my-chinese"] } ] },
     { t: "Primary objective: national unity", d: "Via (i) reducing poverty regardless of race and (ii) eliminating identification of race with economic function.", tone: "policy", cards: ["nep"] },
-    { t: "Targets for 1990", d: "Malay share of economy → 30%; foreign share down to 30%; Chinese share allowed to rise slightly to 40%.", tone: "policy", cards: ["nep"] },
+    { t: "NEP ownership targets", d: "Malay share of economy → 30%; foreign share down to 30%; Chinese share allowed to rise slightly to 40%.", tone: "policy", cards: ["nep"] },
     { arrow: "pursued through five strategies" },
     { t: "1. Poverty eradication", d: "State investment in agriculture/rural development for bumiputera: FELDA (1956) land schemes; RISDA financing rubber smallholders.", tone: "policy", cards: ["ec-my-nep-poverty"] },
     { t: "2. Bumiputera corporate equity", d: "Screening, state capital injections, joint ventures: Industrial Coordination Act (1975); PERNAS (1978 trading corp); PNB (1978 equity corp) bought Guthrie Corp (1981), Harrisons & Crossfield (1985).", tone: "policy", cards: ["ec-my-nep-equity"] },
@@ -126,7 +126,7 @@ L.push({
   takeaways: [
     "Malaysia's financial story is cyclical: deregulation → NPLs (~30%) → 1989 re-regulation → easy credit again → 1997.",
     "Distinguish Malaysia's 1997 cause (domestic stock/property bubble, 300% of GDP market cap) from Indonesia's foreign-debt build-up.",
-    "Good governance (transparency, BNM discipline) limited moral hazard, so the crisis is a limitation of policy cycles, not of state capacity."
+    "Good governance (transparency, BNM discipline) limited moral hazard, so vulnerability stemmed from the current account deficit and volatile stock market, not poor governance."
   ]
 });
 
@@ -154,7 +154,7 @@ L.push({
       { t: "1980s", d: "State-led heavy industry (HICOM) → crisis → deregulation, devaluation, privatisation.", tone: "policy", cards: ["ec-my-govt"] },
       { t: "1986 onward", d: "Plans/institutions for technology & human capital; less ethnically targeted, more growth-focused.", tone: "policy", cards: ["ec-my-govt"] } ] },
     { t: "Role of ethnic communities", d: "Chinese share of listed-firm capitalisation (1980s): Singapore 81% (70% of pop.); Thailand 81% (10%); Indonesia 73% (3.8%); Malaysia 69% (28%); Philippines 50–60% (1.3%).", tone: "context", cards: ["ec-my-chinese"] },
-    { t: "Why it mattered for Malaysia", d: "Even with a high Chinese population share, 69% control was very disproportionate, explaining the NEP's political urgency; colonial division of labour was the root.", tone: "cause", cards: ["ec-my-chinese", "ec-my-colonial"] },
+    { t: "Why it mattered for Malaysia", d: "Even with a high Chinese population share, 69% control was very disproportionate, explaining the NEP's political urgency.", tone: "cause", cards: ["ec-my-chinese", "ec-my-colonial"] },
     { row: [
       { t: "Drabble", d: "'Race became the leitmotiv' of Malaysian politics, with economic consequences.", tone: "verdict", cards: ["ec-my-colonial"] },
       { t: "Rasiah", d: "Mahathir would not reach 30% equity 'at the expense of checking the pace of industrialisation'.", tone: "verdict", cards: ["ec-my-rasiah"] } ] },
@@ -163,7 +163,7 @@ L.push({
   takeaways: [
     "Use the criteria table: growth/diversification clearly succeeded; equity was partial; national unity arguably worsened.",
     "Government role was never constant: laissez-faire → NEP intensive → state heavy industry → privatisation → growth-focused facilitation.",
-    "Ethnic community (Chinese dominance, 69% of listed capital) explains why Malaysian intervention was ethnically targeted, unlike Singapore's."
+    "Ethnic community (Chinese dominance, 69% of listed capital) explains the political urgency of ethnically targeted NEP restructuring."
   ]
 });
 
@@ -228,7 +228,7 @@ L.push({
   ],
   takeaways: [
     "EOI succeeded because the state combined incentives, training and FDI-friendly policy with labour peace (lost man-days down 99%).",
-    "Reliance on MNCs (71% of exports by 1976) is both the engine of growth and a source of external vulnerability.",
+    "Foreign-affiliated firms (71% of exports by 1976) drove export growth; manufacturing reached 29.1% of GDP by 1980, the highest in the region.",
     "Allowing 100% foreign ownership (1978) is the turning point to cite on Singapore's openness to FDI."
   ]
 });
@@ -264,9 +264,9 @@ L.push({
     { t: "Falling manufacturing share ≠ failure", d: "Manufacturing 29.1% (1980) → 27.1% (1990) reflects the deliberate, successful shift to higher-value technology and services.", tone: "verdict", cards: ["ec-sg-indicators"] }
   ],
   takeaways: [
-    "Singapore's state repeatedly restructured pre-emptively (1979 SIR) and reactively (1986 after the recession): adaptability is the key strength.",
-    "The 1985 recession shows the limits of state planning: high-wage policy plus global protectionism exposed external vulnerability.",
-    "Regionalisation (Growth Triangle, Suzhou, S$28.2bn abroad by 1993) was the answer to city-state limits on land and labour."
+    "The state deliberately restructured twice: the 1979 Second Industrial Revolution (response to labour shortage) and the 1986 'two engines' shift (after the 1985 recession).",
+    "The 1985 recession (high-wage policy, global slowdown, protectionism, low oil prices) demonstrated Singapore's vulnerability to global trends.",
+    "Regionalisation (Growth Triangle, Suzhou, S$28.2bn abroad by 1993) was the state's way to transcend city-state limitations."
   ]
 });
 
@@ -275,7 +275,7 @@ L.push({
   title: "Evaluating Singapore: success, Achilles' heels and 1997",
   intro: "Quantitative indicators, Lim Chong Yah's three factors for success, the limitations that persisted, and why Singapore weathered 1997 better than its neighbours.",
   steps: [
-    { t: "Region's top performer", d: "Average GDP growth 8.3% (1961–2001), consistently the regional leader.", tone: "good", cards: ["ec-sg-narrative"] },
+    { t: "Region's top performer", d: "Average GDP growth 8.3% (1961–2001): the region's top performer.", tone: "good", cards: ["ec-sg-narrative"] },
     { t: "Quantitative indicators", d: "Industry % GDP 36.4 (1970), 38.8 (1980), 34.8 (1990); manufacturing 20.5, 29.1, 27.1; 3 main exports 39.8% (1985) → 50.2% (2000); primary exports 49.8% (1975) → 15.5% (1994).", tone: "context", cards: ["ec-sg-indicators"] },
     { t: "Reading the figures", d: "Falling industry share in the 1980s–90s reflects the successful shift to higher-value technology and services, not failure.", tone: "verdict", cards: ["ec-sg-indicators"] },
     { t: "Lim Chong Yah's three factors", d: "Why Singapore succeeded.", tone: "verdict", cards: ["ec-sg-lim"] },
