@@ -35,7 +35,7 @@ L.push({
   takeaways: [
     "State dominance in Indonesia began out of necessity (no domestic bourgeoisie; Chinese politically excluded), not ideology.",
     "Guided Economy shows ISI + economic nationalism failing when run by inexperienced managers, financed by central-bank credit and drained by Konfrontasi.",
-    "Rejection of Western aid left Indonesia with too little capital — the contrast Suharto's New Order would exploit."
+    "Rejection of Western aid left Indonesia reliant on insufficient Communist-bloc aid — the New Order reversed this, shifting to Japan and the West."
   ]
 });
 
@@ -69,7 +69,7 @@ L.push({
   takeaways: [
     "Growth rested on external props: Western aid (IGGI, IMF), FDI guarantees and the oil windfall — Indonesia was ‘lucky’ (Vatikiotis).",
     "The state, not the market, drove 1970s growth (Bulog, Bimas, Pertamina, state ISI firms); rice self-sufficiency was a real success.",
-    "Pertamina shows state-led growth without transparency: unchecked borrowing nearly bankrupted the state and hurt creditor confidence.",
+    "Pertamina shows state-led growth without transparency: unchecked borrowing left US$10bn of debt (~2/3 of GNP) and hurt creditor confidence.",
     "Oil dependence meant diversification was shallow — setting up the 1980s crisis."
   ]
 });
@@ -112,7 +112,7 @@ L.push({
     { t: "Verdict", d: "Deregulation diversified exports and output, but reinforced rather than undermined state power and corporate concentration (Rodan, Hewison & Robison).", tone: "verdict", cards: ["ec-id-dereg-reality", "ec-id-monopolies"] }
   ],
   takeaways: [
-    "External shock (oil glut) — not ideology — drove Indonesia's turn to deregulation, FDI and EOI.",
+    "External shock (oil glut) drove Indonesia's turn to deregulation, FDI and EOI.",
     "Use the statistics (non-oil exports 31% → 50%, manufactured exports <$1bn → >$9bn) for ‘successful strategy’ arguments.",
     "Counter with Vatikiotis: liberalisation fed conglomerates (Astra, Liem) and stayed limited by economic nationalism."
   ]
@@ -133,13 +133,16 @@ L.push({
     { t: "Robison's ‘bureaucratic capitalism’", d: "Officials (esp. military) treated offices as personal fiefs like pre-colonial Javanese rulers. No indigenous entrepreneurs, so big firms built by state, ethnic Chinese, or both together.", tone: "verdict", cards: ["ec-id-robison"] },
     { row: [
       { t: "(b) Relative inequality", d: "Urban incomes 42% above rural (1970) → 92% (1993); 205% in Jakarta. Malari riots (Jan 1974, Tanaka visit) vented anger at bureaucratic capitalists and cukong; post-1997 anti-Chinese violence.", tone: "bad", cards: ["ec-id-inequality"] },
-      { t: "Regional inequality", d: "Java/Madura/Bali dominant → overcrowding. Transmigration (1973) failed: poorer soil, local resentment, Muslim-Christian tension → post-1998 sectarian violence (~1000 deaths to 2007).", tone: "bad", cards: ["ec-id-inequality"] }
+      { t: "Regional inequality", d: "Java/Madura/Bali dominant → overcrowding. 1973 transmigration moved poor Javanese to Sumatra/Sulawesi/Kalimantan/Irian Jaya — failed: poorer soil, local resentment, Muslim–Christian tension → post-1998 sectarian violence (~1000 deaths to 2007).", tone: "bad", cards: ["ec-id-inequality"] }
     ] },
     { row: [
       { t: "(c) Limited diversification", d: "Primary products 70–80% of export revenue in 1980s; oil 70% of export earnings (1980). Astra/Indomobil + 100–300% tariffs on built-up cars → no domestic engine production.", tone: "bad", cards: ["ec-id-limits"] },
       { t: "(d) External debt", d: "Foreign loans = 42% of development budget (1980); by 1989 Asia's largest debt (~US$58bn). Funds leaked through lack of transparency.", tone: "bad", cards: ["ec-id-limits"] }
     ] },
-    { t: "(e) Pre-crisis financial weakness", d: "Banks 124 (1988) → 244 (1994), regulation lagged. Liem's BCA: 60% of loans to other Liem firms (moral hazard). BUPN weak. Corporate debt >$60bn vs $24bn reserves; rupiah swung up to 10%/day.", tone: "bad", cards: ["ec-id-financial"] },
+    { row: [
+      { t: "(e) Pre-crisis financial weakness", d: "Post-baht-devaluation ‘crisis of confidence’: rupiah fluctuated up to 10%/day, worsened by uncertainty over Suharto's health. At crisis onset private corporate debt >$60bn vs only $24bn forex reserves.", tone: "bad", cards: ["ec-id-financial"] },
+      { t: "Weak bank regulation", d: "Banks 124 (1988) → 244 (1994), but credit culture/regulation lagged. Name/relationship lending: Liem's BCA owed 60% of its loans by other Liem firms (moral hazard: expected bailout). BUPN lacked capacity and will.", tone: "bad", cards: ["ec-id-financial"] }
+    ] },
     { arrow: "role of the government" },
     { t: "Why the state dominated", d: "Robison: no powerful national bourgeoisie, so military, party and officials took over the state. Chinese excluded politically; Javanese traders lacked resources → state filled vacuum 1949–65.", tone: "context", cards: ["ec-id-govt"] },
     { row: [
@@ -188,7 +191,7 @@ L.push({
     { arrow: "1950s: rapid early ISI" },
     { t: "Base: export agriculture", d: "Comparative advantage + preferential US market access. Earliest manufacturing processed export crops: sugar milling, vegetable oil, cigars.", tone: "context", cards: ["ec-ph-isi"] },
     { t: "1950s ISI measures", d: "Import controls, foreign exchange controls, tax incentive laws for new industries.", tone: "policy", cards: ["ec-ph-isi"] },
-    { t: "‘Asia's second NIC after Japan’", d: "Manufacturing 8% → 20% of GDP (1950–60), agriculture 42% → 26% — unprecedented. Then stalls: manufacturing 23% (1970), 25% (1980, 1990); industry 28 → 37 → 35%.", tone: "good", cards: ["ec-ph-isi"] },
+    { t: "‘Asia's second NIC after Japan’", d: "Manufacturing 8% → 20% of GDP (1950–60), agriculture 42% → 26% — unprecedented. Then stalls: manufacturing 23% (1970), 25% (1980, 1990); industry 28 → 30 → 37 → 35% (1960–90); agriculture 28 → 23 → 22% (1970–90).", tone: "good", cards: ["ec-ph-isi"] },
     { arrow: "but the classical ISI pitfall" },
     { t: "Protection bred inefficiency", d: "High tariffs/quantitative restrictions since 1950s: no pressure to be competitive.", tone: "cause", cards: ["ec-ph-isi-fail"] },
     { t: "1970s external shock", d: "Commodity price slump + protectionism abroad hit labour-intensive exports (garments, footwear, electronics).", tone: "event", cards: ["ec-ph-isi-fail"] },
@@ -207,7 +210,7 @@ L.push({
   ],
   takeaways: [
     "The Philippines shows ISI's classic trap: rapid early gains (manufacturing 8% → 20%) but protection killed competitiveness, so it could not make the EOI transition.",
-    "Economic nationalism (Filipino First, 1954 Act) parallels Sukarno's anti-Chinese policies.",
+    "Economic nationalism (Filipino First, 1954 Act) parallels Sukarno's nationalisation policies.",
     "Land reform synthesis: every attempt was blocked because the political elite was the landowning class — the key equity argument across all presidencies."
   ]
 });
@@ -233,8 +236,8 @@ L.push({
     { t: "Export restructuring", d: "Govt credit on foreign loans drove labour-intensive manufactured exports: garments value 7x in the decade (Ker); cement, textiles breakthroughs late 1970s.", tone: "good", cards: ["ec-ph-agri"] },
     { arrow: "early 1980s: crisis" },
     { t: "Domestic disunity", d: "Marcos' failing health, succession uncertainty, prominent cronies.", tone: "cause", cards: ["ec-ph-sap"] },
-    { t: "Aquino Jr. assassinated (1983)", d: "Capital flight → economic/financial crisis exposing over-reliance on foreign funds; 90-day debt deal sought with IMF.", tone: "event", cards: ["ec-ph-sap", "ec-ph-1970s"] },
-    { t: "Sector growth collapse", d: "GDP 5.1 (1960–70), 6.0 (1970–80), 1.4 (1980–93), 4.5 (1994). Industry 8.2 → -0.1; manufacturing 0.8 in 1980–93 (Hutchison).", tone: "bad", cards: ["ec-ph-sap"] },
+    { t: "Aquino Jr. assassinated (1983)", d: "Capital flight → economic/financial crisis exposing over-reliance on foreign funds; 90-day debt arrangement sought with IMF.", tone: "event", cards: ["ec-ph-sap", "ec-ph-1970s"] },
+    { t: "Sector growth collapse", d: "Growth % (1960–70/1970–80/1980–93/1994): GDP 5.1 / 6.0 / 1.4 / 4.5; agriculture 4.3 / 4.0 / 1.2 / 2.9; industry 6.0 / 8.2 / -0.1 / 6.0; manufacturing 6.7 / 0.1 / 0.8 / 5.2 (Hutchison).", tone: "bad", cards: ["ec-ph-sap"] },
     { t: "Structural Adjustment Programme", d: "World Bank pressure: tariffs cut to max 50% (1981–85); manufacturing protection 44% → 29%; ~1000 items liberalised from import licensing.", tone: "policy", cards: ["ec-ph-sap"] },
     { t: "Limited impact", d: "Global slowdown and protectionism of early 1980s. Foreign debt 6.6% of GNP (early 1980s) → 49.4% (1983); US$27bn before Marcos fell (1986).", tone: "bad", cards: ["ec-ph-sap", "ec-ph-debt"] },
     { arrow: "equity: Marcos' land reform" },
@@ -245,7 +248,7 @@ L.push({
   takeaways: [
     "‘Dependent state capitalism’: 1970s growth (5.9%) rested on foreign loans — debt rose from US$2.2bn to US$25–27bn.",
     "Real gains (IR8, rice self-sufficiency, garments 7x) but a narrow export base and political shock (1983) caused the 1980s collapse.",
-    "The SAP came too late and under bad global conditions; PD 27 shows land reform used for political ends."
+    "The SAP's impact was limited by the early-1980s global slowdown and protectionism; PD 27 shows land reform used for political ends."
   ]
 });
 
@@ -259,7 +262,7 @@ L.push({
     { arrow: "but crippled by" },
     { row: [
       { t: "Marcos-era legacy", d: "Structural problems and debt: repayment ate 10% of GDP a year — the “foreign debt hemorrhage” (De Dios & Hutchcroft).", tone: "cause", cards: ["ec-ph-aquino", "ec-ph-debt"] },
-      { t: "Multiple shocks", d: "Gulf War (1990–91) doubled oil import costs; US base closures (1991) cost 70,000 jobs; remittances lost from 65,000 Gulf workers; 1990 Luzon quake, 1990 typhoon, 1991 Pinatubo.", tone: "cause", cards: ["ec-ph-aquino"] }
+      { t: "Multiple shocks", d: "Gulf War (1990–91) doubled oil import costs; US base closures (1991) cost 70,000 jobs; remittances lost from 65,000 Gulf workers; 1990 Luzon quake, 1990 typhoon, 1991 Mt Pinatubo.", tone: "cause", cards: ["ec-ph-aquino"] }
     ] },
     { t: "Slow recovery", d: "Growth below 3% (1990–91). Poverty fell only ~3%; richest 10% held 40% of income vs poorest 30% with 10%. Democracy welcome but “ability to foster economic prosperity was found wanting”.", tone: "bad", cards: ["ec-ph-aquino"] },
     { t: "Aquino's CARP", d: "NEDA: land reform now also a growth need (redistribution → consumption). Aquino delayed CARP, left details to landowner Congress → weak, loophole-ridden law.", tone: "bad", cards: ["ec-ph-carp"] },
@@ -287,7 +290,7 @@ L.push({
   title: "Evaluating the Philippines: cronies, debt, sound banks",
   intro: "A narrow export base, crony capitalism and debt explain Philippine under-performance — yet conservative, US-style banking left it far less exposed in the 1997 crisis. The state was dominant; the Chinese were first targeted, then co-opted.",
   steps: [
-    { t: "Export concentration ROSE", d: "Top 3 exports: coconut oil, fruit & nuts, electronics (1985) → electronics/semiconductors, data processing, telecoms (2000). Top-3 share 27.4% → 64.7% — opposite of Thailand and Indonesia.", tone: "bad", cards: ["ec-ph-quant"] },
+    { t: "Export concentration ROSE", d: "Top 3 exports: coconut oil, fruit & nuts, electronics (1985) → electronics/semiconductors, data processing, telecoms (2000). Top-3 share 27.4% → 64.7% — opposite of Thailand and Indonesia. Diversification real, but concentration higher than Indonesia's: a narrower base.", tone: "bad", cards: ["ec-ph-quant"] },
     { t: "Stagnant industry", d: "Industrial GDP share 37% → 35% since 1980s (agriculture 23% → 22%) — unlike Thailand's continued industrial deepening.", tone: "bad", cards: ["ec-ph-quant"] },
     { arrow: "why? crony capitalism" },
     { row: [
