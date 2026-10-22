@@ -24,6 +24,7 @@
   --display:"Spectral",Georgia,"Times New Roman",serif;
   --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --c-long:#1e3a8a; --c-short:#3b82f6; --c-trig:#ea580c; --c-cons:#15803d; --c-neg:#c2262e; --c-interp:#7c3aed; --c-judge:#111827; --c-neutral:#94a3b8;
   --r:10px; --tabh:58px;
   --sl:max(16px,env(safe-area-inset-left,0px)); --sr:max(16px,env(safe-area-inset-right,0px));
   color-scheme:light;
@@ -31,7 +32,8 @@
 @media (prefers-color-scheme:dark){:root{
   --paper:#11151d; --sheet:#181d27; --rule:#2a3140; --ink:#e4e8f0; --muted:#98a2b5;
   --blue:#8fb0ff; --blue-soft:#1d2a4a; --red:#ff7b80; --red-soft:#3a1f24;
-  --ok:#6fd3a0; --ok-soft:#163327; --warn:#f0c065; --warn-soft:#3a2e15; --on-blue:#0d1530; color-scheme:dark}}
+  --ok:#6fd3a0; --ok-soft:#163327; --warn:#f0c065; --warn-soft:#3a2e15; --on-blue:#0d1530;
+  --c-long:#7f9cf5; --c-short:#60a5fa; --c-trig:#fb923c; --c-cons:#4ade80; --c-neg:#f87171; --c-interp:#c4b5fd; --c-judge:#e5e7eb; --c-neutral:#64748b; color-scheme:dark}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;margin:0}
 body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--body);overscroll-behavior-y:none}
@@ -239,6 +241,80 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .fsheet-in{max-width:640px;margin:0 auto;display:grid;gap:10px}
 .fsheet b{font:700 18px/1.3 var(--display)}
 .fsheet p{margin:0;font-size:15.5px;line-height:1.55}
+/* flow charts v2 */
+.mbar{display:flex;gap:4px;background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:4px;overflow-x:auto}
+.mbar button{all:unset;cursor:pointer;flex:1 0 auto;text-align:center;padding:8px 10px;border-radius:9px;font-size:14px;font-weight:600;color:var(--muted)}
+.mbar button[aria-selected="true"]{background:var(--blue);color:var(--on-blue)}
+.fq{font-style:italic;color:var(--ink)!important}
+.d2{position:relative;display:grid;gap:42px}
+.svg2{position:absolute;left:0;top:0;overflow:visible;pointer-events:none;z-index:0}
+.svg2 path{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
+.svg2 path.neg{stroke:var(--c-neg);stroke-dasharray:5 4;opacity:.9}
+.cl2{position:relative;z-index:1;border:1px solid var(--rule);border-radius:16px;padding:10px 10px 14px;background:color-mix(in srgb,var(--paper) 60%,var(--sheet));display:grid;gap:12px}
+.cl2.focus{border-color:var(--blue);box-shadow:0 0 0 2px var(--blue-soft)}
+.cl2.col{all:unset;box-sizing:border-box;position:relative;z-index:1;cursor:pointer;display:grid;gap:2px;padding:12px 14px;border:1px dashed var(--rule);border-radius:14px;background:var(--sheet)}
+.cl2.col.later{opacity:.75}
+.clh{display:grid;gap:1px;padding:0 4px}
+.clh b,.cl2.col b{font:700 16px var(--display)}
+.cln{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.s2{display:grid}
+.s2>*+*{margin-top:44px}
+.g2{display:grid;column-gap:64px;row-gap:46px}
+@media (min-width:560px){.g2{column-gap:84px}}
+.g2.fan{column-gap:12px}
+.g2.grp{border:1.5px dashed var(--rule);border-radius:12px;padding:8px;row-gap:10px}
+.sp2{display:grid;column-gap:12px;row-gap:18px;align-items:start}
+.sp2.grp{border:1.5px dashed var(--rule);border-radius:12px;padding:8px}
+.tr2{display:grid;align-content:start}
+.tr2>.s2{margin-top:30px}
+.th2{position:relative;z-index:1;justify-self:center;font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--blue);background:var(--blue-soft);padding:5px 10px;border-radius:999px;text-align:center;max-width:100%;overflow-wrap:anywhere}
+.n2{all:unset;box-sizing:border-box;position:relative;z-index:1;display:grid;align-content:start;gap:3px;min-height:58px;padding:8px 10px 9px;border-radius:12px;background:var(--sheet);border:1px solid var(--rule);border-top:4px solid var(--tc,var(--c-neutral));cursor:pointer;color:var(--ink);overflow-wrap:anywhere;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.n2:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.n2 .ntag{font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--tc,var(--muted))}
+.n2 .nt{font-size:14px;font-weight:700;line-height:1.3}
+.n2 .nd{font-size:12.5px;line-height:1.45;opacity:.9}
+.n2 .nev,.n2 .ngo{font-size:11.5px;font-weight:600;color:var(--blue)}
+.n2 .nhist{display:flex;flex-wrap:wrap;gap:4px}
+.n2 .nhist span{font-size:10.5px;font-weight:600;color:var(--c-interp);border:1px solid var(--c-interp);border-radius:999px;padding:0 6px}
+.n2.go{box-shadow:0 1px 0 var(--rule),0 3px 0 -1px var(--sheet),0 4px 0 -1px var(--rule)}
+.t-long{--tc:var(--c-long)} .t-short{--tc:var(--c-short)} .t-trigger{--tc:var(--c-trig)} .t-cons.pos{--tc:var(--c-cons)} .t-cons.neg{--tc:var(--c-neg)}
+.t-cons.mix{--tc:var(--c-trig)} .t-interp{--tc:var(--c-interp)} .t-policy,.t-event,.t-actor,.t-context,.t-evid{--tc:var(--c-neutral)} .t-turn{--tc:var(--ink)}
+.n2.t-judge{--tc:var(--c-judge);border:2px solid var(--c-judge);border-top-width:4px;background:var(--blue-soft)}
+.n2.t-evid{border-style:dotted}
+.n2.t-turn .nt{font-weight:800}
+.n2.blank{background:repeating-linear-gradient(135deg,var(--sheet) 0 8px,var(--paper) 8px 16px);place-items:center}
+.n2.blank .nq{font:700 22px var(--display);color:var(--blue)}
+.n2.right{box-shadow:0 0 0 2px var(--ok)} .n2.wrong{box-shadow:0 0 0 2px var(--red)}
+.pill2{all:unset;cursor:pointer;position:absolute;z-index:2;transform:translate(-50%,-50%);font-size:11px;font-weight:600;line-height:1.2;text-align:center;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:2px 6px;max-width:150px;white-space:normal;overflow-wrap:anywhere}
+.pill2.neg{color:var(--c-neg);border-color:var(--c-neg);border-style:dashed}
+.pill2.blank{color:var(--blue);border-color:var(--blue);font-size:13px;padding:1px 9px}
+.rlinks{display:grid;gap:4px;margin-top:8px}
+.rl{all:unset;cursor:pointer;font-size:12.5px;color:var(--muted);padding:2px 4px}
+.rl i{font-style:normal;font-weight:700;color:var(--ink)} .rl i.neg{color:var(--c-neg)}
+.ftag2{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--tc,var(--muted))}
+.prop{margin:0;font-size:15.5px;line-height:1.5} .prop.big{font-size:18px}
+.prop .lbl{font-weight:700;color:var(--blue)} .prop .lbl.neg{color:var(--c-neg)}
+.evid summary{cursor:pointer;font-weight:600;font-size:14px}
+.evid ul{margin:6px 0 0;padding-left:18px;display:grid;gap:4px;font-size:14px}
+.hist{display:grid;gap:4px;font-size:14px;border-left:3px solid var(--c-interp);padding-left:10px}
+.qstat{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;font-weight:600;background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:8px 12px}
+.ok{color:var(--ok);font-weight:700} .bad{color:var(--red);font-weight:700}
+.judge h3{font-size:18px}
+.rank{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.rank li{display:grid;grid-template-columns:30px 1fr auto;gap:8px;align-items:center;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:8px 10px}
+.rank .rk{font:700 18px var(--display);color:var(--blue);text-align:center}
+.rank .rt{display:grid} .rank .rb{display:flex;gap:4px}
+.jt{min-height:96px!important;background-image:none!important;line-height:1.5!important}
+.xq{display:grid;gap:8px;border-top:1px dashed var(--rule);padding-top:10px}
+.mxw{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--sheet)}
+.mx{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.4}
+.mx th,.mx td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top;min-width:110px}
+.mx thead th{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--blue);position:sticky;top:0;background:var(--sheet)}
+.mx tbody th{position:sticky;left:0;background:var(--sheet);font-weight:600;min-width:120px;z-index:1}
+.mx td.blank{cursor:pointer;color:var(--blue);font-weight:700;background:repeating-linear-gradient(135deg,var(--sheet) 0 8px,var(--paper) 8px 16px)}
+.mx td.right{background:var(--ok-soft)} .mx td.wrong{background:var(--red-soft)}
+.fkey .sw{display:block;width:22px;height:14px;border-radius:4px;border:1px solid var(--rule);border-top:4px solid var(--tc,var(--c-neutral));background:var(--sheet);margin-top:1px}
+.fkey .sw.t-judge{border:2px solid var(--c-judge);border-top-width:4px}
 .fshow{display:grid;gap:8px;padding:6px 4px 0}
 .session.flowmode .explain,.session.flowmode .fhead p{max-width:none}
 .fshow b{font-size:14px}
@@ -260,6 +336,11 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
       <b>Topic summaries &amp; flow charts</b>
       <span class="hint">Every topic with its case studies, key facts and historians, from your notes. Topics marked ⇣ also have flow charts.</span>
       <div id="sumchips" class="casegroup"></div>
+    </div>
+    <div class="card" id="mapcard" hidden>
+      <b>Flow charts to recall</b>
+      <span class="hint" id="maptext"></span>
+      <button class="btn wide" id="mapgo">Recall the next map</button>
     </div>
     <div class="card" id="learncard">
       <div class="row spread"><b>Learn first, then test</b><span class="hint" id="learnsummary"></span></div>
@@ -285,12 +366,15 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
       <div id="topicsets" class="casegroup"></div>
       <div class="row"><label class="hint" for="roundsize">Cards per round</label>
         <select id="roundsize"><option>5</option><option>10</option><option>15</option><option>20</option></select></div>
+      <div class="row"><label class="hint" for="examdate">Exam date (keeps review gaps short enough before it)</label>
+        <input type="date" id="examdate" style="width:auto"></div>
     </div>
 
     <div class="eyebrow">Practice modes</div>
     <div class="modes">
       <button class="mode" data-mode="recall"><span class="ic">✎</span><span><b>Recall</b><span class="hint">See a case study, write what you remember, mark it against your notes.</span></span><span class="go">Start</span></button>
       <button class="mode" data-mode="identify"><span class="ic">?</span><span><b>Name it</b><span class="hint">Read a description and name the case study.</span></span><span class="go">Start</span></button>
+      <button class="mode" data-mode="link"><span class="ic">⇢</span><span><b>Links</b><span class="hint">Recall the cause-and-effect links from the flow charts you've studied, mixed across topics.</span></span><span class="go">Start</span></button>
       <button class="mode" data-mode="apply"><span class="ic">¶</span><span><b>Apply</b><span class="hint">Plan an essay or SBCS answer, then check which cases your notes would use.</span></span><span class="go">Start</span></button>
     </div>
 
@@ -315,6 +399,7 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
   <!-- PROGRESS -->
   <section id="view-progress" class="views" style="padding:0" hidden>
     <div class="stats" id="stats"></div>
+    <div id="flowprog"></div>
     <div class="card">
       <div class="row spread"><h2 style="font-size:18px">By topic</h2></div>
       <div class="legend"><span><i style="background:var(--rule)"></i>New</span><span><i style="background:var(--red)"></i>Shaky</span><span><i style="background:var(--warn)"></i>Learning</span><span><i style="background:var(--ok)"></i>Secure</span></div>
@@ -416,6 +501,12 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 <script src="data/sum-wd.js"></script>
 <script src="data/flow-ec.js"></script>
 <script src="data/flow-ec-top.js"></script>
+<script src="data/v2/ec-top.js"></script>
+<script src="data/v2/ec-a.js"></script>
+<script src="data/v2/ec-b.js"></script>
+<script src="data/v2/ec-c.js"></script>
+<script src="data/v2/ec-d.js"></script>
+<script src="data/v2/ec-e.js"></script>
 <script src="essays.js"></script>
 <script>
 (function(){
@@ -423,7 +514,9 @@ const TOPICS = window.TOPICS, CASES = window.CASES, ESSAYS = window.ESSAYS;
 const TOPIC = Object.fromEntries(TOPICS.map(t=>[t.key,t]));
 const CASE = Object.fromEntries(CASES.map(c=>[c.id,c]));
 const ESSAY = Object.fromEntries(ESSAYS.map(e=>[e.id,e]));
-const DAY = 864e5, INTERVAL = [0,1,2,4,8,16];
+const DAY = 864e5, INTERVAL = [0,1,3,7,16,35];
+// Cap review gaps at ~15% of the time left before the exam (if an exam date is set).
+function intervalDays(b){ let d=INTERVAL[b]; const ex=state&&state.settings&&state.settings.exam; if(ex){ const left=(new Date(ex)-Date.now())/DAY; if(left>0) d=Math.max(1,Math.min(d,Math.round(left*0.15))); } return d; }
 const LS_KEY = "h2-case-drill-v1";
 const $ = s => document.querySelector(s);
 const el = (tag, attrs={}, ...kids) => { const n=document.createElement(tag); for(const [k,v] of Object.entries(attrs)){ if(k==="class") n.className=v; else if(k==="text") n.textContent=v; else if(k.startsWith("on")) n.addEventListener(k.slice(2),v); else n.setAttribute(k,v);} for(const k of kids.flat()) if(k!=null&&k!==false) n.append(k.nodeType?k:document.createTextNode(k)); return n; };
@@ -443,6 +536,7 @@ const isLearned = c => !!state.learned[c.id] || ["recall","identify"].some(m=>re
 function itemsForMode(mode){
   const on = new Set(state.settings.topics);
   if(mode==="apply") return ESSAYS.filter(e=>on.has(e.t)).map(e=>"essay:"+e.id);
+  if(mode==="link") return window.FLOW2?FLOW2.linkKeys(on):[];
   return CASES.filter(c=>on.has(c.t)&&(mode!=="identify"||c.clue)&&isLearned(c)).map(c=>mode+":"+c.id);
 }
 // Sections of a topic, in the order of the notes.
@@ -459,7 +553,7 @@ function grade(key, frac){
   const r=Object.assign({},recOf(key));
   if(frac>=0.8) r.b=Math.min(5,r.b+1); else if(frac>=0.5) r.b=Math.max(1,r.b); else r.b=1;
   r.n++; r.last=Date.now(); r.score=Math.round(frac*100);
-  r.due = frac<0.5 ? Date.now() : Date.now()+INTERVAL[r.b]*DAY;
+  r.due = frac<0.5 ? Date.now() : Date.now()+intervalDays(r.b)*DAY;
   state.cards[key]=r; const d=dayKey(); state.days[d]=(state.days[d]||0)+1; save();
 }
 function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
@@ -487,6 +581,9 @@ function renderToday(){
   $("#t-new").textContent = keys.filter(k=>recOf(k).n===0).length;
   $("#t-done").textContent = state.days[dayKey()]||0;
   renderSumChips();
+  if(window.FLOW2){ const due=FLOW2.dueMaps(new Set(state.settings.topics)); $("#mapcard").hidden=!due.length;
+    if(due.length){ $("#maptext").textContent=`${due.length} map${due.length>1?"s":""} due. Rebuilding a map from memory is the strongest way to learn it. Next: ${due[0].c.title}`;
+      $("#mapgo").onclick=()=>FLOW2.open(due[0].t,due[0].c.id,(state.maps[due[0].c.id]||{}).lvl>=2?"recall":"complete"); } }
   const s=streak(); $("#streak").textContent = s+"-day streak";
   const n=state.settings.topics.length;
   $("#topicsummary").textContent = n===TOPICS.length ? `All ${TOPICS.length} topics · ${state.settings.size} cards per round` : `${n} of ${TOPICS.length} topics · ${state.settings.size} cards per round`;
@@ -522,6 +619,7 @@ function renderTopics(){
 $("#edittopics").onclick=()=>{ $("#topicpanel").hidden=false; renderTopics(); $("#topicpanel").scrollIntoView({behavior:"smooth",block:"start"}); };
 $("#closetopics").onclick=()=>{ $("#topicpanel").hidden=true; };
 $("#roundsize").onchange=e=>{ state.settings.size=+e.target.value; save(); renderToday(); };
+$("#examdate").value=state.settings.exam||""; $("#examdate").onchange=e=>{ state.settings.exam=e.target.value||null; save(); };
 $("#quickstart").onclick=()=>startRound("recall");
 $("#learncontinue").onclick=()=>{ const s=nextSection(); if(s) startLearn(s); };
 document.querySelectorAll(".mode").forEach(b=>b.onclick=()=>startRound(b.dataset.mode));
@@ -546,6 +644,7 @@ function startLearn(sec){
 // Charts in top-down reading order: each chart followed by its children (topic → cluster → country → detail).
 const flowParent=(t,f)=>f.parent||((window.FLOWS||{})[t+"_parent"]||{})[f.id]||null;
 function flowsOf(t){
+  if(window.FLOW2&&FLOW2.has(t)) return FLOW2.ordered(t);
   const all=((window.FLOWS||{})[t]||[]).slice().sort((a,b)=>(a.order||0)-(b.order||0)), ids=new Set(all.map(f=>f.id)), kids={}, out=[];
   for(const f of all){ const p=flowParent(t,f); const k=p&&ids.has(p)?p:""; (kids[k]=kids[k]||[]).push(f); }
   const walk=(k,depth)=>{ for(const f of kids[k]||[]){ f._depth=depth; out.push(f); walk(f.id,depth+1); } };
@@ -592,6 +691,7 @@ function flowSteps(steps,t){
   return out;
 }
 function openFlowList(t){
+  if(window.FLOW2&&FLOW2.has(t)) return FLOW2.listPage(t);
   const T=TOPIC[t], F=flowsOf(t), s=openSession("Flow charts",true);
   s.append(el("div",{class:"fhead"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Flow charts`}), el("h2",{text:T.name}),
     el("p",{text:`${F.length} charts from your notes, top-down: start with the whole topic, then open a cluster, a country, and its detailed charts. Next/Previous follow this order.`})),
@@ -680,6 +780,7 @@ function flowDiagram(steps,t){
   return root;
 }
 function openFlow(t,i){
+  if(window.FLOW2&&FLOW2.has(t)) return FLOW2.open(t,flowsOf(t)[i].id,"overview");
   const F=flowsOf(t), f=F[i], s=openSession(`${i+1} / ${F.length}`,true); closeFlowDetail();
   $("#pfill").style.width=(100*(i+1)/F.length)+"%";
   const body=el("div",{});
@@ -743,7 +844,7 @@ function learnSummary(){
   setActions(nxt?el("button",{class:"btn ghost",text:"Next section",onclick:()=>startLearn(nxt)}):el("button",{class:"btn ghost",text:"Finish",onclick:()=>$("#closesession").click()}),
     el("button",{class:"btn",text:"Quick check",onclick:()=>{ round={mode:"recall",queue:shuffle(keys.slice()),i:0,results:[],requeued:new Set()}; showCard(); }}));
 }
-function endRound(){ closeFlowDetail(); round=null; $("#session").hidden=true; document.body.style.overflow=""; renderToday(); if(curView==="progress") renderProgress(); if(curView==="learn") renderLearn(); }
+function endRound(){ closeFlowDetail(); if(window.FLOW2) FLOW2.closeSheet(); round=null; $("#session").hidden=true; document.body.style.overflow=""; renderToday(); if(curView==="progress") renderProgress(); if(curView==="learn") renderLearn(); }
 $("#closesession").onclick=()=>{ if(history.state&&history.state.session) history.back(); else endRound(); };
 window.addEventListener("popstate",()=>{ if(!$("#session").hidden) endRound(); });
 
@@ -762,6 +863,7 @@ function showCard(){
   const key=round.queue[round.i], [mode,id]=key.split(":");
   if(mode==="recall") return recallCard(key,CASE[id]);
   if(mode==="identify") return identifyCard(key,CASE[id]);
+  if(mode==="link") return FLOW2.linkCard(key,next);
   return applyCard(key,ESSAY[id]);
 }
 function next(key, frac){
@@ -861,6 +963,8 @@ function mergeState(a,b){
   for(const k of new Set([...Object.keys(a.cards||{}),...Object.keys(b.cards||{})])){ const x=(a.cards||{})[k], y=(b.cards||{})[k]; out.cards[k]=!x?y:!y?x:((y.last||0)>(x.last||0)?y:x); }
   for(const src of [a.days||{},b.days||{}]) for(const d in src) out.days[d]=Math.max(out.days[d]||0,src[d]);
   for(const src of [a.learned||{},b.learned||{}]) for(const id in src) out.learned[id]=Math.max(out.learned[id]||0,src[id]);
+  out.maps={}; for(const k of new Set([...Object.keys(a.maps||{}),...Object.keys(b.maps||{})])){ const x=(a.maps||{})[k], y=(b.maps||{})[k]; out.maps[k]=!x?y:!y?x:((y.last||0)>(x.last||0)?y:x); }
+  out.judge={}; for(const k of new Set([...Object.keys(a.judge||{}),...Object.keys(b.judge||{})])){ const x=(a.judge||{})[k], y=(b.judge||{})[k]; out.judge[k]=!x?y:!y?x:((y.at||0)>(x.at||0)?y:x); }
   return out;
 }
 let syncing=null, syncTimer=null, dirty=false;
@@ -941,6 +1045,7 @@ function renderLearn(){
 
 /* ---------- progress view ---------- */
 function renderProgress(){
+  const fp=$("#flowprog"); if(fp){ fp.innerHTML=""; if(window.FLOW2) fp.append(FLOW2.progressCard()); }
   const now=Date.now(), keys=CASES.map(c=>"recall:"+c.id);
   const tried=keys.filter(k=>recOf(k).n>0).length, secure=keys.filter(k=>recOf(k).b>=5).length, due=keys.filter(k=>{const r=recOf(k);return r.n>0&&r.due<=now;}).length;
   const box=$("#stats"); box.innerHTML="";
@@ -1052,9 +1157,13 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
 }
 
 $("#foot").textContent=`${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
+  touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
 doSync();
 })();
 </script>
+<script src="flow2.js"></script>
+<script>if(window.FLOW2){ /* re-render Today now the flow engine has loaded */ document.querySelector('[data-view="today"]')&&document.querySelector('[data-view="today"]').click(); }</script>
 </body>
 </html>
