@@ -287,6 +287,10 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .n2 .ncx{display:grid;gap:3px;width:100%}
 .n2 .ncs{font-size:11px;color:var(--tc,var(--muted))}
 .n2 .ncs b{color:inherit}
+.n2 .ncd{font-size:12.5px;line-height:1.45;color:var(--ink);opacity:.9}
+.n2 .ncase.open{border-top:0;padding-top:0;margin-top:0}
+.clh .clcase{grid-column:2;font-size:12px;color:var(--muted);margin-top:2px}
+.clh .clcase b{font:600 12px var(--body);color:var(--ink)}
 .n2 .ncx ul{margin:0;padding-left:14px;display:grid;gap:3px;color:var(--ink);font-size:12px;line-height:1.4}
 .n2 .nhist{display:flex;flex-wrap:wrap;gap:4px}
 .n2 .nhist span{font-size:10.5px;font-weight:600;color:var(--c-interp);border:1px solid var(--c-interp);border-radius:999px;padding:0 6px}
@@ -1181,7 +1185,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 24 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 25 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();

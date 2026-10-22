@@ -225,44 +225,91 @@ L.push({
   id: "ec-flow-thailand-3",
   order: 62, level: 3, parent: "ec-country-th",
   kind: "causal",
-  title: "Thailand's switch to EOI from 1977",
-  question: "Why did Thailand switch from ISI to EOI after 1977, and why did EOI succeed?",
-  intro: "Shocks, political chaos and debt forced Thailand from ISI to EOI. Export promotion, the baht peg, the Plaza Accord and a shrinking state produced an export boom.",
+  title: "Thailand's switch to EOI: the pressures",
+  question: "Why did Thailand switch from ISI to EOI after 1977?",
+  intro: "External shocks, political chaos and a widening income gap forced the 4th Plan's switch; 1980s debt then pushed the state into export incentives that drew FDI.",
   clusters: [
-    { title: "Pressures forcing the switch", summary: "1970s domestic and external pressures made ISI unsustainable.",
+    { title: "Pressures forcing the switch", summary: "Three separate pressures made ISI unsustainable in the 1970s.",
       steps: [
-        { row: [
-          { id: "th3-oil", type: "short_term_cause", t: "1970s oil shocks", date: "1970s", d: "Oil price shocks hit the economy.", cards: ["thaieoi"] },
-          { id: "th3-us", type: "short_term_cause", t: "US withdrawal ends aid", d: "US withdrawal from the region ended regular aid.", cards: ["thaieoi"] },
-          { id: "th3-chaos", type: "short_term_cause", t: "Political chaos", date: "1973–76", d: "1973–76 political chaos led to capital flight.", cards: ["thaieoi"] },
-          { id: "th3-gap", type: "long_term_cause", t: "Widening urban–rural gap", d: "Manufacturing jobs concentrated around Bangkok, widening the income gap.", cards: ["thaieoi"] }
-        ] },
-        { link: "led to", how: "These pressures made ISI unsustainable, so the new plan switched promotion to exports and equity." },
-        { id: "th3-plan4", type: "policy", t: "4th NESD Plan", date: "1977–81",
-          d: "Decentralisation of industry; ended ISI promotion and began EOI promotion, aiming at growth AND equity.", cards: ["thaieoi", "ec-th-institutions"] }
+        { split: [
+          { h: "External", steps: [
+            { row: [
+              { id: "th3-oil", type: "short_term_cause", t: "1970s oil shocks", date: "1970s", d: "Oil price shocks hit the economy.", cards: ["thaieoi"] },
+              { id: "th3-us", type: "short_term_cause", t: "US withdraws from region", date: "1970s", d: "The US withdrew from the region.", cards: ["thaieoi"] }
+            ] },
+            { link: "led to", how: "Oil shocks plus US withdrawal ended the regular aid Thailand had relied on." },
+            { id: "th3-aid", type: "consequence", sign: "-", t: "Regular aid ends", d: "Thailand lost its regular US aid.", cards: ["thaieoi"] }
+          ] },
+          { h: "Political", steps: [
+            { id: "th3-chaos", type: "short_term_cause", t: "Political chaos", date: "1973–76", d: "Three years of political chaos.", cards: ["thaieoi"] },
+            { link: "led to", how: "Instability frightened investors, who moved capital out of Thailand." },
+            { id: "th3-flight", type: "consequence", sign: "-", t: "Capital flight", d: "Capital left Thailand.", cards: ["thaieoi"] }
+          ] },
+          { h: "Social", steps: [
+            { id: "th3-bkk", type: "long_term_cause", t: "Jobs concentrated around Bangkok", d: "Manufacturing jobs clustered around Bangkok.", cards: ["thaieoi"] },
+            { link: "led to", how: "Industrial jobs stayed in the capital, so rural incomes fell behind." },
+            { id: "th3-gap", type: "consequence", sign: "-", t: "Urban–rural gap widens", d: "The urban–rural income gap widened.", cards: ["thaieoi"] }
+          ] }
+        ] }
       ] },
-    { link: "followed by", how: "In the 1980s a downturn deepened the pressure to push exports.",
-      title: "Debt and export promotion", summary: "Debt near danger level prompted incentives that drew FDI.",
+    { link: "led to", how: "These pressures forced a new plan that ended ISI promotion and aimed at growth AND equity.",
+      title: "The 4th Plan switch", summary: "The plan split into a growth measure and an equity measure.",
       steps: [
-        { id: "th3-downturn", type: "short_term_cause", t: "1980s downturn and debt", date: "1980s",
-          d: "Falling agricultural commodity prices and the 2nd oil crisis raised external debt from 0% to 38% of GDP (1973–86).",
-          ev: ["Debt service ratio 19.7% in the mid-1980s, near the IMF's 20% danger point."],
-          cards: ["thaieoi"] },
-        { link: "provoked response", how: "With debt near the danger point, the state promoted foreign joint ventures and export incentives." },
+        { id: "th3-plan4", type: "policy", t: "4th NESD Plan", date: "1977–81", d: "4th National Economic & Social Development Plan, aiming at growth AND equity.", cards: ["thaieoi", "ec-th-institutions"] },
+        { link: "led to", how: "The plan set one measure for each aim: exports for growth, decentralisation for equity." },
         { row: [
-          { id: "th3-jv", type: "policy", t: "BoI joint ventures",
-            d: "BoI kept promoting joint ventures, mostly Japanese/American, e.g. Siam Motors (autos), Saha Union (textiles).", cards: ["ec-th-eoi-policies"] },
-          { id: "th3-1985", type: "policy", t: "1985 export incentives", date: "1985",
-            d: "Export taxes abolished; Bank of Thailand exporter credit; 100% foreign ownership if exporting all or most output.", cards: ["ec-th-eoi-policies"] }
+          { id: "th3-eoi", type: "policy", t: "ISI ended, EOI promoted", date: "1977–81", d: "Ended ISI promotion and began EOI promotion (the growth aim).", cards: ["thaieoi", "ec-th-institutions"] },
+          { id: "th3-decent", type: "policy", t: "Industry decentralised", date: "1977–81", d: "Decentralisation of industry away from Bangkok (the equity aim).", cards: ["thaieoi"] }
+        ] }
+      ] },
+    { link: "followed by", how: "In the 1980s two new shocks hit the economy and drove up foreign debt.",
+      title: "1980s downturn and debt", summary: "Two shocks pushed debt near the IMF danger point.",
+      steps: [
+        { row: [
+          { id: "th3-agri", type: "short_term_cause", t: "Agri commodity prices fall", date: "1980s", d: "Falling agricultural commodity prices.", cards: ["thaieoi"] },
+          { id: "th3-oil2", type: "short_term_cause", t: "2nd oil crisis", date: "1980s", d: "The second oil crisis.", cards: ["thaieoi"] }
+        ] },
+        { link: "led to", how: "Lower export earnings and dearer oil were covered by foreign borrowing." },
+        { id: "th3-debt", type: "consequence", sign: "-", t: "External debt soars", date: "1973–86",
+          d: "External debt rose from 0% to 38% of GDP (1973–86).",
+          ev: ["Debt service ratio 19.7% in the mid-1980s, near the IMF's 20% danger point."],
+          cards: ["thaieoi"] }
+      ] },
+    { link: "provoked response", how: "With debt near the danger point, the state promoted foreign joint ventures and export incentives.",
+      title: "Export promotion", summary: "Four incentives drew foreign investment.",
+      steps: [
+        { row: [
+          { id: "th3-jv", type: "policy", t: "BoI joint ventures", d: "BoI kept promoting joint ventures, mostly Japanese/American, e.g. Siam Motors (autos), Saha Union (textiles).", cards: ["ec-th-eoi-policies"] },
+          { id: "th3-tax", type: "policy", t: "Export taxes abolished", date: "1985", d: "Several export taxes abolished.", cards: ["ec-th-eoi-policies"] },
+          { id: "th3-credit", type: "policy", t: "Exporter credit", date: "1985", d: "Bank of Thailand created special exporter credit facilities.", cards: ["ec-th-eoi-policies"] },
+          { id: "th3-own", type: "policy", t: "100% foreign ownership", date: "1985", d: "Allowed if firms exported all or most of their output.", cards: ["ec-th-eoi-policies"] }
         ] },
         { link: "led to", how: "Incentives and ownership rights attracted foreign firms into Thai manufacturing." },
         { id: "th3-fdi", type: "consequence", sign: "+", t: "FDI inflows surge", date: "1986–98",
           d: "Avg US$900m/yr (1986–89), US$2bn/yr (1990–96), US$5.1bn (1998) as foreign firms bought distressed Thai firms.",
           ev: ["1970–95 FDI sources: Japan 30%, US 17%, Hong Kong 16.3%, EU 10.6%, Singapore 10.4%, Taiwan 6%; 37.2% of FDI went into manufacturing."],
           cards: ["ec-th-eoi-policies"] }
-      ] },
-    { link: "followed by", how: "Alongside investment promotion, currency policy set the price of Thai exports.",
-      title: "The baht peg (key mechanism)", summary: "A low fixed peg, then the Plaza Accord, kept exports cheap.",
+      ] }
+  ],
+  judge: { prompt: "Which pressure did most to force Thailand's switch to EOI? Rank them.",
+           factors: ["th3-aid", "th3-flight", "th3-gap", "th3-debt"],
+           notes_view: "" },
+  historians: [],
+  takeaways: [
+    "The switch to EOI was forced by external shocks (oil, US withdrawal), political chaos and a widening income gap, formalised in the 4th Plan (1977–81).",
+    "The 4th Plan aimed at growth (EOI promotion) AND equity (decentralising industry).",
+    "1980s debt (0% → 38% of GDP) provoked 1985 export incentives that drew FDI."
+  ]
+});
+L.push({
+  id: "ec-flow-thailand-3b",
+  order: 62.5, level: 3, parent: "ec-country-th",
+  kind: "causal",
+  title: "Why Thai EOI succeeded: baht, Plaza, state",
+  question: "Why did EOI succeed in Thailand?",
+  intro: "A low baht peg kept exports cheap; the strong dollar forced a basket peg; the Plaza Accord made exports cheaper still; the state stepped back as private exporters boomed.",
+  clusters: [
+    { title: "How the peg works", summary: "A pegged baht sets the dollar price of Thai goods.",
       steps: [
         { id: "th3-peg", type: "policy", t: "Low fixed baht peg",
           d: "Baht pegged at a fixed LOW rate to USD: fixed = stability; low = cheap, competitive exports.",
@@ -271,24 +318,53 @@ L.push({
         { link: "enabled", how: "Under a peg, exchange-rate moves directly changed the dollar price US buyers paid for Thai goods." },
         { split: [
           { h: "Baht depreciates", steps: [
-            { id: "th3-dep", type: "evidence", t: "Depreciation: revenue rises", d: "At US$1 = 50 baht, a 100-baht good costs US$2; US buyers buy more, Thai export revenue RISES.", cards: ["ec-th-peg"] }
+            { id: "th3-dep", type: "event", t: "US$1 = 50 baht", d: "The baht depreciates.", cards: ["ec-th-peg"] },
+            { link: "led to", how: "The same 100-baht good now costs a US buyer only US$2." },
+            { id: "th3-dep2", type: "evidence", t: "US buyer pays US$2", d: "Cheaper for US buyers, so they buy more.", cards: ["ec-th-peg"] },
+            { link: "led to", how: "More sales at the same baht price raise total export earnings." },
+            { id: "th3-dep3", type: "consequence", sign: "+", t: "Export revenue rises", d: "Thai export revenue RISES.", cards: ["ec-th-peg"] }
           ] },
           { h: "Baht appreciates", steps: [
-            { id: "th3-app", type: "evidence", t: "Appreciation: revenue falls", d: "At US$1 = 10 baht, a 100-baht good costs US$10; US buyers buy less, Thai export revenue FALLS.", cards: ["ec-th-peg"] }
+            { id: "th3-app", type: "event", t: "US$1 = 10 baht", d: "The baht appreciates.", cards: ["ec-th-peg"] },
+            { link: "led to", how: "The same 100-baht good now costs a US buyer US$10." },
+            { id: "th3-app2", type: "evidence", t: "US buyer pays US$10", d: "Dearer for US buyers, so they buy less.", cards: ["ec-th-peg"] },
+            { link: "led to", how: "Fewer sales cut total export earnings." },
+            { id: "th3-app3", type: "consequence", sign: "-", t: "Export revenue falls", d: "Thai export revenue FALLS.", cards: ["ec-th-peg"] }
           ] }
+        ] }
+      ] },
+    { link: "followed by", how: "In 1978–85 the appreciation case happened, as the pegged baht rose with the dollar.",
+      title: "Strong dollar, 1978–85", summary: "A rising dollar dragged the baht up and forced a new peg.",
+      steps: [
+        { id: "th3-usd", type: "event", t: "USD appreciates", date: "1978–85", d: "The US dollar rose in value.", cards: ["ec-th-peg"] },
+        { link: "led to", how: "Because the baht was pegged to the dollar, it rose too." },
+        { id: "th3-bahtup", type: "event", t: "Pegged baht appreciates", date: "1978–85", d: "The baht rose with the dollar.", cards: ["ec-th-peg"] },
+        { link: "led to", how: "A dearer baht raised the dollar price of Thai goods." },
+        { id: "th3-dearer", type: "consequence", sign: "-", t: "Thai exports dearer", date: "1978–85", d: "Thai exports became more expensive.", cards: ["ec-th-peg"] },
+        { link: "provoked response", how: "Dearer exports forced the government to cut the baht and loosen its tie to the dollar." },
+        { row: [
+          { id: "th3-deval", type: "policy", t: "1981 devaluation", date: "1981", d: "The baht was devalued.", cards: ["ec-th-peg"] },
+          { id: "th3-basket", type: "policy", t: "Currency basket peg", date: "1984",
+            d: "Switched to a currency BASKET peg: less dependence on one currency's fluctuations, a more stable average.", cards: ["ec-th-peg"] }
+        ] }
+      ] },
+    { link: "followed by", how: "The Plaza Accord then deliberately devalued the dollar, reversing the problem.",
+      title: "Plaza Accord boom", summary: "A cheaper dollar made Thai exports cheap and drew firms in.",
+      steps: [
+        { id: "th3-plaza", type: "turning_point", t: "Plaza Accord", date: "1985",
+          d: "France, W. Germany, Japan, UK and US deliberately devalued the USD to help US exports and fix the US–Japan trade imbalance.",
+          cards: ["ec-th-plaza"] },
+        { link: "led to", how: "The baht, still tied mainly to the dollar, fell with it." },
+        { id: "th3-bahtdown", type: "event", t: "Baht depreciates too", date: "mid/late 1980s", d: "The baht depreciated along with the USD.", cards: ["ec-th-plaza"] },
+        { link: "led to", how: "A weaker baht cut the price of Thai goods in Japan." },
+        { id: "th3-cheap", type: "consequence", sign: "+", t: "Exports to Japan cheap", d: "Thai exports to Japan became cheap.", cards: ["ec-th-plaza"] },
+        { link: "led to", how: "Cheap exports brought a boom, and firms moved to Thailand for lower costs." },
+        { row: [
+          { id: "th3-boom", type: "consequence", sign: "+", t: "Economic boom", date: "mid/late 1980s", d: "Thailand's economy boomed.", cards: ["ec-th-plaza"] },
+          { id: "th3-reloc", type: "consequence", sign: "+", t: "Firms relocate to Thailand", d: "Firms moved from Japan, Taiwan and Hong Kong to Thailand for lower costs.", cards: ["ec-th-plaza"] }
         ] },
-        { link: "followed by", how: "In 1978–85 the appreciation case occurred, as the pegged baht rose with the dollar." },
-        { id: "th3-strongusd", type: "event", t: "Strong dollar lifts baht", date: "1978–85",
-          d: "USD appreciated, pegged baht appreciated, exports dearer; forced 1981 devaluation and 1984 switch to a currency BASKET peg.",
-          ev: ["The basket peg reduced dependence on one currency's fluctuations and gave a more stable average."],
-          cards: ["ec-th-peg"] },
-        { link: "followed by", how: "The Plaza Accord then devalued the dollar, so the baht depreciated and exports became cheap." },
-        { id: "th3-plaza", type: "turning_point", t: "Plaza Accord windfall", date: "1985",
-          d: "France, W. Germany, Japan, UK, US devalued the USD; baht depreciated; cheap exports to Japan brought a boom.",
-          ev: ["Aim: help US exports and fix the US–Japan trade imbalance.",
-               "Firms relocated from Japan, Taiwan and Hong Kong to Thailand for lower costs.",
-               "Thai government later raised USD weighting in its basket back to 90% to capture USD depreciation benefits."],
-          cards: ["ec-th-plaza"] }
+        { link: "followed by", how: "Later the government tied the basket more closely to the dollar to keep gaining from its fall." },
+        { id: "th3-usd90", type: "policy", t: "USD weighting back to 90%", d: "Government raised the USD weighting in its basket back to 90% to capture USD depreciation benefits.", cards: ["ec-th-plaza"] }
       ] },
     { link: "followed by", how: "As private exporters boomed, the state redefined itself as facilitator and withdrew.",
       title: "Scaling down the state", summary: "The 6th Plan made the state a facilitator.",
@@ -303,19 +379,17 @@ L.push({
       title: "Success of EOI", summary: "Fastest export growth among capitalist SEA economies.",
       steps: [
         { row: [
-          { id: "th3-success", type: "consequence", sign: "+", t: "1980s manufacturing and export boom", date: "1980–90",
+          { id: "th3-success", type: "consequence", sign: "+", t: "Manufacturing and export boom", date: "1980–90",
             d: "Sharpest rise in manufacture/industry GDP share; export growth 14% in the 1980s, highest among capitalist SEA economies.",
-            ev: ["Manufacturing share of GDP: 16.4% (1952) → 33.9% (2000)."],
-            cards: ["ec-th-eoi-success"] },
+            ev: ["Manufacturing share of GDP: 16.4% (1952) → 33.9% (2000).",
+                 "Morley: Thai export growth 10.3% (1970–80), 14.0% (1980–90), 18.6% (1990–95); primary exports 76.2% (1975) → 26.9% (1994).",
+                 "Comparison of primary exports 1975 → 1994: Indonesia 97.6 → 47.0, Malaysia 68.6 → 24.6."],
+            cards: ["ec-th-eoi-success", "ec-morley-exports"] },
           { id: "th3-structure", type: "consequence", sign: "+", t: "Structural transformation", date: "by 2000",
             d: "By 2000 agriculture 10.9%, manufacturing 33.9%, services 39.7% of GDP.",
             ev: ["Mid-1980s agriculture was still ~25% of GDP, 75% of workforce, >60% of export value.",
                  "Thai firms expanded overseas, e.g. Thaksin's Shin Corp into Indochina, Indonesia, India."],
-            cards: ["ec-th-eoi-success"] },
-          { id: "th3-morley", type: "evidence", t: "Export growth and composition",
-            d: "Export growth 10.3% (1970–80), 14.0% (1980–90), 18.6% (1990–95); primary exports 76.2% (1975) → 26.9% (1994) (Morley).",
-            ev: ["Comparison of primary exports 1975 → 1994: Indonesia 97.6 → 47.0, Malaysia 68.6 → 24.6."],
-            cards: ["ec-morley-exports"] }
+            cards: ["ec-th-eoi-success"] }
         ] },
         { link: "supports", how: "The boom shows that pressure forced the switch but private capital and currency moves made it work." },
         { id: "th3-verdict", type: "judgement", t: "Shocks plus private class",
@@ -323,19 +397,17 @@ L.push({
       ] }
   ],
   judge: { prompt: "Which factor mattered most for the success of Thai EOI? Rank them.",
-           factors: ["th3-peg", "th3-plaza", "th3-1985", "th3-fdi", "th3-plan6"],
+           factors: ["th3-peg", "th3-basket", "th3-plaza", "th3-reloc", "th3-plan6"],
            notes_view: "The notes credit a resilient Chinese private sector, domestic capital dominance, currency peg management and a state that genuinely scaled back; only Thailand and Malaysia made a sustained EOI transition." },
   historians: [
     { who: "Pasuk & Baker", view: "The 6th Plan (1987) recast the state as planner, supporter and facilitator of private enterprise.", nodes: ["th3-plan6"] },
-    { who: "Morley", view: "Thai export growth was 14.0% in the 1980s; primary exports fell to 26.9% by 1994.", nodes: ["th3-morley"] }
+    { who: "Morley", view: "Thai export growth was 14.0% in the 1980s; primary exports fell to 26.9% by 1994.", nodes: ["th3-success"] }
   ],
   takeaways: [
-    "The switch to EOI was forced by external shocks (oil, US withdrawal) and debt, formalised in the 4th Plan (1977–81).",
     "Currency policy mattered: the low baht peg, basket peg (1984) and Plaza Accord (1985) made Thai exports cheap and drew relocating Japanese/East Asian firms.",
     "The state could scale back (6th Plan 1987) because private capital was ready to fill the gap."
   ]
 });
-
 L.push({
   id: "ec-flow-thailand-4",
   order: 63, level: 3, parent: "ec-country-th",
