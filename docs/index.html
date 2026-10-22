@@ -161,32 +161,41 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .sumcase{border:1px solid var(--rule);border-radius:8px;padding:10px 12px;display:grid;gap:6px;background:var(--paper)}
 .sumcase b{font-family:var(--display);font-size:16px}
 .sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
-.flow{display:grid;gap:0}
-.fnode{border:1.5px solid var(--rule);border-left-width:5px;border-radius:9px;padding:7px 10px;background:var(--paper);display:grid;gap:2px;min-width:0}
-.fnode b{font-size:14.5px;line-height:1.3}
-.fnode span{font-size:13.5px;line-height:1.4;color:var(--ink)}
-.fnode .linkbtn{justify-self:start;font-size:12.5px}
-.fnode.context{border-color:var(--rule);background:var(--sheet)}
-.fnode.cause{border-color:var(--warn);background:var(--warn-soft)}
-.fnode.policy{border-color:var(--blue);background:var(--blue-soft)}
-.fnode.event{border-color:var(--ink)}
-.fnode.good{border-color:var(--ok);background:var(--ok-soft)}
-.fnode.bad{border-color:var(--red);background:var(--red-soft)}
-.fnode.mixed{border-color:var(--warn)}
-.fnode.verdict{border-color:var(--blue);border-width:2px 2px 2px 5px}
-.farrow{text-align:center;color:var(--muted);font:12px var(--mono);padding:3px 0;line-height:1.2}
-.farrow:before{content:"↓";display:block;font-size:16px;color:var(--muted)}
-.frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px}
-.fsplit{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(175px,1fr);gap:8px;overflow-x:auto;padding-bottom:4px}
-.fsplit.n2{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}
-.ftrack{display:grid;gap:0;align-content:start;min-width:0}
-.ftrack .fnode{padding:6px 7px;border-left-width:4px}
-.ftrack .fnode b{font-size:13px}
-.ftrack .fnode span{font-size:12.5px;overflow-wrap:anywhere}
-.fswipe{font:11px var(--mono);color:var(--muted);text-align:right}
-.ftrack h4{margin:0 0 4px;font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--blue)}
-.flegend{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:11.5px;color:var(--muted)}
-.flegend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px;border:2px solid}
+/* flow charts: full width, labels first, tap to open */
+.session.flowmode .s-body{padding:10px 12px 28px}
+.session.flowmode .sheet{background:transparent;border:0;border-radius:0;overflow:visible;max-width:640px}
+.session.flowmode .sheet::before{display:none}
+.session.flowmode .sheet-in{padding:0;gap:14px}
+.session.flowmode .sheet-in>*{animation:none}
+.fhead{display:grid;gap:4px;padding:2px 4px}
+.fhead h2{font:700 21px/1.25 var(--display);margin:0}
+.fhead p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.45}
+.ftools{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--muted);padding:0 4px}
+.flow{display:grid;justify-items:stretch}
+.fn{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;box-shadow:inset 4px 0 0 var(--tone,var(--rule));overflow:hidden}
+.fn>button{all:unset;box-sizing:border-box;width:100%;display:flex;gap:10px;align-items:center;padding:12px 14px 12px 18px;cursor:pointer;font-size:15.5px;font-weight:600;line-height:1.3;color:var(--ink)}
+.fn>button:focus-visible{outline:2px solid var(--blue);outline-offset:-2px;border-radius:12px}
+.fn>button .chev{margin-left:auto;color:var(--muted);font-size:13px;transition:transform .15s}
+.fn.open>button .chev{transform:rotate(180deg)}
+.fn .fd{display:none;padding:0 14px 12px 18px;font-size:14px;line-height:1.5;color:var(--ink);gap:8px}
+.fn.open .fd{display:grid}
+.fn .ftag{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--tone,var(--muted))}
+.fn.cause{--tone:var(--warn)} .fn.policy{--tone:var(--blue)} .fn.event{--tone:var(--muted)} .fn.context{--tone:var(--rule)}
+.fn.good{--tone:var(--ok)} .fn.bad{--tone:var(--red)} .fn.mixed{--tone:var(--warn)}
+.fn.verdict{--tone:var(--blue);background:var(--blue-soft);border-color:transparent}
+.fc{display:grid;justify-items:center;padding:2px 0}
+.fc i{display:block;width:2px;height:14px;background:var(--rule)}
+.fc span{font-size:12px;color:var(--muted);padding:2px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--paper);margin:2px 0}
+.frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;align-items:start}
+.fn.context .ftag{color:var(--muted)}
+.frow .fn>button{font-size:14.5px;padding:10px 12px 10px 16px}
+.fsplit{display:grid;gap:10px;border:1px solid var(--rule);border-radius:14px;padding:10px;background:var(--paper)}
+.ftabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.ftabs button{all:unset;cursor:pointer;flex:0 0 auto;padding:7px 12px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--muted);border:1px solid var(--rule);background:var(--sheet)}
+.ftabs button[aria-selected="true"]{background:var(--blue);color:var(--on-blue);border-color:var(--blue)}
+.fshow{display:grid;gap:8px;padding:6px 4px 0}
+.fshow b{font-size:14px}
+.fshow ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14.5px;line-height:1.5}
 .lpts{margin:0;padding-left:20px;display:grid;gap:6px;font-size:16px;max-width:65ch}
 @media (prefers-reduced-motion:no-preference){.sheet-in>*{animation:rise .2s ease both}@keyframes rise{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
 </style>
@@ -487,47 +496,55 @@ function startLearn(sec){
 }
 /* ---------- flow charts ---------- */
 const flowsOf=t=>((window.FLOWS||{})[t]||[]).slice().sort((a,b)=>(a.order||0)-(b.order||0));
-function openSession(label){ round={mode:"reader",queue:[],i:0,results:[],requeued:new Set()};
+function openSession(label,flow){ round={mode:"reader",queue:[],i:0,results:[],requeued:new Set()};
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
-  $("#pfill").style.width="0"; $("#pcount").textContent=label; return stageClear(); }
+  $("#pfill").style.width="0"; $("#pcount").textContent=label; const s=stageClear(); if(flow) $("#session").classList.add("flowmode"); return s; }
+const TONE={context:"Background",cause:"Cause",policy:"Policy / action",event:"Event",good:"Success",bad:"Problem",mixed:"Mixed",verdict:"Verdict"};
 function flowNode(n,t){
-  const ids=(n.cards||[]).filter(id=>CASE[id]);
-  return el("div",{class:"fnode "+(n.tone||"event")}, el("b",{text:n.t}), n.d?el("span",{text:n.d}):null,
-    ids.length?el("button",{class:"linkbtn",text:`Study ${ids.length===1?"this card":ids.length+" cards"}`,onclick:()=>startLearn({t,sec:n.t,cards:ids.map(id=>CASE[id])})}):null);
+  const ids=(n.cards||[]).filter(id=>CASE[id]), has=n.d||ids.length, tone=n.tone||"event";
+  const box=el("div",{class:"fn "+tone});
+  const btn=el("button",{"aria-expanded":"false",onclick:()=>{ if(!has) return; const o=box.classList.toggle("open"); btn.setAttribute("aria-expanded",String(o)); }},
+    el("span",{text:n.t}), has?el("span",{class:"chev","aria-hidden":"true",text:"▾"}):null);
+  box.append(btn, has?el("div",{class:"fd"}, el("span",{class:"ftag",text:TONE[tone]||""}), n.d?el("div",{text:n.d}):null,
+    ids.length?el("button",{class:"linkbtn",style:"justify-self:start",text:ids.length===1?"Study this card":`Study these ${ids.length} cards`,onclick:()=>startLearn({t,sec:n.t,cards:ids.map(id=>CASE[id])})}):null):null);
+  return box;
 }
 function flowSteps(steps,t){
-  const out=[]; let prevNode=false;
+  const out=[]; let prev=false;
+  const link=label=>el("div",{class:"fc"}, el("i"), label?el("span",{text:label}):null, label?el("i"):null);
   for(const x of steps){
-    if(x.arrow!==undefined){ out.push(el("div",{class:"farrow",text:x.arrow})); prevNode=false; continue; }
-    if(prevNode) out.push(el("div",{class:"farrow"}));
+    if(x.arrow!==undefined){ out.push(link(x.arrow)); prev=false; continue; }
+    if(prev) out.push(link(""));
     if(x.row) out.push(el("div",{class:"frow"}, x.row.map(n=>flowNode(n,t))));
-    else if(x.split){ const k=x.split.length;
-      if(k>2) out.push(el("div",{class:"fswipe",text:`${k} columns · swipe →`}));
-      out.push(el("div",{class:"fsplit"+(k<=2?" n2":"")}, x.split.map(tr=>el("div",{class:"ftrack"}, el("h4",{text:tr.h}), flowSteps(tr.steps||[],t))))); }
+    else if(x.split){
+      const body=el("div",{class:"flow"}), tabs=el("div",{class:"ftabs",role:"tablist"});
+      const show=i=>{ body.innerHTML=""; body.append(...flowSteps(x.split[i].steps||[],t)); [...tabs.children].forEach((b,j)=>b.setAttribute("aria-selected",String(i===j))); };
+      x.split.forEach((tr,i)=>tabs.append(el("button",{role:"tab",onclick:()=>show(i)},tr.h)));
+      out.push(el("div",{class:"fsplit"}, tabs, body)); show(0);
+    }
     else out.push(flowNode(x,t));
-    prevNode=true;
+    prev=true;
   }
   return out;
 }
-const LEGEND=[["context","Background","var(--rule)"],["cause","Cause / pressure","var(--warn)"],["policy","Policy / action","var(--blue)"],["event","Event","var(--ink)"],["good","Success","var(--ok)"],["bad","Failure / problem","var(--red)"],["verdict","Verdict","var(--blue)"]];
 function openFlowList(t){
-  const T=TOPIC[t], F=flowsOf(t), s=openSession("Flow charts");
-  s.append(el("div",{class:"casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Flow charts`}), el("h2",{class:"qtitle",text:T.name}),
-    el("div",{class:"hint",text:`${F.length} charts, built only from your notes. Tap a chart to open it.`}),
-    F.map((f,i)=>{ const G=(window.FLOWS||{})[t+"_groups"]||[], g=G.find(x=>x[0]===f.order)||G.filter(x=>x[0]<=f.order).pop(), prev=i?(G.filter(x=>x[0]<=F[i-1].order).pop()):null;
+  const T=TOPIC[t], F=flowsOf(t), s=openSession("Flow charts",true);
+  s.append(el("div",{class:"fhead"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Flow charts`}), el("h2",{text:T.name}),
+    el("p",{text:`${F.length} charts from your notes. Each one shows the steps first; tap any step for the details.`})),
+    el("div",{class:"casegroup"}, F.map((f,i)=>{ const G=(window.FLOWS||{})[t+"_groups"]||[], g=G.filter(x=>x[0]<=f.order).pop(), prev=i?G.filter(x=>x[0]<=F[i-1].order).pop():null;
       return el("div",{class:"casegroup"}, g&&g!==prev?el("div",{class:"sec",text:g[1]}):null,
         el("button",{class:"mode",onclick:()=>openFlow(t,i)}, el("span",{class:"ic",text:String(i+1)}), el("span",{}, el("b",{text:f.title})), el("span",{class:"go",text:"Open"}))); })));
   setActions(el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}), (window.SUMMARIES||{})[t]?el("button",{class:"btn",text:"Read summary",onclick:()=>openSummary(t)}):null);
 }
 function openFlow(t,i){
-  const F=flowsOf(t), f=F[i], s=openSession(`Chart ${i+1} / ${F.length}`);
+  const F=flowsOf(t), f=F[i], s=openSession(`${i+1} / ${F.length}`,true);
   $("#pfill").style.width=(100*(i+1)/F.length)+"%";
-  s.append(el("div",{class:"casegroup"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · Flow chart ${i+1} of ${F.length}`}), el("h2",{class:"qtitle",text:f.title}),
-    f.intro?el("div",{class:"qtext",text:f.intro}):null,
-    el("div",{class:"flegend"}, LEGEND.map(([k,l,c])=>el("span",{}, el("i",{style:`border-color:${c}`}), l))),
-    el("div",{class:"flow"}, flowSteps(f.steps||[],t)),
-    (f.takeaways||[]).length?el("div",{class:"explain"}, el("b",{text:"What this shows"}), el("ul",{style:"margin:0;padding-left:18px"}, f.takeaways.map(x=>el("li",{text:x})))):null,
-    el("div",{class:"srctag",text:"Every box comes from your "+TOPIC[t].src+" notes."})));
+  const flow=el("div",{class:"flow"}, flowSteps(f.steps||[],t));
+  const all=el("button",{class:"linkbtn",style:"font-size:12.5px",text:"Open all steps",onclick:()=>{ const open=all.textContent.startsWith("Open"); flow.querySelectorAll(".fn").forEach(b=>{ if(b.querySelector(".fd")) b.classList.toggle("open",open); }); all.textContent=open?"Close all steps":"Open all steps"; }});
+  s.append(el("div",{class:"fhead"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · chart ${i+1} of ${F.length}`}), el("h2",{text:f.title}), f.intro?el("p",{text:f.intro}):null),
+    el("div",{class:"ftools"}, el("span",{text:"Tap a step to see the details"}), all),
+    flow,
+    (f.takeaways||[]).length?el("div",{class:"fshow explain"}, el("b",{text:"What this shows"}), el("ul",{}, f.takeaways.map(x=>el("li",{text:x})))):null);
   setActions(i>0?el("button",{class:"btn ghost",text:"← Previous",onclick:()=>openFlow(t,i-1)}):el("button",{class:"btn ghost",text:"All charts",onclick:()=>openFlowList(t)}),
     i<F.length-1?el("button",{class:"btn",text:"Next →",onclick:()=>openFlow(t,i+1)}):el("button",{class:"btn",text:"All charts",onclick:()=>openFlowList(t)}));
 }
@@ -580,7 +597,7 @@ window.addEventListener("popstate",()=>{ if(!$("#session").hidden) endRound(); }
 
 function setActions(...btns){ const a=$("#actions"); a.innerHTML=""; btns.forEach(b=>{ if(b) a.append(b); }); }
 function progress(){ const n=round.queue.length; $("#pfill").style.width=(100*round.i/n)+"%"; $("#pcount").textContent=`${Math.min(round.i+1,n)} / ${n}`; }
-function stageClear(){ const s=$("#stage"); s.innerHTML=""; $("#sbody").scrollTop=0; return s; }
+function stageClear(){ $("#session").classList.remove("flowmode"); const s=$("#stage"); s.innerHTML=""; $("#sbody").scrollTop=0; return s; }
 function metaFor(t, key, extra){ const r=recOf(key); return el("div",{class:"meta"}, el("span",{class:"eyebrow",text:`${t.paper} · ${t.theme} · ${extra||t.name}`}), el("span",{class:"box",text:r.n?`Box ${r.b}`:"New"})); }
 function srcTag(c){ return el("div",{class:"srctag"}, el("b",{text:c.qs==="notes"?"Question from your notes":"Question written for you"}), ` · facts from ${c.src}${c.sec?" · "+c.sec:""}`); }
 function warnBox(w){ return el("div",{class:"tip"}, el("b",{text:"Check this: "}), w.text,
