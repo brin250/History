@@ -102,8 +102,8 @@ function gradeMap(id, frac, mode){
 function markStudied(id){ const st = S(); st.maps = st.maps || {}; if (!st.maps[id]) { st.maps[id] = { lvl: 0, b: 0, n: 0, due: Date.now() + DAY, last: Date.now(), acc: null }; A.save(); } }
 
 /* ---------- view state ---------- */
-let mode = "overview", showAll = false, showCases = false, showHist = false, focus = 0, hidden = null, answers = null, curT = null, curId = null;
-try { showAll = localStorage.getItem("cd-f2-all") === "1"; showCases = localStorage.getItem("cd-f2-cases") === "1"; } catch(e){}
+let mode = "overview", showAll = false, showCases = true, showHist = false, focus = 0, hidden = null, answers = null, curT = null, curId = null;
+try { showAll = localStorage.getItem("cd-f2-all") === "1"; showCases = localStorage.getItem("cd-f2-cases") !== "0"; } catch(e){}
 
 /* ---------- detail sheet ---------- */
 function closeSheet(){ document.querySelectorAll(".fsheet,.fsheet-bg").forEach(x=>x.remove()); }
