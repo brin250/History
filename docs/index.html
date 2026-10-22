@@ -174,6 +174,11 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 <main class="views">
   <!-- TODAY -->
   <section id="view-today" class="views" style="padding:0">
+    <div class="card">
+      <b>Topic summaries</b>
+      <span class="hint">Every topic with its case studies, key facts and historians, from your notes.</span>
+      <div id="sumchips" class="casegroup"></div>
+    </div>
     <div class="card" id="learncard">
       <div class="row spread"><b>Learn first, then test</b><span class="hint" id="learnsummary"></span></div>
       <div class="bar" style="height:9px"><i id="learnfill" style="width:0;background:var(--blue)"></i></div>
@@ -397,6 +402,7 @@ function renderToday(){
   $("#t-due").textContent = keys.filter(k=>{const r=recOf(k);return r.n>0&&r.due<=now;}).length;
   $("#t-new").textContent = keys.filter(k=>recOf(k).n===0).length;
   $("#t-done").textContent = state.days[dayKey()]||0;
+  renderSumChips();
   const s=streak(); $("#streak").textContent = s+"-day streak";
   const n=state.settings.topics.length;
   $("#topicsummary").textContent = n===TOPICS.length ? `All ${TOPICS.length} topics · ${state.settings.size} cards per round` : `${n} of ${TOPICS.length} topics · ${state.settings.size} cards per round`;
@@ -411,6 +417,12 @@ function renderToday(){
   const weak = CASES.map(c=>({c,r:recOf("recall:"+c.id)})).filter(x=>x.r.n>0&&x.r.score<80).sort((a,b)=>a.r.score-b.r.score).slice(0,4);
   $("#weakcard").hidden = !weak.length; $("#weaklist").innerHTML="";
   weak.forEach(x=>$("#weaklist").append(el("li",{}, el("button",{class:"linkbtn",text:`${x.c.title} · ${x.r.score}%`, onclick:()=>startRound("recall",["recall:"+x.c.id])}))));
+}
+function renderSumChips(){
+  const box=$("#sumchips"); if(!box||box.childElementCount) return;
+  for(const paper of ["P1","P2"]) box.append(el("div",{class:"casegroup"},
+    el("span",{class:"eyebrow",text:paper==="P1"?"Paper 1":"Paper 2"}),
+    el("div",{class:"chips"}, TOPICS.filter(t=>t.paper===paper&&(window.SUMMARIES||{})[t.key]).map(t=>el("button",{class:"chip",onclick:()=>openSummary(t.key)}, t.name)))));
 }
 function renderTopics(){
   $("#roundsize").value=String(state.settings.size);
@@ -668,6 +680,7 @@ function renderLearn(){
   for(const t of TOPICS){
     const secs=sectionsOf(t.key), all=secs.flatMap(s=>s.cards), got=all.filter(isLearned).length;
     const d=el("details",{class:"ltopic"}, el("summary",{}, el("b",{text:t.name}), el("span",{class:"num",style:"font:12px var(--mono);color:var(--muted)",text:`${t.paper} · ${got}/${all.length}`}),
+      (window.SUMMARIES||{})[t.key]?el("button",{class:"linkbtn",style:"grid-column:1/-1;justify-self:start;font-size:14px",text:"Read summary →",onclick:e=>{ e.preventDefault(); e.stopPropagation(); openSummary(t.key); }}):null,
       el("div",{class:"bar",style:"grid-column:1/-1"}, el("i",{style:`width:${100*got/all.length}%;background:var(--blue)`}))),
       (window.SUMMARIES||{})[t.key]?el("button",{class:"btn ghost",style:"margin-top:10px;width:100%",text:"Read the topic summary",onclick:()=>openSummary(t.key)}):null,
       el("div",{style:"margin-top:8px"}, secs.map(s=>{ const k=s.cards.filter(isLearned).length, done=k===s.cards.length;
@@ -787,7 +800,12 @@ if(!standalone && !window.Capacitor){
 window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); deferred=e; $("#installbtn").hidden=false; $("#installtext").textContent="Install it to open full-screen and work offline."; });
 $("#installbtn").onclick=async()=>{ if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred=null; $("#installcard").hidden=true; };
 window.addEventListener("appinstalled",()=>{ $("#installcard").hidden=true; });
-if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(()=>{});
+if("serviceWorker" in navigator && location.protocol.startsWith("http")){
+  // When an updated version installs, reload once so new content shows straight away.
+  const hadController=!!navigator.serviceWorker.controller; let reloaded=false;
+  navigator.serviceWorker.addEventListener("controllerchange",()=>{ if(hadController&&!reloaded&&!round){ reloaded=true; location.reload(); } });
+  navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
+}
 
 $("#foot").textContent=`${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 renderToday();
