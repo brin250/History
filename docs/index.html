@@ -242,12 +242,15 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
           <li>Paste it here and tap Connect. Use the same token on every device.</li>
         </ol>
         <a class="linkbtn" href="https://github.com/settings/tokens/new?scopes=gist&amp;description=H2%20Case%20Drill%20sync" target="_blank" rel="noopener">Make a gist-only token on GitHub ↗</a>
-        <input type="text" id="synctoken" placeholder="Paste token (starts with ghp_)" aria-label="GitHub token" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <span class="hint"><b>Already connected on another device?</b> Copy its link code (Progress → Sync across devices) and paste it here instead of a token.</span>
+        <input type="text" id="synctoken" placeholder="Paste token (ghp_…) or link code (CDLINK…)" aria-label="GitHub token" autocomplete="off" autocapitalize="off" spellcheck="false">
         <div class="row"><button class="btn" id="syncconnect">Connect</button><span class="hint" id="syncmsg"></span></div>
       </div>
       <div id="sync-on" class="casegroup" hidden>
         <span class="hint" id="syncstatus"></span>
-        <div class="row"><button class="btn" id="syncnow">Sync now</button><button class="linkbtn" id="syncoff">Disconnect this device</button></div>
+        <div class="row"><button class="btn" id="syncnow">Sync now</button><button class="btn ghost" id="synclink">Copy link code for another device</button></div>
+        <span class="hint" id="synclinkmsg"></span>
+        <button class="linkbtn" id="syncoff" style="justify-self:start">Disconnect this device</button>
       </div>
     </div>
     <div class="card">
@@ -640,12 +643,20 @@ function renderSync(){
   $("#syncstatus").textContent = syncing?"Syncing…":(sync.error?`Last sync failed: ${sync.error}`:`Connected. Progress syncs automatically. Last synced: ${when}.`);
 }
 $("#syncconnect").onclick=async()=>{
-  const t=$("#synctoken").value.trim(); if(!t){ $("#syncmsg").textContent="Paste your token first."; return; }
-  sync={token:t}; $("#syncmsg").textContent="Connecting…";
+  const t=$("#synctoken").value.trim(); if(!t){ $("#syncmsg").textContent="Paste your token or link code first."; return; }
+  // A link code carries the token and the cloud file id from an already-connected device.
+  if(t.startsWith("CDLINK")){ try{ const o=JSON.parse(atob(t.slice(6))); if(!o.t) throw 0; sync={token:o.t,gist:o.g||undefined}; }catch(e){ $("#syncmsg").textContent="That link code isn't complete. Copy it again."; return; } }
+  else sync={token:t};
+  $("#syncmsg").textContent="Connecting…";
   try{ await gh("/user"); }catch(e){ sync={}; $("#syncmsg").textContent=e.message; return; }
   saveSync(); $("#synctoken").value=""; $("#syncmsg").textContent=""; renderSync(); await doSync();
 };
 $("#syncnow").onclick=()=>doSync();
+$("#synclink").onclick=async()=>{
+  const code="CDLINK"+btoa(JSON.stringify({t:sync.token,g:sync.gist||""}));
+  try{ await navigator.clipboard.writeText(code); $("#synclinkmsg").textContent="Copied. Paste it into Sync across devices on your other device. Keep it private: it works like a password."; }
+  catch(e){ $("#synclinkmsg").textContent=code; }
+};
 // After a reset, overwrite the cloud copy instead of merging (merging would bring the old progress back).
 async function overwriteCloud(){ if(!sync.token||!sync.gist) return; try{ await gh("/gists/"+sync.gist,{method:"PATCH",body:JSON.stringify({files:{[GIST_FILE]:{content:JSON.stringify(state)}}})}); sync.last=Date.now(); saveSync(); }catch(e){} }
 $("#syncoff").onclick=()=>{ sync={}; saveSync(); renderSync(); };
