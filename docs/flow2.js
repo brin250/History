@@ -102,8 +102,8 @@ function gradeMap(id, frac, mode){
 function markStudied(id){ const st = S(); st.maps = st.maps || {}; if (!st.maps[id]) { st.maps[id] = { lvl: 0, b: 0, n: 0, due: Date.now() + DAY, last: Date.now(), acc: null }; A.save(); } }
 
 /* ---------- view state ---------- */
-let mode = "overview", showAll = false, showHist = false, focus = 0, hidden = null, answers = null, curT = null, curId = null;
-try { showAll = localStorage.getItem("cd-f2-all") === "1"; } catch(e){}
+let mode = "overview", showAll = false, showCases = false, showHist = false, focus = 0, hidden = null, answers = null, curT = null, curId = null;
+try { showAll = localStorage.getItem("cd-f2-all") === "1"; showCases = localStorage.getItem("cd-f2-cases") === "1"; } catch(e){}
 
 /* ---------- detail sheet ---------- */
 function closeSheet(){ document.querySelectorAll(".fsheet,.fsheet-bg").forEach(x=>x.remove()); }
@@ -211,6 +211,20 @@ function nodeEl(n, c){
     hs.length ? el("span", { class: "nhist" }, hs.map(h => el("span", { text: h.who }))) : null,
     caseStrip(n, c));
 }
+// All the case studies behind one stage, each shown once: grouped under the summary's case study, with each card's key points.
+function stageCases(k, c){
+  const nodes = [], walk = steps => steps.forEach(x => { if (x.link !== undefined) return; if (x.row) x.row.forEach(n => nodes.push(n)); else if (x.split) x.split.forEach(t => walk(t.steps || [])); else nodes.push(x); });
+  walk(k.steps || []);
+  const groups = new Map(), seen = new Set();
+  nodes.forEach(n => { const { cards, sum } = caseOf(n, c); cards.forEach(card => { if (seen.has(card.id)) return; seen.add(card.id);
+    const key = sum ? sum.name : ""; if (!groups.has(key)) groups.set(key, { sum, cards: [] }); groups.get(key).cards.push(card); }); });
+  if (!groups.size) return null;
+  return el("div", { class: "stcases" }, el("span", { class: "csh", text: `Case studies in this stage (${seen.size})` }),
+    [...groups.values()].map(g => el("div", { class: "csx" },
+      g.sum ? el("b", { text: g.sum.name + (g.sum.when ? " (" + g.sum.when + ")" : "") }) : null,
+      g.sum && g.sum.what ? el("p", { text: g.sum.what }) : null,
+      g.cards.map(k => el("div", { class: "csc" }, el("b", { text: k.title + (k.when ? " · " + k.when : "") }), (k.pts || []).length ? el("ul", {}, k.pts.map(x => el("li", { text: x }))) : null)))));
+}
 function caseStrip(n, c){
   if (mode === "recall" || mode === "complete") return null;
   const { cards, sum } = caseOf(n, c), k = cards[0];
@@ -309,7 +323,8 @@ function diagram(c){
       ent = ex = [panel]; en = xn = [null];
     } else {
       const s = seqEl(k.steps || [], c, C, specs);
-      panel = el("div", { class: "cl2" + (mode === "study" ? " focus" : "") }, el("div", { class: "clh" }, el("span", { class: "cln", text: String(i + 1), "aria-label": `Stage ${i + 1}` }), el("b", { text: k.title }), k.summary ? el("span", { class: "hint", text: k.summary }) : null), s.node);
+      panel = el("div", { class: "cl2" + (mode === "study" ? " focus" : "") }, el("div", { class: "clh" }, el("span", { class: "cln", text: String(i + 1), "aria-label": `Stage ${i + 1}` }), el("b", { text: k.title }), k.summary ? el("span", { class: "hint", text: k.summary }) : null), s.node,
+        showCases && (mode === "overview" || mode === "study") ? stageCases(k, c) : null);
       ent = s.entries; ex = s.exits; en = s.en; xn = s.xn;
     }
     if (prevEx) specs.push({ kind: "bus", from: [prevEx], to: [panel], link: k.link ? { link: k.link, sub: k.sub, how: k.how } : null, na: prevXn[0], nb: en[0] });
@@ -402,6 +417,7 @@ function render(){
   const tools = el("div", { class: "ftools" }, el("span", { text: help }),
     (mode === "overview" || mode === "study") ? el("span", { class: "row", style: "gap:8px" },
       el("button", { class: "linkbtn", style: "font-size:12.5px", text: showAll ? "Hide details" : "Show all details", onclick: () => { showAll = !showAll; try { localStorage.setItem("cd-f2-all", showAll ? "1" : "0"); } catch(e){} render(); } }),
+      el("button", { class: "linkbtn", style: "font-size:12.5px", text: showCases ? "Hide case studies" : "Show all case studies", onclick: () => { showCases = !showCases; try { localStorage.setItem("cd-f2-cases", showCases ? "1" : "0"); } catch(e){} render(); } }),
       (c.historians || []).length ? el("button", { class: "linkbtn", style: "font-size:12.5px", text: showHist ? "Hide historians" : "Show historians", onclick: () => { showHist = !showHist; render(); } }) : null) : null);
   let body;
   if (mode === "judge") body = judgeEl(c);
