@@ -1663,3 +1663,15 @@ L.push({
 
 // Section headings for the chart list: [first order in the group, heading]
 (window.FLOWS = window.FLOWS || {}).ec_groups = [[0,"Big picture & framework"],[20,"Malaysia"],[25,"Singapore"],[40,"Burma"],[45,"Vietnam"],[60,"Thailand"],[70,"Indonesia"],[74,"Philippines"],[90,"Comparisons & exam technique"]];
+// Where each detailed chart sits in the top-down tree (topic → cluster → country → detail).
+(function(){
+  const P = {}, F = window.FLOWS;
+  const by = (prefix, parent) => F.ec.forEach(f => { if (f.id.startsWith(prefix)) P[f.id] = parent; });
+  by("ec-flow-my-","ec-country-my"); by("ec-flow-sg-","ec-country-sg"); by("ec-flow-burma-","ec-country-bm");
+  by("ec-flow-vietnam-","ec-country-vn"); by("ec-flow-thailand-","ec-country-th"); by("ec-flow-indonesia-","ec-country-id");
+  by("ec-flow-philippines-","ec-country-ph"); by("ec-flow-cl-","ec-cluster-tip");
+  Object.assign(P, { "ec-flow-bmvn-compare":"ec-cluster-bmvn", "ec-flow-f3-bmvn":"ec-cluster-bmvn", "ec-flow-f4-sgmy":"ec-cluster-sgmy",
+    "ec-flow-bigpicture":"ec-top", "ec-flow-framework":"ec-top", "ec-flow-f2-aims":"ec-top", "ec-flow-f5-pattern":"ec-top",
+    "ec-flow-howtoargue":"ec-top", "ec-flow-f7-memory":"ec-top" });
+  F.ec_parent = P;
+})();

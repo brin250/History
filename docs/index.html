@@ -206,6 +206,20 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .dn.x{flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;gap:4px;padding:9px 11px 10px}
 .dn .dd{font-size:12.5px;font-weight:400;line-height:1.45;color:var(--ink);opacity:.85}
 .dn .dt{font-size:13.5px;font-weight:700}
+.dn.go{border-style:solid;border-width:1px 1px 1px 1px;border-top-width:4px;box-shadow:0 1px 0 var(--rule),0 3px 0 -1px var(--sheet),0 4px 0 -1px var(--rule)}
+.dn .dgo{font-size:12px;font-weight:600;color:var(--blue);margin-top:2px}
+.fcrumb{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center;font-size:12.5px;color:var(--muted)}
+.fcrumb button{all:unset;cursor:pointer;color:var(--blue);font-weight:600}
+.fkey{border:1px solid var(--rule);border-radius:12px;padding:8px 12px;background:var(--sheet)}
+.fkey summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--ink)}
+.fkey ul{list-style:none;margin:8px 0 2px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px 12px}
+.fkey li{display:grid;grid-template-columns:22px 1fr;gap:6px;align-items:start;font-size:12.5px;line-height:1.35}
+.fkey li i{display:block;width:22px;height:14px;border-radius:4px;border:1px solid var(--rule);border-top:4px solid var(--tone,var(--rule));background:var(--sheet);margin-top:1px}
+.dn.mixed,.fkey li.mixed i{border-top-color:transparent;background:linear-gradient(90deg,var(--ok) 50%,var(--red) 50%) top/100% 4px no-repeat border-box,var(--sheet);background-origin:border-box}
+.fn.mixed{box-shadow:none;border-left:4px solid;border-image:linear-gradient(var(--ok) 50%,var(--red) 50%) 1}
+.fkey li.verdict i{background:var(--blue-soft);border-color:transparent;border-top-color:var(--blue)}
+.fkey li b{font-weight:600}
+.flvl{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--blue);background:var(--blue-soft);border-radius:999px;padding:2px 8px;justify-self:start}
 .dn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .dn.cause{--tone:var(--warn)} .dn.policy{--tone:var(--blue)} .dn.event{--tone:var(--muted)} .dn.context{--tone:var(--rule)}
 .dn.good{--tone:var(--ok)} .dn.bad{--tone:var(--red)} .dn.mixed{--tone:var(--warn)}
@@ -399,6 +413,7 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 <script src="data/sum-it.js"></script>
 <script src="data/sum-wd.js"></script>
 <script src="data/flow-ec.js"></script>
+<script src="data/flow-ec-top.js"></script>
 <script src="essays.js"></script>
 <script>
 (function(){
@@ -526,12 +541,28 @@ function startLearn(sec){
   showCard();
 }
 /* ---------- flow charts ---------- */
-const flowsOf=t=>((window.FLOWS||{})[t]||[]).slice().sort((a,b)=>(a.order||0)-(b.order||0));
+// Charts in top-down reading order: each chart followed by its children (topic → cluster → country → detail).
+const flowParent=(t,f)=>f.parent||((window.FLOWS||{})[t+"_parent"]||{})[f.id]||null;
+function flowsOf(t){
+  const all=((window.FLOWS||{})[t]||[]).slice().sort((a,b)=>(a.order||0)-(b.order||0)), ids=new Set(all.map(f=>f.id)), kids={}, out=[];
+  for(const f of all){ const p=flowParent(t,f); const k=p&&ids.has(p)?p:""; (kids[k]=kids[k]||[]).push(f); }
+  const walk=(k,depth)=>{ for(const f of kids[k]||[]){ f._depth=depth; out.push(f); walk(f.id,depth+1); } };
+  walk("",0); return out;
+}
+const LEVEL=["Whole topic","Cluster","Country","Detail"];
+const levelOf=f=>f.level!=null?LEVEL[f.level]:(f._depth===1?"Topic-wide":"Detail");
 function openSession(label,flow){ round={mode:"reader",queue:[],i:0,results:[],requeued:new Set()};
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
   $("#pfill").style.width="0"; $("#pcount").textContent=label; const s=stageClear(); if(flow) $("#session").classList.add("flowmode"); return s; }
+const TONE_HELP=[["context","Background","Starting conditions and context"],["cause","Cause / pressure","Why something happened or had to change"],["policy","Policy / action","What a government or leader did"],["event","Event","Something that happened"],["good","Success","An achievement or positive result"],["bad","Problem","A failure, cost or limitation"],["mixed","Mixed","Partly worked, partly didn't"],["verdict","Verdict","The overall judgement to use in essays"]];
+let flowKeyOpen=true; try{ flowKeyOpen=localStorage.getItem("cd-flow-key")!=="0"; }catch(e){}
+function flowKey(){ const d=el("details",{class:"fkey"}, el("summary",{text:"What the colours mean"}),
+  el("ul",{}, TONE_HELP.map(([k,l,h])=>el("li",{class:k,style:`--tone:var(--${{context:"rule",cause:"warn",policy:"blue",event:"muted",good:"ok",bad:"red",mixed:"warn",verdict:"blue"}[k]})`}, el("i"), el("span",{}, el("b",{text:l+": "}), h)))),
+  el("div",{class:"hint",style:"margin-top:6px;font-size:12px"},"Boxes with a stacked edge and “Open chart →” lead to a more detailed chart."));
+  d.open=flowKeyOpen; d.addEventListener("toggle",()=>{ flowKeyOpen=d.open; try{ localStorage.setItem("cd-flow-key",d.open?"1":"0"); }catch(e){} }); return d; }
 const TONE={context:"Background",cause:"Cause",policy:"Policy / action",event:"Event",good:"Success",bad:"Problem",mixed:"Mixed",verdict:"Verdict"};
 function flowNode(n,t){
+  if(n.go) return el("div",{class:"fn "+(n.tone||"event")}, el("button",{onclick:()=>goChart(t,n.go)}, el("span",{text:n.t}), el("span",{class:"chev",text:"→"})));
   const ids=(n.cards||[]).filter(id=>CASE[id]), has=n.d||ids.length, tone=n.tone||"event";
   const box=el("div",{class:"fn "+tone});
   const btn=el("button",{"aria-expanded":"false",onclick:()=>{ if(!has) return; const o=box.classList.toggle("open"); btn.setAttribute("aria-expanded",String(o)); }},
@@ -561,10 +592,9 @@ function flowSteps(steps,t){
 function openFlowList(t){
   const T=TOPIC[t], F=flowsOf(t), s=openSession("Flow charts",true);
   s.append(el("div",{class:"fhead"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Flow charts`}), el("h2",{text:T.name}),
-    el("p",{text:`${F.length} charts from your notes. Each one shows the steps first; tap any step for the details.`})),
-    el("div",{class:"casegroup"}, F.map((f,i)=>{ const G=(window.FLOWS||{})[t+"_groups"]||[], g=G.filter(x=>x[0]<=f.order).pop(), prev=i?G.filter(x=>x[0]<=F[i-1].order).pop():null;
-      return el("div",{class:"casegroup"}, g&&g!==prev?el("div",{class:"sec",text:g[1]}):null,
-        el("button",{class:"mode",onclick:()=>openFlow(t,i)}, el("span",{class:"ic",text:String(i+1)}), el("span",{}, el("b",{text:f.title})), el("span",{class:"go",text:"Open"}))); })));
+    el("p",{text:`${F.length} charts from your notes, top-down: start with the whole topic, then open a cluster, a country, and its detailed charts. Next/Previous follow this order.`})),
+    el("div",{class:"casegroup"}, F.map((f,i)=>{ const d=Math.min(f._depth||0,3);
+      return el("button",{class:"mode",style:`margin-left:${d*14}px`,onclick:()=>openFlow(t,i)}, el("span",{class:"ic",text:String(i+1)}), el("span",{}, el("span",{class:"flvl",text:levelOf(f)}), el("b",{style:"display:block;margin-top:3px",text:f.title})), el("span",{class:"go",text:"Open"})); })));
   setActions(el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}), (window.SUMMARIES||{})[t]?el("button",{class:"btn",text:"Read summary",onclick:()=>openSummary(t)}):null);
 }
 let flowView="diagram", flowDetails=true;
@@ -590,7 +620,10 @@ function dgGroup(steps){ const out=[]; let run=null, label=null;
   }
   return out;
 }
+function goChart(t,id){ const i=flowsOf(t).findIndex(f=>f.id===id); if(i>=0){ closeFlowDetail(); openFlow(t,i); } }
+let curFlowTopic=null;
 function dgNode(n,t){
+  if(n.go) return el("button",{class:"dn x go "+(n.tone||"event"),onclick:()=>goChart(t,n.go)}, el("span",{class:"dt",text:n.t}), flowDetails&&n.d?el("span",{class:"dd",text:n.d}):null, el("span",{class:"dgo",text:"Open chart →"}));
   if(flowDetails&&n.d) return el("button",{class:"dn x "+(n.tone||"event"),onclick:()=>flowDetail(n,t)}, el("span",{class:"dt",text:n.t}), el("span",{class:"dd",text:n.d}));
   return el("button",{class:"dn "+(n.tone||"event"),onclick:()=>flowDetail(n,t)}, n.t); }
 // Lays out a sequence of steps: straight runs snake across C columns, parallel steps branch, comparisons fork into columns.
@@ -651,7 +684,12 @@ function openFlow(t,i){
   const views=el("div",{class:"fview"}, [["diagram","Diagram"],["list","List"]].map(([k,l])=>el("button",{"aria-pressed":String(flowView===k),onclick:()=>{ flowView=k; openFlow(t,i); }},l)));
   if(flowView==="diagram") body.append(flowDiagram(f.steps||[],t));
   else body.append(el("div",{class:"flow"}, flowSteps(f.steps||[],t)));
-  s.append(el("div",{class:"fhead"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · chart ${i+1} of ${F.length}`}), el("h2",{text:f.title}), f.intro?el("p",{text:f.intro}):null),
+  const chain=[]; for(let p=flowParent(t,f); p; ){ const pf=F.find(x=>x.id===p); if(!pf) break; chain.unshift(pf); p=flowParent(t,pf); }
+  s.append(el("div",{class:"fhead"},
+      chain.length?el("div",{class:"fcrumb"}, chain.flatMap(c=>[el("button",{onclick:()=>goChart(t,c.id)},c.title.replace(/^SEA economic change: /,"").replace(/^Cluster: /,"")), el("span",{text:"›"})])):el("div",{class:"eyebrow",text:TOPIC[t].name}),
+      el("span",{class:"flvl",text:levelOf(f)}),
+      el("h2",{text:f.title}), f.intro?el("p",{text:f.intro}):null),
+    flowKey(),
     el("div",{class:"ftools"}, flowView==="diagram"?el("label",{style:"display:flex;gap:6px;align-items:center;cursor:pointer"},
         (()=>{ const c=el("input",{type:"checkbox"}); c.checked=flowDetails; c.onchange=()=>{ flowDetails=c.checked; try{ localStorage.setItem("cd-flow-details",flowDetails?"1":"0"); }catch(e){} openFlow(t,i); }; return c; })(), "Show details in boxes")
       :el("span",{text:"Tap a step to open it"}), views),
