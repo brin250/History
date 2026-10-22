@@ -5,7 +5,7 @@ const F = (window.FLOWS = window.FLOWS || {}); const L = (F.ec = F.ec || []);
 L.push({
   id: "ec-flow-thailand-1", order: 60,
   title: "Thailand to 1957: never colonised, 1932 Revolution, Phibun",
-  intro: "Why Thailand started differently: never colonised, so an autonomous Chinese commercial class grew early. Phibun's economic nationalism and state enterprises did not displace it — private capital proved resilient.",
+  intro: "Why Thailand started differently: never colonised, so an autonomous Chinese commercial class grew early. Phibun's economic nationalism and state enterprises did not displace it — private capital stayed resilient against both state intervention and foreign capital, unlike Indonesia and the Philippines.",
   steps: [
     { t: "Overview: second only to Singapore", d: "Avg GDP growth 1961–2001: Thailand 6.8% (8.2, 6.9, 7.9, 4.4 by decade) vs Singapore 8.3, Malaysia 6.7, Indonesia 5.7, Myanmar 4.3, Philippines 3.9 (Lim). Successful EOI transition by mid-1980s, like Malaysia.", tone: "context", cards: ["ec-th-overview", "ec-cl-growth"] },
     { row: [
@@ -14,13 +14,14 @@ L.push({
     { t: "What independence meant: never colonised", d: "More economic space → autonomous (mainly Chinese) commerce class; could fill vacuum left by foreign firms after WWII; a societal check so the state never overwhelmed private capital (unlike Indonesia); enabled later EOI.", tone: "context", cards: ["ec-th-independence"] },
     { arrow: "pre-WWII context" },
     { t: "Active Chinese business class, 1910s–30s", d: "Nai Lert (cars), Nai Boonrawd (brewery), Nai Kokliang (cigarettes). Formed trade associations; petitioned government against Western privileges.", tone: "context", cards: ["ec-th-chinese-early"] },
-    { t: "1929 survey: a commercialised economy", d: "20,259 rice traders, 3,709 rice millers, 12,738 timber traders, 7,053 forestry traders (Pasuk & Baker) — unusual for an agrarian SEA state. Rice, teak, rubber, tin = 50–90% of exports mid-1800s–early 1960s.", tone: "context", cards: ["ec-th-chinese-early"] },
+    { t: "1929 survey: a commercialised economy", d: "20,259 rice traders, 3,709 rice millers, 12,738 timber traders, 7,053 forestry traders (Pasuk & Baker) — unusual for an agrarian SEA state.", tone: "context", cards: ["ec-th-chinese-early"] },
+    { t: "Typical SEA exports, unusual commercialisation", d: "Rice, teak, rubber, tin = 50–90% of exports, mid-1800s–early 1960s (typical SEA pattern). Difference: the degree of commercialisation achieved early, even without a fully capitalist system.", tone: "context", cards: ["ec-th-chinese-early"] },
     { row: [
       { t: "Limit: remittances", d: "Chinese remitted earnings home rather than investing in industry.", tone: "bad", cards: ["ec-th-chinese-early"] },
       { t: "Limit: Bowring Treaty (1855)", d: "Forced liberal trade policy → no tariff protection for local industry → industrialisation limited.", tone: "bad", cards: ["ec-th-chinese-early"] } ] },
     { t: "1932 Revolution & economic nationalism", d: "Phibun Songkhram: ‘a Thai economy for the Thai people’ — drove out foreign (Western AND Chinese) influence. Strained Chinese–elite relations (Thai xenophobia).", tone: "event", cards: ["ec-th-1932", "ec-th-chinese"] },
-    { t: "30 state enterprises by 1945", d: "Cotton & paper mills (Defence), sugar factories (Economic Affairs), Thai Rice Company (70–80% of export rice by 1939), stake in Siam Steam Navigation. Govt part/full owner of utilities, consumer goods, trade firms (Pasuk & Baker).", tone: "policy", cards: ["ec-th-1932"] },
-    { t: "Spared WWII devastation", d: "Little fighting on Thai soil — infrastructure and economy largely intact entering the post-war period.", tone: "good", cards: ["ec-th-1932"] },
+    { t: "30 state enterprises by 1945", d: "Cotton & paper mills (Defence), sugar factories (Economic Affairs), Thai Rice Company (70–80% of export rice by 1939), stake in Siam Steam Navigation. Mid-1930s–late 1940s: govt full/partial owner of public utilities, consumer goods, primary product trade firms (Pasuk & Baker).", tone: "policy", cards: ["ec-th-1932"] },
+    { t: "Spared WWII devastation", d: "Little fighting took place on Thai soil.", tone: "good", cards: ["ec-th-1932"] },
     { arrow: "1947 coup →" },
     { t: "Phibun 1947–57: ‘haphazard state-led development’", d: "Hewison: no coherent central ISI plan, but Phibun kick-started industrialisation. Govt share of domestic investment 32% (1952) → 38% (1953–55).", tone: "policy", cards: ["ec-th-phibun"] },
     { row: [
@@ -63,7 +64,7 @@ L.push({
     { split: [
       { h: "Positive", steps: [
         { t: "Investment & exports up", d: "Foreign investment 1960–80: 6 million baht. Manufactured exports 1.2% (1960) → 32.3% (1980) of total exports.", tone: "good", cards: ["ec-th-sarit-eval"] },
-        { t: "Industry overtakes agriculture by 1971", d: "Agriculture 29.8% vs industry 25.7% + manufacturing 17.5% of GDP in 1971.", tone: "good", cards: ["ec-th-gdp"] },
+        { t: "Industry overtakes agriculture by 1971", d: "Notes: manufacturing/industry overtook agriculture's GDP share by 1971. Table, 1971: agriculture 29.8%, industry 25.7%, manufacturing 17.5%.", tone: "good", cards: ["ec-th-gdp"] },
         { t: "Kanphatthana legitimacy", d: "Development tied to national unity/legitimacy; infrastructure raised living standards beyond Bangkok.", tone: "good", cards: ["ec-th-sarit-eval"] } ] },
       { h: "Negative: over-protection / cronyism", steps: [
         { t: "15–20 families benefited", d: "Mostly Sino-Thai. Bangkok Bank alone = 1/3 of banking sector, financed 42% of Thai exports.", tone: "bad", cards: ["ec-th-sarit-eval"] },
@@ -107,7 +108,7 @@ L.push({
     { t: "Success of EOI", d: "1980–90: sharpest rise in manufacture/industry GDP share; export growth 14% in 1980s — highest among capitalist SEA economies. Manufacturing 16.4% (1952) → 33.9% (2000) of GDP.", tone: "good", cards: ["ec-th-eoi-success"] },
     { t: "Structural transformation by 2000", d: "Agriculture 10.9%, manufacturing 33.9%, services 39.7% of GDP — vs mid-1980s agriculture ~25% of GDP, 75% of workforce, >60% of exports. Thai firms went abroad (Thaksin's Shin Corp: Indochina, Indonesia, India).", tone: "good", cards: ["ec-th-eoi-success"] },
     { t: "Export growth & composition (Morley)", d: "Thailand export growth 10.3% (1970–80), 14.0% (1980–90), 18.6% (1990–95); primary exports 76.2% (1975) → 26.9% (1994). Cf. Indonesia 97.6→47.0, Malaysia 68.6→24.6.", tone: "context", cards: ["ec-morley-exports"] },
-    { t: "Verdict: shocks + private class = smooth EOI", d: "Pressure forced the switch, but a ready private business class and favourable currency movements made EOI succeed.", tone: "verdict", cards: ["ec-th-govt"] }
+    { t: "Verdict: shocks + private class = EOI success", d: "Pressure forced the switch, but a ready private business class and favourable currency movements made EOI succeed.", tone: "verdict", cards: ["ec-th-govt"] }
   ],
   takeaways: [
     "The switch to EOI was forced by external shocks (oil, US withdrawal) and debt, formalised in the 4th Plan (1977–81).",
@@ -121,12 +122,12 @@ L.push({
   title: "Evaluating Thailand: success, limits and the road to 1997",
   intro: "Thailand industrialised rapidly, but growth bred inequality, concentrated wealth, over-protection and a debt-fuelled, poorly regulated financial liberalisation that set up the 1997 crisis. The private Chinese business class was the key distinctive factor.",
   steps: [
-    { t: "Quantitative success", d: "Exports shifted from rice, vegetables/roots, rubber (1985) to office machines, semiconductors, telecoms (2000). Top-3 exports fell 28.7% → 23.3% of total = diversification.", tone: "good", cards: ["ec-th-eoi-success"] },
-    { t: "Industry overtook agriculture 1970–90", d: "Agriculture 29.8% → 12.7%; industry 25.7% → 37.2% of GDP — textbook industrialisation.", tone: "good", cards: ["ec-th-gdp"] },
+    { t: "Quantitative success", d: "Exports shifted from rice, vegetables/roots, rubber (1985) to office machines, semiconductors, telecoms (2000). Top-3 exports fell 28.7% → 23.3% of total = diversification. Textbook industrialisation.", tone: "good", cards: ["ec-th-eoi-success"] },
+    { t: "Industry overtook agriculture 1970–90", d: "Agriculture 29.8% → 12.7%; industry 25.7% → 37.2% of GDP.", tone: "good", cards: ["ec-th-gdp"] },
     { arrow: "BUT limitations" },
     { t: "(a) Income & urban–rural inequality", d: "Gini 0.41 (1965) → 0.52 (2000): growth ≠ equity. Poverty fell 88.3% → 9.8% (1962–2002), but rural rate stayed ~4x urban. Bangkok: 16% of population, 48.2% (1989) → 55.4% (1993) of GDP; Northeast 34%+ of population, ~11% of GDP.", tone: "bad", cards: ["ec-th-inequality"] },
     { t: "(b) Concentration of wealth", d: "By mid-1980s virtually all largest firms were Sino-Thai ‘groups of companies’; only 3 of 70+ leading groups non-Chinese (one = Crown Property Bureau).", tone: "bad", cards: ["ec-th-inequality"] },
-    { t: "(c) Debt, deficits & crony capitalism", d: "External debt 16.6% → 51.3% of GNP by 2004; current account deficit 7.9% of GDP in 1996. Weak oversight: banks could carry bad debt 12 months unreported.", tone: "bad", cards: ["afcthai"] },
+    { t: "(c) Debt, deficits & crony capitalism", d: "External debt 16.6% → 51.3% of GNP by 2004; current account deficit 7.9% of GDP in 1996 — clear unsustainability signal. Weak oversight: banks could carry bad debt 12 months unreported.", tone: "bad", cards: ["afcthai"] },
     { t: "Case: Bangkok Bank of Commerce (BBC)", d: "Loans funnelled into stock speculation and to politicians (incl. via Rakesh Saxena, linked to the ‘Group of 16’); collapsed 1996; Bank of Thailand spent 120 billion baht on bailout.", tone: "bad", cards: ["afcthai"] },
     { t: "(d) Over-protection & lost competitiveness", d: "1985 effective protection for manufacturing 52%, ~double Philippines/Malaysia. No tech upgrading (electronics institute only mooted 1997). Real wages +70% mid-1990s → export growth 28% → 0%.", tone: "bad", cards: ["ec-th-protection"] },
     { row: [
@@ -140,7 +141,7 @@ L.push({
     { t: "Market compensated for government failures", d: "“Rather than…the state guiding the market…a case where the market has compensated for government failures” (quoted in Hewison).", tone: "verdict", cards: ["ec-th-govt"] },
     { split: [
       { h: "Phibun", steps: [ { t: "State-led", d: "Semi-government monopolies; haphazard state-led development.", tone: "policy", cards: ["ec-th-phibun"] } ] },
-      { h: "Sarit", steps: [ { t: "Systematic intervention", d: "Planning and support BUT encouraged private enterprise.", tone: "policy", cards: ["ec-th-sarit"] } ] },
+      { h: "Sarit", steps: [ { t: "Systematic intervention", d: "Systematic intervention BUT encouraged private enterprise — nature of intervention differed significantly between regimes.", tone: "policy", cards: ["ec-th-sarit"] } ] },
       { h: "1980s", steps: [ { t: "State scaled back", d: "International/domestic pressure; private class ready to fill the gap.", tone: "policy", cards: ["ec-th-scaling"] } ] } ] },
     { arrow: "role of the Chinese" },
     { t: "Chinese: from royal partners to rivals", d: "From 1890s patron-client ties with monarchy — built royal monopolies in railways, shipping, banking (Siam Commercial Bank 1906, Siam Cement 1913). 1932 Revolution → Thai xenophobia, strained relations.", tone: "context", cards: ["ec-th-chinese"] },
