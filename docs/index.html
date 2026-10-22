@@ -178,7 +178,12 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .farrow:before{content:"↓";display:block;font-size:16px;color:var(--muted)}
 .frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px}
 .fsplit{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(175px,1fr);gap:8px;overflow-x:auto;padding-bottom:4px}
+.fsplit.n2{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}
 .ftrack{display:grid;gap:0;align-content:start;min-width:0}
+.ftrack .fnode{padding:6px 7px;border-left-width:4px}
+.ftrack .fnode b{font-size:13px}
+.ftrack .fnode span{font-size:12.5px;overflow-wrap:anywhere}
+.fswipe{font:11px var(--mono);color:var(--muted);text-align:right}
 .ftrack h4{margin:0 0 4px;font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--blue)}
 .flegend{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:11.5px;color:var(--muted)}
 .flegend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px;border:2px solid}
@@ -496,7 +501,9 @@ function flowSteps(steps,t){
     if(x.arrow!==undefined){ out.push(el("div",{class:"farrow",text:x.arrow})); prevNode=false; continue; }
     if(prevNode) out.push(el("div",{class:"farrow"}));
     if(x.row) out.push(el("div",{class:"frow"}, x.row.map(n=>flowNode(n,t))));
-    else if(x.split) out.push(el("div",{class:"fsplit"}, x.split.map(tr=>el("div",{class:"ftrack"}, el("h4",{text:tr.h}), flowSteps(tr.steps||[],t)))));
+    else if(x.split){ const k=x.split.length;
+      if(k>2) out.push(el("div",{class:"fswipe",text:`${k} columns · swipe →`}));
+      out.push(el("div",{class:"fsplit"+(k<=2?" n2":"")}, x.split.map(tr=>el("div",{class:"ftrack"}, el("h4",{text:tr.h}), flowSteps(tr.steps||[],t))))); }
     else out.push(flowNode(x,t));
     prevNode=true;
   }
