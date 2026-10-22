@@ -161,6 +161,27 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .sumcase{border:1px solid var(--rule);border-radius:8px;padding:10px 12px;display:grid;gap:6px;background:var(--paper)}
 .sumcase b{font-family:var(--display);font-size:16px}
 .sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
+.flow{display:grid;gap:0}
+.fnode{border:1.5px solid var(--rule);border-left-width:5px;border-radius:9px;padding:7px 10px;background:var(--paper);display:grid;gap:2px;min-width:0}
+.fnode b{font-size:14.5px;line-height:1.3}
+.fnode span{font-size:13.5px;line-height:1.4;color:var(--ink)}
+.fnode .linkbtn{justify-self:start;font-size:12.5px}
+.fnode.context{border-color:var(--rule);background:var(--sheet)}
+.fnode.cause{border-color:var(--warn);background:var(--warn-soft)}
+.fnode.policy{border-color:var(--blue);background:var(--blue-soft)}
+.fnode.event{border-color:var(--ink)}
+.fnode.good{border-color:var(--ok);background:var(--ok-soft)}
+.fnode.bad{border-color:var(--red);background:var(--red-soft)}
+.fnode.mixed{border-color:var(--warn)}
+.fnode.verdict{border-color:var(--blue);border-width:2px 2px 2px 5px}
+.farrow{text-align:center;color:var(--muted);font:12px var(--mono);padding:3px 0;line-height:1.2}
+.farrow:before{content:"↓";display:block;font-size:16px;color:var(--muted)}
+.frow{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px}
+.fsplit{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(175px,1fr);gap:8px;overflow-x:auto;padding-bottom:4px}
+.ftrack{display:grid;gap:0;align-content:start;min-width:0}
+.ftrack h4{margin:0 0 4px;font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--blue)}
+.flegend{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:11.5px;color:var(--muted)}
+.flegend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px;border:2px solid}
 .lpts{margin:0;padding-left:20px;display:grid;gap:6px;font-size:16px;max-width:65ch}
 @media (prefers-reduced-motion:no-preference){.sheet-in>*{animation:rise .2s ease both}@keyframes rise{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
 </style>
@@ -175,8 +196,8 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
   <!-- TODAY -->
   <section id="view-today" class="views" style="padding:0">
     <div class="card">
-      <b>Topic summaries</b>
-      <span class="hint">Every topic with its case studies, key facts and historians, from your notes.</span>
+      <b>Topic summaries &amp; flow charts</b>
+      <span class="hint">Every topic with its case studies, key facts and historians, from your notes. Topics marked ⇣ also have flow charts.</span>
       <div id="sumchips" class="casegroup"></div>
     </div>
     <div class="card" id="learncard">
@@ -332,6 +353,7 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 <script src="data/sum-as.js"></script>
 <script src="data/sum-it.js"></script>
 <script src="data/sum-wd.js"></script>
+<script src="data/flow-ec.js"></script>
 <script src="essays.js"></script>
 <script>
 (function(){
@@ -422,7 +444,7 @@ function renderSumChips(){
   const box=$("#sumchips"); if(!box||box.childElementCount) return;
   for(const paper of ["P1","P2"]) box.append(el("div",{class:"casegroup"},
     el("span",{class:"eyebrow",text:paper==="P1"?"Paper 1":"Paper 2"}),
-    el("div",{class:"chips"}, TOPICS.filter(t=>t.paper===paper&&(window.SUMMARIES||{})[t.key]).map(t=>el("button",{class:"chip",onclick:()=>openSummary(t.key)}, t.name)))));
+    el("div",{class:"chips"}, TOPICS.filter(t=>t.paper===paper&&(window.SUMMARIES||{})[t.key]).map(t=>el("button",{class:"chip",onclick:()=>openSummary(t.key)}, t.name+(flowsOf(t.key).length?" ⇣":""))))));
 }
 function renderTopics(){
   $("#roundsize").value=String(state.settings.size);
@@ -458,6 +480,48 @@ function startLearn(sec){
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
   showCard();
 }
+/* ---------- flow charts ---------- */
+const flowsOf=t=>((window.FLOWS||{})[t]||[]).slice().sort((a,b)=>(a.order||0)-(b.order||0));
+function openSession(label){ round={mode:"reader",queue:[],i:0,results:[],requeued:new Set()};
+  if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
+  $("#pfill").style.width="0"; $("#pcount").textContent=label; return stageClear(); }
+function flowNode(n,t){
+  const ids=(n.cards||[]).filter(id=>CASE[id]);
+  return el("div",{class:"fnode "+(n.tone||"event")}, el("b",{text:n.t}), n.d?el("span",{text:n.d}):null,
+    ids.length?el("button",{class:"linkbtn",text:`Study ${ids.length===1?"this card":ids.length+" cards"}`,onclick:()=>startLearn({t,sec:n.t,cards:ids.map(id=>CASE[id])})}):null);
+}
+function flowSteps(steps,t){
+  const out=[]; let prevNode=false;
+  for(const x of steps){
+    if(x.arrow!==undefined){ out.push(el("div",{class:"farrow",text:x.arrow})); prevNode=false; continue; }
+    if(prevNode) out.push(el("div",{class:"farrow"}));
+    if(x.row) out.push(el("div",{class:"frow"}, x.row.map(n=>flowNode(n,t))));
+    else if(x.split) out.push(el("div",{class:"fsplit"}, x.split.map(tr=>el("div",{class:"ftrack"}, el("h4",{text:tr.h}), flowSteps(tr.steps||[],t)))));
+    else out.push(flowNode(x,t));
+    prevNode=true;
+  }
+  return out;
+}
+const LEGEND=[["context","Background","var(--rule)"],["cause","Cause / pressure","var(--warn)"],["policy","Policy / action","var(--blue)"],["event","Event","var(--ink)"],["good","Success","var(--ok)"],["bad","Failure / problem","var(--red)"],["verdict","Verdict","var(--blue)"]];
+function openFlowList(t){
+  const T=TOPIC[t], F=flowsOf(t), s=openSession("Flow charts");
+  s.append(el("div",{class:"casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Flow charts`}), el("h2",{class:"qtitle",text:T.name}),
+    el("div",{class:"hint",text:`${F.length} charts, built only from your notes. Tap a chart to open it.`}),
+    F.map((f,i)=>el("button",{class:"mode",onclick:()=>openFlow(t,i)}, el("span",{class:"ic",text:String(i+1)}), el("span",{}, el("b",{text:f.title}), el("span",{class:"hint",text:f.intro||""})), el("span",{class:"go",text:"Open"})))));
+  setActions(el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}), (window.SUMMARIES||{})[t]?el("button",{class:"btn",text:"Read summary",onclick:()=>openSummary(t)}):null);
+}
+function openFlow(t,i){
+  const F=flowsOf(t), f=F[i], s=openSession(`Chart ${i+1} / ${F.length}`);
+  $("#pfill").style.width=(100*(i+1)/F.length)+"%";
+  s.append(el("div",{class:"casegroup"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · Flow chart ${i+1} of ${F.length}`}), el("h2",{class:"qtitle",text:f.title}),
+    f.intro?el("div",{class:"qtext",text:f.intro}):null,
+    el("div",{class:"flegend"}, LEGEND.map(([k,l,c])=>el("span",{}, el("i",{style:`border-color:${c}`}), l))),
+    el("div",{class:"flow"}, flowSteps(f.steps||[],t)),
+    (f.takeaways||[]).length?el("div",{class:"explain"}, el("b",{text:"What this shows"}), el("ul",{style:"margin:0;padding-left:18px"}, f.takeaways.map(x=>el("li",{text:x})))):null,
+    el("div",{class:"srctag",text:"Every box comes from your "+TOPIC[t].src+" notes."})));
+  setActions(i>0?el("button",{class:"btn ghost",text:"← Previous",onclick:()=>openFlow(t,i-1)}):el("button",{class:"btn ghost",text:"All charts",onclick:()=>openFlowList(t)}),
+    i<F.length-1?el("button",{class:"btn",text:"Next →",onclick:()=>openFlow(t,i+1)}):el("button",{class:"btn",text:"All charts",onclick:()=>openFlowList(t)}));
+}
 function openSummary(t){
   const S=(window.SUMMARIES||{})[t], T=TOPIC[t]; if(!S) return;
   round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
@@ -480,7 +544,7 @@ function openSummary(t){
     (S.historians||[]).length?el("div",{}, el("h3",{text:"Historians"}), el("ul",{}, S.historians.map(h=>el("li",{}, el("b",{text:h.who+": "}), h.view)))):null,
     (S.exam||[]).length?el("div",{}, el("h3",{text:"Using this topic in the exam"}), el("ul",{}, S.exam.map(x=>el("li",{text:x})))):null,
     el("div",{class:"srctag",text:`Written only from your ${T.src} notes.`})));
-  setActions(el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}),
+  setActions(flowsOf(t).length?el("button",{class:"btn ghost",text:"Flow charts",onclick:()=>openFlowList(t)}):el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}),
     el("button",{class:"btn",text:"Learn this topic",onclick:()=>{ const ns=sectionsOf(t).find(x=>x.cards.some(c=>!isLearned(c)))||sectionsOf(t)[0]; startLearn(ns); }}));
 }
 function learnCard(c){
@@ -680,7 +744,9 @@ function renderLearn(){
   for(const t of TOPICS){
     const secs=sectionsOf(t.key), all=secs.flatMap(s=>s.cards), got=all.filter(isLearned).length;
     const d=el("details",{class:"ltopic"}, el("summary",{}, el("b",{text:t.name}), el("span",{class:"num",style:"font:12px var(--mono);color:var(--muted)",text:`${t.paper} · ${got}/${all.length}`}),
-      (window.SUMMARIES||{})[t.key]?el("button",{class:"linkbtn",style:"grid-column:1/-1;justify-self:start;font-size:14px",text:"Read summary →",onclick:e=>{ e.preventDefault(); e.stopPropagation(); openSummary(t.key); }}):null,
+      el("div",{class:"row",style:"grid-column:1/-1;gap:14px"},
+        (window.SUMMARIES||{})[t.key]?el("button",{class:"linkbtn",style:"font-size:14px",text:"Read summary →",onclick:e=>{ e.preventDefault(); e.stopPropagation(); openSummary(t.key); }}):null,
+        flowsOf(t.key).length?el("button",{class:"linkbtn",style:"font-size:14px",text:`Flow charts (${flowsOf(t.key).length}) →`,onclick:e=>{ e.preventDefault(); e.stopPropagation(); openFlowList(t.key); }}):null),
       el("div",{class:"bar",style:"grid-column:1/-1"}, el("i",{style:`width:${100*got/all.length}%;background:var(--blue)`}))),
       (window.SUMMARIES||{})[t.key]?el("button",{class:"btn ghost",style:"margin-top:10px;width:100%",text:"Read the topic summary",onclick:()=>openSummary(t.key)}):null,
       el("div",{style:"margin-top:8px"}, secs.map(s=>{ const k=s.cards.filter(isLearned).length, done=k===s.cards.length;
