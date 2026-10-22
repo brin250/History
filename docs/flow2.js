@@ -211,25 +211,36 @@ function nodeEl(n, c){
     hs.length ? el("span", { class: "nhist" }, hs.map(h => el("span", { text: h.who }))) : null,
     caseStrip(n, c));
 }
-// All the case studies behind one stage, each shown once: grouped under the summary's case study, with each card's key points.
-function stageCases(k, c){
-  const nodes = [], walk = steps => steps.forEach(x => { if (x.link !== undefined) return; if (x.row) x.row.forEach(n => nodes.push(n)); else if (x.split) x.split.forEach(t => walk(t.steps || [])); else nodes.push(x); });
-  walk(k.steps || []);
-  const groups = new Map(), seen = new Set();
-  nodes.forEach(n => { const { cards, sum } = caseOf(n, c); cards.forEach(card => { if (seen.has(card.id)) return; seen.add(card.id);
-    const key = sum ? sum.name : ""; if (!groups.has(key)) groups.set(key, { sum, cards: [] }); groups.get(key).cards.push(card); }); });
-  if (!groups.size) return null;
-  return el("div", { class: "stcases" }, el("span", { class: "csh", text: `Case studies in this stage (${seen.size})` }),
-    [...groups.values()].map(g => el("div", { class: "csx" },
-      g.sum ? el("b", { text: g.sum.name + (g.sum.when ? " (" + g.sum.when + ")" : "") }) : null,
-      g.sum && g.sum.what ? el("p", { text: g.sum.what }) : null,
-      g.cards.map(k => el("div", { class: "csc" }, el("b", { text: k.title + (k.when ? " · " + k.when : "") }), (k.pts || []).length ? el("ul", {}, k.pts.map(x => el("li", { text: x }))) : null)))));
+// The case-study facts that belong to one box: points from its cards and its summary case study,
+// ranked by how many words, names and dates they share with the box, so each box shows its own evidence.
+const STOP = new Set("the a an and or of to in on for by with as at from into its it is was were be that this than then but not their his her they had has have which who after before over under more most less only also all any each per via".split(" "));
+const words = x => (String(x).toLowerCase().match(/[a-z0-9%’']+/g) || []).map(w => w.replace(/[’']s?$/, "")).filter(w => w.length > 2 && !STOP.has(w) || /\d/.test(w));
+function caseFacts(n, c, max){
+  if (n._cf) return n._cf.slice(0, max);
+  const { cards, sum } = caseOf(n, c), key = new Set(words(n.t + " " + (n.d || "") + " " + (n.date || "")));
+  const own = new Set((n.ev || []).concat(n.d || []).map(x => x.trim()));
+  const cand = [], seen = new Set();
+  cards.forEach(k => (k.pts || []).forEach(x => cand.push(x)));
+  if (sum) (sum.facts || []).forEach(x => cand.push(x));
+  const scored = cand.filter(x => !seen.has(x) && seen.add(x) && !own.has(x.trim())).map((x, i) => {
+    let sc = 0; for (const w of new Set(words(x))) if (key.has(w)) sc += /\d/.test(w) ? 2 : 1;
+    return { x, sc, i };
+  }).filter(o => o.sc >= 2).sort((a, b) => b.sc - a.sc || a.i - b.i);
+  const top = scored.length ? scored[0].sc : 0, kept = [];
+  const same = (a, b) => { const A = new Set(words(a)), B = new Set(words(b)); let k = 0; A.forEach(w => { if (B.has(w)) k++; }); return k / Math.min(A.size, B.size || 1) > 0.6; };
+  scored.filter(o => o.sc >= Math.max(2, top / 2)).forEach(o => { if (!kept.some(x => same(x, o.x))) kept.push(o.x); });
+  n._cf = kept;
+  if (!n._cf.length && cand.length) n._cf = [cand[0]];
+  return n._cf.slice(0, max);
 }
 function caseStrip(n, c){
   if (mode === "recall" || mode === "complete") return null;
   const { cards, sum } = caseOf(n, c), k = cards[0];
   if (!k) return null;
   const more = cards.length - 1;
+  if (showCases) return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
+    el("span", { class: "ncs" }, el("b", { text: sum ? sum.name : k.title }), sum && sum.when ? " · " + sum.when : k.when ? " · " + k.when : ""),
+    el("ul", {}, caseFacts(n, c, 3).map(x => el("li", { text: x })))));
   return el("span", { class: "ncase" }, el("span", {}, el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""));
 }
 function group(steps){
@@ -323,8 +334,7 @@ function diagram(c){
       ent = ex = [panel]; en = xn = [null];
     } else {
       const s = seqEl(k.steps || [], c, C, specs);
-      panel = el("div", { class: "cl2" + (mode === "study" ? " focus" : "") }, el("div", { class: "clh" }, el("span", { class: "cln", text: String(i + 1), "aria-label": `Stage ${i + 1}` }), el("b", { text: k.title }), k.summary ? el("span", { class: "hint", text: k.summary }) : null), s.node,
-        showCases && (mode === "overview" || mode === "study") ? stageCases(k, c) : null);
+      panel = el("div", { class: "cl2" + (mode === "study" ? " focus" : "") }, el("div", { class: "clh" }, el("span", { class: "cln", text: String(i + 1), "aria-label": `Stage ${i + 1}` }), el("b", { text: k.title }), k.summary ? el("span", { class: "hint", text: k.summary }) : null), s.node);
       ent = s.entries; ex = s.exits; en = s.en; xn = s.xn;
     }
     if (prevEx) specs.push({ kind: "bus", from: [prevEx], to: [panel], link: k.link ? { link: k.link, sub: k.sub, how: k.how } : null, na: prevXn[0], nb: en[0] });
