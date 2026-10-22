@@ -63,6 +63,29 @@ function catalog(c){
   return (c._cat = { nodes, links });
 }
 
+/* ---------- case studies ---------- */
+// Each box is tied to its case study: the fact cards it was built from, and the topic summary's case study that covers them.
+// Boxes with no cards of their own (claims, verdicts) take the chart's most-used card.
+const caseIx = {};
+function sumCases(t){
+  if (caseIx[t]) return caseIx[t];
+  const m = {}; (((window.SUMMARIES || {})[t] || {}).cases || []).forEach(k => (k.cards || []).forEach(id => (m[id] = m[id] || []).push(k)));
+  return (caseIx[t] = m);
+}
+function chartCards(c){
+  if (c._cc) return c._cc;
+  const n = {}; catalog(c).nodes.forEach(x => (x.cards || []).forEach(id => { n[id] = (n[id] || 0) + 1; }));
+  return (c._cc = Object.keys(n).filter(id => A.CASE[id]).sort((a, b) => n[b] - n[a]));
+}
+function caseOf(n, c){
+  let ids = (n.cards || []).filter(id => A.CASE[id]);
+  if (!ids.length) ids = chartCards(c).slice(0, 1);
+  const m = sumCases(curT), score = new Map();
+  ids.forEach(id => (m[id] || []).forEach(k => score.set(k, (score.get(k) || 0) + 1)));
+  const sum = [...score.entries()].sort((a, b) => b[1] - a[1]).map(e => e[0])[0] || null;
+  return { cards: ids.map(id => A.CASE[id]), sum };
+}
+
 /* ---------- state ---------- */
 const S = () => A.state();
 const mapRec = id => (S().maps = S().maps || {})[id] || { lvl: 0, b: 0, n: 0, due: 0, last: 0, acc: null };
@@ -91,15 +114,26 @@ function sheet(...kids){
     el("div", { class: "row spread" }, el("span"), el("button", { class: "x", text: "✕", "aria-label": "Close", onclick: closeSheet })), ...kids));
   document.body.append(bg, sh); return sh;
 }
+function caseEl(n, c){
+  const { cards, sum } = caseOf(n, c);
+  if (!cards.length && !sum) return null;
+  return el("div", { class: "csx" }, el("span", { class: "csh", text: "Case study" }),
+    sum ? el("b", { text: sum.name + (sum.when ? " (" + sum.when + ")" : "") }) : null,
+    sum && sum.what ? el("p", { text: sum.what }) : null,
+    sum && (sum.facts || []).length ? el("ul", {}, sum.facts.map(f => el("li", { text: f }))) : null,
+    sum && sum.why ? el("p", { class: "cw", text: "Why it matters: " + sum.why }) : null,
+    cards.map(k => el("details", { class: "evid", open: sum ? null : "" }, el("summary", { text: "Card: " + k.title + (k.when ? " · " + k.when : "") }), el("ul", {}, (k.pts || []).map(x => el("li", { text: x }))))));
+}
 function nodeSheet(n, c){
-  const ids = (n.cards || []).filter(id => A.CASE[id]);
+  const ids = caseOf(n, c).cards.map(k => k.id);
   const hs = (c.historians || []).filter(h => (h.nodes || []).includes(n.id));
   sheet(el("span", { class: "ftag2 " + typeCls(n), text: typeLabel(n) + (n.date ? " · " + n.date : "") }),
     el("b", { text: n.t }), n.d ? el("p", { text: n.d }) : null,
     (n.ev || []).length ? el("details", { class: "evid", open: "" }, el("summary", { text: `Evidence (${n.ev.length})` }), el("ul", {}, n.ev.map(x => el("li", { text: x })))) : null,
     hs.length ? el("div", { class: "hist" }, hs.map(h => el("div", {}, el("b", { text: h.who + ": " }), h.view))) : null,
+    caseEl(n, c),
     n.go ? el("button", { class: "btn", style: "justify-self:start", text: "Open this chart →", onclick: () => { closeSheet(); open(curT, n.go); } }) : null,
-    ids.length ? el("button", { class: "btn ghost", style: "justify-self:start", text: ids.length === 1 ? "Study this card" : `Study these ${ids.length} cards`, onclick: () => { closeSheet(); A.startLearn({ t: curT, sec: n.t, cards: ids.map(id => A.CASE[id]) }); } }) : null);
+    ids.length ? el("button", { class: "btn ghost", style: "justify-self:start", text: ids.length === 1 ? "Study this case card" : `Study these ${ids.length} case cards`, onclick: () => { closeSheet(); A.startLearn({ t: curT, sec: n.t, cards: ids.map(id => A.CASE[id]) }); } }) : null);
 }
 function linkSheet(l){
   sheet(el("span", { class: "ftag2", text: "How this link works" }),
@@ -174,7 +208,15 @@ function nodeEl(n, c){
     showAll && n.d && mode !== "recall" && mode !== "complete" ? el("span", { class: "nd", text: n.d }) : null,
     (n.ev || []).length && showAll && mode !== "recall" && mode !== "complete" ? el("span", { class: "nev", text: `+ ${n.ev.length} evidence` }) : null,
     n.go ? el("span", { class: "ngo", text: "Tap for details · open chart" }) : null,
-    hs.length ? el("span", { class: "nhist" }, hs.map(h => el("span", { text: h.who }))) : null);
+    hs.length ? el("span", { class: "nhist" }, hs.map(h => el("span", { text: h.who }))) : null,
+    caseStrip(n, c));
+}
+function caseStrip(n, c){
+  if (mode === "recall" || mode === "complete") return null;
+  const { cards, sum } = caseOf(n, c), k = cards[0];
+  if (!k) return null;
+  const more = cards.length - 1;
+  return el("span", { class: "ncase" }, el("span", {}, el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""));
 }
 function group(steps){
   const out = []; let run = null, pending = null;
@@ -222,8 +264,11 @@ function draw(root, specs, c){
   root.querySelectorAll(":scope>.svg2,:scope>.pill2").forEach(x => x.remove());
   const R = root.getBoundingClientRect(); if (!R.width) return;
   const box = e => { const q = e.getBoundingClientRect(); return { l: q.left - R.left, r: q.right - R.left, t: q.top - R.top, b: q.bottom - R.top, cx: (q.left + q.right) / 2 - R.left, cy: (q.top + q.bottom) / 2 - R.top }; };
-  let solid = "", dash = "";
-  const head = (x, y, d) => d === "d" ? `M${x-4.5},${y-6}L${x},${y}L${x+4.5},${y-6}` : d === "r" ? `M${x-6},${y-4.5}L${x},${y}L${x-6},${y+4.5}` : `M${x+6},${y-4.5}L${x},${y}L${x+6},${y+4.5}`;
+  let solid = "", dash = "", hs = "", hd = "", isNeg = false;
+  const head = (x, y, d) => { const t = d === "d" ? `M${x-5},${y-7}L${x},${y}L${x+5},${y-7}Z` : d === "r" ? `M${x-7},${y-5}L${x},${y}L${x-7},${y+5}Z` : `M${x+7},${y-5}L${x},${y}L${x+7},${y+5}Z`; if (isNeg) hd += t; else hs += t; return ""; };
+  // Elbow from (x1,y1) down to mid, across, down to (x2,y2), with rounded corners.
+  const elbow = (x1, y1, x2, y2, mid) => { const dx = x2 - x1; if (Math.abs(dx) < 1) return `M${x1},${y1}V${y2}`; const r = Math.min(10, Math.abs(dx) / 2, (mid - y1), (y2 - mid)), sx = Math.sign(dx);
+    return `M${x1},${y1}V${mid-r}Q${x1},${mid} ${x1+sx*r},${mid}H${x2-sx*r}Q${x2},${mid} ${x2},${mid+r}V${y2}`; };
   const pill = (L, x, y, maxW) => {
     if (!L) return;
     const hid = hidden && L.key && hidden.has("L" + L.key) && answers.get("L" + L.key) === undefined;
@@ -232,7 +277,7 @@ function draw(root, specs, c){
   };
   for (const s of specs){
     const L = s.link ? linkObj(c, s.na, s.nb, s.link) : null, neg = L && NEG.has(L.label);
-    let d = "";
+    let d = ""; isNeg = !!neg;
     if (s.kind === "h"){ const a = box(s.a), b = box(s.b), y = (a.cy + b.cy) / 2;
       if (b.l >= a.r){ d += `M${a.r+3},${y}H${b.l-3}` + head(b.l - 3, y, "r"); pill(L, (a.r + b.l) / 2, y, b.l - a.r - 4); }
       else { d += `M${a.l-3},${y}H${b.r+3}` + head(b.r + 3, y, "l"); pill(L, (b.r + a.l) / 2, y, a.l - b.r - 4); } }
@@ -240,13 +285,15 @@ function draw(root, specs, c){
     else { const E = s.from.map(box), N = s.to.map(box); if (!E.length || !N.length) continue;
       const yb = Math.max(...E.map(e => e.b)), yt = Math.min(...N.map(n => n.t)), mid = (yb + yt) / 2, xs = [...E.map(e => e.cx), ...N.map(n => n.cx)];
       if (E.length === 1 && N.length === 1 && Math.abs(E[0].cx - N[0].cx) < 6) d += `M${E[0].cx},${E[0].b+3}V${N[0].t-3}` + head(N[0].cx, N[0].t - 3, "d");
-      else { E.forEach(e => { d += `M${e.cx},${e.b+3}V${mid}`; }); d += `M${Math.min(...xs)},${mid}H${Math.max(...xs)}`; N.forEach(n => { d += `M${n.cx},${mid}V${n.t-3}` + head(n.cx, n.t - 3, "d"); }); }
+      else { E.forEach(e => N.forEach(n => { d += elbow(e.cx, e.b + 3, n.cx, n.t - 3, mid); })); N.forEach(n => head(n.cx, n.t - 3, "d")); }
       pill(L, (Math.min(...xs) + Math.max(...xs)) / 2, mid); }
     if (neg) dash += d; else solid += d;
   }
   const NS = "http://www.w3.org/2000/svg", svg = document.createElementNS(NS, "svg"); svg.setAttribute("class", "svg2"); svg.setAttribute("width", R.width); svg.setAttribute("height", R.height);
   const p1 = document.createElementNS(NS, "path"); p1.setAttribute("d", solid); svg.append(p1);
   const p2 = document.createElementNS(NS, "path"); p2.setAttribute("d", dash); p2.setAttribute("class", "neg"); svg.append(p2);
+  const p3 = document.createElementNS(NS, "path"); p3.setAttribute("d", hs); p3.setAttribute("class", "hd"); svg.append(p3);
+  const p4 = document.createElementNS(NS, "path"); p4.setAttribute("d", hd); p4.setAttribute("class", "hd neg"); svg.append(p4);
   root.prepend(svg);
 }
 function diagram(c){
@@ -258,11 +305,11 @@ function diagram(c){
     let panel, ent, ex, en, xn;
     if (collapsed){
       panel = el("button", { class: "cl2 col" + (i > focus ? " later" : ""), onclick: () => { focus = i; render(); } },
-        el("span", { class: "cln", text: `Stage ${i + 1}` }), el("b", { text: k.title }), i < focus && k.summary ? el("span", { class: "hint", text: k.summary }) : el("span", { class: "hint", text: i > focus ? "Tap to study this stage" : "" }));
+        el("span", { class: "cln", text: String(i + 1), "aria-label": `Stage ${i + 1}` }), el("b", { text: k.title }), i < focus && k.summary ? el("span", { class: "hint", text: k.summary }) : el("span", { class: "hint", text: i > focus ? "Tap to study this stage" : "" }));
       ent = ex = [panel]; en = xn = [null];
     } else {
       const s = seqEl(k.steps || [], c, C, specs);
-      panel = el("div", { class: "cl2" + (mode === "study" ? " focus" : "") }, el("div", { class: "clh" }, el("span", { class: "cln", text: `Stage ${i + 1}` }), el("b", { text: k.title }), k.summary ? el("span", { class: "hint", text: k.summary }) : null), s.node);
+      panel = el("div", { class: "cl2" + (mode === "study" ? " focus" : "") }, el("div", { class: "clh" }, el("span", { class: "cln", text: String(i + 1), "aria-label": `Stage ${i + 1}` }), el("b", { text: k.title }), k.summary ? el("span", { class: "hint", text: k.summary }) : null), s.node);
       ent = s.entries; ex = s.exits; en = s.en; xn = s.xn;
     }
     if (prevEx) specs.push({ kind: "bus", from: [prevEx], to: [panel], link: k.link ? { link: k.link, sub: k.sub, how: k.how } : null, na: prevXn[0], nb: en[0] });
@@ -394,7 +441,7 @@ function keyEl(){
   const k = [["t-long", "Long-term cause"], ["t-short", "Short-term cause"], ["t-trigger", "Trigger"], ["t-policy", "Policy / action"], ["t-cons pos", "Result +"], ["t-cons neg", "Result −"], ["t-judge", "Judgement"], ["t-interp", "Interpretation"]];
   return el("details", { class: "fkey" }, el("summary", { text: "Colour key" }),
     el("ul", {}, k.map(([cls, l]) => el("li", {}, el("i", { class: "sw " + cls }), el("span", { text: l })))),
-    el("div", { class: "hint", style: "font-size:12px;margin-top:6px" }, "Every box also names its type at the top. Red dashed arrows undermine, constrain, prevent or contradict; grey arrows cause, enable or follow."));
+    el("div", { class: "hint", style: "font-size:12px;margin-top:6px" }, "Every box also names its type at the top, and its case study at the bottom (tap for the full case). Red dashed arrows undermine, constrain, prevent or contradict; grey arrows cause, enable or follow."));
 }
 function listPage(t){
   curT = t; const list = ordered(t), s = A.openSession("Flow charts", true);
