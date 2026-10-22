@@ -514,7 +514,9 @@ function openFlowList(t){
   const T=TOPIC[t], F=flowsOf(t), s=openSession("Flow charts");
   s.append(el("div",{class:"casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Flow charts`}), el("h2",{class:"qtitle",text:T.name}),
     el("div",{class:"hint",text:`${F.length} charts, built only from your notes. Tap a chart to open it.`}),
-    F.map((f,i)=>el("button",{class:"mode",onclick:()=>openFlow(t,i)}, el("span",{class:"ic",text:String(i+1)}), el("span",{}, el("b",{text:f.title}), el("span",{class:"hint",text:f.intro||""})), el("span",{class:"go",text:"Open"})))));
+    F.map((f,i)=>{ const G=(window.FLOWS||{})[t+"_groups"]||[], g=G.find(x=>x[0]===f.order)||G.filter(x=>x[0]<=f.order).pop(), prev=i?(G.filter(x=>x[0]<=F[i-1].order).pop()):null;
+      return el("div",{class:"casegroup"}, g&&g!==prev?el("div",{class:"sec",text:g[1]}):null,
+        el("button",{class:"mode",onclick:()=>openFlow(t,i)}, el("span",{class:"ic",text:String(i+1)}), el("span",{}, el("b",{text:f.title})), el("span",{class:"go",text:"Open"}))); })));
   setActions(el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}), (window.SUMMARIES||{})[t]?el("button",{class:"btn",text:"Read summary",onclick:()=>openSummary(t)}):null);
 }
 function openFlow(t,i){
