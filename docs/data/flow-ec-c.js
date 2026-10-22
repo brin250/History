@@ -26,7 +26,7 @@ L.push({
     { t: "Poor land reform implementation", d: "Officials lacked even up-to-date maps. Only 1.4 million acres redistributed by 1958 (vs 10m target), often unproductive plots.", tone: "bad", cards: ["ec-bm-pyidawtha-fail"] },
     { t: "Result: barely back to pre-war", d: "GDP only reached pre-war levels by 1958–59; rice production/exports still below 1938–39 levels by 1960.", tone: "bad", cards: ["ec-bm-pyidawtha-fail"] },
     { t: "1958 Ne Win caretaker government", d: "First major state enterprises in infrastructure and key commodities — a step toward fuller intervention.", tone: "event", cards: ["ec-bm-govt"] },
-    { t: "Verdict on 1948–62", d: "Modest state role (Pyidawtha, DSI, limited monopolies), but even limited monopolies hurt incentives; failure set the stage for Ne Win's 1962 coup and extreme socialism.", tone: "verdict" }
+    { t: "Verdict on 1948–62", d: "Modest state role (Pyidawtha, DSI, limited monopolies), but even limited monopolies hurt incentives; failure set the stage for Ne Win's extreme socialism from 1962.", tone: "verdict" }
   ],
   takeaways: [
     "Resource endowment is not destiny: Burma's later collapse came from policy choices, not poor starting conditions.",
@@ -155,7 +155,7 @@ L.push({
   takeaways: [
     "Use Burma to argue government policy was the decisive factor in economic outcomes (Than & Tan).",
     "Burma proves trade orientation matters: exports 21.0% → 1.3% of GDP alongside the slowest growth.",
-    "Equity and nationalism were 'achieved' at the cost of growth — the sharpest trade-off among the three aims."
+    "Equity and nationalism were 'achieved' at the cost of growth — hard to credit as \"an achievement of any sort\" given the parlous economy."
   ]
 });
 
@@ -204,12 +204,12 @@ L.push({
     { t: "2nd Five-Year Plan (1976–80)", d: "Repeated the North's mistake: heavy industry first; science/technology (mechanised farming); large-scale collectivisation (Mekong agro-farms); relocation to New Economic Zones (NEZs).", tone: "policy", cards: ["vietnamfyp"] },
     { arrow: "socialist transformation of the South" },
     { t: "Stage I (Mar 1978): private trade abolished", d: "Without warning, major private firms put under state control. 'Youth squads' confiscated goods at night, compensation rarely honoured → merchant refugee exodus.", tone: "policy", cards: ["ec-vn-stage1"] },
-    { t: "Stage II (Dec 1978): collectivisation", d: "'New Management System': work-exchange teams → pilot cooperatives → large collectives. State seized equipment/livestock.", tone: "policy", cards: ["ec-vn-stage2"] },
+    { t: "Stage II (Dec 1978): collectivisation", d: "'New Management System', gradualist: work-exchange teams (farmers keep land, contract production goals) → pilot cooperatives in receptive areas → large collectives. State seized equipment/livestock.", tone: "policy", cards: ["ec-vn-stage2"] },
     { t: "Fierce Southern resistance", d: "Southern peasants were freeholders (unlike Northern tenants): sold land back to owners, destroyed equipment/livestock, refused collective labour. Party used mass meetings, pressure, 'counterrevolutionary' threats.", tone: "bad", cards: ["ec-vn-stage2"] },
     { t: "Total failure", d: "By 1982 only 0.6% of Mekong households in cooperatives; 10 new cooperatives in HCMC since 1975. Rice 11.83m (1976) → 9.79m tons (1979); Mekong 950,000 → 398,000 tons.", tone: "bad", cards: ["ec-vn-stage2"] },
     { arrow: "why the 2nd FYP failed — four causes" },
     { row: [
-      { t: "1. Lack of funds", d: "Soviet aid ~$1bn/yr (promised $2.7bn); China cut aid after Vietnam joined CMEA (1978); US never paid promised $3bn; 1979 Cambodia invasion → embargo, 50% of spending on defence.", tone: "cause", cards: ["ec-vn-fyp-funds"] },
+      { t: "1. Lack of funds", d: "Soviet aid ~$1bn/yr (promised $2.7bn); China cancelled aid after Vietnam joined CMEA (1978) — Sino-Soviet rivalry; Carter administration never paid promised $3bn (1973 Paris Agreement); 1979 Cambodia invasion → US/allied embargo, 50% of spending on defence.", tone: "cause", cards: ["ec-vn-fyp-funds"] },
       { t: "2. War damage, infrastructure", d: "Docks lacked equipment/stevedores; highway potholed; ⅓ of trucks idle without spare parts. Duiker: difficulty \"absorbing foreign aid even when it was provided.\"", tone: "cause", cards: ["ec-vn-fyp-causes"] }
     ] },
     { row: [
@@ -235,7 +235,7 @@ L.push({
   steps: [
     { t: "Directive 100 (Jan 1981)", d: "First crack: households farm own plots, sell a quota to the state, keep the surplus for bonus-price state sale or the free market.", tone: "policy", cards: ["ec-vn-directive100"] },
     { t: "Mixed results", d: "Productivity rose, but peasants gamed quotas (colluding with managers for low targets) and resented state-controlled, often poor-quality inputs.", tone: "mixed", cards: ["ec-vn-directive100"] },
-    { t: "3rd Five-Year Plan (1981–85)", d: "Food/consumer subsidies abolished; private sector allowed in forestry, fisheries, retail; HCMC, Hanoi, Haiphong, Da Nang got own import-export corporations; more Soviet aid sought.", tone: "policy", cards: ["ec-vn-3rdfyp"] },
+    { t: "3rd Five-Year Plan (1981–85)", d: "Food/consumer subsidies abolished; private sector allowed in forestry, fisheries, retail; HCMC, Hanoi, Haiphong, Da Nang got own import-export corporations; more Soviet aid sought (student/technician exchanges).", tone: "policy", cards: ["ec-vn-3rdfyp"] },
     { t: "3rd FYP results", d: "Industrial production +~10%/yr; grain +~5%/yr; 1983 agricultural export surplus.", tone: "good", cards: ["ec-vn-3rdfyp"] },
     { arrow: "pressures for deeper reform" },
     { row: [
@@ -243,7 +243,7 @@ L.push({
       { t: "US embargo", d: "Since 1964 (North), extended 1975: blocked IMF/World Bank/ADB and deterred Western/Japanese aid.", tone: "cause", cards: ["ec-vn-doimoi"] },
       { t: "Leadership change", d: "Le Duan died (1986) → Nguyen Van Linh, willing to experiment with capitalism, became General Secretary.", tone: "cause", cards: ["ec-vn-doimoi"] }
     ] },
-    { t: "Doi Moi: 6th Congress (Dec 1986)", d: "'Renovation': 'market economy with socialist direction'. Modelled on Deng's China (1978) — gradualism and stability, unlike Gorbachev's USSR. Party supremacy kept; liberalisation economic only.", tone: "policy", cards: ["ec-vn-doimoi", "ec-vn-theme"] },
+    { t: "Doi Moi: 6th Congress (Dec 1986)", d: "'Renovation': 'market economy with socialist direction'. Modelled on Deng's China (1978) — gradualism and stability, unlike Gorbachev's USSR (economic AND political liberalisation). Party supremacy kept; liberalisation economic only.", tone: "policy", cards: ["ec-vn-doimoi", "ec-vn-theme"] },
     { t: "Decentralisation", d: "Fewer ministries/less bureaucracy; subsidies on key commodities abolished, market prices; by 1989 central planning formally discarded.", tone: "policy", cards: ["ec-vn-doimoi-measures"] },
     { t: "Foreign investment (1987)", d: "Wholly foreign-owned firms allowed in all sectors except defence; Foreign Investment Law: joint enterprises, foreign corporations, 20-year guarantee against nationalisation.", tone: "policy", cards: ["ec-vn-doimoi-measures"] },
     { t: "Proof collectivisation failed", d: "1986 rice output still BELOW 1942 levels; Northern cooperative farmers produced 52% LESS than free Southern farmers.", tone: "bad", cards: ["ec-vn-res10"] },
@@ -302,7 +302,7 @@ L.push({
     { t: "Intrusive planning", d: "Vasavakul: \"the party determined the course... the central government... translated party guidelines into plans.\"", tone: "context", cards: ["ec-vn-govt"] },
     { t: "State sector didn't shrink", d: "State sector grew 10.5%/yr vs non-state 6%/yr (1990–95); by 1993 VPA had 12% of standing force in commercial firms; local militias ran 160+ enterprises.", tone: "mixed", cards: ["ec-vn-govt"] },
     { t: "Vasavakul's nuance", d: "\"The abolition of the central planning system was not synonymous with the decline of the state economic sector\" — Doi Moi liberalised MARKETS, not the state's economic footprint.", tone: "verdict", cards: ["ec-vn-govt"] },
-    { t: "Hoa squeezed out", d: "Post-reunification nationalisation and persecution of ethnic Chinese and suspected capitalists → flight abroad, losing capital and skills.", tone: "bad", cards: ["ec-vn-hoa"] },
+    { t: "Hoa squeezed out", d: "Post-reunification nationalisation and persecution of ethnic Chinese (the Hoa), suspected capitalists and ex-South-government supporters → flight abroad.", tone: "bad", cards: ["ec-vn-hoa"] },
     { t: "Overall verdict", d: "The key example of socialist pragmatism: failure → planned pivot → high growth. But a large state, corruption and regional/ethnic inequity limited the transformation.", tone: "verdict", cards: ["ec-vn-theme"] }
   ],
   takeaways: [
@@ -332,7 +332,7 @@ L.push({
         { t: "Outcome", d: "9.5% growth 1995–96 (world's highest); 3rd-largest rice exporter.", tone: "good", cards: ["ec-vn-1990s"] }
       ] }
     ] },
-    { t: "Hla Myint (1971)", d: "Investors care less about tax 'handouts' than reduced bureaucracy and long-term political/security certainty — Vietnam offered it, Burma did not.", tone: "verdict", cards: ["ec-bm-limits"] },
+    { t: "Hla Myint (1971)", d: "Investors care less about tax 'handouts' than reduced bureaucracy and long-term political/security certainty. Contrast: Vietnam's sustained Doi Moi commitment vs Burma's 1988 coup.", tone: "verdict", cards: ["ec-bm-limits"] },
     { t: "Verdict", d: "Flexibility under one-party rule (Vietnam) beat ideological rigidity (Burma); yet both kept large state/military economic footprints.", tone: "verdict", cards: ["burmavsvietnam", "ec-f2-bmvn"] }
   ],
   takeaways: [
