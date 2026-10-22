@@ -296,8 +296,9 @@ function seqEl(steps, c, C, specs){
       res = many ? { node, entries: [g], exits: [g], en: bk.nodes, xn: bk.nodes } : { node, entries: els, exits: els, en: bk.nodes, xn: bk.nodes };
     } else {
       const tr = bk.tracks, side = tr.length <= C, g = el("div", { class: "sp2" + (side ? "" : " grp"), style: `grid-template-columns:repeat(${side ? tr.length : C},minmax(0,1fr))` }), ent = [], ex = [], en = [], xn = [];
-      for (const k of tr){ const h = el("div", { class: "th2", text: k.h }), sub = seqEl(k.steps || [], c, 1, specs); g.append(el("div", { class: "tr2" }, h, sub.node));
-        if (sub.entries.length) specs.push({ kind: "bus", from: [h], to: sub.entries }); ent.push(h); ex.push(...(sub.exits.length ? sub.exits : [h])); en.push(...sub.en); xn.push(...sub.xn); }
+      // A track without a heading is a parallel branch: arrows run straight into its first box.
+      for (const k of tr){ const h = k.h ? el("div", { class: "th2", text: k.h }) : null, sub = seqEl(k.steps || [], c, 1, specs); g.append(el("div", { class: "tr2" + (h ? "" : " nh") }, h, sub.node));
+        if (h && sub.entries.length) specs.push({ kind: "bus", from: [h], to: sub.entries }); if (h) ent.push(h); else ent.push(...sub.entries); ex.push(...(sub.exits.length ? sub.exits : h ? [h] : [])); en.push(...sub.en); xn.push(...sub.xn); }
       res = side ? { node: g, entries: ent, exits: ex, en, xn } : { node: g, entries: [g], exits: [g], en, xn };
     }
     if (prev && bk.inLink) specs.push({ kind: "bus", from: prev.exits, to: res.entries, link: bk.inLink, na: prev.xn[0], nb: res.en[0] });
