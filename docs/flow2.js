@@ -259,10 +259,9 @@ function caseStrip(n, c){
   if (!k) return null;
   const more = cards.length - 1;
   if (showCases){
-    // The stage header names the stage's main case study; a box repeats a name only when its case differs.
-    const name = sum ? sum.name : k.title, f = caseFacts(n, c, 3);
+    const f = caseFacts(n, c, 3);
     return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
-      name !== n._stc ? el("span", { class: "ncs" }, el("b", { text: name }), sum && sum.when ? " · " + sum.when : k.when ? " · " + k.when : "") : null,
+      el("span", { class: "ncs" }, "Case study: ", el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""),
       n.d && !showAll ? el("span", { class: "ncd", text: n.d }) : null,
       f.length ? el("ul", {}, f.map(x => el("li", { text: x }))) : null));
   }
