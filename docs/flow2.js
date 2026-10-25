@@ -230,8 +230,8 @@ function caseFacts(n, c, max){
         if (isChain(x) || own.includes(x.trim())) return;
         const ws = new Set(words(x)); let sc = 0, wd = 0, cov = 0;
         ws.forEach(w => { if (all.has(w)) cov++; if (key.has(w)) { sc++; if (!/\d/.test(w)) wd++; } });
-        // Skip facts the chart already shows: nearly all their words appear in its boxes.
-        if (ws.size && cov / ws.size > 0.75) return;
+        // Skip facts the box already says, or the chart already shows elsewhere.
+        if (ws.size && (sc / ws.size >= 0.5 || cov / ws.size > 0.7)) return;
         // A date or number alone is not a match: need two shared words.
         const cur = best.get(x); if (wd >= 2 && (!cur || sc > cur.sc)) best.set(x, { m, sc });
       });
@@ -259,7 +259,7 @@ function caseStrip(n, c){
   if (!k) return null;
   const more = cards.length - 1;
   if (showCases){
-    const f = caseFacts(n, c, 3);
+    const f = caseFacts(n, c, n.go ? 1 : 3);
     return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
       el("span", { class: "ncs" }, "Case study: ", el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""),
       n.d && !showAll ? el("span", { class: "ncd", text: n.d }) : null,
