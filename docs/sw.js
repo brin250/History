@@ -1,7 +1,7 @@
 // Offline support: cache the app shell, serve it cache-first, refresh in the background.
-const VERSION = "case-drill-v33";
+const VERSION = "case-drill-v34";
 const SHELL = ["./", "index.html", "cases.js", "essays.js",
-  "data/cw1.js", "data/cw2.js", "data/cw3.js", "data/ge.js", "data/ea.js", "data/ai.js", "data/ip.js", "data/cg.js", "data/bs.js", "data/ns.js", "data/nu.js", "data/ec.js", "data/as.js", "data/it.js", "data/wd.js", "data/warnings.js", "data/flow-ec.js", "data/flow-ec-top.js", "flow2.js", "data/v2/ec-top.js", "data/v2/ec-a.js", "data/v2/ec-b.js", "data/v2/ec-c.js", "data/v2/ec-d.js", "data/v2/ec-e.js", "data/v2/wd.js", "data/v2/as.js", "data/v2/it.js", "data/v2/nu.js", "data/v2/ns.js", "data/v2/bs.js",
+  "data/cw1.js", "data/cw2.js", "data/cw3.js", "data/ge.js", "data/ea.js", "data/ai.js", "data/ip.js", "data/cg.js", "data/bs.js", "data/ns.js", "data/nu.js", "data/ec.js", "data/as.js", "data/it.js", "data/wd.js", "data/warnings.js", "data/flow-ec.js", "data/flow-ec-top.js", "flow2.js", "data/v2/ec-top.js", "data/v2/ec-a.js", "data/v2/ec-b.js", "data/v2/ec-c.js", "data/v2/ec-d.js", "data/v2/ec-e.js", "data/v2/wd.js", "data/v2/as.js", "data/v2/it.js", "data/v2/nu.js", "data/v2/ns.js", "data/v2/bs.js", "data/v2/cg.js",
   "data/sum-cw1.js", "data/sum-cw2.js", "data/sum-cw3.js", "data/sum-ge.js", "data/sum-ea.js", "data/sum-ai.js", "data/sum-ip.js", "data/sum-cg.js", "data/sum-bs.js", "data/sum-ns.js", "data/sum-nu.js", "data/sum-ec.js", "data/sum-as.js", "data/sum-it.js", "data/sum-wd.js",
   "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
