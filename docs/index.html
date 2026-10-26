@@ -163,6 +163,12 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .sumcase{border:1px solid var(--rule);border-radius:8px;padding:10px 12px;display:grid;gap:6px;background:var(--paper)}
 .sumcase b{font-family:var(--display);font-size:16px}
 .sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
+.stats{display:block}
+.stats input{display:block;width:100%;box-sizing:border-box;margin:4px 0 8px}
+.statlist{display:grid;gap:8px}
+.statcard{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper);display:grid;gap:4px}
+.statcard b{font-family:var(--display);font-size:15px}
+details.sumstats summary{cursor:pointer;margin:14px 0 4px}
 /* flow charts: full width, labels first, tap to open */
 .session.flowmode .s-body{padding:10px 12px 28px}
 .session.flowmode .sheet{background:transparent;border:0;border-radius:0;overflow:visible;max-width:none}
@@ -863,11 +869,55 @@ function openSummary(t){
         ids.length?el("div",{class:"row"},
           el("button",{class:"linkbtn",text:"Learn these cards",onclick:()=>startLearn({t,sec:c.name,cards:ids.map(id=>CASE[id])})}),
           el("button",{class:"linkbtn",text:"Test me",onclick:()=>{ round={mode:"recall",queue:shuffle(ids.map(id=>"recall:"+id)),i:0,results:[],requeued:new Set()}; showCard(); }})):null); }),
+    statCount(t)?el("details",{class:"sumstats"}, el("summary",{}, el("h3",{style:"display:inline",text:`Key statistics (${statCount(t)})`})), statsEl(t)):null,
     (S.historians||[]).length?el("div",{}, el("h3",{text:"Historians"}), el("ul",{}, S.historians.map(h=>el("li",{}, el("b",{text:h.who+": "}), h.view)))):null,
     (S.exam||[]).length?el("div",{}, el("h3",{text:"Using this topic in the exam"}), el("ul",{}, S.exam.map(x=>el("li",{text:x})))):null,
     el("div",{class:"srctag",text:`Written only from your ${T.src} notes.`})));
   setActions(flowsOf(t).length?el("button",{class:"btn ghost",text:"Flow charts",onclick:()=>openFlowList(t)}):el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}),
     el("button",{class:"btn",text:"Learn this topic",onclick:()=>{ const ns=sectionsOf(t).find(x=>x.cards.some(c=>!isLearned(c)))||sectionsOf(t)[0]; startLearn(ns); }}));
+}
+
+/* ---------- key statistics: every card point with a figure, compiled per topic ---------- */
+const M="Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|January|February|March|April|June|July|August|September|October|November|December";
+function isStat(p){
+  let s=" "+p+" ";
+  // strong markers
+  if(/\d\s?%|\d\s?per ?cent|[$£¥€]\s?\d|\d\s?(bn|billion|million|m\b|mn|trillion|tonnes|tons|km|sq|miles|yen|roubles|rupees|francs|baht|ringgit|pesos|dollars|kyat|dong)\b|US\$|RMB\s?\d|¥\d|\d+(\.\d+)?x\b|\d-fold|\bfold\b|\d+:\d+|\d+\s?:\s?1\b/i.test(s)) return true;
+  // strip non-stat numbers
+  s=s.replace(/\b(Res(olution)?s?\.?|Art(icle)?s?\.?|UNSC Resolutions?|Resolutions?)\s*\d+((\s*(,|and|&|→|–|-|\/)\s*)\d+)*/gi," ")
+     .replace(/\b\d{3}\s*→\s*\d{3}(\s*→\s*\d{3})*/g," ")
+     .replace(/\b(1[6-9]|20)\d\d\s*[–-]\s*\d{2}\b/g," ")
+     .replace(new RegExp("\\b\\d{1,2}(st|nd|rd|th)?\\s*(–|-|&|and|to)\\s*\\d{1,2}(st|nd|rd|th)?\\s+("+M+")\\b","g")," ")
+     .replace(new RegExp("\\b\\d{1,2}(st|nd|rd|th)?\\s+("+M+")\\b","g")," ")
+     .replace(new RegExp("\\b("+M+")\\.?\\s+\\d{1,2}\\b","g")," ")
+     .replace(/\b(1[6-9]|20)\d\d(s)?\b/g," ")
+     .replace(/\b(Res(olution)?s?\.?|Art(icle)?s?\.?|No\.|NSC-|SS-|Point|Phase|Stage|Group|Track|Plan|Act|Chapter|Ch\.?|Rule|Clause|Section|Protocol|Amendment|Round|Item|Page|Level|DEFCON|Fleet|Army|Division|Brigade|Corps|Parallel|G-?|START|SALT|Type|Mark|Phase|Law)\s*\d+[\d\/(),\-–\s]*/gi," ")
+     .replace(/\b\d+(st|nd|rd|th)\b/g," ")
+     .replace(/\(\d+\)|\b\d\)/g," ");
+  const nums=(s.match(/\b\d[\d,\.]*\b/g)||[]).map(x=>parseFloat(x.replace(/,/g,"")));
+  return nums.some(n=>n>=10);
+}
+function statsOf(t){ const seen=new Set(); return sectionsOf(t).map(s=>({sec:s.sec, cards:s.cards.map(c=>({c, pts:(c.pts||[]).filter(p=>{ if(!isStat(p)||seen.has(p)) return false; seen.add(p); return true; })})).filter(x=>x.pts.length)})).filter(s=>s.cards.length); }
+const statCount=t=>statsOf(t).reduce((n,s)=>n+s.cards.reduce((m,x)=>m+x.pts.length,0),0);
+function statsEl(t){
+  const secs=statsOf(t), q=el("input",{type:"text",placeholder:"Filter stats (e.g. %, GDP, troops)…","aria-label":"Filter statistics"}), list=el("div",{class:"statlist"});
+  const draw=()=>{ const f=q.value.trim().toLowerCase(); list.innerHTML=""; let n=0;
+    for(const s of secs){ const cs=s.cards.map(x=>({c:x.c, pts:f?x.pts.filter(p=>(p+" "+x.c.title).toLowerCase().includes(f)):x.pts})).filter(x=>x.pts.length); if(!cs.length) continue;
+      list.append(el("h3",{text:s.sec}), ...cs.map(x=>{ n+=x.pts.length; return el("div",{class:"statcard"}, el("div",{}, el("b",{text:x.c.title}), el("span",{class:"hint",text:"  "+(x.c.when||"")})), el("ul",{}, x.pts.map(p=>el("li",{text:p})))); })); }
+    if(!n) list.append(el("p",{class:"hint",text:"No statistics match."})); };
+  q.oninput=draw; draw();
+  return el("div",{class:"stats"}, q, list);
+}
+function openStats(t){
+  const T=TOPIC[t]; round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
+  if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
+  $("#pfill").style.width="0"; $("#pcount").textContent="Key stats";
+  const s=stageClear();
+  s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Key statistics`}), el("h2",{class:"qtitle",text:T.name}),
+    el("p",{class:"hint",text:`${statCount(t)} figures from your cards, in the order of your notes. Each sits under the card it comes from.`}), statsEl(t),
+    el("div",{class:"srctag",text:`Written only from your ${T.src} notes.`})));
+  setActions((window.SUMMARIES||{})[t]?el("button",{class:"btn ghost",text:"Read summary",onclick:()=>openSummary(t)}):el("button",{class:"btn ghost",text:"Close",onclick:()=>$("#closesession").click()}),
+    el("button",{class:"btn",text:"Test me on these",onclick:()=>{ const ids=statsOf(t).flatMap(s=>s.cards.map(x=>x.c.id)); round={mode:"recall",queue:shuffle(ids.map(id=>"recall:"+id)),i:0,results:[],requeued:new Set()}; showCard(); }}));
 }
 function learnCard(c){
   const s=stageClear(), t=TOPIC[c.t];
@@ -1071,6 +1121,7 @@ function renderLearn(){
     const d=el("details",{class:"ltopic"}, el("summary",{}, el("b",{text:t.name}), el("span",{class:"num",style:"font:12px var(--mono);color:var(--muted)",text:`${t.paper} · ${got}/${all.length}`}),
       el("div",{class:"row",style:"grid-column:1/-1;gap:14px"},
         (window.SUMMARIES||{})[t.key]?el("button",{class:"linkbtn",style:"font-size:14px",text:"Read summary →",onclick:e=>{ e.preventDefault(); e.stopPropagation(); openSummary(t.key); }}):null,
+        statCount(t.key)?el("button",{class:"linkbtn",style:"font-size:14px",text:`Key stats (${statCount(t.key)}) →`,onclick:e=>{ e.preventDefault(); e.stopPropagation(); openStats(t.key); }}):null,
         flowsOf(t.key).length?el("button",{class:"linkbtn",style:"font-size:14px",text:`Flow charts (${flowsOf(t.key).length}) →`,onclick:e=>{ e.preventDefault(); e.stopPropagation(); openFlowList(t.key); }}):null),
       el("div",{class:"bar",style:"grid-column:1/-1"}, el("i",{style:`width:${100*got/all.length}%;background:var(--blue)`}))),
       (window.SUMMARIES||{})[t.key]?el("button",{class:"btn ghost",style:"margin-top:10px;width:100%",text:"Read the topic summary",onclick:()=>openSummary(t.key)}):null,
@@ -1199,7 +1250,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 41 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 42 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
