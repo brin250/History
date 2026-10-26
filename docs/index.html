@@ -878,9 +878,38 @@ function openSummary(t){
 }
 
 /* ---------- key statistics: every card point with a figure, compiled per topic ---------- */
-// Any card point with a figure in it: quantities, dates, resolution and article numbers alike.
-const isStat=p=>/\d/.test(p);
-function statsOf(t){ const seen=new Set(); return sectionsOf(t).map(s=>({sec:s.sec, cards:s.cards.map(c=>({c, pts:(c.pts||[]).filter(p=>{ if(!isStat(p)||seen.has(p)) return false; seen.add(p); return true; })})).filter(x=>x.pts.length)})).filter(s=>s.cards.length); }
+// Any card point with a figure in it (quantities, dates, resolution and article numbers),
+// except exam/syllabus/framework cards, questions, and historians' views whose only numbers are citation years.
+const M="Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|January|February|March|April|June|July|August|September|October|November|December";
+function isQty(p){
+  let s=" "+p+" ";
+  // strong markers
+  if(/\d\s?%|\d\s?per ?cent|[$£¥€]\s?\d|\d\s?(bn|billion|million|m\b|mn|trillion|tonnes|tons|km|sq|miles|yen|roubles|rupees|francs|baht|ringgit|pesos|dollars|kyat|dong)\b|US\$|RMB\s?\d|¥\d|\d+(\.\d+)?x\b|\d-fold|\bfold\b|\d+:\d+|\d+\s?:\s?1\b/i.test(s)) return true;
+  // strip non-stat numbers
+  s=s.replace(/\b(Res(olution)?s?\.?|Art(icle)?s?\.?|UNSC Resolutions?|Resolutions?)\s*\d+((\s*(,|and|&|→|–|-|\/)\s*)\d+)*/gi," ")
+     .replace(/\b\d{3}\s*→\s*\d{3}(\s*→\s*\d{3})*/g," ")
+     .replace(/\b(1[6-9]|20)\d\d\s*[–-]\s*\d{2}\b/g," ")
+     .replace(new RegExp("\\b\\d{1,2}(st|nd|rd|th)?\\s*(–|-|&|and|to)\\s*\\d{1,2}(st|nd|rd|th)?\\s+("+M+")\\b","g")," ")
+     .replace(new RegExp("\\b\\d{1,2}(st|nd|rd|th)?\\s+("+M+")\\b","g")," ")
+     .replace(new RegExp("\\b("+M+")\\.?\\s+\\d{1,2}\\b","g")," ")
+     .replace(/\b(1[6-9]|20)\d\d(s)?\b/g," ")
+     .replace(/\b(Res(olution)?s?\.?|Art(icle)?s?\.?|No\.|NSC-|SS-|Point|Phase|Stage|Group|Track|Plan|Act|Chapter|Ch\.?|Rule|Clause|Section|Protocol|Amendment|Round|Item|Page|Level|DEFCON|Fleet|Army|Division|Brigade|Corps|Parallel|G-?|START|SALT|Type|Mark|Phase|Law)\s*\d+[\d\/(),\-–\s]*/gi," ")
+     .replace(/\b\d+(st|nd|rd|th)\b/g," ")
+     .replace(/\(\d+\)|\b\d\)/g," ");
+  const nums=(s.match(/\b\d[\d,\.]*\b/g)||[]).map(x=>parseFloat(x.replace(/,/g,"")));
+  return nums.some(n=>n>=10);
+}
+const META_WHEN=/^(framework|essay skill|historiography|glossary|post-revisionism|discussion|discussion prompt|revision|exam|essay|essay framework)$/i;
+const META_SEC=/syllabus|exam|essay|revision|checklist|past-year|historiograph|interpretations|guiding|framework/i;
+let HIST_RE=null;
+function histRe(){ if(HIST_RE) return HIST_RE; const names=new Set(), S=window.SUMMARIES||{};
+  for(const t in S) for(const h of S[t].historians||[]) for(const part of h.who.replace(/\(.*?\)/g," ").split(/\/|,|&|\band\b/)){ const w=(part.trim().match(/[A-Z][A-Za-z'’\-]{2,}/g)||[]).pop(); if(w&&!/^(Jr|Traditionalists|Revisionists|Post-Revisionists|Post-Cold|War|School|Power|Britannica|Editore)$/.test(w)) names.add(w); }
+  const N="("+[...names].join("|")+")";
+  return HIST_RE=names.size?new RegExp("^[^:]{0,60}\\b"+N+"\\b[^:]{0,40}:|\\b"+N+"\\s*\\(\\s*\\d{4}|\\([^)]*\\b"+N+",?\\s*\\d{4}"):/$^/; }
+const META_TITLE=/topic framework|syllabus|essential question|guiding|checklist|essay toolkit|essay synthesis|glossary|exam focus|thesis options/i;
+const statCard=c=>!META_WHEN.test((c.when||"").trim())&&!META_SEC.test(c.sec||"")&&!META_TITLE.test(c.title||"");
+const isStat=p=>!/\?\s*$/.test(p)&&/\d/.test(p)&&(!histRe().test(p)||isQty(p));
+function statsOf(t){ const seen=new Set(); return sectionsOf(t).map(s=>({sec:s.sec, cards:s.cards.filter(statCard).map(c=>({c, pts:(c.pts||[]).filter(p=>{ if(!isStat(p)||seen.has(p)) return false; seen.add(p); return true; })})).filter(x=>x.pts.length)})).filter(s=>s.cards.length); }
 const statCount=t=>statsOf(t).reduce((n,s)=>n+s.cards.reduce((m,x)=>m+x.pts.length,0),0);
 function statsEl(t){
   const secs=statsOf(t), q=el("input",{type:"text",placeholder:"Filter stats (e.g. %, GDP, troops)…","aria-label":"Filter statistics"}), list=el("div",{class:"statlist"});
@@ -1233,7 +1262,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 43 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 44 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
