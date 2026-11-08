@@ -2,21 +2,22 @@
 // Numbers are indices into SUMMARIES[t].cases (data/sum-*.js), so every fact shown comes from the notes.
 window.EXAMBANK = {
   ai: [
-    { arg: "Cause: decolonisation — Britain's contradictory promises", cases: [0, 3] },
-    { arg: "Management: UN truces and peacekeeping gave only negative peace", cases: [5, 10] },
+    { arg: "Cause: decolonisation and territorial sovereignty", cases: [0, 3] },
+    { arg: "Management to 1967: truces and consent-based peacekeeping gave only negative peace", cases: [5, 10] },
     { arg: "Turning point: 1967 and Resolution 242", cases: [12, 13] },
-    { arg: "After 1973: better peacekeeping and bilateral peace — but only Egypt–Israel", cases: [16, 19] }
+    { arg: "1973 made negotiation possible — but peace came only for Egypt–Israel", cases: [16, 19] }
   ],
   as: [
-    { arg: "Formation: why ASEAN worked where earlier groupings failed", cases: [3] },
+    { arg: "Formation: why 1967 worked, and its interlinked aims", cases: [2, 3] },
     { arg: "Security: disputes managed, not resolved (ASEAN Way)", cases: [4, 7] },
     { arg: "Security: Cambodian Crisis — unity and standing, limited influence", cases: [10] },
     { arg: "Economic: weak before 1992, real progress with AFTA", cases: [9, 11] },
     { arg: "Expansion and non-interference weakened cohesion", cases: [14] }
   ],
   bs: [
-    { arg: "Cause: Yugoslavia's collapse and ethnic nationalism", cases: [0, 7] },
+    { arg: "Cause: Yugoslavia's economic and political collapse", cases: [0] },
     { arg: "Trigger: referendum and recognition", cases: [5] },
+    { arg: "Development: ethnic nationalism drove the war (ethnic cleansing)", cases: [7] },
     { arg: "Management: UN eased suffering but could not protect", cases: [9, 17] },
     { arg: "Management: peace plans failed until force shifted the balance", cases: [10, 18] },
     { arg: "Outcome: Dayton ended the war but entrenched division", cases: [19] }
@@ -40,7 +41,7 @@ window.EXAMBANK = {
     { arg: "Korea: China's entry and limited war", cases: [6, 7] },
     { arg: "Cuba: US hostility provoked the Crisis", cases: [10, 12] },
     { arg: "Cuba: Khrushchev triggered it; both leaders ended it", cases: [13, 14] },
-    { arg: "Vietnam: nationalism seen through Cold War eyes", cases: [1, 9] },
+    { arg: "Vietnam: a nationalist struggle the US read as Cold War, backing a weak South", cases: [1, 9] },
     { arg: "Vietnam: escalation, then domestic collapse forced withdrawal", cases: [15, 17] }
   ],
   cw3: [
