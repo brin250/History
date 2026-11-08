@@ -164,6 +164,11 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .sumcase b{font-family:var(--display);font-size:16px}
 .sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
 .stats{display:block}
+.bankarg{display:grid;gap:8px}
+.bankcase{gap:4px}
+.bankbody{display:grid;gap:6px}
+.bankbody[hidden]{display:none}
+.bankref{border:1px dashed var(--rule);border-radius:8px;padding:6px 12px;font-size:14px}
 .stats input{display:block;width:100%;box-sizing:border-box;margin:4px 0 8px}
 .statlist{display:grid;gap:8px}
 .statcard{border:1px solid var(--rule);border-radius:8px;padding:8px 12px;background:var(--paper);display:grid;gap:4px}
@@ -519,6 +524,7 @@ details.sumstats summary{cursor:pointer;margin:14px 0 4px}
 <script src="data/it.js"></script>
 <script src="data/wd.js"></script>
 <script src="data/warnings.js"></script>
+<script src="data/exambank.js"></script>
 <script src="data/sum-cw1.js"></script>
 <script src="data/sum-cw2.js"></script>
 <script src="data/sum-cw3.js"></script>
@@ -877,6 +883,48 @@ function openSummary(t){
     el("button",{class:"btn",text:"Learn this topic",onclick:()=>{ const ns=sectionsOf(t).find(x=>x.cards.some(c=>!isLearned(c)))||sectionsOf(t)[0]; startLearn(ns); }}));
 }
 
+
+/* ---------- exam bank: the few case studies per topic worth memorising, grouped by the argument they prove ---------- */
+const bankOf=t=>((window.EXAMBANK||{})[t]||[]).filter(a=>a.cases.some(i=>((window.SUMMARIES||{})[t]||{cases:[]}).cases[i]));
+const bankCount=t=>new Set(bankOf(t).flatMap(a=>a.cases)).size;
+// Up to three facts, preferring the ones with figures in them, kept in their original order.
+const keyFacts=c=>{ const f=c.facts||[]; if(f.length<=3) return f; const pick=f.map((x,i)=>({x,i,n:(x.match(/\d/g)||[]).length})).sort((a,b)=>b.n-a.n).slice(0,3).sort((a,b)=>a.i-b.i); return pick.map(o=>o.x); };
+function bankCase(t,i,shown,cover){
+  const c=SUMMARIES[t].cases[i];
+  if(shown.has(i)) return el("div",{class:"bankref"}, el("b",{text:c.name}), el("span",{class:"hint",text:"  (above)"}));
+  shown.add(i); const ids=(c.cards||[]).filter(id=>CASE[id]);
+  const facts=el("ul",{}, keyFacts(c).map(x=>el("li",{text:x}))), why=el("div",{class:"why",text:c.why});
+  const body=el("div",{class:"bankbody"}, facts, why); body.hidden=!!cover;
+  return el("div",{class:"sumcase bankcase"},
+    el("div",{}, el("b",{text:c.name}), el("span",{class:"hint",text:"  "+(c.when||"")})),
+    cover?el("button",{class:"linkbtn",text:"Show facts",onclick:e=>{ body.hidden=!body.hidden; e.target.textContent=body.hidden?"Show facts":"Hide facts"; }}):null,
+    body,
+    ids.length?el("button",{class:"linkbtn",style:"font-size:13px;justify-self:start",text:"Test me on this case",onclick:()=>{ round={mode:"recall",queue:shuffle(ids.map(id=>"recall:"+id)),i:0,results:[],requeued:new Set()}; showCard(); }}):null);
+}
+function openBank(t,cover){
+  const T=TOPIC[t], args=bankOf(t); round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
+  if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
+  $("#pfill").style.width="0"; $("#pcount").textContent="Exam bank";
+  const s=stageClear(), shown=new Set();
+  s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Exam bank`}), el("h2",{class:"qtitle",text:T.name}),
+    el("p",{class:"hint",text:`Memorise these ${bankCount(t)} case studies first (of ${SUMMARIES[t].cases.length} in your summary). Each argument lists the examples that prove it best, with the facts worth quoting.`}),
+    el("div",{class:"row"}, el("button",{class:"linkbtn",text:cover?"Show all facts":"Cover facts to test myself",onclick:()=>openBank(t,!cover)})),
+    args.map((a,k)=>el("div",{class:"bankarg"}, el("h3",{text:`${k+1}. ${a.arg}`}), a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,cover)))),
+    el("div",{class:"srctag",text:`Facts and arguments taken only from your ${T.src} notes summary.`})));
+  setActions(el("button",{class:"btn ghost",text:"Read summary",onclick:()=>openSummary(t)}),
+    el("button",{class:"btn",text:"Drill arguments",onclick:()=>drillBank(t,shuffle(args.map((_,k)=>k)),0)}));
+}
+// Drill: see the argument, recall the examples and their facts, then reveal.
+function drillBank(t,order,j){
+  const args=bankOf(t); if(j>=order.length){ openBank(t,false); return; }
+  const a=args[order[j]], s=stageClear(), shown=new Set(); $("#pcount").textContent=`Drill ${j+1}/${order.length}`; $("#pfill").style.width=(100*j/order.length)+"%";
+  const ans=el("div",{hidden:true}, a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,false)));
+  s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · Exam bank drill`}), el("h2",{class:"qtitle",text:a.arg}),
+    el("p",{class:"hint",text:"Name the case studies that prove this, with a date and one figure each. Then check."}), ans));
+  const next=el("button",{class:"btn",text:j+1<order.length?"Next argument":"Finish",onclick:()=>drillBank(t,order,j+1)});
+  const reveal=el("button",{class:"btn",text:"Show answer",onclick:()=>{ ans.hidden=false; setActions(el("button",{class:"btn ghost",text:"Back to bank",onclick:()=>openBank(t,false)}), next); }});
+  setActions(el("button",{class:"btn ghost",text:"Back to bank",onclick:()=>openBank(t,false)}), reveal);
+}
 /* ---------- key statistics: every card point with a figure, compiled per topic ---------- */
 // Any card point with a figure in it (quantities, dates, resolution and article numbers),
 // except exam/syllabus/framework cards, questions, and historians' views whose only numbers are citation years.
@@ -1133,6 +1181,7 @@ function renderLearn(){
     const d=el("details",{class:"ltopic"}, el("summary",{}, el("b",{text:t.name}), el("span",{class:"num",style:"font:12px var(--mono);color:var(--muted)",text:`${t.paper} · ${got}/${all.length}`}),
       el("div",{class:"row",style:"grid-column:1/-1;gap:14px"},
         (window.SUMMARIES||{})[t.key]?el("button",{class:"linkbtn",style:"font-size:14px",text:"Read summary →",onclick:e=>{ e.preventDefault(); e.stopPropagation(); openSummary(t.key); }}):null,
+        bankCount(t.key)?el("button",{class:"linkbtn",style:"font-size:14px;font-weight:700",text:`Exam bank (${bankCount(t.key)}) →`,onclick:e=>{ e.preventDefault(); e.stopPropagation(); openBank(t.key); }}):null,
         statCount(t.key)?el("button",{class:"linkbtn",style:"font-size:14px",text:`Key stats (${statCount(t.key)}) →`,onclick:e=>{ e.preventDefault(); e.stopPropagation(); openStats(t.key); }}):null,
         flowsOf(t.key).length?el("button",{class:"linkbtn",style:"font-size:14px",text:`Flow charts (${flowsOf(t.key).length}) →`,onclick:e=>{ e.preventDefault(); e.stopPropagation(); openFlowList(t.key); }}):null),
       el("div",{class:"bar",style:"grid-column:1/-1"}, el("i",{style:`width:${100*got/all.length}%;background:var(--blue)`}))),
@@ -1262,7 +1311,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 44 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 45 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
