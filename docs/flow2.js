@@ -157,8 +157,8 @@ function nodeSheet(n, c){
     el("b", { text: n.t }), n.d ? el("p", { text: n.d }) : null,
     (n.ev || []).length ? el("details", { class: "evid", open: "" }, el("summary", { text: `Evidence (${n.ev.length})` }), el("ul", {}, n.ev.map(x => el("li", { text: x })))) : null,
     hs.length ? el("div", { class: "hist" }, hs.map(h => el("div", {}, el("b", { text: h.who + ": " }), h.view))) : null,
-    el("div", { class: "row", style: "gap:8px" }, el("button", { class: "btn", style: "justify-self:start", text: "▶ Listen", onclick: () => playItems([{ id: n.id, text: lectureOf(n, c, null, null, "single") }], n.t) })),
-    el("details", { class: "evid lect" }, el("summary", { text: "Lecture version (what Listen reads)" }), el("p", { text: lectureOf(n, c, null, null, "single") })),
+    el("div", { class: "row", style: "gap:8px" }, el("button", { class: "btn", style: "justify-self:start", text: "▶ Listen", onclick: () => playItems([{ id: n.id, text: dedupe(lectureOf(n, c, null, null, "single"), new Set()) }], n.t) })),
+    el("details", { class: "evid lect" }, el("summary", { text: "Lecture version (what Listen reads)" }), el("p", { text: dedupe(lectureOf(n, c, null, null, "single"), new Set()) })),
     caseEl(n, c),
     n.go ? el("button", { class: "btn", style: "justify-self:start", text: "Open this chart →", onclick: () => { closeSheet(); open(curT, n.go); } }) : null,
     ids.length ? el("button", { class: "btn ghost", style: "justify-self:start", text: ids.length === 1 ? "Study this case card" : `Study these ${ids.length} case cards`, onclick: () => { closeSheet(); A.startLearn({ t: curT, sec: n.t, cards: ids.map(id => A.CASE[id]) }); } }) : null);
@@ -219,17 +219,24 @@ function readingOrder(c){
     if (out[start]) out[start].stage = (i ? (k.how ? sentence(k.how) + " " : "") : "") + "Part " + (i + 1) + ": " + speechify(k.title) + ". " + (k.summary ? sentence(k.summary) : ""); });
   return out;
 }
+// Drop sentences already spoken (notes often repeat a point across a box's parts), keeping the spoken signposts.
+const SIGNPOST = /^(here's what happened|why does this matter\?|one figure worth remembering)/i;
+function dedupe(text, said){
+  return (text.match(/[^.!?]+[.!?]+|\S[^.!?]*$/g) || [text]).filter(x => { const k = x.trim().toLowerCase().replace(/[^a-z0-9 ]/g, ""); if (!k || SIGNPOST.test(x.trim())) return true; if (said.has(k)) return false; said.add(k); return true; })
+    .join(" ").replace(/(Here's what happened\.|Why does this matter\?|One figure worth remembering:)\s*(?=(Here's what happened|Why does this matter|One figure worth|$))/g, "").trim();
+}
 function chartScript(c){
   const used = new Set(), order = readingOrder(c);
   const items = [{ id: null, text: speechify(c.title) + ". The question we're answering: " + sentence(c.question) + " " + (c.intro ? sentence(c.intro) : "") }];
   order.forEach((o, i) => items.push({ id: o.n.id, text: [o.stage || "", o.intro || "", lectureOf(o.n, c, o.link, used, i === 0)].join(" ").trim() }));
   if ((c.takeaways || []).length) items.push({ id: null, text: "So, to sum up. " + c.takeaways.map(sentence).join(" ") });
+  const said = new Set(); items.forEach(it => { it.text = dedupe(it.text, said); });
   return items;
 }
 // Speech: the Android app uses its native text-to-speech plugin; browsers use the Web Speech API.
 const TTS = (() => {
   const nat = () => window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech;
-  const pref = { voice: "", rate: 1.1 };
+  const pref = { voice: "", rate: 1.1, auto: true };
   try { Object.assign(pref, JSON.parse(localStorage.getItem("cd-tts") || "{}")); } catch(e){}
   const save = () => { try { localStorage.setItem("cd-tts", JSON.stringify(pref)); } catch(e){} };
   const score = v => (/natural|neural|online|premium|enhanced|network/i.test(v.name) ? 4 : 0) + (/google|microsoft|siri/i.test(v.name) ? 2 : 0) + (/^en[-_](GB|US)/i.test(v.lang) ? 1 : 0);
@@ -269,13 +276,14 @@ async function voiceControls(){
   return el("span", { class: "lvoice" }, vs.length ? sel : el("span", { class: "hint", text: "Default voice" }), rate);
 }
 // Read a list of {id, text} items, highlighting each box as it's read.
-async function playItems(items, label){
+async function playItems(items, label, onDone){
   stopListening(); if (!TTS.ok()){ alert("This device has no text-to-speech available."); return; }
   const me = listening = { i: 0 };
   const now = el("span", { class: "lnow", text: label });
   const bar = el("div", { class: "lbar", role: "region", "aria-label": "Listening" },
     el("button", { class: "btn ghost", text: "■ Stop", onclick: stopListening }),
-    el("button", { class: "btn ghost", text: "⏭ Skip", onclick: () => { TTS.stop(); } }), now);
+    el("button", { class: "btn ghost", text: "⏭ Skip", onclick: () => { TTS.stop(); } }), now,
+    onDone ? el("label", { class: "lauto" }, (() => { const cb = el("input", { type: "checkbox", onchange: e => { TTS.pref.auto = e.target.checked; TTS.save(); } }); cb.checked = TTS.pref.auto !== false; return cb; })(), " Auto-play next chart") : null);
   document.body.append(bar); bar.append(await voiceControls());
   while (listening === me && me.i < items.length){
     const it = items[me.i];
@@ -287,7 +295,16 @@ async function playItems(items, label){
     if (listening !== me) return;
     me.i++;
   }
-  if (listening === me) stopListening();
+  if (listening === me){ stopListening(); if (onDone) onDone(); }
+}
+// Read a chart; with auto-play on, open and read the next chart in the topic when it finishes.
+function playChart(c){
+  playItems(chartScript(c), c.title, () => {
+    if (TTS.pref.auto === false) return;
+    const list = ordered(curT), nx = list[list.findIndex(x => x.id === c.id) + 1];
+    if (!nx){ playItems([{ id: null, text: "That's the end of this topic's flow charts." }], "Finished"); return; }
+    open(curT, nx.id, "overview"); setTimeout(() => playChart(nx), 600);
+  });
 }
 /* ---------- answering hidden items ---------- */
 function answerNode(n, c, box){
@@ -618,7 +635,7 @@ function render(){
     (mode === "overview" || mode === "study") ? el("span", { class: "row", style: "gap:8px" },
       el("button", { class: "linkbtn", style: "font-size:12.5px", text: showAll ? "Hide details" : "Show all details", onclick: () => { showAll = !showAll; try { localStorage.setItem("cd-f2-all", showAll ? "1" : "0"); } catch(e){} render(); } }),
       el("button", { class: "linkbtn", style: "font-size:12.5px", text: showCases ? "Hide case studies" : "Show all case studies", onclick: () => { showCases = !showCases; try { localStorage.setItem("cd-f2-cases", showCases ? "1" : "0"); } catch(e){} render(); } }),
-      (c.clusters || []).length ? el("button", { class: "linkbtn", style: "font-size:12.5px;font-weight:700", text: "▶ Listen to this chart", onclick: () => playItems(chartScript(c), c.title) }) : null,
+      (c.clusters || []).length ? el("button", { class: "linkbtn", style: "font-size:12.5px;font-weight:700", text: "▶ Listen to this chart", onclick: () => playChart(c) }) : null,
       (c.historians || []).length ? el("button", { class: "linkbtn", style: "font-size:12.5px", text: showHist ? "Hide historians" : "Show historians", onclick: () => { showHist = !showHist; render(); } }) : null) : null);
   let body;
   if (mode === "judge") body = judgeEl(c);
