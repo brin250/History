@@ -128,6 +128,7 @@ function hl(text, ctx){
     if (m[3]){ const before = text.slice(0, m.index).trimEnd(); const start = !before || /[.!?:;—–]$/.test(before); const first = t.split(/\s+/)[0];
       const single = !/\s/.test(t), poss = /[’']s$/.test(t), bare = t.replace(/[’']s$/, "");
       bold = !STOPCAP.has(first) && (!start || !single || poss || new RegExp("[^.!?]\\s" + bare.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b").test(all)); }
+    if (m[2] && /^\d{1,2}$/.test(t) && text[m.index - 1] === "(" && text[m.index + t.length] === ")") bold = false;
     if (!bold) continue;
     if (m[3] && /\.$/.test(t) && !/\b[A-Z]\.$/.test(t)) t = t.slice(0, -1);
     if (m.index > last) out.append(text.slice(last, m.index));
@@ -287,11 +288,16 @@ function caseStrip(n, c){
   if (showCases && ex) expUsed.add(ex.id);
   const k = ex || cards[0], more = cards.length - 1;
   if (showCases){
-    const f = caseFacts(n, c, n.go ? 1 : 3);
+    // What the case is: its first two card points, straight from the notes; then why it matters; then other facts.
+    const what = ex ? (ex.pts || []).slice(0, 2) : [], f = caseFacts(n, c, n.go ? 1 : 3).filter(x => !what.includes(x)).slice(0, 2);
     return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
       el("span", { class: "ncs" }, "Case study: ", el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""),
       n.d && !showAll ? el("span", { class: "ncd", text: n.d }) : null,
+      what.length ? el("span", { class: "nh", text: "What it is" }) : null,
+      what.length ? el("ul", { class: "nwhat" }, what.map(x => el("li", {}, hl(x, ctxOf(ex))))) : null,
+      ex ? el("span", { class: "nh", text: "Why it matters" }) : null,
       ex ? pointList(ex.exp, "nexp", ctxOf(ex)) : null,
+      f.length ? el("span", { class: "nh", text: "More facts" }) : null,
       f.length ? el("ul", {}, f.map(x => el("li", {}, hl(x)))) : null));
   }
   return el("span", { class: "ncase" }, el("span", {}, el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""));
