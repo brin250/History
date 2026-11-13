@@ -228,7 +228,10 @@ function nodeEl(n, c){
   const hs = showHist ? (c.historians || []).filter(h => (h.nodes || []).includes(n.id)) : [];
   if (isHidden && ans === undefined)
     return el("button", { class: "n2 blank " + typeCls(n), onclick: () => answerNode(n, c) }, el("span", { class: "ntag", text: typeLabel(n) }), el("span", { class: "nq", text: "?" }));
-  return el("button", { class: "n2 " + typeCls(n) + (n.go ? " go" : "") + (ans === true ? " right" : ans === false ? " wrong" : ""), onclick: () => nodeSheet(n, c) },
+  // A div rather than a button, so the box's text can be selected (e.g. for text-to-speech); a tap that ends a selection doesn't open it.
+  const openIt = () => { const sel = window.getSelection && String(window.getSelection()); if (!sel || !sel.trim()) nodeSheet(n, c); };
+  return el("div", { class: "n2 " + typeCls(n) + (n.go ? " go" : "") + (ans === true ? " right" : ans === false ? " wrong" : ""), role: "button", tabindex: "0", onclick: openIt,
+      onkeydown: e => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); nodeSheet(n, c); } } },
     el("span", { class: "ntag", text: typeLabel(n) + (n.date ? " · " + n.date : "") }),
     el("span", { class: "nt", text: n.t }),
     showAll && n.d && mode !== "recall" && mode !== "complete" ? el("span", { class: "nd", text: n.d }) : null,
