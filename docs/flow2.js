@@ -115,6 +115,30 @@ function sheet(...kids){
     el("div", { class: "row spread" }, el("span"), el("button", { class: "x", text: "✕", "aria-label": "Close", onclick: closeSheet })), ...kids));
   document.body.append(bg, sh); return sh;
 }
+
+/* ---------- point-form explanations with key terms highlighted ---------- */
+const STOPCAP = new Set("The A An And But Or So Yet For Its It This That These Those Both Each Every Once When While After Before Although Though Because As If Then Thus Hence However Instead Meanwhile Unlike Like In On At By To Of From With Without Into Under Over Not No Only Even Still Also Neither Nor".split(" "));
+// Bold quoted phrases, figures and dates, and proper names (capitalised words that don't start a sentence).
+function hl(text, ctx){
+  const all = text + " " + (ctx || "");
+  const out = el("span"), re = /([‘“'"][^’”'"]{2,60}[’”'"])|((?:c\.\s?|~|≈)?[$£¥€]?\d(?:[\d,.]*\d)?(?:\s?[–-]\s?[$£¥€]?\d(?:[\d,.]*\d)?)?(?:\s?(?:%|per cent|bn|billion|million|m\b|trillion|tonnes|km|years?|days?|months?|troops|men|seats))?(?:\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?(?:\s\d{4})?)?)|((?:[A-Z][\w’'.-]+)(?:\s+(?:of|the|and|de|al-)?\s*[A-Z][\w’'.-]+)*)/g;
+  let last = 0, m;
+  while ((m = re.exec(text))){
+    let t = m[0], bold = !!(m[1] || m[2]);
+    if (m[3]){ const before = text.slice(0, m.index).trimEnd(); const start = !before || /[.!?:;—–]$/.test(before); const first = t.split(/\s+/)[0];
+      const single = !/\s/.test(t), poss = /[’']s$/.test(t), bare = t.replace(/[’']s$/, "");
+      bold = !STOPCAP.has(first) && (!start || !single || poss || new RegExp("[^.!?]\\s" + bare.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b").test(all)); }
+    if (!bold) continue;
+    if (m[3] && /\.$/.test(t) && !/\b[A-Z]\.$/.test(t)) t = t.slice(0, -1);
+    if (m.index > last) out.append(text.slice(last, m.index));
+    out.append(el("b", { class: "kt", text: t })); last = m.index + t.length;
+  }
+  if (last < text.length) out.append(text.slice(last));
+  return out;
+}
+const points = text => (text || "").split(/(?<=[.!?])\s+(?=[A-Z‘“"'(])/).map(x => x.trim()).filter(Boolean);
+const pointList = (text, cls, ctx) => el("ul", { class: cls || "pts" }, points(text).map(x => el("li", {}, hl(x, ctx))));
+const ctxOf = k => [k.title, ...(k.pts || [])].join(" ");
 function caseEl(n, c){
   const { cards, sum } = caseOf(n, c);
   if (!cards.length && !sum) return null;
@@ -123,7 +147,7 @@ function caseEl(n, c){
     sum && sum.what ? el("p", { text: sum.what }) : null,
     sum && (sum.facts || []).length ? el("ul", {}, sum.facts.map(f => el("li", { text: f }))) : null,
     sum && sum.why ? el("p", { class: "cw", text: "Why it matters: " + sum.why }) : null,
-    cards.map(k => el("details", { class: "evid", open: sum ? null : "" }, el("summary", { text: "Card: " + k.title + (k.when ? " · " + k.when : "") }), k.exp ? el("p", { text: k.exp }) : null, el("ul", {}, (k.pts || []).map(x => el("li", { text: x }))))));
+    cards.map(k => el("details", { class: "evid", open: sum ? null : "" }, el("summary", { text: "Card: " + k.title + (k.when ? " · " + k.when : "") }), k.exp ? pointList(k.exp, null, ctxOf(k)) : null, el("ul", {}, (k.pts || []).map(x => el("li", { text: x }))))));
 }
 function nodeSheet(n, c){
   const ids = caseOf(n, c).cards.map(k => k.id);
@@ -267,8 +291,8 @@ function caseStrip(n, c){
     return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
       el("span", { class: "ncs" }, "Case study: ", el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""),
       n.d && !showAll ? el("span", { class: "ncd", text: n.d }) : null,
-      ex ? el("span", { class: "nexp", text: ex.exp }) : null,
-      f.length ? el("ul", {}, f.map(x => el("li", { text: x }))) : null));
+      ex ? pointList(ex.exp, "nexp", ctxOf(ex)) : null,
+      f.length ? el("ul", {}, f.map(x => el("li", {}, hl(x)))) : null));
   }
   return el("span", { class: "ncase" }, el("span", {}, el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""));
 }

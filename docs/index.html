@@ -299,7 +299,8 @@ details.sumstats summary{cursor:pointer;margin:14px 0 4px}
 .n2 .ncs{font-size:11px;color:var(--tc,var(--muted))}
 .n2 .ncs b{color:inherit}
 .n2 .ncd{font-size:12.5px;line-height:1.45;color:var(--ink);opacity:.9}
-.n2 .nexp{font-size:12.5px;line-height:1.5;color:var(--ink);border-left:2px solid var(--tc,var(--rule));padding-left:7px}
+.n2 .nexp{font-size:12.5px;line-height:1.45;color:var(--ink);border-left:2px solid var(--tc,var(--rule));margin:0;padding:0 0 0 20px;display:grid;gap:3px}
+b.kt{font-weight:700;color:var(--ink);background:color-mix(in srgb,var(--tc,var(--blue)) 12%,transparent);border-radius:3px;padding:0 2px}
 .n2 .ncase.open{border-top:0;padding-top:0;margin-top:0}
 .clh .clcase{grid-column:2;font-size:12px;color:var(--muted);margin-top:2px}
 .clh .clcase b{font:600 12px var(--body);color:var(--ink)}
@@ -1312,7 +1313,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 47 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 48 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
