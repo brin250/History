@@ -102,6 +102,7 @@ function gradeMap(id, frac, mode){
 function markStudied(id){ const st = S(); st.maps = st.maps || {}; if (!st.maps[id]) { st.maps[id] = { lvl: 0, b: 0, n: 0, due: Date.now() + DAY, last: Date.now(), acc: null }; A.save(); } }
 
 /* ---------- view state ---------- */
+let expUsed = new Set();
 let mode = "overview", showAll = false, showCases = true, showHist = false, focus = 0, hidden = null, answers = null, curT = null, curId = null;
 try { showAll = localStorage.getItem("cd-f2-all") === "1"; showCases = localStorage.getItem("cd-f2-cases") !== "0"; } catch(e){}
 
@@ -122,7 +123,7 @@ function caseEl(n, c){
     sum && sum.what ? el("p", { text: sum.what }) : null,
     sum && (sum.facts || []).length ? el("ul", {}, sum.facts.map(f => el("li", { text: f }))) : null,
     sum && sum.why ? el("p", { class: "cw", text: "Why it matters: " + sum.why }) : null,
-    cards.map(k => el("details", { class: "evid", open: sum ? null : "" }, el("summary", { text: "Card: " + k.title + (k.when ? " · " + k.when : "") }), el("ul", {}, (k.pts || []).map(x => el("li", { text: x }))))));
+    cards.map(k => el("details", { class: "evid", open: sum ? null : "" }, el("summary", { text: "Card: " + k.title + (k.when ? " · " + k.when : "") }), k.exp ? el("p", { text: k.exp }) : null, el("ul", {}, (k.pts || []).map(x => el("li", { text: x }))))));
 }
 function nodeSheet(n, c){
   const ids = caseOf(n, c).cards.map(k => k.id);
@@ -255,14 +256,18 @@ function stageCase(k, c){
 }
 function caseStrip(n, c){
   if (mode === "recall" || mode === "complete") return null;
-  const { cards, sum } = caseOf(n, c), k = cards[0];
-  if (!k) return null;
-  const more = cards.length - 1;
+  const { cards, sum } = caseOf(n, c);
+  if (!cards[0]) return null;
+  // Explain each box with the notes' explanation of one of its own cards, not repeating a card already explained in this chart.
+  const own = (n.cards || []).map(id => A.CASE[id]).filter(Boolean), ex = own.find(x => !expUsed.has(x.id) && x.exp);
+  if (showCases && ex) expUsed.add(ex.id);
+  const k = ex || cards[0], more = cards.length - 1;
   if (showCases){
     const f = caseFacts(n, c, n.go ? 1 : 3);
     return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
       el("span", { class: "ncs" }, "Case study: ", el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""),
       n.d && !showAll ? el("span", { class: "ncd", text: n.d }) : null,
+      ex ? el("span", { class: "nexp", text: ex.exp }) : null,
       f.length ? el("ul", {}, f.map(x => el("li", { text: x }))) : null));
   }
   return el("span", { class: "ncase" }, el("span", {}, el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""));
@@ -442,6 +447,7 @@ function open(t, id, m){
 }
 function pickCells(c, frac){ const ks = []; c.matrix.rows.forEach((r, ri) => r.cells.forEach((v, ci) => ks.push("M" + ri + "_" + ci))); return new Set(ks.sort(() => Math.random() - 0.5).slice(0, Math.max(1, Math.ceil(ks.length * frac)))); }
 function render(){
+  expUsed = new Set();
   const t = curT, list = ordered(t), i = list.findIndex(c => c.id === curId), c = list[i];
   const s = A.openSession(`${i + 1} / ${list.length}`, true); closeSheet();
   $("#pfill").style.width = (100 * (i + 1) / list.length) + "%";
