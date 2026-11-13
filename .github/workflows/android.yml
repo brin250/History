@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir build && cd build
           npm init -y >/dev/null
-          npm install @capacitor/core@6.2.0 @capacitor/cli@6.2.0 @capacitor/android@6.2.0
+          npm install @capacitor/core@6.2.0 @capacitor/cli@6.2.0 @capacitor/android@6.2.0 @capacitor-community/text-to-speech@5.1.0
           cp -r ../docs www
           npx cap init "Case Drill" io.github.brin250.casedrill --web-dir www
           npx cap add android

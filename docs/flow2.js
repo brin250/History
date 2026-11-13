@@ -157,6 +157,8 @@ function nodeSheet(n, c){
     el("b", { text: n.t }), n.d ? el("p", { text: n.d }) : null,
     (n.ev || []).length ? el("details", { class: "evid", open: "" }, el("summary", { text: `Evidence (${n.ev.length})` }), el("ul", {}, n.ev.map(x => el("li", { text: x })))) : null,
     hs.length ? el("div", { class: "hist" }, hs.map(h => el("div", {}, el("b", { text: h.who + ": " }), h.view))) : null,
+    el("div", { class: "row", style: "gap:8px" }, el("button", { class: "btn", style: "justify-self:start", text: "▶ Listen", onclick: () => playItems([{ id: n.id, text: lectureOf(n, c, null, null, "single") }], n.t) })),
+    el("details", { class: "evid lect" }, el("summary", { text: "Lecture version (what Listen reads)" }), el("p", { text: lectureOf(n, c, null, null, "single") })),
     caseEl(n, c),
     n.go ? el("button", { class: "btn", style: "justify-self:start", text: "Open this chart →", onclick: () => { closeSheet(); open(curT, n.go); } }) : null,
     ids.length ? el("button", { class: "btn ghost", style: "justify-self:start", text: ids.length === 1 ? "Study this case card" : `Study these ${ids.length} case cards`, onclick: () => { closeSheet(); A.startLearn({ t: curT, sec: n.t, cards: ids.map(id => A.CASE[id]) }); } }) : null);
@@ -167,6 +169,126 @@ function linkSheet(l){
     el("p", { text: l.how || "No mechanism given." }));
 }
 
+
+/* ---------- listening: a spoken "lecture" version of each box and chart, read with the device's best voice ---------- */
+// Turn note shorthand into something that sounds natural when read aloud.
+function speechify(x){
+  return String(x || "")
+    .replace(/\(\s*\d{1,2}\s*\)\s*/g, "").replace(/\s*[→⇒]\s*/g, " to ").replace(/\s*↔\s*/g, " and ")
+    .replace(/~\s*/g, "about ").replace(/≈\s*/g, "roughly ").replace(/\bc\.\s*(?=\d)/g, "around ")
+    .replace(/\be\.g\.,?\s*/gi, "for example ").replace(/\bi\.e\.,?\s*/gi, "that is ").replace(/\bvs\.?\s/gi, "versus ").replace(/\s&\s/g, " and ")
+    .replace(/\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)\b\.?/g, m => ({Jan:"January",Feb:"February",Mar:"March",Apr:"April",Jun:"June",Jul:"July",Aug:"August",Sep:"September",Sept:"September",Oct:"October",Nov:"November",Dec:"December"})[m.replace(".","")])
+    .replace(/\bRes\.\s*/g, "Resolution ").replace(/\bArts?\.\s*/g, "Article ").replace(/\bp\.a\./g, "a year").replace(/\bincl\.\s*/g, "including ")
+    .replace(/(\d)\s*[–-]\s*(\d)/g, "$1 to $2").replace(/\+(\d)/g, "plus $1").replace(/(^|\s)[−-](\d)/g, "$1minus $2")
+    .replace(/(\w)\/(\w)/g, "$1 or $2").replace(/(\w)[’'](\w)/g, "$1'$2").replace(/[‘’“”"]/g, "").replace(/\s*;\s*/g, ". ").replace(/\s*:\s+/g, ": ")
+    .replace(/\s+/g, " ").trim().replace(/([.!?]\s+)([a-z])/g, (m, a, b) => a + b.toUpperCase()).replace(/^[a-z]/, m => m.toUpperCase());
+}
+const sentence = x => { x = speechify(x); return x && !/[.!?]$/.test(x) ? x + "." : x; };
+const LEAD = ["Let's start with", "Now,", "Next,", "Then,", "Moving on:", "Here's the next piece:"];
+// The spoken version of one box: what it is, what happened, why it matters, one figure to remember.
+function lectureOf(n, c, link, used, first){
+  const own = (n.cards || []).map(id => A.CASE[id]).filter(Boolean), ex = own.find(x => x.exp && !(used && used.has(x.id))) || own.find(x => x.exp);
+  if (used && ex) used.add(ex.id);
+  const parts = [];
+  if (link && link.how && first !== "single") parts.push(sentence(link.how));
+  const lead = first === "single" ? "" : first ? "Let's start with " : (link && link.how ? "" : LEAD[1 + (n.id.length % (LEAD.length - 1))] + " ");
+  parts.push(lead + speechify(n.t) + (n.date ? " — that's " + speechify(n.date) : "") + ".");
+  if (n.d) parts.push(sentence(n.d));
+  if (ex){
+    const what = (ex.pts || []).slice(0, 2).map(sentence).filter(Boolean);
+    if (what.length) parts.push("Here's what happened. " + what.join(" "));
+    parts.push("Why does this matter? " + speechify(ex.exp));
+  }
+  const fig = caseFacts(n, c, 3).find(x => /\d/.test(x) && !(ex && (ex.pts || []).slice(0, 2).includes(x)));
+  if (fig) parts.push("One figure worth remembering: " + sentence(fig));
+  return parts.join(" ");
+}
+// Every box in reading order, with the link that leads into it and the stage or branch it sits in.
+function readingOrder(c){
+  const out = [];
+  const walk = (steps, ctx) => { let pending = null;
+    for (const x of steps){
+      if (x.link !== undefined){ pending = x; continue; }
+      if (x.row){ x.row.forEach((m, i) => out.push({ n: m, link: i ? null : pending, intro: ctx })); }
+      else if (x.split){ x.split.forEach(tr => walk(tr.steps || [], tr.h ? "On the " + tr.h + " side." : null)); }
+      else out.push({ n: x, link: pending, intro: ctx });
+      pending = null; ctx = null;
+    } };
+  (c.clusters || []).forEach((k, i) => { const start = out.length;
+    walk(k.steps || [], null);
+    if (out[start]) out[start].stage = (i ? (k.how ? sentence(k.how) + " " : "") : "") + "Part " + (i + 1) + ": " + speechify(k.title) + ". " + (k.summary ? sentence(k.summary) : ""); });
+  return out;
+}
+function chartScript(c){
+  const used = new Set(), order = readingOrder(c);
+  const items = [{ id: null, text: speechify(c.title) + ". The question we're answering: " + sentence(c.question) + " " + (c.intro ? sentence(c.intro) : "") }];
+  order.forEach((o, i) => items.push({ id: o.n.id, text: [o.stage || "", o.intro || "", lectureOf(o.n, c, o.link, used, i === 0)].join(" ").trim() }));
+  if ((c.takeaways || []).length) items.push({ id: null, text: "So, to sum up. " + c.takeaways.map(sentence).join(" ") });
+  return items;
+}
+// Speech: the Android app uses its native text-to-speech plugin; browsers use the Web Speech API.
+const TTS = (() => {
+  const nat = () => window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech;
+  const pref = { voice: "", rate: 1.1 };
+  try { Object.assign(pref, JSON.parse(localStorage.getItem("cd-tts") || "{}")); } catch(e){}
+  const save = () => { try { localStorage.setItem("cd-tts", JSON.stringify(pref)); } catch(e){} };
+  const score = v => (/natural|neural|online|premium|enhanced|network/i.test(v.name) ? 4 : 0) + (/google|microsoft|siri/i.test(v.name) ? 2 : 0) + (/^en[-_](GB|US)/i.test(v.lang) ? 1 : 0);
+  let voices = [];
+  async function list(){
+    if (nat()){ try { const r = await nat().getSupportedVoices(); voices = (r.voices || []).map((v, i) => ({ name: v.name, lang: v.lang, i })); } catch(e){ voices = []; } }
+    else if (window.speechSynthesis){ voices = speechSynthesis.getVoices().map(v => ({ name: v.name, lang: v.lang, v })); }
+    voices = voices.filter(v => /^en/i.test(v.lang)).sort((a, b) => score(b) - score(a) || a.name.localeCompare(b.name));
+    return voices;
+  }
+  if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => list();
+  const pick = () => voices.find(v => v.name === pref.voice) || voices[0];
+  let token = 0;
+  // Speak sentence by sentence (long utterances get cut off in some browsers); resolves when done or stopped.
+  async function say(text){
+    const my = token, parts = text.match(/[^.!?]+[.!?]+|\S[^.!?]*$/g) || [text];
+    if (!voices.length) await list();
+    for (const p of parts){
+      if (my !== token) return false;
+      const v = pick();
+      if (nat()){ await nat().speak({ text: p.trim(), lang: v ? v.lang : "en-GB", rate: pref.rate, voice: v ? v.i : undefined }).catch(() => {}); }
+      else if (window.speechSynthesis){ await new Promise(res => { const u = new SpeechSynthesisUtterance(p.trim()); if (v) { u.voice = v.v; u.lang = v.lang; } u.rate = pref.rate; u.onend = u.onerror = res; speechSynthesis.speak(u); }); }
+      else return false;
+    }
+    return my === token;
+  }
+  function stop(){ token++; if (nat()) nat().stop().catch(() => {}); else if (window.speechSynthesis) speechSynthesis.cancel(); }
+  const ok = () => !!(nat() || window.speechSynthesis);
+  return { say, stop, list, ok, pref, save };
+})();
+let listening = null;
+function stopListening(){ TTS.stop(); listening = null; document.querySelectorAll(".n2.speaking").forEach(x => x.classList.remove("speaking")); const b = document.querySelector(".lbar"); if (b) b.remove(); }
+async function voiceControls(){
+  const vs = await TTS.list(), cur = (vs.find(v => v.name === TTS.pref.voice) || vs[0] || {}).name;
+  const sel = el("select", { "aria-label": "Voice", onchange: e => { TTS.pref.voice = e.target.value; TTS.save(); } }, vs.map(v => { const o = el("option", { value: v.name, text: v.name.replace(/^Microsoft\s+/, "") + " (" + v.lang + ")" }); if (v.name === cur) o.selected = true; return o; }));
+  const rate = el("select", { "aria-label": "Speed", onchange: e => { TTS.pref.rate = +e.target.value; TTS.save(); } }, [0.9, 1, 1.1, 1.2, 1.35, 1.5].map(r => { const o = el("option", { value: String(r), text: r + "×" }); if (r === TTS.pref.rate) o.selected = true; return o; }));
+  return el("span", { class: "lvoice" }, vs.length ? sel : el("span", { class: "hint", text: "Default voice" }), rate);
+}
+// Read a list of {id, text} items, highlighting each box as it's read.
+async function playItems(items, label){
+  stopListening(); if (!TTS.ok()){ alert("This device has no text-to-speech available."); return; }
+  const me = listening = { i: 0 };
+  const now = el("span", { class: "lnow", text: label });
+  const bar = el("div", { class: "lbar", role: "region", "aria-label": "Listening" },
+    el("button", { class: "btn ghost", text: "■ Stop", onclick: stopListening }),
+    el("button", { class: "btn ghost", text: "⏭ Skip", onclick: () => { TTS.stop(); } }), now);
+  document.body.append(bar); bar.append(await voiceControls());
+  while (listening === me && me.i < items.length){
+    const it = items[me.i];
+    document.querySelectorAll(".n2.speaking").forEach(x => x.classList.remove("speaking"));
+    const box = it.id && document.querySelector(`.n2[data-nid="${it.id}"]`);
+    if (box){ box.classList.add("speaking"); box.scrollIntoView({ block: "center", behavior: "smooth" }); }
+    now.textContent = `${label} · ${me.i + 1}/${items.length}`;
+    await TTS.say(it.text);
+    if (listening !== me) return;
+    me.i++;
+  }
+  if (listening === me) stopListening();
+}
 /* ---------- answering hidden items ---------- */
 function answerNode(n, c, box){
   const inp = el("input", { type: "text", placeholder: "What goes here? Type your answer", "aria-label": "Your answer", autocomplete: "off" });
@@ -230,7 +352,7 @@ function nodeEl(n, c){
     return el("button", { class: "n2 blank " + typeCls(n), onclick: () => answerNode(n, c) }, el("span", { class: "ntag", text: typeLabel(n) }), el("span", { class: "nq", text: "?" }));
   // A div rather than a button, so the box's text can be selected (e.g. for text-to-speech); a tap that ends a selection doesn't open it.
   const openIt = () => { const sel = window.getSelection && String(window.getSelection()); if (!sel || !sel.trim()) nodeSheet(n, c); };
-  return el("div", { class: "n2 " + typeCls(n) + (n.go ? " go" : "") + (ans === true ? " right" : ans === false ? " wrong" : ""), role: "button", tabindex: "0", onclick: openIt,
+  return el("div", { class: "n2 " + typeCls(n) + (n.go ? " go" : "") + (ans === true ? " right" : ans === false ? " wrong" : ""), role: "button", tabindex: "0", "data-nid": n.id, onclick: openIt,
       onkeydown: e => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); nodeSheet(n, c); } } },
     el("span", { class: "ntag", text: typeLabel(n) + (n.date ? " · " + n.date : "") }),
     el("span", { class: "nt", text: n.t }),
@@ -469,6 +591,7 @@ function explainPrompts(c){
 
 /* ---------- page ---------- */
 function open(t, id, m){
+  if (id !== curId) stopListening();
   curT = t; const list = ordered(t), i = Math.max(0, list.findIndex(c => c.id === id)), c = list[i]; curId = c.id;
   if (m) mode = m; if (mode === "judge" && !c.judge) mode = "overview";
   if (mode === "complete" || mode === "recall"){
@@ -481,6 +604,7 @@ function open(t, id, m){
 function pickCells(c, frac){ const ks = []; c.matrix.rows.forEach((r, ri) => r.cells.forEach((v, ci) => ks.push("M" + ri + "_" + ci))); return new Set(ks.sort(() => Math.random() - 0.5).slice(0, Math.max(1, Math.ceil(ks.length * frac)))); }
 function render(){
   expUsed = new Set();
+  if (listening && !document.querySelector(".lbar")) listening = null;
   const t = curT, list = ordered(t), i = list.findIndex(c => c.id === curId), c = list[i];
   const s = A.openSession(`${i + 1} / ${list.length}`, true); closeSheet();
   $("#pfill").style.width = (100 * (i + 1) / list.length) + "%";
@@ -494,6 +618,7 @@ function render(){
     (mode === "overview" || mode === "study") ? el("span", { class: "row", style: "gap:8px" },
       el("button", { class: "linkbtn", style: "font-size:12.5px", text: showAll ? "Hide details" : "Show all details", onclick: () => { showAll = !showAll; try { localStorage.setItem("cd-f2-all", showAll ? "1" : "0"); } catch(e){} render(); } }),
       el("button", { class: "linkbtn", style: "font-size:12.5px", text: showCases ? "Hide case studies" : "Show all case studies", onclick: () => { showCases = !showCases; try { localStorage.setItem("cd-f2-cases", showCases ? "1" : "0"); } catch(e){} render(); } }),
+      (c.clusters || []).length ? el("button", { class: "linkbtn", style: "font-size:12.5px;font-weight:700", text: "▶ Listen to this chart", onclick: () => playItems(chartScript(c), c.title) }) : null,
       (c.historians || []).length ? el("button", { class: "linkbtn", style: "font-size:12.5px", text: showHist ? "Hide historians" : "Show historians", onclick: () => { showHist = !showHist; render(); } }) : null) : null);
   let body;
   if (mode === "judge") body = judgeEl(c);
@@ -588,5 +713,5 @@ function progressCard(){
     weak.length ? el("div", {}, el("div", { class: "eyebrow", text: "Weakest links" }), el("ul", { style: "margin:0;padding-left:20px" }, weak.map(([k, r]) => { const { l } = ix[k]; return el("li", {}, `${l.a.t} ${l.label} ${l.b.t} · ${r.score}%`); }))) : el("span", { class: "hint", text: "Weak links will show here once you've reviewed some." }));
 }
 
-window.FLOW2 = { has: t => charts(t).length > 0, ordered, open, listPage, linkKeys, linkCard, dueMaps, progressCard, closeSheet, catalog };
+window.FLOW2 = { stopListening, has: t => charts(t).length > 0, ordered, open, listPage, linkKeys, linkCard, dueMaps, progressCard, closeSheet, catalog };
 })();
