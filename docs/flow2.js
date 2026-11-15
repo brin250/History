@@ -102,7 +102,7 @@ function gradeMap(id, frac, mode){
 function markStudied(id){ const st = S(); st.maps = st.maps || {}; if (!st.maps[id]) { st.maps[id] = { lvl: 0, b: 0, n: 0, due: Date.now() + DAY, last: Date.now(), acc: null }; A.save(); } }
 
 /* ---------- view state ---------- */
-let expUsed = new Set();
+let expUsed = new Set(), ptsUsed = new Set();
 let mode = "overview", showAll = false, showCases = true, showHist = false, focus = 0, hidden = null, answers = null, curT = null, curId = null;
 try { showAll = localStorage.getItem("cd-f2-all") === "1"; showCases = localStorage.getItem("cd-f2-cases") !== "0"; } catch(e){}
 
@@ -195,7 +195,7 @@ function lectureOf(n, c, link, used, first){
   parts.push(lead + speechify(n.t) + (n.date ? " — that's " + speechify(n.date) : "") + ".");
   if (n.d) parts.push(sentence(n.d));
   if (ex){
-    const what = (ex.pts || []).slice(0, 2).map(sentence).filter(Boolean);
+    const what = own.flatMap(k2 => k2.pts || []).map(sentence).filter(Boolean);
     if (what.length) parts.push("Here's what happened. " + what.join(" "));
     parts.push("Why does this matter? " + speechify(ex.exp));
   }
@@ -421,6 +421,18 @@ function stageCase(k, c){
   nodes.forEach(n => { n._stc = top ? top.name : null; });
   return top;
 }
+
+// Each card point lives in one box per chart: among the boxes listing that card, the one whose title and summary share the most words with the point
+// (ties go to the box listing the card earliest, then to the earlier box).
+function pointHomes(c){
+  if (c._homes) return c._homes;
+  const best = new Map(), tw = x => new Set(words(x || ""));
+  catalog(c).nodes.forEach((m, mi) => { const a = tw(m.t + " " + (m.d || "") + " " + (m.date || ""));
+    (m.cards || []).forEach((id, pos) => { const k = A.CASE[id]; if (!k) return;
+      (k.pts || []).forEach(x => { const sc = [...tw(x)].filter(w => a.has(w)).length * 100 - pos * 10 - mi * 0.01, key = id + "|" + x, cur = best.get(key);
+        if (!cur || sc > cur.sc) best.set(key, { sc, nid: m.id }); }); }); });
+  return (c._homes = new Map([...best].map(([key, v]) => [key, v.nid])));
+}
 function caseStrip(n, c){
   if (mode === "recall" || mode === "complete") return null;
   const { cards, sum } = caseOf(n, c);
@@ -430,16 +442,19 @@ function caseStrip(n, c){
   if (showCases && ex) expUsed.add(ex.id);
   const k = ex || cards[0], more = cards.length - 1;
   if (showCases){
-    // What the case is: its first two card points, straight from the notes; then why it matters; then other facts.
-    const what = ex ? (ex.pts || []).slice(0, 2) : [], f = caseFacts(n, c, n.go ? 1 : 3).filter(x => !what.includes(x)).slice(0, 2);
+    // Key details: every point of the box's own cards, grouped by card; points already shown in an earlier box of this chart are not repeated.
+    const home = pointHomes(c), groups = own.map(k2 => ({ k: k2, pts: (k2.pts || []).filter(x => home.get(k2.id + "|" + x) === n.id && !ptsUsed.has(x)) })).filter(g => g.pts.length);
+    groups.forEach(g => g.pts.forEach(x => ptsUsed.add(x)));
+    const f = groups.length ? [] : caseFacts(n, c, n.go ? 1 : 3).filter(x => !ptsUsed.has(x)).slice(0, 2);
     return el("span", { class: "ncase open" }, el("span", { class: "ncx" },
       el("span", { class: "ncs" }, "Case study: ", el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""),
       n.d && !showAll ? el("span", { class: "ncd", text: n.d }) : null,
-      what.length ? el("span", { class: "nh", text: "What it is" }) : null,
-      what.length ? el("ul", { class: "nwhat" }, what.map(x => el("li", {}, hl(x, ctxOf(ex))))) : null,
+      groups.length ? el("span", { class: "nh", text: "Key details" }) : null,
+      groups.map(g => el("span", { class: "ngrp" }, groups.length > 1 ? el("span", { class: "ngt", text: g.k.title + (g.k.when ? " · " + g.k.when : "") }) : null,
+        el("ul", { class: "nwhat" }, g.pts.map(x => el("li", {}, hl(x, ctxOf(g.k))))))),
       ex ? el("span", { class: "nh", text: "Why it matters" }) : null,
       ex ? pointList(ex.exp, "nexp", ctxOf(ex)) : null,
-      f.length ? el("span", { class: "nh", text: "More facts" }) : null,
+      f.length ? el("span", { class: "nh", text: "Related facts" }) : null,
       f.length ? el("ul", {}, f.map(x => el("li", {}, hl(x)))) : null));
   }
   return el("span", { class: "ncase" }, el("span", {}, el("b", { text: k.title }), k.when ? " · " + k.when : "", more > 0 ? ` +${more}` : ""));
@@ -620,7 +635,7 @@ function open(t, id, m){
 }
 function pickCells(c, frac){ const ks = []; c.matrix.rows.forEach((r, ri) => r.cells.forEach((v, ci) => ks.push("M" + ri + "_" + ci))); return new Set(ks.sort(() => Math.random() - 0.5).slice(0, Math.max(1, Math.ceil(ks.length * frac)))); }
 function render(){
-  expUsed = new Set();
+  expUsed = new Set(); ptsUsed = new Set();
   if (listening && !document.querySelector(".lbar")) listening = null;
   const t = curT, list = ordered(t), i = list.findIndex(c => c.id === curId), c = list[i];
   const s = A.openSession(`${i + 1} / ${list.length}`, true); closeSheet();
