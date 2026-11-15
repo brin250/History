@@ -164,6 +164,12 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .sumcase b{font-family:var(--display);font-size:16px}
 .sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
 .stats{display:block}
+.sylchk{border:1px solid var(--rule);border-radius:10px;padding:8px 12px;background:var(--paper)}
+.sylchk summary{cursor:pointer}
+.sylchk ul{margin:6px 0;padding:0;list-style:none;display:grid;gap:4px;font-size:14px}
+.sylchk li.ok .tick{color:#16a34a;font-weight:700}
+.sylchk li.gap .tick{color:#dc2626;font-weight:700}
+.sylchk a{color:var(--blue)}
 .also{display:grid;gap:4px;margin-top:2px}
 details.brief{border-left:2px solid var(--rule);padding:2px 0 2px 8px;font-size:14px}
 details.brief summary{cursor:pointer;list-style:none;line-height:1.45}
@@ -908,7 +914,7 @@ function openSummary(t){
 
 
 /* ---------- exam bank: the few case studies per topic worth memorising, grouped by the argument they prove ---------- */
-const bankOf=t=>((window.EXAMBANK||{})[t]||[]).filter(a=>a.cases.concat(a.also||[]).some(i=>((window.SUMMARIES||{})[t]||{cases:[]}).cases[i]));
+const bankOf=t=>((window.EXAMBANK||{})[t]||[]).filter(a=>a.cases.concat(a.also||[]).some(i=>((window.SUMMARIES||{})[t]||{cases:[]}).cases[i])||(a.cards||[]).some(id=>CASE[id]));
 const coreSet=t=>new Set(bankOf(t).flatMap(a=>a.cases));
 const bankCount=t=>coreSet(t).size;
 // Up to three facts, preferring the ones with figures in them, kept in their original order.
@@ -943,6 +949,22 @@ function glanceGroups(t){
   if(groups.length===1) groups[0].g="All case studies, in notes order";
   return groups;
 }
+// A case card in one line (title, date, first point); tap for all its points and the explanation.
+function briefCard(id){
+  const c=CASE[id]; if(!c) return null;
+  return el("details",{class:"brief"}, el("summary",{}, el("b",{text:c.title}), el("span",{class:"hint",text:" ("+(c.when||"")+")"}), el("span",{text:" — "+((c.pts||[])[0]||"")})),
+    el("ul",{}, (c.pts||[]).slice(1).map(x=>el("li",{text:x}))), c.exp?el("div",{class:"why",text:c.exp}):null);
+}
+// Syllabus checklist: each content point of the 9174 syllabus with the arguments that cover it.
+function sylEl(t){
+  const S=(window.SYLLABUS||{})[t]; if(!S) return null;
+  const args=bankOf(t), all=(window.EXAMBANK||{})[t]||[];
+  return el("details",{class:"sylchk",open:""}, el("summary",{}, el("b",{text:`Syllabus checklist (${S.filter(x=>x.args.length).length}/${S.length} covered)`})),
+    el("ul",{}, S.map(x=>el("li",{class:x.args.length?"ok":"gap"}, el("span",{class:"tick",text:x.args.length?"✓ ":"✗ "}), x.area,
+      x.args.length?el("span",{class:"hint"}, " → ", ...x.args.map((i,j)=>{ const k=args.indexOf(all[i]); return el("a",{href:"#",text:(j?", ":"")+"#"+(k+1),onclick:e=>{ e.preventDefault(); const h=document.querySelectorAll(".bankarg")[k]; if(h) h.scrollIntoView({behavior:"smooth",block:"start"}); }}); }))
+      :el("span",{class:"hint",text:" — not in your notes, so nothing to learn from here yet"})))),
+    el("div",{class:"hint",text:"Content points from the 9174 syllabus (2026)."}));
+}
 function openBank(t,cover){
   const T=TOPIC[t], args=bankOf(t); round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
@@ -950,9 +972,11 @@ function openBank(t,cover){
   const s=stageClear(), shown=new Set();
   s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Exam bank`}), el("h2",{class:"qtitle",text:T.name}),
     el("p",{class:"hint",text:`Memorise the ${bankCount(t)} core case studies first; every argument also lists other examples briefly, and all ${SUMMARIES[t].cases.length} case studies are summarised by state at the bottom.`}),
+    sylEl(t),
     el("div",{class:"row"}, el("button",{class:"linkbtn",text:cover?"Show all facts":"Cover facts to test myself",onclick:()=>openBank(t,!cover)})),
     args.map((a,k)=>el("div",{class:"bankarg"}, el("h3",{text:`${k+1}. ${a.arg}`}), a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,cover)),
-      (a.also||[]).filter(i=>SUMMARIES[t].cases[i]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Also useful"}), (a.also||[]).filter(i=>SUMMARIES[t].cases[i]).map(i=>briefCase(t,i,false))):null)),
+      (a.also||[]).filter(i=>SUMMARIES[t].cases[i]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Also useful"}), (a.also||[]).filter(i=>SUMMARIES[t].cases[i]).map(i=>briefCase(t,i,false))):null,
+      (a.cards||[]).filter(id=>CASE[id]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Key cards"}), a.cards.map(briefCard)):null)),
     el("h3",{text:`Every case study at a glance (${SUMMARIES[t].cases.length})`}),
     el("p",{class:"hint",text:"Grouped by state where your notes name one. ★ = core example above. Tap a line for its facts."}),
     glanceGroups(t).map(g=>el("div",{class:"glance"}, el("div",{class:"eyebrow",text:g.g}), g.items.map(i=>briefCase(t,i,coreSet(t).has(i))))),
@@ -965,7 +989,8 @@ function drillBank(t,order,j){
   const args=bankOf(t); if(j>=order.length){ openBank(t,false); return; }
   const a=args[order[j]], s=stageClear(), shown=new Set(); $("#pcount").textContent=`Drill ${j+1}/${order.length}`; $("#pfill").style.width=(100*j/order.length)+"%";
   const ans=el("div",{hidden:true}, a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,false)),
-    (a.also||[]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Also useful"}), a.also.filter(i=>SUMMARIES[t].cases[i]).map(i=>briefCase(t,i,false))):null);
+    (a.also||[]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Also useful"}), a.also.filter(i=>SUMMARIES[t].cases[i]).map(i=>briefCase(t,i,false))):null,
+    (a.cards||[]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Key cards"}), a.cards.map(briefCard)):null);
   s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · Exam bank drill`}), el("h2",{class:"qtitle",text:a.arg}),
     el("p",{class:"hint",text:"Name the case studies that prove this, with a date and one figure each. Then check."}), ans));
   const next=el("button",{class:"btn",text:j+1<order.length?"Next argument":"Finish",onclick:()=>drillBank(t,order,j+1)});
@@ -1358,7 +1383,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 56 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 57 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
