@@ -164,6 +164,14 @@ details.ltopic summary b{font-family:var(--display);font-size:17px}
 .sumcase b{font-family:var(--display);font-size:16px}
 .sumcase .why{border-left:3px solid var(--blue);padding-left:8px;font-size:14px}
 .stats{display:block}
+.also{display:grid;gap:4px;margin-top:2px}
+details.brief{border-left:2px solid var(--rule);padding:2px 0 2px 8px;font-size:14px}
+details.brief summary{cursor:pointer;list-style:none;line-height:1.45}
+details.brief summary::-webkit-details-marker{display:none}
+details.brief ul{margin:4px 0;padding-left:18px;display:grid;gap:3px;font-size:13.5px}
+details.brief .why{border-left:3px solid var(--blue);padding-left:8px;font-size:13.5px}
+.glance{display:grid;gap:4px;margin-bottom:8px}
+.star{color:#d97706}
 .bankarg{display:grid;gap:8px}
 .bankcase{gap:4px}
 .bankbody{display:grid;gap:6px}
@@ -900,8 +908,9 @@ function openSummary(t){
 
 
 /* ---------- exam bank: the few case studies per topic worth memorising, grouped by the argument they prove ---------- */
-const bankOf=t=>((window.EXAMBANK||{})[t]||[]).filter(a=>a.cases.some(i=>((window.SUMMARIES||{})[t]||{cases:[]}).cases[i]));
-const bankCount=t=>new Set(bankOf(t).flatMap(a=>a.cases)).size;
+const bankOf=t=>((window.EXAMBANK||{})[t]||[]).filter(a=>a.cases.concat(a.also||[]).some(i=>((window.SUMMARIES||{})[t]||{cases:[]}).cases[i]));
+const coreSet=t=>new Set(bankOf(t).flatMap(a=>a.cases));
+const bankCount=t=>coreSet(t).size;
 // Up to three facts, preferring the ones with figures in them, kept in their original order.
 const keyFacts=c=>{ const f=c.facts||[]; if(f.length<=3) return f; const pick=f.map((x,i)=>({x,i,n:(x.match(/\d/g)||[]).length})).sort((a,b)=>b.n-a.n).slice(0,3).sort((a,b)=>a.i-b.i); return pick.map(o=>o.x); };
 function bankCase(t,i,shown,cover){
@@ -916,15 +925,37 @@ function bankCase(t,i,shown,cover){
     body,
     ids.length?el("button",{class:"linkbtn",style:"font-size:13px;justify-self:start",text:"Test me on this case",onclick:()=>{ round={mode:"recall",queue:shuffle(ids.map(id=>"recall:"+id)),i:0,results:[],requeued:new Set()}; showCard(); }}):null);
 }
+// One-line version of a case study: name, date and the first sentence of what it was; tap to see its facts.
+const shortWhat=c=>{ const w=((c.what||"").match(/^.*?[.!?](\s|$)/)||[c.what||""])[0].trim().split(/\s+/); return w.length>28?w.slice(0,28).join(" ")+"…":w.join(" "); };
+function briefCase(t,i,star){
+  const c=SUMMARIES[t].cases[i];
+  return el("details",{class:"brief"}, el("summary",{}, star?el("span",{class:"star",text:"★ "}):null, el("b",{text:c.name}), el("span",{class:"hint",text:" ("+(c.when||"")+")"}), el("span",{text:" — "+shortWhat(c)})),
+    el("ul",{}, keyFacts(c).map(x=>el("li",{text:x}))), c.why?el("div",{class:"why",text:c.why}):null);
+}
+// Group a topic's case studies by the state or country their name starts with ("Thailand: …"); otherwise keep notes order.
+function glanceGroups(t){
+  const cs=SUMMARIES[t].cases, pre=cs.map(c=>{ const m=/^([A-Z][A-Za-z .’'-]{1,24}?):\s/.exec(c.name); return m&&!/^(Phase|Part|Case|Cause)/.test(m[1])?m[1]:null; });
+  const counts={}; pre.forEach(x=>{ if(x) counts[x]=(counts[x]||0)+1; });
+  const groups=[], idx={};
+  const byState=pre.filter(Boolean).length>=cs.length/2;
+  cs.forEach((c,i)=>{ const g=pre[i]&&(byState||counts[pre[i]]>1)?pre[i]:"Other case studies"; if(!(g in idx)){ idx[g]=groups.length; groups.push({g,items:[]}); } groups[idx[g]].items.push(i); });
+  const o=groups.findIndex(x=>x.g==="Other case studies"); if(o>=0&&groups.length>1) groups.push(groups.splice(o,1)[0]);
+  if(groups.length===1) groups[0].g="All case studies, in notes order";
+  return groups;
+}
 function openBank(t,cover){
   const T=TOPIC[t], args=bankOf(t); round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
   $("#pfill").style.width="0"; $("#pcount").textContent="Exam bank";
   const s=stageClear(), shown=new Set();
   s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Exam bank`}), el("h2",{class:"qtitle",text:T.name}),
-    el("p",{class:"hint",text:`Memorise these ${bankCount(t)} case studies first (of ${SUMMARIES[t].cases.length} in your summary). Each argument lists the examples that prove it best, with the facts worth quoting.`}),
+    el("p",{class:"hint",text:`Memorise the ${bankCount(t)} core case studies first; every argument also lists other examples briefly, and all ${SUMMARIES[t].cases.length} case studies are summarised by state at the bottom.`}),
     el("div",{class:"row"}, el("button",{class:"linkbtn",text:cover?"Show all facts":"Cover facts to test myself",onclick:()=>openBank(t,!cover)})),
-    args.map((a,k)=>el("div",{class:"bankarg"}, el("h3",{text:`${k+1}. ${a.arg}`}), a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,cover)))),
+    args.map((a,k)=>el("div",{class:"bankarg"}, el("h3",{text:`${k+1}. ${a.arg}`}), a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,cover)),
+      (a.also||[]).filter(i=>SUMMARIES[t].cases[i]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Also useful"}), (a.also||[]).filter(i=>SUMMARIES[t].cases[i]).map(i=>briefCase(t,i,false))):null)),
+    el("h3",{text:`Every case study at a glance (${SUMMARIES[t].cases.length})`}),
+    el("p",{class:"hint",text:"Grouped by state where your notes name one. ★ = core example above. Tap a line for its facts."}),
+    glanceGroups(t).map(g=>el("div",{class:"glance"}, el("div",{class:"eyebrow",text:g.g}), g.items.map(i=>briefCase(t,i,coreSet(t).has(i))))),
     el("div",{class:"srctag",text:`Facts and arguments taken only from your ${T.src} notes summary.`})));
   setActions(el("button",{class:"btn ghost",text:"Read summary",onclick:()=>openSummary(t)}),
     el("button",{class:"btn",text:"Drill arguments",onclick:()=>drillBank(t,shuffle(args.map((_,k)=>k)),0)}));
@@ -933,7 +964,8 @@ function openBank(t,cover){
 function drillBank(t,order,j){
   const args=bankOf(t); if(j>=order.length){ openBank(t,false); return; }
   const a=args[order[j]], s=stageClear(), shown=new Set(); $("#pcount").textContent=`Drill ${j+1}/${order.length}`; $("#pfill").style.width=(100*j/order.length)+"%";
-  const ans=el("div",{hidden:true}, a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,false)));
+  const ans=el("div",{hidden:true}, a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,false)),
+    (a.also||[]).length?el("div",{class:"also"}, el("div",{class:"eyebrow",text:"Also useful"}), a.also.filter(i=>SUMMARIES[t].cases[i]).map(i=>briefCase(t,i,false))):null);
   s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${TOPIC[t].name} · Exam bank drill`}), el("h2",{class:"qtitle",text:a.arg}),
     el("p",{class:"hint",text:"Name the case studies that prove this, with a date and one figure each. Then check."}), ans));
   const next=el("button",{class:"btn",text:j+1<order.length?"Next argument":"Finish",onclick:()=>drillBank(t,order,j+1)});
@@ -1326,7 +1358,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 55 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 56 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();
