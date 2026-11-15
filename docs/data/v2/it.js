@@ -1,4 +1,4 @@
-// v2 flow charts: Inter-state tensions in SEA — Konfrontasi, Sabah, Third Indochina War (cards in data/it.js)
+// v2 flow charts: Inter-state tensions in SEA — Konfrontasi, Sabah, Third Indochina War, Preah Vihear (cards in data/it.js)
 (function(){ const L = ((window.FLOWS2 = window.FLOWS2 || {}).it = window.FLOWS2.it || []);
 const TY = { ctx:"context", ltc:"long_term_cause", stc:"short_term_cause", trig:"trigger", pol:"policy", evt:"event", act:"actor", tp:"turning_point", res:"consequence", evid:"evidence", int:"interpretation", judg:"judgement" };
 const N = (id, ty, t, date, d, cards, x) => { const m = /^(\w+)([+\-±])?$/.exec(ty), o = { id, type: TY[m[1]], t, d, cards }; if (m[2]) o.sign = m[2]; if (date) o.date = date; return Object.assign(o, x || {}); };
@@ -8,14 +8,14 @@ L.push({
   id: "it-top", order: 1, level: 0, kind: "causal",
   title: "Inter-state tensions in Southeast Asia",
   question: "What caused inter-state tensions in SEA — structural factors or triggers and leaders — and with what consequences?",
-  intro: "Underlying factors made some pairs of states prone to clash; triggers and leaders explain when. Three cases: Konfrontasi, Sabah, the Third Indochina War.",
+  intro: "Underlying factors made some pairs of states prone to clash; triggers and leaders explain when. Four cases: Konfrontasi, Sabah, the Third Indochina War, Preah Vihear.",
   clusters: [
     { title: "The framework", summary: "Underlying vs immediate; leaders.",
       steps: [
         N("it-t-frame", "ctx", "Underlying vs immediate factors", null, "Six structural causes explain propensity; triggers explain timing; 'statesmen' decide.", ["it-underlying-immediate", "it-leaders"], { go: "it-framework" })
       ] },
-    { link: "supports", how: "Three case studies test the framework.",
-      title: "The three cases", summary: "Konfrontasi, Sabah, Third Indochina War.",
+    { link: "supports", how: "Four case studies test the framework.",
+      title: "The four cases", summary: "Konfrontasi, Sabah, Third Indochina War, Preah Vihear.",
       steps: [
         { split: [
           { h: "Konfrontasi", steps: [
@@ -38,6 +38,13 @@ L.push({
             N("it-t-tiw3", "tp", "Invasion and border war", "1978–79", "25 Dec 1978 invasion; Feb 1979 Chinese attack.", ["it-invasion-1978", "it-china-war"], { go: "it-tiw-war" }),
             K("followed by", "Thailand and Vietnam later reconciled."),
             N("it-t-tiw4", "res±", "Thailand–Vietnam", "1979–95", "Frontline hostility, then rapprochement.", ["it-thai-viet", "it-thai-viet-thaw"], { go: "it-thaiviet" })
+          ] },
+          { h: "Preah Vihear", steps: [
+            N("it-t-pv1", "ltc", "Roots of the dispute", "1904–1959", "Treaty vs map; Phibun's myth; 1954 occupation; Cold War suspicion.", ["pv-1904-1907", "pv-phibun-1941", "pv-1953"], { go: "it-pv-causes" }),
+            K("led to", "Sihanouk took the dispute to the ICJ."),
+            N("it-t-pv2", "evt", "Height of the dispute", "1958–62", "Thai nationalist fury; relations broken twice.", ["pv-icj-why", "pv-thai-public", "pv-relations"], { go: "it-pv-crisis" }),
+            K("followed by", "The ICJ ruled; the dispute persisted."),
+            N("it-t-pv3", "res±", "ICJ ruling and after", "1962–2011", "Cambodia wins; Thailand complies; 4.6 km² unsettled.", ["pv-verdict", "pv-compliance", "pv-limits"], { go: "it-pv-manage" })
           ] }
         ] }
       ] },
@@ -50,7 +57,7 @@ L.push({
       ] }
   ],
   judge: { prompt: "Which factor best explains inter-state tension in SEA? Rank them.",
-           factors: ["it-t-konf1", "it-t-sabah2", "it-t-tiw1", "it-t-tiw2"],
+           factors: ["it-t-konf1", "it-t-sabah2", "it-t-tiw1", "it-t-tiw2", "it-t-pv1"],
            notes_view: "Underlying factors explain propensity, immediate factors the timing; leaders matter separately ('States do not make policies, statesmen do') — de-escalation tracked leadership change." },
   historians: [],
   takeaways: [
@@ -578,21 +585,202 @@ L.push({
 });
 
 L.push({
-  id: "it-compare", order: 12, level: 1, parent: "it-top", kind: "matrix",
-  title: "Comparing the three cases",
-  question: "How do the causes and resolution of the three disputes compare?",
-  intro: "Each cause and the route to resolution, case by case, from the notes' cross-case synthesis.",
+  id: "it-pv-causes", order: 12, level: 3, parent: "it-top", kind: "causal",
+  title: "Causes of the Preah Vihear dispute, to 1959",
+  question: "Why did a Khmer temple become the subject of a dispute between Cambodia and Thailand?",
+  intro: "Old animosity set the tone, colonial maps gave the legal basis, Thai military nationalism made the temple a symbol, and the Cold War explains why the dispute erupted in 1953–59.",
+  clusters: [
+    { title: "Historical animosities", summary: "Centuries of mutual distrust.",
+      steps: [
+        { row: [
+          N("it-pv-siam", "ltc", "Siamese incursions", "15th–19th c.", "Angkor Wat captured 1421; provinces ceded 1794; Phnom Penh burned.", ["pv-hist"]),
+          N("it-pv-betray", "ltc", "Cambodian 'betrayals'", "16th c.–1861", "King Satha's attack; King Norodom turned to the French.", ["pv-hist"])
+        ] },
+        K("led to", "Each side built a hostile image of the other."),
+        N("it-pv-tropes", "int", "Mutual tropes", null, "'Preah Ko Preah Keo' vs Cambodia as Siam's 'younger sibling'.", ["pv-perceptions"]),
+        K("constrained", "Animosity explains endurance, not timing."),
+        N("it-pv-deth", "evid", "Deth: pattern of relations", "1940s–80s", "Dispute absent until the 1940s and in the anti-communist 1970s–80s.", ["pv-deth-pattern"])
+      ] },
+    { link: "intensified", how: "French colonial cartography created an ambiguous border.",
+      title: "Colonial legacy", summary: "Treaty vs map.",
+      steps: [
+        N("it-pv-1893", "evt", "Franco-Siamese Crisis", "1893", "Siam cedes Lao and Khmer regions — a symbol of lost status.", ["pv-1893"]),
+        K("led to", "A new border had to be drawn."),
+        N("it-pv-1904", "ltc", "1904 watershed treaty", "13 Feb 1904", "Border along the Dangrek watershed — most of the temple in Siam.", ["pv-1904-1907"]),
+        K("contradicts", "The French survey drew a different line."),
+        N("it-pv-1907", "ltc", "1907 French map", "Mar 1907", "Placed all of Preah Vihear in Cambodia.", ["pv-1904-1907"]),
+        K("followed by", "Siam never objected."),
+        N("it-pv-silence", "evid", "Siamese silence", "1930–34", "Damrong saw a French flag (1930); 1934 survey found the discrepancy — no protest.", ["pv-dejure"])
+      ] },
+    { link: "intensified", how: "Military governments turned lost territory into a nationalist cause.",
+      title: "Thai nationalism", summary: "The myth of Preah Vihear.",
+      steps: [
+        N("it-pv-humil", "ctx", "'National Humiliation' discourse", "1932–38", "Military blamed the monarchy for 1893 losses to build legitimacy.", ["pv-humiliation"]),
+        K("led to", "Phibun launched an irredentist campaign."),
+        N("it-pv-phibun", "pol", "Phibun's irredentism", "1938–41", "Invaded French Cambodia; Angkor Wat the main goal.", ["pv-phibun-1941"]),
+        K("led to", "Japan refused Angkor, so Preah Vihear was publicised instead."),
+        N("it-pv-tokyo", "tp", "Tokyo Peace Accord", "Mar 1941", "Preah Vihear hailed as \"just as important as Angkor Wat\".", ["pv-phibun-1941"]),
+        K("followed by", "Thailand had to give it back."),
+        N("it-pv-1946", "res-", "The 'partition'", "1946", "Washington Accord restored the 1907 line; the temple now a national symbol.", ["pv-1946"])
+      ] },
+    { link: "triggered", how: "France's withdrawal and Cold War suspicion gave Thailand a reason and an opening.",
+      title: "Occupation and the Cold War", summary: "Why 1953–59.",
+      steps: [
+        N("it-pv-seato", "stc", "Cambodia refuses SEATO", "1953", "Thai police post near the temple; Thai flag raised.", ["pv-1953"]),
+        K("led to", "With France gone, Thailand moved in."),
+        N("it-pv-occupy", "trig", "Thai troops occupy the temple", "1 Aug 1954", "Exploited a newly independent Cambodia after Geneva.", ["pv-1953", "pv-chron-1"]),
+        K("intensified", "Cold War suspicions poisoned the talks that followed."),
+        { row: [
+          N("it-pv-neutral", "stc", "Neutrality vs anti-communism", "1955–58", "Thailand saw Sihanouk's neutrality as a communist façade.", ["pv-coldwar"]),
+          N("it-pv-prc", "stc", "Cambodia recognises the PRC", "Jul 1958", "After South Vietnamese incursions; Thailand saw a Chinese proxy.", ["pv-prc"]),
+          N("it-pv-diss", "stc", "Thai-backed dissidents", "1955–59", "Son Ngoc Thanh, Dap Chhuon; Sam Sary suspected.", ["pv-dissidents"])
+        ] },
+        K("led to", "Sihanouk concluded he was surrounded by US-backed enemies."),
+        N("it-pv-plot", "tp", "'Bangkok Plot' accusation", "Jan 1959", "Sihanouk accused Thailand of plotting to overthrow him.", ["pv-dissidents"])
+      ] }
+  ],
+  judge: { prompt: "What best explains the Preah Vihear dispute? Rank the factors.",
+           factors: ["it-pv-tropes", "it-pv-1907", "it-pv-1946", "it-pv-occupy", "it-pv-prc"],
+           notes_view: "Layer the causes: animosity explains propensity and endurance, colonial maps the legal basis, Thai military nationalism the temple's symbolism, and the Cold War the timing of 1953–62." },
+  historians: [
+    { who: "Sok Udom Deth", view: "The antagonistic pattern explains why the conflict endured; rhetoric mattered when the two states lacked shared interests and ideology.", nodes: ["it-pv-deth", "it-pv-neutral"] },
+    { who: "Shane Strate", view: "Phibun turned Preah Vihear from an anonymous site into a national memorial.", nodes: ["it-pv-phibun", "it-pv-tokyo"] },
+    { who: "Maurizio Peleggi", view: "Phibun funded restoration to appropriate royal prerogatives.", nodes: ["it-pv-tokyo"] }
+  ],
+  takeaways: [
+    "Animosity explains propensity and endurance, not timing — the dispute began only in the 1940s.",
+    "The 1907 map contradicted the 1904 watershed treaty; Siam's silence was its undoing.",
+    "Phibun's 1941 campaign created the Thai myth; the Cold War and France's exit explain 1953–59."
+  ]
+});
+
+L.push({
+  id: "it-pv-crisis", order: 13, level: 3, parent: "it-top", kind: "causal",
+  title: "Height of the Preah Vihear dispute, 1958–1962",
+  question: "How did the Preah Vihear dispute escalate between 1958 and 1962?",
+  intro: "Sihanouk internationalised the dispute; Thai crowds and press reacted with nationalist fury; relations broke down twice — though Thai elites stayed more restrained than the public.",
+  clusters: [
+    { title: "Why go to the ICJ", summary: "Cambodia's reasons.",
+      steps: [
+        { row: [
+          N("it-pv-adv", "stc", "Thai advantage in talks", "1954–58", "Stronger Thailand; deadlocked talks; Mar 1958 protests in Phnom Penh.", ["pv-icj-why"]),
+          N("it-pv-1961", "stc", "1961 deadline", null, "Fear Thailand would stall until its ICJ commitment lapsed.", ["pv-icj-why"]),
+          N("it-pv-sih", "act", "Sihanouk's motives", null, "Rally ordinary people, mask his colonial past, justify non-alignment (Strate).", ["pv-icj-why"])
+        ] },
+        K("led to", "Sihanouk announced the move in Bangkok itself."),
+        N("it-pv-ann", "trig", "Sihanouk's announcement", "4 Sep 1958", "Withdrew from two-party talks; formal submission 6 Oct 1959.", ["pv-icj-why", "pv-chron-2"])
+      ] },
+    { link: "led to", how: "For the first time Thais faced losing the temple.",
+      title: "Thai public response", summary: "Rallies, press, donations.",
+      steps: [
+        N("it-pv-rally", "evt", "Sanam Luang rally", "7 Sep 1958", "10,000 marched on the Cambodian embassy; clashes with police.", ["pv-thai-public"]),
+        K("intensified", "The press framed it as a fight against imperialism."),
+        N("it-pv-press", "int", "Press framing", "1958–62", "Thailand as victim; Sihanouk as ungrateful and duplicitous.", ["pv-thai-public"]),
+        K("led to", "Thais were mobilised to pay for the case."),
+        { row: [
+          N("it-pv-baht", "evt", "'One person, one baht'", "Oct–Nov 1959", "Defence fund passed 1 million baht — a symbol of resolve.", ["pv-donations"]),
+          N("it-pv-irred", "evt", "Renewed irredentism", "1959", "Editorials demanded Lan Na, Champassak, Battambang, Siem Reap.", ["pv-sarit-rhetoric"])
+        ] }
+      ] },
+    { link: "constrained", how: "Thai leaders were harsher in word than in deed.",
+      title: "Elites vs masses", summary: "Rhetoric vs restraint.",
+      steps: [
+        N("it-pv-sarit", "act", "Sarit's rhetoric", "1959", "Blamed 'corrupt leaders' in Phnom Penh; called Sihanouk an opportunist.", ["pv-sarit-rhetoric"]),
+        K("contradicts", "But he did not want war."),
+        N("it-pv-restraint", "evid", "Elite restraint", "1958–62", "Sarit had bigger worries (Laos, PRC, Vietnam); press as symptom and cause.", ["pv-elites-masses"])
+      ] },
+    { link: "led to", how: "Relations broke down at state and personal level.",
+      title: "Diplomatic breakdown", summary: "Two ruptures.",
+      steps: [
+        N("it-pv-break1", "res-", "Relations suspended", "24 Nov 1958", "Thailand closed the border and suspended air service.", ["pv-relations", "pv-prc"]),
+        K("followed by", "The UN stepped in."),
+        N("it-pv-un", "pol", "UN envoy restores ties", "6 Feb 1959", "Hammarskjold's envoy; Cambodia's joint-administration offer unanswered.", ["pv-relations"]),
+        K("followed by", "Cambodia went to the Court alone."),
+        N("it-pv-submit", "tp", "Case submitted to the ICJ", "6 Oct 1959", "With the Annex I (1907) map.", ["pv-relations", "pv-icj-case"]),
+        K("followed by", "Leaders' personal hostility broke ties again."),
+        N("it-pv-break2", "res-", "'A pig challenging a lion'", "Oct 1961", "Sarit's insult; Sihanouk severed relations on 23 Oct 1961.", ["pv-relations"])
+      ] }
+  ],
+  judge: { prompt: "Who did most to escalate the dispute in 1958–62? Rank them.",
+           factors: ["it-pv-sih", "it-pv-press", "it-pv-sarit", "it-pv-break2"],
+           notes_view: "Distinguish elites from masses and rhetoric from action: the public and press multiplied tension, while Sarit's government still honoured the ICJ process." },
+  historians: [
+    { who: "Shane Strate", view: "Sihanouk escalated for domestic and foreign-policy reasons; the ICJ made Thailand confront losing the temple.", nodes: ["it-pv-sih", "it-pv-rally"] }
+  ],
+  takeaways: [
+    "Sihanouk's 4 Sep 1958 announcement internationalised the dispute; formal submission 6 Oct 1959.",
+    "Thai crowds, press and donors (1 million baht) framed it as anti-imperialist; elites were more restrained.",
+    "Relations broken 24 Nov 1958 and 23 Oct 1961."
+  ]
+});
+
+L.push({
+  id: "it-pv-manage", order: 14, level: 3, parent: "it-top", kind: "chain",
+  title: "Preah Vihear: the ICJ ruling and after",
+  question: "How was the Preah Vihear dispute managed, and why did it persist?",
+  intro: "The ICJ ruled for Cambodia in 1962 and Thailand complied grudgingly, but the ruling left the land around the temple unsettled — so the dispute returned whenever relations soured.",
+  clusters: [
+    { title: "The ICJ case", summary: "Jurisdiction, then merits.",
+      steps: [
+        N("it-pv-obj", "evt", "Thai preliminary objections", "23 May 1960", "Argued the Court lacked jurisdiction.", ["pv-icj-case"]),
+        K("followed by", "The Court rejected them."),
+        N("it-pv-jur", "tp", "Jurisdiction upheld", "26 May 1961", "Thailand's 1950 declaration could only mean the ICJ.", ["pv-icj-case"]),
+        K("led to", "The Court ruled on the merits."),
+        N("it-pv-verdict", "tp", "ICJ rules for Cambodia, 9–3", "15 Jun 1962", "Siam's silence meant acceptance of the 1907 map.", ["pv-verdict"])
+      ] },
+    { link: "led to", how: "Thais erupted, but leaders weighed the costs.",
+      title: "Thai response", summary: "Outrage, then compliance.",
+      steps: [
+        N("it-pv-outrage", "res-", "Mass outrage", "Jun 1962", "50,000 students; ICJ called neo-imperialist and communist.", ["pv-thai-verdict"]),
+        K("contradicts", "Leaders had reasons to comply."),
+        { row: [
+          N("it-pv-king", "act", "The King's caution", null, "Bhumibol advised the government to proceed carefully.", ["pv-compliance"]),
+          N("it-pv-fear", "stc", "Fear of the PRC", null, "Cambodia's ties with China could tip the regional balance.", ["pv-compliance"]),
+          N("it-pv-intl", "stc", "UN prestige", null, "Defying the ICJ would damage Thailand's standing.", ["pv-compliance"])
+        ] },
+        K("led to", "Sarit accepted the ruling."),
+        N("it-pv-comply", "pol", "Sarit complies", "7 Jul 1962", "Grudgingly — flagpole removed standing; barbed-wire fence.", ["pv-compliance"])
+      ] },
+    { link: "followed by", how: "The ruling left the land around the temple unsettled.",
+      title: "Limits and persistence", summary: "Dormant, then revived.",
+      steps: [
+        N("it-pv-limit", "res-", "Limits of the ruling", "1962–68", "4.6 km² unsettled; 1963 Thai raid; de Ribbing's mission failed.", ["pv-limits"]),
+        K("followed by", "Aligned interests kept the dispute dormant."),
+        N("it-pv-dormant", "ctx", "Dormant decades", "1970–2000", "Ideology and security outweighed animosity; 2000 MoU and JBC.", ["pv-later"]),
+        K("triggered", "The UNESCO listing revived it."),
+        N("it-pv-2008", "res-", "Re-emergence", "2008–11", "26 killed in 2011; ASEAN urged restraint; ICJ demilitarised zone.", ["pv-2008", "pv-chron-3"])
+      ] }
+  ],
+  judge: { prompt: "Why did Thailand comply with the ICJ in 1962? Rank the reasons.",
+           factors: ["it-pv-king", "it-pv-fear", "it-pv-intl"],
+           notes_view: "The King's opinion, fear of retaliation given Cambodia's PRC ties, and international prestige; compliance was real but grudging." },
+  historians: [
+    { who: "Shane Strate", view: "Thai newspapers functioned as an echo chamber, making confrontation seem universal rather than radical.", nodes: ["it-pv-outrage"] },
+    { who: "Pou Sothirak", view: "The JBC was hampered by terrain, survey problems and mutual mistrust.", nodes: ["it-pv-dormant"] }
+  ],
+  takeaways: [
+    "ICJ ruled 9–3 for Cambodia (15 Jun 1962) because Siam never protested the 1907 map.",
+    "Sarit complied (7 Jul 1962) for the King, fear of the PRC and UN prestige — grudgingly.",
+    "The ruling left 4.6 km² unsettled; the dispute returned in 2008–11 (26 killed)."
+  ]
+});
+
+L.push({
+  id: "it-compare", order: 15, level: 1, parent: "it-top", kind: "matrix",
+  title: "Comparing the four cases",
+  question: "How do the causes and resolution of the four disputes compare?",
+  intro: "Each cause and the route to resolution, case by case, from the notes' cross-case synthesis and the Preah Vihear lecture.",
   matrix: {
-    cols: ["Konfrontasi", "Sabah", "Third Indochina War"],
+    cols: ["Konfrontasi", "Sabah", "Third Indochina War", "Preah Vihear"],
     rows: [
-      { h: "Historical animosity", cells: ["Strong (superiority complex)", "Moderate (Sulu legacy)", "Very strong (centuries of expansion)"] },
-      { h: "Colonial borders", cells: ["Present (Borneo territories)", "Central (1878 ambiguity)", "Present (French Indochina unity)"] },
-      { h: "Ethnic-religious rift", cells: ["Minor", "Significant (Moro/Sabah Muslims)", "Significant (Sinic vs Indic)"] },
-      { h: "Ideology", cells: ["Central (communism vs anti-communism)", "Minor", "Central (Sino-Soviet split)"] },
-      { h: "Border / security", cells: ["Present", "Not contiguous (maritime)", "Central trigger"] },
-      { h: "Role of leaders", cells: ["Decisive (Sukarno/Suharto)", "Decisive (Macapagal/Marcos)", "Significant (Pol Pot/Hanoi)"] },
-      { h: "Great powers", cells: ["Moderate (UK/Aus/NZ via AMDA)", "Minimal", "Decisive (USSR/China/US)"] },
-      { h: "Resolution", cells: ["Regime change; ASEAN co-founding (1965–67)", "Abeyance; 1993 visit, 1998 shelving", "Doi Moi + Paris Conference (1991)"] }
+      { h: "Historical animosity", cells: ["Strong (superiority complex)", "Moderate (Sulu legacy)", "Very strong (centuries of expansion)", "Strong (Siamese incursions; mutual tropes)"] },
+      { h: "Colonial borders", cells: ["Present (Borneo territories)", "Central (1878 ambiguity)", "Present (French Indochina unity)", "Central (1904 treaty vs 1907 map)"] },
+      { h: "Ethnic-religious rift", cells: ["Minor", "Significant (Moro/Sabah Muslims)", "Significant (Sinic vs Indic)", "Not stressed in notes"] },
+      { h: "Ideology", cells: ["Central (communism vs anti-communism)", "Minor", "Central (Sino-Soviet split)", "Significant (neutral Cambodia vs anti-communist Thailand)"] },
+      { h: "Border / security", cells: ["Present", "Not contiguous (maritime)", "Central trigger", "Present (1954 occupation; fear of communist infiltration)"] },
+      { h: "Role of leaders", cells: ["Decisive (Sukarno/Suharto)", "Decisive (Macapagal/Marcos)", "Significant (Pol Pot/Hanoi)", "Significant (Phibun, Sihanouk, Sarit)"] },
+      { h: "Great powers", cells: ["Moderate (UK/Aus/NZ via AMDA)", "Minimal", "Decisive (USSR/China/US)", "Indirect (France; Cold War backdrop of US and PRC)"] },
+      { h: "Resolution", cells: ["Regime change; ASEAN co-founding (1965–67)", "Abeyance; 1993 visit, 1998 shelving", "Doi Moi + Paris Conference (1991)", "ICJ ruling (1962) and Thai compliance; 4.6 km² still contested"] }
     ]
   },
   clusters: [],
@@ -605,7 +793,7 @@ L.push({
 });
 
 L.push({
-  id: "it-arg", order: 13, level: 1, parent: "it-top", kind: "argument",
+  id: "it-arg", order: 16, level: 1, parent: "it-top", kind: "argument",
   title: "Leaders or structure?",
   question: "'Leaders, rather than underlying factors, were the main cause of inter-state tension in SEA.' How far do you agree?",
   intro: "Weigh leaders' decisions against the structural factors that made particular pairs of states prone to conflict.",

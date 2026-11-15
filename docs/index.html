@@ -965,6 +965,10 @@ function sylEl(t){
       :el("span",{class:"hint",text:" — not in your notes, so nothing to learn from here yet"})))),
     el("div",{class:"hint",text:"Content points from the 9174 syllabus (2026)."}));
 }
+// Cards a topic's arguments don't reach (via their case studies or key cards): timelines, definitions, revision aids.
+function bankLeft(t){ const cs=SUMMARIES[t].cases, got=new Set();
+  bankOf(t).forEach(a=>{ [...(a.cases||[]),...(a.also||[])].forEach(i=>((cs[i]||{}).cards||[]).forEach(k=>got.add(k))); (a.cards||[]).forEach(k=>got.add(k)); });
+  const all=CASES.filter(c=>c.t===t); return {all:all.length, left:all.filter(c=>!got.has(c.id))}; }
 function openBank(t,cover){
   const T=TOPIC[t], args=bankOf(t); round={mode:"summary",queue:[],i:0,results:[],requeued:new Set()};
   if($("#session").hidden){ $("#session").hidden=false; document.body.style.overflow="hidden"; history.pushState({session:true},""); }
@@ -972,6 +976,7 @@ function openBank(t,cover){
   const s=stageClear(), shown=new Set();
   s.append(el("div",{class:"sum casegroup"}, el("div",{class:"eyebrow",text:`${T.paper} · ${T.theme} · Exam bank`}), el("h2",{class:"qtitle",text:T.name}),
     el("p",{class:"hint",text:`Memorise the ${bankCount(t)} core case studies first; every argument also lists other examples briefly, and all ${SUMMARIES[t].cases.length} case studies are summarised by state at the bottom.`}),
+    (()=>{ const L=bankLeft(t); return el("p",{class:"hint",text:`Covers all ${L.all} cards in your notes: ${L.all-L.left.length} sit under an argument below; the other ${L.left.length} (timelines, definitions, revision aids) are listed at the very bottom.`}); })(),
     sylEl(t),
     el("div",{class:"row"}, el("button",{class:"linkbtn",text:cover?"Show all facts":"Cover facts to test myself",onclick:()=>openBank(t,!cover)})),
     args.map((a,k)=>el("div",{class:"bankarg"}, el("h3",{text:`${k+1}. ${a.arg}`}), a.cases.filter(i=>SUMMARIES[t].cases[i]).map(i=>bankCase(t,i,shown,cover)),
@@ -980,6 +985,9 @@ function openBank(t,cover){
     el("h3",{text:`Every case study at a glance (${SUMMARIES[t].cases.length})`}),
     el("p",{class:"hint",text:"Grouped by state where your notes name one. ★ = core example above. Tap a line for its facts."}),
     glanceGroups(t).map(g=>el("div",{class:"glance"}, el("div",{class:"eyebrow",text:g.g}), g.items.map(i=>briefCase(t,i,coreSet(t).has(i))))),
+    (()=>{ const L=bankLeft(t).left; return L.length?[el("h3",{text:`Timelines, definitions and revision aids (${L.length})`}),
+      el("p",{class:"hint",text:"Everything else in your notes for this topic, so nothing is left out. Tap a line for its points."}),
+      el("div",{class:"glance"}, L.map(c=>briefCard(c.id)))]:null; })(),
     el("div",{class:"srctag",text:`Facts and arguments taken only from your ${T.src} notes summary.`})));
   setActions(el("button",{class:"btn ghost",text:"Read summary",onclick:()=>openSummary(t)}),
     el("button",{class:"btn",text:"Drill arguments",onclick:()=>drillBank(t,shuffle(args.map((_,k)=>k)),0)}));
@@ -1383,7 +1391,7 @@ if("serviceWorker" in navigator && location.protocol.startsWith("http")){
   navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});
 }
 
-$("#foot").textContent=`App version 57 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
+$("#foot").textContent=`App version 58 · ${CASES.length} cards (${CASES.filter(c=>c.qs==="notes").length} with questions taken from your notes) and ${ESSAYS.length} essay prompts, covering every study-notes file in your History Drive folder. Every fact comes from those notes; each card says which file.`;
 window.APP={el,$,CASE,TOPIC,TOPICS,startLearn,setActions,openSession,stageClear,save,grade,intervalDays,openSummary,state:()=>state,
   touchDay:()=>{ const d=dayKey(); state.days[d]=(state.days[d]||0)+1; }};
 renderToday();

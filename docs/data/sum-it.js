@@ -1,11 +1,12 @@
-// Summary of Inter-state tensions in SEA (Konfrontasi, Sabah, Third Indochina War) — from H2 History - Inter-State Tensions in SEA (Konfrontasi, Sabah, Third Indochina War)-1.txt
+// Summary of Inter-state tensions in SEA (Konfrontasi, Sabah, Third Indochina War, Preah Vihear) — from H2 History - Inter-State Tensions in SEA (Konfrontasi, Sabah, Third Indochina War)-1.txt
 (window.SUMMARIES = window.SUMMARIES || {})["it"] = {
   question: "What caused inter-state tensions in Southeast Asia — underlying structural factors or immediate triggers and the role of leaders — and what were the consequences for bilateral relations and for regional cooperation / ASEAN?",
   overview: [
     "The topic rests on one framework: underlying factors explain why some pairs of states are prone to clash (historical animosity, colonial-legacy borders, ethnic-religious rifts, ideology, shared borders and security, economic interests), while immediate factors explain why tension broke out at a specific time. Leaders matter separately — ‘States do not make policies, statesmen do’.",
     "Konfrontasi (1963–1966) grew from Indonesia’s superiority complex, emboldened by success over West Irian and triggered by the Brunei Revolt; it ended only when Suharto displaced Sukarno. The Sabah dispute (1962–present) rests on the ambiguous 1878 pajakan agreement, was activated by Macapagal and inflamed by Marcos, and has been held in abeyance since the Ramos–Mahathir era.",
     "The Third Indochina War (1978–1979) is the clearest multi-causal case: Vietnamese cultural superiority and expansionism, genuine security threats from the Khmer Rouge, the collapse of the Sino-Vietnamese alliance and the Soviet treaty ‘green light’ combined to produce the 25 Dec 1978 invasion and China’s Feb 1979 border war.",
-    "Consequences varied: disputes managed peacefully (the ASEAN Way) had minimal impact on regional cooperation, while spats and armed conflict were deleterious. Cross-case links include leaders’ domestic diversion (Sukarno, Marcos), resolution through leadership change, colonial borders splitting communities, great-power ‘green lights’, and divergent ASEAN threat perceptions of Vietnam."
+    "Consequences varied: disputes managed peacefully (the ASEAN Way) had minimal impact on regional cooperation, while spats and armed conflict were deleterious. Cross-case links include leaders’ domestic diversion (Sukarno, Marcos), resolution through leadership change, colonial borders splitting communities, great-power ‘green lights’, and divergent ASEAN threat perceptions of Vietnam.",
+    "The dispute over Preah Vihear (1904–2011) layers causes: centuries of Siamese–Khmer animosity; a colonial legacy in which the 1907 French map contradicted the 1904 watershed treaty; Thai military nationalism that made the temple a symbol of ‘lost territories’ in 1941–46; and Cold War suspicion of Sihanouk’s neutrality, which framed the 1954 occupation and the 1958–62 crisis. The ICJ ruled for Cambodia (15 Jun 1962) and Sarit complied, but the ruling left 4.6 km² unsettled and the dispute returned in 2008–11."
   ],
   themes: [
     { h: "Underlying vs immediate factors", pts: [
@@ -30,6 +31,13 @@
       "Peaceful management/resolution (ASEAN Way) — minimal or even beneficial impact on regional cooperation",
       "Diplomatic spats or armed conflict — deleterious effects on regional cooperation",
       "Konfrontasi ended by regime change (1965–67); Sabah held in abeyance (1993 Ramos visit; 1998 shelving); Third Indochina War resolved through Doi Moi and the 1991 Paris Peace Conference"
+    ] },
+    { h: "Preah Vihear: causes, crisis and management", pts: [
+      "Historical animosity explains propensity and endurance (Deth), but the dispute only emerged in the 1940s and vanished in the 1970s–80s when both governments were anti-communist",
+      "Colonial legacy: the 1904 watershed line vs the 1907 French map; Siam’s failure to protest became the basis of the 1962 ICJ ruling",
+      "Thai nationalism: the ‘National Humiliation’ discourse and Phibun’s 1941 press campaign created the Thai myth of Preah Vihear; the 1946 ‘partition’ embedded it",
+      "Cold War: SEATO refusal, Cambodia’s recognition of the PRC (Jul 1958) and Thai-backed dissidents led to the ‘Bangkok Plot’ accusation",
+      "Elites vs masses: the press and public multiplied tension, but Sarit complied with the ICJ for the King, fear of the PRC and international prestige"
     ] }
   ],
   cases: [
@@ -100,7 +108,47 @@
     { name: "Lahad Datu standoff", when: "Feb–Mar 2013", cards: ["it-lahad-datu", "it-sabah-chron-3"],
       what: "200–300 armed men of the ‘Royal Army of Sulu’, acting for self-proclaimed Sultan Jamalul Kiram III, landed in Sabah and were defeated after a month of clashes.",
       facts: ["80 dead (68 militants, 10 Malaysian security personnel, 2 civilians)", "Philippine government refused to back Kiram and told the militants to stand down", "Domestic Filipino protests show nationalist sentiment remains a live constraint", "Malaysia halted its annual payment to the Sultan of Sulu’s heirs (2013), revealed in July 2020"],
-      why: "Confirms the durability of the status-quo management framework even when non-state actors tried to force the issue." }
+      why: "Confirms the durability of the status-quo management framework even when non-state actors tried to force the issue." },
+    { name: "Siamese–Khmer animosity and mutual perceptions", when: "13th c.–1950s", cards: ["pv-hist", "pv-perceptions", "pv-deth-pattern", "pv-temple"],
+      what: "Centuries of Siamese incursions into Khmer lands, and Cambodian kings’ ‘betrayals’ of Siam, left each side distrusting the other.",
+      facts: ["Siam captured Angkor Wat in 1421; north-western provinces ceded to Siam 1794; Cambodia sought French protection to escape Siam", "‘Preah Ko Preah Keo’ legend cast the Siamese as invasive and tricky; Thai royalist history cast Cambodia as a ‘younger sibling’", "The dispute only emerged in the 1940s and was absent in the 1970s–80s when both governments were anti-communist (Deth)"],
+      why: "Explains the propensity for tension and why neither side would compromise, but not the timing of the dispute." },
+    { name: "1904 treaty vs the 1907 map", when: "1893–1934", cards: ["pv-1893", "pv-1904-1907", "pv-dejure"],
+      what: "The 1904 Franco-Siamese Treaty set the border on a watershed line, but the 1907 French-made map placed all of Preah Vihear in Cambodia, and Siam never protested.",
+      facts: ["1893 crisis: Siam ceded Lao and Khmer regions — later read as French bullying", "Europeans saw borders as lines on maps; Siam saw zones and natural geography", "Damrong saw a French flag over the temple in 1930; Siam’s 1934 survey found the discrepancy — no protest"],
+      why: "The colonial legacy created the legal foundation of the dispute; Siamese silence decided the ICJ case in 1962." },
+    { name: "Phibun and the Thai myth of Preah Vihear", when: "1932–1946", cards: ["pv-humiliation", "pv-phibun-1941", "pv-1946"],
+      what: "Thai military governments built a ‘National Humiliation’ discourse; when Japan refused Angkor Wat in 1941, Phibun publicised Preah Vihear as the prize, which was lost again in 1946.",
+      facts: ["Mar 1941 Tokyo Peace Accord: Battambang and Siem Reap, not Angkor; Preah Vihear “just as important as Angkor Wat”", "Phibun gave 2,000 baht to restore it — Peleggi: to appropriate royal prerogatives", "France used its Security Council seat to force the return; the 1946 Washington Accord was remembered as the ‘partition’"],
+      why: "Turned the temple “from a pile of stones to a symbol of prestige” in Thai national consciousness." },
+    { name: "Thai occupation of Preah Vihear", when: "1953–Aug 1954", cards: ["pv-1953", "pv-chron-1"],
+      what: "After Cambodia refused to join SEATO and as France withdrew, Thailand raised its flag over the temple (1953) and occupied it with troops (1 Aug 1954).",
+      facts: ["Sihanouk’s ‘Crusade for Independence’ (1953); independence 9 Nov 1953", "Geneva Conference (Jul 1954) dissolved French Indochina", "Two-party negotiations 1954–58 followed"],
+      why: "Thailand exploited a vulnerable new state; Sihanouk saw a threat to territorial integrity and recast history as Thai aggression (Strate)." },
+    { name: "Cold War suspicion and the ‘Bangkok Plot’", when: "1955–Jan 1959", cards: ["pv-coldwar", "pv-prc", "pv-dissidents"],
+      what: "Neutral Cambodia and anti-communist Thailand read each other’s moves as threats, culminating in Sihanouk’s ‘Bangkok Plot’ accusation.",
+      facts: ["Jul 1958: Cambodia recognised the PRC after South Vietnamese incursions", "Thailand backed Son Ngoc Thanh’s Khmer Serei; Dap Chhuon’s failed 1959 coup; Sam Sary’s link unproven", "Dec 1958 Thai aide-memoire blamed “foreign influences”"],
+      why: "Explains why bilateral talks collapsed and why tensions peaked in 1958–62." },
+    { name: "Sihanouk takes the dispute to the ICJ", when: "Sep 1958–Oct 1961", cards: ["pv-icj-why", "pv-relations", "pv-chron-2"],
+      what: "Sihanouk announced on 4 Sep 1958 that Cambodia would leave two-party talks for the ICJ, formally submitting on 6 Oct 1959; relations were broken in 1958 and 1961.",
+      facts: ["Thailand held the advantage in bilateral talks; fear it would stall until its ICJ commitment lapsed in 1961", "24 Nov 1958 suspension; restored 6 Feb 1959 via Hammarskjold’s envoy", "Oct 1961 Sarit’s ‘pig challenging a lion’ insult; ties severed 23 Oct 1961"],
+      why: "Internationalised the dispute; Strate stresses Sihanouk’s domestic and foreign-policy motives." },
+    { name: "Thai nationalist reaction, 1958–1962", when: "Sep 1958–1962", cards: ["pv-thai-public", "pv-donations", "pv-sarit-rhetoric", "pv-elites-masses"],
+      what: "Thai crowds, press and government responded with rallies, anti-imperialist press campaigns, a national fundraising drive and renewed irredentist claims.",
+      facts: ["7 Sep 1958 rally of 10,000 at Sanam Luang", "‘One person, one baht’ and Sarit’s defense fund passed 1 million baht by Nov 1959", "Editorials demanded Lan Na, Champassak, Battambang and Siem Reap"],
+      why: "Shows the press as both symptom and cause, and the gap between public outrage and elite restraint." },
+    { name: "The 1962 ICJ verdict", when: "1960–15 Jun 1962", cards: ["pv-icj-case", "pv-verdict"],
+      what: "The ICJ rejected Thai objections to its jurisdiction (1961) and ruled 9–3 that the temple was Cambodian because Thailand had accepted the 1907 map.",
+      facts: ["Thai preliminary objections filed 23 May 1960; rejected 26 May 1961", "Missed chances to protest: 1907, 1930, 1934, 1925, 1937, 1946–47", "7–5: Thailand to return objects removed since 1954"],
+      why: "International law, not bilateral talks, settled sovereignty over the temple." },
+    { name: "Thai outrage and compliance", when: "Jun–Jul 1962", cards: ["pv-thai-verdict", "pv-compliance"],
+      what: "Despite mass protests and calls to fight, Sarit announced on 7 Jul 1962 that Thailand would comply, while removing its flagpole intact and fencing off the ruins.",
+      facts: ["50,000 students protested; the ICJ was called neo-imperialist and communist; Thai–Polish relations suffered", "Reasons for compliance: the King’s caution, fear of Cambodia’s PRC ties, UN prestige", "Moderate economic, security and political voices went unpublished"],
+      why: "Elites, not the masses, decided the outcome; compliance was real but grudging." },
+    { name: "Aftermath and re-emergence", when: "1963–2011", cards: ["pv-limits", "pv-later", "pv-2008", "pv-chron-3", "pv-synthesis"],
+      what: "The ruling left the 4.6 km² around the temple unsettled; the dispute lay dormant while interests aligned, then returned violently after the 2008 UNESCO listing.",
+      facts: ["3 Apr 1963 Thai raid; de Ribbing’s UN mission failed (1966–68)", "2000 MoU and Joint Border Commission hampered by mistrust", "2011 clashes killed 26; ASEAN urged restraint; ICJ provisional demilitarised zone; troops withdrawn Dec 2011"],
+      why: "Shows the limits of the ICJ ruling and of the ASEAN Way in resolving the dispute." }
   ],
   historians: [
     { who: "Chandran Jeshurun (Malaysia: Fifty Years of Diplomacy)", view: "The postwar political evolution of British-influenced Malaya and revolutionary Indonesia predetermined their uneasy relationship." },
@@ -115,14 +163,20 @@
     { who: "William J. Duiker (Vietnam since the Fall of Saigon)", view: "The conflict was rooted in centuries of Khmer–Vietnamese animosity since the ‘march to the South’, and the border dispute alone could have been resolved without violence." },
     { who: "Chang Pao-Min", view: "The Soviet-Vietnamese Treaty of Friendship ‘gave the final green light’ for the invasion." },
     { who: "Anne Gilks (The Breakdown of the Sino-Vietnamese Alliance, 1970–1979)", view: "After the war the danger of Soviet encirclement through Vietnam became more real, raising the stakes for China and the USSR." },
-    { who: "Michel Oksenberg (4 Dec 1979)", view: "Hanoi must face protracted resistance, Chinese military pressure and isolation — a Cold War view that applied ‘genocidal’ to Vietnam." }
+    { who: "Michel Oksenberg (4 Dec 1979)", view: "Hanoi must face protracted resistance, Chinese military pressure and isolation — a Cold War view that applied ‘genocidal’ to Vietnam." },
+    { who: "Sok Udom Deth (2020)", view: "The antagonistic pattern of relations explains why the Preah Vihear conflict endured; nationalist rhetoric mattered when the two governments lacked shared interests and ideology." },
+    { who: "Shane Strate (The Lost Territories, 2015)", view: "Phibun turned Preah Vihear into a national memorial; Sihanouk used the dispute against domestic rivals and to sustain non-alignment; the Thai press acted as an echo chamber in 1962." },
+    { who: "Maurizio Peleggi", view: "Phibun’s funding of the temple’s restoration was meant to appropriate prerogatives customarily associated with the monarch." },
+    { who: "Pou Sothirak", view: "The Joint Border Commission set up in 2000 was hampered by terrain, survey problems and mistrust between the two sides." }
   ],
   exam: [
     "Use the underlying vs immediate distinction explicitly: show both the structural propensity and the proximate trigger for each dispute.",
-    "Compare causes across the three cases with the comparative table: leaders decisive in Konfrontasi and Sabah; great-power role decisive in the Third Indochina War; colonial borders central to Sabah.",
+    "Compare causes across the cases with the comparative table: leaders decisive in Konfrontasi and Sabah; great-power role decisive in the Third Indochina War; colonial borders central to Sabah.",
     "Third Indochina War resists single-factor explanation — culture alone misses timing, security alone misses scale, Sino-Vietnamese rivalry alone misses why Cambodia, the Cold War alone misses Vietnamese motivation.",
     "Thematic links: domestic diversion (Sukarno, Marcos — Aquino draws the parallel); resolution through leadership change; great-power ‘green lights’; divergent ASEAN views of Vietnam (Malaysia/Indonesia vs Thailand/Singapore).",
     "Read sources in context with the four-part checklist; watch for Cold War bias (e.g. Oksenberg calling Vietnam’s occupation ‘genocidal’).",
-    "Syllabus boundary: the South China Sea is not a case study for this topic."
+    "Syllabus boundary: the South China Sea is not a case study for this topic.",
+    "Preah Vihear: layer the causes — animosity (propensity), colonial maps (legal basis), Thai military nationalism (the temple as symbol), the Cold War (timing of 1953–62) — and separate elites from masses, rhetoric from action.",
+    "Preah Vihear management: the 1962 ICJ ruling settled the temple but not the 4.6 km² around it; Thai compliance rested on the King, fear of the PRC and UN prestige; ASEAN’s 2008–11 role was limited by the ASEAN Way."
   ]
 };
