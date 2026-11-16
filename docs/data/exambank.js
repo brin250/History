@@ -201,97 +201,140 @@ window.EXAMBANK = {
  ],
  "bs": [
   {
-   "arg": "Cause: Yugoslavia's economic and political collapse",
+   "arg": "Cause — domestic politics: communism collapsed and the federation broke down",
    "cases": [
     0
    ],
    "also": [
-    1,
-    2,
-    3
+    1
    ],
    "cards": [
-    "bs-end-coldwar-econ",
-    "bs-inequality"
+    "bs-causes-summary"
    ]
   },
   {
-   "arg": "Trigger: referendum and recognition",
+   "arg": "Cause — economic interests: debt, austerity, failed reform and regional inequality",
+   "cases": [
+    20
+   ],
+   "also": [
+    0
+   ],
+   "cards": []
+  },
+  {
+   "arg": "Cause — ethnic and religious nationalisms: old grievances mobilised by the 1990 parties",
+   "cases": [
+    1
+   ],
+   "also": [],
+   "cards": [
+    "bs-ottoman-habsburg"
+   ]
+  },
+  {
+   "arg": "Trigger: the independence referendum and international recognition (1992)",
    "cases": [
     5
    ],
    "also": [
     4
+   ],
+   "cards": []
+  },
+  {
+   "arg": "Domestic actors: the Republic vs Republika Srpska and Herzeg-Bosnia",
+   "cases": [
+    2,
+    3
+   ],
+   "also": [
+    11,
+    14
+   ],
+   "cards": [
+    "bs-republic"
    ]
   },
   {
-   "arg": "Development: ethnic nationalism drove the war (ethnic cleansing)",
+   "arg": "Domestic actors: ethnic cleansing by all three factions — the Serb campaign the largest",
    "cases": [
-    7
+    7,
+    11
    ],
    "also": [
     6,
-    11
-   ]
+    17
+   ],
+   "cards": []
   },
   {
-   "arg": "Management: UN eased suffering but could not protect",
+   "arg": "External states: Serbia armed the Bosnian Serbs, Russia shielded them, the USA moved from reluctance to force",
+   "cases": [
+    21
+   ],
+   "also": [
+    14,
+    18
+   ],
+   "cards": []
+  },
+  {
+   "arg": "UN and regional organisations: EC and UN mediation, NATO from monitoring to combat, the Contact Group",
+   "cases": [
+    10,
+    15,
+    16
+   ],
+   "also": [
+    4,
+    13
+   ],
+   "cards": []
+  },
+  {
+   "arg": "Management — UN peacekeeping: UNPROFOR eased suffering but could not protect",
    "cases": [
     9,
     17
    ],
    "also": [
-    8,
-    12
-   ]
+    12,
+    6
+   ],
+   "cards": []
   },
   {
-   "arg": "Management: peace plans failed until force shifted the balance",
+   "arg": "Management — sanctions and the arms embargo: neither prevented the war nor deterred the aggressors",
+   "cases": [
+    8
+   ],
+   "also": [],
+   "cards": []
+  },
+  {
+   "arg": "Management — peace plans failed until force shifted the balance",
    "cases": [
     10,
     18
    ],
    "also": [
+    4,
     13,
     14,
-    15,
     16
-   ]
+   ],
+   "cards": []
   },
   {
-   "arg": "Outcome: Dayton ended the war but entrenched division",
+   "arg": "Outcome — Dayton ended the war but entrenched division",
    "cases": [
     19
    ],
-   "also": []
-  },
-  {
-   "arg": "Cause: ethnic and religious nationalisms; non-state actors' aims",
-   "cases": [
-    1,
-    2
-   ],
    "also": [
-    3
+    18
    ],
-   "cards": [
-    "bs-ottoman-habsburg",
-    "bs-republic"
-   ]
-  },
-  {
-   "arg": "Role of the major powers and regional organisations",
-   "cases": [
-    16,
-    14
-   ],
-   "also": [
-    4,
-    15
-   ],
-   "cards": [
-    "bs-us-overview"
-   ]
+   "cards": []
   }
  ],
  "cg": [
@@ -1706,4 +1749,4 @@ window.EXAMBANK = {
   }
  ]
 };
-window.SYLLABUS = {"cw1":[{"area":"Causes for the emergence of tensions between the USA and USSR","args":[0,5,7]},{"area":"Manifestations: Yalta and Potsdam","args":[1]},{"area":"Manifestations: Sovietisation of Eastern Europe","args":[2]},{"area":"Manifestations: Iron Curtain speech, Long Telegram","args":[3]},{"area":"Manifestations: Truman Doctrine and Marshall Plan","args":[3]},{"area":"Manifestations: Berlin Blockade, NATO and Warsaw Pact","args":[4]},{"area":"Historical interpretations of the origins","args":[6]}],"cw2":[{"area":"Korea: China's emergence and Cold War tensions in Asia","args":[0]},{"area":"Korea: outbreak and development — superpowers, China, North and South Korea","args":[0,1]},{"area":"Korea: impact on the Cold War","args":[6]},{"area":"Vietnam: impact of the First Indochina War","args":[4]},{"area":"Vietnam: outbreak and development — superpowers, China, North and South Vietnam","args":[4,5]},{"area":"Vietnam: impact on the Cold War","args":[8]},{"area":"Cuba: impact of the Cuban Revolution","args":[2]},{"area":"Cuba: outbreak and development — superpowers and Cuba","args":[3]},{"area":"Cuba: impact on the Cold War","args":[7]}],"cw3":[{"area":"USA: renewed confrontation and containment — arms control","args":[1,6]},{"area":"USA: Strategic Defense Initiative","args":[1]},{"area":"USA: Reagan Doctrine","args":[1]},{"area":"USSR: economic problems","args":[0]},{"area":"USSR: Gorbachev's New Thinking and the Sinatra Doctrine","args":[3]},{"area":"Eastern European movements: Poland and East Germany","args":[4,7]},{"area":"Historical interpretations of the end of the Cold War","args":[1,3,4,8]}],"ge":[{"area":"Growth: post-war economic reconstruction","args":[0]},{"area":"Growth: role of the USA, Western Europe and Japan","args":[0,2]},{"area":"Growth: role of multinational corporations","args":[6]},{"area":"Growth: role of international organisations and arrangements","args":[1]},{"area":"Challenges: 1973 and 1979 oil crises","args":[4]},{"area":"Challenges: protectionism","args":[7]},{"area":"Challenges: debt crises of the 1980s","args":[5]},{"area":"Crisis built into growth vs external shock","args":[3,4,8]}],"ea":[{"area":"Japan: government intervention","args":[1,8]},{"area":"Japan: keiretsu system","args":[2]},{"area":"Japan: socio-economic changes","args":[6]},{"area":"Japan: international developments","args":[0]},{"area":"China: problems of the Maoist economy","args":[3]},{"area":"China: state intervention","args":[7,9]},{"area":"China: market-oriented reforms","args":[4]},{"area":"China: open door policy and international developments","args":[5]}],"ai":[{"area":"Causes: decolonisation and territorial sovereignty","args":[0]},{"area":"Causes: nationalism, religion, security, economic interests","args":[4,7]},{"area":"Actors: combatant states","args":[6]},{"area":"Actors: the superpowers","args":[5]},{"area":"Actors: the United Nations","args":[1]},{"area":"Management: diplomacy","args":[2,3]},{"area":"Management: peacekeeping","args":[1,3]}],"ip":[{"area":"Causes: decolonisation and territorial sovereignty","args":[0]},{"area":"Causes: security, nationalism, religion","args":[6]},{"area":"Causes: economic interests","args":[7]},{"area":"Actors: combatant states","args":[1,5,8]},{"area":"Actors: the superpowers","args":[4]},{"area":"Actors: the United Nations","args":[2]},{"area":"Management: diplomacy","args":[3,9]},{"area":"Management: peacekeeping","args":[2,9]}],"cg":[{"area":"Causes: decolonisation","args":[0]},{"area":"Causes: domestic politics, ethnic nationalisms","args":[5]},{"area":"Causes: economic interests","args":[1]},{"area":"Actors: domestic state and non-state","args":[1,5]},{"area":"Actors: major powers and external states","args":[2,4]},{"area":"Actors: the UN and regional organisations","args":[3]},{"area":"Management: peace processes","args":[4,6]}],"bs":[{"area":"Causes: domestic politics and economic interests","args":[0]},{"area":"Causes: ethnic and religious nationalisms","args":[2,6]},{"area":"Actors: domestic state and non-state","args":[1,6]},{"area":"Actors: major powers and external states","args":[4,7]},{"area":"Actors: the UN and regional organisations","args":[3,7]},{"area":"Management: peace processes","args":[4,5]}],"ns":[{"area":"Democratic and authoritarian features of forms of government","args":[3,4,5,8]},{"area":"Establishment: decolonisation experience","args":[0,1]},{"area":"Establishment: role of local elites and masses","args":[2]},{"area":"Establishment: Cold War developments","args":[6]},{"area":"Consolidation: role of government leaders","args":[4,5]},{"area":"Consolidation: sources of power — elections, military, traditional institutions, performance","args":[3,7]},{"area":"Consolidation: political challenges and popular opposition","args":[4]},{"area":"Consolidation: Cold War developments","args":[4,6]}],"nu":[{"area":"Need for national unity and ethnic separatism","args":[2,7]},{"area":"Approach: dominant culture","args":[0,3]},{"area":"Approach: multiculturalism","args":[4]},{"area":"Tools: education, language, religion","args":[6]},{"area":"Tool: ideology","args":[1]},{"area":"Outcomes of efforts to build national unity","args":[0,4,5,7]}],"ec":[{"area":"Pursuit of growth, equity and nationalism","args":[0,2,9]},{"area":"Agricultural sector","args":[6]},{"area":"Industrial sector: ISI to EOI","args":[0,1]},{"area":"Financial services sector","args":[5,8]},{"area":"Factors: role of government","args":[0,3,4,10]},{"area":"Factors: private businesses and external conditions","args":[7]},{"area":"Outcomes: growth, equity, nationalism","args":[0,2,5]}],"as":[{"area":"Formation: regional interests, member-state interests, Cold War","args":[0]},{"area":"Building regional stability and security","args":[1,2,6]},{"area":"Promoting regional economic cooperation","args":[3]},{"area":"Intra-ASEAN relations","args":[1,4]},{"area":"Relations between ASEAN and external powers","args":[2,5]}],"it":[{"area":"Causes of inter-state tensions","args":[0,1,2,5,6,7]},{"area":"Consequences: regional cooperation and security","args":[3,4,9]},{"area":"Case study: dispute over Sabah","args":[0]},{"area":"Case study: Konfrontasi","args":[1]},{"area":"Case study: outbreak of the Third Indochina War","args":[2]},{"area":"Case study: dispute over Preah Vihear","args":[7,8,9]}],"wd":[{"area":"Causes: pattern of bilateral relations since Separation","args":[0]},{"area":"Causes: Malaysian domestic politics and leaders","args":[1]},{"area":"Management: cooperation and reduced dependence","args":[2,3]}]};
+window.SYLLABUS = {"cw1":[{"area":"Causes for the emergence of tensions between the USA and USSR","args":[0,5,7]},{"area":"Manifestations: Yalta and Potsdam","args":[1]},{"area":"Manifestations: Sovietisation of Eastern Europe","args":[2]},{"area":"Manifestations: Iron Curtain speech, Long Telegram","args":[3]},{"area":"Manifestations: Truman Doctrine and Marshall Plan","args":[3]},{"area":"Manifestations: Berlin Blockade, NATO and Warsaw Pact","args":[4]},{"area":"Historical interpretations of the origins","args":[6]}],"cw2":[{"area":"Korea: China's emergence and Cold War tensions in Asia","args":[0]},{"area":"Korea: outbreak and development — superpowers, China, North and South Korea","args":[0,1]},{"area":"Korea: impact on the Cold War","args":[6]},{"area":"Vietnam: impact of the First Indochina War","args":[4]},{"area":"Vietnam: outbreak and development — superpowers, China, North and South Vietnam","args":[4,5]},{"area":"Vietnam: impact on the Cold War","args":[8]},{"area":"Cuba: impact of the Cuban Revolution","args":[2]},{"area":"Cuba: outbreak and development — superpowers and Cuba","args":[3]},{"area":"Cuba: impact on the Cold War","args":[7]}],"cw3":[{"area":"USA: renewed confrontation and containment — arms control","args":[1,6]},{"area":"USA: Strategic Defense Initiative","args":[1]},{"area":"USA: Reagan Doctrine","args":[1]},{"area":"USSR: economic problems","args":[0]},{"area":"USSR: Gorbachev's New Thinking and the Sinatra Doctrine","args":[3]},{"area":"Eastern European movements: Poland and East Germany","args":[4,7]},{"area":"Historical interpretations of the end of the Cold War","args":[1,3,4,8]}],"ge":[{"area":"Growth: post-war economic reconstruction","args":[0]},{"area":"Growth: role of the USA, Western Europe and Japan","args":[0,2]},{"area":"Growth: role of multinational corporations","args":[6]},{"area":"Growth: role of international organisations and arrangements","args":[1]},{"area":"Challenges: 1973 and 1979 oil crises","args":[4]},{"area":"Challenges: protectionism","args":[7]},{"area":"Challenges: debt crises of the 1980s","args":[5]},{"area":"Crisis built into growth vs external shock","args":[3,4,8]}],"ea":[{"area":"Japan: government intervention","args":[1,8]},{"area":"Japan: keiretsu system","args":[2]},{"area":"Japan: socio-economic changes","args":[6]},{"area":"Japan: international developments","args":[0]},{"area":"China: problems of the Maoist economy","args":[3]},{"area":"China: state intervention","args":[7,9]},{"area":"China: market-oriented reforms","args":[4]},{"area":"China: open door policy and international developments","args":[5]}],"ai":[{"area":"Causes: decolonisation and territorial sovereignty","args":[0]},{"area":"Causes: nationalism, religion, security, economic interests","args":[4,7]},{"area":"Actors: combatant states","args":[6]},{"area":"Actors: the superpowers","args":[5]},{"area":"Actors: the United Nations","args":[1]},{"area":"Management: diplomacy","args":[2,3]},{"area":"Management: peacekeeping","args":[1,3]}],"ip":[{"area":"Causes: decolonisation and territorial sovereignty","args":[0]},{"area":"Causes: security, nationalism, religion","args":[6]},{"area":"Causes: economic interests","args":[7]},{"area":"Actors: combatant states","args":[1,5,8]},{"area":"Actors: the superpowers","args":[4]},{"area":"Actors: the United Nations","args":[2]},{"area":"Management: diplomacy","args":[3,9]},{"area":"Management: peacekeeping","args":[2,9]}],"cg":[{"area":"Causes: decolonisation","args":[0]},{"area":"Causes: domestic politics, ethnic nationalisms","args":[5]},{"area":"Causes: economic interests","args":[1]},{"area":"Actors: domestic state and non-state","args":[1,5]},{"area":"Actors: major powers and external states","args":[2,4]},{"area":"Actors: the UN and regional organisations","args":[3]},{"area":"Management: peace processes","args":[4,6]}],"bs":[{"area":"Causes: domestic politics and economic interests","args":[0,1,3]},{"area":"Causes: ethnic and religious nationalisms","args":[2]},{"area":"Actors: domestic state and non-state","args":[4,5]},{"area":"Actors: major powers and external states","args":[6,7]},{"area":"Actors: the UN and regional organisations","args":[7,8]},{"area":"Management: peace processes","args":[8,9,10,11]}],"ns":[{"area":"Democratic and authoritarian features of forms of government","args":[3,4,5,8]},{"area":"Establishment: decolonisation experience","args":[0,1]},{"area":"Establishment: role of local elites and masses","args":[2]},{"area":"Establishment: Cold War developments","args":[6]},{"area":"Consolidation: role of government leaders","args":[4,5]},{"area":"Consolidation: sources of power — elections, military, traditional institutions, performance","args":[3,7]},{"area":"Consolidation: political challenges and popular opposition","args":[4]},{"area":"Consolidation: Cold War developments","args":[4,6]}],"nu":[{"area":"Need for national unity and ethnic separatism","args":[2,7]},{"area":"Approach: dominant culture","args":[0,3]},{"area":"Approach: multiculturalism","args":[4]},{"area":"Tools: education, language, religion","args":[6]},{"area":"Tool: ideology","args":[1]},{"area":"Outcomes of efforts to build national unity","args":[0,4,5,7]}],"ec":[{"area":"Pursuit of growth, equity and nationalism","args":[0,2,9]},{"area":"Agricultural sector","args":[6]},{"area":"Industrial sector: ISI to EOI","args":[0,1]},{"area":"Financial services sector","args":[5,8]},{"area":"Factors: role of government","args":[0,3,4,10]},{"area":"Factors: private businesses and external conditions","args":[7]},{"area":"Outcomes: growth, equity, nationalism","args":[0,2,5]}],"as":[{"area":"Formation: regional interests, member-state interests, Cold War","args":[0]},{"area":"Building regional stability and security","args":[1,2,6]},{"area":"Promoting regional economic cooperation","args":[3]},{"area":"Intra-ASEAN relations","args":[1,4]},{"area":"Relations between ASEAN and external powers","args":[2,5]}],"it":[{"area":"Causes of inter-state tensions","args":[0,1,2,5,6,7]},{"area":"Consequences: regional cooperation and security","args":[3,4,9]},{"area":"Case study: dispute over Sabah","args":[0]},{"area":"Case study: Konfrontasi","args":[1]},{"area":"Case study: outbreak of the Third Indochina War","args":[2]},{"area":"Case study: dispute over Preah Vihear","args":[7,8,9]}],"wd":[{"area":"Causes: pattern of bilateral relations since Separation","args":[0]},{"area":"Causes: Malaysian domestic politics and leaders","args":[1]},{"area":"Management: cooperation and reduced dependence","args":[2,3]}]};
