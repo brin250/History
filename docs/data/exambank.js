@@ -400,11 +400,10 @@ window.EXAMBANK = {
   {
    "arg": "Soviet expansion or security? (Sovietisation)",
    "cases": [
-    6
-   ],
-   "also": [
+    6,
     12
-   ]
+   ],
+   "also": []
   },
   {
    "arg": "US escalation: containment in action",
@@ -450,7 +449,9 @@ window.EXAMBANK = {
   },
   {
    "arg": "Historical interpretations of the origins: four schools",
-   "cases": [],
+   "cases": [
+    15
+   ],
    "also": [],
    "cards": [
     "cw1-traditionalist",
@@ -561,7 +562,9 @@ window.EXAMBANK = {
   },
   {
    "arg": "Korea: impact on the Cold War — militarised and extended containment",
-   "cases": [],
+   "cases": [
+    20
+   ],
    "also": [],
    "cards": [
     "koreaimpact",
@@ -577,7 +580,9 @@ window.EXAMBANK = {
   },
   {
    "arg": "Cuba: impact on the Cold War — a turning point… however",
-   "cases": [],
+   "cases": [
+    21
+   ],
    "also": [],
    "cards": [
     "cmcimpact",
@@ -589,9 +594,11 @@ window.EXAMBANK = {
   {
    "arg": "Vietnam: impact on the Cold War — Soviet gains, détente, rapprochement",
    "cases": [
+    22
+   ],
+   "also": [
     19
    ],
-   "also": [],
    "cards": [
     "vietnamimpact",
     "cw2-viet-detente",
@@ -714,7 +721,9 @@ window.EXAMBANK = {
   },
   {
    "arg": "Historical interpretations of the end: three schools",
-   "cases": [],
+   "cases": [
+    18
+   ],
    "also": [],
    "cards": [
     "cw3-triumphalist",
@@ -818,8 +827,12 @@ window.EXAMBANK = {
    "cases": [
     1
    ],
-   "also": [],
-   "cards": []
+   "also": [
+    6
+   ],
+   "cards": [
+    "ea-jp-consensus"
+   ]
   },
   {
    "arg": "China: Deng's state intervention — direction, institutions, a non-linear path",
@@ -1238,7 +1251,9 @@ window.EXAMBANK = {
   },
   {
    "arg": "Cause: security, nationalism and religion made Kashmir a zero-sum prize",
-   "cases": [],
+   "cases": [
+    19
+   ],
    "also": [],
    "cards": [
     "ip-security",

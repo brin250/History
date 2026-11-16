@@ -95,7 +95,11 @@
     { name: "Warsaw Pact", when: "May 1955", cards: ["cw1-warsaw-pact", "cw1-obs-1950-55"],
       what: "The USSR created the Warsaw Pact as a belated response to West Germany's NATO accession, completing the division of Europe.",
       facts: ["Created after West Germany formally joined NATO (May 1955)", "Originally defensive against a Western threat that never materialised; later used to invade Hungary (1956) and Czechoslovakia (1968)", "By 1955 Europe's division was complete across ideological, political, economic, geographic and military dimensions", "Eisenhower replaced Truman and Khrushchev succeeded Stalin, helping stabilise the Cold War"],
-      why: "Endpoint of Topic 1: strategic-security concerns remained the key driver, with the same defensive-vs-offensive action-reaction pattern." }
+      why: "Endpoint of Topic 1: strategic-security concerns remained the key driver, with the same defensive-vs-offensive action-reaction pattern." },
+    { name: "Four schools on the origins of the Cold War", when: "1940s–post-1991", cards: ["historiography1","cw1-traditionalist","cw1-revisionist","cw1-postrevisionist","cw1-postcoldwar","cw1-kissinger"],
+      what: "Historians have blamed, in turn, the USSR (Traditionalists, 1940s), the USA (Revisionists, 1960s), both but the USSR more (Post-Revisionists, 1970s–80s), and Stalin without a master plan (Post-Cold War school, after 1991).",
+      facts: ["Traditionalists (Feis, Schlesinger, Kennan): US officials using US sources blamed ideologically driven Soviet expansion; Revisionists (Williams, Kolko), shaped by Vietnam, blamed US anti-communism and economic expansion","Post-Revisionists (Gaddis, Leffler): both acted as strategic powers — US ‘empire by invitation’ vs Soviet ‘empire by imposition’; Kissinger’s ‘two heavily armed blind men’ captures mutual misperception","Post-Cold War school (Gaddis’s We Now Know, Westad): Soviet archives showed Stalin’s paranoid quest for security made others insecure, but he had no master plan; Painter & Leffler: interpretations were “shaped by the ongoing Cold War”"],
+      why: "Lets you place any source in its school and explain its view from when it was written and what evidence its author had — the core skill for historiography questions." }
   ],
   historians: [
     { who: "Dockrill (1988)", view: "The Cold War was extreme superpower tension stopping short of all-out war, with mutual hostility and covert/proxy warfare." },

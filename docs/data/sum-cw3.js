@@ -233,7 +233,11 @@
         "Yeltsin let the USSR go to avoid bloodshed and economic burdens, judging Russia better off on its own.",
         "Garthoff: ‘victory’ came when Soviet leaders “realised how badly their system at home and their policies abroad had failed.”"
       ],
-      why: "Gave the Cold War its definitive end, since the US no longer had a USSR to contain. Use it for ‘one and the same process?’ essays and for weighing the roles of Gorbachev, Yeltsin, Reagan and the republics." }
+      why: "Gave the Cold War its definitive end, since the US no longer had a USSR to contain. Use it for ‘one and the same process?’ essays and for weighing the roles of Gorbachev, Yeltsin, Reagan and the republics." },
+    { name: "Three schools on the end of the Cold War", when: "post-1989", cards: ["historiography3","cw3-triumphalist","cw3-soviet-initiative","cw3-peoplepower","cw3-synthesis"],
+      what: "Historians credit the end of the Cold War to the USA and Reagan (Western Triumphalists), to Gorbachev (Soviet Initiative School), or to ordinary people in 1989 (People Power School).",
+      facts: ["Triumphalists (Gates, Fukuyama, Matlock): containment and Reagan’s build-up ‘broke the back’ of the Soviet empire — US defence $134bn → $253bn (1980–89); limitation: little sign of Soviet ‘bending’ before 1985","Soviet Initiative (Lévesque, Garthoff, Pemberton): New Thinking, the rejection of the Brezhnev Doctrine (Dec 1988) and unilateral cuts; Reagan reactive — Zubok: Gorbachev the “inadvertent liberator”","People Power (Bartel, Evangelista): Solidarity, Leipzig and the Wall — Gaddis’s “sandpile ready to slide”; limitation: possible only because Gorbachev renounced force"],
+      why: "The notes’ synthesis: none worked alone — US pressure on existing Soviet weakness, Gorbachev’s policy shifts and popular movements formed one action-reaction chain." }
   ],
   historians: [
     { who: "Lundestad (2003)", view: "The Reagan Victory School sees Reagan abandoning status-quo containment to seek the West’s ‘victory’. The Soviet collapse, the end of dictatorship and the move to markets were concurrent, interdependent processes, and Eastern Europe had become a net cost to the USSR." },

@@ -205,7 +205,11 @@
         "1948 and 1971 ceasefire lines recognised as the Line of Control (LoC).",
         "India held UNMOGIP’s mandate had lapsed and has lodged no complaints since Jan 1972; Pakistan disagreed and still lodges complaints."
       ],
-      why: "Brought a longer period of relative peace but no mechanism or timeline for Kashmir — which re-emerged as the 1989 insurgency (Ganguly, 2001)." }
+      why: "Brought a longer period of relative peace but no mechanism or timeline for Kashmir — which re-emerged as the 1989 insurgency (Ganguly, 2001)." },
+    { name: "Security, nationalism and religion: Kashmir as a zero-sum prize", when: "1947 onward", cards: ["ip-security","ip-nationalism","ip-religion","ip-ethno","ip-grid-b","ip-causes-synth"],
+      what: "Kashmir’s strategic position, the rival One Nation and Two Nation ideologies, and Hindu–Muslim distrust made control of Kashmir essential to both states’ security and identity.",
+      facts: ["Security: Kashmir bordered Afghanistan, China and the USSR (Nehru, 1947); Akbar Khan (1970): Indian troops there could cut Pakistan’s 180-mile Lahore–Rawalpindi route","Nationalism: Congress’s secular ‘One Nation’ needed Kashmir as proof of pluralism; the League’s ‘Two Nations’ — Pakistan “incomplete” without it; Ganguly: the two were “already locked into a potential collision course”","Religion: about ¾ Muslim but ruled by a Hindu Maharaja, with Buddhist Ladakh and mixed Jammu; Hewitt’s “mutual distrust”; Burke: Hinduism and Islam antithetical, and Britain’s “cut and run” exit"],
+      why: "These causes reinforced each other — religion underpinned rival nationalisms and decolonisation’s ambiguity gave security fears something to exploit — so Kashmir could not be treated as a negotiable border." }
   ],
   historians: [
     { who: "Ganguly (2019)", view: "Kashmir was contiguous to both dominions, so the partition’s own accession logic created a genuine dilemma." },
