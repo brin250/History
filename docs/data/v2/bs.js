@@ -729,7 +729,7 @@ L.push({
           { h: "Against", steps: [
             N("bs-x-wash", "evid", "Washington diplomacy", "1994", "US pressure ended the Croat–Bosniak war and built the Federation.", ["bs-washington"]),
             K("contradicts", "Plans laid the basis for the settlement."),
-            N("bs-x-basis", "evid", "Earlier plans shaped Dayton", null, "Decentralisation (Vance-Owen) and 51–49 (Contact Group) became the framework.", ["vanceowen", "contactgroup"]),
+            N("bs-x-basis", "evid", "Earlier plans shaped Dayton", null, "Not partition: Dayton kept one state and an undivided Sarajevo, as Vance-Owen had. But it built in the plans' drift towards division — two entities on the Contact Group's Federation/Serb split.", ["bs-carrington", "vanceowen", "bs-owen-stoltenberg", "contactgroup", "dayton"]),
             K("contradicts", "Dayton itself was diplomacy."),
             N("bs-x-dayton", "evid", "Holbrooke's diplomacy", "1995", "Talks isolated from the media produced the accord.", ["dayton"])
           ] }
@@ -740,7 +740,7 @@ L.push({
       steps: [ N("bs-x-judge", "judg", "Force made diplomacy work", null, "Force changed the balance; US-led diplomacy then turned it into peace, building on earlier plans.", ["bs-players-summary", "bs-us-phase3"]) ] }
   ],
   judge: { prompt: "How far did force rather than diplomacy end the war? Rank the evidence.", factors: ["bs-x-plans", "bs-x-unp", "bs-x-storm", "bs-x-wash", "bs-x-basis", "bs-x-dayton"],
-           notes_view: "Operation Storm and Deliberate Force pushed the parties to Dayton; earlier plans' ideas (decentralisation, 51–49) shaped the settlement — force enabled US-led diplomacy." },
+           notes_view: "Operation Storm and Deliberate Force pushed the parties to Dayton; earlier plans shaped the settlement — one decentralised state (Vance-Owen) divided into two entities along the Contact Group's Federation/Serb split, stopping short of the formal partition Izetbegović had rejected in Owen-Stoltenberg — force enabled US-led diplomacy." },
   historians: [ { who: "Burg and Shoup", view: "The world failed to reconcile mutually exclusive principles of state formation.", nodes: ["bs-x-plans"] } ],
   takeaways: [
     "For: plans and UNPROFOR failed; Storm and Deliberate Force changed Serb behaviour.",
