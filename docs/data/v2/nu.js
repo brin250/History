@@ -811,7 +811,7 @@ L.push({
         N("nu-z-riots", "evt", "13 May riots", "13 May 1969", "Four days of riots; NOC 'maximum government'.", ["nu-13may"]),
         K("provoked response", "UMNO restructured politics."),
         { row: [
-          N("nu-z-bn", "pol", "Barisan Nasional", "1973", "Co-opted the opposition.", ["nu-13may"]),
+          N("nu-z-bn", "pol", "Barisan Nasional", "1973", "Co-opted all but the DAP; 1971 Constitution (Amendment) Act banned debate on the Malay special position, language, citizenship and the sultans.", ["nu-13may"]),
           N("nu-z-amend", "pol", "1971 Amendment Act", "1971", "Criminalised questioning citizenship, language, Malay position, rulers.", ["nu-13may"]),
           N("nu-z-rukun", "pol", "Rukunegara", "31 Aug 1970", "National ideology — at cross-purposes with pro-Malay policy.", ["nu-13may"])
         ] }

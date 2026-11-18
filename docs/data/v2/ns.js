@@ -41,22 +41,22 @@ L.push({
         { split: [
           { h: "Unstable", steps: [
             { row: [
-              N("ns-t-id2", "res-", "Suharto's New Order", "1965–2001", "Fell in 1998.", ["ns-suhartofall"], { go: "ns-id2" }),
-              N("ns-t-ph2", "res-", "Marcos", "1972–2001", "Fell in 1986.", ["marcos"], { go: "ns-ph2" }),
+              N("ns-t-id2", "res-", "Suharto's New Order", "1965–2001", "Golkar machine, dwifungsi and crony patronage; fell in 1998.", ["ns-suhartofall"], { go: "ns-id2" }),
+              N("ns-t-ph2", "res-", "Marcos", "1972–2001", "Martial law, KBL, a tripled AFP and crony monopolies; fell in 1986.", ["marcos"], { go: "ns-ph2" }),
               N("ns-t-th2", "res±", "Thailand", "1973–2000", "1973, 1976, 1992.", ["ns-thai92"], { go: "ns-th2" })
             ] }
           ] },
           { h: "Stable authoritarian", steps: [
             { row: [
-              N("ns-t-bm2", "res±", "Ne Win", "1962–88", "BSPP rule until 8888.", ["ns-bspp"], { go: "ns-bm2" }),
+              N("ns-t-bm2", "res±", "Ne Win", "1962–88", "Single-party BSPP rule with one-nominee elections, until 8888.", ["ns-bspp"], { go: "ns-bm2" }),
               N("ns-t-bm3", "res±", "SLORC/SPDC", "1988–2021", "Coercion without legitimacy.", ["ns-slorc"], { go: "ns-bm3" }),
               N("ns-t-vn", "res+", "Vietnam's VCP", "1976–2000", "Doi Moi kept the Party in control.", ["ns-doimoi"], { go: "ns-vn" })
             ] }
           ] },
           { h: "Semi-democracies", steps: [
             { row: [
-              N("ns-t-my", "res+", "Malaysia", "1957–2000", "13 May to BN dominance.", ["may13", "ns-msiasources"], { go: "ns-my" }),
-              N("ns-t-sg", "res+", "Singapore", "1965–2000", "PAP dominance.", ["ns-sgsurvival"], { go: "ns-sg" })
+              N("ns-t-my", "res+", "Malaysia", "1957–2000", "13 May; sensitive-issues ban (1971); BN co-optation, tilted elections and the ISA.", ["may13", "ns-msiasources"], { go: "ns-my" }),
+              N("ns-t-sg", "res+", "Singapore", "1965–2000", "PAP dominance: tilted but fair elections, ISA, press and labour controls.", ["ns-sgsurvival"], { go: "ns-sg" })
             ] }
           ] }
         ] }
@@ -302,7 +302,7 @@ L.push({
     { link: "led to", how: "Generals then ruled for a quarter-century.",
       title: "Military rule", summary: "Phibun, Sarit, Thanom.",
       steps: [
-        N("ns-a-leaders", "act", "Phibun, Sarit, Thanom", "1947–73", "Sarit's 'benevolent paternalism' revived the monarchy.", ["ns-thaimil", "ns-thaisources"]),
+        N("ns-a-leaders", "act", "Phibun, Sarit, Thanom", "1947–73", "Sarit's 'benevolent paternalism' revived the monarchy; he ruled with no constitution or elections; constitutions abolished in 1951 and 1971; US aid lifted the military budget from ~US$20m to ~US$250m a year.", ["ns-thaimil", "ns-thaisources"]),
         K("enabled", "US aid strengthened the military state."),
         N("ns-a-usaid", "stc", "US military aid", "1960s", "Quadrupled; budget ~US$20m to ~US$250m/yr.", ["ns-thaimil"]),
         K("followed by", "Growth created new challengers."),
@@ -518,7 +518,7 @@ L.push({
         N("ns-o-style", "act", "Suharto's personal rule", "1966–98", "Calculating, 'sultanistic'; loyalty networks ('to the palace one by one').", ["ns-suhartostyle"]),
         K("enabled", "He built three pillars of control."),
         { row: [
-          N("ns-o-golkar", "pol", "Golkar elections", "1971–97", "Won every election (65% to 74.5%); opposition merged into PPP and PDI.", ["ns-golkar"]),
+          N("ns-o-golkar", "pol", "Golkar elections", "1971–97", "Army-formed party with compulsory affiliation for civil servants; opposition forced into PPP and PDI (1972–73); 1985 Ormas law imposed Pancasila on all groups; dwifungsi put half the cabinet and two-thirds of governorships in military hands — so it won every election (65% to 74.5%).", ["ns-golkar"]),
           N("ns-o-dwi", "pol", "Dwifungsi", "1958–82", "Half the cabinet and 2/3 of governorships military by the late 1970s.", ["ns-dwifungsi"]),
           N("ns-o-oil", "pol", "Oil-funded patronage", "1973–83", "Oil revenue quadrupled; state share of GDP 13% to 41%; cukong tycoons.", ["ns-dwifungsi"])
         ] }
@@ -563,7 +563,7 @@ L.push({
   clusters: [
     { title: "Sources of power", summary: "Constitution, army, cronies.",
       steps: [
-        N("ns-q-1973", "pol", "1973 Constitution", "1973", "Let Marcos hold presidential and prime-ministerial power; KBL (1978) like Golkar.", ["ns-marcosstyle", "ns-marcospower"]),
+        N("ns-q-1973", "pol", "1973 Constitution", "1973", "Under martial law (Proclamation 1081, 1972), let Marcos hold presidential and prime-ministerial power; KBL (1978) like Golkar; AFP 45,000 → 150,000; c.70,000 political prisoners by 1977; cronies given monopolies.", ["ns-marcosstyle", "ns-marcospower"]),
         K("enabled", "He built an army and a crony economy."),
         { row: [
           N("ns-q-afp", "pol", "Expanded military", "1967–86", "AFP 45,000 to 150,000.", ["ns-marcospower"]),
@@ -662,7 +662,7 @@ L.push({
         N("ns-w-legit", "act", "Ne Win's legitimacy", "1962", "One of the Thirty Comrades; caretaker record; 'gradual and cautious' (Taylor).", ["ns-newin"]),
         K("enabled", "He built single-party socialism."),
         { row: [
-          N("ns-w-bspp", "pol", "BSPP sole party", "1962–74", "Sole legal party from 1964; 1974 Constitution: unitary single-party state.", ["ns-bspp"]),
+          N("ns-w-bspp", "pol", "BSPP sole party", "1962–74", "Sole legal party from 1964; 1974 Constitution: unitary single-party state; elections only to accept or reject the single BSPP nominee.", ["ns-bspp"]),
           N("ns-w-socialism", "pol", "Burmese Way to Socialism", "1962", "Marxism plus Buddhism; nationalised economy; traders expelled.", ["ns-bspp"])
         ] }
       ] },
@@ -706,7 +706,7 @@ L.push({
     { link: "followed by", how: "SLORC allowed an election — and ignored it.",
       title: "1990 election", summary: "Landslide ignored.",
       steps: [
-        N("ns-x-1990", "evt", "NLD landslide", "May 1990", "392 of 485 seats (70% turnout); NUP 10.", ["ns-slorc"]),
+        N("ns-x-1990", "evt", "NLD landslide", "May 1990", "392 of 485 seats (70% turnout) vs the NUP's 10 — but SLORC refused to hand over power and kept Aung San Suu Kyi under house arrest (1989–95).", ["ns-slorc"]),
         K("provoked response", "SLORC refused to hand over."),
         N("ns-x-refuse", "res-", "Power kept by force", "1989–2002", "Martial law; Suu Kyi under house arrest 1989–95, 2000–02.", ["ns-slorc"])
       ] },
@@ -715,7 +715,7 @@ L.push({
       steps: [
         { row: [
           N("ns-x-cease", "pol", "Ceasefires", "early 1990s", "With 17 of 21 armed groups.", ["ns-slorc"]),
-          N("ns-x-usda", "pol", "USDA", "1993", "11m members by 1999.", ["ns-spdc"])
+          N("ns-x-usda", "pol", "USDA", "1993", "Regime mass organisation in nearly every village by 1996; 11m members by 1999.", ["ns-spdc"])
         ] },
         K("constrained", "International pressure grew after the Cold War."),
         N("ns-x-intl", "res±", "Scrutiny and survival", "1991–2021", "Suu Kyi's Nobel (1991); ASEAN (1997) eased sanctions; SPDC (1997); 2010 elections; coup 2021.", ["ns-spdc"])
@@ -793,7 +793,7 @@ L.push({
         { row: [
           N("ns-m-amend", "pol", "1971 Amendment Act", "1971", "Banned discussion of sensitive issues.", ["ns-msiasources"]),
           N("ns-m-nep", "pol", "NEP", "1971–90", "Bumiputera equity 1.5% to 20.3%, with cronyism.", ["ns-msiasources"]),
-          N("ns-m-bn", "pol", "Barisan Nasional", "1 Jun 1974", "Co-opted all but the DAP; tilted elections.", ["ns-msiasources"])
+          N("ns-m-bn", "pol", "Barisan Nasional", "1 Jun 1974", "Co-opted all but the DAP (Anwar brought in 1982); elections tilted by gerrymandering, short campaigns and rally bans; 1971 Constitution (Amendment) Act banned debate on sensitive issues.", ["ns-msiasources"])
         ] }
       ] },
     { link: "constrained", how: "Challenges were met with coercive laws.",
@@ -827,7 +827,7 @@ L.push({
       steps: [
         N("ns-g-vuln", "ctx", "Separation and British withdrawal", "1965–68", "Created vulnerability and depoliticised the public.", ["ns-sgsurvival"]),
         K("enabled", "The PAP dominated parliament."),
-        N("ns-g-allseats", "res+", "PAP holds every seat", "1968–80", "All seats in 1968, 1972, 1976, 1980.", ["ns-sgsurvival"])
+        N("ns-g-allseats", "res+", "PAP holds every seat", "1968–80", "All seats in 1968, 1972, 1976, 1980 — elections procedurally fair but participation tightly limited (Case): ISA, Newspapers and Printing Presses Act (1974), NTUC and grassroots bodies depoliticising labour and society.", ["ns-sgsurvival"])
       ] },
     { link: "followed by", how: "Control extended into law, society and media.",
       title: "Controls", summary: "Laws, grassroots, labour, press.",
