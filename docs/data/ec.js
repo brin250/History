@@ -900,7 +900,7 @@ add("Thailand", { id:"ec-th-gdp", title:"Structure of Thai GDP", when:"1951–93
        "1993: 10.0 / 28.5"] });
 add("Thailand", { id:"thaieoi", title:"Thailand's switch to EOI", when:"1977–86",
   q:"What pressures forced Thailand's switch from ISI to EOI?",
-  exp:"Thailand's switch to EOI was pushed by crisis: oil shocks and the end of US aid removed external support, political turmoil caused capital flight, and rising debt approached the danger point. The 4th Plan responded by promoting exports while trying to spread industry beyond Bangkok to improve equity. This shows external pressure, as in Singapore, driving the transition from ISI.",
+  exp:"Thailand's switch to EOI was pushed by crisis: oil shocks and the end of US aid removed external support, political turmoil caused capital flight, and protection under ISI had fed cronies. The 4th Plan (1977) adopted EOI, but the real push came with the 1980s debt crisis: with the debt service ratio (repayments as a share of export earnings) at 19.7%, near the IMF's 20% line, earning more from exports became urgent. This shows external pressure, as in Singapore, driving the transition from ISI.",
   clue:"Oil shocks, US withdrawal and the 4th National Plan of 1977–81.",
   pts:["1970s oil shocks + US withdrawal → end of regular aid",
        "1973–76 political chaos → capital flight; widening urban–rural gap (jobs around Bangkok)",
@@ -935,6 +935,16 @@ add("Thailand", { id:"ec-th-scaling", title:"Scaling down the Thai state", when:
   pts:["6th Plan (1987): public sector to be ‘a planner, supporter and facilitator of private sector participation’",
        "‘The government will withdraw from activities which can be carried out better… by the private sector’",
        "1988: NESDB relieved of supervising all major government investment projects"] });
+add("Thailand", { id:"ec-th-chain", title:"Thailand's path to EOI: the causal chain", when:"1957–1997",
+  q:"Why did Thailand switch from agriculture-plus-ISI to EOI, how did it handle the 1980s debt, and what drove the rise of manufacturing?",
+  exp:"The switch was not from farming to industry but from protected, home-market industry (ISI) to export industry (EOI). Under Sarit, agriculture and protected manufacturing grew side by side. The 1970s removed US aid and stability, and protection had fed cronies, so the 4th Plan (1977) adopted EOI. The 1980s debt crisis made export earnings urgent, because the debt service ratio is repayments as a share of export earnings. Devaluation, the basket peg and the 1985 incentives followed. After the Plaza Accord, Japanese, Taiwanese and Hong Kong firms relocated to Thailand, and FDI and joint ventures drove manufacturing up. Debt later returned as short-term private borrowing, setting up 1997.",
+  pts:["1957–77: agriculture (irrigated land 600,000 → 2.2m ha) AND protected ISI (BoI, IFCT, NESDB 1959; Promotion of Investment Act 1960) grew together — manufacturing overtook agriculture's GDP share by 1971",
+       "ISI's limits: protection more than doubled in the 1970s, benefiting 15–20 Sino-Thai families; oil shocks and US withdrawal ended regular aid; 1973–76 chaos → capital flight → 4th Plan (1977–81) ended ISI promotion, began EOI",
+       "1980s debt: falling farm prices + 2nd oil crisis → external debt 0% → 38% of GDP (1973–86); debt service ratio (repayments as % of export earnings) 19.7%, near the IMF's 20% line — raising export earnings was the way out",
+       "Response: 1981 devaluation; 1984 basket peg; 1985 export taxes cut, exporter credit, 100% foreign ownership for exporters; 6th Plan (1987) made the state a 'facilitator'; 1988 NESDB stopped supervising major projects",
+       "Manufacturing surge: Plaza Accord (1985) cheapened the baht → firms relocated from Japan/Taiwan/HK; FDI US$900m/yr (1986–89) → US$2bn/yr (1990–96), 37.2% into manufacturing; joint ventures (Siam Motors, Saha Union)",
+       "Result: manufacturing 20.7% (1980) → 27.2% (1990) of GDP; agriculture 24.9% → 12.7%; export growth 14% (1980s); primary exports 76.2% (1975) → 26.9% (1994)",
+       "Then: short-term borrowing via BIBF (1993) — foreign bank debt US$29bn → US$69bn (1993–97), 70% short-term; current-account deficit 7.9% of GDP (1996) → 1997 crisis"] });
 add("Thailand", { id:"ec-th-eoi-success", title:"Success of Thai EOI", when:"1980–2000",
   q:"What evidence shows Thailand's EOI succeeded?",
   exp:"The figures show EOI transformed Thailand from a farm-based economy into one dominated by manufacturing and services, with exports shifting to high-technology goods and becoming less concentrated. The fastest export growth among capitalist neighbours and Thai firms investing abroad show the strength of this change. Use this as the core evidence for Thailand's success, before qualifying it with inequality and crisis.",
