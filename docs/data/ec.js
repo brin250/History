@@ -946,8 +946,8 @@ add("Thailand", { id:"ec-th-eoi-success", title:"Success of Thai EOI", when:"198
 add("Thailand", { id:"ec-morley-exports", title:"Export growth and composition (Morley)", when:"1970–95",
   q:"Give export growth rates (1970–80/1980–90/1990–95) and primary export shares (1975→1994) (Morley).",
   exp:"Morley's table allows comparison: all five economies reduced reliance on primary exports, showing a regional shift to manufacturing. Thailand had the fastest export growth in the 1970s and 1980s. Indonesia's negative 1980s growth and high remaining primary share reflect its oil dependence, while the Philippines' weak 1980s figure matches its crisis under Marcos.",
-  pts:["Singapore: 4.2 / 9.9 / 17.6; primary 49.8 → 15.5",
-       "Malaysia: 4.8 / 8.6 / 20.0; primary 68.6 → 24.6",
+  pts:["Export growth % (1970–80 / 1980–90 / 1990–95) and primary share of exports (1975 → 1994) — Singapore: 4.2 / 9.9 / 17.6; primary 49.8 → 15.5",
+       "Malaysia: export growth 4.8% (1970–80) / 8.6% (1980–90) / 20.0% (1990–95); primary 68.6% (1975) → 24.6% (1994)",
        "Thailand: 10.3 / 14.0 / 18.6; primary 76.2 → 26.9",
        "Philippines: 6.0 / 3.9 / 16.2; primary 77.9 → 18.5",
        "Indonesia: 7.2 / -0.3 / 11.7; primary 97.6 → 47.0"] });
