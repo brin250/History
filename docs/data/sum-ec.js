@@ -105,7 +105,7 @@
       facts: ["Value-added per worker nearly doubled (1979–84)", "1985 recession: high wages, global slowdown, protectionism; shipbuilding ¼ of manufacturing hit", "1986 Economic Committee (Lee Hsien Loong): ‘total business centre’", "Services share of GDP 16% (1965) → 24% (1985)", "Direct investment abroad S$8.7bn → S$16.9bn (1989–90); Johor-Riau Growth Triangle, Suzhou Industrial Park"],
       why: "Falling manufacturing share reflects deliberate upgrading, not failure; also shows external vulnerability." },
     { name: "Malaysia: Look East, HICOM and privatisation", when: "1981–1990s", cards: ["ec-my-hicom", "ec-my-privatisation", "ec-my-deepening", "ec-my-rasiah"],
-      what: "Mahathir’s state-led heavy industry (HICOM) built a bumiputera industrial class but incurred heavy losses, leading to privatisation, ‘Malaysia Incorporated’ and growth-focused industrial deepening.",
+      what: "Mahathir’s state-led heavy industry (HICOM) aimed to build a bumiputera industrial class but incurred heavy losses, leading to privatisation, ‘Malaysia Incorporated’ and growth-focused industrial deepening.",
       facts: ["HICOM (1981): Proton, Perwaja Steel, Kedah Cement", "Public enterprises = 64.3% of public sector deficit (1980–85)", "13 SOEs privatised by 1992; ringgit devalued (1985)", "Manufacturing = 60% of exports by 1990 (vs 20% a decade earlier)", "Rasiah: Mahathir not prepared to reach 30% equity ‘at the expense of checking the pace of industrialisation’"],
       why: "Shows growth was prioritised over equity once the NEP formally ended in 1990." },
     { name: "Indonesia: oil glut, deregulation and crony monopolies", when: "1982–mid-1990s", cards: ["ec-id-glut", "ec-id-dereg-reality", "ec-id-repelita", "ec-id-monopolies", "ec-id-chinese"],
