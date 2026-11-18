@@ -151,7 +151,7 @@
       facts: [
         "Social Contract: Malay special position (Section 153) in exchange for Chinese economic power and citizenship",
         "13 May 1969: official toll 196 dead (unofficial 600–800); NOC/MAGERAN ruled 1969–71 under Tun Razak",
-        "1971 Constitution (Amendment) Act banned discussion of sensitive issues; NEP raised bumiputera equity from 1.5% to 20.3% (1969–90); BN formed 1 Jun 1974",
+        "1971 Constitution (Amendment) Act banned discussion of sensitive issues; elections tilted by gerrymandering, short campaigns and rally bans; NEP raised bumiputera equity from 1.5% to 20.3% (1969–90); BN formed 1 Jun 1974",
         "Operation Lalang (1987, 100+ detained under the ISA); 1998 Anwar sacked and jailed, sparking Reformasi; BN kept two-thirds in 1999 only via Chinese/Indian votes"
       ],
       why: "Key semi-democracy case: constitutional and electoral processes stabilised Malaysia by narrowing debate while offering legitimate opposition channels — unlike Indonesia/Philippines, where crises meant regime replacement." },
@@ -167,7 +167,7 @@
     { name: "Indonesia: Suharto’s New Order, its fall and democratic transition", when: "1965–2001", cards: ["ns-golkar", "ns-dwifungsi", "ns-neworderopp", "ns-suhartocw", "ns-suhartofall", "ns-indodem"],
       what: "Suharto consolidated power through Golkar, the military’s dwifungsi role and economic patronage, backed by the West; the 1997 Asian Financial Crisis exposed cronyism and forced his resignation, opening a turbulent democratic transition.",
       facts: [
-        "Golkar won every election from 1971 (65% rising to 74.5% in 1997); opposition merged into PPP and PDI (1972–73); 1985 Ormas legislation imposed Pancasila",
+        "Golkar — formed by the army, with compulsory affiliation for civil servants — won every election from 1971 (65% rising to 74.5% in 1997); opposition forced into PPP and PDI (1972–73); 1985 Ormas legislation imposed Pancasila; campus controls (SK 028, 1974; NKK/BKK, 1977)",
         "Dwifungsi (1958 Nasution speech, law 1982): by the late 1970s half the cabinet and two-thirds of governorships were military appointees",
         "Oil revenues quadrupled after 1973–74; state share of GDP rose from 13% to 41% by 1983; cukong businessmen (Liem Sioe Liong) bound to the regime",
         "Malari riots 1974 (11 dead), Tanjung Priok 1984 (28+ dead); 4 Trisakti students killed 12 May 1998, riots c.2,250 dead; resigned 21 May 1998",
