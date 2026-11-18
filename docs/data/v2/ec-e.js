@@ -488,15 +488,15 @@ L.push({
       steps: [
         {
           row: [
-            { id: "id3-dereg", type: "policy", t: "Deregulation", d: "Private sector development.", cards: ["ec-id-glut"] },
+            { id: "id3-dereg", type: "policy", t: "Deregulation", d: "Shift from oil-funded, state-led growth to private-sector development: simpler licensing, investment incentives and tax concessions (1985), then bank deregulation (1988).", cards: ["ec-id-glut"] },
             {
               id: "id3-infra",
               type: "policy",
               t: "Infrastructure to attract FDI",
-              d: "Infrastructure development and foreign investment.",
+              d: "Infrastructure and incentives to draw foreign investors to replace lost oil revenue; FDI rose six-fold, 1980–90 (Rigg).",
               cards: ["ec-id-repelita"]
             },
-            { id: "id3-eoi", type: "policy", t: "Transition to EOI", d: "Export-oriented industrialisation.", cards: ["ec-id-repelita"] }
+            { id: "id3-eoi", type: "policy", t: "Transition to EOI", d: "Away from oil and primary exports (oil 70% of export earnings in 1980) toward manufactured exports; Repelita IV–V put industry (9.5%, 8.5%) ahead of agriculture (3.0%, 3.6%).", cards: ["ec-id-repelita", "ec-id-limits"] }
           ]
         },
         { link: "led to", how: "Deregulation was carried out through the 1985 reforms and the radical October 1988 banking package." },
@@ -622,6 +622,50 @@ L.push({
       ]
     },
     {
+      title: "Cronyism after 1986",
+      link: "intensified",
+      how: "Deregulation came alongside new monopolies for the Suharto family and its partners.",
+      summary: "New monopolies raised costs for everyone else.",
+      steps: [
+        {
+          row: [
+            { id: "id3-panca", type: "evidence", t: "Panca Holding", date: "1986", d: "Plastics import monopoly with Suharto's son and brother on the board: earned $30m on $320m of imports, adding 15–20% to material costs.", cards: ["ec-id-monopolies"] },
+            { id: "id3-soy", type: "evidence", t: "Soymeal and clove monopolies", date: "1988, 1990", d: "Soymeal (Tommy Suharto, Bob Hasan); clove (Tommy Suharto, financed by $350m diverted from agricultural-producer reserves).", cards: ["ec-id-monopolies"] }
+          ]
+        },
+        { link: "supports", how: "Morley names the Suharto family as the main winners." },
+        { id: "id3-morley", type: "interpretation", t: "Suharto family the big winner", d: "Morley: “the most striking feature of the business landscape since 1986 has been the huge increase in wealth and privileged business opportunities accruing to members of the Suharto family.”", cards: ["ec-id-monopolies"] }
+      ]
+    },
+    {
+      title: "Bank boom, hidden fragility",
+      link: "led to",
+      how: "The 1988 banking package multiplied banks faster than regulation could follow.",
+      summary: "Connected lending and debt set up 1997.",
+      steps: [
+        { id: "id3-banks", type: "consequence", sign: "-", t: "Banks doubled, rules lagged", date: "1988–94", d: "Banks 124 → 244; credit culture and regulation did not keep pace; BUPN (state debt collector) lacked capacity and will.", cards: ["ec-id-financial"] },
+        { link: "led to", how: "Lending followed relationships, on the expectation of a government bailout." },
+        { id: "id3-bca", type: "evidence", t: "Connected lending", d: "Liem's Bank Central Asia: 60% of its loans owed by other Liem companies — moral hazard.", cards: ["ec-id-financial"] },
+        { link: "led to", how: "By 1997 private debt dwarfed the reserves." },
+        { id: "id3-debt97", type: "consequence", sign: "-", t: "Debt far beyond reserves", date: "1997", d: "Private corporate debt >$60bn vs $24bn reserves; after the baht fell the rupiah swung up to 10% a day.", cards: ["ec-id-financial"] }
+      ]
+    },
+    {
+      title: "Shallow diversification",
+      link: "constrained",
+      how: "Behind the export statistics, industry stayed protected and shallow.",
+      summary: "Still primary-based; no engine capacity.",
+      steps: [
+        {
+          row: [
+            { id: "id3-primary", type: "evidence", t: "Still primary-based", d: "Primary products 70–80% of export revenue through the 1980s.", cards: ["ec-id-limits"] },
+            { id: "id3-engine", type: "evidence", t: "Protected autos, no engines", d: "Astra/Indomobil dominance behind 100–300% tariffs on built-up vehicles — Indonesia never developed engine production.", cards: ["ec-id-limits"] },
+            { id: "id3-loans", type: "evidence", t: "Asia's largest debt", date: "1989", d: "About US$58bn by 1989; funds leaked through lack of transparency.", cards: ["ec-id-limits"] }
+          ]
+        }
+      ]
+    },
+    {
       title: "Verdict",
       link: "followed by",
       how: "Liberalisation itself stayed limited, as Suharto balanced growth against economic nationalism.",
@@ -648,19 +692,20 @@ L.push({
   ],
   judge: {
     prompt: "Was 1980s deregulation mainly diversification or cronyism? Rank the evidence by weight.",
-    factors: ["id3-nonoil", "id3-struct", "id3-recover", "id3-conglom", "id3-auto", "id3-limits"],
+    factors: ["id3-nonoil", "id3-struct", "id3-recover", "id3-conglom", "id3-auto", "id3-soy", "id3-banks", "id3-engine", "id3-limits"],
     notes_view: "“Paradoxically, deregulation has appeared to reinforce rather than undermine the importance of state power in determining markets and the concentration of corporate power” (Rodan, Hewison & Robison)."
   },
   historians: [
     { who: "Vatikiotis", view: "Deregulation simply opened new areas of expansion for the larger business groups.", nodes: ["id3-vatikiotis"] },
     { who: "Rigg", view: "FDI increased six-fold, 1980–90.", nodes: ["id3-fdi"] },
+    { who: "Morley", view: "The striking feature since 1986 was the huge increase in wealth and privileged business opportunities for the Suharto family.", nodes: ["id3-morley"] },
     {
       who: "Rodan, Hewison & Robison",
       view: "Deregulation paradoxically reinforced state power and the concentration of corporate power.",
       nodes: ["id3-verdict"]
     }
   ],
-  takeaways: ["External shock (oil glut) drove Indonesia's turn to deregulation, FDI and EOI.", "Use the statistics (non-oil exports 31% → 50%, manufactured exports <$1bn → >$9bn) for ‘successful strategy’ arguments.", "Counter with Vatikiotis: liberalisation fed conglomerates (Astra, Liem) and stayed limited by economic nationalism."]
+  takeaways: ["External shock (oil glut) drove Indonesia's turn to deregulation, FDI and EOI.", "Use the statistics (non-oil exports 31% → 50%, manufactured exports <$1bn → >$9bn) for ‘successful strategy’ arguments.", "Counter with Vatikiotis: liberalisation fed conglomerates (Astra, Liem) and stayed limited by economic nationalism.", "Post-1986 monopolies (Panca 1986, soymeal 1988, clove 1990) and the 1988 bank boom (124 → 244 banks; connected lending) set up the 1997 collapse."]
 });
 L.push({
   id: "ec-flow-indonesia-4",
